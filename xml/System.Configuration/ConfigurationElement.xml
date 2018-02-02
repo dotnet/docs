@@ -80,6 +80,14 @@
   
 -   The simpler declarative model, also called the attributed model, allows you to define an element attribute by using a property and then decorate it with attributes. These attributes instruct the ASP.NET configuration system about the property types and their default values. With this information, obtained through reflection, the ASP.NET configuration system creates the element property objects for you and performs the required initialization. The example shown later in this topic shows how to use this model.</para>
     </block>
+    <altmember cref="T:System.Configuration.ConfigurationManager" />
+    <altmember cref="T:System.Web.Configuration.WebConfigurationManager" />
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Configuration.ElementInformation" />
+    <altmember cref="T:System.Configuration.ConfigurationElementCollection" />
+    <altmember cref="T:System.Configuration.ConfigurationElementCollectionType" />
+    <altmember cref="T:System.Configuration.ConfigurationProperty" />
+    <altmember cref="T:System.Configuration.ConfigurationPropertyCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -222,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ElementInformation" />
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -303,6 +312,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The current element is not associated with a context.</exception>
+        <altmember cref="T:System.Configuration.ContextInformation" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -715,6 +725,7 @@
         <block subset="none" type="overrides">
           <para>If you use the <see cref="P:System.Configuration.ConfigurationElement.LockAllAttributesExcept" /> and <see cref="P:System.Configuration.ConfigurationElement.LockAttributes" /> properties at the same time, the most restrictive rule applies.</para>
         </block>
+        <altmember cref="T:System.Configuration.ConfigurationLockCollection" />
       </Docs>
     </Member>
     <Member MemberName="LockAllElementsExcept">
@@ -755,6 +766,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationLockCollection" />
       </Docs>
     </Member>
     <Member MemberName="LockAttributes">
@@ -800,6 +812,7 @@
         <block subset="none" type="overrides">
           <para>If you use the <see cref="P:System.Configuration.ConfigurationElement.LockAllAttributesExcept" /> and <see cref="P:System.Configuration.ConfigurationElement.LockAttributes" /> properties at the same time, the most restrictive rule applies.</para>
         </block>
+        <altmember cref="T:System.Configuration.ConfigurationLockCollection" />
       </Docs>
     </Member>
     <Member MemberName="LockElements">
@@ -842,6 +855,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationLockCollection" />
       </Docs>
     </Member>
     <Member MemberName="LockItem">
@@ -1093,6 +1107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationPropertyCollection" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1287,6 +1302,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.ConfigurationElement.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Unmerge">
@@ -1323,6 +1339,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="Overload:System.Configuration.Configuration.Save" />
+        <altmember cref="Overload:System.Configuration.Configuration.SaveAs" />
       </Docs>
     </Member>
   </Members>

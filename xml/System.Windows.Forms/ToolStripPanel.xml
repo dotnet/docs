@@ -275,7 +275,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event.  
   
@@ -339,6 +339,7 @@
         <summary>Gets the space, in pixels, that is specified by default between controls.</summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> that represents the default space between controls.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultMargin" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPadding">
@@ -357,6 +358,7 @@
         <summary>Gets the internal spacing, in pixels, of the contents of a control.</summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> that represents the internal spacing of the contents of a control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultPadding" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -392,7 +394,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -412,6 +414,7 @@
         <summary>Gets or sets which control borders are docked to its parent control and determines how a control is resized with its parent.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is None.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Dock" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -551,6 +554,7 @@
         <summary>Gets a cached instance of the control's layout engine.</summary>
         <value>The <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> for the control's contents.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -743,6 +747,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Paints the background of the control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnParentChanged">
@@ -921,7 +926,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event.  
   
@@ -1199,5 +1204,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Join">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.ToolStrip" /> to a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

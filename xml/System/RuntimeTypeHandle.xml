@@ -38,7 +38,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates how to obtain a <xref:System.RuntimeTypeHandle>from a type or from an object, and how to turn the handle back into a type.  
+ The following example demonstrates how to obtain a <xref:System.RuntimeTypeHandle> from a type or from an object, and how to turn the handle back into a type.  
   
  [!code-cpp[Type_GetTypeHandle#1](~/samples/snippets/cpp/VS_Snippets_CLR/Type_GetTypeHandle/CPP/Type_GetTypeHandle.cpp#1)]
  [!code-csharp[Type_GetTypeHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/Type_GetTypeHandle/CS/type_gettypehandle.cs#1)]
@@ -233,7 +233,7 @@
 ## Remarks  
  The `context` parameter is reserved; it does not currently participate in this operation.  
   
- For more information about the serialization operation performed by this method, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%28System.String%2CSystem.Object%2CSystem.Type%29?displayProperty=fullName> method.  
+ For more information about the serialization operation performed by this method, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%28System.String%2CSystem.Object%2CSystem.Type%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -285,7 +285,7 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -330,7 +330,7 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>>.]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=nameWithType>>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -375,7 +375,7 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -420,7 +420,7 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -452,5 +452,44 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Equality">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether an object and a <see cref="T:System.RuntimeTypeHandle" /> structure are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether two <see cref="T:System.RuntimeTypeHandle" /> structures are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Inequality">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether an object and a <see cref="T:System.RuntimeTypeHandle" /> structure are not equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

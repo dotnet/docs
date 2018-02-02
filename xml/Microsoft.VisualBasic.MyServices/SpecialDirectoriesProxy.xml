@@ -53,6 +53,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
   </Docs>
   <Members>
     <Member MemberName="AllUsersApplicationData">
@@ -89,6 +90,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="CurrentUserApplicationData">
@@ -125,6 +127,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -161,6 +164,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -197,6 +201,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="MyMusic">
@@ -233,6 +238,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -269,6 +275,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -305,6 +312,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -341,6 +349,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="Temp">
@@ -377,6 +386,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
   </Members>

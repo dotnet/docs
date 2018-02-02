@@ -10,17 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data contracts [WCF], known types"
   - "KnownTypeAttribute [WCF]"
   - "KnownTypes [WCF]"
 ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
 caps.latest.revision: 42
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Contract Known Types
 The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to specify, in advance, the types that should be included for consideration during deserialization. For a working example, see the [Known Types](../../../../docs/framework/wcf/samples/known-types.md) example.  
@@ -174,11 +176,11 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  In the preceding configuration file a data contract type called `MyCompany.Library.Shape` is declared to have `MyCompany.Library.Circle` as a known type.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.KnownTypeAttribute>   
- <xref:System.Collections.Hashtable>   
- <xref:System.Object>   
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A>   
- [Known Types](../../../../docs/framework/wcf/samples/known-types.md)   
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)   
+ <xref:System.Runtime.Serialization.KnownTypeAttribute>  
+ <xref:System.Collections.Hashtable>  
+ <xref:System.Object>  
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A>  
+ [Known Types](../../../../docs/framework/wcf/samples/known-types.md)  
+ [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
  [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)

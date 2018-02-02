@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlNodeQueue" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -134,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although it is not specifically a service provider, you can use the <xref:System.Xaml.XamlReader> delegate that is returned from <xref:System.Xaml.XamlNodeList.GetReader%2A?displayProperty=fullName> in a service mode, where you cast it to <xref:System.Xaml.IXamlIndexingReader>. In that mode you can get and set the index values for <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A?displayProperty=fullName>. In this manner, the set mode enables skipping nodes without using the standard `Read` and `Skip`.  
+ Although it is not specifically a service provider, you can use the <xref:System.Xaml.XamlReader> delegate that is returned from <xref:System.Xaml.XamlNodeList.GetReader%2A?displayProperty=nameWithType> in a service mode, where you cast it to <xref:System.Xaml.IXamlIndexingReader>. In that mode you can get and set the index values for <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A?displayProperty=nameWithType>. In this manner, the set mode enables skipping nodes without using the standard `Read` and `Skip`.  
   
  ]]></format>
         </remarks>
@@ -161,7 +162,17 @@
         <summary>Gets the associated XAML writer.</summary>
         <value>The associated XAML writer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xaml.XamlObjectWriter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlNodeList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

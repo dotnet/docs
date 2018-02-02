@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCacheItem::CreateStream"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateStream method [.NET Framework fusion]"
   - "IAsssemblyCacheItem::CreateStream method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyCacheItem::CreateStream Method
 Creates a stream with the specified name and format.  

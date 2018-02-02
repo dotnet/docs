@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # The .NET Framework and Out-of-Band Releases
 The .NET Framework is evolving to accommodate different platforms such as Windows Phone and Windows Store apps as well as traditional desktop and web apps, and to maximize code reuse. In addition to our regular .NET Framework releases, we release new features out of band (OOB) to improve cross-platform development or to introduce new functionality. This topic discusses the future direction of the .NET Framework and its OOB releases.  
@@ -24,7 +26,7 @@ The .NET Framework is evolving to accommodate different platforms such as Window
  When you use an OOB feature in your app, your users do not have to install the latest version of the .NET Framework to run your app, because the OOB assemblies deploy with your app package.  
   
 ## How OOB packages are distributed  
- OOB releases for core common language runtime (CLR) components are delivered through the [NuGet Package Manager](http://nuget.codeplex.com/), which is an open source Visual Studio extension. NuGet enables you to browse and add libraries to your .NET Framework projects easily from the Solution Explorer in Visual Studio. NuGet is included with all editions of Visual Studio starting with Visual Studio 2012. To see if NuGet is installed, look for **Library Package Manager** on the Visual Studio **Tools** menu. If it’s not installed:  
+OOB releases for core common language runtime (CLR) components are delivered through the [NuGet](https://www.nuget.org/), which is a package manager for .NET. NuGet enables you to browse and add libraries to your .NET Framework projects easily from the Solution Explorer in Visual Studio. NuGet is included with all editions of Visual Studio starting with Visual Studio 2012. To see if NuGet is installed, look for **Library Package Manager** on the Visual Studio **Tools** menu. If it’s not installed:  
   
 1.  On the Visual Studio menu bar, choose **Tools**, **Extensions and Updates** (in Visual Studio 2010, choose **Extension Manager**).  
   
@@ -56,7 +58,7 @@ The .NET Framework is evolving to accommodate different platforms such as Window
   
  To find both prerelease and stable packages, choose **Include Prerelease** in the NuGet Package Manager.  
   
- If you want to be notified of stable package releases, subscribe to the [the .NET Framework feed](https://nuget.org/api/v2/curated-feeds/dotnetframework/Packages/).  
+ If you want to be notified of stable package releases, subscribe to [the .NET Framework feed](https://nuget.org/api/v2/curated-feeds/dotnetframework/Packages/).  
   
 ## See Also  
  [Getting Started](../../../docs/framework/get-started/index.md)

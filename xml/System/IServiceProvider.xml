@@ -27,10 +27,11 @@
   
  The <xref:System.IServiceProvider.GetService%2A> method of this interface obtains the object that provides the service.  
   
- The<xref:System.IServiceProvider> interface is implemented by a number of types, including <xref:System.Web.HttpContext?displayProperty=fullName>, <xref:System.ComponentModel.LicenseContext?displayProperty=fullName>, <xref:System.ComponentModel.MarshalByValueComponent?displayProperty=fullName>, and <xref:System.ComponentModel.Design.ServiceContainer?displayProperty=fullName>.  
+ The <xref:System.IServiceProvider> interface is implemented by a number of types, including <xref:System.Web.HttpContext?displayProperty=nameWithType>, <xref:System.ComponentModel.LicenseContext?displayProperty=nameWithType>, <xref:System.ComponentModel.MarshalByValueComponent?displayProperty=nameWithType>, and <xref:System.ComponentModel.Design.ServiceContainer?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Type" />
   </Docs>
   <Members>
     <Member MemberName="GetService">

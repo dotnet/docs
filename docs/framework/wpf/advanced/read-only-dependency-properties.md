@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "dependency properties, read-only"
-  - "read-only dependency properties"
+  - "dependency properties [WPF], read-only"
+  - "read-only dependency properties [WPF]"
 ms.assetid: f23d6ec9-3780-4c09-a2ff-b2f0a2deddf1
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Read-Only Dependency Properties
 This topic describes read-only dependency properties, including existing read-only dependency properties and the scenarios and techniques for creating a custom read-only dependency property.  
@@ -50,6 +52,6 @@ This topic describes read-only dependency properties, including existing read-on
  Because the <xref:System.Windows.DependencyPropertyKey> is private, and is not propagated by the property system outside of your code, a read-only dependency property does have better setting security than a read-write dependency property. For a read-write dependency property, the identifying field is explicitly or implicitly public and thus the property is widely settable. For more specifics, see [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md).  
   
 ## See Also  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

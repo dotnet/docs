@@ -35,13 +35,13 @@
 ## Examples  
  The following example demonstrates how to populate the <xref:System.Web.UI.WebControls.WizardStepCollection> collection using declarative syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/CS/wizardstepcollectiondeclarecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/VB/wizardstepcollectiondeclarevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/CS/wizardstepcollectiondeclarecs.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/VB/wizardstepcollectiondeclarevb.aspx#3)]  
   
  The following example demonstrates how to programmatically populate a <xref:System.Web.UI.WebControls.WizardStepCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/CS/wizardstepcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/VB/wizardstepcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/CS/wizardstepcollectioncs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/VB/wizardstepcollectionvb.aspx#1)]  
   
  The following is the code-behind file for the Web page in the preceding example.  
   
@@ -50,6 +50,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+    <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+    <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.UI.WebControls.Login" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -81,12 +86,15 @@
 ## Examples  
  The following code example demonstrates programmatically creating a <xref:System.Web.UI.WebControls.Wizard> control and using the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase>-derived <xref:System.Web.UI.WebControls.WizardStep> objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.AddAt(System.Int32,System.Web.UI.WebControls.WizardStepBase)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -120,6 +128,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.Add(System.Web.UI.WebControls.WizardStepBase)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -148,6 +159,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -180,6 +193,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="wizardStep" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -215,11 +230,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.CopyTo%2A> method to copy the <xref:System.Web.UI.WebControls.WizardStepBase> objects from the collection to an array. The array is then iterated through to display the <xref:System.Web.UI.Control.ID%2A> property of each <xref:System.Web.UI.WebControls.WizardStepBase>-derived object. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/CS/wizardstepcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/VB/wizardstepcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/CS/wizardstepcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/VB/wizardstepcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -245,6 +262,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -264,6 +284,9 @@
         <summary>Returns an <see cref="T:System.Collections.IEnumerator" />-implemented object that can be used to iterate through the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in the collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" />-implemented object that contains all the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.CopyTo(System.Web.UI.WebControls.WizardStepBase[],System.Int32)" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -294,6 +317,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -332,11 +357,15 @@
 ## Examples  
  The following code example demonstrates programmatically creating a <xref:System.Web.UI.WebControls.Wizard> control and using the <xref:System.Web.UI.WebControls.WizardStepCollection.Insert%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/CS/wizardstepcollectioninsertcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/VB/wizardstepcollectioninsertvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/CS/wizardstepcollectioninsertcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/VB/wizardstepcollectioninsertvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.Add(System.Web.UI.WebControls.WizardStepBase)" />
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.AddAt(System.Int32,System.Web.UI.WebControls.WizardStepBase)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -356,6 +385,9 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection can be modified; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -384,6 +416,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -413,6 +447,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -444,12 +480,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.Remove%2A> method to remove a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from the <xref:System.Web.UI.WebControls.WizardStepCollection> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/CS/wizardstepcollectionremovecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/VB/wizardstepcollectionremovevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/CS/wizardstepcollectionremovecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/VB/wizardstepcollectionremovevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -478,6 +517,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="M:System.Web.UI.WebControls.WizardStepCollection.Remove(System.Web.UI.WebControls.WizardStepBase)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -505,6 +547,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

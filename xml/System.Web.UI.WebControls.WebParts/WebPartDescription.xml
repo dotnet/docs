@@ -48,8 +48,8 @@
   
  The first part of the code example is the user control. The source code for the user control comes from another topic. For more details about the user control, see the topic [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartDescription_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/DisplayModeMenuCS.ascx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartDescription_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/DisplayModeMenuVB.ascx#7)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartDescription_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/DisplayModeMenuCS.ascx#7)]
+ [!code-aspx-vb[WebParts_WebPartDescription_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/DisplayModeMenuVB.ascx#7)]  
   
  The second part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the approach of dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
@@ -58,13 +58,15 @@
   
  The third part of the code example is the Web page. Near the top are two `Register` directives: one that registers the user control, and the other to register the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control whose source file is located in the App_Code folder of your site. The page contains an `<asp:catalogzone>` element, which in turn contains declarative references to two controls: the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`, and a <xref:System.Web.UI.WebControls.BulletedList> Web server control that will be treated as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control will wrap it with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object. Note that in the code for the `Button1_Click` method, the available <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects for the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in the catalog are retrieved using the <xref:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions%2A> method, and then the description details are all written out to the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartDescription_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/wpDescriptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartDescription_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/wpDescriptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartDescription_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/wpDescriptioncs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartDescription_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/wpDescriptionvb.aspx#1)]  
   
  After you load the page in a browser, use the **Display Mode** drop-down list control and select **Catalog** to change the page to catalog display mode. In the catalog, you should see the two controls that are available to be added to the page. Click the **List WebPartDescription Information** button, and the code writes out the values of all available <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects to the page. This demonstrates that you can retrieve description details for <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a catalog without having to create instances of the controls themselves.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDescriptionCollection" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -82,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -162,7 +165,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A?displayProperty=fullName> property. If that property is set on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, then the property in the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object will also have a value.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A?displayProperty=nameWithType> property. If that property is set on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, then the property in the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object will also have a value.  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls. If the control has an icon assigned to it in the property value, the icon appears in the catalog next to the control.  
   
@@ -178,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -199,7 +203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A?displayProperty=fullName> property. If that property is set on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, then the property in the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object will also have a value.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A?displayProperty=nameWithType> property. If that property is set on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, then the property in the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object will also have a value.  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls. If the control has a description assigned to it, the description appears in the catalog as a ToolTip on the control.  
   
@@ -215,6 +219,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -236,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property cannot be `null`; it must always have a value. The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property corresponds directly to the <xref:System.Web.UI.Control.ID%2A?displayProperty=fullName> property.  
+ The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property cannot be `null`; it must always have a value. The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property corresponds directly to the <xref:System.Web.UI.Control.ID%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls.  
   
@@ -252,6 +257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ID" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -273,7 +279,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A?displayProperty=fullName> property. Whatever the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPart> control has for its <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property, that becomes the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property; otherwise, the title is a calculated value.  
+ The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A?displayProperty=nameWithType> property. Whatever the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPart> control has for its <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property, that becomes the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property; otherwise, the title is a calculated value.  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls. Whatever title is assigned to a <xref:System.Web.UI.WebControls.WebParts.WebPart> control appears next to the control in the catalog.  
   
@@ -289,6 +295,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
       </Docs>
     </Member>
   </Members>

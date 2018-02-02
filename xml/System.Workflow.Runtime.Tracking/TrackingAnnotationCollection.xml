@@ -28,7 +28,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- Annotations are `strings` that you define that contain information to associate with certain kinds of tracking data. For more information, see <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.Annotations%2A?displayProperty=fullName>, or <xref:System.Workflow.Runtime.Tracking.TrackingDataItem.Annotations%2A?displayProperty=fullName>.  
+ Annotations are `strings` that you define that contain information to associate with certain kinds of tracking data. For more information, see <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Annotations%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Annotations%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Annotations%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.Annotations%2A?displayProperty=nameWithType>, or <xref:System.Workflow.Runtime.Tracking.TrackingDataItem.Annotations%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -83,5 +83,14 @@
           <paramref name="annotations" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

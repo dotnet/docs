@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cf9cf6d9-4b05-43e9-ac7b-6cefbfcd6d4e
 caps.latest.revision: 6
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # SQL Server Express Security
 Microsoft SQL Server Express Edition (SQL Server Express) is based on Microsoft SQL Server, and supports most of the features of the database engine. It is designed so that nonessential features and network connectivity are off by default. This reduces the surface area available for attack by a malicious user.  
@@ -44,6 +46,6 @@ Microsoft SQL Server Express Edition (SQL Server Express) is based on Microsoft 
 |[SQL Server Express User Instances](../../../../../docs/framework/data/adonet/sql/sql-server-express-user-instances.md)|Describes user instance capabilities in an ADO.NET application. Provides information about how to enable a user instance, connect to a user instance using a <xref:System.Data.SqlClient.SqlConnection>, user instance lifetime, and user instance scenarios.|  
   
 ## See Also  
- [SQL Server Security](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)   
- [SQL Server Express User Instances](../../../../../docs/framework/data/adonet/sql/sql-server-express-user-instances.md)   
+ [SQL Server Security](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
+ [SQL Server Express User Instances](../../../../../docs/framework/data/adonet/sql/sql-server-express-user-instances.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

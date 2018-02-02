@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -168,6 +169,7 @@
         <summary>Gets or sets the custom attributes for the parameter declaration.</summary>
         <value>An object that indicates the custom attributes.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAttributeDeclarationCollection" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -190,6 +192,7 @@
         <summary>Gets or sets the direction of the field.</summary>
         <value>An object that indicates the direction of the field.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.FieldDirection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -236,5 +239,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

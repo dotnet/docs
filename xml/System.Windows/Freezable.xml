@@ -157,6 +157,8 @@
         <block subset="none" type="overrides">
           <para>This method uses <see cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" /> to produce the clone. To modify the behavior of this method in a derived class, override the <see cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" /> method.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -216,6 +218,7 @@
   
 -   Only property base values are copied, not current animated values.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -257,6 +260,7 @@
         <block subset="none" type="overrides">
           <para>This method uses the <see cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" /> method to produce the clone; <see cref="T:System.Windows.Freezable" /> implementers who override <see cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" /> must ensure that the copy is not frozen on creation.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -312,6 +316,7 @@
   
 -   The copy itself is not frozen.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -338,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -375,6 +381,7 @@
         <block subset="none" type="overrides">
           <para>Every <see cref="T:System.Windows.Freezable" /> derived class must implement this method. A typical implementation is to simply call the default constructor and return the result.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CreateInstance" />
       </Docs>
     </Member>
     <Member MemberName="Freeze">
@@ -404,6 +411,7 @@
         <block subset="none" type="overrides">
           <para>This method uses the <see cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" /> method to make the <see cref="T:System.Windows.Freezable" /> unmodifiable. To modify freezing behavior, override the <see cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Freeze">
@@ -442,6 +450,7 @@
         <block subset="none" type="overrides">
           <para>This method uses the <see cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" /> method to make the <see cref="T:System.Windows.Freezable" /> unmodifiable. To modify freezing behavior, override the <see cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FreezeCore">
@@ -478,6 +487,8 @@
   
  A typical implementation would call base, then call the static <see cref="M:System.Windows.Freezable.Freeze(System.Windows.Freezable,System.Boolean)" /> method on all <see cref="T:System.Windows.Freezable" /> typed properties that the class contains, returning <see langword="true" /> only if all properties were frozen (or could have been frozen, in the case of specifying <see langword="true" /> for <paramref name="isChecking" />).</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.Freeze" />
+        <altmember cref="P:System.Windows.Freezable.CanFreeze" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozen">
@@ -521,6 +532,7 @@
         <block subset="none" type="overrides">
           <para>This method uses the virtual <see cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" /> method to produce the clone.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -566,6 +578,7 @@
   
  You do not need to <see cref="M:System.Windows.Freezable.Freeze" /> values as they are copied.  The result is frozen by <see cref="M:System.Windows.Freezable.GetAsFrozen" /> before being returned.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.GetAsFrozen" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozen">
@@ -608,6 +621,8 @@
         <block subset="none" type="overrides">
           <para>This method uses the virtual <see cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" /> method to produce the clone.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -653,6 +668,7 @@
   
  You do not need to <see cref="M:System.Windows.Freezable.Freeze" /> values as they are copied.  The result is frozen by <see cref="M:System.Windows.Freezable.GetAsFrozen" /> before being returned.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="IsFrozen">
@@ -709,6 +725,7 @@
         <block subset="none" type="overrides">
           <para>When you implement a class that derives from <see cref="T:System.Windows.Freezable" />, you may override this method to perform tasks.</para>
         </block>
+        <altmember cref="E:System.Windows.Freezable.Changed" />
       </Docs>
     </Member>
     <Member MemberName="OnFreezablePropertyChanged">
@@ -817,6 +834,7 @@
   
  This method effectively does nothing more than call <see cref="M:System.Windows.Threading.DispatcherObject.VerifyAccess" />.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.WritePreamble" />
       </Docs>
     </Member>
     <Member MemberName="WritePostscript">
@@ -867,7 +885,26 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from <see cref="T:System.Windows.Freezable" /> should call <see cref="M:System.Windows.Freezable.WritePreamble" /> before attempting to write to any members that are not dependency properties. If you call <see cref="M:System.Windows.Freezable.WritePreamble" /> in an [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)], you can omit a call to <see cref="M:System.Windows.Freezable.ReadPreamble" />.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.ReadPreamble" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Freeze">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes a <see cref="T:System.Windows.Freezable" /> object unmodifiable and sets its <see cref="P:System.Windows.Freezable.IsFrozen" /> property to <see langword="true" />, or tests whether a <see cref="T:System.Windows.Freezable" /> object can be made unmodifiable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnFreezablePropertyChanged">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Ensures that appropriate context pointers are established for a data member of type <see cref="T:System.Windows.DependencyObject" /> that has just been modified.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

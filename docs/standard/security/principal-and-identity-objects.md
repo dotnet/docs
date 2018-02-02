@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "WindowsIdentity objects"
   - "GenericIdentity objects"
@@ -27,6 +22,9 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Principal and Identity Objects
 Managed code can discover the identity or the role of a principal through a <xref:System.Security.Principal.IPrincipal> object, which contains a reference to an <xref:System.Security.Principal.IIdentity> object. It might be helpful to compare identity and principal objects to familiar concepts like user and group accounts. In most network environments, user accounts represent people or programs, while group accounts represent certain categories of users and the rights they possess. Similarly, .NET Framework identity objects represent users, while roles represent memberships and security contexts. In the .NET Framework, the principal object encapsulates both an identity object and a role. .NET Framework applications grant rights to the principal based on its identity or, more commonly, its role membership.  
@@ -45,14 +43,14 @@ Managed code can discover the identity or the role of a principal through a <xre
   
  A configurable application domain-specific policy defines the rules for deciding what type of **Principal** object to associate with a new application domain. Where security policy permits, the runtime can create **Principal** and **Identity** objects that reflect the operating system token associated with the current thread of execution. By default, the runtime uses **Principal** and **Identity** objects that represent unauthenticated users. The runtime does not create these default **Principal** and **Identity** objects until the code attempts to access them.  
   
- Trusted code that creates an application domain can set the application domain policy that controls construction of the default **Principal** and **Identity** objects. This application domain-specific policy applies to all execution threads in that application domain. An unmanaged, trusted host inherently has the ability to set this policy, but managed code that sets this policy must have the <xref:System.Security.Permissions.SecurityPermission?displayProperty=fullName> for controlling domain policy.  
+ Trusted code that creates an application domain can set the application domain policy that controls construction of the default **Principal** and **Identity** objects. This application domain-specific policy applies to all execution threads in that application domain. An unmanaged, trusted host inherently has the ability to set this policy, but managed code that sets this policy must have the <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType> for controlling domain policy.  
   
  When transmitting a **Principal** object across application domains but within the same process (and therefore on the same computer), the remoting infrastructure copies a reference to the **Principal** object associated with the caller's context to the callee's context.  
   
 ## See Also  
- [How to: Create a WindowsPrincipal Object](../../../docs/standard/security/how-to-create-a-windowsprincipal-object.md)   
- [How to: Create GenericPrincipal and GenericIdentity Objects](../../../docs/standard/security/how-to-create-genericprincipal-and-genericidentity-objects.md)   
- [Replacing a Principal Object](../../../docs/standard/security/replacing-a-principal-object.md)   
- [Impersonating and Reverting](../../../docs/standard/security/impersonating-and-reverting.md)   
- [Role-Based Security](../../../docs/standard/security/role-based-security.md)   
+ [How to: Create a WindowsPrincipal Object](../../../docs/standard/security/how-to-create-a-windowsprincipal-object.md)  
+ [How to: Create GenericPrincipal and GenericIdentity Objects](../../../docs/standard/security/how-to-create-genericprincipal-and-genericidentity-objects.md)  
+ [Replacing a Principal Object](../../../docs/standard/security/replacing-a-principal-object.md)  
+ [Impersonating and Reverting](../../../docs/standard/security/impersonating-and-reverting.md)  
+ [Role-Based Security](../../../docs/standard/security/role-based-security.md)  
  [Key Security Concepts](../../../docs/standard/security/key-security-concepts.md)

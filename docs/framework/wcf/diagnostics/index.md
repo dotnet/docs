@@ -18,9 +18,11 @@ helpviewer_keywords:
   - "WCF, administration"
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Administration and Diagnostics
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich set of functionalities that can help you monitor the different stages of an application’s life. For example, you can use configuration to set up services and clients at deployment. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes a large set of performance counters to help you gauge your application's performance. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also exposes inspection data of a service at runtime through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider. When the application experiences a failure or starts acting improperly, you can use the Event Log to see if anything significant has occurred. You can also use Message Logging and Tracing to see what events are happening end-to-end in your application. These features assist both developers and IT professionals to troubleshoot an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application when it is not behaving correctly.  
@@ -43,18 +45,18 @@ manager: "erikre"
   
 -   WMI enables you to find out what services are listening on a machine and the bindings that are in use. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md) topic.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also provides several GUI and command line tools to make it easier for you to create, deploy, and manage [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Windows Communication Foundation Tools](../../../../docs/framework/wcf/tools.md). For example, you can use the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md) to create and edit [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration settings using a wizard, instead of editing XML directly. You can also use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) to view, group, and filter trace messages so that you can diagnose, repair, and verify issues with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also provides several GUI and command line tools to make it easier for you to create, deploy, and manage [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Windows Communication Foundation Tools](../../../../docs/framework/wcf/tools.md). For example, you can use the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md) to create and edit [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration settings using a wizard, instead of editing XML directly. You can also use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) to view, group, and filter trace messages so that you can diagnose, repair, and verify issues with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.  
   
 ## See Also  
- [Configuring Your Application](../../../../docs/framework/wcf/diagnostics/configuring-your-application.md)   
- [Deploying Services](../../../../docs/framework/wcf/diagnostics/deploying-services.md)   
- [Exceptions Reference](../../../../docs/framework/wcf/diagnostics/exceptions-reference/index.md)   
- [Event Logging](../../../../docs/framework/wcf/diagnostics/event-logging/index.md)   
- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)   
- [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)   
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)   
- [ServiceModel Registration Tool](../../../../docs/framework/wcf/diagnostics/servicemodel-registration-tool.md)   
- [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md)   
- [Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)   
+ [Configuring Your Application](../../../../docs/framework/wcf/diagnostics/configuring-your-application.md)  
+ [Deploying Services](../../../../docs/framework/wcf/diagnostics/deploying-services.md)  
+ [Exceptions Reference](../../../../docs/framework/wcf/diagnostics/exceptions-reference/index.md)  
+ [Event Logging](../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
+ [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)  
+ [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)  
+ [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
+ [ServiceModel Registration Tool](../../../../docs/framework/wcf/diagnostics/servicemodel-registration-tool.md)  
+ [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md)  
+ [Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)  
  [Windows Communication Foundation Tools](../../../../docs/framework/wcf/tools.md)

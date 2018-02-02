@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used by <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=fullName> properties to get the paper source trays that are available on the printer and to set the paper source for a page, respectively.  
+ This class is used by <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A?displayProperty=nameWithType> and <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=nameWithType> properties to get the paper source trays that are available on the printer and to set the paper source for a page, respectively.  
   
  For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
   
@@ -31,6 +31,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PaperSourceKind" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
+    <altmember cref="P:System.Drawing.Printing.PageSettings.PaperSource" />
+    <altmember cref="P:System.Windows.Forms.ListControl.DisplayMember" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +58,8 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Drawing.Printing.PaperSource.Kind%2A>|<xref:System.Drawing.Printing.PaperSourceKind?displayProperty=fullName>|  
-|<xref:System.Drawing.Printing.PaperSource.SourceName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
+|<xref:System.Drawing.Printing.PaperSource.Kind%2A>|<xref:System.Drawing.Printing.PaperSourceKind.Custom?displayProperty=nameWithType>|  
+|<xref:System.Drawing.Printing.PaperSource.SourceName%2A>|<xref:System.String.Empty?displayProperty=nameWithType>|  
   
  ]]></format>
         </remarks>
@@ -76,6 +81,7 @@
         <summary>Gets the paper source.</summary>
         <value>One of the <see cref="T:System.Drawing.Printing.PaperSourceKind" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSourceKind" />
       </Docs>
     </Member>
     <Member MemberName="RawKind">
@@ -152,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSourceKind" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

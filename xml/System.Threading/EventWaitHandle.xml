@@ -32,18 +32,18 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.EventWaitHandle> class allows threads to communicate with each other by signaling. Typically, one or more threads block on an <xref:System.Threading.EventWaitHandle> until an unblocked thread calls the <xref:System.Threading.EventWaitHandle.Set%2A> method, releasing one or more of the blocked threads. A thread can signal an <xref:System.Threading.EventWaitHandle> and then block on it, by calling the `static` (`Shared` in Visual Basic) <xref:System.Threading.WaitHandle.SignalAndWait%2A?displayProperty=fullName> method.  
+ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate with each other by signaling. Typically, one or more threads block on an <xref:System.Threading.EventWaitHandle> until an unblocked thread calls the <xref:System.Threading.EventWaitHandle.Set%2A> method, releasing one or more of the blocked threads. A thread can signal an <xref:System.Threading.EventWaitHandle> and then block on it, by calling the `static` (`Shared` in Visual Basic) <xref:System.Threading.WaitHandle.SignalAndWait%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  The <xref:System.Threading.EventWaitHandle> class provides access to named system synchronization events.  
   
- The behavior of an <xref:System.Threading.EventWaitHandle> that has been signaled depends on its reset mode. An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=fullName> flag resets automatically when signaled, after releasing a single waiting thread. An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=fullName> flag remains signaled until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.  
+ The behavior of an <xref:System.Threading.EventWaitHandle> that has been signaled depends on its reset mode. An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag resets automatically when signaled, after releasing a single waiting thread. An <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag remains signaled until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.  
   
  Automatic reset events provide exclusive access to a resource. If an automatic reset event is signaled when no threads are waiting, it remains signaled until a thread attempts to wait on it. The event releases the thread and immediately resets, blocking subsequent threads.  
   
  Manual reset events are like gates. When the event is not signaled, threads that wait on it will block. When the event is signaled, all waiting threads are released, and the event remains signaled (that is, subsequent waits do not block) until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called. Manual reset events are useful when one thread must complete an activity before other threads can proceed.  
   
- <xref:System.Threading.EventWaitHandle> objects can be used with the `static`(`Shared` in Visual Basic) <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=fullName> and <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=fullName> methods.  
+ <xref:System.Threading.EventWaitHandle> objects can be used with the `static`(`Shared` in Visual Basic) <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=nameWithType> and <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType> methods.  
   
  For more information about thread synchronization mechanisms, see [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](~/docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md).  
   
@@ -52,7 +52,7 @@
 ## Examples  
  The following code example uses the <xref:System.Threading.WaitHandle.SignalAndWait%28System.Threading.WaitHandle%2CSystem.Threading.WaitHandle%29> method overload to allow the main thread to signal a blocked thread and then wait until the thread finishes a task.  
   
- The example starts five threads and allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=fullName> flag, then releases one thread each time the user presses the ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=fullName> flag.  
+ The example starts five threads and allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag, then releases one thread each time the user presses the ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag.  
   
  [!code-cpp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CS/source.cs#1)]
@@ -61,6 +61,9 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.WaitHandle" />
+    <altmember cref="T:System.Threading.AutoResetEvent" />
+    <altmember cref="T:System.Threading.ManualResetEvent" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,7 +111,7 @@
 ## Examples  
  The following code example uses the <xref:System.Threading.WaitHandle.SignalAndWait%28System.Threading.WaitHandle%2CSystem.Threading.WaitHandle%29> method overload to allow the main thread to signal a blocked thread and then wait until the thread finishes a task.  
   
- The example starts five threads and allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=fullName> flag, then releases one thread each time the user presses ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=fullName> flag.  
+ The example starts five threads and allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag, then releases one thread each time the user presses ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag.  
   
  [!code-cpp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CS/source.cs#1)]
@@ -179,7 +182,7 @@
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventWaitHandle (bool initialState, System.Threading.EventResetMode mode, string name, out bool createdNew);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, bool createdNew) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, [out] bool&amp; createdNew) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -235,7 +238,7 @@
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventWaitHandle (bool initialState, System.Threading.EventResetMode mode, string name, out bool createdNew, System.Security.AccessControl.EventWaitHandleSecurity eventSecurity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, bool createdNew, class System.Security.AccessControl.EventWaitHandleSecurity eventSecurity) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, [out] bool&amp; createdNew, class System.Security.AccessControl.EventWaitHandleSecurity eventSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@,System.Security.AccessControl.EventWaitHandleSecurity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -331,9 +334,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.EventWaitHandle.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>, <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>, and <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>.  
+ The <xref:System.Threading.EventWaitHandle.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType>.  
   
- The user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag.  
+ The user must have <xref:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions?displayProperty=nameWithType> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions?displayProperty=nameWithType> flag.  
   
    
   
@@ -404,9 +407,9 @@
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.EventWaitHandle> object, even though the objects that are returned represent the same named system event.  
   
- This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> and <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> rights, combined by using the bitwise OR operation.  
+ This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> and <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> rights, combined by using the bitwise OR operation.  
   
- Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
    
   
@@ -470,7 +473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
  The <xref:System.Threading.EventWaitHandle.OpenExisting%2A> method tries to open an existing named system event. If the system event does not exist, this method throws an exception instead of creating the system event. To create the system event when it does not already exist, use one of the <xref:System.Threading.EventWaitHandle.%23ctor%2A> constructors that has a `name` parameter.  
   
@@ -581,19 +584,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For an <xref:System.Threading.EventWaitHandle> with <xref:System.Threading.EventResetMode.AutoReset?displayProperty=fullName> (including <xref:System.Threading.AutoResetEvent>), the <xref:System.Threading.EventWaitHandle.Set%2A> method releases a single thread. If there are no waiting threads, the wait handle remains signaled until a thread attempts to wait on it, or until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.  
+ For an <xref:System.Threading.EventWaitHandle> with <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> (including <xref:System.Threading.AutoResetEvent>), the <xref:System.Threading.EventWaitHandle.Set%2A> method releases a single thread. If there are no waiting threads, the wait handle remains signaled until a thread attempts to wait on it, or until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.  
   
 > [!IMPORTANT]
->  There is no guarantee that every call to the <xref:System.Threading.EventWaitHandle.Set%2A> method will release a thread from an <xref:System.Threading.EventWaitHandle> whose reset mode is <xref:System.Threading.EventResetMode.AutoReset?displayProperty=fullName>. If two calls are too close together, so that the second call occurs before a thread has been released, only one thread is released. It is as if the second call did not happen. Also, if <xref:System.Threading.EventWaitHandle.Set%2A> is called when there are no threads waiting and the <xref:System.Threading.EventWaitHandle> is already signaled, the call has no effect.  
+>  There is no guarantee that every call to the <xref:System.Threading.EventWaitHandle.Set%2A> method will release a thread from an <xref:System.Threading.EventWaitHandle> whose reset mode is <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType>. If two calls are too close together, so that the second call occurs before a thread has been released, only one thread is released. It is as if the second call did not happen. Also, if <xref:System.Threading.EventWaitHandle.Set%2A> is called when there are no threads waiting and the <xref:System.Threading.EventWaitHandle> is already signaled, the call has no effect.  
   
- For an <xref:System.Threading.EventWaitHandle> with <xref:System.Threading.EventResetMode.ManualReset?displayProperty=fullName> (including <xref:System.Threading.ManualResetEvent>), calling the <xref:System.Threading.EventWaitHandle.Set%2A> method leaves the wait handle in a signaled state until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.  
+ For an <xref:System.Threading.EventWaitHandle> with <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> (including <xref:System.Threading.ManualResetEvent>), calling the <xref:System.Threading.EventWaitHandle.Set%2A> method leaves the wait handle in a signaled state until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.  
   
    
   
 ## Examples  
  The following code example uses the <xref:System.Threading.WaitHandle.SignalAndWait%28System.Threading.WaitHandle%2CSystem.Threading.WaitHandle%29> method overload to allow the main thread to signal a blocked thread and then wait until the thread finishes a task.  
   
- The example starts five threads and allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=fullName> flag, then releases one thread each time the user presses the ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=fullName> flag.  
+ The example starts five threads and allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag, then releases one thread each time the user presses the ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag.  
   
  [!code-cpp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CS/source.cs#1)]
@@ -631,7 +634,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag.  
+ The user must have <xref:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions?displayProperty=nameWithType> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions?displayProperty=nameWithType> flag.  
   
    
   
@@ -663,7 +666,7 @@
     </Member>
     <Member MemberName="TryOpenExisting">
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, out System.Threading.EventWaitHandle result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, class System.Threading.EventWaitHandle result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, [out] class System.Threading.EventWaitHandle&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Threading.EventWaitHandle@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -707,7 +710,7 @@
   
  If you are uncertain whether a named synchronization event exists, use this method overload instead of the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%29> method overload, which throws an exception if the synchronization event does not exist.  
   
- This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.TryOpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%2CSystem.Threading.EventWaitHandle%40%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> and <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.TryOpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%2CSystem.Threading.EventWaitHandle%40%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> and <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.EventWaitHandle> object, even though the objects that are returned represent the same named system event.  
   
@@ -728,7 +731,7 @@
     </Member>
     <Member MemberName="TryOpenExisting">
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, System.Security.AccessControl.EventWaitHandleRights rights, out System.Threading.EventWaitHandle result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, valuetype System.Security.AccessControl.EventWaitHandleRights rights, class System.Threading.EventWaitHandle result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, valuetype System.Security.AccessControl.EventWaitHandleRights rights, [out] class System.Threading.EventWaitHandle&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Threading.EventWaitHandle@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -764,7 +767,7 @@
   
  If you are uncertain whether a named synchronization event exists, use this method overload instead of the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%29> method overload, which throws an exception if the synchronization event does not exist.  
   
- The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.EventWaitHandle> object, even though the objects that are returned represent the same named system event.  
   
@@ -783,5 +786,38 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryOpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named synchronization event, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.EventWaitHandle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named synchronization event, if it already exists.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

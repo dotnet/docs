@@ -31,7 +31,7 @@
   </Docs>
   <Members>
     <Member MemberName="CallByName">
-      <MemberSignature Language="C#" Value="public static object CallByName (object Instance, string MethodName, Microsoft.VisualBasic.CallType UseCallType, object[] Arguments);" />
+      <MemberSignature Language="C#" Value="public static object CallByName (object Instance, string MethodName, Microsoft.VisualBasic.CallType UseCallType, params object[] Arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CallByName(object Instance, string MethodName, valuetype Microsoft.VisualBasic.CallType UseCallType, object[] Arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
       <MemberType>Method</MemberType>

@@ -28,7 +28,7 @@
 ## Examples  
  This example demonstrates how to specify values declaratively for attributes of the `add` element within the `httpModules` section, which can also be accessed as members of the <xref:System.Web.Configuration.HttpModulesSection> class.  
   
- The following configuration file example shows how to specify values declaratively for the [httpModules Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/5e28e921-ab9b-4584-a2f9-0f9aa08372e3) section.  
+ The following configuration file example shows how to specify values declaratively for the [httpModules Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/5e28e921-ab9b-4584-a2f9-0f9aa08372e3) section.  
   
 ```  
 <httpModules>  
@@ -45,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.HttpModuleActionCollection" />
+    <altmember cref="T:System.Web.Configuration.HttpModuleAction" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationAllowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Modules">
@@ -105,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpModuleActionCollection" />
+        <altmember cref="T:System.Web.Configuration.HttpModuleAction" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

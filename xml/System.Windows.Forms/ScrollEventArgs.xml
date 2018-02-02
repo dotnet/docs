@@ -36,6 +36,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Forms.ScrollBar.Scroll" />
+    <altmember cref="T:System.Windows.Forms.ScrollBar" />
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +60,7 @@
         <param name="newValue">The new value for the scroll bar.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollEventArgs" /> class using the given values for the <see cref="P:System.Windows.Forms.ScrollEventArgs.Type" /> and <see cref="P:System.Windows.Forms.ScrollEventArgs.NewValue" /> properties.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollEventType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,6 +83,7 @@
         <param name="newValue">The new value for the scroll bar.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollEventArgs" /> class using the given values for the <see cref="P:System.Windows.Forms.ScrollEventArgs.Type" />, <see cref="P:System.Windows.Forms.ScrollEventArgs.OldValue" />, and <see cref="P:System.Windows.Forms.ScrollEventArgs.NewValue" /> properties.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollEventType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,6 +106,8 @@
         <param name="scroll">One of the <see cref="T:System.Windows.Forms.ScrollOrientation" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollEventArgs" /> class using the given values for the <see cref="P:System.Windows.Forms.ScrollEventArgs.Type" />, <see cref="P:System.Windows.Forms.ScrollEventArgs.NewValue" />, and <see cref="P:System.Windows.Forms.ScrollEventArgs.ScrollOrientation" /> properties.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollEventType" />
+        <altmember cref="T:System.Windows.Forms.ScrollOrientation" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +132,7 @@
         <param name="scroll">One of the <see cref="T:System.Windows.Forms.ScrollOrientation" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollEventArgs" /> class using the given values for the <see cref="P:System.Windows.Forms.ScrollEventArgs.Type" />, <see cref="P:System.Windows.Forms.ScrollEventArgs.OldValue" />, <see cref="P:System.Windows.Forms.ScrollEventArgs.NewValue" />, and <see cref="P:System.Windows.Forms.ScrollEventArgs.ScrollOrientation" /> properties.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollEventType" />
       </Docs>
     </Member>
     <Member MemberName="NewValue">
@@ -153,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollBar.Value" />
       </Docs>
     </Member>
     <Member MemberName="OldValue">
@@ -174,15 +184,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#74](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#74)]
  [!code-vb[System.Windows.Forms.EventExamples#74](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#74)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollBar.Value" />
       </Docs>
     </Member>
     <Member MemberName="ScrollOrientation">
@@ -204,14 +215,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You would typically use the <xref:System.Windows.Forms.ScrollEventArgs.ScrollOrientation%2A> property to determine the scroll bar orientation that raised the `Scroll` event, such as with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=fullName> event.  
+ You would typically use the <xref:System.Windows.Forms.ScrollEventArgs.ScrollOrientation%2A> property to determine the scroll bar orientation that raised the `Scroll` event, such as with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=nameWithType> event.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#74](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#74)]
  [!code-vb[System.Windows.Forms.EventExamples#74](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#74)]  
@@ -239,16 +250,26 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#74](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#74)]
  [!code-vb[System.Windows.Forms.EventExamples#74](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#74)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollEventType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

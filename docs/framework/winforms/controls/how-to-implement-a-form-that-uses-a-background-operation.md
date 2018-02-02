@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "threading [Windows Forms], forms"
   - "BackgroundWorker component"
   - "background tasks"
-  - "forms, multithreading"
+  - "forms [Windows Forms], multithreading"
   - "components [Windows Forms], asynchronous"
-  - "forms, background operations"
+  - "forms [Windows Forms], background operations"
   - "background threads"
   - "threading [Windows Forms], background operations"
   - "background operations"
@@ -26,6 +28,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement a Form That Uses a Background Operation
 The following example program creates a form that calculates Fibonacci numbers. The calculation runs on a thread that is separate from the user interface thread, so the user interface continues to run without delays as the calculation proceeds.  
@@ -52,7 +56,7 @@ The following example program creates a form that calculates Fibonacci numbers. 
 >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
 ## See Also  
- <xref:System.ComponentModel.BackgroundWorker>   
- <xref:System.ComponentModel.DoWorkEventArgs>   
- [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)   
+ <xref:System.ComponentModel.BackgroundWorker>  
+ <xref:System.ComponentModel.DoWorkEventArgs>  
+ [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
  [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)

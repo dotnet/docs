@@ -32,11 +32,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,12 +76,18 @@
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
-|<xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object that is contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=nameWithType> object that is contained in the `e` parameter.|  
 |<xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled%2A>|`false`.|  
 |<xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode%2A>|`false`.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -111,6 +123,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -147,6 +162,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -181,6 +199,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="KeepInEditMode">
@@ -215,6 +236,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -245,6 +267,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -275,6 +301,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
       </Docs>
     </Member>
   </Members>

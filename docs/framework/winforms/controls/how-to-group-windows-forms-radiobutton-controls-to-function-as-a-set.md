@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "radio buttons, grouping"
+  - "radio buttons [Windows Forms], grouping"
   - "controls [Windows Forms], grouping"
   - "Windows Forms controls, grouping"
   - "RadioButton control [Windows Forms], grouping"
@@ -21,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Group Windows Forms RadioButton Controls to Function as a Set
 Windows Forms <xref:System.Windows.Forms.RadioButton> controls are designed to give users a choice among two or more settings, of which only one can be assigned to a procedure or object. For example, a group of <xref:System.Windows.Forms.RadioButton> controls may display a choice of package carriers for an order, but only one of the carriers will be used. Therefore only one <xref:System.Windows.Forms.RadioButton> at a time can be selected, even if it is a part of a functional group.  
@@ -34,9 +34,9 @@ Windows Forms <xref:System.Windows.Forms.RadioButton> controls are designed to g
 2.  Draw <xref:System.Windows.Forms.RadioButton> controls on the <xref:System.Windows.Forms.GroupBox> or <xref:System.Windows.Forms.Panel> control.  
   
 ## See Also  
- <xref:System.Windows.Forms.RadioButton>   
- [RadioButton Control Overview](../../../../docs/framework/winforms/controls/radiobutton-control-overview-windows-forms.md)   
- [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)   
- [GroupBox Control Overview](../../../../docs/framework/winforms/controls/groupbox-control-overview-windows-forms.md)   
- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.RadioButton>  
+ [RadioButton Control Overview](../../../../docs/framework/winforms/controls/radiobutton-control-overview-windows-forms.md)  
+ [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)  
+ [GroupBox Control Overview](../../../../docs/framework/winforms/controls/groupbox-control-overview-windows-forms.md)  
+ [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)  
  [RadioButton Control](../../../../docs/framework/winforms/controls/radiobutton-control-windows-forms.md)

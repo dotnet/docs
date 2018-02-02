@@ -18,7 +18,7 @@
 ## Remarks  
  The properties can be accessed directly from <xref:System.Windows.Automation.AutomationElement.Cached%2A> and <xref:System.Windows.Automation.AutomationElement.Current%2A>; you do not need to retrieve the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation> structure itself.  
   
- The properties in this structure can also be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> and <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>, using the corresponding identifiers from <xref:System.Windows.Automation.AutomationElement>. For example, The <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AcceleratorKey%2A?displayProperty=fullName> property is identified by the <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty?displayProperty=fullName> field. More information about the individual properties is available on the reference pages for those identifiers; see the link in the Remarks section of each reference topic.  
+ The properties in this structure can also be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> and <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>, using the corresponding identifiers from <xref:System.Windows.Automation.AutomationElement>. For example, The <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AcceleratorKey%2A?displayProperty=nameWithType> property is identified by the <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty?displayProperty=nameWithType> field. More information about the individual properties is available on the reference pages for those identifiers; see the link in the Remarks section of each reference topic.  
   
    
   
@@ -138,6 +138,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.AutomationElement.BoundingRectangleProperty" />
       </Docs>
     </Member>
     <Member MemberName="ClassName">

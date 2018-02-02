@@ -28,7 +28,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=nameWithType> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=nameWithType> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
   
  [!code-cpp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CPP/linklabel.cpp#1)]
  [!code-csharp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CS/linklabel.cs#1)]
@@ -36,6 +36,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.LinkLabel.LinkArea" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +101,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -157,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.LinkArea.Start" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -182,7 +187,7 @@
         <returns>
           <see langword="true" /> if two instances of the <see cref="T:System.Windows.Forms.LinkArea" /> class are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.LinkArea.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.LinkArea.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -234,6 +239,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.LinkArea.Length" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -253,6 +259,7 @@
         <summary>Returns the fully qualified type name of this instance.</summary>
         <returns>A <see cref="T:System.String" /> containing a fully qualified type name.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.ToString" />
       </Docs>
     </Member>
   </Members>

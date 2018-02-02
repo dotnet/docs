@@ -39,6 +39,18 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Clipboard" />
+    <altmember cref="T:System.Windows.Forms.DataObject" />
+    <altmember cref="T:System.Windows.Forms.DataFormats.Format" />
+    <altmember cref="T:System.Windows.Forms.IDataObject" />
+    <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+    <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+    <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+    <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+    <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+    <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+    <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+    <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
   </Docs>
   <Members>
     <Member MemberName="Bitmap">
@@ -63,14 +75,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="CommaSeparatedValue">
@@ -93,14 +114,23 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Dib">
@@ -125,14 +155,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Dif">
@@ -157,11 +196,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
    
   
@@ -174,6 +213,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="EnhancedMetafile">
@@ -201,14 +249,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="FileDrop">
@@ -233,14 +290,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="GetFormat">
@@ -283,6 +349,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataFormats.Format" />
       </Docs>
     </Member>
     <Member MemberName="GetFormat">
@@ -326,6 +393,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">Registering a new <see cref="T:System.Windows.Forms.Clipboard" /> format failed.</exception>
+        <altmember cref="T:System.Windows.Forms.DataFormats.Format" />
       </Docs>
     </Member>
     <Member MemberName="Html">
@@ -348,14 +416,23 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to indicate the CF_HTML clipboard data type. For more information about this format, see [HTML Clipboard Format](http://go.microsoft.com/fwlink/?LinkId=198813).  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Locale">
@@ -378,14 +455,23 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="MetafilePict">
@@ -413,14 +499,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="OemText">
@@ -443,14 +538,23 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Palette">
@@ -475,14 +579,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="PenData">
@@ -505,14 +618,23 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Riff">
@@ -537,14 +659,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Rtf">
@@ -569,16 +700,25 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  For more information about the RTF format, see the Rich Text Format specification in the MSDN library at http://msdn.microsoft.com/library.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Serializable">
@@ -601,17 +741,26 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
 > [!NOTE]
 >  The serializable format is specific to Windows Forms only and will not be recognized by applications created outside of Windows Forms.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="StringFormat">
@@ -634,11 +783,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
 > [!NOTE]
 >  The string class format is specific to Windows Forms only and will not be recognized by applications created outside of Windows Forms.  
@@ -654,6 +803,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="SymbolicLink">
@@ -678,14 +836,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -708,11 +875,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
    
   
@@ -725,6 +892,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="Tiff">
@@ -749,14 +925,23 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="UnicodeText">
@@ -779,11 +964,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
    
   
@@ -796,6 +981,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
     <Member MemberName="WaveAudio">
@@ -818,15 +1012,33 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataObject" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Name" />
+        <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFormat">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Forms.DataFormats.Format" /> with the Windows Clipboard numeric ID and name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

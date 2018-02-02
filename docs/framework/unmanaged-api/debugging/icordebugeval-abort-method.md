@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::Abort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Abort method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::Abort method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::Abort Method
 Aborts the computation this ICorDebugEval object is currently performing.  

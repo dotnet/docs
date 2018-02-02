@@ -132,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataTableCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -173,6 +174,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataSet.DataSetName" />
+        <altmember cref="T:System.Data.DataTableCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -397,7 +400,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Data.DataSet> is bound to an <xref:System.Xml.XmlDataDocument>, calling <xref:System.Data.DataSet.Clear%2A?displayProperty=fullName> or <xref:System.Data.DataTable.Clear%2A?displayProperty=fullName> raises the <xref:System.NotSupportedException>. To avoid this situation, traverse each table, removing each row one at a time.  
+ If the <xref:System.Data.DataSet> is bound to an <xref:System.Xml.XmlDataDocument>, calling <xref:System.Data.DataSet.Clear%2A?displayProperty=nameWithType> or <xref:System.Data.DataTable.Clear%2A?displayProperty=nameWithType> raises the <xref:System.NotSupportedException>. To avoid this situation, traverse each table, removing each row one at a time.  
   
    
   
@@ -454,6 +457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.Copy" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -497,6 +501,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.Clone" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateDataReader">
@@ -574,7 +579,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDataReader">
-      <MemberSignature Language="C#" Value="public System.Data.DataTableReader CreateDataReader (System.Data.DataTable[] dataTables);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataTableReader CreateDataReader (params System.Data.DataTable[] dataTables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTableReader CreateDataReader(class System.Data.DataTable[] dataTables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.CreateDataReader(System.Data.DataTable[])" />
       <MemberType>Method</MemberType>
@@ -984,6 +989,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.HasChanges" />
       </Docs>
     </Member>
     <Member MemberName="GetChanges">
@@ -2022,7 +2028,7 @@ class Program {
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, System.Data.DataTable[] tables);" />
+      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, params System.Data.DataTable[] tables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, class System.Data.DataTable[] tables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.DataTable[])" />
       <MemberType>Method</MemberType>
@@ -2069,7 +2075,7 @@ class Program {
   
  The `loadOption` parameter allows you to specify how you want the imported data to interact with existing data, and can be any of the values from the <xref:System.Data.LoadOption> enumeration. See the documentation for the <xref:System.Data.DataTable><xref:System.Data.DataTable.Load%2A> method for more information on using this parameter.  
   
- The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A>method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A>method moves on to the next result set within the reader, until there are no more result sets.  
+ The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A> method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A> method moves on to the next result set within the reader, until there are no more result sets.  
   
  The name resolution scheme for this method is the same as that followed by the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method of the <xref:System.Data.Common.DbDataAdapter> class.  
   
@@ -2086,7 +2092,7 @@ class Program {
       </Docs>
     </Member>
     <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, string[] tables);" />
+      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, params string[] tables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, string[] tables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2150,7 +2156,7 @@ class Program {
       </Docs>
     </Member>
     <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public virtual void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, System.Data.FillErrorEventHandler errorHandler, System.Data.DataTable[] tables);" />
+      <MemberSignature Language="C#" Value="public virtual void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, System.Data.FillErrorEventHandler errorHandler, params System.Data.DataTable[] tables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, class System.Data.FillErrorEventHandler errorHandler, class System.Data.DataTable[] tables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.FillErrorEventHandler,System.Data.DataTable[])" />
       <MemberType>Method</MemberType>
@@ -2201,7 +2207,7 @@ class Program {
   
  The `errorHandler` parameter is a <xref:System.Data.FillErrorEventHandler> delegate that refers to a procedure that is called when an error occurs while loading data. The <xref:System.Data.FillErrorEventArgs> parameter passed to the procedure provides properties that allow you to retrieve information about the error that occurred, the current row of data, and the <xref:System.Data.DataTable> being filled. Using this delegate mechanism, rather than a simpler try/catch block, allows you to determine the error, handle the situation, and continue processing if you like. The <xref:System.Data.FillErrorEventArgs> parameter supplies a <xref:System.Data.FillErrorEventArgs.Continue%2A> property: set this property to `true` to indicate that you have handled the error and wish to continue processing; set the property to `false` to indicate that you wish to halt processing. Be aware that setting the property to `false` causes the code that triggered the problem to throw an exception.  
   
- The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A>method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A>method moves on to the next result set within the reader, until there are no more result sets.  
+ The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A> method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A> method moves on to the next result set within the reader, until there are no more result sets.  
   
  The name resolution scheme for this method is the same as that followed by the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method of the <xref:System.Data.Common.DbDataAdapter> class.  
   
@@ -2369,6 +2375,9 @@ class Program {
         </remarks>
         <exception cref="T:System.Data.ConstraintException">One or more constraints cannot be enabled.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dataSet" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Data.ForeignKeyConstraint" />
+        <altmember cref="M:System.Data.DataSet.GetChanges" />
+        <altmember cref="T:System.Data.UniqueConstraint" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2487,6 +2496,8 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.ForeignKeyConstraint" />
+        <altmember cref="T:System.Data.UniqueConstraint" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2700,7 +2711,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2795,7 +2806,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3034,6 +3045,9 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)" />
+        <altmember cref="M:System.Data.DataSet.WriteXml(System.IO.Stream)" />
+        <altmember cref="M:System.Data.DataSet.WriteXmlSchema(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -3245,7 +3259,7 @@ class Program {
 </xsd:schema>  
 ```  
   
- <xref:System.Xml.XmlTextReader?displayProperty=fullName> inherits from <xref:System.Xml.XmlReader>.  
+ <xref:System.Xml.XmlTextReader?displayProperty=nameWithType> inherits from <xref:System.Xml.XmlReader>.  
   
 > [!NOTE]
 >  If the schema for your <xref:System.Data.DataSet> contains elements of the same name, but different type, in the same namespace, an exception is thrown when you attempt to read the schema into the <xref:System.Data.DataSet> with <xref:System.Data.DataSet.ReadXml%2A> by specifying `XmlReadMode.ReadSchema`. This exception does not occur if you are using .NET Framework version 1.0.  
@@ -3746,7 +3760,7 @@ class Program {
   
  The <xref:System.Data.DataSet.ReadXmlSchema%2A> method is generally invoked before invoking the <xref:System.Data.DataSet.ReadXml%2A> method which is used to fill the <xref:System.Data.DataSet>.  
   
- The <xref:System.Xml.XmlReader?displayProperty=fullName> class is abstract. A class that inherits from the `XmlReader` is the <xref:System.Xml.XmlTextReader?displayProperty=fullName> class.  
+ The <xref:System.Xml.XmlReader?displayProperty=nameWithType> class is abstract. A class that inherits from the `XmlReader` is the <xref:System.Xml.XmlTextReader?displayProperty=nameWithType> class.  
   
 > [!NOTE]
 >  If the schema for your <xref:System.Data.DataSet> contains elements of the same name, but different type, in the same namespace, an exception is be thrown when you attempt to read the schema into the <xref:System.Data.DataSet> with <xref:System.Data.DataSet.ReadXmlSchema%2A>. This exception does not occur if you are using .NET Framework version 1.0.  
@@ -3754,7 +3768,7 @@ class Program {
    
   
 ## Examples  
- The following example creates a new <xref:System.Data.DataSet> and <xref:System.IO.FileStream?displayProperty=fullName> object. The <xref:System.IO.FileStream> object, created with a file path and file name, is used to create an <xref:System.Xml.XmlTextReader?displayProperty=fullName> that is passed as an argument to the <xref:System.Data.DataSet.ReadXmlSchema%2A> method.  
+ The following example creates a new <xref:System.Data.DataSet> and <xref:System.IO.FileStream?displayProperty=nameWithType> object. The <xref:System.IO.FileStream> object, created with a file path and file name, is used to create an <xref:System.Xml.XmlTextReader?displayProperty=nameWithType> that is passed as an argument to the <xref:System.Data.DataSet.ReadXmlSchema%2A> method.  
   
  [!code-csharp[Classic WebData DataSet.ReadXmlSchema Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.ReadXmlSchema Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.ReadXmlSchema Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.ReadXmlSchema Example/VB/source.vb#1)]  
@@ -3821,11 +3835,11 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Invoke the <xref:System.Data.DataSet.RejectChanges%2A?displayProperty=fullName> to call the <xref:System.Data.DataTable.RejectChanges%2A?displayProperty=fullName> method on all <xref:System.Data.DataTable> objects contained by the <xref:System.Data.DataSet>.  
+ Invoke the <xref:System.Data.DataSet.RejectChanges%2A?displayProperty=nameWithType> to call the <xref:System.Data.DataTable.RejectChanges%2A?displayProperty=nameWithType> method on all <xref:System.Data.DataTable> objects contained by the <xref:System.Data.DataSet>.  
   
- <xref:System.Data.DataRow> objects contained by the <xref:System.Data.DataSet> can each be set into edit mode by invoking the <xref:System.Data.DataRow.BeginEdit%2A?displayProperty=fullName> method. After invoking the <xref:System.Data.DataRow.EndEdit%2A?displayProperty=fullName> method, changes can be rejected by calling the <xref:System.Data.DataTable.RejectChanges%2A?displayProperty=fullName> on the <xref:System.Data.DataTable> to which the <xref:System.Data.DataRow> objects belong.  
+ <xref:System.Data.DataRow> objects contained by the <xref:System.Data.DataSet> can each be set into edit mode by invoking the <xref:System.Data.DataRow.BeginEdit%2A?displayProperty=nameWithType> method. After invoking the <xref:System.Data.DataRow.EndEdit%2A?displayProperty=nameWithType> method, changes can be rejected by calling the <xref:System.Data.DataTable.RejectChanges%2A?displayProperty=nameWithType> on the <xref:System.Data.DataTable> to which the <xref:System.Data.DataRow> objects belong.  
   
- When the <xref:System.Data.DataTable.RejectChanges%2A?displayProperty=fullName> method is called, any rows still in edit-mode cancel their edits. New rows are removed. Modified and deleted rows return back to their original state (`DataRowState.Unchanged`).  
+ When the <xref:System.Data.DataTable.RejectChanges%2A?displayProperty=nameWithType> method is called, any rows still in edit-mode cancel their edits. New rows are removed. Modified and deleted rows return back to their original state (`DataRowState.Unchanged`).  
   
  AcceptChanges and RejectChanges only apply to <xref:System.Data.DataRow> related changes (that is, `Add`, `Remove`, `Delete`, and `Modify`). They are not applicable to schema or structural changes.  
   
@@ -4387,7 +4401,7 @@ class Program {
    
   
 ## Examples  
- The following example creates a <xref:System.IO.FileStream?displayProperty=fullName> object. The object is then used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
+ The following example creates a <xref:System.IO.FileStream?displayProperty=nameWithType> object. The object is then used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
   
  [!code-csharp[Classic WebData DataSet.WriteXml Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml Example/VB/source.vb#1)]  
@@ -4719,7 +4733,7 @@ class Program {
    
   
 ## Examples  
- The following example creates a <xref:System.IO.FileStream?displayProperty=fullName> object that is used to create a new <xref:System.Xml.XmlTextWriter>. The <xref:System.Xml.XmlTextWriter> object is used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
+ The following example creates a <xref:System.IO.FileStream?displayProperty=nameWithType> object that is used to create a new <xref:System.Xml.XmlTextWriter>. The <xref:System.Xml.XmlTextWriter> object is used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
   
  [!code-csharp[Classic WebData DataSet.WriteXml6 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml6 Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXml6 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml6 Example/VB/source.vb#1)]  
@@ -4816,12 +4830,12 @@ class Program {
   
  To write the data to an XML document, use the <xref:System.Data.DataSet.WriteXml%2A> method.  
   
- Classes the derive from the <xref:System.IO.TextWriter?displayProperty=fullName> class include the <xref:System.Web.HttpWriter?displayProperty=fullName>, <xref:System.CodeDom.Compiler.IndentedTextWriter?displayProperty=fullName>, <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName>, <xref:System.IO.StreamWriter?displayProperty=fullName>, and <xref:System.IO.StringWriter?displayProperty=fullName>.  
+ Classes the derive from the <xref:System.IO.TextWriter?displayProperty=nameWithType> class include the <xref:System.Web.HttpWriter?displayProperty=nameWithType>, <xref:System.CodeDom.Compiler.IndentedTextWriter?displayProperty=nameWithType>, <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType>, <xref:System.IO.StreamWriter?displayProperty=nameWithType>, and <xref:System.IO.StringWriter?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example creates a <xref:System.Text.StringBuilder?displayProperty=fullName> object to that is used to create a new <xref:System.IO.StringWriter?displayProperty=fullName>. The <xref:System.IO.StringWriter> is passed to the <xref:System.Data.DataSet.WriteXmlSchema%2A> method, and the resulting string is printed to the console window.  
+ The following example creates a <xref:System.Text.StringBuilder?displayProperty=nameWithType> object to that is used to create a new <xref:System.IO.StringWriter?displayProperty=nameWithType>. The <xref:System.IO.StringWriter> is passed to the <xref:System.Data.DataSet.WriteXmlSchema%2A> method, and the resulting string is printed to the console window.  
   
  [!code-csharp[Classic WebData DataSet.WriteXmlSchema1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema1 Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXmlSchema1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema1 Example/VB/source.vb#1)]  
@@ -4917,12 +4931,12 @@ class Program {
   
  To write the data to an XML document, use the <xref:System.Data.DataSet.WriteXml%2A> method.  
   
- One class that inherits from the <xref:System.Xml.XmlWriter?displayProperty=fullName> class is the <xref:System.Xml.XmlTextWriter> class.  
+ One class that inherits from the <xref:System.Xml.XmlWriter?displayProperty=nameWithType> class is the <xref:System.Xml.XmlTextWriter> class.  
   
    
   
 ## Examples  
- The following example creates a new <xref:System.IO.FileStream?displayProperty=fullName> object with the specified path. The <xref:System.IO.FileStream> object is used to create an <xref:System.Xml.XmlTextWriter> object. The <xref:System.Data.DataSet.WriteXmlSchema%2A> method is then invoked with the <xref:System.Xml.XmlTextWriter> object to write the schema to the disk.  
+ The following example creates a new <xref:System.IO.FileStream?displayProperty=nameWithType> object with the specified path. The <xref:System.IO.FileStream> object is used to create an <xref:System.Xml.XmlTextWriter> object. The <xref:System.Data.DataSet.WriteXmlSchema%2A> method is then invoked with the <xref:System.Xml.XmlTextWriter> object to write the schema to the disk.  
   
  [!code-csharp[Classic WebData DataSet.WriteXmlSchema2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema2 Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXmlSchema2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema2 Example/VB/source.vb#1)]  
@@ -5059,5 +5073,95 @@ class Program {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an XML schema into the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads XML schema and data into the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes XML data, and optionally the schema, from the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HasChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Data.DataSet" /> has changes, including new, deleted, or modified rows.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Merge">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merges a specified <see cref="T:System.Data.DataSet" />, <see cref="T:System.Data.DataTable" />, or array of <see cref="T:System.Data.DataRow" /> objects into the current <see langword="DataSet" /> or <see langword="DataTable" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the <see cref="T:System.Data.DataSet" /> structure as an XML schema.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a copy of the <see cref="T:System.Data.DataSet" /> containing all changes made to it since it was last loaded, or since <see cref="M:System.Data.DataSet.AcceptChanges" /> was called.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InferXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies XML schema to the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

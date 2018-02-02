@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Web.UI.Control.ViewStateMode%2A?displayProperty=fullName> property to enable view state for an individual control even if it is disabled for the page.  
+ You can use the <xref:System.Web.UI.Control.ViewStateMode%2A?displayProperty=nameWithType> property to enable view state for an individual control even if it is disabled for the page.  
   
  To turn off view state for a page and turn it on for a specific control on the page, set the <xref:System.Web.UI.Control.EnableViewState%2A> property of the page and the control to `true`, set the <xref:System.Web.UI.Control.ViewStateMode%2A> property of the page to Disabled, and set the <xref:System.Web.UI.Control.ViewStateMode%2A> property of the control to Enabled.  
   
@@ -23,6 +23,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Control.EnableViewState" />
+    <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
+    <altmember cref="P:System.Web.UI.Control.ViewState" />
+    <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+    <altmember cref="M:System.Web.UI.Control.SaveViewState" />
   </Docs>
   <Members>
     <Member MemberName="Disabled">

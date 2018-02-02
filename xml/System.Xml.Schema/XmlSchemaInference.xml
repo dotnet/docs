@@ -31,7 +31,7 @@
 > -   XML schemas (including inline schemas) are inherently vulnerable to denial of service attacks; do not accept them in untrusted scenarios.  
 > -   Schema validation error messages and exceptions may expose sensitive information about the content model or URI paths to the schema file. Be careful not to expose this information to untrusted callers.  
   
- The <xref:System.Xml.Schema.XmlSchemaInference> class in the <xref:System.Xml.Schema?displayProperty=fullName> namespace allows you to infer an XML Schema Definition Language (XSD) schema from the structure of an XML document. The <xref:System.Xml.Schema.XmlSchemaInference> class outputs an XML schema that can validate the XML document.  
+ The <xref:System.Xml.Schema.XmlSchemaInference> class in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace allows you to infer an XML Schema Definition Language (XSD) schema from the structure of an XML document. The <xref:System.Xml.Schema.XmlSchemaInference> class outputs an XML schema that can validate the XML document.  
   
  The <xref:System.Xml.Schema.XmlSchemaInference> class supports the W3C XML and XML Schemas standards. It can be used to infer a new schema or to refine an existing schema.  
   
@@ -340,5 +340,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InferSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Infers an XML Schema Definition Language (XSD) schema from the XML document specified.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -72,7 +72,7 @@
   
  There are many <xref:System.Data.DataTable> events that can be used to determine when changes are made to a table. These include <xref:System.Data.DataTable.RowChanged>, <xref:System.Data.DataTable.RowChanging>, <xref:System.Data.DataTable.RowDeleting>, and <xref:System.Data.DataTable.RowDeleted>. For more information about the events that can be used with a <xref:System.Data.DataTable>, see [Handling DataTable Events](~/docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md).  
   
- When an instance of <xref:System.Data.DataTable> is created, some of the read/write properties are set to initial values. For a list of these values, see the <xref:System.Data.DataTable.%23ctor%2A?displayProperty=fullName> constructor topic.  
+ When an instance of <xref:System.Data.DataTable> is created, some of the read/write properties are set to initial values. For a list of these values, see the <xref:System.Data.DataTable.%23ctor%2A?displayProperty=nameWithType> constructor topic.  
   
 > [!NOTE]
 >  The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> objects inherit from <xref:System.ComponentModel.MarshalByValueComponent>, and support the <xref:System.Runtime.Serialization.ISerializable> interface for .NET Framework remoting. These are the only ADO.NET objects that you can use for .NET Framework remoting.  
@@ -285,7 +285,7 @@
 ## Remarks  
  When <xref:System.Data.DataTable.AcceptChanges%2A> is called, any <xref:System.Data.DataRow> object still in edit mode successfully ends its edits. The <xref:System.Data.DataRowState> also changes: all `Added` and `Modified` rows become `Unchanged`, and `Deleted` rows are removed.  
   
- The <xref:System.Data.DataTable.AcceptChanges%2A> method is generally called on a <xref:System.Data.DataTable> after you attempt to update the <xref:System.Data.DataSet> using the <xref:System.Data.Common.DbDataAdapter.Update%2A?displayProperty=fullName> method.  
+ The <xref:System.Data.DataTable.AcceptChanges%2A> method is generally called on a <xref:System.Data.DataTable> after you attempt to update the <xref:System.Data.DataSet> using the <xref:System.Data.Common.DbDataAdapter.Update%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -408,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.Select" />
       </Docs>
     </Member>
     <Member MemberName="ChildRelations">
@@ -458,6 +459,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.ParentRelations" />
+        <altmember cref="M:System.Data.DataRow.GetParentRows(System.String)" />
+        <altmember cref="M:System.Data.DataRow.GetChildRows(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -490,7 +494,7 @@
 ## Remarks  
  All rows in all tables are removed. An exception is generated if the table has any enforced child relations that would cause child rows to be orphaned.  
   
- If the <xref:System.Data.DataSet> is bound to an <xref:System.Xml.XmlDataDocument>, calling <xref:System.Data.DataSet.Clear%2A?displayProperty=fullName> or <xref:System.Data.DataTable.Clear%2A?displayProperty=fullName> raises the <xref:System.NotSupportedException>. To avoid this situation, traverse each table, removing each row one at a time. When you use <xref:System.Data.DataTable.NewRow%2A> to create new rows, the rows must be processed before you call <xref:System.Data.DataTable.Clear%2A>.  
+ If the <xref:System.Data.DataSet> is bound to an <xref:System.Xml.XmlDataDocument>, calling <xref:System.Data.DataSet.Clear%2A?displayProperty=nameWithType> or <xref:System.Data.DataTable.Clear%2A?displayProperty=nameWithType> raises the <xref:System.NotSupportedException>. To avoid this situation, traverse each table, removing each row one at a time. When you use <xref:System.Data.DataTable.NewRow%2A> to create new rows, the rows must be processed before you call <xref:System.Data.DataTable.Clear%2A>.  
   
    
   
@@ -1054,6 +1058,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.Copy" />
       </Docs>
     </Member>
     <Member MemberName="ColumnChanged">
@@ -1093,6 +1098,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumnChangeEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ColumnChanging">
@@ -1235,7 +1241,7 @@ class Program {
   
  `colDate > 1/1/99 AND colDate < 17/1/99`  
   
- For rules on creating expressions for both parameters, see the <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName> property.  
+ For rules on creating expressions for both parameters, see the <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -1346,6 +1352,8 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataView.ToTable" />
+        <altmember cref="M:System.Data.DataTable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataReader">
@@ -1377,7 +1385,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following console application creates a <xref:System.Data.DataTable> instance. The example then passes the filled <xref:System.Data.DataTable>to a procedure that calls the <xref:System.Data.DataTable.CreateDataReader%2A> method, which iterates through the results contained within the <xref:System.Data.DataTableReader>.  
+ The following console application creates a <xref:System.Data.DataTable> instance. The example then passes the filled <xref:System.Data.DataTable> to a procedure that calls the <xref:System.Data.DataTable.CreateDataReader%2A> method, which iterates through the results contained within the <xref:System.Data.DataTableReader>.  
   
  [!code-csharp[DataWorks DataTable.CreateDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.CreateDataReader/CS/source.cs#1)]
  [!code-vb[DataWorks DataTable.CreateDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.CreateDataReader/VB/source.vb#1)]  
@@ -1394,6 +1402,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.CreateDataReader" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1551,6 +1560,7 @@ class Program {
         <summary>Gets or sets the expression that returns a value used to represent this table in the user interface. The <see langword="DisplayExpression" /> property lets you display the name of this table in a user interface.</summary>
         <value>A display string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Data.DataColumn.Expression" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -1855,6 +1865,9 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.HasErrors" />
+        <altmember cref="P:System.Data.DataRow.RowError" />
+        <altmember cref="M:System.Data.DataRow.SetColumnError(System.Int32,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1996,6 +2009,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.GetErrors" />
       </Docs>
     </Member>
     <Member MemberName="ImportRow">
@@ -2161,6 +2175,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.DataSet.Load" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -2194,7 +2209,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.DataTable.Load%2A>method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=fullName> method.  
+ The <xref:System.Data.DataTable.Load%2A> method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Data.DataTable.Load%2A> method must take into account three specific issues when loading the data from an <xref:System.Data.IDataReader> instance: schema, data, and event operations. When working with the schema, the <xref:System.Data.DataTable.Load%2A> method may encounter conditions as described in the following table. The schema operations take place for all imported result sets, even those containing no data.  
   
@@ -2207,7 +2222,7 @@ class Program {
   
  Before considering the behavior of the `Load` method in terms of data operations, consider that each row within a <xref:System.Data.DataTable> maintains both the current value and the original value for each column. These values may be equivalent, or may be different if the data in the row has been changed since filling the `DataTable`.  For more information, see [Row States and Row Versions](~/docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md).  
   
- This version of the `Load` method attempts to preserve the current values in each row, leaving the original value intact. (If you want finer control over the behavior of incoming data, see <xref:System.Data.DataTable.Load%2A?displayProperty=fullName>.) If the existing row and the incoming row contain corresponding primary key values, the row is processed using its current row state value, otherwise it's treated as a new row.  
+ This version of the `Load` method attempts to preserve the current values in each row, leaving the original value intact. (If you want finer control over the behavior of incoming data, see <xref:System.Data.DataTable.Load%2A?displayProperty=nameWithType>.) If the existing row and the incoming row contain corresponding primary key values, the row is processed using its current row state value, otherwise it's treated as a new row.  
   
  In terms of event operations, the <xref:System.Data.DataTable.RowChanging> event occurs before each row is changed, and the <xref:System.Data.DataTable.RowChanged> event occurs after each row has been changed. In each case, the <xref:System.Data.DataRowChangeEventArgs.Action%2A> property of the <xref:System.Data.DataRowChangeEventArgs> instance passed to the event handler contains information about the particular action associated with the event. This action value depends on the state of the row before the load operation. In each case, both events occur, and the action is the same for each. The action may be applied to either the current or original version of each row, or both, depending on the current row state.  
   
@@ -2356,7 +2371,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Load` method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=fullName> method.  
+ The `Load` method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=nameWithType> method.  
   
  The `Load` method must take into account three specific issues when loading the data from an <xref:System.Data.IDataReader> instance: schema, data, and event operations. When working with the schema, the `Load` method may encounter conditions as described in the following table. The schema operations take place for all imported result sets, even those containing no data.  
   
@@ -2561,6 +2576,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Merge">
@@ -2981,7 +2997,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3021,7 +3037,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3061,7 +3077,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3101,7 +3117,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3141,7 +3157,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3181,7 +3197,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3221,7 +3237,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3261,7 +3277,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3303,7 +3319,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 ## Remarks  
  Raises the <xref:System.Data.DataTable.TableCleared> event, which is fired immediately after all rows have been successfully cleared but before the <xref:System.Data.DataTable.Clear%2A> method returns control back to the caller.  
   
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3342,7 +3358,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 ## Remarks  
  Raises the <xref:System.Data.DataTable.TableClearing> event, which is fired before processing of the <xref:System.Data.DataTable.Clear%2A> operation begins.  
   
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3381,7 +3397,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 ## Remarks  
  Raises the <xref:System.Data.DataTable.TableNewRow> event, which fires after a new <xref:System.Data.DataRow> has been created using <xref:System.Data.DataTable.NewRow%2A>.  
   
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3430,6 +3446,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.ChildRelations" />
+        <altmember cref="T:System.Data.DataRelation" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Data.DataSet.Relations" />
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -3513,6 +3533,9 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.DataException">The key is a foreign key.</exception>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="P:System.Data.DataTable.PrimaryKey" />
+        <altmember cref="T:System.Data.DataColumnCollection" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadXml">
@@ -3536,6 +3559,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.DataSet.ReadXml" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadXml">
@@ -3570,7 +3594,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.Stream>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=fullName> method, except that in this case, data is loaded only for the current table and its descendants.  
+ The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.Stream>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method, except that in this case, data is loaded only for the current table and its descendants.  
   
  The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema.  
   
@@ -3630,7 +3654,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.TextReader>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=fullName> method, except that in this case, data is loaded only for the current table and its descendants.  
+ The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.TextReader>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method, except that in this case, data is loaded only for the current table and its descendants.  
   
  The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema.  
   
@@ -3690,7 +3714,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the file named in the supplied <xref:System.String>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=fullName> method, except that in this case, data is loaded only for the current table and its descendants.  
+ The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the file named in the supplied <xref:System.String>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method, except that in this case, data is loaded only for the current table and its descendants.  
   
  The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema.  
   
@@ -3818,6 +3842,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.DataSet.ReadXmlSchema" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadXmlSchema">
@@ -3873,6 +3898,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -3928,6 +3954,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -3983,6 +4010,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -4039,6 +4067,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSerializable">
@@ -4375,6 +4404,10 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.AcceptChanges" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="T:System.Data.DataRowCollection" />
+        <altmember cref="M:System.Data.DataTable.NewRow" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4418,6 +4451,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.CaseSensitive" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4468,6 +4502,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.CaseSensitive" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4518,6 +4553,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.CaseSensitive" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4910,6 +4946,8 @@ public class A {
         <exception cref="T:System.ArgumentException">
           <see langword="null" /> or empty string ("") is passed in and this table belongs to a collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The table belongs to a collection that already has a table with the same name. (Comparison is case-sensitive).</exception>
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Data.DataSet.Tables" />
       </Docs>
     </Member>
     <Member MemberName="TableNewRow">
@@ -6577,5 +6615,45 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a copy of the <see cref="T:System.Data.DataTable" /> containing all changes made to it since it was last loaded, or since <see cref="M:System.Data.DataTable.AcceptChanges" /> was called.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadDataRow">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds and updates a specific row. If no matching row is found, a new row is created using the given values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataTable" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Select">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an array of <see cref="T:System.Data.DataRow" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

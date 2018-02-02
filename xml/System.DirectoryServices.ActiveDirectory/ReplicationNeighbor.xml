@@ -14,6 +14,11 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor" /> class contains information about a replication neighbor of an <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetAllReplicationNeighbors" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetReplicationNeighbors(System.String)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.GetAllReplicationNeighbors" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.GetReplicationNeighbors(System.String)" />
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
   </Docs>
   <Members>
     <Member MemberName="ConsecutiveFailureCount">
@@ -90,6 +95,7 @@
         <summary>Gets the message that is associated with the last replication attempt from this source.</summary>
         <value>The message that corresponds to the last replication attempt. If the last attempt succeeded, the value is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSyncResult" />
       </Docs>
     </Member>
     <Member MemberName="LastSyncResult">
@@ -109,6 +115,7 @@
         <summary>Gets the error code that is associated with the last replication attempt from this source.</summary>
         <value>The error code for the last replication attempt. If the last attempt succeeded, the value is ERROR_SUCCESS.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSyncMessage" />
       </Docs>
     </Member>
     <Member MemberName="PartitionName">
@@ -147,6 +154,7 @@
         <summary>Gets the attribute and object settings for this <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor" /> object.</summary>
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions" /> value that contains the attribute and option settings for this <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions" />
       </Docs>
     </Member>
     <Member MemberName="SourceInvocationId">
@@ -166,6 +174,7 @@
         <summary>Gets the invocation identifier that was used by the replication source server in the last replication attempt.</summary>
         <value>The invocation identifier that was used by the replication source server in the last replication attempt.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.SourceServer" />
       </Docs>
     </Member>
     <Member MemberName="SourceServer">
@@ -185,6 +194,7 @@
         <summary>Gets the name of the replication source server.</summary>
         <value>The name of the replication source server.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.SourceInvocationId" />
       </Docs>
     </Member>
     <Member MemberName="TransportType">
@@ -204,6 +214,7 @@
         <summary>Gets the transport type that was used for replication.</summary>
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> enumeration value that indicates the transport type that was used for the replication connection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
     <Member MemberName="UsnAttributeFilter">
@@ -223,6 +234,7 @@
         <summary>Gets the update sequence number (USN) value for the last successful replication cycle.</summary>
         <value>The USN value for the last successful replication cycle. If no replication succeeded, the value is zero.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.UsnLastObjectChangeSynced" />
       </Docs>
     </Member>
     <Member MemberName="UsnLastObjectChangeSynced">
@@ -242,6 +254,7 @@
         <summary>Gets the update sequence number (USN) of the last object update that was received.</summary>
         <value>The USN of the last update that was received.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.UsnAttributeFilter" />
       </Docs>
     </Member>
   </Members>

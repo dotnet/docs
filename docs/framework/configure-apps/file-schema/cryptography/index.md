@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "configuration schema [.NET Framework], cryptography"
   - "elements [.NET Framework], cryptography"
@@ -27,6 +22,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Cryptography Settings Schema
 The cryptography settings schema contains elements that specify how to map friendly algorithm names to classes that implement cryptography algorithms.  
@@ -61,5 +58,5 @@ The cryptography settings schema contains elements that specify how to map frien
 |[**\<oidMap>**](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|Contains ASN.1 OID mappings to classes.|  
   
 ## See Also  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)

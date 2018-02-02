@@ -39,8 +39,8 @@
   
  The following code example demonstrates how to use the `GeneologyTree` control, defined in the previous example, and bind it to an <xref:System.Web.UI.WebControls.XmlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Samples.AspNet.GeneologyTree#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/rootviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Samples.AspNet.GeneologyTree#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/rootviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Samples.AspNet.GeneologyTree#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/rootviewcs.aspx#1)]
+ [!code-aspx-vb[Samples.AspNet.GeneologyTree#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/rootviewvb.aspx#1)]  
   
  The geneology.xml file accessed in the code example contains the following data.  
   
@@ -97,6 +97,7 @@
         <summary>Gets or sets the ID of the control from which the data-bound control retrieves its list of data items.</summary>
         <value>The ID of a control that represents the data source from which the data-bound control retrieves its data. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -127,7 +128,7 @@
    
   
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.GetData%2A> method is called to retrieve the <xref:System.Web.UI.HierarchicalDataSourceView> object from the associated data source control and how the <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A?displayProperty=fullName> method is called to retrieve the data. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.GetData%2A> method is called to retrieve the <xref:System.Web.UI.HierarchicalDataSourceView> object from the associated data source control and how the <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A?displayProperty=nameWithType> method is called to retrieve the data. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
   
  [!code-csharp[Samples.AspNet.GeneologyTree#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/geneologytree.cs#4)]
  [!code-vb[Samples.AspNet.GeneologyTree#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/geneologytree.vb#4)]  
@@ -135,6 +136,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Web.UI.HierarchicalDataSourceView" /> could not be retrieved for the specified <paramref name="viewPath" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" />
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.GetDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetDataSource">
@@ -166,6 +169,8 @@
  \- or -  
   
  The data source control identified by the <see cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" /> property does not implement the <see cref="T:System.Web.UI.IHierarchicalDataSource" /> interface.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.GetData(System.String)" />
+        <altmember cref="T:System.Web.UI.IHierarchicalDataSource" />
       </Docs>
     </Member>
     <Member MemberName="MarkAsDataBound">
@@ -372,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="ValidateDataSource">
@@ -402,6 +408,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="dataSource" /> is not <see langword="null" /> and implements neither the <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> nor the <see cref="T:System.Web.UI.IHierarchicalDataSource" /> interface.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.ValidateDataSource(System.Object)" />
       </Docs>
     </Member>
   </Members>

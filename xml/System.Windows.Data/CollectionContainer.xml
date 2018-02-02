@@ -20,6 +20,9 @@
   <Docs>
     <summary>Holds an existing collection structure, such as an <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> or a <see cref="T:System.Data.DataSet" />, to be used inside a <see cref="T:System.Windows.Data.CompositeCollection" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.ItemCollection" />
+    <altmember cref="T:System.Windows.Data.CompositeCollection" />
+    <altmember cref="T:System.Windows.Controls.ItemsControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,6 +91,7 @@
       <Docs>
         <summary>Occurs when the contained collection changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="CollectionProperty">
@@ -153,6 +157,7 @@
         <returns>
           <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeCollection">

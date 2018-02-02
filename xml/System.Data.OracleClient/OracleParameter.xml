@@ -326,6 +326,7 @@ Parameter = new OracleParameter("pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property was not set to a valid <see cref="T:System.Data.DbType" />.</exception>
+        <altmember cref="T:System.Data.OracleClient.OracleType" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -642,6 +643,9 @@ public void CreateOracleDbParameter()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.OracleClient.OracleParameter.ResetOracleType" />
+        <altmember cref="P:System.Data.Odbc.OdbcParameter.DbType" />
+        <altmember cref="P:System.Data.OracleClient.OracleParameter.OracleType" />
       </Docs>
     </Member>
     <Member MemberName="ResetOracleType">
@@ -667,6 +671,9 @@ public void CreateOracleDbParameter()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Odbc.OdbcParameter.ResetDbType" />
+        <altmember cref="P:System.Data.Odbc.OdbcParameter.DbType" />
+        <altmember cref="P:System.Data.OracleClient.OracleParameter.OracleType" />
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -877,7 +884,7 @@ FieldName = @OriginalFieldName
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used by the <xref:System.Data.OracleClient.OracleDataAdapter.UpdateCommand%2A> during the <xref:System.Data.Common.DbDataAdapter.Update%2A?displayProperty=fullName> to determine whether the original or current value is used for a parameter value. This lets primary keys be updated. This property is set to the version of the <xref:System.Data.DataRow> used by the <xref:System.Data.DataRow.Item%2A?displayProperty=fullName> property (<xref:System.Data.DataRow> indexer), or the <xref:System.Data.DataRow.GetChildRows%2A?displayProperty=fullName> method of the <xref:System.Data.DataRow> object.  
+ This property is used by the <xref:System.Data.OracleClient.OracleDataAdapter.UpdateCommand%2A> during the <xref:System.Data.Common.DbDataAdapter.Update%2A?displayProperty=nameWithType> to determine whether the original or current value is used for a parameter value. This lets primary keys be updated. This property is set to the version of the <xref:System.Data.DataRow> used by the <xref:System.Data.DataRow.Item%2A?displayProperty=nameWithType> property (<xref:System.Data.DataRow> indexer), or the <xref:System.Data.DataRow.GetChildRows%2A?displayProperty=nameWithType> method of the <xref:System.Data.DataRow> object.  
   
    
   
@@ -999,5 +1006,14 @@ public void CreateOracleParameter()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

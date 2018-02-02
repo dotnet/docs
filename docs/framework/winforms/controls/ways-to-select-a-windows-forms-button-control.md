@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Button control [Windows Forms], selecting"
 ms.assetid: fe2fc058-5118-4f70-b264-6147d64a7a8d
@@ -18,6 +16,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Ways to Select a Windows Forms Button Control
 A Windows Forms button can be selected in the following ways:  
@@ -37,6 +37,6 @@ A Windows Forms button can be selected in the following ways:
 -   Call the <xref:System.Windows.Forms.Button.PerformClick%2A> method to select the button programmatically.  
   
 ## See Also  
- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)   
- [How to: Respond to Windows Forms Button Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-button-clicks.md)   
+ [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
+ [How to: Respond to Windows Forms Button Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-button-clicks.md)  
  [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)

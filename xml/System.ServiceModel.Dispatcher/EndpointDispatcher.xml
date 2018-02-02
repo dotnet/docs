@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -17,9 +23,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> and the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> classes expose the runtime customization points for endpoints in a service. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> can be used to control which messages it can process and some endpoint-related information. The <xref:System.ServiceModel.Dispatcher.DispatchRuntime> has a large number of properties used to insert custom extensions into the endpoint-wide runtime.  
+ The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> and the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=nameWithType> classes expose the runtime customization points for endpoints in a service. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> can be used to control which messages it can process and some endpoint-related information. The <xref:System.ServiceModel.Dispatcher.DispatchRuntime> has a large number of properties used to insert custom extensions into the endpoint-wide runtime.  
   
- The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a <xref:System.ServiceModel.Dispatcher.ChannelDispatcher?displayProperty=fullName> when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property. If two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects can accept a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property value determines the higher priority endpoint.  
+ The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a <xref:System.ServiceModel.Dispatcher.ChannelDispatcher?displayProperty=nameWithType> when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property. If two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects can accept a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property value determines the higher priority endpoint.  
   
  Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object to configure or extend the process of receiving messages from the associated <xref:System.ServiceModel.Dispatcher.ChannelDispatcher>, converting from message objects to objects used as parameters, and invoking an endpoint operation as well as the reverse process.  
   
@@ -44,7 +50,7 @@
    
   
 ## Examples  
- The following code example shows the use of <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to locate the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> for the endpoint and inserts a custom message inspector using an endpoint behavior.  
+ The following code example shows the use of <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to locate the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=nameWithType> for the endpoint and inserts a custom message inspector using an endpoint behavior.  
   
  [!code-csharp[IEndpointBehavior#4](~/samples/snippets/csharp/VS_Snippets_CFX/iendpointbehavior/cs/iendpointbehaviormessageinspector.cs#4)]  
   
@@ -125,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher?displayProperty=fullName> has an <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> for each endpoint the channel can support. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property is a <xref:System.ServiceModel.Dispatcher.MessageFilter?displayProperty=fullName> object that matches the destination endpoint address of the message. The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> combines the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> value with the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> value to determine whether to route a message to this endpoint.  
+ The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher?displayProperty=nameWithType> has an <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> for each endpoint the channel can support. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property is a <xref:System.ServiceModel.Dispatcher.MessageFilter?displayProperty=nameWithType> object that matches the destination endpoint address of the message. The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> combines the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> value with the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> value to determine whether to route a message to this endpoint.  
   
  In the case where two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects that match can process a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property is used to select an endpoint.  
   
@@ -240,12 +246,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property to obtain the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object to modify run-time values or insert custom run-time extensions for the entire endpoint. From the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property, you can also navigate to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> collection for the endpoint.  
+ Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property to obtain the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object to modify run-time values or insert custom run-time extensions for the entire endpoint. From the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property, you can also navigate to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=nameWithType> collection for the endpoint.  
   
    
   
 ## Examples  
- The following code example shows the use of <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to locate the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> for the endpoint and inserts a custom message inspector using an endpoint behavior.  
+ The following code example shows the use of <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to locate the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=nameWithType> for the endpoint and inserts a custom message inspector using an endpoint behavior.  
   
  [!code-csharp[IEndpointBehavior#4](~/samples/snippets/csharp/VS_Snippets_CFX/iendpointbehavior/cs/iendpointbehaviormessageinspector.cs#4)]  
   
@@ -294,7 +300,7 @@
   
  In the case where two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects that match can process a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property is used to select an endpoint.  
   
- If two endpoints can process a message and the value of their <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property matches, a <xref:System.ServiceModel.Dispatcher.MultipleFilterMatchesException?displayProperty=fullName> is thrown.  
+ If two endpoints can process a message and the value of their <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property matches, a <xref:System.ServiceModel.Dispatcher.MultipleFilterMatchesException?displayProperty=nameWithType> is thrown.  
   
  ]]></format>
         </remarks>
@@ -319,5 +325,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

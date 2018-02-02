@@ -34,9 +34,9 @@
  Use <xref:System.Threading.ReaderWriterLockSlim> to protect a resource that is read by multiple threads and written to by one thread at a time. <xref:System.Threading.ReaderWriterLockSlim> allows multiple threads to be in read mode, allows one thread to be in write mode with exclusive ownership of the lock, and allows one thread that has read access to be in upgradeable read mode, from which the thread can upgrade to write mode without having to relinquish its read access to the resource.  
   
 > [!NOTE]
->  <xref:System.Threading.ReaderWriterLockSlim> is similar to <xref:System.Threading.ReaderWriterLock>, but it has simplified rules for recursion and for upgrading and downgrading lock state. <xref:System.Threading.ReaderWriterLockSlim>avoids many cases of potential deadlock. In addition, the performance of <xref:System.Threading.ReaderWriterLockSlim> is significantly better than <xref:System.Threading.ReaderWriterLock>. <xref:System.Threading.ReaderWriterLockSlim> is recommended for all new development.  
+>  <xref:System.Threading.ReaderWriterLockSlim> is similar to <xref:System.Threading.ReaderWriterLock>, but it has simplified rules for recursion and for upgrading and downgrading lock state. <xref:System.Threading.ReaderWriterLockSlim> avoids many cases of potential deadlock. In addition, the performance of <xref:System.Threading.ReaderWriterLockSlim> is significantly better than <xref:System.Threading.ReaderWriterLock>. <xref:System.Threading.ReaderWriterLockSlim> is recommended for all new development.  
   
- By default, new instances of <xref:System.Threading.ReaderWriterLockSlim> are created with the <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName> flag and do not allow recursion. This default policy is recommended for all new development, because recursion introduces unnecessary complications and makes your code more prone to deadlocks. To simplify migration from existing projects that use <xref:System.Threading.Monitor> or <xref:System.Threading.ReaderWriterLock>, you can use the <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName> flag to create instances of <xref:System.Threading.ReaderWriterLockSlim> that allow recursion.  
+ By default, new instances of <xref:System.Threading.ReaderWriterLockSlim> are created with the <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType> flag and do not allow recursion. This default policy is recommended for all new development, because recursion introduces unnecessary complications and makes your code more prone to deadlocks. To simplify migration from existing projects that use <xref:System.Threading.Monitor> or <xref:System.Threading.ReaderWriterLock>, you can use the <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType> flag to create instances of <xref:System.Threading.ReaderWriterLockSlim> that allow recursion.  
   
  A thread can enter the lock in three modes: read mode, write mode, and upgradeable read mode. (In the rest of this topic, "upgradeable read mode" is referred to as "upgradeable mode", and the phrase "enter `x` mode" is used in preference to the longer phrase "enter the lock in `x` mode".)  
   
@@ -76,7 +76,7 @@
  After downgrading to read mode, a thread cannot reenter upgradeable mode until it has exited from read mode.  
   
 ## Entering the Lock Recursively  
- You can create a <xref:System.Threading.ReaderWriterLockSlim> that supports recursive lock entry by using the <xref:System.Threading.ReaderWriterLockSlim.%23ctor%28System.Threading.LockRecursionPolicy%29> constructor that specifies lock policy, and specifying <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName>.  
+ You can create a <xref:System.Threading.ReaderWriterLockSlim> that supports recursive lock entry by using the <xref:System.Threading.ReaderWriterLockSlim.%23ctor%28System.Threading.LockRecursionPolicy%29> constructor that specifies lock policy, and specifying <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  The use of recursion is not recommended for new development, because it introduces unnecessary complications and makes your code more prone to deadlocks.  
@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Threading.ReaderWriterLockSlim> that is initialized with this constructor does not allow recursion. That is, the <xref:System.Threading.ReaderWriterLockSlim.RecursionPolicy%2A> property returns <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName>.  
+ A <xref:System.Threading.ReaderWriterLockSlim> that is initialized with this constructor does not allow recursion. That is, the <xref:System.Threading.ReaderWriterLockSlim.RecursionPolicy%2A> property returns <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType>.  
   
  For more information about recursion policy and its effects, see the <xref:System.Threading.LockRecursionPolicy> enumeration and the <xref:System.Threading.ReaderWriterLockSlim> class.  
   
@@ -219,6 +219,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.LockRecursionPolicy" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -251,7 +252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recursion policy determines the restrictions on threads that enter the lock more than once. For example, if a lock was created with <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName> and a thread has entered the lock in read mode, <xref:System.Threading.LockRecursionException> is thrown if the thread tries to reenter the lock in read mode. Similarly, if a thread has entered the lock in write mode, <xref:System.Threading.LockRecursionException> is thrown if the thread tries to reenter the lock in any mode.  
+ Recursion policy determines the restrictions on threads that enter the lock more than once. For example, if a lock was created with <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType> and a thread has entered the lock in read mode, <xref:System.Threading.LockRecursionException> is thrown if the thread tries to reenter the lock in read mode. Similarly, if a thread has entered the lock in write mode, <xref:System.Threading.LockRecursionException> is thrown if the thread tries to reenter the lock in any mode.  
   
 > [!NOTE]
 >  A thread in upgradeable mode can upgrade to write mode or downgrade to read mode regardless of the lock recursion policy setting.  
@@ -265,7 +266,7 @@
 ## Examples  
  The following example shows two exception scenarios, one that depends on the <xref:System.Threading.LockRecursionPolicy> setting and one that does not.  
   
- In the first scenario, the thread enters read mode and then tries to enter read mode recursively. If the <xref:System.Threading.ReaderWriterLockSlim> is created by using the default constructor, which sets recursion policy to <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName>, an exception is thrown. If <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName> is used to create the <xref:System.Threading.ReaderWriterLockSlim>, no exception is thrown.  
+ In the first scenario, the thread enters read mode and then tries to enter read mode recursively. If the <xref:System.Threading.ReaderWriterLockSlim> is created by using the default constructor, which sets recursion policy to <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType>, an exception is thrown. If <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType> is used to create the <xref:System.Threading.ReaderWriterLockSlim>, no exception is thrown.  
   
  In the second scenario, the thread enters read mode and then tries to enter write mode. <xref:System.Threading.LockRecursionException> is thrown regardless of the lock recursion policy.  
   
@@ -283,6 +284,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.LockRecursionPolicy" />
+        <altmember cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="CurrentReadCount">
@@ -921,7 +924,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recursion policy determines the restrictions on threads that enter the lock more than once. For example, if a lock was created with <xref:System.Threading.LockRecursionPolicy?displayProperty=fullName> and a thread has entered the lock in read mode, <xref:System.Threading.LockRecursionException> is thrown if the thread tries to reenter the lock in read mode.  
+ Recursion policy determines the restrictions on threads that enter the lock more than once. For example, if a lock was created with <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType> and a thread has entered the lock in read mode, <xref:System.Threading.LockRecursionException> is thrown if the thread tries to reenter the lock in read mode.  
   
 > [!NOTE]
 >  A thread in upgradeable mode can upgrade to write mode or downgrade to read mode regardless of the lock recursion policy setting.  
@@ -932,6 +935,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.LockRecursionException" />
       </Docs>
     </Member>
     <Member MemberName="RecursiveReadCount">
@@ -1556,5 +1560,49 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryEnterWriteLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in write mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryEnterUpgradeableReadLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in upgradeable mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryEnterReadLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in read mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ReaderWriterLockSlim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,16 +1,16 @@
 ---
-title: "Application Compatibility in the .NET Framework"
+title: Application Compatibility in the .NET Framework
 ms.custom: ""
 ms.date: "05/19/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:
+ms.technology: 
   - "dotnet-clr"
   - "app-compat"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "application compatibility"
   - ".NET Framework application compatibility"
   - ".NET Framework changes"
@@ -19,12 +19,13 @@ ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Application Compatibility in the .NET Framework
 
 ## Introduction
-
 Compatibility is a very important goal of each .NET release. Compatibility
 ensures that each version is additive, so previous versions will still work. On
 the other hand, changes to previous functionality (to improve performance,
@@ -37,9 +38,9 @@ running on a particular version.
 
 Each app targets a specific version of the .NET Framework, which can be specified by:
 
-- Defining a target framework in Visual Studio.
-- Specifying the target framework in a project file.
-- Applying a <xref:System.Runtime.Versioning.TargetFrameworkAttribute> to the source code.
+* Defining a target framework in Visual Studio.
+* Specifying the target framework in a project file.
+* Applying a <xref:System.Runtime.Versioning.TargetFrameworkAttribute> to the source code.
 
 When running on a newer version than what was targeted, the .NET Framework will
 use quirked behavior to mimic the older targeted version. In other words, the
@@ -51,9 +52,10 @@ Framework are mitigated through this quirking model.
 
 Runtime issues are those that arise when a new runtime is placed on a machine
 and the same binaries are run, but different behavior is seen. If a binary was
-compiled for .NET Framework 4.0 it will run in .NET Framework 4.0 compatibility mode on 4.5 or later versions. Many
-of the changes that affect 4.5 will not affect a binary compiled for 4.0. This
-is specific to the AppDomain and depends on the settings of the entry assembly.
+compiled for .NET Framework 4.0 it will run in .NET Framework 4.0 compatibility
+mode on 4.5 or later versions. Many of the changes that affect 4.5 will not
+affect a binary compiled for 4.0. This is specific to the AppDomain and depends
+on the settings of the entry assembly.
 
 ## Retargeting changes
 
@@ -100,15 +102,14 @@ Each issue includes the following information:
 -   The IDs of the available diagnostics
 
 ## Usage
-
 To begin, select the type of compatibility change below:
 
-- [Retargeting Changes](./retargeting/index.md)
-- [Runtime Changes](./runtime/index.md)
+* [Retargeting Changes](./retargeting/index.md)
+* [Runtime Changes](./runtime/index.md)
 
 
-## See also
+## See Also
 
-[Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)   
-[What's New](../../../docs/framework/whats-new/index.md)   
-[What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+* [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+* [What's New](../../../docs/framework/whats-new/index.md)
+* [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)

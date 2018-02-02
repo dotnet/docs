@@ -37,7 +37,7 @@
 ## Remarks  
  To obtain an instance of an implementation of the <xref:System.Text.Decoder> class, the application should use the <xref:System.Text.Encoding.GetDecoder%2A> method of an <xref:System.Text.Encoding> implementation.  
   
- The <xref:System.Text.Decoder.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Decoder.GetChars%2A> method performs the actual decoding. There are several versions of both of these methods available in the <xref:System.Text.Decoder> class. For more information, see <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName>. A <xref:System.Text.Decoder> object maintains state information between successive calls to `GetChars` or <xref:System.Text.Decoder.Convert%2A> methods so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.Encoding.GetDecoder%2A> and <xref:System.Text.Encoding.GetEncoder%2A> are useful for network transmission and file operations because those operations often deal with blocks of data instead of a complete data stream.  
+ The <xref:System.Text.Decoder.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Decoder.GetChars%2A> method performs the actual decoding. There are several versions of both of these methods available in the <xref:System.Text.Decoder> class. For more information, see <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType>. A <xref:System.Text.Decoder> object maintains state information between successive calls to `GetChars` or <xref:System.Text.Decoder.Convert%2A> methods so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.Encoding.GetDecoder%2A> and <xref:System.Text.Encoding.GetEncoder%2A> are useful for network transmission and file operations because those operations often deal with blocks of data instead of a complete data stream.  
   
 > [!NOTE]
 >  When the application is done with a stream of data, it should make sure that the state information is flushed by setting the `flush` parameter to `true` in the appropriate method call. If an exception occurs or if the application switches streams, it should call <xref:System.Text.Decoder.Reset%2A> to clear the internal state of the `Decoder` object.  
@@ -59,6 +59,9 @@
     <block subset="none" type="overrides">
       <para>When your application inherits from this class, it must override all the members.</para>
     </block>
+    <altmember cref="T:System.Text.Encoder" />
+    <altmember cref="T:System.Text.Encoding" />
+    <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,11 +107,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public virtual void Convert (byte* bytes, int byteCount, char* chars, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount, bool flush, int32 bytesUsed, int32 charsUsed, bool completed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount, bool flush, [out] int32&amp; bytesUsed, [out] int32&amp; charsUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.Convert(System.Byte*,System.Int32,System.Char*,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -165,7 +169,7 @@
 ## Remarks  
  Remember that the <xref:System.Text.Decoder> object saves state between calls to <xref:System.Text.Decoder.Convert%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer. Any remaining processed data that is part of a logical unit, such as the high surrogate of a surrogate pair, is converted according to the current fallback settings.  
   
- The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the decoding operation in a fixed-size buffer. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the decoding operation in a fixed-size buffer. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> topic for more comments.  
   
  The `completed` output parameter indicates whether all the data in the input buffer was converted and stored in the output buffer. This parameter is set to `false` if the number of bytes specified by the `byteCount` parameter cannot be converted without exceeding the number of characters specified by the `charCount` parameter. In that situation, the application should use the contents of the output buffer or provide a new output buffer, increment the `bytes` parameter by the number of bytes specified by the `bytesUsed` parameter, then call the `Convert` method again to process the remaining input.  
   
@@ -189,7 +193,7 @@
     </Member>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public virtual void Convert (byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(unsigned int8[] bytes, int32 byteIndex, int32 byteCount, char[] chars, int32 charIndex, int32 charCount, bool flush, int32 bytesUsed, int32 charsUsed, bool completed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(unsigned int8[] bytes, int32 byteIndex, int32 byteCount, char[] chars, int32 charIndex, int32 charCount, bool flush, [out] int32&amp; bytesUsed, [out] int32&amp; charsUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.Convert(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -249,7 +253,7 @@
 ## Remarks  
  Remember that the <xref:System.Text.Decoder> object saves state between calls to <xref:System.Text.Decoder.Convert%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer. Any remaining processed data that is part of a logical unit, such as the high surrogate of a surrogate pair, is converted according to the current fallback settings.  
   
- The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the decoding operation in a fixed-size buffer. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the decoding operation in a fixed-size buffer. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> topic for more comments.  
   
  The `completed` output parameter indicates whether all the data in the input buffer was converted and stored in the output buffer. This parameter is set to `false` if the number of bytes specified by the `byteCount` parameter cannot be converted without exceeding the number of characters specified by the `charCount` parameter. In that situation, the application should use the contents of the output buffer or provide a new output buffer, increment the `bytes` parameter by the number of bytes specified by the `bytesUsed` parameter, then call the `Convert` method again to process the remaining input.  
   
@@ -328,6 +332,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentException">A new value cannot be assigned in a set operation because the current <see cref="T:System.Text.DecoderFallbackBuffer" /> object contains data that has not been decoded yet.</exception>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="P:System.Text.Encoder.FallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="FallbackBuffer">
@@ -371,6 +377,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="P:System.Text.Encoder.Fallback" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -439,6 +447,8 @@
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Decoder.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -512,6 +522,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -584,6 +596,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -644,7 +658,7 @@
   
  If `GetChars` is called with `flush` set to `false`, the decoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next decoding operation. The application should call `GetCharCount` on a block of data immediately before calling `GetChars` on the same block, so that any trailing bytes from the previous block are included in the calculation.  
   
- If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> topic for more comments.  
   
  ]]></format>
         </remarks>
@@ -664,6 +678,8 @@
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Decoder.GetCharCount(System.Byte*,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -717,7 +733,7 @@
   
  If `GetChars` is called with `flush` set to `false`, the decoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next decoding operation. The application should call `GetCharCount` on a block of data immediately before calling `GetChars` on the same block, so that any trailing bytes from the previous block are included in the calculation.  
   
- If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> topic for more comments.  
   
    
   
@@ -753,6 +769,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -809,7 +827,7 @@
   
  If `GetChars` is called with `flush` set to `false`, the decoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next decoding operation. The application should call `GetCharCount` on a block of data immediately before calling `GetChars` on the same block, so that any trailing bytes from the previous block are included in the calculation.  
   
- If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> topic for more comments.  
   
  ]]></format>
         </remarks>
@@ -836,6 +854,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -884,5 +904,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an encoded byte sequence to a string or array of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

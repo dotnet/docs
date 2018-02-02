@@ -27,7 +27,7 @@
   
  A lease contains properties that determine its policies, and methods that renew the lease time. The lease exposes the <xref:System.Runtime.Remoting.Lifetime.ILease> interface.  
   
- For an example showing how to use the <xref:System.Runtime.Remoting.Lifetime.ILease> interface see [Lifetimes](http://msdn.microsoft.com/en-us/334a30e5-33cb-4f0f-a38a-ed4abc5560fa).  
+ For an example showing how to use the <xref:System.Runtime.Remoting.Lifetime.ILease> interface see [Lifetimes](http://msdn.microsoft.com/library/334a30e5-33cb-4f0f-a38a-ed4abc5560fa).  
   
  ]]></format>
     </remarks>
@@ -73,6 +73,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Lifetime.LeaseState" />
       </Docs>
     </Member>
     <Member MemberName="InitialLeaseTime">
@@ -95,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Runtime.Remoting.Lifetime.ILease.InitialLeaseTime%2A> property is set to <xref:System.TimeSpan?displayProperty=fullName>, then the lease will never time out and the object associated with it will have an infinite lifetime.  
+ If the <xref:System.Runtime.Remoting.Lifetime.ILease.InitialLeaseTime%2A> property is set to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, then the lease will never time out and the object associated with it will have an infinite lifetime.  
   
  ]]></format>
         </remarks>
@@ -240,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Runtime.Remoting.Lifetime.ILease.SponsorshipTimeout%2A> is <xref:System.TimeSpan?displayProperty=fullName>, then this lease will not take sponsors.  
+ If the <xref:System.Runtime.Remoting.Lifetime.ILease.SponsorshipTimeout%2A> is <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, then this lease will not take sponsors.  
   
  If a sponsor does not respond to a call to renew a lease within the time-out period, it is assumed to be dead and is removed from the list of sponsors for the current lease.  
   
@@ -274,5 +275,15 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a sponsor for the lease.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

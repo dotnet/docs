@@ -18,6 +18,8 @@ caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Support for the Window Control Type
 > [!NOTE]
@@ -89,6 +91,6 @@ manager: "markl"
 |<xref:System.Windows.Automation.WindowPatternIdentifiers.WindowVisualStateProperty> property-changed event.|Depends|None|  
   
 ## See Also  
- <xref:System.Windows.Automation.ControlType.Window>   
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)   
+ <xref:System.Windows.Automation.ControlType.Window>  
+ [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
  [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

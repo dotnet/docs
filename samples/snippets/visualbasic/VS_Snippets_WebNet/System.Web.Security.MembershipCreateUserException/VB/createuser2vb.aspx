@@ -27,13 +27,13 @@ Public Function GetErrorMessage(status As MembershipCreateStatus) As String
         Return "Username already exists. Please enter a different user name."
 
       Case MembershipCreateStatus.DuplicateEmail
-        Return "A username for that e-mail address already exists. Please enter a different e-mail address."
+        Return "A username for that email address already exists. Please enter a different email address."
 
       Case MembershipCreateStatus.InvalidPassword
         Return "The password provided is invalid. Please enter a valid password value."
 
       Case MembershipCreateStatus.InvalidEmail
-        Return "The e-mail address provided is invalid. Please check the value and try again."
+        Return "The email address provided is invalid. Please check the value and try again."
 
       Case MembershipCreateStatus.InvalidAnswer
         Return "The password retrieval answer provided is invalid. Please check the value and try again."

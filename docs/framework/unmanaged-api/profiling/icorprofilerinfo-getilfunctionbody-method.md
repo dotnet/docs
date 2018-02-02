@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetILFunctionBody"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetILFunctionBody method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILFunctionBody method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetILFunctionBody Method
 Gets a pointer to the body of a method in Microsoft intermediate language (MSIL) code, starting at its header.  

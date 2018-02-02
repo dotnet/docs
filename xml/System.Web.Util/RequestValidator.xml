@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Util.RequestValidationSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Util.RequestValidator> class has a default constructor. When a new instance of the class is initialized, an internal method retrieves custom validation details from the application's configuration information. The configuration details are contained in the <xref:System.Web.Configuration.HttpRuntimeSection> section. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) and the <xref:System.Web.Configuration.HttpRuntimeSection.RequestValidationType%2A> attribute.  
+ The <xref:System.Web.Util.RequestValidator> class has a default constructor. When a new instance of the class is initialized, an internal method retrieves custom validation details from the application's configuration information. The configuration details are contained in the <xref:System.Web.Configuration.HttpRuntimeSection> section. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) and the <xref:System.Web.Configuration.HttpRuntimeSection.RequestValidationType%2A> attribute.  
   
  During initialization, a single instance of the <xref:System.Web.Util.RequestValidator> class is created, and a reference to the instance is maintained in the <xref:System.Web.Util.RequestValidator.Current%2A> property. ASP.NET does not create a new request validator instance per request. Therefore, custom implementations of the <xref:System.Web.Util.RequestValidator> class must be thread-safe.  
   
@@ -104,7 +105,7 @@
     </Member>
     <Member MemberName="InvokeIsValidRequestString">
       <MemberSignature Language="C#" Value="public bool InvokeIsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InvokeIsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InvokeIsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, [out] int32&amp; validationFailureIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.InvokeIsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -158,7 +159,7 @@
     </Member>
     <Member MemberName="IsValidRequestString">
       <MemberSignature Language="C#" Value="protected virtual bool IsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, [out] int32&amp; validationFailureIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.IsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

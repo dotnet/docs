@@ -1,26 +1,17 @@
 ---
 title: "How to: Use a Thread Pool (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 210a9235-83a6-420b-af52-2d6a58e5133f
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Use a Thread Pool (C#)
 *Thread pooling* is a form of multithreading in which tasks are added to a queue and automatically started when threads are created. For more information, see [Thread Pooling (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md).  
@@ -146,14 +137,14 @@ Fibonacci(27) = 196418
 ```  
   
 ## See Also  
- <xref:System.Threading.Mutex>   
- <xref:System.Threading.WaitHandle.WaitAll%2A>   
- <xref:System.Threading.ManualResetEvent>   
- <xref:System.Threading.EventWaitHandle.Set%2A>   
- <xref:System.Threading.ThreadPool>   
- <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>   
- <xref:System.Threading.ManualResetEvent>   
- [Thread Pooling (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md)   
- [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)   
- @System.Threading.Monitor   
+ <xref:System.Threading.Mutex>  
+ <xref:System.Threading.WaitHandle.WaitAll%2A>  
+ <xref:System.Threading.ManualResetEvent>  
+ <xref:System.Threading.EventWaitHandle.Set%2A>  
+ <xref:System.Threading.ThreadPool>  
+ <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>  
+ <xref:System.Threading.ManualResetEvent>  
+ <xref:System.Threading.Monitor>  
+ [Thread Pooling (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md)  
+ [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)  
  [Security](../../../../standard/security/index.md)

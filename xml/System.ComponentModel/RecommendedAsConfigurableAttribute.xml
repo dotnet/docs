@@ -38,7 +38,7 @@
  You can bind a property that does not have a <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> to a setting in Visual Studio by clicking the ellipsis button (…) under **Settings** in the **Properties** window and selecting the appropriate property from the list.  
   
 > [!NOTE]
->  When you mark a property with <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes>. For a property marked with <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> set to value `false`, the value is <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No?displayProperty=fullName>.  
+>  When you mark a property with <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes>. For a property marked with <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> set to value `false`, the value is <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes?displayProperty=nameWithType> or <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No?displayProperty=nameWithType>.  
   
  For more information, see [Attributes](~/docs/standard/attributes/index.md).  
   
@@ -69,6 +69,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.AttributeCollection" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example marks a property as usable as an application setting. This code creates a new <xref:System.ComponentModel.RecommendedAsConfigurableAttribute>, sets its value to <xref:System.ComponentModel.RecommendedAsConfigurableAttribute?displayProperty=fullName>, and binds it to the property.  
+ The following example marks a property as usable as an application setting. This code creates a new <xref:System.ComponentModel.RecommendedAsConfigurableAttribute>, sets its value to <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes?displayProperty=nameWithType>, and binds it to the property.  
   
  [!code-cpp[Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example/CS/source.cs#1)]
@@ -108,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.RecommendedAsConfigurableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -134,6 +139,9 @@
       <Docs>
         <summary>Specifies the default value for the <see cref="T:System.ComponentModel.RecommendedAsConfigurableAttribute" />, which is <see cref="F:System.ComponentModel.RecommendedAsConfigurableAttribute.No" />. This <see langword="static" /> field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.RecommendedAsConfigurableAttribute" />
+        <altmember cref="F:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.RecommendedAsConfigurableAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -254,10 +262,12 @@
 ## Remarks  
  This field is the default setting for this attribute.  
   
- When you mark a property with <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No?displayProperty=fullName>.  
+ When you mark a property with <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.RecommendedAsConfigurableAttribute" />
+        <altmember cref="F:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="RecommendedAsConfigurable">
@@ -305,6 +315,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.RecommendedAsConfigurableAttribute" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -336,10 +351,12 @@
 ## Remarks  
  When you mark a property with <xref:System.ComponentModel.RecommendedAsConfigurableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes>.  
   
- Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes?displayProperty=fullName>.  
+ Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.RecommendedAsConfigurableAttribute" />
+        <altmember cref="F:System.ComponentModel.RecommendedAsConfigurableAttribute.No" />
       </Docs>
     </Member>
   </Members>

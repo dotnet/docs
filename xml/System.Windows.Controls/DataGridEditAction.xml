@@ -15,10 +15,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Controls.DataGridCellEditEndingEventArgs.EditAction%2A?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridRowEditEndingEventArgs.EditAction%2A?displayProperty=fullName> properties.  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGridCellEditEndingEventArgs.EditAction%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.DataGridRowEditEndingEventArgs.EditAction%2A?displayProperty=nameWithType> properties.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="P:System.Windows.Controls.DataGridCellEditEndingEventArgs.EditAction" />
+    <altmember cref="P:System.Windows.Controls.DataGridRowEditEndingEventArgs.EditAction" />
   </Docs>
   <Members>
     <Member MemberName="Cancel">

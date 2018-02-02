@@ -36,7 +36,7 @@
  By default, members that have no localizable attribute or are marked with the <xref:System.ComponentModel.LocalizableAttribute> set to `false` will have their property values persisted to code, if the data type allows. Otherwise, if the main component is set to `Localizable`, all properties will be persisted to the resource file. The default is `false`.  
   
 > [!NOTE]
->  When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.LocalizableAttribute> set to `false`, the value is <xref:System.ComponentModel.LocalizableAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.LocalizableAttribute.No?displayProperty=fullName>.  
+>  When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.LocalizableAttribute> set to `false`, the value is <xref:System.ComponentModel.LocalizableAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.Yes?displayProperty=nameWithType> or <xref:System.ComponentModel.LocalizableAttribute.No?displayProperty=nameWithType>.  
   
  For more information, see [Attributes](~/docs/standard/attributes/index.md).  
   
@@ -59,6 +59,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.AttributeCollection" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example marks a property as needing to be localized. This code creates a new <xref:System.ComponentModel.LocalizableAttribute>, sets its value to <xref:System.ComponentModel.LocalizableAttribute?displayProperty=fullName>, and binds it to the property.  
+ The following example marks a property as needing to be localized. This code creates a new <xref:System.ComponentModel.LocalizableAttribute>, sets its value to <xref:System.ComponentModel.LocalizableAttribute.Yes?displayProperty=nameWithType>, and binds it to the property.  
   
  [!code-cpp[Classic LocalizableAttribute.LocalizableAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LocalizableAttribute.LocalizableAttribute Example/CPP/source.cpp#1)]
  [!code-csharp[Classic LocalizableAttribute.LocalizableAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LocalizableAttribute.LocalizableAttribute Example/CS/source.cs#1)]
@@ -99,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.LocalizableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -129,10 +134,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute?displayProperty=fullName>.  
+ When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.LocalizableAttribute" />
+        <altmember cref="F:System.ComponentModel.LocalizableAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.LocalizableAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -266,6 +274,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.LocalizableAttribute" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -298,10 +311,12 @@
 ## Remarks  
  This field is the default setting for this attribute.  
   
- When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.No?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.LocalizableAttribute" />
+        <altmember cref="F:System.ComponentModel.LocalizableAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -332,10 +347,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.Yes>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.Yes?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.Yes>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.Yes?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.LocalizableAttribute" />
+        <altmember cref="F:System.ComponentModel.LocalizableAttribute.No" />
       </Docs>
     </Member>
   </Members>

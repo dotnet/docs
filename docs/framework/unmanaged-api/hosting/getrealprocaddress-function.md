@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetRealProcAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRealProcAddress function [.NET Framework hosting]"
 ms.assetid: f1f2fab1-400b-488f-95f2-d49c4fca3556
@@ -28,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetRealProcAddress Function
 Gets the address of the specified function that is exported from the latest installed version of the common language runtime (CLR).  

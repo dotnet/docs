@@ -26,6 +26,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.MediaPlayer" />
+    <altmember cref="T:System.Windows.Media.MediaTimeline" />
+    <altmember cref="T:System.Windows.Media.MediaClock" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,7 +68,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -93,7 +96,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

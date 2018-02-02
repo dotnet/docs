@@ -17,7 +17,7 @@
   
  Provides methods for creating an array that is immutable; meaning it cannot be changed once it is created.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -228,7 +228,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableArray&lt;T&gt; Create&lt;T&gt; (T[] items);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableArray&lt;T&gt; Create&lt;T&gt; (params T[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; Create&lt;T&gt;(!!T[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray.Create``1(``0[])" />
       <MemberType>Method</MemberType>

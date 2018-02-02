@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Diagnostics.InstanceDataCollection.CopyTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

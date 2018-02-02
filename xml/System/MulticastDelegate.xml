@@ -53,7 +53,7 @@
   
  Note that both methods include a single string parameter and return `void`. In other words, both methods can be assigned to the  `CheckAndDisplayDelegate` delegate.  
   
- The `Test.Main` method is the application entry point. It instantiates a `StringContainer` object, populates it with strings, and creates two `CheckAndDisplayDelegate` delegates, `conStart` and `vowelStart`, that invoke a single method. It then calls the <xref:System.Delegate.Combine%2A?displayProperty=fullName> method to create the `multipleDelegates` delegate, which initially contains the `ConStart` and  `VowelStart` delegates. Note that when the `multipleDelegates` delegate is invoked, it displays all the strings in the collection in their original order. This is because each letter is passed separately to each delegate, and each letter meets the filtering criteria of only one of the two delegates. Finally, after calls to <xref:System.Delegate.Remove%2A?displayProperty=fullName> and <xref:System.Delegate.Combine%2A?displayProperty=fullName>, `multipleDelegates` contains two `conStart` delegates. When it is invoked, each string in the `StringContainer` object is displayed twice.  
+ The `Test.Main` method is the application entry point. It instantiates a `StringContainer` object, populates it with strings, and creates two `CheckAndDisplayDelegate` delegates, `conStart` and `vowelStart`, that invoke a single method. It then calls the <xref:System.Delegate.Combine%2A?displayProperty=nameWithType> method to create the `multipleDelegates` delegate, which initially contains the `ConStart` and  `VowelStart` delegates. Note that when the `multipleDelegates` delegate is invoked, it displays all the strings in the collection in their original order. This is because each letter is passed separately to each delegate, and each letter meets the filtering criteria of only one of the two delegates. Finally, after calls to <xref:System.Delegate.Remove%2A?displayProperty=nameWithType> and <xref:System.Delegate.Combine%2A?displayProperty=nameWithType>, `multipleDelegates` contains two `conStart` delegates. When it is invoked, each string in the `StringContainer` object is displayed twice.  
   
  [!code-cpp[Multicast Delegate Introduction#1](~/samples/snippets/cpp/VS_Snippets_CLR/Multicast Delegate Introduction/CPP/delegatestring.cpp#1)]
  [!code-csharp[Multicast Delegate Introduction#1](~/samples/snippets/csharp/VS_Snippets_CLR/Multicast Delegate Introduction/CS/delegatestring.cs#1)]
@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor cannot be used in application code. To create a delegate by specifying the name of an instance method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method that specifies a method name and a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%29?displayProperty=fullName> method overload creates a delegate for an instance method with a specified name.  
+ This constructor cannot be used in application code. To create a delegate by specifying the name of an instance method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=nameWithType> method that specifies a method name and a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%29?displayProperty=nameWithType> method overload creates a delegate for an instance method with a specified name.  
   
  ]]></format>
         </remarks>
@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor cannot be used in application code. To create a delegate by specifying the name of a static method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method that specifies a method name but does not specify a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%29?displayProperty=fullName> method overload creates a static delegate for a method with a specified name.  
+ This constructor cannot be used in application code. To create a delegate by specifying the name of a static method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=nameWithType> method that specifies a method name but does not specify a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%29?displayProperty=nameWithType> method overload creates a static delegate for a method with a specified name.  
   
  ]]></format>
         </remarks>
@@ -398,6 +398,8 @@
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">A serialization error occurred.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -443,7 +445,7 @@
   
  Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
   
- The equivalent method for this operator is <xref:System.MulticastDelegate.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.MulticastDelegate.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
@@ -492,7 +494,7 @@
   
  Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
   
- The equivalent method for this operator is <xref:System.MulticastDelegate.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.MulticastDelegate.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
@@ -531,5 +533,15 @@
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.MulticastDelegate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

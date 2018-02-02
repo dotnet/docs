@@ -439,7 +439,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -522,7 +522,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Enter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Enter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripControlHost> named `ToolStripControlHost1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripControlHost.Enter> event.  
   
@@ -531,6 +531,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -692,6 +693,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.GotFocus" />
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -862,7 +864,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripControlHost> named `ToolStripControlHost1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripControlHost.KeyDown> event.  
   
@@ -871,6 +873,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -896,7 +899,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripControlHost> named `ToolStripControlHost1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripControlHost.KeyPress> event.  
   
@@ -905,6 +908,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -930,7 +934,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripControlHost> named `ToolStripControlHost1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripControlHost.KeyUp> event.  
   
@@ -939,6 +943,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -964,7 +969,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Leave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Leave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripControlHost> named `ToolStripControlHost1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripControlHost.Leave> event.  
   
@@ -973,6 +978,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="LostFocus">
@@ -1015,6 +1021,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.LostFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnBoundsChanged">
@@ -1045,6 +1052,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripControlHost.OnBoundsChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripControlHost.OnBoundsChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="OnEnter">
@@ -1374,6 +1382,7 @@
         <param name="newParent">The new parent of the item.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.OnParentChanged(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
     <Member MemberName="OnSubscribeControlEvents">
@@ -1534,7 +1543,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripControlHost.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1758,6 +1767,7 @@
           <see langword="true" /> to make the ToolStripItem visible; otherwise, <see langword="false" />.</param>
         <summary>Sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> to the specified visible state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.SetVisibleCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -1960,7 +1970,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Validated> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Validated> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripControlHost> named `ToolStripControlHost1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripControlHost.Validated> event.  
   
@@ -1969,6 +1979,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="Validating">
@@ -1994,7 +2005,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Validating> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripControlHost.Validating> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripControlHost> named `ToolStripControlHost1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripControlHost.Validating> event.  
   
@@ -2003,7 +2014,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripControlHost" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

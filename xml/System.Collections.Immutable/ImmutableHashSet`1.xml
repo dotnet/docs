@@ -38,7 +38,7 @@
     <typeparam name="T">The type of elements in the hash set.</typeparam>
     <summary>Represents an immutable, unordered hash set.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -1141,7 +1141,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (T equalValue, out T actualValue);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!T equalValue, !T actualValue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!T equalValue, [out] !T&amp; actualValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.TryGetValue(`0,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "transparency"
   - "level 2 transparency"
@@ -24,6 +19,8 @@ caps.latest.revision: 37
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security-Transparent Code, Level 2
 <a name="top"></a>
@@ -189,7 +186,7 @@ manager: "wpickett"
  The following properties have been added to the <xref:System.Reflection> namespace to determine whether the type, method, or field is `SecurityCritical`, `SecuritySafeCritical`, or `SecurityTransparent`:  <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A>, and <xref:System.Reflection.MethodBase.IsSecurityTransparent%2A>. Use these properties to determine transparency by using reflection instead of checking for the presence of the attribute. The transparency rules are complex, and checking for the attribute may not be sufficient.  
   
 > [!NOTE]
->  A `SafeCritical` method returns `true` for both <xref:System.Type.IsSecurityCritical%2A>and <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A>, because `SafeCritical` is indeed critical (it has the same capabilities as critical code, but it can be called from transparent code).  
+>  A `SafeCritical` method returns `true` for both <xref:System.Type.IsSecurityCritical%2A> and <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A>, because `SafeCritical` is indeed critical (it has the same capabilities as critical code, but it can be called from transparent code).  
   
  Dynamic methods inherit the transparency of the modules they are attached to; they do not inherit the transparency of the type (if they are attached to a type).  
   
@@ -201,5 +198,5 @@ manager: "wpickett"
  The <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A> property is `false` by default, so the property must be set to `true` to skip verification. This should be done for optimization purposes only. You should ensure that the transparent code in the assembly is verifiable by using the `transparent` option in the [PEVerify tool](../../../docs/framework/tools/peverify-exe-peverify-tool.md).  
   
 ## See Also  
- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)   
+ [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)  
  [Security Changes](../../../docs/framework/security/security-changes.md)

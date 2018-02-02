@@ -477,7 +477,7 @@
   
 -   Gets an icon handle for the <xref:System.Drawing.Bitmap>.  
   
--   Sets the <xref:System.Windows.Forms.Form.Icon%2A?displayProperty=fullName> attribute of the form to an icon created from the handle.  
+-   Sets the <xref:System.Windows.Forms.Form.Icon%2A?displayProperty=nameWithType> attribute of the form to an icon created from the handle.  
   
 -   Calls the Win32 API function `DestroyIcon` to release resources.  
   
@@ -692,5 +692,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

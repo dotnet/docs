@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is intended to be inherited by a user class that provides specific events to be used for ETW. The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=fullName> methods are called to log the events.  
+ This class is intended to be inherited by a user class that provides specific events to be used for ETW. The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> methods are called to log the events.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -194,7 +194,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected EventSource (System.Diagnostics.Tracing.EventSourceSettings settings, string[] traits);" />
+      <MemberSignature Language="C#" Value="protected EventSource (System.Diagnostics.Tracing.EventSourceSettings settings, params string[] traits);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.Tracing.EventSourceSettings settings, string[] traits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])" />
       <MemberType>Constructor</MemberType>
@@ -239,6 +239,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="traits" /> is not specified in key-value pairs.</exception>
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.GetTrait(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -282,7 +283,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public EventSource (string eventSourceName, System.Diagnostics.Tracing.EventSourceSettings config, string[] traits);" />
+      <MemberSignature Language="C#" Value="public EventSource (string eventSourceName, System.Diagnostics.Tracing.EventSourceSettings config, params string[] traits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventSourceName, valuetype System.Diagnostics.Tracing.EventSourceSettings config, string[] traits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings,System.String[])" />
       <MemberType>Constructor</MemberType>
@@ -331,6 +332,7 @@
           <paramref name="eventSourceName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="traits" /> is not specified in key-value pairs.</exception>
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.GetTrait(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ConstructionException">
@@ -366,7 +368,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Tracing.EventSource> constructors do not throw exceptions. Instead, any exception that is thrown is assigned to the <xref:System.Diagnostics.Tracing.EventSource.ConstructionException%2A> property and logged by the <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=fullName> method.  
+ <xref:System.Diagnostics.Tracing.EventSource> constructors do not throw exceptions. Instead, any exception that is thrown is assigned to the <xref:System.Diagnostics.Tracing.EventSource.ConstructionException%2A> property and logged by the <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -402,6 +404,7 @@
  Gets the activity ID of the current thread.</summary>
         <value>The activity ID of the current thread.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1097,7 +1100,7 @@
     </Member>
     <Member MemberName="SetCurrentThreadActivityId">
       <MemberSignature Language="C#" Value="public static void SetCurrentThreadActivityId (Guid activityId, out Guid oldActivityThatWillContinue);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentThreadActivityId(valuetype System.Guid activityId, valuetype System.Guid oldActivityThatWillContinue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentThreadActivityId(valuetype System.Guid activityId, [out] valuetype System.Guid&amp; oldActivityThatWillContinue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1363,7 +1366,7 @@
     </Member>
     <Member MemberName="Write&lt;T&gt;">
       <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, ref System.Diagnostics.Tracing.EventSourceOptions options, ref T data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options, !!T data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions&amp; options, !!T&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1410,7 +1413,7 @@
     </Member>
     <Member MemberName="Write&lt;T&gt;">
       <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, ref System.Diagnostics.Tracing.EventSourceOptions options, ref Guid activityId, ref Guid relatedActivityId, ref T data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options, valuetype System.Guid activityId, valuetype System.Guid relatedActivityId, !!T data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions&amp; options, valuetype System.Guid&amp; activityId, valuetype System.Guid&amp; relatedActivityId, !!T&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,System.Guid@,System.Guid@,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1473,7 +1476,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `WriteEvent` method provides overloads with combinations of string and integer arguments. If none of these combinations match the parameters for the call, the compiler uses the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%28System.Int32%2CSystem.Object%5B%5D%29?displayProperty=fullName> overload, which is considerably slower than the other overloads. See the overload page for details.  
+ The `WriteEvent` method provides overloads with combinations of string and integer arguments. If none of these combinations match the parameters for the call, the compiler uses the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%28System.Int32%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> overload, which is considerably slower than the other overloads. See the overload page for details.  
   
  In all cases, the `eventid` parameter should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
   
@@ -1718,7 +1721,7 @@ public void Info1(string arg1)
       </Docs>
     </Member>
     <Member MemberName="WriteEvent">
-      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, object[] args);" />
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1770,7 +1773,7 @@ public void Info1(string arg1)
   
 4.  It calls the function, which then determines the type of each argument so it can be serialized for ETW.  
   
- The high overhead for this overload is not significant when tracing low-volume events, because the method is used only when the provider is enabled. However, for high-volume events, the performance overhead can be significant.  You can avoid using <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=fullName> for high-volume payloads by creating a new, faster  overload with the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
+ The high overhead for this overload is not significant when tracing low-volume events, because the method is used only when the provider is enabled. However, for high-volume events, the performance overhead can be significant.  You can avoid using <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> for high-volume payloads by creating a new, faster  overload with the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
   
  `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
   
@@ -2591,7 +2594,7 @@ class AnotherEventSource : EventSource {
       </Docs>
     </Member>
     <Member MemberName="WriteEventWithRelatedActivityId">
-      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid relatedActivityId, object[] args);" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid relatedActivityId, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid relatedActivityId, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2642,7 +2645,7 @@ class AnotherEventSource : EventSource {
   
 1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
   
-2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=nameWithType> property.  
   
 3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
   
@@ -2714,7 +2717,7 @@ class AnotherEventSource : EventSource {
   
 1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
   
-2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=nameWithType> property.  
   
 3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
   
@@ -2732,5 +2735,82 @@ class AnotherEventSource : EventSource {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCurrentThreadActivityId">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Sets the activity ID on the current thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GenerateManifest">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsEnabled">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current event source is enabled.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

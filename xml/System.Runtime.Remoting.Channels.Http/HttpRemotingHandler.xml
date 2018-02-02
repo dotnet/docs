@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the default <xref:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler>constructor instead.  
+ Use the default <xref:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler> constructor instead.  
   
  ]]></format>
         </remarks>
@@ -109,11 +109,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Web.IHttpHandler.ProcessRequest%2A> methods, see <xref:System.Web.IHttpHandler.ProcessRequest%2A?displayProperty=fullName>.  
+ For more information about the <xref:System.Web.IHttpHandler.ProcessRequest%2A> methods, see <xref:System.Web.IHttpHandler.ProcessRequest%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

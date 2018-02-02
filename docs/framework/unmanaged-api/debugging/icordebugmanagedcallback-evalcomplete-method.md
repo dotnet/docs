@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::EvalComplete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback::EvalComplete method [.NET Framework debugging]"
   - "EvalComplete method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::EvalComplete Method
 Notifies the debugger that an evaluation has been completed.  

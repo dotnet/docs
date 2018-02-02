@@ -566,7 +566,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Load> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Load> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Load> event.  
   
@@ -765,7 +765,7 @@
 ## Remarks  
  The equality operator tests the `IUnknown` pointers of the underlying COM objects wrapped by the supplied <xref:System.Windows.Forms.HtmlWindow> classes.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.HtmlWindow.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Forms.HtmlWindow.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1196,7 +1196,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Resize> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Resize> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Resize> event.  
   
@@ -1281,7 +1281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Scroll> event.  
   
@@ -1419,7 +1419,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Unload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Unload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Unload> event.  
   
@@ -1489,5 +1489,59 @@
         <permission cref="T:System.UnauthorizedAccessException">You cannot access a <c>FRAME</c> elements or the <c>FRAME</c>'s document if the <c>FRAME</c> is in a different zone than the <c>FRAMESET</c> that contains it. For a full explanation, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays a file in the named window.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResizeTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the size of the window to the specified dimensions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScrollTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scrolls the window to the designated position.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays or downloads the new content located at the specified URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the window to the specified coordinates on the screen.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenNew">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays a file in a new window.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

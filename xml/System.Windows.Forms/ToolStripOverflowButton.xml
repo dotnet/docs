@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there are more overflow items than can be displayed on the form, use the [ToolStrip Items Collection Editor](http://msdn.microsoft.com/en-us/e681f3ab-94ba-4b2b-ac64-1dfad46caa25) to manage this situation.  
+ If there are more overflow items than can be displayed on the form, use the [ToolStrip Items Collection Editor](http://msdn.microsoft.com/library/e681f3ab-94ba-4b2b-ac64-1dfad46caa25) to manage this situation.  
   
  ]]></format>
     </remarks>
@@ -65,6 +65,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultDropDown">
@@ -102,6 +104,7 @@
         <summary>Gets the space, in pixels, that is specified by default between controls.</summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> value representing the space between controls.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Padding" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">

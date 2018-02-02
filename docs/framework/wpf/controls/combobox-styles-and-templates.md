@@ -21,6 +21,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ComboBox Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ComboBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
@@ -46,9 +48,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |Focused|FocusStates|The control has focus.|  
 |Unfocused|FocusStates|The control does not have focus.|  
 |FocusedDropDown|FocusStates|The drop-down for the <xref:System.Windows.Controls.ComboBox> has focus.|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
 |Editable|EditStates|The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is `true`.|  
 |Uneditable|EditStates|The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is `false`.|  
   
@@ -68,9 +70,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |Selected|SelectionStates|The item is currently selected.|  
 |Unselected|SelectionStates|The item is not selected.|  
 |SelectedUnfocused|SelectionStates|The item is selected, but does not have focus.|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## ComboBox ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ComboBox> control and associated types.  
@@ -84,9 +86,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
  For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement.Style%2A>   
- <xref:System.Windows.Controls.ControlTemplate>   
- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)   
- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)   
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
+ <xref:System.Windows.FrameworkElement.Style%2A>  
+ <xref:System.Windows.Controls.ControlTemplate>  
+ [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)  
+ [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)  
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)

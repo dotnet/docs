@@ -57,7 +57,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LazyMemberInfo (System.Reflection.MemberTypes memberType, System.Reflection.MemberInfo[] accessors);" />
+      <MemberSignature Language="C#" Value="public LazyMemberInfo (System.Reflection.MemberTypes memberType, params System.Reflection.MemberInfo[] accessors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.MemberTypes memberType, class System.Reflection.MemberInfo[] accessors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberTypes,System.Reflection.MemberInfo[])" />
       <MemberType>Constructor</MemberType>
@@ -106,6 +106,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetAccessors">
@@ -147,6 +148,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -220,5 +222,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

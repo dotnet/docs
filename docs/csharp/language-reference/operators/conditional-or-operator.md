@@ -1,14 +1,12 @@
 ---
 title: "|| Operator (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "||_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "logical OR operator [C#]"
   - "conditional-OR operator (||) [C#]"
@@ -17,20 +15,6 @@ ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # || Operator (C# Reference)
 The conditional-OR operator (`||`) performs a logical-OR of its `bool` operands. If the first operand evaluates to `true`, the second operand isn't evaluated. If the first operand evaluates to `false`, the second operator determines whether the OR expression as a whole evaluates to `true` or `false`.  
@@ -55,9 +39,9 @@ x | y
 ## Example  
  In the following examples, the expression that uses `||` evaluates only the first operand. The expression that uses `|` evaluates both operands. In the second example, a run-time exception occurs if both operands are evaluated.  
   
- [!code-cs[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
+ [!code-csharp[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Operators](../../../csharp/language-reference/operators/index.md)

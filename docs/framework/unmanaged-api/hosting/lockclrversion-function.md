@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "LockClrVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LockClrVersion function [.NET Framework hosting]"
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LockClrVersion Function
 Allows the host to determine which version of the common language runtime (CLR) will be used within the process before explicitly initializing the CLR.  

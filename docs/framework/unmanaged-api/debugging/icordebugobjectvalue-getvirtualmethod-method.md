@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::GetVirtualMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetVirtualMethod method [.NET Framework debugging]"
   - "ICorDebugObjectValue::GetVirtualmethod method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugObjectValue::GetVirtualMethod Method
 `GetVirtualMethod` is not implemented in this version of the .NET Framework.  

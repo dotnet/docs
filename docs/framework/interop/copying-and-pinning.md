@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "pinning, interop marshaling"
   - "copying, interop marshaling"
@@ -24,6 +19,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Copying and Pinning
 When marshaling data, the interop marshaler can copy or pin the data being marshaled. Copying the data places a copy of data from one memory location in another memory location. The following illustration shows the differences between copying a value type and copying a type passed by reference from managed to unmanaged memory.  
@@ -82,12 +79,12 @@ Reference types passed by value and by reference
 > [!CAUTION]
 >  When a string is passed by value, the callee must never alter the reference passed by the marshaler. Doing so can corrupt the managed heap.  
   
- When a <xref:System.String?displayProperty=fullName> is passed by reference, the marshaler copies the contents the string to a secondary buffer before making the call. It then copies the contents of the buffer into a new string on return from the call. This technique ensures that the immutable managed string remains unaltered.  
+ When a <xref:System.String?displayProperty=nameWithType> is passed by reference, the marshaler copies the contents the string to a secondary buffer before making the call. It then copies the contents of the buffer into a new string on return from the call. This technique ensures that the immutable managed string remains unaltered.  
   
- When a <xref:System.Text.StringBuilder?displayProperty=fullName> is passed by value, the marshaler passes a reference to the internal buffer of the **StringBuilder** directly to the caller. The caller and callee must agree on the size of the buffer. The caller is responsible for creating a **StringBuilder** of adequate length. The callee must take the necessary precautions to ensure that the buffer is not overrun. **StringBuilder** is an exception to the rule that reference types passed by value are passed as In parameters by default. It is always passed as In/Out.  
+ When a <xref:System.Text.StringBuilder?displayProperty=nameWithType> is passed by value, the marshaler passes a reference to the internal buffer of the **StringBuilder** directly to the caller. The caller and callee must agree on the size of the buffer. The caller is responsible for creating a **StringBuilder** of adequate length. The callee must take the necessary precautions to ensure that the buffer is not overrun. **StringBuilder** is an exception to the rule that reference types passed by value are passed as In parameters by default. It is always passed as In/Out.  
   
 ## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)   
- [Memory Management with the Interop Marshaler](http://msdn.microsoft.com/en-us/417206ce-ee3e-4619-9529-0c0b686c7bee)   
- [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2)   
+ [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)  
+ [Memory Management with the Interop Marshaler](http://msdn.microsoft.com/library/417206ce-ee3e-4619-9529-0c0b686c7bee)  
+ [Directional Attributes](http://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
  [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

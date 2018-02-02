@@ -1,14 +1,12 @@
 ---
 title: "Value Types (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "cs.valuetypes"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "value types [C#]"
   - "types [C#], value types"
@@ -17,20 +15,6 @@ ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Value Types (C# Reference)
 The value types consist of two main categories:  
@@ -56,7 +40,7 @@ The value types consist of two main categories:
 ## Main Features of Value Types  
  Variables that are based on value types directly contain values. Assigning one value type variable to another copies the contained value. This differs from the assignment of reference type variables, which copies a reference to the object but not the object itself.  
   
- All value types are derived implicitly from the <xref:System.ValueType?displayProperty=fullName>.  
+ All value types are derived implicitly from the <xref:System.ValueType?displayProperty=nameWithType>.  
   
  Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.  
   
@@ -65,7 +49,7 @@ The value types consist of two main categories:
  Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md).  
   
 ## Main Features of Simple Types  
- All of the simple types -- those integral to the C# language -- are aliases of the .NET Framework System types. For example, [int](../../../csharp/language-reference/keywords/int.md) is an alias of <xref:System.Int32?displayProperty=fullName>. For a complete list of aliases, see [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md).  
+ All of the simple types -- those integral to the C# language -- are aliases of the .NET Framework System types. For example, [int](../../../csharp/language-reference/keywords/int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md).  
   
  Constant expressions, whose operands are all simple type constants, are evaluated at compilation time.  
   
@@ -117,9 +101,9 @@ Point p = new Point(); // Invoke default constructor for the struct.
  For information about formatting the output of numeric types, see [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md).  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Types](../../../csharp/language-reference/keywords/types.md)   
- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Types](../../../csharp/language-reference/keywords/types.md)  
+ [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
  [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)

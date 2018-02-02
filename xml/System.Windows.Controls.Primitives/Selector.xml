@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.Selector.ClearContainerForItemOverride%2A> clears the <xref:System.Windows.Controls.Primitives.Selector.IsSelected%2A?displayProperty=fullName> attached property when the item container is removed from the visual tree.  This is done so item containers behave correctly when the <xref:System.Windows.Controls.Primitives.Selector> uses container recycling.  For more information, see <xref:System.Windows.Controls.VirtualizationMode> and "Container Recycling" in [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
+ <xref:System.Windows.Controls.Primitives.Selector.ClearContainerForItemOverride%2A> clears the <xref:System.Windows.Controls.Primitives.Selector.IsSelected%2A?displayProperty=nameWithType> attached property when the item container is removed from the visual tree.  This is done so item containers behave correctly when the <xref:System.Windows.Controls.Primitives.Selector> uses container recycling.  For more information, see <xref:System.Windows.Controls.VirtualizationMode> and "Container Recycling" in [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
   
  ]]></format>
         </remarks>
@@ -685,6 +685,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.XmlDataProvider" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePath">
@@ -737,6 +738,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.XmlDataProvider" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePathProperty">

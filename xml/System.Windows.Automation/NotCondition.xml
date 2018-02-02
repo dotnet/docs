@@ -13,6 +13,9 @@
   <Docs>
     <summary>Represents a <see cref="T:System.Windows.Automation.Condition" /> that is the negative of a specified <see cref="T:System.Windows.Automation.Condition" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.AndCondition" />
+    <altmember cref="T:System.Windows.Automation.OrCondition" />
+    <altmember cref="T:System.Windows.Automation.Condition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

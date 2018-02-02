@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IMultipleViewProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -217,7 +218,7 @@
    
   
 ## Examples  
- In the following example, the collection of views available for a control that supports the <xref:System.Windows.Automation.MultipleViewPattern>control pattern is retrieved. A member of the view identifiers collection is subsequently used to modify the current view of the control.  
+ In the following example, the collection of views available for a control that supports the <xref:System.Windows.Automation.MultipleViewPattern> control pattern is retrieved. A member of the view identifiers collection is subsequently used to modify the current view of the control.  
   
  [!code-csharp[UIAMultipleViewPattern_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#104)]
  [!code-vb[UIAMultipleViewPattern_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#104)]  

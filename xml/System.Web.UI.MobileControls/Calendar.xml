@@ -58,12 +58,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileCalendarExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCalendarExample/cs/MobileCalendarExample.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileCalendarExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCalendarExample/vb/MobileCalendarExample.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileCalendarExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCalendarExample/cs/MobileCalendarExample.aspx#1)]
+ [!code-aspx-vb[MobileCalendarExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCalendarExample/vb/MobileCalendarExample.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="P:System.Web.UI.MobileControls.Calendar.SelectionMode" />
+    <altmember cref="P:System.Web.UI.MobileControls.Calendar.WebCalendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -177,7 +180,7 @@
 ## Remarks  
  In the ASP.NET API, the <xref:System.Web.UI.MobileControls.Calendar.FirstDayOfWeek%2A> enumeration contains every day of the week, with the default value returning the server's local setting for the first day of the week.  
   
- This property functions the same way as the <xref:System.Web.UI.WebControls.Calendar.FirstDayOfWeek%2A?displayProperty=fullName> property.  
+ This property functions the same way as the <xref:System.Web.UI.WebControls.Calendar.FirstDayOfWeek%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -297,7 +300,7 @@
   
  Browsing to the next or previous month will not update this property.  
   
- This property has the same functionality as the ASP.NET <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A?displayProperty=fullName> property.  
+ This property has the same functionality as the ASP.NET <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -309,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Calendar.SelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="SelectedDates">
@@ -367,6 +371,7 @@
       <Docs>
         <summary>Occurs each time the user selects a day, a week, or a month in the <see cref="T:System.Web.UI.MobileControls.Calendar" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Calendar.OnSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -408,6 +413,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.CalendarSelectionMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.CalendarSelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="ShowDayHeader">
@@ -438,7 +444,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.ShowDayHeader%2A?displayProperty=fullName> property.  
+ This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.ShowDayHeader%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -507,11 +513,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Calendar.VisibleDate%2A> property is updated after the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged?displayProperty=fullName> event is raised.  
+ The <xref:System.Web.UI.MobileControls.Calendar.VisibleDate%2A> property is updated after the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged?displayProperty=nameWithType> event is raised.  
   
  The date can be any day within the month. Only the month value of the <xref:System.DateTime> object is used.  
   
- This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A?displayProperty=fullName> property.  
+ This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -555,12 +561,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The ASP.NET mobile controls do not duplicate the properties of the ASP.NET Web Forms <xref:System.Web.UI.WebControls.Calendar> control that are not supported on mobile devices. Thus, if you want to use features that are available for the underlying <xref:System.Web.UI.WebControls.Calendar> control, you do so by accessing the <xref:System.Web.UI.WebControls.Calendar?displayProperty=fullName> object through the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property.  
+ The ASP.NET mobile controls do not duplicate the properties of the ASP.NET Web Forms <xref:System.Web.UI.WebControls.Calendar> control that are not supported on mobile devices. Thus, if you want to use features that are available for the underlying <xref:System.Web.UI.WebControls.Calendar> control, you do so by accessing the <xref:System.Web.UI.WebControls.Calendar?displayProperty=nameWithType> object through the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property.  
   
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property to apply formatting that is only available in the underlying <xref:System.Web.UI.WebControls.Calendar?displayProperty=fullName> control. This example is part of a larger code sample for the <xref:System.Web.UI.MobileControls.Calendar> overview.  
+ The following code example uses the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property to apply formatting that is only available in the underlying <xref:System.Web.UI.WebControls.Calendar?displayProperty=nameWithType> control. This example is part of a larger code sample for the <xref:System.Web.UI.MobileControls.Calendar> overview.  
   
  [!code-csharp[MobileCalendarExample#10](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCalendarExample/cs/MobileCalendarExample.aspx#10)]
  [!code-vb[MobileCalendarExample#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCalendarExample/vb/MobileCalendarExample.aspx#10)]  

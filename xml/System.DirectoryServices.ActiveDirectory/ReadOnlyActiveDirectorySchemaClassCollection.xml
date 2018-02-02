@@ -39,6 +39,7 @@
           <see langword="true" /> if the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object is in this collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="schemaClass" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -67,6 +68,7 @@
         <exception cref="T:System.ArgumentException">The destination array is not large enough, based on the source collection size and the <paramref name="index" /> specified.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="classes" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the destination array.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -92,6 +94,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="schemaClass" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -116,6 +119,7 @@
         <value>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object that exists at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of this collection.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
       </Docs>
     </Member>
   </Members>

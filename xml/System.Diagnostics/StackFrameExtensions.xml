@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -21,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides extension methods for the <see cref="T:System.Diagnostics.StackFrame" /> class, which represents a function call on the call stack for the current thread.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,6 +43,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -46,10 +54,11 @@
         <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stackFrame">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stackFrame">A stack frame.</param>
+        <summary>Returns a pointer to the base address of the native just-in-time (JIT)-compiled image that this stack frame is executing.</summary>
+        <returns>This method always returns <see cref="F:System.IntPtr.Zero" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Diagnostics.StackFrameExtensions.HasNativeImage(System.Diagnostics.StackFrame)" />
       </Docs>
     </Member>
     <Member MemberName="GetNativeIP">
@@ -66,6 +75,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -73,9 +86,9 @@
         <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stackFrame">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stackFrame">A stack frame.</param>
+        <summary>Gets an interface pointer to the start of the native code for the method that is being executed.</summary>
+        <returns>This method always returns  <see cref="F:System.IntPtr.Zero" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,6 +106,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -100,10 +117,12 @@
         <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stackFrame">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stackFrame">A stack frame.</param>
+        <summary>Indicates whether an offset from the start of the IL code for the method that is executing is available.</summary>
+        <returns>
+          <see langword="true" /> if the offset is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Diagnostics.StackFrame.GetILOffset" />
       </Docs>
     </Member>
     <Member MemberName="HasMethod">
@@ -120,6 +139,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -127,10 +150,12 @@
         <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stackFrame">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stackFrame">A stack frame.</param>
+        <summary>Indicates whether information about the method in which the specified frame is executing is available.</summary>
+        <returns>
+          <see langword="true" /> if information about the method in which the current frame is executing is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Diagnostics.StackFrame.GetMethod" />
       </Docs>
     </Member>
     <Member MemberName="HasNativeImage">
@@ -147,6 +172,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -154,10 +183,12 @@
         <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stackFrame">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stackFrame">A stack frame.</param>
+        <summary>Indicates whether the native just-in-time (JIT)-compiled image is available for the specified stack frame.</summary>
+        <returns>
+          <see langword="true" /> if a native image is available for this stack frame; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Diagnostics.StackFrameExtensions.GetNativeImageBase(System.Diagnostics.StackFrame)" />
       </Docs>
     </Member>
     <Member MemberName="HasSource">
@@ -174,6 +205,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -181,10 +216,14 @@
         <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stackFrame">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stackFrame">A stack frame.</param>
+        <summary>Indicates whether the file that contains the code that the specified stack frame is executing is available.</summary>
+        <returns>
+          <see langword="true" /> if the code that the specified stack frame is executing is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Diagnostics.StackFrame.GetFileName" />
+        <altmember cref="M:System.Diagnostics.StackFrame.GetFileLineNumber" />
+        <altmember cref="M:System.Diagnostics.StackFrame.GetFileColumnNumber" />
       </Docs>
     </Member>
   </Members>

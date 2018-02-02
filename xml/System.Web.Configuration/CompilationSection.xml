@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -249,6 +250,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
       </Docs>
     </Member>
     <Member MemberName="CodeSubDirectories">
@@ -524,6 +526,7 @@
         <summary>Gets the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> of the <see cref="T:System.Web.Configuration.CompilationSection" />.</summary>
         <value>A <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> that contains <see cref="T:System.Web.Configuration.ExpressionBuilder" /> objects.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.ExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="FolderLevelBuildProviders">
@@ -554,6 +557,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.FolderLevelBuildProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">
@@ -887,7 +891,7 @@
    
   
 ## Examples  
- [compilation Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/7c319582-074a-4d2a-a787-03b9d4541c12)  
+ [compilation Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/7c319582-074a-4d2a-a787-03b9d4541c12)  
   
  ]]></format>
         </remarks>

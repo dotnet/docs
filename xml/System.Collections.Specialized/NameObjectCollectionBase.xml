@@ -46,7 +46,7 @@
   
  The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
   
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
+ In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
   
  `null` is allowed as a key or as a value.  
   
@@ -69,6 +69,9 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> using the <see cref="P:System.Collections.ICollection.SyncRoot" /> property.  
   
  Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +112,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +155,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -195,6 +201,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -244,6 +252,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -289,6 +301,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -325,6 +338,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -378,6 +394,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName="BaseAdd">
@@ -580,6 +600,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.NameObjectCollectionBase.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="BaseGetAllKeys">
@@ -713,6 +734,7 @@
           <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="type" /> is not a valid <see cref="T:System.Type" />.</exception>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="BaseGetKey">
@@ -1017,6 +1039,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <altmember cref="M:System.Collections.Specialized.NameObjectCollectionBase.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -1150,6 +1173,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Associated enumeration:   <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -1274,6 +1300,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance is invalid.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="M:System.Collections.Specialized.NameObjectCollectionBase.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -1312,7 +1340,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  While the <xref:System.Collections.Specialized.NameObjectCollectionBase.System%23Collections%23ICollection%23CopyTo%2A> method is not visible to COM clients by default, inheriting the <xref:System.Collections.Specialized.NameObjectCollectionBase> class can expose it and can cause undesirable behavior in COM clients.  
   
@@ -1377,6 +1405,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -1422,7 +1451,48 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BaseSet">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of an entry in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BaseGetAllValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array that contains all the values in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BaseGet">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified entry from the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

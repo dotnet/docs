@@ -27,13 +27,14 @@
 ## Examples  
  The following code example shows the interaction between a <xref:System.Web.UI.WebControls.WebParts.WebPart> control and its associated <xref:System.Web.UI.Design.WebControls.WebParts.WebPartDesigner>. The <xref:System.Web.UI.WebControls.WebParts.WebPart> control contains a <xref:System.Web.UI.WebControls.Calendar> control from which the end user selects his or her birthday, a <xref:System.Web.UI.WebControls.Button> control to submit the selection, and a <xref:System.Web.UI.WebControls.Label> control to display a message on the user's birthday. The <xref:System.Web.UI.Design.WebControls.WebParts.WebPartDesigner> verifies that the associated control is of the expected type and then customizes the design-time rendering of said control. Note that the visual customizations of the designer are visible only at design time, whereas those of the associated control are visible at both run time and design time.  
   
- All the methods overridden in this example derive from the <xref:System.Web.UI.Design.ControlDesigner> base class. For other available members and their use, see <xref:System.Web.UI.Design.ControlDesigner?displayProperty=fullName>.  
+ All the methods overridden in this example derive from the <xref:System.Web.UI.Design.ControlDesigner> base class. For other available members and their use, see <xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>.  
   
  [!code-csharp[WebPartsDesigners_WebPartDesigner_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebPartsDesigners_WebPartDesigner_Overview/CS/BirthdayPart.cs#1)] 
  [!code-vb[WebPartsDesigners_WebPartDesigner_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebPartsDesigners_WebPartDesigner_Overview/vb/birthdaypart.vb#1)]   
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

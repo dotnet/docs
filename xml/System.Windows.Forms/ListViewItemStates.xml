@@ -20,24 +20,30 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.State%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState%2A?displayProperty=fullName> properties. For more information, see the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> and <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> events.  
+ This enumeration is used by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.State%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState%2A?displayProperty=nameWithType> properties. For more information, see the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=nameWithType> and <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=nameWithType> events.  
   
    
   
 ## Examples  
  The following example demonstrates how to provide custom drawing for a <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView> control in the example has a gradient background. Subitems with negative values have a red foreground and a black background.  
   
- A handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items and for the column headers row. A handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the text values and both the text and background for subitems that have negative values.  
+ A handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=nameWithType> event draws the background for entire items and for the column headers row. A handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=nameWithType> event draws the text values and both the text and background for subitems that have negative values.  
   
- A <xref:System.Windows.Forms.ContextMenu> component provides a way to switch between the details view and the list. In the list view, only the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event is fired. In this case, the text and background are both drawn in the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event handler.  
+ A <xref:System.Windows.Forms.ContextMenu> component provides a way to switch between the details view and the list. In the list view, only the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=nameWithType> event is fired. In this case, the text and background are both drawn in the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=nameWithType> event handler.  
   
- For the complete example, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=fullName> reference topic.  
+ For the complete example, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=nameWithType> reference topic.  
   
  [!code-csharp[ListViewOwnerDraw#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#3)]
  [!code-vb[ListViewOwnerDraw#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.State" />
+    <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState" />
+    <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+    <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListViewItem" />
   </Docs>
   <Members>
     <Member MemberName="Checked">

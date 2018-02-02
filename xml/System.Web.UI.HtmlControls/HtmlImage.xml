@@ -30,11 +30,13 @@
 ## Examples  
  The following code example demonstrates how to programmatically modify the properties of an <xref:System.Web.UI.HtmlControls.HtmlImage> control when an <xref:System.Web.UI.HtmlControls.HtmlButton> is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlImage Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlControl" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,8 +68,8 @@
 ## Examples  
  The following code example illustrates how to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlImageCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlImageCtor/CS/htmlimagectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlImageCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlImageCtor/VB/htmlimagectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlImageCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlImageCtor/CS/htmlimagectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlImageCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlImageCtor/VB/htmlimagectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -121,13 +123,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Align%2A> property to specify the alignment of an image on a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Align Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Align Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Align Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Align Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to center an image on the Web page by wrapping the <xref:System.Web.UI.HtmlControls.HtmlImage> control inside paragraph tags with the `align` attribute set to `"center"`.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Align Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Align Example/CS/source2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Align Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Align Example/VB/source2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Align Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Align Example/CS/source2cs.aspx#2)]
+ [!code-aspx-vb[Classic HtmlImage.Align Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Align Example/VB/source2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -170,11 +172,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Alt%2A> property to specify the caption to display when the image specified by the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property is unavailable.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Border Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Border Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Border Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Border Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Border Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Border Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlImage.Border Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Border Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Src" />
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -211,8 +214,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Border%2A> property to specify a frame with a width of 5 pixels for an <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Border Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Border Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Border Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Border Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Border Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Border Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlImage.Border Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Border Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -256,11 +259,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> property to programmatically modify the height of the displayed image.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Height Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Height Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Height Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlImage.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Height Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Width" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -296,8 +300,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes%2A> method in a custom server control so that specific alternative text, accessible as a ToolTip, is always displayed with the <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlImageRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/CS/custom_htmlimage_renderattributescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlImageRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/VB/custom_htmlimage_renderattributesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlImageRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/CS/custom_htmlimage_renderattributescs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlImageRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/VB/custom_htmlimage_renderattributesvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlImageRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/CS/custom_htmlimage_renderattributes.cs#2)]
  [!code-vb[CustomHtmlImageRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/VB/custom_htmlimage_renderattributes.vb#2)]  
@@ -305,6 +309,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlImage.Src" /> property contains a malformed URL.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Src" />
       </Docs>
     </Member>
     <Member MemberName="Src">
@@ -344,13 +349,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property to specify an image file to display in the same directory as the Web page source file.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Src Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Src Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Src Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property to specify an image file to display in a different directory from the Web page source file.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Src Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Src Example/CS/source2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Src Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Src Example/VB/source2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Src Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Src Example/CS/source2cs.aspx#2)]
+ [!code-aspx-vb[Classic HtmlImage.Src Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Src Example/VB/source2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -394,11 +399,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> property to programmatically modify the width of the displayed image.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Height Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Height Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlImage.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Height Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlImage.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Height Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Height" />
       </Docs>
     </Member>
   </Members>

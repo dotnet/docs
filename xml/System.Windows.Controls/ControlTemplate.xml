@@ -72,6 +72,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Style" />
+    <altmember cref="T:System.Windows.DataTemplate" />
+    <altmember cref="T:System.Windows.Controls.ContentPresenter" />
+    <altmember cref="T:System.Windows.Controls.ItemsPresenter" />
+    <altmember cref="T:System.Windows.TemplateBindingExtension" />
+    <altmember cref="P:System.Windows.FrameworkElement.OverridesDefaultStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -270,5 +276,14 @@
         <exception cref="T:System.ArgumentException">You must associate the <see cref="T:System.Windows.Controls.ControlTemplate" /> with a <see cref="T:System.Windows.Controls.Control" /> by setting the <see cref="P:System.Windows.Controls.Control.Template" /> property before using the <see cref="T:System.Windows.Controls.ControlTemplate" /> on the <see cref="T:System.Windows.Controls.Control" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ControlTemplate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

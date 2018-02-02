@@ -37,6 +37,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+    <altmember cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" />
+    <altmember cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />
+    <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.Name" />
+    <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.DefaultValue" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.Name" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +121,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.Name" />
+        <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.DefaultValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,6 +157,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.Name" />
+        <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.DefaultValue" />
       </Docs>
     </Member>
     <Member MemberName="DefaultValue">
@@ -181,6 +193,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+        <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.Name" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -218,6 +232,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Attribute.Equals(System.Object)" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -237,6 +253,8 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -270,7 +288,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+        <altmember cref="P:System.Web.UI.ControlValuePropertyAttribute.DefaultValue" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ControlValuePropertyAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

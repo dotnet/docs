@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetSequencePointCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedMethod::GetSequencePointCount method [.NET Framework debugging]"
   - "GetSequencePointCount method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetSequencePointCount Method
 Gets the count of sequence points within this method.  

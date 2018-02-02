@@ -20,12 +20,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an attachment to an e-mail.</summary>
+    <summary>Represents an attachment to an email.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.Attachment> class is used with the <xref:System.Net.Mail.MailMessage> class. All messages include a <xref:System.Net.Mail.MailMessage.Body%2A>, which contains the content of the message. In addition to the body, you might want to send additional files. These are sent as attachments and are represented as <xref:System.Net.Mail.Attachment> instances. To add an attachment to a mail message, add it to the <xref:System.Net.Mail.MailMessage.Attachments?displayProperty=fullName> collection.  
+ The <xref:System.Net.Mail.Attachment> class is used with the <xref:System.Net.Mail.MailMessage> class. All messages include a <xref:System.Net.Mail.MailMessage.Body%2A>, which contains the content of the message. In addition to the body, you might want to send additional files. These are sent as attachments and are represented as <xref:System.Net.Mail.Attachment> instances. To add an attachment to a mail message, add it to the <xref:System.Net.Mail.MailMessage.Attachments?displayProperty=nameWithType> collection.  
   
  Attachment content can be a <xref:System.String>, <xref:System.IO.Stream>, or file name. You can specify the content in an attachment by using any of the <xref:System.Net.Mail.Attachment.%23ctor%2A> constructors.  
   
@@ -38,7 +38,7 @@
    
   
 ## Examples  
- The following code example demonstrates attaching a file to an e-mail message.  
+ The following code example demonstrates attaching a file to an email message.  
   
  [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
  [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
@@ -180,7 +180,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `name` is not `null` or equal to <xref:System.String?displayProperty=fullName> (""), the <xref:System.Net.Mime.ContentType> for this attachment is constructed with the <xref:System.Net.Mime.ContentType.Name%2A> property set to `name`. The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding.Base64>.  
+ If `name` is not `null` or equal to <xref:System.String.Empty?displayProperty=nameWithType> (""), the <xref:System.Net.Mime.ContentType> for this attachment is constructed with the <xref:System.Net.Mime.ContentType.Name%2A> property set to `name`. The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding.Base64>.  
   
  If the stream's <xref:System.IO.Stream.CanSeek%2A> property is `false`, the attachment and the <xref:System.Net.Mail.MailMessage> that contains it are not reusable. You must supply a stream that can be searched in order to reuse an attachment.  
   
@@ -261,7 +261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `mediaType` is `null` or equal to <xref:System.String?displayProperty=fullName> (""), the <xref:System.Net.Mime.ContentType.MediaType%2A> property for this attachment is set to <xref:System.Net.Mime.MediaTypeNames.Text.Plain>. If `mediaType` is not `null` and is not a zero-length string, it is used to construct the <xref:System.Net.Mime.ContentType> associated with this attachment.  
+ If `mediaType` is `null` or equal to <xref:System.String.Empty?displayProperty=nameWithType> (""), the <xref:System.Net.Mime.ContentType.MediaType%2A> property for this attachment is set to <xref:System.Net.Mime.MediaTypeNames.Text.Plain>. If `mediaType` is not `null` and is not a zero-length string, it is used to construct the <xref:System.Net.Mime.ContentType> associated with this attachment.  
   
    
   
@@ -311,7 +311,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `mediaType` is not `null` or equal to <xref:System.String?displayProperty=fullName> (""), it is used to construct the <xref:System.Net.Mime.ContentType> class associated with this attachment.  
+ If `mediaType` is not `null` or equal to <xref:System.String.Empty?displayProperty=nameWithType> (""), it is used to construct the <xref:System.Net.Mime.ContentType> class associated with this attachment.  
   
  If `mediaType` and `name` both contain <xref:System.Net.Mime.ContentType.Name%2A> information, the value specified in `name` is used. The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding.Base64>.  
   
@@ -558,5 +558,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateAttachmentFromString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an attachment from a string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.Attachment" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

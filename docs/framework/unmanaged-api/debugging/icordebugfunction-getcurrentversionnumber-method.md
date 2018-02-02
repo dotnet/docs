@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetCurrentVersionNumber"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentVersionNumber method [.NET Framework debugging]"
   - "ICorDebugFunction::GetCurrentVersionNumber method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction::GetCurrentVersionNumber Method
 Gets the version number of the latest edit made to the function represented by this ICorDebugFunction object.  

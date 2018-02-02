@@ -44,6 +44,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
+    <altmember cref="T:System.Web.HttpException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.ParserErrorCollection.%23ctor%2A?displayProperty=fullName> constructor adds an array of <xref:System.Web.ParserError> objects to the collection.  
+ The <xref:System.Web.ParserErrorCollection.%23ctor%2A?displayProperty=nameWithType> constructor adds an array of <xref:System.Web.ParserError> objects to the collection.  
   
  ]]></format>
         </remarks>
@@ -317,7 +319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.ParserErrorCollection.IndexOf%2A> method to determine the index of a <xref:System.Web.ParserError> object within the collection. This is useful to determine the index of each <xref:System.Web.ParserError>when you iterate through the collection by using the <xref:System.Collections.IEnumerator> object returned by the <xref:System.Collections.CollectionBase.GetEnumerator%2A> method.  
+ Use the <xref:System.Web.ParserErrorCollection.IndexOf%2A> method to determine the index of a <xref:System.Web.ParserError> object within the collection. This is useful to determine the index of each <xref:System.Web.ParserError> when you iterate through the collection by using the <xref:System.Collections.IEnumerator> object returned by the <xref:System.Collections.CollectionBase.GetEnumerator%2A> method.  
   
    
   
@@ -436,5 +438,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ParserErrorCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds <see cref="T:System.Web.ParserError" /> objects to a collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -10,6 +10,7 @@
   <Docs>
     <summary>Provides an interface for creating a custom <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
   </Docs>
   <Members>
     <Member MemberName="GetFactory">
@@ -29,6 +30,7 @@
         <summary>Creates a <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> object.</summary>
         <returns>A design time resource provider factory.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
       </Docs>
     </Member>
   </Members>

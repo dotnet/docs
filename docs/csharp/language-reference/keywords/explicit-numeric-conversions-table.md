@@ -1,12 +1,10 @@
 ---
 title: "Explicit Numeric Conversions Table (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "conversions [C#], explicit numeric"
   - "numeric conversions [C#], explicit"
@@ -18,20 +16,6 @@ ms.assetid: f3bb9e76-6b92-4df7-bc36-f866c24e1dfd
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Explicit Numeric Conversions Table (C# Reference)
 Explicit numeric conversion is used to convert any numeric type to any other numeric type, for which there is no implicit conversion, by using a cast expression. The following table shows these conversions.  
@@ -74,10 +58,10 @@ Explicit numeric conversion is used to convert any numeric type to any other num
  For more information on explicit conversion, see Explicit in the C# Language Specification. For more information on how to access the spec, see [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)   
- [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)   
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)   
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
+ [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)  
+ [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+ [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
  [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)

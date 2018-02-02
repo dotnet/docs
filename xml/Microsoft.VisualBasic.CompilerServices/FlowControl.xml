@@ -119,7 +119,7 @@
     </Member>
     <Member MemberName="ForEachNextObj">
       <MemberSignature Language="C#" Value="public static bool ForEachNextObj (ref object obj, System.Collections.IEnumerator enumerator);" />
-      <MemberSignature Language="ILAsm" Value=".method public static bool ForEachNextObj(object obj, class System.Collections.IEnumerator enumerator) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForEachNextObj(object&amp; obj, class System.Collections.IEnumerator enumerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachNextObj(System.Object@,System.Collections.IEnumerator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -152,7 +152,7 @@
     </Member>
     <Member MemberName="ForLoopInitObj">
       <MemberSignature Language="C#" Value="public static bool ForLoopInitObj (object Counter, object Start, object Limit, object StepValue, ref object LoopForResult, ref object CounterResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public static bool ForLoopInitObj(object Counter, object Start, object Limit, object StepValue, object LoopForResult, object CounterResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForLoopInitObj(object Counter, object Start, object Limit, object StepValue, object&amp; LoopForResult, object&amp; CounterResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -228,7 +228,7 @@
     </Member>
     <Member MemberName="ForNextCheckObj">
       <MemberSignature Language="C#" Value="public static bool ForNextCheckObj (object Counter, object LoopObj, ref object CounterResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckObj(object Counter, object LoopObj, object CounterResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckObj(object Counter, object LoopObj, object&amp; CounterResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckObj(System.Object,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

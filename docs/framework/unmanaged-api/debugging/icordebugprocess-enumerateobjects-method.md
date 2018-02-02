@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::EnumerateObjects"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateObjects method [.NET Framework debugging]"
   - "ICorDebugProcess::EnumerateObjects method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::EnumerateObjects Method
 This method has not been implemented.  

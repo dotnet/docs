@@ -72,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Rnd" />
       </Docs>
     </Member>
     <Member MemberName="Randomize">
@@ -115,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Rnd" />
       </Docs>
     </Member>
     <Member MemberName="Rnd">
@@ -162,6 +164,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Randomize" />
       </Docs>
     </Member>
     <Member MemberName="Rnd">
@@ -216,7 +219,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Randomize" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Randomize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the random-number generator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Rnd">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a random number of type <see langword="Single" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

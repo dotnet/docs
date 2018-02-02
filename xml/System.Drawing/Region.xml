@@ -24,7 +24,7 @@
   
  An application can also use regions in hit-testing operations, such as checking whether a point or a rectangle intersects a region. For more information on using regions for hit-testing, see [How to: Use Hit Testing with a Region](~/docs/framework/winforms/advanced/how-to-use-hit-testing-with-a-region.md).  
   
- An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=fullName> method and a  <xref:System.Drawing.Brush> object.  
+ An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=nameWithType> method and a  <xref:System.Drawing.Brush> object.  
   
    
   
@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Rectangle" />
+    <altmember cref="T:System.Drawing.Drawing2D.GraphicsPath" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -564,7 +566,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For code examples, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Region%29> methods.  
+ For code examples, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Region%29> methods.  
   
  ]]></format>
         </remarks>
@@ -775,7 +777,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For code examples, see the <xref:System.Drawing.RectangleF.Intersect%28System.Drawing.RectangleF%29?displayProperty=fullName> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ For code examples, see the <xref:System.Drawing.RectangleF.Intersect%28System.Drawing.RectangleF%29?displayProperty=nameWithType> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
   
  ]]></format>
         </remarks>
@@ -1692,7 +1694,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For a code example, see the<xref:System.Drawing.Region.Translate%28System.Single%2CSystem.Single%29> method.  
+ For a code example, see the <xref:System.Drawing.Region.Translate%28System.Single%2CSystem.Single%29> method.  
   
  ]]></format>
         </remarks>
@@ -1852,7 +1854,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
   
  ]]></format>
         </remarks>
@@ -1954,7 +1956,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
   
  ]]></format>
         </remarks>
@@ -1962,5 +1964,77 @@
           <paramref name="region" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Xor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> object to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Translate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Offsets the coordinates of this <see cref="T:System.Drawing.Region" /> by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsVisible">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests whether the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersect">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Union">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Complement">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the portion of the specified <see cref="T:System.Drawing.RectangleF" /> structure that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Exclude">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

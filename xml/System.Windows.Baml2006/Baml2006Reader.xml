@@ -26,7 +26,7 @@
   
  <xref:System.Windows.Baml2006.Baml2006Reader> uses an internally implemented XAML schema context. This schema context provides the logic necessary for looking up the types in BAML form, including referencing the optimizations and tokens that are inherent in BAML.  
   
- The main scenario for <xref:System.Windows.Baml2006.Baml2006Reader> is to use it as the <xref:System.Xaml.XamlReader> implementation that you pass to a call to <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName>.  
+ The main scenario for <xref:System.Windows.Baml2006.Baml2006Reader> is to use it as the <xref:System.Xaml.XamlReader> implementation that you pass to a call to <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -333,5 +333,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

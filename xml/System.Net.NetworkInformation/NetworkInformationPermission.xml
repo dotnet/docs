@@ -144,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess.Ping> &#124; <xref:System.Net.NetworkInformation.NetworkInformationAccess.Read> access. A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess.None> access.  
+ A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=nameWithType> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess.Ping> &#124; <xref:System.Net.NetworkInformation.NetworkInformationAccess.Read> access. A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState.None?displayProperty=nameWithType> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess.None> access.  
   
    
   
@@ -490,5 +490,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

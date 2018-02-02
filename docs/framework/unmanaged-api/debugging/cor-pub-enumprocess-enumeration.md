@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PUB_ENUMPROCESS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PUB_ENUMPROCESS enumeration [.NET Framework debugging]"
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PUB_ENUMPROCESS Enumeration
 Identifies the type of process to be enumerated.  

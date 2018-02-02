@@ -18,7 +18,7 @@
   
 ## Remarks  
 > [!NOTE]
-> The <xref:System.Security.Cryptography.RSAOpenSsl> class is an implementation of the RSA algorithm using OpenSSL. It isn't available on Windows and is only available on other operating systems when OpenSSL is installed. For applications which aren't doing OpenSSL-specific interop, you're encouraged to use <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=fullName> instead of referencing this type directly.
+> The <xref:System.Security.Cryptography.RSAOpenSsl> class is an implementation of the RSA algorithm using OpenSSL. It isn't available on Windows and is only available on other operating systems when OpenSSL is installed. For applications which aren't doing OpenSSL-specific interop, you're encouraged to use <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> instead of referencing this type directly.
   
  ]]></format>
     </remarks>

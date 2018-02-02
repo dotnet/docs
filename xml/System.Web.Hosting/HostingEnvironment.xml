@@ -23,8 +23,8 @@
 ## Examples  
  The following code example is a webpage that displays the application information available from the <xref:System.Web.Hosting.HostingEnvironment> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/CS/hostingEnvironmentcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/VB/hostingEnvironmentvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/CS/hostingEnvironmentcs.aspx#1)]
+ [!code-aspx-vb[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/VB/hostingEnvironmentvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -468,6 +468,7 @@
         <summary>Maps a virtual path to a physical path on the server.</summary>
         <returns>The physical path on the server specified by <paramref name="virtualPath" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpServerUtility.MapPath(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MaxConcurrentRequestsPerCPU">
@@ -614,15 +615,15 @@
   
  To use a registered object, follow these steps:  
   
-1.  Create a new instance of your registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=fullName> method.  
+1.  Create a new instance of your registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=nameWithType> method.  
   
 2.  Call a type-specific method to initialize your new object. In the initialization method, call the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method to add the object to the list of registered objects.  
   
-3.  Call the <xref:System.Web.Hosting.ApplicationManager.GetObject%2A?displayProperty=fullName> method to return the registered object when required.  
+3.  Call the <xref:System.Web.Hosting.ApplicationManager.GetObject%2A?displayProperty=nameWithType> method to return the registered object when required.  
   
-4.  When you wish to stop your object, call the <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=fullName> method. The <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=fullName> method in turn calls the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=fullName> method.  
+4.  When you wish to stop your object, call the <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=nameWithType> method. The <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=nameWithType> method in turn calls the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=nameWithType> method.  
   
-5.  In the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=fullName> method, have your object call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method.  
+5.  In the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=nameWithType> method, have your object call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method.  
   
    
   
@@ -634,6 +635,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Hosting.HostingEnvironment.UnregisterObject(System.Web.Hosting.IRegisteredObject)" />
+        <altmember cref="T:System.Web.Hosting.IRegisteredObject" />
+        <altmember cref="M:System.Web.Hosting.ApplicationManager.CreateObject(System.String,System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterVirtualPathProvider">
@@ -694,7 +698,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
+ The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
   
  ]]></format>
         </remarks>
@@ -835,6 +839,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Hosting.HostingEnvironment.RegisterObject(System.Web.Hosting.IRegisteredObject)" />
+        <altmember cref="T:System.Web.Hosting.IRegisteredObject" />
+        <altmember cref="M:System.Web.Hosting.ApplicationManager.CreateObject(System.String,System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPathProvider">
@@ -862,5 +869,36 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCultures">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets culture information for the current thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="QueueBackgroundWorkItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
+  
+ Schedules a task which can run in the background, independent of any request.  
+  
+ This overloaded method doesn’t flow the <see cref="T:System.Threading.ExecutionContext" /> or <see cref="T:System.Security.SecurityContext" /> from the caller to the callee. Therefore, members of those objects, such as the <see cref="P:System.Threading.Thread.CurrentPrincipal" /> property, will not flow from the caller to the callee.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Impersonate">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allows code to impersonate a different user.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

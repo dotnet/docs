@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "delegate model for events"
   - "application development [.NET Framework], events"
@@ -17,6 +20,9 @@ caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Handling and Raising Events
 Events in the .NET Framework are based on the delegate model. The delegate model follows the observer design pattern, which enables a subscriber to register with, and receive notifications from, a provider. An event sender pushes a notification that an event has happened, and an event receiver receives that notification and defines a response to it. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.  
@@ -50,9 +56,9 @@ Events in the .NET Framework are based on the delegate model. The delegate model
  [!code-vb[EventsOverview#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  
   
 ## Event Data  
- Data that is associated with an event can be provided through an event data class. The .NET Framework provides many event data classes that you can use in your applications. For example, the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class is the event data class for the <xref:System.IO.Ports.SerialPort.DataReceived?displayProperty=fullName> event. The .NET Framework follows a naming pattern of ending all event data classes with `EventArgs`. You determine which event data class is associated with an event by looking at the delegate for the event. For example, the <xref:System.IO.Ports.SerialDataReceivedEventHandler> delegate includes the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class as one of its parameters.  
+ Data that is associated with an event can be provided through an event data class. The .NET Framework provides many event data classes that you can use in your applications. For example, the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class is the event data class for the <xref:System.IO.Ports.SerialPort.DataReceived?displayProperty=nameWithType> event. The .NET Framework follows a naming pattern of ending all event data classes with `EventArgs`. You determine which event data class is associated with an event by looking at the delegate for the event. For example, the <xref:System.IO.Ports.SerialDataReceivedEventHandler> delegate includes the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class as one of its parameters.  
   
- The <xref:System.EventArgs> class is the base type for all event data classes. <xref:System.EventArgs> is also the class you use when an event does not have any data associated with it. When you create an event that is only meant to notify other classes that something happened and does not need to pass any data, include the <xref:System.EventArgs> class as the second parameter in the delegate. You can pass the <xref:System.EventArgs.Empty?displayProperty=fullName> value when no data is provided. The <xref:System.EventHandler> delegate includes the <xref:System.EventArgs> class as a parameter.  
+ The <xref:System.EventArgs> class is the base type for all event data classes. <xref:System.EventArgs> is also the class you use when an event does not have any data associated with it. When you create an event that is only meant to notify other classes that something happened and does not need to pass any data, include the <xref:System.EventArgs> class as the second parameter in the delegate. You can pass the <xref:System.EventArgs.Empty?displayProperty=nameWithType> value when no data is provided. The <xref:System.EventHandler> delegate includes the <xref:System.EventArgs> class as a parameter.  
   
  When you want to create a customized event data class, create a class that derives from <xref:System.EventArgs>, and then provide any members needed to pass data that is related to the event. Typically, you should use the same naming pattern as the .NET Framework and end your event data class name with `EventArgs`.  
   
@@ -87,10 +93,10 @@ Events in the .NET Framework are based on the delegate model. The delegate model
 |[How to: Consume Events in a Web Forms Application](../../../docs/standard/events/how-to-consume-events-in-a-web-forms-application.md)|Shows how to handle an event that is raised by a Web Forms control.|  
   
 ## See Also  
- <xref:System.EventHandler>   
- <xref:System.EventHandler%601>   
- <xref:System.EventArgs>   
- <xref:System.Delegate>   
- [Events and routed events overview (Windows store apps)](http://go.microsoft.com/fwlink/?LinkId=261485)   
- [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)   
+ <xref:System.EventHandler>  
+ <xref:System.EventHandler%601>  
+ <xref:System.EventArgs>  
+ <xref:System.Delegate>  
+ [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)  
+ [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
  [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)

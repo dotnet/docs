@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], data entry"
-  - "data entry, DataGridView control"
-  - "data grids, data entry"
+  - "data entry [Windows Forms], dataGridView control"
+  - "data grids [Windows Forms], data entry"
 ms.assetid: 4a6d4676-d4e7-4b0e-9c22-50ce65ffe0d6
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Data Entry in the Windows Forms DataGridView Control
 The `DataGridView` control provides several features that let you change how users add or modify data in the control. For example, you can make data entry more efficient by providing default values for new rows and by alerting users when errors occur.  
@@ -44,16 +44,16 @@ The `DataGridView` control provides several features that let you change how use
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
- <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property.  
   
- <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event.  
   
- <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DataError> event.  
   
- <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.CellValidating> event.  
   
 ## Related Sections  
@@ -61,5 +61,5 @@ The `DataGridView` control provides several features that let you change how use
  Provides topics that describe how to populate the control with data either manually or from an external data source.  
   
 ## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)   
+ [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

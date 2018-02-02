@@ -9,9 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 593b675f-938c-44ff-807b-0ca9fea30103
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization Tools
 This section contains detailed information about the serialization tools. You can run all the tools from the command line.  

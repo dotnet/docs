@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "registering primary interop assemblies"
   - "primary interop assemblies, registering"
@@ -22,6 +17,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Register Primary Interop Assemblies
 Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md).  
@@ -58,6 +55,6 @@ regasm CompanyA.UtilLib.dll
 ```  
   
 ## See Also  
- [Programming with Primary Interop Assemblies](http://msdn.microsoft.com/en-us/306fa1d6-0703-4004-9e93-d0a57f1be81e)   
- [Locating Primary Interop Assemblies](http://msdn.microsoft.com/en-us/d6768e4b-cd80-414d-a4f8-05d979eb393b)   
- [Redistributing Primary Interop Assemblies](http://msdn.microsoft.com/en-us/e76384f0-d631-474c-bdbd-13884cba0265)
+ [Programming with Primary Interop Assemblies](http://msdn.microsoft.com/library/306fa1d6-0703-4004-9e93-d0a57f1be81e)  
+ [Locating Primary Interop Assemblies](http://msdn.microsoft.com/library/d6768e4b-cd80-414d-a4f8-05d979eb393b)  
+ [Redistributing Primary Interop Assemblies](http://msdn.microsoft.com/library/e76384f0-d631-474c-bdbd-13884cba0265)

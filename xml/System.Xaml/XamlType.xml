@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor only for "unknown" types where a XAML type that maps to an underlying type system is unavailable. This constructor might not produce a result where <xref:System.Xaml.XamlType.IsUnknown%2A?displayProperty=fullName> is `true`. Instead, the default reflector logic reports the underlying type as <xref:System.Xaml.XamlLanguage.Object%2A?displayProperty=fullName>. However, this behavior can change because of the <xref:System.Xaml.XamlType.LookupIsUnknown%2A> override.  
+ Use this constructor only for "unknown" types where a XAML type that maps to an underlying type system is unavailable. This constructor might not produce a result where <xref:System.Xaml.XamlType.IsUnknown%2A?displayProperty=nameWithType> is `true`. Instead, the default reflector logic reports the underlying type as <xref:System.Xaml.XamlLanguage.Object%2A?displayProperty=nameWithType>. However, this behavior can change because of the <xref:System.Xaml.XamlType.LookupIsUnknown%2A> override.  
   
  ]]></format>
         </remarks>
@@ -640,7 +640,7 @@
 ## Remarks  
  If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calling <xref:System.Xaml.XamlType.Invoker%2A> can invoke either <xref:System.Xaml.XamlType.LookupInvoker%2A> or a specific override of that method. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupInvoker%2A> on this type.  
   
- If a <xref:System.Xaml.XamlType.LookupInvoker%2A> override returns `null`, or if the default implementation returns `null` because of lack of <xref:System.Xaml.XamlType.UnderlyingType%2A> for this <xref:System.Xaml.XamlType>, then <xref:System.Xaml.XamlType.Invoker%2A> returns <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A?displayProperty=fullName>.  
+ If a <xref:System.Xaml.XamlType.LookupInvoker%2A> override returns `null`, or if the default implementation returns `null` because of lack of <xref:System.Xaml.XamlType.UnderlyingType%2A> for this <xref:System.Xaml.XamlType>, then <xref:System.Xaml.XamlType.Invoker%2A> returns <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -750,6 +750,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlType.ConstructionRequiresArguments" />
       </Docs>
     </Member>
     <Member MemberName="IsDictionary">
@@ -960,9 +961,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsUnknown%2A> overrides on <xref:System.Xaml.XamlType>derived classes.  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsUnknown%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
   
- For a load path that involves <xref:System.Xaml.XamlObjectWriter>, a <xref:System.Xaml.XamlType> that has `true` for <xref:System.Xaml.XamlType.IsUnknown%2A> cannot be written into an object graph. Under the default implementations in <xref:System.Xaml> , the <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlType> reports `true` for <xref:System.Xaml.XamlType.IsUnknown%2A>. You should not pass a <xref:System.Xaml.XamlType> that has <xref:System.Xaml.XamlType.IsUnknown%2A> as `true` unless you are prepared to handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior or the XAML node stream prior to writing the object graph.  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, a <xref:System.Xaml.XamlType> that has `true` for <xref:System.Xaml.XamlType.IsUnknown%2A> cannot be written into an object graph. Under the default implementations in <xref:System.Xaml> , the <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A?displayProperty=nameWithType> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlType> reports `true` for <xref:System.Xaml.XamlType.IsUnknown%2A>. You should not pass a <xref:System.Xaml.XamlType> that has <xref:System.Xaml.XamlType.IsUnknown%2A> as `true` unless you are prepared to handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior or the XAML node stream prior to writing the object graph.  
   
  ]]></format>
         </remarks>
@@ -994,6 +995,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Markup.XamlReader.LoadAsync(System.IO.Stream)" />
+        <altmember cref="P:System.Windows.FrameworkElement.IsInitialized" />
       </Docs>
     </Member>
     <Member MemberName="IsWhitespaceSignificantCollection">
@@ -1135,6 +1138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xaml.XamlDirective" />
+        <altmember cref="T:System.Xaml.XamlLanguage" />
       </Docs>
     </Member>
     <Member MemberName="LookupAllAttachableMembers">
@@ -1326,7 +1331,7 @@
 ## Remarks  
  This method is invoked by an internal private method (no public `CollectionKind` or `GetCollectionKind` API exists on <xref:System.Xaml.XamlType>).  
   
- The default implementation uses the internal CLR reflection. For cases where <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior indirectly calls <xref:System.Xaml.XamlType.LookupCollectionKind%2A> recursively to attempt to find a valid base type; it returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName> if no valid base type exists. In general, the default implementation attempts to find the `Add` method of the underlying type by reflection. If found, the <xref:System.Reflection.MethodInfo> of the `Add` method is enough information to determine which <xref:System.Xaml.Schema.XamlCollectionKind> value should be returned. Otherwise, it returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName>.  
+ The default implementation uses the internal CLR reflection. For cases where <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior indirectly calls <xref:System.Xaml.XamlType.LookupCollectionKind%2A> recursively to attempt to find a valid base type; it returns <xref:System.Xaml.Schema.XamlCollectionKind.None?displayProperty=nameWithType> if no valid base type exists. In general, the default implementation attempts to find the `Add` method of the underlying type by reflection. If found, the <xref:System.Reflection.MethodInfo> of the `Add` method is enough information to determine which <xref:System.Xaml.Schema.XamlCollectionKind> value should be returned. Otherwise, it returns <xref:System.Xaml.Schema.XamlCollectionKind.None?displayProperty=nameWithType>.  
   
  Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
   
@@ -1504,7 +1509,7 @@
   
  The default implementation does not require that a <xref:System.Xaml.XamlType> be constructed by using one of the constructors that pass an initial <xref:System.Xaml.Schema.XamlTypeInvoker>. However, an <xref:System.Xaml.XamlType.UnderlyingType%2A> value must exist for the <xref:System.Xaml.XamlType>; otherwise, the default implementation returns `null`.  
   
- Override this method if you also create a derived class from <xref:System.Xaml.Schema.XamlTypeInvoker> and intend to return the derived class. If you return `null`, <xref:System.Xaml.XamlType.Invoker%2A> returns <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A?displayProperty=fullName> to callers.  
+ Override this method if you also create a derived class from <xref:System.Xaml.Schema.XamlTypeInvoker> and intend to return the derived class. If you return `null`, <xref:System.Xaml.XamlType.Invoker%2A> returns <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A?displayProperty=nameWithType> to callers.  
   
  ]]></format>
         </remarks>
@@ -1638,6 +1643,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlObjectWriter.RootNameScope" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsNullable">
@@ -1822,7 +1828,7 @@
   
  The default implementation can use CLR reflection concepts, such as checking for an `Add` method by <xref:System.Reflection.MethodInfo> and using the <xref:System.Reflection.ParameterInfo>; checking <xref:System.Xaml.XamlType.IsArray%2A>; and checking <xref:System.Xaml.XamlType.BaseType%2A> and trying the same logic there.  
   
- Override this method if you want <xref:System.Xaml.XamlType.ItemType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName> should return `null`.  
+ Override this method if you want <xref:System.Xaml.XamlType.ItemType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> returns <xref:System.Xaml.Schema.XamlCollectionKind.None?displayProperty=nameWithType> should return `null`.  
   
  ]]></format>
         </remarks>
@@ -1852,7 +1858,7 @@
   
  The default implementation can use CLR reflection concepts, such as checking for an `Add` method by <xref:System.Reflection.MethodInfo> and using the <xref:System.Reflection.ParameterInfo>; and checking <xref:System.Xaml.XamlType.BaseType%2A> and trying the same logic there.  
   
- Override this method if you want <xref:System.Xaml.XamlType.KeyType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> does not return <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName> should return `null`.  
+ Override this method if you want <xref:System.Xaml.XamlType.KeyType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> does not return <xref:System.Xaml.Schema.XamlCollectionKind.Dictionary?displayProperty=nameWithType> should return `null`.  
   
  ]]></format>
         </remarks>
@@ -2389,7 +2395,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There are certain scenarios for a <xref:System.Xaml.XamlType> where calling the <xref:System.Xaml.XamlType.TypeArguments%2A> parameter returns a list where the types are still open. In this case, one or more of the returned <xref:System.Xaml.XamlType> values will have placeholder values for <xref:System.Xaml.XamlType.Name%2A?displayProperty=fullName>, such as `T`, to represent that the generic is still open. This scenario can occur if you get a <xref:System.Xaml.XamlType> from a call to <xref:System.Xaml.XamlSchemaContext.GetXamlType%2A>, instead of from a XAML reader implementation.  
+ There are certain scenarios for a <xref:System.Xaml.XamlType> where calling the <xref:System.Xaml.XamlType.TypeArguments%2A> parameter returns a list where the types are still open. In this case, one or more of the returned <xref:System.Xaml.XamlType> values will have placeholder values for <xref:System.Xaml.XamlType.Name%2A?displayProperty=nameWithType>, such as `T`, to represent that the generic is still open. This scenario can occur if you get a <xref:System.Xaml.XamlType> from a call to <xref:System.Xaml.XamlSchemaContext.GetXamlType%2A>, instead of from a XAML reader implementation.  
   
  ]]></format>
         </remarks>
@@ -2468,5 +2474,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the current object is equal to another object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlType" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

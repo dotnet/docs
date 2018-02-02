@@ -23,6 +23,10 @@
     <summary>Represents an object that is taking part in a scope hierarchy. This class contains methods for resolving scope and for getting member information. It belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.GlobalScope" />
+    <altmember cref="T:System.Reflection.FieldInfo" />
+    <altmember cref="T:System.Reflection.MemberInfo" />
+    <altmember cref="T:System.Reflection.IReflect" />
   </Docs>
   <Members>
     <Member MemberName="CreateField">
@@ -50,6 +54,12 @@
         <returns>A global variable that has the specified name, value, and attributes.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="field_table">
@@ -68,6 +78,12 @@
         <summary>Stores an array of variables that are in scope.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultThisObject">
@@ -88,6 +104,12 @@
         <returns>The current default scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -120,6 +142,11 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -140,6 +167,11 @@
         <returns>The global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalField">
@@ -163,6 +195,11 @@
         <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -188,6 +225,11 @@
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -211,6 +253,11 @@
         <returns>An array of objects that contains all members of the current object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMemberValue">
@@ -248,6 +295,12 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
   </Members>

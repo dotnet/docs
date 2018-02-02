@@ -15,10 +15,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Controls.DataGrid.CancelEdit%28System.Windows.Controls.DataGridEditingUnit%29?displayProperty=fullName> and <xref:System.Windows.Controls.DataGrid.CommitEdit%28System.Windows.Controls.DataGridEditingUnit%2CSystem.Boolean%29?displayProperty=fullName> methods.  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGrid.CancelEdit%28System.Windows.Controls.DataGridEditingUnit%29?displayProperty=nameWithType> and <xref:System.Windows.Controls.DataGrid.CommitEdit%28System.Windows.Controls.DataGridEditingUnit%2CSystem.Boolean%29?displayProperty=nameWithType> methods.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
   </Docs>
   <Members>
     <Member MemberName="Cell">

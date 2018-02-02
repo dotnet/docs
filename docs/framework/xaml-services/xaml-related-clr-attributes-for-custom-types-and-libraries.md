@@ -16,6 +16,8 @@ caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XAML-Related CLR Attributes for Custom Types and Libraries
 This topic describes the common language runtime (CLR) attributes that are defined by .NET Framework XAML Services. It also describes other CLR attributes that are defined in the .NET Framework that have a XAML-related scenario for application to assemblies or types. Attributing assemblies, types, or members with these CLR attributes provides XAML type system information related to your types. Information is provided to any XAML consumer that uses .NET Framework XAML Services for processing the XAML node stream directly or through the dedicated XAML readers and XAML writers.  
@@ -120,7 +122,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** None.  
   
- <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within whitespace significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=fullName>. For more information, see [Whitespace Processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within whitespace significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>. For more information, see [Whitespace Processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
   
 ### TypeConverterAttribute  
  **Reference Documentation:**  <xref:System.ComponentModel.TypeConverterAttribute>  
@@ -275,5 +277,5 @@ This topic describes the common language runtime (CLR) attributes that are defin
 >  .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
   
 ## See Also  
- <xref:System.Attribute>   
+ <xref:System.Attribute>  
  [Defining Custom Types for Use with .NET Framework XAML Services](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)

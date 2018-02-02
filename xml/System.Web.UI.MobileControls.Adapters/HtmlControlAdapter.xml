@@ -122,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes" />
       </Docs>
     </Member>
     <Member MemberName="ExitSecondaryUIMode">
@@ -186,6 +187,7 @@
         <param name="state">The current view state.</param>
         <summary>Loads the view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.LoadAdapterState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NotSecondaryUI">
@@ -206,10 +208,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way that a Windows-based application shows dialog boxes. For more information about secondary user interfaces, see the [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7) documentation.  
+ The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way that a Windows-based application shows dialog boxes. For more information about secondary user interfaces, see the [Adapter Sets Functionality](http://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7) documentation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="PageAdapter">
@@ -228,6 +231,7 @@
         <summary>Returns the page adapter for the mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The page adapter for the mobile page.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -249,6 +253,7 @@
         <param name="writer">The text writer to receive output.</param>
         <summary>Called by the control's Render method to perform rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -298,6 +303,8 @@
         <param name="writer">The text writer.</param>
         <summary>Renders hidden field text for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginLink">
@@ -468,6 +475,7 @@
         <returns>
           <see langword="Null" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.SaveAdapterState" />
       </Docs>
     </Member>
     <Member MemberName="SecondaryUIMode">
@@ -489,11 +497,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way as a dialog box in a Windows-based application. For more information about secondary user interfaces, see [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7).  
+ The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way as a dialog box in a Windows-based application. For more information about secondary user interfaces, see [Adapter Sets Functionality](http://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7).  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Render">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates the target-specific markup for the associated control.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

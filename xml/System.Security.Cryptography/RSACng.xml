@@ -35,7 +35,7 @@
 -   <xref:System.Security.Cryptography.RSACng> performs such operations as signing and verifying signatures by using properties of the <xref:System.Security.Cryptography.RSACng> object, just as <xref:System.Security.Cryptography.ECDsaCng> uses its object properties to control signing and verification operations.  
 
 > [!NOTE]
-> The <xref:System.Security.Cryptography.RSACng> class is an implementation of the RSA algorithm using the Windows CNG libraries and isn't available on operating systems other than Windows. For applications which aren't doing Windows interop, you're encouraged to use <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=fullName> instead of referencing this type directly.
+> The <xref:System.Security.Cryptography.RSACng> class is an implementation of the RSA algorithm using the Windows CNG libraries and isn't available on operating systems other than Windows. For applications which aren't doing Windows interop, you're encouraged to use <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> instead of referencing this type directly.
   
  ]]></format>
     </remarks>
@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.CngKey.AlgorithmGroup%2A?displayProperty=fullName> of `key` must be <xref:System.Security.Cryptography.CngAlgorithmGroup.Rsa%2A?displayProperty=fullName>.  
+ The <xref:System.Security.Cryptography.CngKey.AlgorithmGroup%2A?displayProperty=nameWithType> of `key` must be <xref:System.Security.Cryptography.CngAlgorithmGroup.Rsa%2A?displayProperty=nameWithType>.  
   
  This constructor creates a copy of the key. Even if `key` is disposed, the copy of this key object in RSA remains alive.  
   
@@ -495,7 +495,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:System.Security.Cryptography.CngKey> object is disposed if the key is reset, for instance by changing the <xref:System.Security.Cryptography.CngKey.KeySize%2A?displayProperty=fullName> property, by using the <xref:System.Security.Cryptography.RSA.ImportParameters%2A?displayProperty=fullName> to create a new key, or by disposing of the parent <xref:System.Security.Cryptography.RSA> object. Therefore, you should ensure that the key object is no longer used in these cases.  
+ The returned <xref:System.Security.Cryptography.CngKey> object is disposed if the key is reset, for instance by changing the <xref:System.Security.Cryptography.CngKey.KeySize%2A?displayProperty=nameWithType> property, by using the <xref:System.Security.Cryptography.RSA.ImportParameters%2A?displayProperty=nameWithType> to create a new key, or by disposing of the parent <xref:System.Security.Cryptography.RSA> object. Therefore, you should ensure that the key object is no longer used in these cases.  
   
  This <xref:System.Security.Cryptography.CngKey> object is not the same as the <xref:System.Security.Cryptography.CngKey> object passed to the <xref:System.Security.Cryptography.RSACng.%23ctor%2A> constructor, if that constructor was used. However, it will point to the same CNG key.  
   
@@ -668,5 +668,15 @@
  The signature is badly formatted. (In the [!INCLUDE[net_v46](~/includes/net-v46-md.md)] and 4.6.1 only; starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], the method returns <see langword="false" /> if a signature is badly formatted.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSACng" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

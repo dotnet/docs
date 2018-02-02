@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSymbolSearchInfoCount method [.NET Framework debugging]"
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount Method
 Gets a count of symbol search information.  

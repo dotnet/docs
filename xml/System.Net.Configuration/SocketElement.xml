@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the [\&lt;socket\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md) configuration element.  
+ This class corresponds to the [&lt;socket&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md) configuration element.  
   
  This class provides programmatic access to information that can be stored in configuration files.  
   
@@ -120,10 +120,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> property enables configuration of a restriction for an IPv6 socket to a specified scope, such as addresses with the same link local or site local prefix. This option enables applications to place access restrictions on IPv6 sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required. This option has three defined protection levels specified in the <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName> enumeration.  
+ The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> property enables configuration of a restriction for an IPv6 socket to a specified scope, such as addresses with the same link local or site local prefix. This option enables applications to place access restrictions on IPv6 sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required. This option has three defined protection levels specified in the <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> enumeration.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.IPProtectionLevel" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.IPProtectionLevel" />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">

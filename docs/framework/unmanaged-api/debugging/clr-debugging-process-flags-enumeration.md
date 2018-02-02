@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLR_DEBUGGING_PROCESS_FLAG"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLR_DEBUGGING_PROCESS_FLAGS enumeration [.NET Framework debugging]"
 ms.assetid: 85b85fde-1f87-490b-ba8d-d604670959c3
@@ -28,6 +26,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR_DEBUGGING_PROCESS_FLAGS Enumeration
 Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-openvirtualprocess-method.md) method.  
@@ -47,7 +47,7 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
 |Member|Description|  
 |------------|-----------------|  
 |`CLR_DEBUGGING_MANAGED_EVENT_PENDING`|This runtime has a non-catch-up managed debugger event to send. See the Remarks section for the distinction between catch-up and non-catch-up events.|  
-|`CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`|The managed event that is pending is a <xref:System.Diagnostics.Debugger.Launch%2A?displayProperty=fullName> request.|  
+|`CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`|The managed event that is pending is a <xref:System.Diagnostics.Debugger.Launch%2A?displayProperty=nameWithType> request.|  
   
 ## Remarks  
  Catch-up events include process, application domain, assembly, module, and thread creation notifications that bring the debugger up to the current state after it has attached to a process. Non-catch-up events, which are indicated by the `CLR_DEBUGGING_MANAGED_EVENT_PENDING` flag, include all other debugger events, such as exceptions and managed debugging assistant (MDA) notifications.  
@@ -64,5 +64,5 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)   
+ [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

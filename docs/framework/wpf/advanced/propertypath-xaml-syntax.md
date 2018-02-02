@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "PropertyPath object"
-  - "XAML, PropertyPath object"
+  - "PropertyPath object [WPF]"
+  - "XAML [WPF], PropertyPath object"
 ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # PropertyPath XAML Syntax
 The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.  
@@ -28,7 +30,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
   
  Primarily, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses <xref:System.Windows.PropertyPath> to describe object-model paths for traversing the properties of an object data source, and to describe the target path for targeted animations.  
   
- Some style and template properties such as <xref:System.Windows.Setter.Property%2A?displayProperty=fullName> take a qualified property name that superficially resembles a <xref:System.Windows.PropertyPath>. But this is not a true <xref:System.Windows.PropertyPath>; instead it is a qualified *owner.property* string format usage that is enabled by the WPF [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor in combination with the type converter for <xref:System.Windows.DependencyProperty>.  
+ Some style and template properties such as <xref:System.Windows.Setter.Property%2A?displayProperty=nameWithType> take a qualified property name that superficially resembles a <xref:System.Windows.PropertyPath>. But this is not a true <xref:System.Windows.PropertyPath>; instead it is a qualified *owner.property* string format usage that is enabled by the WPF [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor in combination with the type converter for <xref:System.Windows.DependencyProperty>.  
   
 <a name="databinding_s"></a>   
 ## PropertyPath for Objects in Data Binding  
@@ -56,7 +58,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
   
  `key` must be either the typed index to a dictionary or hash table, or the integer index of an array. Also, the value of the key must be a type that is directly bindable to the property where it is applied. For instance, a hash table that contains string keys and string values can be used this way to bind to Text for a <xref:System.Windows.Controls.TextBox>. Or, if the key points to a collection or subindex, you could use this syntax to bind to a target collection property. Otherwise, you need to reference a specific property, through a syntax such as `<Binding Path="[``key``].``propertyName``" .../>`.  
   
- You can specify the type of the index if necessary. For details on this aspect of an indexed property path, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>.  
+ You can specify the type of the index if necessary. For details on this aspect of an indexed property path, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>.  
   
 <a name="multipleindirect"></a>   
 ### Multiple Property (Indirect Property Targeting)  
@@ -112,7 +114,7 @@ or
   
  If a given object supports multiple indexers, those indexers can be specified in order, similar to an array referencing syntax. The object in question can be either the current context or the value of a property that contains a multiple index object.  
   
- By default, the indexer values are typed by using the characteristics of the underlying object. You can specify the type of the index if necessary. For details on typing the indexers, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>.  
+ By default, the indexer values are typed by using the characteristics of the underlying object. You can specify the type of the index if necessary. For details on typing the indexers, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>.  
   
 <a name="mixing"></a>   
 ### Mixing Syntaxes  
@@ -203,6 +205,6 @@ or
  In general, <xref:System.Windows.PropertyPath> is designed to use two different constructors, one for the binding usages and simplest animation usages, and one for the complex animation usages. Use the <xref:System.Windows.PropertyPath.%23ctor%28System.Object%29> signature for binding usages, where the object is a string. Use the <xref:System.Windows.PropertyPath.%23ctor%28System.Object%29> signature for one-step animation paths, where the object is a <xref:System.Windows.DependencyProperty>. Use the <xref:System.Windows.PropertyPath.%23ctor%28System.String%2CSystem.Object%5B%5D%29> signature for complex animations. This latter constructor uses a token string for the first parameter and an array of objects that fill positions in the token string to define a property path relationship.  
   
 ## See Also  
- <xref:System.Windows.PropertyPath>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ <xref:System.Windows.PropertyPath>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

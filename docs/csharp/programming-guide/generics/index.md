@@ -1,16 +1,10 @@
 ---
 title: "Generics (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, generics"
   - "generics [C#]"
@@ -18,26 +12,11 @@ ms.assetid: 75ea8509-a4ea-4e7a-a2b3-cf72482e9282
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Generics (C# Programming Guide)
 Generics were added to version 2.0 of the C# language and the common language runtime (CLR). Generics introduce to the .NET Framework the concept of type parameters, which make it possible to design classes and methods that defer the specification of one or more types until the class or method is declared and instantiated by client code. For example, by using a generic type parameter T you can write a single class that other client code can use without incurring the cost or risk of runtime casts or boxing operations, as shown here:  
   
- [!code-cs[csProgGuideGenerics#1](../../../csharp/programming-guide/generics/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideGenerics#1](../../../csharp/programming-guide/generics/codesnippet/CSharp/index_1.cs)]  
   
 ## Generics Overview  
   
@@ -72,8 +51,6 @@ Generics were added to version 2.0 of the C# language and the common language ru
   
 -   [Generic Delegates](../../../csharp/programming-guide/generics/generic-delegates.md)  
   
--   [default Keyword](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md)  
-  
 -   [Differences Between C++ Templates and C# Generics](../../../csharp/programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md)  
   
 -   [Generics and Reflection](../../../csharp/programming-guide/generics/generics-and-reflection.md)  
@@ -86,8 +63,8 @@ Generics were added to version 2.0 of the C# language and the common language ru
  For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
 ## See Also  
- <xref:System.Collections.Generic>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Types](../../../csharp/programming-guide/types/index.md)   
- [\<typeparam>](../../../csharp/programming-guide/xmldoc/typeparam.md)   
+ <xref:System.Collections.Generic>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Types](../../../csharp/programming-guide/types/index.md)  
+ [\<typeparam>](../../../csharp/programming-guide/xmldoc/typeparam.md)  
  [\<typeparamref>](../../../csharp/programming-guide/xmldoc/typeparamref.md)

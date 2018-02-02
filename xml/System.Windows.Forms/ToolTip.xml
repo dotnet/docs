@@ -49,7 +49,7 @@
   
  If you want to disable all ToolTip text so that it cannot be displayed in your application, you can use the <xref:System.Windows.Forms.ToolTip.Active%2A> property. Usually the ToolTip is drawn by the operating system, but to customize the appearance of the <xref:System.Windows.Forms.ToolTip>, you can set the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property to `true` and handle the <xref:System.Windows.Forms.ToolTip.Draw> event.  
   
- The <xref:System.Windows.Forms.ToolTip.ToolTipTitle%2A> class implements the <xref:System.ComponentModel.IExtenderProvider?displayProperty=fullName> interface, which has a single method, <xref:System.Windows.Forms.ToolTip.CanExtend%2A>. ToolTips extend controls on the same form at design time, adding a `ToolTip` property. For more information about extender providers, see [Extender Providers](http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a).  
+ The <xref:System.Windows.Forms.ToolTip.ToolTipTitle%2A> class implements the <xref:System.ComponentModel.IExtenderProvider?displayProperty=nameWithType> interface, which has a single method, <xref:System.Windows.Forms.ToolTip.CanExtend%2A>. ToolTips extend controls on the same form at design time, adding a `ToolTip` property. For more information about extender providers, see [Extender Providers](http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a).  
   
    
   
@@ -62,6 +62,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolTipIcon" />
+    <altmember cref="T:System.Windows.Forms.HelpProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +95,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="T:System.Windows.Forms.UserControl" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Container" />
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -149,6 +154,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.RemoveAll" />
+        <altmember cref="Overload:System.Windows.Forms.ToolTip.Show" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ShowAlways" />
       </Docs>
     </Member>
     <Member MemberName="AutomaticDelay">
@@ -190,6 +199,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.AutoPopDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.InitialDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ReshowDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseFading" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="AutoPopDelay">
@@ -233,6 +247,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.AutomaticDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.InitialDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ReshowDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseFading" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -265,6 +284,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
       </Docs>
     </Member>
     <Member MemberName="CanExtend">
@@ -291,10 +314,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolTip.CanExtend%2A> method is the only member of the <xref:System.ComponentModel.IExtenderProvider?displayProperty=fullName> interface. This method returns `true` if the `target` parameter is of type <xref:System.Windows.Forms.Control>.  
+ The <xref:System.Windows.Forms.ToolTip.CanExtend%2A> method is the only member of the <xref:System.ComponentModel.IExtenderProvider?displayProperty=nameWithType> interface. This method returns `true` if the `target` parameter is of type <xref:System.Windows.Forms.Control>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -316,7 +340,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolTip.CreateParams%2A> property should only be extended when you are wrapping a standard Windows control class or to set styles not provided by the <xref:System.Windows.Forms?displayProperty=fullName> namespace. For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
+ The <xref:System.Windows.Forms.ToolTip.CreateParams%2A> property should only be extended when you are wrapping a standard Windows control class or to set styles not provided by the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace. For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
   
 > [!NOTE]
 >  When overriding the <xref:System.Windows.Forms.ToolTip.CreateParams%2A> property in a derived class, use the base class's <xref:System.Windows.Forms.ToolTip.CreateParams%2A> property to extend the base implementation.  
@@ -325,6 +349,7 @@
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">For inheriting classes to call unmanaged code when getting the property value.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">For the immediate caller to call unmanaged code when getting the property value.</permission>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -347,6 +372,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Component" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.Component.Dispose(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Draw">
@@ -369,14 +395,14 @@
 ## Remarks  
  With the <xref:System.Windows.Forms.ToolTip.Draw> event, you can customize the appearance of the <xref:System.Windows.Forms.ToolTip>.  
   
- The <xref:System.Windows.Forms.ToolTip.Draw> event is raised by the <xref:System.Windows.Forms.ToolTip> class when the <xref:System.Windows.Forms.ToolTip> is drawn and the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A?displayProperty=fullName> property value is `true` and the <xref:System.Windows.Forms.ToolTip.IsBalloon%2A> property is `false`. The <xref:System.Windows.Forms.DrawToolTipEventArgs> class contains all the information needed to paint the <xref:System.Windows.Forms.ToolTip>, including the ToolTip text, the <xref:System.Drawing.Rectangle>, and the <xref:System.Drawing.Graphics> object on which the drawing should be done. To customize the look of the ToolTip, use the <xref:System.Drawing.Rectangle> to determine the bounds of the ToolTip, and the <xref:System.Drawing.Graphics> object to perform your customized drawing. You can increase the bounds of the <xref:System.Windows.Forms.ToolTip> before it is shown by handling the <xref:System.Windows.Forms.ToolTip.Popup> event.  
+ The <xref:System.Windows.Forms.ToolTip.Draw> event is raised by the <xref:System.Windows.Forms.ToolTip> class when the <xref:System.Windows.Forms.ToolTip> is drawn and the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A?displayProperty=nameWithType> property value is `true` and the <xref:System.Windows.Forms.ToolTip.IsBalloon%2A> property is `false`. The <xref:System.Windows.Forms.DrawToolTipEventArgs> class contains all the information needed to paint the <xref:System.Windows.Forms.ToolTip>, including the ToolTip text, the <xref:System.Drawing.Rectangle>, and the <xref:System.Drawing.Graphics> object on which the drawing should be done. To customize the look of the ToolTip, use the <xref:System.Drawing.Rectangle> to determine the bounds of the ToolTip, and the <xref:System.Drawing.Graphics> object to perform your customized drawing. You can increase the bounds of the <xref:System.Windows.Forms.ToolTip> before it is shown by handling the <xref:System.Windows.Forms.ToolTip.Popup> event.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
    
   
 ## Examples  
- The following code example demonstrates how to custom draw the <xref:System.Windows.Forms.ToolTip>. The example creates a <xref:System.Windows.Forms.ToolTip> and associates it to three <xref:System.Windows.Forms.Button> controls located on the <xref:System.Windows.Forms.Form>. The example sets the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property to `true` and handles the <xref:System.Windows.Forms.ToolTip.Draw> event. In the <xref:System.Windows.Forms.ToolTip.Draw> event handler, the <xref:System.Windows.Forms.ToolTip> is custom drawn differently, depending on what button the <xref:System.Windows.Forms.ToolTip> is being displayed for as indicated by the <xref:System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl%2A?displayProperty=fullName> property.  
+ The following code example demonstrates how to custom draw the <xref:System.Windows.Forms.ToolTip>. The example creates a <xref:System.Windows.Forms.ToolTip> and associates it to three <xref:System.Windows.Forms.Button> controls located on the <xref:System.Windows.Forms.Form>. The example sets the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property to `true` and handles the <xref:System.Windows.Forms.ToolTip.Draw> event. In the <xref:System.Windows.Forms.ToolTip.Draw> event handler, the <xref:System.Windows.Forms.ToolTip> is custom drawn differently, depending on what button the <xref:System.Windows.Forms.ToolTip> is being displayed for as indicated by the <xref:System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[System.Windows.Forms.ToolTip.OwnerDraw#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolTip.OwnerDraw/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ToolTip.OwnerDraw#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolTip.OwnerDraw/CS/form1.cs#1)]
@@ -384,6 +410,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -405,10 +438,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method. For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method. For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.ToolTip.Dispose" />
+        <altmember cref="M:System.Object.Finalize" />
+        <altmember cref="M:System.GC.SuppressFinalize(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -439,6 +475,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
       </Docs>
     </Member>
     <Member MemberName="GetToolTip">
@@ -479,6 +519,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.ToString" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.Tag" />
       </Docs>
     </Member>
     <Member MemberName="Hide">
@@ -512,6 +557,13 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="win" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">Requires <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission.</permission>
+        <altmember cref="Overload:System.Windows.Forms.ToolTip.Show" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.Active" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ShowAlways" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseFading" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.RemoveAll" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.StopTimer" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="InitialDelay">
@@ -555,6 +607,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.AutomaticDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.AutoPopDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ReshowDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseFading" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="IsBalloon">
@@ -586,6 +643,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
       </Docs>
     </Member>
     <Member MemberName="OwnerDraw">
@@ -620,7 +681,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to owner draw the <xref:System.Windows.Forms.ToolTip>. The example creates a <xref:System.Windows.Forms.ToolTip> and associates it to three <xref:System.Windows.Forms.Button> controls located on the <xref:System.Windows.Forms.Form>. The example sets the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property to `true` and handles the <xref:System.Windows.Forms.ToolTip.Draw> event. In the <xref:System.Windows.Forms.ToolTip.Draw> event handler, the <xref:System.Windows.Forms.ToolTip> is custom drawn differently depending upon what button the <xref:System.Windows.Forms.ToolTip> is being displayed for as indicated by the <xref:System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl%2A?displayProperty=fullName> property.  
+ The following code example demonstrates how to owner draw the <xref:System.Windows.Forms.ToolTip>. The example creates a <xref:System.Windows.Forms.ToolTip> and associates it to three <xref:System.Windows.Forms.Button> controls located on the <xref:System.Windows.Forms.Form>. The example sets the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property to `true` and handles the <xref:System.Windows.Forms.ToolTip.Draw> event. In the <xref:System.Windows.Forms.ToolTip.Draw> event handler, the <xref:System.Windows.Forms.ToolTip> is custom drawn differently depending upon what button the <xref:System.Windows.Forms.ToolTip> is being displayed for as indicated by the <xref:System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[System.Windows.Forms.ToolTip.OwnerDraw#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolTip.OwnerDraw/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ToolTip.OwnerDraw#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolTip.OwnerDraw/CS/form1.cs#1)]
@@ -628,6 +689,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Draw" />
       </Docs>
     </Member>
     <Member MemberName="Popup">
@@ -655,7 +722,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup> event.  
   
@@ -664,6 +731,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.InitialDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ReshowDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseFading" />
+        <altmember cref="Overload:System.Windows.Forms.ToolTip.Show" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Draw" />
+        <altmember cref="T:System.Windows.Forms.PopupEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -689,6 +762,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.Active" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ReshowDelay">
@@ -730,6 +806,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.AutomaticDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.AutoPopDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.InitialDelay" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseFading" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="SetToolTip">
@@ -771,6 +852,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.ToString" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.Tag" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -805,6 +891,15 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="window" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">Requires <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission.</permission>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -841,6 +936,15 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="window" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">Requires <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission.</permission>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -879,6 +983,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="duration" /> is less than or equal to 0.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">Requires <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission.</permission>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -919,6 +1032,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="duration" /> is less than or equal to 0.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">Requires <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission.</permission>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -956,6 +1078,15 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">Requires <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission.</permission>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -998,6 +1129,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="duration" /> is less than or equal to 0.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">Requires <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> permission.</permission>
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
       </Docs>
     </Member>
     <Member MemberName="ShowAlways">
@@ -1038,6 +1178,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.UserControl" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.Active" />
+        <altmember cref="Overload:System.Windows.Forms.ToolTip.Show" />
       </Docs>
     </Member>
     <Member MemberName="StopTimer">
@@ -1063,6 +1206,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.AutoPopDelay" />
+        <altmember cref="Overload:System.Windows.Forms.ToolTip.Show" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.Active" />
       </Docs>
     </Member>
     <Member MemberName="StripAmpersands">
@@ -1097,6 +1244,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -1136,6 +1285,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipIcon">
@@ -1162,10 +1312,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you want to use a graphic that is not defined by the <xref:System.Windows.Forms.ToolTipIcon?displayProperty=fullName> enumeration, you must owner-draw the entire ToolTip. For more information, see the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property.  
+ If you want to use a graphic that is not defined by the <xref:System.Windows.Forms.ToolTipIcon?displayProperty=nameWithType> enumeration, you must owner-draw the entire ToolTip. For more information, see the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipTitle">
@@ -1198,6 +1355,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1224,6 +1386,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.Tag" />
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="UseAnimation">
@@ -1258,6 +1423,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseFading" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
       </Docs>
     </Member>
     <Member MemberName="UseFading">
@@ -1292,7 +1459,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.UseAnimation" />
+        <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolTip" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the text associated with a ToolTip, and then displays it.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

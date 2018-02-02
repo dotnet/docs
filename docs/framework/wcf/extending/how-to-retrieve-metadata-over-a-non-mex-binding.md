@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Retrieve Metadata Over a non-MEX Binding
 This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) sample.  
@@ -127,7 +129,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
     ServiceEndpointCollection endpoints = importer.ImportAllEndpoints();  
     ```  
   
-5.  At this point, you have a collection of service endpoints. [!INCLUDE[crabout](../../../../includes/crabout-md.md)]importing metadata, see [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md).  
+5.  At this point, you have a collection of service endpoints. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] importing metadata, see [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md).  
   
 ## See Also  
  [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

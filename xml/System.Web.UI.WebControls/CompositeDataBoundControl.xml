@@ -37,6 +37,13 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" /> class, you must override the following member: <see cref="M:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls(System.Collections.IEnumerable,System.Boolean)" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.CompositeDataBoundControl.Controls" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -84,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -109,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -149,6 +160,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -250,6 +263,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">
@@ -279,5 +294,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateChildControls">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the control hierarchy that is used to render a composite data-bound control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

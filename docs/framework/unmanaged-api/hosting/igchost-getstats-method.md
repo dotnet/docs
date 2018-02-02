@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetStats"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStats method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::GetStats method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost::GetStats Method
 Gets the statistics for the current state of the garbage collection system.  

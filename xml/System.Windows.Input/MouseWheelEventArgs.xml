@@ -18,17 +18,17 @@
 ## Remarks  
  <xref:System.Windows.Input.MouseWheelEventArgs> is used with the following events:  
   
--   <xref:System.Windows.UIElement.MouseWheel?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.MouseWheel?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.MouseWheel?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.MouseWheel?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=fullName> (attached event)  
+-   <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=nameWithType> (attached event)  
   
--   <xref:System.Windows.UIElement.PreviewMouseWheel?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewMouseWheel?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewMouseWheel?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewMouseWheel?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=fullName> (attached event)  
+-   <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=nameWithType> (attached event)  
   
  The <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> property is positive if the mouse wheel is moved upward or forward (away from the user) or negative if the mouse wheel is moved downward or backward (toward the user).  
   
@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="F:System.Windows.Input.Mouse.MouseWheelDeltaForOneLine" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Input.Mouse.MouseWheelDeltaForOneLine" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">

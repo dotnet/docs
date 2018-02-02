@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 502c50b2-9982-46af-ac92-53ad9f61d486
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Syndication
 This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndication.  

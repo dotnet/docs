@@ -32,7 +32,7 @@
    
   
 ## Examples  
- The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
+ The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
   
  [!code-csharp[MetadataResolver#3](~/samples/snippets/csharp/VS_Snippets_CFX/metadataresolver/cs/client.cs#3)]  
   
@@ -247,7 +247,7 @@
    
   
 ## Examples  
- The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
+ The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
   
  [!code-csharp[MetadataResolver#3](~/samples/snippets/csharp/VS_Snippets_CFX/metadataresolver/cs/client.cs#3)]  
   
@@ -284,7 +284,7 @@
    
   
 ## Examples  
- The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
+ The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
   
  [!code-csharp[MetadataResolver#3](~/samples/snippets/csharp/VS_Snippets_CFX/metadataresolver/cs/client.cs#3)]  
   
@@ -335,11 +335,11 @@
   
 |Type of XML metadata|Returned type|  
 |--------------------------|-------------------|  
-|WSDL document|<xref:System.Web.Services.Description.ServiceDescription?displayProperty=fullName>|  
-|XML Schema|<xref:System.Xml.Schema.XmlSchema?displayProperty=fullName>|  
-|Metadata reference|<xref:System.ServiceModel.Description.MetadataReference?displayProperty=fullName>|  
-|Metadata location|<xref:System.ServiceModel.Description.MetadataLocation?displayProperty=fullName>|  
-|Policy, and all other XML content|<xref:System.Xml.XmlElement?displayProperty=fullName>|  
+|WSDL document|<xref:System.Web.Services.Description.ServiceDescription?displayProperty=nameWithType>|  
+|XML Schema|<xref:System.Xml.Schema.XmlSchema?displayProperty=nameWithType>|  
+|Metadata reference|<xref:System.ServiceModel.Description.MetadataReference?displayProperty=nameWithType>|  
+|Metadata location|<xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType>|  
+|Policy, and all other XML content|<xref:System.Xml.XmlElement?displayProperty=nameWithType>|  
   
  ]]></format>
         </remarks>
@@ -445,5 +445,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataSection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

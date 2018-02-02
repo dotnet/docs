@@ -1,12 +1,10 @@
 ---
 title: "Iteration Statements (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "iteration statements [C#]"
   - "loop structures [C#]"
@@ -14,20 +12,6 @@ ms.assetid: 7d494566-bf75-4ee8-979f-0f964209437e
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Iteration Statements (C# Reference)
 You can create loops by using the iteration statements. Iteration statements cause embedded statements to be executed a number of times, subject to the loop-termination criteria. These statements are executed in order, except when a [jump statement](../../../csharp/language-reference/keywords/jump-statements.md) is encountered.  
@@ -45,7 +29,7 @@ You can create loops by using the iteration statements. Iteration statements cau
 -   [while](../../../csharp/language-reference/keywords/while.md)  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
  [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)

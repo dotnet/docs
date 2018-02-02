@@ -18,7 +18,7 @@
 ## Remarks  
  Although this list contains members that resemble those defined by <xref:System.Collections.IList> and <xref:System.Collections.ICollection>, and provide similar functionality, this class implements neither of those interfaces.  
   
- Most <xref:System.Windows.WeakEventManager> derived classes do not need to use any members on <xref:System.Windows.WeakEventManager.ListenerList>. The <xref:System.Windows.WeakEventManager> methods <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> and <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A>use a default <xref:System.Windows.WeakEventManager.ListenerList> internally, one list for each `source`.  
+ Most <xref:System.Windows.WeakEventManager> derived classes do not need to use any members on <xref:System.Windows.WeakEventManager.ListenerList>. The <xref:System.Windows.WeakEventManager> methods <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> and <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A> use a default <xref:System.Windows.WeakEventManager.ListenerList> internally, one list for each `source`.  
   
  You only need to call <xref:System.Windows.WeakEventManager.ListenerList> methods if your <xref:System.Windows.WeakEventManager> class maintains multiple lists for the same event-source combination, with each list created to account for different conditions of the event. In this case, you would not use <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> and <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A> and would instead implement `AddListener` or `RemoveListener` to act upon listeners in just one of the internal listener lists, typically based on a parameter that you add to `AddListener` or `RemoveListener`. Also, the handler implementation that receives the raw event cannot simply call <xref:System.Windows.WeakEventManager.DeliverEvent%2A>; you must instead keep track of the specifics of the event and deliver the event only to the appropriate list using <xref:System.Windows.WeakEventManager.DeliverEventToList%2A>.  
   
@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.WeakEventManager" />
+    <altmember cref="T:System.Windows.IWeakEventListener" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +97,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)" />
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.BeginUse" />
       </Docs>
     </Member>
     <Member MemberName="AddHandler">
@@ -143,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.EndUse" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -264,6 +269,7 @@
       <Docs>
         <summary>Unlocks the locked state initiated by <see cref="M:System.Windows.WeakEventManager.ListenerList.BeginUse" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.BeginUse" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -316,7 +322,7 @@
     </Member>
     <Member MemberName="PrepareForWriting">
       <MemberSignature Language="C#" Value="public static bool PrepareForWriting (ref System.Windows.WeakEventManager.ListenerList list);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool PrepareForWriting(class System.Windows.WeakEventManager/ListenerList list) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool PrepareForWriting(class System.Windows.WeakEventManager/ListenerList&amp; list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -346,6 +352,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.BeginUse" />
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.EndUse" />
       </Docs>
     </Member>
     <Member MemberName="Purge">
@@ -393,6 +401,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)" />
+        <altmember cref="M:System.Windows.WeakEventManager.ListenerList.BeginUse" />
       </Docs>
     </Member>
     <Member MemberName="RemoveHandler">
@@ -416,5 +426,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.WeakEventManager.ListenerList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

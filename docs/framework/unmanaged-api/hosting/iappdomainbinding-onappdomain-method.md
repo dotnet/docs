@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "OnAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAppDomainBinding::OnAppDomain method [.NET Framework hosting]"
   - "OnAppDomain method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAppDomainBinding::OnAppDomain Method
 Called by the common language runtime (CLR) to notify the host that an application domain has been created.  

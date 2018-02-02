@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::SetILMap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetILMap method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::SetILMap method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueSnapshot::SetILMap Method
 `SetILMap` is obsolete. Do not call this method.  

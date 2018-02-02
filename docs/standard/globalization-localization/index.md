@@ -21,6 +21,9 @@ caps.latest.revision: 42
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Globalizing and Localizing .NET Framework Applications
 Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb978433.aspx), including an application that can be localized into one or more languages, involves three steps: globalization, localizability review, and localization.  
@@ -42,7 +45,7 @@ Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb9784
   
  The .NET Framework provides extensive support for the development of world-ready and localized applications. In particular, many type members in the .NET Framework class library aid globalization by returning values that reflect the conventions of either the current user's culture or a specified culture. Also, the .NET Framework supports satellite assemblies, which facilitate the process of localizing an application.  
   
- For additional information, see the [Go Global Developer Center](http://go.microsoft.com/fwlink/?LinkId=235015).  
+ For additional information, see the [Globalization documentation](/globalization/).  
   
 ## In This Section  
  [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
@@ -61,7 +64,7 @@ Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb9784
  Describes the best practices to follow for globalization, localization, and developing world-ready ASP.NET applications.  
   
 ## Reference  
- <xref:System.Globalization?displayProperty=fullName> namespace  
+ <xref:System.Globalization?displayProperty=nameWithType> namespace  
  Contains classes that define culture-related information, including the language, the country/region, the calendars in use, the format patterns for dates, currency, and numbers, and the sort order for strings.  
   
  <xref:System.Resources> namespace  

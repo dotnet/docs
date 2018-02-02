@@ -109,31 +109,9 @@
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintInt32Property" />
       </Parameters>
       <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator int (System.Printing.IndexedProperties.PrintInt32Property modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Implicit(class System.Printing.IndexedProperties.PrintInt32Property modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.op_Implicit(System.Printing.IndexedProperties.PrintInt32Property|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Int32" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintInt32Property modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintInt32Property" /> that is converted.</param>
+        <summary>Provides implicit conversion to an <see cref="T:System.Int32" /> from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintInt32Property" />.</summary>
+        <returns>The converted PrintInt32Property object to an Int32 object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,5 +139,23 @@
         <exception cref="T:System.InvalidOperationException">The property cannot be set to the value that the calling code provides.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintInt32Property" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintInt32Property" /> (or from a pointer to such a property) to an <see cref="T:System.Int32" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

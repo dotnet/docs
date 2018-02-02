@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client or service runtime throws an exception when it encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=fullName> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=fullName> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=fullName> property for the message.  
+ By default the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client or service runtime throws an exception when it encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=nameWithType> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=nameWithType> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=nameWithType> property for the message.  
   
  To prevent this behavior, use the <xref:System.ServiceModel.Description.MustUnderstandBehavior> and set the <xref:System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand%2A> property to `false`. Typically, this is used in scenarios where the message content is meant to be relayed somewhere else and not processed, such as a router service.  
   
@@ -47,7 +47,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Pass `false` as the `validate` parameter to this constructor to prevent an exception from being thrown when the runtime encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=fullName> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=fullName> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=fullName> property for the message.  
+ Pass `false` as the `validate` parameter to this constructor to prevent an exception from being thrown when the runtime encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=nameWithType> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=nameWithType> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=nameWithType> property for the message.  
   
  ]]></format>
         </remarks>
@@ -191,7 +191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand%2A> property to `false` to prevent an exception from being thrown when the runtime encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=fullName> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=fullName> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=fullName> property for the message.  
+ Set the <xref:System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand%2A> property to `false` to prevent an exception from being thrown when the runtime encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=nameWithType> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=nameWithType> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=nameWithType> property for the message.  
   
  ]]></format>
         </remarks>

@@ -1,16 +1,10 @@
 ---
 title: "How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
@@ -18,21 +12,6 @@ ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)
 This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.  
@@ -136,6 +115,6 @@ This example shows how to create an immutable lightweight class that serves only
  The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.  
   
 ## See Also  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)   
- [struct](../../../csharp/language-reference/keywords/struct.md)   
+ [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+ [struct](../../../csharp/language-reference/keywords/struct.md)  
  [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)

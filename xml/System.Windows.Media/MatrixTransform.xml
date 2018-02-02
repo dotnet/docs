@@ -48,32 +48,32 @@
 <a name="xamlValues_MatrixTransform"></a>   
 ## XAML Values  
  *m11*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The value at position (1, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
   
  *m12*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The value at position (1, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
   
  *m21*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The value at position (2, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
   
  *m22*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The value at position (2, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
   
  *offsetX*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The value at position (3, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
   
  *offsetY*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The value at position (3, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
   
@@ -166,7 +166,7 @@
   
  When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -194,7 +194,7 @@
 ## Remarks  
  Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -293,5 +293,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MatrixTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

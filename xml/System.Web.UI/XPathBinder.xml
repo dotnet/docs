@@ -20,7 +20,7 @@
   
  You can use a simplified version of data-binding syntax when using the <xref:System.Web.UI.XPathBinder> methods declaratively. Instead of calling `XPathBinder.Eval`(`Container.DataItem`, `xpath`) you can use `XPath`(`xpath`). Similarly, instead of calling `XPathBinder.Select`(`Container.DataItem`,`xpath`), you can use `XPathSelect`(`xpath`) to retrieve an <xref:System.Collections.IEnumerable> set of nodes. When using this simplified syntax, the <xref:System.Web.UI.XPathBinder.Eval%2A> and <xref:System.Web.UI.XPathBinder.Select%2A> methods assume a default `Container.DataItem` context object.  
   
- For more information about data binding to ASP.NET server controls, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
+ For more information about data binding to ASP.NET server controls, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
   
    
   
@@ -33,8 +33,8 @@
   
  The first part of the example shows a Web Forms page that displays XML data accessed through an <xref:System.Web.UI.WebControls.XmlDataSource> control. A <xref:System.Web.UI.WebControls.Repeater> control uses simplified <xref:System.Web.UI.XPathBinder.Eval%28System.Object%2CSystem.String%29> method syntax to bind to data items within the XML document that the <xref:System.Web.UI.WebControls.XmlDataSource> represents. It uses the <xref:System.Web.UI.XPathBinder.Select%28System.Object%2CSystem.String%29> method to retrieve an <xref:System.Collections.IEnumerable> list and assign it as a late-bound <xref:System.Web.UI.WebControls.Repeater.DataSource%2A> property for the <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/CS/xmlds14cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/VB/xmlds14vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/CS/xmlds14cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/VB/xmlds14vb.aspx#1)]  
   
  The second example provides the XML file, Order.xml, that is used as the source of the data displayed in the Web Forms page defined above.  
   
@@ -107,8 +107,8 @@
   
  The first part of the example shows a Web Forms page that displays XML data accessed through an <xref:System.Web.UI.WebControls.XmlDataSource> control. A <xref:System.Web.UI.WebControls.Repeater> control uses the simplified <xref:System.Web.UI.XPathBinder.Eval%28System.Object%2CSystem.String%29> method syntax to bind to data items within the XML document that the <xref:System.Web.UI.WebControls.XmlDataSource> represents. It uses the <xref:System.Web.UI.XPathBinder.Select%28System.Object%2CSystem.String%29> method to retrieve an <xref:System.Collections.IEnumerable> list and assign it as a late-bound <xref:System.Web.UI.WebControls.Repeater.DataSource%2A> property for the <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.XmlDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_13/CS/xmlds13cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.XmlDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_13/VB/xmlds13vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_13/CS/xmlds13cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_13/VB/xmlds13vb.aspx#1)]  
   
  The second example provides the XML file, Bookstore2.xml, that is used as the source of the data displayed in the Web Forms page defined above.  
   
@@ -152,6 +152,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="container" /> or <paramref name="xpath" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The object specified by <paramref name="container" /> is not an <see cref="T:System.Xml.XPath.IXPathNavigable" /> object.</exception>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <altmember cref="T:System.Web.UI.DataBinding" />
       </Docs>
     </Member>
     <Member MemberName="Eval">
@@ -322,8 +324,8 @@
   
  The first part of the example shows a Web Forms page that displays XML data accessed through an <xref:System.Web.UI.WebControls.XmlDataSource> control. A <xref:System.Web.UI.WebControls.Repeater> control uses the simplified <xref:System.Web.UI.XPathBinder.Eval%28System.Object%2CSystem.String%29> method syntax to bind to data items within the XML document that the <xref:System.Web.UI.WebControls.XmlDataSource> represents. It uses the <xref:System.Web.UI.XPathBinder.Select%28System.Object%2CSystem.String%29> method to retrieve an <xref:System.Collections.IEnumerable> list and assign it as a late-bound <xref:System.Web.UI.WebControls.Repeater.DataSource%2A> property for the <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/CS/xmlds14cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/VB/xmlds14vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/CS/xmlds14cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/VB/xmlds14vb.aspx#1)]  
   
  The second example provides the XML file, Order.xml, that is used as the source of the data displayed in the Web Forms page defined above.  
   
@@ -394,5 +396,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Eval">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses and evaluates an XPath data-binding expression against an <see cref="T:System.Xml.XPath.IXPathNavigable" /> object at run time.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

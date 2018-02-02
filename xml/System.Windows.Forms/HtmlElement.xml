@@ -63,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.Children" />
       </Docs>
     </Member>
     <Member MemberName="AppendChild">
@@ -104,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.CreateElement(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AttachEventHandler">
@@ -211,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.All" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -242,7 +245,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.Click> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.Click> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.Click> event.  
   
@@ -300,6 +303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.OffsetRectangle" />
       </Docs>
     </Member>
     <Member MemberName="DetachEventHandler">
@@ -348,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.HtmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="DomElement">
@@ -383,6 +388,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.DomDocument" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -414,7 +420,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.DoubleClick> event.  
   
@@ -460,7 +466,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.Drag> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.Drag> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.Drag> event.  
   
@@ -498,7 +504,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DragEnd> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DragEnd> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.DragEnd> event.  
   
@@ -527,7 +533,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DragLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DragLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.DragLeave> event.  
   
@@ -565,7 +571,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DragOver> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.DragOver> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.DragOver> event.  
   
@@ -795,6 +801,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GotFocus">
@@ -868,6 +875,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.Name" />
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -904,6 +912,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Creating child elements on this element is not allowed.</exception>
+        <altmember cref="M:System.Windows.Forms.HtmlElement.AppendChild(System.Windows.Forms.HtmlElement)" />
+        <altmember cref="M:System.Windows.Forms.HtmlElement.InsertAdjacentElement(System.Windows.Forms.HtmlElementInsertionOrientation,System.Windows.Forms.HtmlElement)" />
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -940,6 +951,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The specified element cannot contain text (for example, an <c>IMG</c> element).</exception>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="InsertAdjacentElement">
@@ -1013,7 +1025,7 @@
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
-      <MemberSignature Language="C#" Value="public object InvokeMember (string methodName, object[] parameter);" />
+      <MemberSignature Language="C#" Value="public object InvokeMember (string methodName, params object[] parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeMember(string methodName, object[] parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.InvokeMember(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1086,7 +1098,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.KeyDown> event.  
   
@@ -1126,7 +1138,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.KeyPress> event.  
   
@@ -1166,7 +1178,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.KeyUp> event.  
   
@@ -1273,7 +1285,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.MouseDown> event.  
   
@@ -1302,7 +1314,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.MouseEnter> event.  
   
@@ -1331,7 +1343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.MouseLeave> event.  
   
@@ -1369,7 +1381,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseMove> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseMove> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.MouseMove> event.  
   
@@ -1407,7 +1419,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseOver> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseOver> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.MouseOver> event.  
   
@@ -1445,7 +1457,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlElement.MouseUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlElement> named `HtmlElement1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlElement.MouseUp> event.  
   
@@ -1632,6 +1644,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.OffsetParent" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1662,7 +1675,7 @@
 ## Remarks  
  The equality operator tests the `IUnknown` pointers of the underlying COM objects wrapped by the supplied <xref:System.Windows.Forms.HtmlElement> classes.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.HtmlElement.Equals%2A?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Forms.HtmlElement.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1689,7 +1702,7 @@
         <returns>
           <see langword="true" /> is only one element is <see langword="null" />, or the two objects are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Forms.HtmlElement.Equals%2A?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Forms.HtmlElement.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1768,6 +1781,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="OuterText">
@@ -1796,6 +1810,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">You cannot set text outside of this element.</exception>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2131,7 +2146,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.GetElementsByTagName(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeMember">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a method unique to the current element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

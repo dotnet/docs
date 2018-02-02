@@ -1,13 +1,16 @@
 ---
 title: "Managed Threading Best Practices"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "11/30/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "threading [.NET Framework], design guidelines"
   - "threading [.NET Framework], best practices"
@@ -17,12 +20,15 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Managed Threading Best Practices
 Multithreading requires careful programming. For most tasks, you can reduce complexity by queuing requests for execution by thread pool threads. This topic addresses more difficult situations, such as coordinating the work of multiple threads, or handling threads that block.  
   
 > [!NOTE]
->  In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming](../../../docs/standard/parallel-programming/index.md).  
+> Starting with the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming in .NET](../../../docs/standard/parallel-programming/index.md).  
   
 ## Deadlocks and Race Conditions  
  Multithreading solves problems with throughput and responsiveness, but in doing so it introduces new problems: deadlocks and race conditions.  
@@ -30,14 +36,14 @@ Multithreading requires careful programming. For most tasks, you can reduce comp
 ### Deadlocks  
  A deadlock occurs when each of two threads tries to lock a resource the other has already locked. Neither thread can make any further progress.  
   
- Many methods of the managed threading classes provide time-outs to help you detect deadlocks. For example, the following code attempts to acquire a lock on the current instance. If the lock is not obtained in 300 milliseconds, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=fullName> returns **false**.  
+ Many methods of the managed threading classes provide time-outs to help you detect deadlocks. For example, the following code attempts to acquire a lock on an object named `lockObject`. If the lock is not obtained in 300 milliseconds, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> returns `false`.  
   
 ```vb  
 If Monitor.TryEnter(lockObject, 300) Then  
     Try  
         ' Place code protected by the Monitor here.  
     Finally  
-        Monitor.Exit(Me)  
+        Monitor.Exit(lockObject)  
     End Try  
 Else  
     ' Code to execute if the attempt times out.  
@@ -50,7 +56,7 @@ if (Monitor.TryEnter(lockObject, 300)) {
         // Place code protected by the Monitor here.  
     }  
     finally {  
-        Monitor.Exit(this);  
+        Monitor.Exit(lockObject);  
     }  
 }  
 else {  
@@ -65,7 +71,7 @@ else {
   
  In a multithreaded application, a thread that has loaded and incremented the value might be preempted by another thread which performs all three steps; when the first thread resumes execution and stores its value, it overwrites `objCt` without taking into account the fact that the value has changed in the interim.  
   
- This particular race condition is easily avoided by using methods of the <xref:System.Threading.Interlocked> class, such as <xref:System.Threading.Interlocked.Increment%2A?displayProperty=fullName>. To read about other techniques for synchronizing data among multiple threads, see [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md).  
+ This particular race condition is easily avoided by using methods of the <xref:System.Threading.Interlocked> class, such as <xref:System.Threading.Interlocked.Increment%2A?displayProperty=nameWithType>. To read about other techniques for synchronizing data among multiple threads, see [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md).  
   
  Race conditions can also occur when you synchronize the activities of multiple threads. Whenever you write a line of code, you must consider what might happen if a thread were preempted before executing the line (or before any of the individual machine instructions that make up the line), and another thread overtook it.  
   
@@ -79,7 +85,7 @@ else {
   
 -   A background thread executes only when the number of foreground threads executing is smaller than the number of processors.  
   
--   When you call the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method on a thread, that thread might or might not start executing immediately, depending on the number of processors and the number of threads currently waiting to execute.  
+-   When you call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method on a thread, that thread might or might not start executing immediately, depending on the number of processors and the number of threads currently waiting to execute.  
   
 -   Race conditions can occur not only because threads are preempted unexpectedly, but because two threads executing on different processors might be racing to reach the same code block.  
   
@@ -90,7 +96,7 @@ else {
   
 -   A background thread executes only when the main user thread is idle. A foreground thread that executes constantly starves background threads of processor time.  
   
--   When you call the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method on a thread, that thread does not start executing until the current thread yields or is preempted by the operating system.  
+-   When you call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method on a thread, that thread does not start executing until the current thread yields or is preempted by the operating system.  
   
 -   Race conditions typically occur because the programmer did not anticipate the fact that a thread can be preempted at an awkward moment, sometimes allowing another thread to reach a code block first.  
   
@@ -104,17 +110,17 @@ else {
 ## General Recommendations  
  Consider the following guidelines when using multiple threads:  
   
--   Don't use <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName> to terminate other threads. Calling **Abort** on another thread is akin to throwing an exception on that thread, without knowing what point that thread has reached in its processing.  
+-   Don't use <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to terminate other threads. Calling **Abort** on another thread is akin to throwing an exception on that thread, without knowing what point that thread has reached in its processing.  
   
--   Don't use <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName> and <xref:System.Threading.Thread.Resume%2A?displayProperty=fullName> to synchronize the activities of multiple threads. Do use <xref:System.Threading.Mutex>, <xref:System.Threading.ManualResetEvent>, <xref:System.Threading.AutoResetEvent>, and <xref:System.Threading.Monitor>.  
+-   Don't use <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.Resume%2A?displayProperty=nameWithType> to synchronize the activities of multiple threads. Do use <xref:System.Threading.Mutex>, <xref:System.Threading.ManualResetEvent>, <xref:System.Threading.AutoResetEvent>, and <xref:System.Threading.Monitor>.  
   
--   Don't control the execution of worker threads from your main program (using events, for example). Instead, design your program so that worker threads are responsible for waiting until work is available, executing it, and notifying other parts of your program when finished. If your worker threads do not block, consider using thread pool threads. <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=fullName> is useful in situations where worker threads block.  
+-   Don't control the execution of worker threads from your main program (using events, for example). Instead, design your program so that worker threads are responsible for waiting until work is available, executing it, and notifying other parts of your program when finished. If your worker threads do not block, consider using thread pool threads. <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType> is useful in situations where worker threads block.  
   
--   Don't use types as lock objects. That is, avoid code such as `lock(typeof(X))` in C# or `SyncLock(GetType(X))` in Visual Basic, or the use of <xref:System.Threading.Monitor.Enter%2A?displayProperty=fullName> with <xref:System.Type> objects. For a given type, there is only one instance of <xref:System.Type?displayProperty=fullName> per application domain. If the type you take a lock on is public, code other than your own can take locks on it, leading to deadlocks. For additional issues, see [Reliability Best Practices](../../../docs/framework/performance/reliability-best-practices.md).  
+-   Don't use types as lock objects. That is, avoid code such as `lock(typeof(X))` in C# or `SyncLock(GetType(X))` in Visual Basic, or the use of <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> with <xref:System.Type> objects. For a given type, there is only one instance of <xref:System.Type?displayProperty=nameWithType> per application domain. If the type you take a lock on is public, code other than your own can take locks on it, leading to deadlocks. For additional issues, see [Reliability Best Practices](../../../docs/framework/performance/reliability-best-practices.md).  
   
 -   Use caution when locking on instances, for example `lock(this)` in C# or `SyncLock(Me)` in Visual Basic. If other code in your application, external to the type, takes a lock on the object, deadlocks could occur.  
   
--   Do ensure that a thread that has entered a monitor always leaves that monitor, even if an exception occurs while the thread is in the monitor. The C# [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement and the Visual Basic [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) statement provide this behavior automatically, employing a **finally** block to ensure that <xref:System.Threading.Monitor.Exit%2A?displayProperty=fullName> is called. If you cannot ensure that **Exit** will be called, consider changing your design to use **Mutex**. A mutex is automatically released when the thread that currently owns it terminates.  
+-   Do ensure that a thread that has entered a monitor always leaves that monitor, even if an exception occurs while the thread is in the monitor. The C# [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement and the Visual Basic [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) statement provide this behavior automatically, employing a **finally** block to ensure that <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> is called. If you cannot ensure that **Exit** will be called, consider changing your design to use **Mutex**. A mutex is automatically released when the thread that currently owns it terminates.  
   
 -   Do use multiple threads for tasks that require different resources, and avoid assigning multiple threads to a single resource. For example, any task involving I/O benefits from having its own thread, because that thread will block during I/O operations and thus allow other threads to execute. User input is another resource that benefits from a dedicated thread. On a single-processor computer, a task that involves intensive computation coexists with user input and with tasks that involve I/O, but multiple computation-intensive tasks contend with each other.  
   
@@ -196,5 +202,5 @@ else {
 -   Avoid providing static methods that alter static state. In common server scenarios, static state is shared across requests, which means multiple threads can execute that code at the same time. This opens up the possibility of threading bugs. Consider using a design pattern that encapsulates data into instances that are not shared across requests. Furthermore, if static data are synchronized, calls between static methods that alter state can result in deadlocks or redundant synchronization, adversely affecting performance.  
   
 ## See Also  
- [Threading](../../../docs/standard/threading/index.md)   
+ [Threading](../../../docs/standard/threading/index.md)  
  [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)

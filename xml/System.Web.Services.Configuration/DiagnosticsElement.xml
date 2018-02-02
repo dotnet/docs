@@ -11,12 +11,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the [&lt;diagnostics&gt;](http://msdn.microsoft.com/en-us/e4ca05d1-1e10-4873-9ef6-75e55851d888) element in the Web.config configuration file.</summary>
+    <summary>Represents the [&lt;diagnostics&gt;](http://msdn.microsoft.com/library/e4ca05d1-1e10-4873-9ef6-75e55851d888) element in the Web.config configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Configuration.DiagnosticsElement> class represents the [\<diagnostics>](http://msdn.microsoft.com/en-us/e4ca05d1-1e10-4873-9ef6-75e55851d888) element in a Web.config file. Set the <xref:System.Web.Services.Configuration.DiagnosticsElement.SuppressReturningExceptions%2A> property to true in order to return exceptions to the client for debugging purposes.  
+ The <xref:System.Web.Services.Configuration.DiagnosticsElement> class represents the [\<diagnostics>](http://msdn.microsoft.com/library/e4ca05d1-1e10-4873-9ef6-75e55851d888) element in a Web.config file. Set the <xref:System.Web.Services.Configuration.DiagnosticsElement.SuppressReturningExceptions%2A> property to true in order to return exceptions to the client for debugging purposes.  
   
  ]]></format>
     </remarks>

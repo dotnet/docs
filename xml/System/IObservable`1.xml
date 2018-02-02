@@ -42,11 +42,11 @@
   
  The provider sends the following three kinds of notifications to the observer by calling <xref:System.IObserver%601> methods:  
   
--   The current data. The provider can call the <xref:System.IObserver%601.OnNext%2A?displayProperty=fullName> method to pass the observer a `T` object that has current data, changed data, or fresh data.  
+-   The current data. The provider can call the <xref:System.IObserver%601.OnNext%2A?displayProperty=nameWithType> method to pass the observer a `T` object that has current data, changed data, or fresh data.  
   
--   An error condition. The provider can call the <xref:System.IObserver%601.OnError%2A?displayProperty=fullName> method to notify the observer that some error condition has occurred.  
+-   An error condition. The provider can call the <xref:System.IObserver%601.OnError%2A?displayProperty=nameWithType> method to notify the observer that some error condition has occurred.  
   
--   No further data. The provider can call the <xref:System.IObserver%601.OnCompleted%2A?displayProperty=fullName> method to notify the observer that it has finished sending notifications.  
+-   No further data. The provider can call the <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType> method to notify the observer that it has finished sending notifications.  
   
    
   
@@ -66,9 +66,9 @@
  [!code-csharp[System.IObserver.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/provider.cs#7)]
  [!code-vb[System.IObserver.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/provider.vb#7)]  
   
- Observers register to receive notifications from a `TrackLocation` object by calling its <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName> method, which assigns a reference to the observer object to a private generic <xref:System.Collections.Generic.List%601> object. The method returns an `Unsubscriber` object, which is an <xref:System.IDisposable> implementation that enables observers to stop receiving notifications. The `LocationTracker` class also includes an `EndTransmission` method. When no further location data is available, the method calls each observer's <xref:System.IObserver%601.OnCompleted%2A> method and then clears the internal list of observers.  
+ Observers register to receive notifications from a `TrackLocation` object by calling its <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> method, which assigns a reference to the observer object to a private generic <xref:System.Collections.Generic.List%601> object. The method returns an `Unsubscriber` object, which is an <xref:System.IDisposable> implementation that enables observers to stop receiving notifications. The `LocationTracker` class also includes an `EndTransmission` method. When no further location data is available, the method calls each observer's <xref:System.IObserver%601.OnCompleted%2A> method and then clears the internal list of observers.  
   
- In this example, the `LocationReporter` class provides the <xref:System.IObserver%601> implementation. It displays information about the current location to the console. Its constructor includes a `name` parameter, which enables the `LocationReporter` instance to identify itself in its string output. It also includes a `Subscribe` method, which wraps a call to the provider's <xref:System.IObservable%601.Subscribe%2A> method. This allows the method to assign the returned <xref:System.IDisposable> reference to a private variable. The `LocationReporter` class also includes an `Unsubscribe` method, which calls the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method of the object that is returned by the <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName> method. The following code defines the `LocationReporter` class.  
+ In this example, the `LocationReporter` class provides the <xref:System.IObserver%601> implementation. It displays information about the current location to the console. Its constructor includes a `name` parameter, which enables the `LocationReporter` instance to identify itself in its string output. It also includes a `Subscribe` method, which wraps a call to the provider's <xref:System.IObservable%601.Subscribe%2A> method. This allows the method to assign the returned <xref:System.IDisposable> reference to a private variable. The `LocationReporter` class also includes an `Unsubscribe` method, which calls the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method of the object that is returned by the <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> method. The following code defines the `LocationReporter` class.  
   
  [!code-csharp[System.IObserver.Class#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/observer.cs#8)]
  [!code-vb[System.IObserver.Class#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/observer.vb#8)]  
@@ -80,6 +80,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IObserver`1" />
   </Docs>
   <Members>
     <Member MemberName="Subscribe">
@@ -136,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IObserver`1" />
       </Docs>
     </Member>
   </Members>

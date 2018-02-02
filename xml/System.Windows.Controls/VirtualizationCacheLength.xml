@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=fullName> attached property specifies the amount of space in which a <xref:System.Windows.Controls.VirtualizingPanel> virtualizes the items before or after the view port (the area in which items are visible).  You can specify uniform cache length my creating a <xref:System.Windows.Controls.VirtualizationCacheLength> by using the constructor that takes a single parameter.  You can use the constructor that takes two parameters to specify different values for the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
+ The <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=nameWithType> attached property specifies the amount of space in which a <xref:System.Windows.Controls.VirtualizingPanel> virtualizes the items before or after the view port (the area in which items are visible).  You can specify uniform cache length my creating a <xref:System.Windows.Controls.VirtualizationCacheLength> by using the constructor that takes a single parameter.  You can use the constructor that takes two parameters to specify different values for the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
   
  ]]></format>
     </remarks>
@@ -288,5 +288,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

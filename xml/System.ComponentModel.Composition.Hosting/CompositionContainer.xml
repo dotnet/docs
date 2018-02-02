@@ -71,7 +71,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
+      <MemberSignature Language="C#" Value="public CompositionContainer (params System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Hosting.ExportProvider[] providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Hosting.ExportProvider[])" />
       <MemberType>Constructor</MemberType>
@@ -98,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions, System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
+      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions, params System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions, class System.ComponentModel.Composition.Hosting.ExportProvider[] providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Hosting.CompositionOptions,System.ComponentModel.Composition.Hosting.ExportProvider[])" />
       <MemberType>Constructor</MemberType>
@@ -127,7 +127,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
+      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, params System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, class System.ComponentModel.Composition.Hosting.ExportProvider[] providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.ExportProvider[])" />
       <MemberType>Constructor</MemberType>
@@ -156,7 +156,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, bool isThreadSafe, System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
+      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, bool isThreadSafe, params System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, bool isThreadSafe, class System.ComponentModel.Composition.Hosting.ExportProvider[] providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Boolean,System.ComponentModel.Composition.Hosting.ExportProvider[])" />
       <MemberType>Constructor</MemberType>
@@ -194,7 +194,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions, System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
+      <MemberSignature Language="C#" Value="public CompositionContainer (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions, params System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, valuetype System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions, class System.ComponentModel.Composition.Hosting.ExportProvider[] providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.CompositionOptions,System.ComponentModel.Composition.Hosting.ExportProvider[])" />
       <MemberType>Constructor</MemberType>
@@ -561,5 +561,25 @@
         <exception cref="T:System.ComponentModel.Composition.CompositionException">An error occurred during composition. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will contain a collection of the errors that occurred.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

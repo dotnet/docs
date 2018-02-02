@@ -25,12 +25,20 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.PagedDataSource> class encapsulates the properties that allow data-source controls, such as the <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>, to perform paging. This class is used by control developers when providing paging support to a custom data-bound control.  
   
- This class uses the best available method to enumerate over the data belonging to the current page. If the underlying data source supports indexed access (such as <xref:System.Array?displayProperty=fullName> and <xref:System.Collections.IList?displayProperty=fullName>), this class uses it. Otherwise, it uses the enumerator created by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
+ This class uses the best available method to enumerate over the data belonging to the current page. If the underlying data source supports indexed access (such as <xref:System.Array?displayProperty=nameWithType> and <xref:System.Collections.IList?displayProperty=nameWithType>), this class uses it. Otherwise, it uses the enumerator created by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.PagedDataSource>, see the <xref:System.Web.UI.WebControls.PagedDataSource.%23ctor%2A> constructor.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Array" />
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.IEnumerable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,10 +96,11 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A> property to indicate whether custom paging is enabled. Custom paging is an optional type of paging provided specifically by the <xref:System.Web.UI.WebControls.DataGrid> control. ASP.NET version 2.0 data-bound control (such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>) uses server-side paging and does not support custom paging. Custom paging and server-side paging are mutually exclusive. If you set <xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A> to `true`, be sure that <xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A> is set to `false`.  
   
- For more information about custom paging, see <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A?displayProperty=fullName>.  
+ For more information about custom paging, see <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowPaging" />
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
@@ -114,12 +123,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.PagedDataSource.AllowPaging%2A> property to specify whether a data-bound control has paging enabled. ASP.NET version 2.0 data-bound controls (such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>) also use server-side paging to provide automatic paging functionality. For more information on server-side paging, see <xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A>. When using the <xref:System.Web.UI.WebControls.DataGrid> control, you can also provide your own custom paging logic. For more information on custom paging, see <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A?displayProperty=fullName>.  
+ Use the <xref:System.Web.UI.WebControls.PagedDataSource.AllowPaging%2A> property to specify whether a data-bound control has paging enabled. ASP.NET version 2.0 data-bound controls (such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>) also use server-side paging to provide automatic paging functionality. For more information on server-side paging, see <xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A>. When using the <xref:System.Web.UI.WebControls.DataGrid> control, you can also provide your own custom paging logic. For more information on custom paging, see <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A?displayProperty=nameWithType>.  
   
  For more information about paging support for data-bound controls, see the `AllowPaging` property of the data-bound control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
       </Docs>
     </Member>
     <Member MemberName="AllowServerPaging">
@@ -149,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -175,10 +193,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the data source into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index. The <xref:System.Array?displayProperty=fullName> is often used to iterate through the items in the data source.  
+ Use this method to copy the contents of the data source into the specified <xref:System.Array?displayProperty=nameWithType>, starting at the specified index. The <xref:System.Array?displayProperty=nameWithType> is often used to iterate through the items in the data source.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -215,6 +234,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsLastPage" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.FirstIndexInPage" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPageIndex">
@@ -240,6 +266,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.Count" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.VirtualCount" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -265,6 +295,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceCount">
@@ -294,6 +326,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source is not an <see cref="T:System.Collections.ICollection" /> implemented object.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
       </Docs>
     </Member>
     <Member MemberName="FirstIndexInPage">
@@ -322,6 +356,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -344,13 +381,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> that can be iterated through to get each item in the data source. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection. To move the enumerator to its initial position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
+ Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> that can be iterated through to get each item in the data source. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection. To move the enumerator to its initial position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  When you initially get the enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  When you initially get the enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -376,10 +417,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.PagedDataSource.GetItemProperties%2A> method to create a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> that represents the properties on each item used to bind data. If the <xref:System.Web.UI.WebControls.PagedDataSource.DataSource%2A> property is `null` or is not a <xref:System.ComponentModel.ITypedList?displayProperty=fullName> implemented object, `null` is returned. For more information on the <xref:System.Web.UI.WebControls.PagedDataSource.GetItemProperties%2A> method, see <xref:System.ComponentModel.ITypedList.GetItemProperties%2A?displayProperty=fullName>.  
+ Use the <xref:System.Web.UI.WebControls.PagedDataSource.GetItemProperties%2A> method to create a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=nameWithType> that represents the properties on each item used to bind data. If the <xref:System.Web.UI.WebControls.PagedDataSource.DataSource%2A> property is `null` or is not a <xref:System.ComponentModel.ITypedList?displayProperty=nameWithType> implemented object, `null` is returned. For more information on the <xref:System.Web.UI.WebControls.PagedDataSource.GetItemProperties%2A> method, see <xref:System.ComponentModel.ITypedList.GetItemProperties%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -406,10 +451,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is inherited from <xref:System.ComponentModel.ITypedList?displayProperty=fullName> and is not applicable to this class. It has been implemented to return <xref:System.String.Empty?displayProperty=fullName> for all cases.  
+ This method is inherited from <xref:System.ComponentModel.ITypedList?displayProperty=nameWithType> and is not applicable to this class. It has been implemented to return <xref:System.String.Empty?displayProperty=nameWithType> for all cases.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])" />
       </Docs>
     </Member>
     <Member MemberName="IsCustomPagingEnabled">
@@ -439,6 +487,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging" />
       </Docs>
     </Member>
     <Member MemberName="IsFirstPage">
@@ -465,6 +515,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsLastPage" />
       </Docs>
     </Member>
     <Member MemberName="IsLastPage">
@@ -491,6 +542,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsFirstPage" />
       </Docs>
     </Member>
     <Member MemberName="IsPagingEnabled">
@@ -520,6 +572,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -572,6 +626,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageCount" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -594,12 +651,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false` to indicate that this class is not thread-safe.  
+ This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> class and is overridden to always return `false` to indicate that this class is not thread-safe.  
   
- For more information on the <xref:System.Web.UI.WebControls.PagedDataSource.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.PagedDataSource.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -628,6 +687,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.Count" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.CurrentPageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.VirtualCount" />
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -653,6 +717,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.Count" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.CurrentPageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.VirtualCount" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -676,10 +745,13 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Web.UI.WebControls.PagedDataSource> object itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="VirtualCount">
@@ -701,10 +773,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.PagedDataSource.VirtualCount%2A> property when custom paging or server-side paging is used to determine the virtual number of items in the data source. For more information on the <xref:System.Web.UI.WebControls.PagedDataSource.VirtualCount%2A> property, see <xref:System.Web.UI.WebControls.DataGrid.VirtualItemCount%2A?displayProperty=fullName>.  
+ Use the <xref:System.Web.UI.WebControls.PagedDataSource.VirtualCount%2A> property when custom paging or server-side paging is used to determine the virtual number of items in the data source. For more information on the <xref:System.Web.UI.WebControls.PagedDataSource.VirtualCount%2A> property, see <xref:System.Web.UI.WebControls.DataGrid.VirtualItemCount%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.VirtualItemCount" />
       </Docs>
     </Member>
   </Members>

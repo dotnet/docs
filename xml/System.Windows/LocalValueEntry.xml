@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.LocalValueEnumerator" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -105,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.LocalValueEntry.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -131,6 +133,7 @@
   
  For locally set properties that have reference types, the behavior is deferred to that type's equality determination mechanisms, because it uses the <see langword="==" /> operator on the two values internally. By default, this is a reference equality of the values.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.LocalValueEntry.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -156,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyProperty" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -181,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyProperty" />
       </Docs>
     </Member>
   </Members>

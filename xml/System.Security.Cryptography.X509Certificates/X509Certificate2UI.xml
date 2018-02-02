@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
+ Use this method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -215,7 +215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

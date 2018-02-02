@@ -21,5 +21,8 @@
     <param name="e">A <see cref="T:System.Web.Compilation.BuildManagerHostUnloadEventArgs" /> that contains the event data.</param>
     <summary>Represents the method that handles the <see cref="E:System.Web.Compilation.ClientBuildManager.AppDomainUnloaded" /> event and the <see cref="E:System.Web.Compilation.ClientBuildManager.AppDomainShutdown" /> event of a <see cref="T:System.Web.Compilation.ClientBuildManager" /> object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Web.Hosting.HostingEnvironment.ShutdownReason" />
+    <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
+    <altmember cref="T:System.Web.Compilation.BuildManagerHostUnloadEventArgs" />
   </Docs>
 </Type>

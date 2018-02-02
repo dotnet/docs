@@ -31,7 +31,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
+ The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=nameWithType>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=nameWithType>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
+ The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=nameWithType>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=nameWithType>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2191,5 +2191,32 @@
  The parameter reader/roleDescriptor/roleDescriptor.TargetScopes/roleDescriptor.TargetScopes/roleDescriptor.TokenTypesOffered is null.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes federation metadata.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.MetadataSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an entity descriptor or an entities descriptor.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

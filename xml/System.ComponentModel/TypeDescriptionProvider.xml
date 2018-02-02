@@ -45,6 +45,9 @@
     <block subset="none" type="overrides">
       <para>Your derived type might be marked as <see langword="internal" /> or <see langword="private" />, but an instance of your type can be created with the <see cref="T:System.ComponentModel.TypeDescriptor" /> class. Do not write insecure code by assuming the caller is trusted. Assume instead that callers might create instances of your type in partial trust.</para>
     </block>
+    <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddProvider" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptionProviderAttribute" />
+    <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.#ctor(System.ComponentModel.TypeDescriptionProvider)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,6 +126,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.CustomTypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -163,15 +168,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IServiceProvider> specified by the `provider` parameter is passed in by the <xref:System.ComponentModel.TypeDescriptor.CreateInstance%2A?displayProperty=fullName> method of the <xref:System.ComponentModel.TypeDescriptor> class. If `provider` is not `null`, the service provider can be used by the type description provider to obtain additional context about the creation call.  
+ The <xref:System.IServiceProvider> specified by the `provider` parameter is passed in by the <xref:System.ComponentModel.TypeDescriptor.CreateInstance%2A?displayProperty=nameWithType> method of the <xref:System.ComponentModel.TypeDescriptor> class. If `provider` is not `null`, the service provider can be used by the type description provider to obtain additional context about the creation call.  
   
- The <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method is `virtual` and, by default, returns the result of the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method if `provider` is `null`. If `provider` is `null`, this method will invoke the <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method of the parent provider.  
+ The <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method is `virtual` and, by default, returns the result of the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method if `provider` is `null`. If `provider` is `null`, this method will invoke the <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method of the parent provider.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>If the derived class is not interested in providing a substitute instance, it should just call the base implementation.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="GetCache">
@@ -213,6 +219,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.ComponentModel.Design.IDictionaryService" />
       </Docs>
     </Member>
     <Member MemberName="GetExtendedTypeDescriptor">
@@ -254,6 +262,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetExtenderProviders">
@@ -365,6 +375,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instance" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetReflectionType">
@@ -408,6 +419,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectType" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetReflectionType">
@@ -452,6 +464,7 @@
         <block subset="none" type="overrides">
           <para>This method is prototyped as <see langword="virtual" />, and by default returns <paramref name="objectType" /> if no parent provider was passed. If a parent provider was passed, this method will invoke the parent provider's <see cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetReflectionType" /> method.</para>
         </block>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeType">
@@ -487,7 +500,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method reverses the<xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method to convert a reflection type back into a runtime type. Using the <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method is preferred over using the <xref:System.Type.UnderlyingSystemType%2A> property, which was used in earlier versions to return the runtime type.  
+ The <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method reverses the <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method to convert a reflection type back into a runtime type. Using the <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method is preferred over using the <xref:System.Type.UnderlyingSystemType%2A> property, which was used in earlier versions to return the runtime type.  
   
  ]]></format>
         </remarks>
@@ -527,6 +540,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instance" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeDescriptor">
@@ -559,6 +573,7 @@
         <summary>Gets a custom type descriptor for the given type.</summary>
         <returns>An <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> that can provide metadata for the type.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeDescriptor">
@@ -603,6 +618,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)" /> method should return a custom type descriptor for the object. If the method does not provide type information for the object, it should return <see langword="null" />.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsSupportedType">
@@ -640,5 +656,35 @@
           <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypeDescriptor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a custom type descriptor for the given type or object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetReflectionType">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs normal reflection against an object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

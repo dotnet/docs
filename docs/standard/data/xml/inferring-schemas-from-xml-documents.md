@@ -9,21 +9,23 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
 caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Inferring Schemas from XML Documents
 This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> class to infer an XML Schema definition language (XSD) schema from the structure of an XML document.  
   
 ## The Schema Inference Process  
- The <xref:System.Xml.Schema.XmlSchemaInference> class of the <xref:System.Xml.Schema?displayProperty=fullName> namespace is used to generate one or more XML Schema definition language (XSD) schemas from the structure of an XML document. The generated schemas may be used to validate the original XML document.  
+ The <xref:System.Xml.Schema.XmlSchemaInference> class of the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace is used to generate one or more XML Schema definition language (XSD) schemas from the structure of an XML document. The generated schemas may be used to validate the original XML document.  
   
  As an XML document is processed by the <xref:System.Xml.Schema.XmlSchemaInference> class, the <xref:System.Xml.Schema.XmlSchemaInference> class makes assumptions about the schema components that describe the elements and attributes in the XML document. The <xref:System.Xml.Schema.XmlSchemaInference> class also infers schema components in a constrained way by inferring the most restrictive type for a particular element or attribute. As more information about the XML document is gathered, these constraints are loosened by inferring less restrictive types. The least restrictive type that can be inferred is `xs:string`.  
   
@@ -42,9 +44,9 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
 ## Inferring Schemas from XML Documents  
  The <xref:System.Xml.Schema.XmlSchemaInference> class uses two overloaded <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> methods to infer a schema from an XML document.  
   
- The first <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=fullName> method is used to create a schema based on an XML document. The second <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=fullName> method is used to infer a schema that describes multiple XML documents. For example, you can feed multiple XML documents to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=fullName> method one at a time to produce a schema that describes the entire set of XML documents.  
+ The first <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> method is used to create a schema based on an XML document. The second <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> method is used to infer a schema that describes multiple XML documents. For example, you can feed multiple XML documents to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> method one at a time to produce a schema that describes the entire set of XML documents.  
   
- The first <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=fullName> method infers a schema from an XML document contained in an <xref:System.Xml.XmlReader> object, and returns an <xref:System.Xml.Schema.XmlSchemaSet> object containing the inferred schema. The second <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=fullName> method searches an <xref:System.Xml.Schema.XmlSchemaSet> object for a schema with the same target namespace as the XML document contained in the <xref:System.Xml.XmlReader> object, refines the existing schema, and returns an <xref:System.Xml.Schema.XmlSchemaSet> object containing the inferred schema.  
+ The first <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> method infers a schema from an XML document contained in an <xref:System.Xml.XmlReader> object, and returns an <xref:System.Xml.Schema.XmlSchemaSet> object containing the inferred schema. The second <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> method searches an <xref:System.Xml.Schema.XmlSchemaSet> object for a schema with the same target namespace as the XML document contained in the <xref:System.Xml.XmlReader> object, refines the existing schema, and returns an <xref:System.Xml.Schema.XmlSchemaSet> object containing the inferred schema.  
   
  The changes made to the refined schema are based on new structure found in the XML document. For example, as an XML document is traversed, assumptions are made about the data types found, and the schema is created based on those assumptions. However, if data is encountered on a second inference pass that differs from the original assumption, the schema is refined. The following example illustrates the refinement process.  
   
@@ -86,8 +88,8 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
  There are W3C XML Schema constructs that the XML Schema definition language (XSD) schema <xref:System.Xml.Schema.XmlSchemaInference> process cannot handle if given a type to refine and cause an exception to be thrown. Such as a complex type whose top-level compositor is anything other than a sequence. In the Schema Object Model (SOM), this corresponds to an <xref:System.Xml.Schema.XmlSchemaComplexType> whose <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A> property is not an instance of <xref:System.Xml.Schema.XmlSchemaSequence>.  
   
 ## See Also  
- <xref:System.Xml.Schema.XmlSchemaInference>   
- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)   
- [Inferring an XML Schema](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)   
- [Rules for Inferring Schema Node Types and Structure](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)   
+ <xref:System.Xml.Schema.XmlSchemaInference>  
+ [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
+ [Inferring an XML Schema](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)  
+ [Rules for Inferring Schema Node Types and Structure](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)  
  [Rules for Inferring Simple Types](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)

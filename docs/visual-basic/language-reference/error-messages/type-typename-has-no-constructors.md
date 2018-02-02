@@ -1,40 +1,21 @@
 ---
 title: "Type &#39;&lt;typename&gt;&#39; has no constructors"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc30251"
   - "vbc30251"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30251"
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Type &#39;&lt;typename&gt;&#39; has no constructors
 A type does not support a call to `Sub New()`. One possible cause is a corrupted compiler or binary file.  
@@ -52,5 +33,5 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
 4.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

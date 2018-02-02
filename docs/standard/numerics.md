@@ -21,6 +21,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Numerics in the .NET Framework
 The .NET Framework supports the standard numeric integral and floating-point primitives, as well as <xref:System.Numerics.BigInteger>, an integral type with no theoretical upper or lower bound, <xref:System.Numerics.Complex>, a type that represents complex numbers, and a set of SIMD-enabled vector types in the <xref:System.Numerics> namespace.  
@@ -32,14 +35,14 @@ The .NET Framework supports the standard numeric integral and floating-point pri
   
 |Type|Signed/Unsigned|Size (bytes)|Minimum value|Maximum Value|  
 |----------|----------------------|--------------------|-------------------|-------------------|  
-|<xref:System.Byte?displayProperty=fullName>|Unsigned|1|0|255|  
-|<xref:System.Int16?displayProperty=fullName>|Signed|2|-32,768|32,767|  
-|<xref:System.Int32?displayProperty=fullName>|Signed|4|-2,147,483,648|2,147,483,647|  
-|<xref:System.Int64?displayProperty=fullName>|Signed|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|  
-|<xref:System.SByte?displayProperty=fullName>|Signed|1|-128|127|  
-|<xref:System.UInt16?displayProperty=fullName>|Unsigned|2|0|65,535|  
-|<xref:System.UInt32?displayProperty=fullName>|Unsigned|4|0|4,294,967,295|  
-|<xref:System.UInt64?displayProperty=fullName>|Unsigned|8|0|18,446,744,073,709,551,615|  
+|<xref:System.Byte?displayProperty=nameWithType>|Unsigned|1|0|255|  
+|<xref:System.Int16?displayProperty=nameWithType>|Signed|2|-32,768|32,767|  
+|<xref:System.Int32?displayProperty=nameWithType>|Signed|4|-2,147,483,648|2,147,483,647|  
+|<xref:System.Int64?displayProperty=nameWithType>|Signed|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|  
+|<xref:System.SByte?displayProperty=nameWithType>|Signed|1|-128|127|  
+|<xref:System.UInt16?displayProperty=nameWithType>|Unsigned|2|0|65,535|  
+|<xref:System.UInt32?displayProperty=nameWithType>|Unsigned|4|0|4,294,967,295|  
+|<xref:System.UInt64?displayProperty=nameWithType>|Unsigned|8|0|18,446,744,073,709,551,615|  
   
  Each integral type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each integer also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a number to that integer, and to convert an integer to its string representation. Some additional mathematical operations beyond those handled by the standard operators, such as rounding and identifying the smaller or larger value of two integers, are available from the <xref:System.Math> class. You can also work with the individual bits in an integer value by using the <xref:System.BitConverter> class.  
   
@@ -50,16 +53,16 @@ The .NET Framework supports the standard numeric integral and floating-point pri
   
 |Type|Size (in bytes)|Minimum|Maximum|  
 |----------|-----------------------|-------------|-------------|  
-|<xref:System.Double?displayProperty=fullName>|8|-1.79769313486232e308|1.79769313486232e308|  
-|<xref:System.Single?displayProperty=fullName>|4|-3.402823e38|3.402823e38|  
-|<xref:System.Decimal?displayProperty=fullName>|16|-79,228,162,514,264,337,593,543,950,335|79,228,162,514,264,337,593,543,950,335|  
+|<xref:System.Double?displayProperty=nameWithType>|8|-1.79769313486232e308|1.79769313486232e308|  
+|<xref:System.Single?displayProperty=nameWithType>|4|-3.402823e38|3.402823e38|  
+|<xref:System.Decimal?displayProperty=nameWithType>|16|-79,228,162,514,264,337,593,543,950,335|79,228,162,514,264,337,593,543,950,335|  
   
- Each floating-point type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a floating-point number, and to convert a floating-point number to its string representation. Some additional mathematical, algebraic, and trigonometric operations are available from the <xref:System.Math> class. You can also work with the individual bits in <xref:System.Double> and <xref:System.Single> values by using the <xref:System.BitConverter> class. The <xref:System.Decimal?displayProperty=fullName> structure has its own methods, <xref:System.Decimal.GetBits%2A?displayProperty=fullName> and <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29?displayProperty=fullName>, for working with a decimal value's individual bits, as well as its own set of methods for performing some additional mathematical operations.  
+ Each floating-point type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a floating-point number, and to convert a floating-point number to its string representation. Some additional mathematical, algebraic, and trigonometric operations are available from the <xref:System.Math> class. You can also work with the individual bits in <xref:System.Double> and <xref:System.Single> values by using the <xref:System.BitConverter> class. The <xref:System.Decimal?displayProperty=nameWithType> structure has its own methods, <xref:System.Decimal.GetBits%2A?displayProperty=nameWithType> and <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29?displayProperty=nameWithType>, for working with a decimal value's individual bits, as well as its own set of methods for performing some additional mathematical operations.  
   
- The <xref:System.Double> and <xref:System.Single> types are intended to be used for values that by their nature are imprecise (such as the distance between two stars in the solar system) and for applications in which a high degree of precision and small rounding error is not required. You should use the <xref:System.Decimal?displayProperty=fullName> type for cases in which greater precision is required and rounding error is undesirable,  
+ The <xref:System.Double> and <xref:System.Single> types are intended to be used for values that by their nature are imprecise (such as the distance between two stars in the solar system) and for applications in which a high degree of precision and small rounding error is not required. You should use the <xref:System.Decimal?displayProperty=nameWithType> type for cases in which greater precision is required and rounding error is undesirable,  
   
 ## BigInteger  
- <xref:System.Numerics.BigInteger?displayProperty=fullName> is an immutable type that represents an arbitrarily large integer whose value in theory has no upper or lower bounds. The methods of the <xref:System.Numerics.BigInteger> type closely parallel those of the other integral types.  
+ <xref:System.Numerics.BigInteger?displayProperty=nameWithType> is an immutable type that represents an arbitrarily large integer whose value in theory has no upper or lower bounds. The methods of the <xref:System.Numerics.BigInteger> type closely parallel those of the other integral types.  
   
 ## Complex  
  The <xref:System.Numerics.Complex> type represents a complex number, that is, a number with a real number part and an imaginary number part. It supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators, as well as mathematical, algebraic, and trigonometric methods.  

@@ -38,12 +38,12 @@
   <Docs>
     <summary>Represents a hash map that mutates with little or no memory allocations and that can produce or build on immutable hash map instances very efficiently.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although <xref:System.Collections.Immutable.ImmutableDictionary%602.AddRange%2A?displayProperty=fullName> and other methods already provide fast bulk change operations on a collection, the <xref:System.Collections.Immutable.ImmutableDictionary%602.Builder> class allows multiple combinations of changes to be made to a set with equal efficiency.  
+ Although <xref:System.Collections.Immutable.ImmutableDictionary%602.AddRange%2A?displayProperty=nameWithType> and other methods already provide fast bulk change operations on a collection, the <xref:System.Collections.Immutable.ImmutableDictionary%602.Builder> class allows multiple combinations of changes to be made to a set with equal efficiency.  
   
  ]]></format>
     </remarks>
@@ -918,7 +918,7 @@
     </Member>
     <Member MemberName="TryGetKey">
       <MemberSignature Language="C#" Value="public bool TryGetKey (TKey equalKey, out TKey actualKey);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetKey(!TKey equalKey, !TKey actualKey) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetKey(!TKey equalKey, [out] !TKey&amp; actualKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary`2.Builder.TryGetKey(`0,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -958,7 +958,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary`2.Builder.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object is passed to the event handler. This enables you to determine the index of the row being deleted and to cancel the delete operation. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> collections before the values are passed to the data source.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.%23ctor%2A> constructor.  
   
@@ -29,11 +29,14 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object that is passed to the event handler. The code cancels the delete operation if the user tries to remove the last record from a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleting/CS/gridviewrowdeleting.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleting/VB/gridviewrowdeleting.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleting/CS/gridviewrowdeleting.aspx#1)]
+ [!code-aspx-vb[GridViewRowDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleting/VB/gridviewrowdeleting.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewDeleteEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleting" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeleteEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -94,18 +98,23 @@
   
  The <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary is automatically populated with the name/value pairs of the field or fields specified in the <xref:System.Web.UI.WebControls.GridView.DataKeyNames%2A> property. If multiple fields form the primary key, a separate entry is added to the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary for each key field.  
   
- To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> property to get the values of the key fields for the row to delete. The values are then written to a log file of deleted records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeleteEventArgsValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/CS/gridviewdeleteeventargsvaluescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeleteEventArgsValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/VB/gridviewdeleteeventargsvaluesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeleteEventArgsValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/CS/gridviewdeleteeventargsvaluescs.aspx#1)]
+ [!code-aspx-vb[GridViewDeleteEventArgsValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/VB/gridviewdeleteeventargsvaluesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -134,11 +143,13 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.RowIndex%2A> property to determine the index of the row to delete.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeleteEventArgsRowIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventArgsRowIndex/CS/gridviewdeleteeventargsrowindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeleteEventArgsRowIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventArgsRowIndex/VB/gridviewdeleteeventargsrowindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeleteEventArgsRowIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventArgsRowIndex/CS/gridviewdeleteeventargsrowindexcs.aspx#1)]
+ [!code-aspx-vb[GridViewDeleteEventArgsRowIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventArgsRowIndex/VB/gridviewdeleteeventargsrowindexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -160,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> property is automatically populated with the name/value pairs of the non-key fields for the row. To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> property is automatically populated with the name/value pairs of the non-key fields for the row. To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  The primary key field or fields are not included in this dictionary. To access the values of the primary key field or fields, use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> property.  
@@ -170,11 +181,15 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> property to get the values of the non-key fields for the row to delete. The values are then written to a log file of deleted records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeleteEventArgsValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/CS/gridviewdeleteeventargsvaluescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeleteEventArgsValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/VB/gridviewdeleteeventargsvaluesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeleteEventArgsValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/CS/gridviewdeleteeventargsvaluescs.aspx#1)]
+ [!code-aspx-vb[GridViewDeleteEventArgsValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventArgsValues/VB/gridviewdeleteeventargsvaluesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
   </Members>

@@ -24,17 +24,23 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you create a <xref:System.Web.UI.WebControls.TreeNodeEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Web.UI.WebControls.TreeNodeEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeEventHandler> delegate to register an event-handling method programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewTreeNodeEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeEventHandler/CS/treeviewtreenodeeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewTreeNodeEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeEventHandler/VB/treeviewtreenodeeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewTreeNodeEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeEventHandler/CS/treeviewtreenodeeventhandlercs.aspx#1)]
+ [!code-aspx-vb[TreeViewTreeNodeEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeEventHandler/VB/treeviewtreenodeeventhandlervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeDataBound" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeEventArgs" />
   </Docs>
 </Type>

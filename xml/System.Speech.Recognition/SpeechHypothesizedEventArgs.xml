@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized?displayProperty=fullName> events. The handler uses an instance of `SpeechHypothesizedEventArgs` to return and display information about a tentatively recognized phrase.  
+ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized?displayProperty=nameWithType> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized?displayProperty=nameWithType> events. The handler uses an instance of `SpeechHypothesizedEventArgs` to return and display information about a tentatively recognized phrase.  
   
 ```  
 // Create a handler for the SpeechHypothesized event.  
@@ -45,6 +45,16 @@ void recognizer_SpeechHypothesized (object sender, SpeechHypothesizedEventArgs e
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizedEventArgs" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
   </Docs>
   <Members />
 </Type>

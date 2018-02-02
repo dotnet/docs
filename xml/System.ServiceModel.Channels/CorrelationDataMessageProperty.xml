@@ -158,7 +158,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.CorrelationDataMessageProperty property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.CorrelationDataMessageProperty property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.CorrelationDataMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CorrelationDataMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -183,7 +183,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.CorrelationDataMessageProperty property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.CorrelationDataMessageProperty property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.CorrelationDataMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CorrelationDataMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -208,7 +208,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (string name, out string value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(string name, string value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(string name, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGetValue(System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -231,5 +231,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the attached <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> from a message or a collection of message properties.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

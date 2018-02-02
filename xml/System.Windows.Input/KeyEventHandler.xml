@@ -26,31 +26,31 @@
 ## Remarks  
  This delegate is used with the following attached events:  
   
--   <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=nameWithType>  
   
  This delegate is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
   
--   <xref:System.Windows.UIElement.KeyUp?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.KeyUp?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.KeyDown?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.KeyDown?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.PreviewKeyUp?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewKeyUp?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.PreviewKeyDown?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewKeyDown?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.KeyUp?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.KeyUp?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.KeyDown?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.KeyDown?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewKeyUp?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewKeyUp?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewKeyDown?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewKeyDown?displayProperty=nameWithType>  
   
  The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -64,5 +64,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+    <altmember cref="T:System.Windows.Input.KeyboardEventHandler" />
+    <altmember cref="T:System.Windows.Input.KeyboardEventArgs" />
+    <altmember cref="E:System.Windows.UIElement.TextInput" />
   </Docs>
 </Type>

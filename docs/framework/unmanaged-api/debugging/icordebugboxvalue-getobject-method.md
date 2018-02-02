@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugBoxValue::GetObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugBoxValue::GetObject method [.NET Framework debugging]"
   - "GetObject method, ICorDebugBoxValue interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBoxValue::GetObject Method
 Gets the boxed value.  

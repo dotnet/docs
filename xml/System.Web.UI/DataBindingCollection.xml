@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataBinding" />
+    <altmember cref="T:System.Web.UI.IDataBindingsAccessor" />
+    <altmember cref="T:System.Collections.ICollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -166,6 +169,7 @@
         <summary>Gets the number of <see cref="T:System.Web.UI.DataBinding" /> objects in the <see cref="T:System.Web.UI.DataBindingCollection" /> object.</summary>
         <value>The number of <see cref="T:System.Web.UI.DataBinding" /> objects in the <see cref="T:System.Web.UI.DataBindingCollection" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.Hashtable" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -185,6 +189,7 @@
         <summary>Returns an enumerator to iterate through the <see cref="T:System.Web.UI.DataBindingCollection" /> object.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that contains the collection's members.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -358,5 +363,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Web.UI.DataBinding" /> object from the <see cref="T:System.Web.UI.DataBindingCollection" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

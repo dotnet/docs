@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The members of this class are used to specify infinite time-out intervals in threading operations. <xref:System.Threading.Timeout.Infinite> is used by methods that accept an integer `millisecondsTimeout` parameter, such as <xref:System.Threading.Thread.Sleep%28System.Int32%29?displayProperty=fullName>, <xref:System.Threading.Thread.Join%28System.Int32%29?displayProperty=fullName>, and <xref:System.Threading.ReaderWriterLock.AcquireReaderLock%28System.Int32%29?displayProperty=fullName>. <xref:System.Threading.Timeout.InfiniteTimeSpan> is used by methods that accept a `timeout` parameter of type <xref:System.TimeSpan>, such as <xref:System.Threading.Thread.Sleep%28System.TimeSpan%29?displayProperty=fullName>, <xref:System.Threading.Thread.Join%28System.TimeSpan%29?displayProperty=fullName>, and <xref:System.Threading.ReaderWriterLock.AcquireReaderLock%28System.TimeSpan%29?displayProperty=fullName>.  
+ The members of this class are used to specify infinite time-out intervals in threading operations. <xref:System.Threading.Timeout.Infinite> is used by methods that accept an integer `millisecondsTimeout` parameter, such as <xref:System.Threading.Thread.Sleep%28System.Int32%29?displayProperty=nameWithType>, <xref:System.Threading.Thread.Join%28System.Int32%29?displayProperty=nameWithType>, and <xref:System.Threading.ReaderWriterLock.AcquireReaderLock%28System.Int32%29?displayProperty=nameWithType>. <xref:System.Threading.Timeout.InfiniteTimeSpan> is used by methods that accept a `timeout` parameter of type <xref:System.TimeSpan>, such as <xref:System.Threading.Thread.Sleep%28System.TimeSpan%29?displayProperty=nameWithType>, <xref:System.Threading.Thread.Join%28System.TimeSpan%29?displayProperty=nameWithType>, and <xref:System.Threading.ReaderWriterLock.AcquireReaderLock%28System.TimeSpan%29?displayProperty=nameWithType>.  
   
    
   
@@ -48,6 +48,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.Thread" />
   </Docs>
   <Members>
     <Member MemberName="Infinite">
@@ -82,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For threading methods that accept a `millisecondsTimeout` parameter, such as <xref:System.Threading.Thread.Sleep%28System.Int32%29?displayProperty=fullName> and <xref:System.Threading.Thread.Join%28System.Int32%29?displayProperty=fullName>, this value is used to suspend the thread indefinitely. However, in most cases, we recommend that you use other <xref:System.Threading?displayProperty=fullName> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
+ For threading methods that accept a `millisecondsTimeout` parameter, such as <xref:System.Threading.Thread.Sleep%28System.Int32%29?displayProperty=nameWithType> and <xref:System.Threading.Thread.Join%28System.Int32%29?displayProperty=nameWithType>, this value is used to suspend the thread indefinitely. However, in most cases, we recommend that you use other <xref:System.Threading?displayProperty=nameWithType> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
   
  The value of this field is -1 (0xFFFFFFFF).  
   
@@ -126,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For threading methods that accept a `timeout` parameter of type <xref:System.TimeSpan>, such as <xref:System.Threading.Thread.Sleep%28System.TimeSpan%29?displayProperty=fullName> and <xref:System.Threading.Thread.Join%28System.TimeSpan%29?displayProperty=fullName>, this value is used to suspend the thread indefinitely. However, in most cases, we recommend that you use other <xref:System.Threading?displayProperty=fullName> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
+ For threading methods that accept a `timeout` parameter of type <xref:System.TimeSpan>, such as <xref:System.Threading.Thread.Sleep%28System.TimeSpan%29?displayProperty=nameWithType> and <xref:System.Threading.Thread.Join%28System.TimeSpan%29?displayProperty=nameWithType>, this value is used to suspend the thread indefinitely. However, in most cases, we recommend that you use other <xref:System.Threading?displayProperty=nameWithType> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
   
  The value of this field is -00:00:00.0010000, or -1 millisecond.  
   

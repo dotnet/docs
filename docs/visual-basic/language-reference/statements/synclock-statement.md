@@ -1,42 +1,23 @@
 ---
 title: "SyncLock Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.SyncLock"
   - "SyncLock"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "threading [Visual Basic], locks"
-  - "SyncLock statement"
+  - "SyncLock statement [Visual Basic]"
   - "locks, threads"
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # SyncLock Statement
 Acquires an exclusive lock for a statement block before executing the block.  
@@ -114,7 +95,7 @@ End SyncLock
 ### Comments  
   
 ## See Also  
- <xref:System.Threading>   
- <xref:System.Threading.Monitor>   
- [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4)   
- [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)
+ <xref:System.Threading>  
+ <xref:System.Threading.Monitor>  
+ [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md)  
+ [Threading](../../programming-guide/concepts/threading/index.md)

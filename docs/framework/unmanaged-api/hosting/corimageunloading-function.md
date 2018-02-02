@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "_CorImageUnloading"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_CorImageUnloading function [.NET Framework hosting]"
 ms.assetid: b4367214-6dac-4280-aa11-fd487ff30bc4
@@ -28,6 +26,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _CorImageUnloading Function
 Notifies the loader when the managed module images are unloaded.  

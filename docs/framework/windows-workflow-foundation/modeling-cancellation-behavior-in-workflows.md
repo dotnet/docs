@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d48f6cf3-cdde-4dd3-8265-a665acf32a03
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Modeling Cancellation Behavior in Workflows
 Activities can be canceled inside a workflow, for example by a <xref:System.Activities.Statements.Parallel> activity canceling incomplete branches when its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> evaluates to `true`, or from outside the workflow, if the host calls <xref:System.Activities.WorkflowApplication.Cancel%2A>. To provide cancellation handling, workflow authors can use the <xref:System.Activities.Statements.CancellationScope> activity, the <xref:System.Activities.Statements.CompensableActivity> activity, or create custom activities that provide cancellation logic. This topic provides an overview of cancellation in workflows.  
@@ -32,7 +34,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
   
  When this workflow is invoked, the following output is displayed to the console.  
   
- **Starting the workflow.**   
+ **Starting the workflow.**  
 **CancellationHandler invoked.**   
 **Workflow b30ebb30-df46-4d90-a211-e31c38d8db3c Canceled.**    
 > [!NOTE]
@@ -44,7 +46,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
   
  When this workflow is invoked, the following output is displayed to the console.  
   
- **Starting the workflow.**   
+ **Starting the workflow.**  
 **OnUnhandledException in Workflow 6bb2d5d6-f49a-4c6d-a988-478afb86dbe9**   
 **An ApplicationException was thrown.**   
 **CancellationHandler invoked.**   
@@ -56,7 +58,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
   
  When this workflow is invoked, the following output is displayed to the console.  
   
- **Branch 1 starting.**   
+ **Branch 1 starting.**  
 **Branch 2 complete.**   
 **Branch 1 canceled.**   
 **Workflow e0685e24-18ef-4a47-acf3-5c638732f3be Completed.**  Activities are also canceled if an exception bubbles up past the root of the activity but is handled at a higher level in the workflow. In this example, the main logic of the workflow consists of a <xref:System.Activities.Statements.Sequence> activity. The <xref:System.Activities.Statements.Sequence> is specified as the <xref:System.Activities.Statements.CancellationScope.Body%2A> of a <xref:System.Activities.Statements.CancellationScope> activity which is contained by a <xref:System.Activities.Statements.TryCatch> activity. An exception is thrown from the body of the <xref:System.Activities.Statements.Sequence>, is handled by the parent <xref:System.Activities.Statements.TryCatch> activity, and the <xref:System.Activities.Statements.Sequence> is canceled.  
@@ -65,7 +67,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
   
  When this workflow is invoked, the following output is displayed to the console.  
   
- **Sequence starting.**   
+ **Sequence starting.**  
 **Sequence canceled.**   
 **Exception caught.**   
 **Workflow e3c18939-121e-4c43-af1c-ba1ce977ce55 Completed.**   

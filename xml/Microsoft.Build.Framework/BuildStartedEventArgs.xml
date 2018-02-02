@@ -109,7 +109,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BuildStartedEventArgs (string message, string helpKeyword, DateTime eventTimestamp, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public BuildStartedEventArgs (string message, string helpKeyword, DateTime eventTimestamp, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String,System.DateTime,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -156,5 +156,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStartedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -60,7 +60,7 @@
    
   
 ## Examples  
- In the following example code, the internal state of the bounding rectangle is kept in a <xref:System.Drawing.Rectangle?displayProperty=fullName>, which is converted to a <xref:System.Windows.Rect?displayProperty=fullName> before being returned.  
+ In the following example code, the internal state of the bounding rectangle is kept in a <xref:System.Drawing.Rectangle?displayProperty=nameWithType>, which is converted to a <xref:System.Windows.Rect?displayProperty=nameWithType> before being returned.  
   
  [!code-csharp[UIAFragmentProvider_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListItemFragment.cs#104)]
  [!code-vb[UIAFragmentProvider_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListItemFragment.vb#104)]  
@@ -150,7 +150,7 @@
 ## Remarks  
  Implementations should return `null` for an element that corresponds to a window handle. Other elements should return an array that contains <xref:System.Windows.Automation.Provider.AutomationInteropProvider.AppendRuntimeId>, followed by a value that is unique within the fragment.  
   
- It is the provider's responsibility to ensure uniqueness within the fragment; for example, each item in a list must be individually numbered. The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] engine ensures that the identifier is unique among all instances, by translating the <xref:System.Windows.Automation.Provider.AutomationInteropProvider.AppendRuntimeId>value.  
+ It is the provider's responsibility to ensure uniqueness within the fragment; for example, each item in a list must be individually numbered. The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] engine ensures that the identifier is unique among all instances, by translating the <xref:System.Windows.Automation.Provider.AutomationInteropProvider.AppendRuntimeId> value.  
   
    
   

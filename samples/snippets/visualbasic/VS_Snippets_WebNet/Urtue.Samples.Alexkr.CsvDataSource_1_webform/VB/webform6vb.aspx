@@ -1,4 +1,4 @@
-<%--<Snippet50>--%>
+<!-- <Snippet50> -->
 <%@ Page Language="VB" %>
 <%@ Register Tagprefix="aspSample"
              Namespace="Samples.AspNet.VB.Controls" %>
@@ -27,4 +27,4 @@
         </form>
     </body>
 </html>
-<%--</Snippet50>--%>
+<!-- </Snippet50> -->

@@ -24,10 +24,11 @@
   
  A control in a Web Parts zone can add verbs to the control's verbs menu by inheriting from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class and overriding the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> property. If the control does not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class, you can add a new verb by implementing the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface, and then overriding the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> collection.  
   
- The protected <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A?displayProperty=fullName> method allows derived classes to override the event without attaching a delegate to it. A derived class must always call the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method of the base class to ensure that registered delegates receive the event.  
+ The protected <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A?displayProperty=nameWithType> method allows derived classes to override the event without attaching a delegate to it. A derived class must always call the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method of the base class to ensure that registered delegates receive the event.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,7 +101,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

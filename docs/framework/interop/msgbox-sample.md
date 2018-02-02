@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "marshaling, MsgBox sample"
   - "data marshaling, MsgBox sample"
@@ -22,6 +21,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MsgBox Sample
 This sample demonstrates how to pass string types by value as In parameters and when to use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint>, <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>, and <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> fields.  
@@ -50,8 +51,8 @@ This sample demonstrates how to pass string types by value as In parameters and 
  [!code-vb[Conceptual.Interop.Marshaling#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/msgbox.vb#6)]  
   
 ## See Also  
- [Marshaling Strings](../../../docs/framework/interop/marshaling-strings.md)   
- [Platform Invoke Data Types](http://msdn.microsoft.com/en-us/16014d9f-d6bd-481e-83f0-df11377c550f)   
- [Default Marshaling for Strings](../../../docs/framework/interop/default-marshaling-for-strings.md)   
- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)   
+ [Marshaling Strings](../../../docs/framework/interop/marshaling-strings.md)  
+ [Platform Invoke Data Types](http://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f)  
+ [Default Marshaling for Strings](../../../docs/framework/interop/default-marshaling-for-strings.md)  
+ [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
  [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)

@@ -27,6 +27,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.SecurityTokenService" />
+    <altmember cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" />
   </Docs>
   <Members>
     <Member MemberName="ProcessRequest">
@@ -271,5 +273,23 @@
           <paramref name="httpRequest" /> is not an instance of <see cref="T:System.IdentityModel.Services.SignOutRequestMessage" /> or of <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ProcessSignInRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Processes an incoming WS-Federation Passive Protocol SignIn request.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ProcessRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Processes an incoming WS-Federation Passive Protocol request.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

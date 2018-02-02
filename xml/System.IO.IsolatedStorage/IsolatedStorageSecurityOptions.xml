@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options%2A?displayProperty=fullName> property gets this enumeration to determine which operations can be performed in isolated storage.  
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options%2A?displayProperty=nameWithType> property gets this enumeration to determine which operations can be performed in isolated storage.  
   
- A host application can override the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method to perform policy decisions based on a <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object, and then allow or prevent the increase in the quota size for isolated storage.  
+ A host application can override the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=nameWithType> method to perform policy decisions based on a <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object, and then allow or prevent the increase in the quota size for isolated storage.  
   
  ]]></format>
     </remarks>

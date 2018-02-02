@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify a bitwise combination of one or more <xref:System.Globalization.CultureAndRegionModifiers> values as an argument to the <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%28System.String%2CSystem.Globalization.CultureAndRegionModifiers%29?displayProperty=fullName> constructor. You use the resulting <xref:System.Globalization.CultureAndRegionInfoBuilder> object to create a custom culture.  
+ Specify a bitwise combination of one or more <xref:System.Globalization.CultureAndRegionModifiers> values as an argument to the <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%28System.String%2CSystem.Globalization.CultureAndRegionModifiers%29?displayProperty=nameWithType> constructor. You use the resulting <xref:System.Globalization.CultureAndRegionInfoBuilder> object to create a custom culture.  
   
  A custom culture can have a combination of these characteristics:  
   
@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.CultureAndRegionInfoBuilder" />
   </Docs>
   <Members>
     <Member MemberName="Neutral">

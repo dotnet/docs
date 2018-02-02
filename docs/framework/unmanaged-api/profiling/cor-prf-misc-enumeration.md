@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_MISC"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_MISC enumeration [.NET Framework profiling]"
 ms.assetid: 619bb5de-e309-48b6-a3af-32d935a0ff46
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_MISC Enumeration
 Contains constant values that specify special identifiers.  

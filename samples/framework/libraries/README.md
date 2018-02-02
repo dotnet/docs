@@ -13,6 +13,9 @@ To build/use any of these (using `new-library` as an example):
 3. Restore packages by typing the following:
 
 	`$ dotnet restore`
+	
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+	
 		
 4. To build and package the library as a NuGet package, type the following:
 
@@ -64,7 +67,7 @@ It uses the `netstandard1.2` Target Framework Moniker introduced with the [.NET 
 
 ## net40-library
 
-**IMPORTANT:** This project requires Windows and the the .NET Framework installed on your machine.
+**IMPORTANT:** This project requires Windows and the .NET Framework installed on your machine.
 
 The project under `/net40-library` targets the .NET Framework 4.0 and above.  It also demonstrates how to use [#if](https://docs.microsoft.com/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) directives to multi-target for a .NET 4.0 target.
 

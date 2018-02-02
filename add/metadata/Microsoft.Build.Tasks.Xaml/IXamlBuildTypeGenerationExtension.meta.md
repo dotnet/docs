@@ -1,13 +1,13 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension.Execute(Microsoft.Build.Tasks.Xaml.ClassData,Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

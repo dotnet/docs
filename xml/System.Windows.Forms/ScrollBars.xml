@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.TextBox.ScrollBars%2A?displayProperty=fullName>.  
+ This enumeration is used by <xref:System.Windows.Forms.TextBox.ScrollBars%2A?displayProperty=nameWithType>.  
   
  Not all controls support scroll bars. Use this enumeration to specify which scroll bars will be visible on a control, either under some or all circumstances.  
   
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TextBox" />
   </Docs>
   <Members>
     <Member MemberName="Both">

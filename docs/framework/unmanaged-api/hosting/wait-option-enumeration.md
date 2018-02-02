@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "WAIT_OPTION"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "WAIT_OPTION enumeration [.NET Framework hosting]"
 ms.assetid: 962fc293-8ded-4b3b-90ce-2c21a4f1b244
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WAIT_OPTION Enumeration
 Contains values that indicate the action a host should take if an operation requested by the common language runtime (CLR) blocks.  

@@ -20,15 +20,15 @@
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource.Synchronization>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
   
- The <xref:System.Web.WebPageTraceListener> class forwards trace messages that are written to the <xref:System.Diagnostics.Trace> log to ASP.NET Web page output channels. You can enable trace forwarding by adding a <xref:System.Web.WebPageTraceListener> object to your Web.config file as a listener in the [trace Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/05f08d15-1e2c-4c56-84d1-b1d7ba039af6) subsection of the [\&lt;system.diagnostics\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md) section. You can also add a <xref:System.Web.WebPageTraceListener> to the listeners collection programmatically. Commonly, this is done by adding a <xref:System.Web.WebPageTraceListener> to the collection during application startup, using the `Application_Start` method in the Global.asax file.  
+ The <xref:System.Web.WebPageTraceListener> class forwards trace messages that are written to the <xref:System.Diagnostics.Trace> log to ASP.NET Web page output channels. You can enable trace forwarding by adding a <xref:System.Web.WebPageTraceListener> object to your Web.config file as a listener in the [trace Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/05f08d15-1e2c-4c56-84d1-b1d7ba039af6) subsection of the [&lt;system.diagnostics&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md) section. You can also add a <xref:System.Web.WebPageTraceListener> to the listeners collection programmatically. Commonly, this is done by adding a <xref:System.Web.WebPageTraceListener> to the collection during application startup, using the `Application_Start` method in the Global.asax file.  
   
    
   
 ## Examples  
  The following code example demonstrates how to route <xref:System.Diagnostics.Trace> messages to Web form output. The code example shows a typical Web form containing a <xref:System.Web.UI.WebControls.BulletedList> and <xref:System.Web.UI.WebControls.AccessDataSource> control. Tracing is enabled on the Web form and trace output is appended to the Web form when it is rendered. You can examine the trace messages in the **Trace Information** table of the trace output. If you have enabled the <xref:System.Web.WebPageTraceListener> correctly in your configuration file, you see both trace messages with the category `"Trace Test"`. However, if you have not enabled the <xref:System.Web.WebPageTraceListener>, you see only the trace message that is written to the <xref:System.Web.TraceContext> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_2/CS/form2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_2/VB/form2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_2/CS/form2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_2/VB/form2vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -83,10 +83,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.WebPageTraceListener.Write" />
+        <altmember cref="Overload:System.Web.WebPageTraceListener.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -127,6 +129,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.WebPageTraceListener.Write" />
+        <altmember cref="Overload:System.Web.WebPageTraceListener.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -155,6 +159,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContext" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -185,6 +195,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContext" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -245,5 +261,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

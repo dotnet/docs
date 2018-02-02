@@ -7,6 +7,10 @@ ms.author: wiwagn
 ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Asynchronous message-based communication
 
@@ -26,13 +30,13 @@ There are two kinds of asynchronous messaging communication: single receiver mes
 
 Message-based asynchronous communication with a single receiver means there is point-to-point communication that delivers a message to exactly one of the consumers that is reading from the channel, and that the message is processed just once. However, there are special situations. For instance, in a cloud system that tries to automatically recover from failures, the same message could be sent multiple times. Due to network or other failures, the client has to be able to retry sending messages, and the server has to implement an operation to be idempotent in order to process a particular message just once.
 
-Single-receiver message-based communication is especially well suited for sending asynchronous commands from one microservice to another as shown in Figure 4-17 that illustrates this approach.
+Single-receiver message-based communication is especially well suited for sending asynchronous commands from one microservice to another as shown in Figure 4-18 that illustrates this approach.
 
 Once you start sending message-based communication (either with commands or events), you should avoid mixing message-based communication with synchronous HTTP communication.
 
-![](./media/image17.PNG)
+![](./media/image18.PNG)
 
-**Figure 4-17**. A single microservice receiving an asynchronous message
+**Figure 4-18**. A single microservice receiving an asynchronous message
 
 Note that when the commands come from client applications, they can be implemented as HTTP synchronous commands. You should use message-based commands when you need higher scalability or when you are already in a message-based business process.
 
@@ -50,11 +54,11 @@ If a system uses eventual consistency driven by integration events, it is recomm
 
 As noted earlier in the [Challenges and solutions for distributed data management](#challenges-and-solutions-for-distributed-data-management) section, you can use integration events to implement business tasks that span multiple microservices. Thus you will have eventual consistency between those services. An eventually consistent transaction is made up of a collection of distributed actions. At each action, the related microservice updates a domain entity and publishes another integration event that raises the next action within the same end-to-end business task.
 
-An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-18. This publish/subscribe mechanism is not exclusive to the microservice architecture. It is similar to the way [Bounded Contexts](http://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](http://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
+An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-19. This publish/subscribe mechanism is not exclusive to the microservice architecture. It is similar to the way [Bounded Contexts](http://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](http://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
 
-![](./media/image18.png)
+![](./media/image19.png)
 
-**Figure 4-18**. Asynchronous event-driven message communication
+**Figure 4-19**. Asynchronous event-driven message communication
 
 Your implementation will determine what protocol to use for event-driven, message-based communications. [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) can help achieve reliable queued communication.
 
@@ -74,7 +78,7 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 -   Using [transaction log mining](http://www.scoop.it/t/sql-server-transaction-log-mining).
 
--   Using full [Event Sourcing](https://msdn.microsoft.com/en-us/library/dn589792.aspx) pattern.
+-   Using full [Event Sourcing](https://msdn.microsoft.com/library/dn589792.aspx) pattern.
 
 -   Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
 
@@ -92,10 +96,10 @@ Additional topics to consider when using asynchronous communication are message 
     [*http://udidahan.com/2009/12/09/clarified-cqrs/*](http://udidahan.com/2009/12/09/clarified-cqrs/)
 
 -   **Command and Query Responsibility Segregation (CQRS)**
-    [*https://msdn.microsoft.com/en-us/library/dn568103.aspx*](https://msdn.microsoft.com/en-us/library/dn568103.aspx)
+    [*https://docs.microsoft.com/azure/architecture/patterns/cqrs*](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
 
 -   **Communicating Between Bounded Contexts**
-    [*https://msdn.microsoft.com/en-us/library/jj591572.aspx*](https://msdn.microsoft.com/en-us/library/jj591572.aspx)
+    [*https://msdn.microsoft.com/library/jj591572.aspx*](https://msdn.microsoft.com/library/jj591572.aspx)
 
 -   **Eventual consistency**
     [*https://en.wikipedia.org/wiki/Eventual\_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
@@ -105,5 +109,5 @@ Additional topics to consider when using asynchronous communication are message 
 
 
 >[!div class="step-by-step"]
-[Previous] (communication-between-microservices.md)
+[Previous] (communication-in-microservice-architecture.md)
 [Next] (maintain-microservice-apis.md)

@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: ba7e082c-a7c8-431e-a342-f67734b660f6
+ms.workload: 
+  - dotnetcore
 ---
 
 # Building a complete .NET Core solution on Windows, using Visual Studio 2017
@@ -23,7 +25,7 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 ### Writing the library
 
-1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Core** node, and then choose **Class Library (.NET Standard)**. 
+1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Standard** node, and then choose **Class Library (.NET Standard)**. 
 
 2. Name the project "Library" and the solution "Golden". Leave **Create directory for solution** checked. Click **OK**.
 

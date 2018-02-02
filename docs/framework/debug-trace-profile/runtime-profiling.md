@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "performance counters"
   - "common language runtime, profiling"
@@ -28,6 +23,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Runtime Profiling
 Profiling is a method of gathering performance data in any development or deployment scenario. This section is for developers and system administrators who want to gather information about application performance.  
@@ -70,10 +67,10 @@ Profiling is a method of gathering performance data in any development or deploy
   
 |Class|Description|  
 |-----------|-----------------|  
-|<xref:System.Diagnostics.PerformanceCounter?displayProperty=fullName>|Represents a Windows NT performance counter component. Use this class to read existing predefined or custom counters and publish (write) performance data to custom counters.|  
-|<xref:System.Diagnostics.PerformanceCounterCategory?displayProperty=fullName>|Provides several methods for interacting with counters and categories of counters on the computer.|  
-|<xref:System.Diagnostics.PerformanceCounterInstaller?displayProperty=fullName>|Specifies an installer for the `PerformanceCounter` component.|  
-|<xref:System.Diagnostics.PerformanceCounterType?displayProperty=fullName>|Specifies the formula to calculate the `NextValue` method for a `PerformanceCounter`.|  
+|<xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType>|Represents a Windows NT performance counter component. Use this class to read existing predefined or custom counters and publish (write) performance data to custom counters.|  
+|<xref:System.Diagnostics.PerformanceCounterCategory?displayProperty=nameWithType>|Provides several methods for interacting with counters and categories of counters on the computer.|  
+|<xref:System.Diagnostics.PerformanceCounterInstaller?displayProperty=nameWithType>|Specifies an installer for the `PerformanceCounter` component.|  
+|<xref:System.Diagnostics.PerformanceCounterType?displayProperty=nameWithType>|Specifies the formula to calculate the `NextValue` method for a `PerformanceCounter`.|  
   
 ## See Also  
  [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)

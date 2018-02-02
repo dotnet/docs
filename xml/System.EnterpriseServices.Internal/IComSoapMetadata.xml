@@ -68,7 +68,7 @@
     </Member>
     <Member MemberName="GenerateSigned">
       <MemberSignature Language="C#" Value="public string GenerateSigned (string SrcTypeLibFileName, string OutPath, bool InstallGac, out string Error);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateSigned(string SrcTypeLibFileName, string OutPath, bool InstallGac, string Error) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateSigned(string SrcTypeLibFileName, string OutPath, bool InstallGac, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

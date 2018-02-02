@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 81819dae-4825-43b7-bccd-f16d2d3d2f06
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;dns&gt;
 Specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value.  
@@ -57,9 +59,9 @@ Specifies the expected identity of the server. This identity is valid for X509 C
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.IdentityElement>   
- <xref:System.ServiceModel.EndpointAddress>   
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>   
- <xref:System.ServiceModel.DnsEndpointIdentity>   
- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)   
+ <xref:System.ServiceModel.Configuration.IdentityElement>  
+ <xref:System.ServiceModel.EndpointAddress>  
+ <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
+ <xref:System.ServiceModel.DnsEndpointIdentity>  
+ [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
  [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)

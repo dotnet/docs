@@ -39,9 +39,9 @@
   
 |Category|Description|  
 |--------------|-----------------|  
-|Component|Designers that are used with components. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Component?displayProperty=fullName>.|  
-|Form|Designers that are used with forms. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Form?displayProperty=fullName>.|  
-|Designer|Designers that are used with designers. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Generic?displayProperty=fullName>.|  
+|Component|Designers that are used with components. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Component?displayProperty=nameWithType>.|  
+|Form|Designers that are used with forms. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Form?displayProperty=nameWithType>.|  
+|Designer|Designers that are used with designers. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Generic?displayProperty=nameWithType>.|  
 |Empty String ("")|This is the default category.|  
   
  For more information, see [Attributes](~/docs/standard/attributes/index.md).  
@@ -63,6 +63,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -379,5 +381,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerCategoryAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

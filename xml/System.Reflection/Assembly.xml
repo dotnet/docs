@@ -57,7 +57,7 @@
 ## Remarks  
  Use the <xref:System.Reflection.Assembly> class to load assemblies, to explore the metadata and constituent parts of assemblies, to discover the types contained in assemblies, and to create instances of those types.  
   
- To get an array of <xref:System.Reflection.Assembly> objects representing the assemblies currently loaded into an application domain (for example, the default application domain of a simple project), use the <xref:System.AppDomain.GetAssemblies%2A?displayProperty=fullName> method.  
+ To get an array of <xref:System.Reflection.Assembly> objects representing the assemblies currently loaded into an application domain (for example, the default application domain of a simple project), use the <xref:System.AppDomain.GetAssemblies%2A?displayProperty=nameWithType> method.  
   
  To load assemblies dynamically, the <xref:System.Reflection.Assembly> class provides the following static methods (`Shared` methods in Visual Basic). Assemblies are loaded into the application domain where the load operation occurs.  
   
@@ -98,6 +98,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.AppDomain" />
+    <altmember cref="T:System.Reflection.AssemblyName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -163,7 +165,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get the absolute path to the loaded manifest-containing file, use the <xref:System.Reflection.Assembly.Location%2A?displayProperty=fullName> property instead.  
+ To get the absolute path to the loaded manifest-containing file, use the <xref:System.Reflection.Assembly.Location%2A?displayProperty=nameWithType> property instead.  
   
  If the assembly was loaded as a byte array, using an overload of the <xref:System.Reflection.Assembly.Load%2A> method that takes an array of bytes, this property returns the location of the caller of the method, not the location of the loaded assembly.  
   
@@ -221,7 +223,7 @@
   
 -   You haven't specified the fully qualified name of the type.  
   
--   You've specified the fully qualified type name, but its case doesn’t match the case of the type's <xref:System.Type.FullName%2A?displayProperty=fullName> property. For a case-insensitive comparison of `typeName` with the type's full name, call the <xref:System.Reflection.Assembly.CreateInstance%28System.String%2CSystem.Boolean%29> overload and specify `true` for the `ignoreCase` argument.  
+-   You've specified the fully qualified type name, but its case doesn’t match the case of the type's <xref:System.Type.FullName%2A?displayProperty=nameWithType> property. For a case-insensitive comparison of `typeName` with the type's full name, call the <xref:System.Reflection.Assembly.CreateInstance%28System.String%2CSystem.Boolean%29> overload and specify `true` for the `ignoreCase` argument.  
   
 -   The type doesn’t exist in the current <xref:System.Reflection.Assembly> instance.  
   
@@ -456,7 +458,7 @@
   
  See <xref:System.Reflection.AssemblyName> for a description of the format of the display name of an assembly.  
   
- To accommodate changes in versions of the common language runtime, use this method rather than constructing the qualified name yourself.  For information about qualified assembly names, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName>.  
+ To accommodate changes in versions of the common language runtime, use this method rather than constructing the qualified name yourself.  For information about qualified assembly names, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -529,12 +531,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.Assembly.DefinedTypes%2A> property is comparable to the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=fullName> method, except that the <xref:System.Reflection.Assembly.DefinedTypes%2A> property returns a [collection](../Topic/IEnumerable\(T\)%20Interface.md) of <xref:System.Reflection.TypeInfo> objects, and the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=fullName> method returns an array of <xref:System.Type> objects.  
+ The <xref:System.Reflection.Assembly.DefinedTypes%2A> property is comparable to the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method, except that the <xref:System.Reflection.Assembly.DefinedTypes%2A> property returns a collection of <xref:System.Reflection.TypeInfo> objects, and the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method returns an array of <xref:System.Type> objects.  
   
  The returned array includes nested types.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetTypes" />
       </Docs>
     </Member>
     <Member MemberName="EntryPoint">
@@ -666,6 +669,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="ExportedTypes">
@@ -740,7 +744,7 @@
 > [!NOTE]
 >  Writing your own code to parse display names is not recommended. Instead, pass the display name to the <xref:System.Reflection.AssemblyName.%23ctor%2A> constructor, which parses it and populates the appropriate fields of the new <xref:System.Reflection.AssemblyName>.  
   
- In the .NET Framework version 2.0, processor architecture is added to assembly identity, and can be specified as part of assembly name strings. However, it is not included in the string returned by the <xref:System.Reflection.Assembly.FullName%2A> property, for compatibility reasons. See <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A?displayProperty=fullName>.  
+ In the .NET Framework version 2.0, processor architecture is added to assembly identity, and can be specified as part of assembly name strings. However, it is not included in the string returned by the <xref:System.Reflection.Assembly.FullName%2A> property, for compatibility reasons. See <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A?displayProperty=nameWithType>.  
   
    
   
@@ -787,7 +791,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is equivalent to retrieving the value of the  <xref:System.Type.Assembly?displayProperty=fullName> property. However, the <xref:System.Type.Assembly?displayProperty=fullName> property typically offers superior performance.  
+ Calling this method is equivalent to retrieving the value of the  <xref:System.Type.Assembly?displayProperty=nameWithType> property. However, the <xref:System.Type.Assembly?displayProperty=nameWithType> property typically offers superior performance.  
   
  In order to call this method, you must have a <xref:System.Type> object, which means that the assembly in which the class is defined must already be loaded.  
   
@@ -836,7 +840,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the method that calls the <xref:System.Reflection.Assembly.GetCallingAssembly%2A> method is expanded inline by the just-in-time (JIT) compiler, or if its caller is expanded inline, the assembly that is returned by <xref:System.Reflection.Assembly.GetCallingAssembly%2A>may differ unexpectedly. For example, consider the following methods and assemblies:  
+ If the method that calls the <xref:System.Reflection.Assembly.GetCallingAssembly%2A> method is expanded inline by the just-in-time (JIT) compiler, or if its caller is expanded inline, the assembly that is returned by <xref:System.Reflection.Assembly.GetCallingAssembly%2A> may differ unexpectedly. For example, consider the following methods and assemblies:  
   
 -   Method `M1` in assembly `A1` calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>.  
   
@@ -846,7 +850,7 @@
   
  When `M1` is not inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A2`. When `M1` is inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A3`. Similarly, when `M2` is not inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A2`. When `M2` is inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A3`.  
   
- This effect also occurs when `M1` executes as a tail call from `M2`, or when `M2` executes as a tail call from `M3`. You can prevent the JIT compiler from inlining the method that calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>, by applying the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute with the <xref:System.Runtime.CompilerServices.MethodImplOptions?displayProperty=fullName> flag, but there is no similar mechanism for preventing tail calls.  
+ This effect also occurs when `M1` executes as a tail call from `M2`, or when `M2` executes as a tail call from `M3`. You can prevent the JIT compiler from inlining the method that calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>, by applying the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute with the <xref:System.Runtime.CompilerServices.MethodImplOptions.NoInlining?displayProperty=nameWithType> flag, but there is no similar mechanism for preventing tail calls.  
   
    
   
@@ -1014,7 +1018,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=nameWithType> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
   
  ]]></format>
         </remarks>
@@ -1088,7 +1092,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For performance reasons, you should call this method only when you do not know at design time what assembly is currently executing. The recommended way to retrieve an <xref:System.Reflection.Assembly> object that represents the current assembly is to use the <xref:System.Type.Assembly%2A?displayProperty=fullName> property of a type found in the assembly, as the following example illustrates.  
+ For performance reasons, you should call this method only when you do not know at design time what assembly is currently executing. The recommended way to retrieve an <xref:System.Reflection.Assembly> object that represents the current assembly is to use the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property of a type found in the assembly, as the following example illustrates.  
   
  [!code-csharp[System.Reflection.Assembly.GetExecutingAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.assembly.getexecutingassembly/cs/assembly1.cs#1)]
  [!code-vb[System.Reflection.Assembly.GetExecutingAssembly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.assembly.getexecutingassembly/vb/assembly1.vb#1)]  
@@ -1098,7 +1102,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Type.Assembly%2A?displayProperty=fullName> property to get the currently executing assembly based on a type contained in that assembly. It also calls the <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> method to show that it returns an <xref:System.Reflection.Assembly> object that represents the same assembly.  
+ The following example uses the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property to get the currently executing assembly based on a type contained in that assembly. It also calls the <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> method to show that it returns an <xref:System.Reflection.Assembly> object that represents the same assembly.  
   
  [!code-cpp[System.Reflection.Assembly.GetExecutingAssembly#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.reflection.assembly.getexecutingassembly/cpp/getexecutingassembly1.cpp#5)]
  [!code-csharp[System.Reflection.Assembly.GetExecutingAssembly#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.assembly.getexecutingassembly/cs/getexecutingassembly1.cs#5)]
@@ -1155,6 +1159,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The assembly is a dynamic assembly.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">Unable to load a dependent assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFile">
@@ -1427,6 +1432,7 @@
           <paramref name="resourceName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="resourceName" /> parameter is an empty string ("").</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceNames">
@@ -1468,17 +1474,18 @@
   
 -   You can pass the resource name to the <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A> method to get additional information about the resource.  
   
--   If the name identifies a binary .resources file, you can remove its .resources file extension and pass it to the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29?displayProperty=fullName> constructor to instantiate the resource manager.  
+-   If the name identifies a binary .resources file, you can remove its .resources file extension and pass it to the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29?displayProperty=nameWithType> constructor to instantiate the resource manager.  
   
--   You can pass the resource name to the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> method to retrieve a <xref:System.IO.Stream> object that you can then pass to the <xref:System.Resources.ResourceReader.%23ctor%28System.IO.Stream%29?displayProperty=fullName> constructor.  
+-   You can pass the resource name to the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> method to retrieve a <xref:System.IO.Stream> object that you can then pass to the <xref:System.Resources.ResourceReader.%23ctor%28System.IO.Stream%29?displayProperty=nameWithType> constructor.  
   
--   You can pass the resource name to the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> method to retrieve a <xref:System.IO.Stream> object that you can then pass to the <xref:System.Resources.ResourceSet.%23ctor%28System.IO.Stream%29?displayProperty=fullName> constructor.  
+-   You can pass the resource name to the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> method to retrieve a <xref:System.IO.Stream> object that you can then pass to the <xref:System.Resources.ResourceSet.%23ctor%28System.IO.Stream%29?displayProperty=nameWithType> constructor.  
   
  Resource information is returned only if the resource is visible to the caller, or the caller has <xref:System.Security.Permissions.ReflectionPermission>.  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -1524,7 +1531,7 @@
  Resource information is returned only if the resource is visible to the caller, or the caller has <xref:System.Security.Permissions.ReflectionPermission>.  
   
 > [!NOTE]
->  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag.  
+>  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
  If the assembly manifest lists a resource file, <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> returns a <xref:System.IO.Stream> object even if the resource file cannot be found on disk at the time. If the resource file is not found, passing the resulting <xref:System.IO.Stream> object to the <xref:System.Resources.ResourceReader> constructor causes an <xref:System.ArgumentException>.  
   
@@ -1547,6 +1554,7 @@
           <paramref name="name" /> is not a valid assembly.</exception>
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -1590,7 +1598,7 @@
  Resource information is returned only if the resource is visible to the caller, or the caller has <xref:System.Security.Permissions.ReflectionPermission>.  
   
 > [!NOTE]
->  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag.  
+>  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
  If the assembly manifest lists a resource file, <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> returns a <xref:System.IO.Stream> object even if the resource file cannot be found on disk at the time. If the resource file is not found, passing the resulting <xref:System.IO.Stream> object to the <xref:System.Resources.ResourceReader> constructor causes an <xref:System.ArgumentException>.  
   
@@ -1605,6 +1613,7 @@
           <paramref name="name" /> is not a valid assembly.</exception>
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetModule">
@@ -1641,9 +1650,9 @@
 ## Remarks  
  This method works on file names.  
   
- Classes in the `Reflection.Emit` namespace emit the scope name for a dynamic module. The scope name can be determined by the <xref:System.Reflection.Module.ScopeName%2A?displayProperty=fullName> property. Pass the kind of module you want to `Assembly.GetModule`. For example, if you want the module that contains the assembly manifest, pass the scope name of the module to `GetModule`. Otherwise, pass the file name of the module. Assemblies loaded by one of the `Load` methods that have a byte[] parameter have only one module, and that is the manifest module. Always seek these modules using the scope name.  
+ Classes in the `Reflection.Emit` namespace emit the scope name for a dynamic module. The scope name can be determined by the <xref:System.Reflection.Module.ScopeName%2A?displayProperty=nameWithType> property. Pass the kind of module you want to `Assembly.GetModule`. For example, if you want the module that contains the assembly manifest, pass the scope name of the module to `GetModule`. Otherwise, pass the file name of the module. Assemblies loaded by one of the `Load` methods that have a byte[] parameter have only one module, and that is the manifest module. Always seek these modules using the scope name.  
   
- A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling `Module.GetType` on the module containing the manifest will not initiate a search of the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+ A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>. Calling `Module.GetType` on the module containing the manifest will not initiate a search of the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1884,7 +1893,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by this method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> in this situation.  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by this method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.None?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.SHA1?displayProperty=nameWithType> in this situation.  
   
    
   
@@ -2031,7 +2040,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method overload, which can optionally include an assembly display name as part of the type name.  
+ This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method overload, which can optionally include an assembly display name as part of the type name.  
   
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
@@ -2039,7 +2048,7 @@
    
   
 ## Examples  
- The following example defines an abstract `MeansOfTransportation` class in the `Transportation` namespace. It calls the <xref:System.Reflection.Assembly.GetType%28System.String%29> method to retrieve its <xref:System.Type> object, calls the <xref:System.Type.GetProperties%2A?displayProperty=fullName> method to get an array of <xref:System.Reflection.PropertyInfo> objects that represent the type's properties, and then displays information on the type's abstract properties. Note that the call to the <xref:System.Reflection.Assembly.GetType%28System.String%29> method uses the type's fully qualified name (that is, its namespace along with its type name).  
+ The following example defines an abstract `MeansOfTransportation` class in the `Transportation` namespace. It calls the <xref:System.Reflection.Assembly.GetType%28System.String%29> method to retrieve its <xref:System.Type> object, calls the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method to get an array of <xref:System.Reflection.PropertyInfo> objects that represent the type's properties, and then displays information on the type's abstract properties. Note that the call to the <xref:System.Reflection.Assembly.GetType%28System.String%29> method uses the type's fully qualified name (that is, its namespace along with its type name).  
   
  [!code-csharp[System.Reflection.Assembly.GetType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.assembly.gettype/cs/gettype1.cs#1)]
  [!code-vb[System.Reflection.Assembly.GetType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.assembly.gettype/vb/gettype1.vb#1)]  
@@ -2111,7 +2120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method overload, which can optionally include an assembly display name as part of the type name.  
+ This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method overload, which can optionally include an assembly display name as part of the type name.  
   
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
@@ -2189,7 +2198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method overload, which can optionally include an assembly display name as part of the type name.  
+ This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method overload, which can optionally include an assembly display name as part of the type name.  
   
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
@@ -2264,7 +2273,7 @@
 > [!NOTE]
 >  If a type has been forwarded to another assembly, it is not included in the returned array. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
- To retrieve a collection of <xref:System.Reflection.TypeInfo> objects instead of an array of <xref:System.Type> objects, use the <xref:System.Reflection.Assembly.DefinedTypes%2A?displayProperty=fullName> property.  
+ To retrieve a collection of <xref:System.Reflection.TypeInfo> objects instead of an array of <xref:System.Type> objects, use the <xref:System.Reflection.Assembly.DefinedTypes%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -2595,7 +2604,7 @@
  <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name.  
   
 > [!NOTE]
->  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
+>  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
   
  Whether certain permissions are granted or not granted to an assembly is based on evidence. The rules for assembly and security evidence merging are as follows:  
   
@@ -2613,7 +2622,7 @@
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
 > [!NOTE]
->  If both the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property and the <xref:System.Reflection.AssemblyName.CodeBase%2A?displayProperty=fullName> property are set, the first attempt to load the assembly uses the display name (including version, culture, and so on, as returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property). If the file is not found, <xref:System.Reflection.AssemblyName.CodeBase%2A> is used to search for the assembly. If the assembly is found using <xref:System.Reflection.AssemblyName.CodeBase%2A>, the display name is matched against the assembly. If the match fails, a <xref:System.IO.FileLoadException> is thrown.  
+>  If both the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property and the <xref:System.Reflection.AssemblyName.CodeBase%2A?displayProperty=nameWithType> property are set, the first attempt to load the assembly uses the display name (including version, culture, and so on, as returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property). If the file is not found, <xref:System.Reflection.AssemblyName.CodeBase%2A> is used to search for the assembly. If the assembly is found using <xref:System.Reflection.AssemblyName.CodeBase%2A>, the display name is matched against the assembly. If the match fails, a <xref:System.IO.FileLoadException> is thrown.  
   
    
   
@@ -2645,6 +2654,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2701,7 +2711,7 @@
   
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
- In the .NET Framework version 2.0, processor architecture is added to assembly identity, and can be specified as part of assembly name strings. For example, "ProcessorArchitecture=msil". However, the recommended way to specify an assembly name is to create an <xref:System.Reflection.AssemblyName> object and pass it to an appropriate overload of the <xref:System.Reflection.Assembly.Load%2A> method. See <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A?displayProperty=fullName>.  
+ In the .NET Framework version 2.0, processor architecture is added to assembly identity, and can be specified as part of assembly name strings. For example, "ProcessorArchitecture=msil". However, the recommended way to specify an assembly name is to create an <xref:System.Reflection.AssemblyName> object and pass it to an appropriate overload of the <xref:System.Reflection.Assembly.Load%2A> method. See <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A?displayProperty=nameWithType>.  
   
    
   
@@ -2728,6 +2738,8 @@
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="assemblyString" /> was compiled with a later version.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2816,7 +2828,7 @@
  <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name, and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name.  
   
 > [!NOTE]
->  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
+>  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
   
  Whether certain permissions are granted or not granted to an assembly is based on evidence. The rules for assembly and security evidence merging are as follows:  
   
@@ -2834,7 +2846,7 @@
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
 > [!NOTE]
->  If both the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property and the <xref:System.Reflection.AssemblyName.CodeBase%2A?displayProperty=fullName> property are set, the first attempt to load the assembly uses the display name (including version, culture, and so on, as returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property). If the file is not found, <xref:System.Reflection.AssemblyName.CodeBase%2A> is used to search for the assembly. If the assembly is found using <xref:System.Reflection.AssemblyName.CodeBase%2A>, the display name is matched against the assembly. If the match fails, a <xref:System.IO.FileLoadException> is thrown.  
+>  If both the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property and the <xref:System.Reflection.AssemblyName.CodeBase%2A?displayProperty=nameWithType> property are set, the first attempt to load the assembly uses the display name (including version, culture, and so on, as returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property). If the file is not found, <xref:System.Reflection.AssemblyName.CodeBase%2A> is used to search for the assembly. If the assembly is found using <xref:System.Reflection.AssemblyName.CodeBase%2A>, the display name is matched against the assembly. If the match fails, a <xref:System.IO.FileLoadException> is thrown.  
   
  If you call the <xref:System.Reflection.Assembly.Load%2A> method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
   
@@ -2854,6 +2866,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2906,7 +2919,7 @@
   
  If you call this method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
   
- In the .NET Framework version 2.0, processor architecture is added to assembly identity, and can be specified as part of assembly name strings. For example, "ProcessorArchitecture=msil". However, the recommended way to specify an assembly name is to create an <xref:System.Reflection.AssemblyName> object and pass it to an appropriate overload of the <xref:System.Reflection.Assembly.Load%2A> method. See <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A?displayProperty=fullName>.  
+ In the .NET Framework version 2.0, processor architecture is added to assembly identity, and can be specified as part of assembly name strings. For example, "ProcessorArchitecture=msil". However, the recommended way to specify an assembly name is to create an <xref:System.Reflection.AssemblyName> object and pass it to an appropriate overload of the <xref:System.Reflection.Assembly.Load%2A> method. See <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2926,6 +2939,7 @@
   
  An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2978,7 +2992,7 @@
   
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
- If you call the [\], Byte\<xref:System.Reflection.Assembly.Load%2A>method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
+ If you call the [\], Byte\<xref:System.Reflection.Assembly.Load%2A> method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
   
  Note that this method overload always creates a new <xref:System.Reflection.Assembly> object with its own mapping.  
   
@@ -3201,7 +3215,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3294,7 +3308,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3335,6 +3349,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading a URI that begins with "file://". Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="LoadFrom">
@@ -3400,7 +3415,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain-neutral.  
   
@@ -3489,7 +3504,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3630,7 +3645,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The overloads of the <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName> method are obsolete and have been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+>  The overloads of the <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType> method are obsolete and have been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -3675,7 +3690,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Reflection.Assembly.LoadWithPartialName%28System.String%29> method is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+>  The <xref:System.Reflection.Assembly.LoadWithPartialName%28System.String%29> method is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
  Applications that load assemblies with this method will be affected by upgrades of those assemblies. Therefore, do not use this method; redesign the application to use the <xref:System.Reflection.Assembly.Load%28System.String%29> method overload or the <xref:System.Reflection.Assembly.LoadFrom%28System.String%29> method overload.  
   
@@ -3690,6 +3705,8 @@
  -or-  
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="partialName" /> was compiled with a later version.</exception>
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LoadWithPartialName">
@@ -3725,7 +3742,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Reflection.Assembly.LoadWithPartialName%28System.String%2CSystem.Security.Policy.Evidence%29> method is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+>  The <xref:System.Reflection.Assembly.LoadWithPartialName%28System.String%2CSystem.Security.Policy.Evidence%29> method is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
  Evidence is the set of information that constitutes input to security policy decisions, such as what permissions can be granted to code.  
   
@@ -3744,6 +3761,8 @@
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="partialName" /> was compiled with a later version.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code and to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -4397,7 +4416,7 @@
 ## Remarks  
  Use this method to load a local assembly that the operating system has flagged as having been loaded from the Web (for example, a temporary file that was downloaded from the Internet or intranet). Before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], such assemblies were automatically loaded into a sandboxed application domain. Starting with the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], they are loaded with full trust.  
   
- As an alternative to using this method, you can apply the [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) in your application configuration file. This causes the common language runtime to revert to the security policy of the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)].  
+ As an alternative to using this method, you can apply the [&lt;NetFx40_LegacySecurityPolicy&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) in your application configuration file. This causes the common language runtime to revert to the security policy of the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)].  
   
 > [!CAUTION]
 >  If you use either of these solutions, you must be certain that it is safe to load `assemblyFile` with full trust.  
@@ -4423,5 +4442,147 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetManifestResourceStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the specified manifest resource from this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReflectionOnlyLoad">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly into the reflection-only context, where it can be examined but not executed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSatelliteAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the satellite assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the custom attributes for this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadModule">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the module internal to this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates a type from this assembly and creates an instance of it using the system activator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLoadedModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all the loaded modules that are part of this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all the modules that are part of this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> object that represents the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFile">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of an assembly file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFiles">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the files in the file table of an assembly manifest.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetName">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Reflection.AssemblyName" /> for this assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

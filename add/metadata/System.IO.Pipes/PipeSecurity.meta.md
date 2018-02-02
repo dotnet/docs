@@ -20,14 +20,14 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeSecurity.AddAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Pipes.PipeSecurity.SetAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeSecurity.SetAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -77,14 +77,14 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeSecurity.RemoveAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -127,7 +127,7 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeSecurity.ResetAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -143,21 +143,21 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeSecurity.RemoveAccessRuleSpecific
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Pipes.PipeSecurity.RemoveAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -218,7 +218,7 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeSecurity.AddAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

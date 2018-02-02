@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8cd4401c-b12c-4116-a421-f3dcffa65670
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Troubleshooting
 The following information exposes some issues you might encounter in your [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications, and provides suggestions to avoid or otherwise reduce the effect of these issues.  
@@ -76,5 +78,5 @@ The following information exposes some issues you might encounter in your [!INCL
  The generated method `OnCreated()` is called each time the object constructor is called, including the scenario in which [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] calls the constructor to make a copy for original values. Take this behavior into account if you implement the `OnCreated()` method in your own partial class.  
   
 ## See Also  
- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)   
+ [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)  
  [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

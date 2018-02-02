@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.SessionSwitchEventHandler" />
+    <altmember cref="E:Microsoft.Win32.SystemEvents.SessionSwitch" />
+    <altmember cref="T:Microsoft.Win32.SystemEvents" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +41,7 @@
         <param name="reason">A <see cref="T:Microsoft.Win32.SessionSwitchReason" /> that indicates the type of session change event.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SessionSwitchEventArgs" /> class using the specified session change event type identifer.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Win32.SessionSwitchReason" />
       </Docs>
     </Member>
     <Member MemberName="Reason">
@@ -56,6 +60,7 @@
         <summary>Gets an identifier that indicates the type of session change event.</summary>
         <value>A <see cref="T:Microsoft.Win32.SessionSwitchReason" /> indicating the type of the session change event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Win32.SessionSwitchReason" />
       </Docs>
     </Member>
   </Members>

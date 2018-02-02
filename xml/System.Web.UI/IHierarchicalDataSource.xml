@@ -31,6 +31,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.IDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
   </Docs>
   <Members>
     <Member MemberName="DataSourceChanged">
@@ -55,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HierarchicalDataSourceControl.OnDataSourceChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="GetHierarchicalView">
@@ -92,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceView" />
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
   </Members>

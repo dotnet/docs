@@ -47,11 +47,28 @@
 ## Examples  
  The following example demonstrates how to use an <xref:System.Web.UI.WebControls.ImageField> object in a <xref:System.Web.UI.WebControls.GridView> control to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageField.AlternateText" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageField.DataAlternateTextField" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageField.DataAlternateTextFormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageField.DataImageUrlField" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageField.DataImageUrlFormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageField.NullDisplayText" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageField.NullImageUrl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,11 +99,15 @@
 ## Examples  
  The following example demonstrates how to use this constructor to dynamically add an <xref:System.Web.UI.WebControls.ImageField> object to the <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldCtor/CS/ImageFieldCtorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldCtor/VB/ImageFieldCtorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldCtor/CS/ImageFieldCtorcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldCtor/VB/ImageFieldCtorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="AlternateText">
@@ -128,11 +149,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.AlternateText%2A> property to specify the alternate text for all images displayed in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataAlternateTextField" />
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -260,11 +282,13 @@
 ## Examples  
  The following example code demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataAlternateTextField%2A> property to specify the name of the field from the data source that contains the values to bind to the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property of each image in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.AlternateText" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataImageUrlField" />
       </Docs>
     </Member>
     <Member MemberName="DataAlternateTextFormatString">
@@ -332,11 +356,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataAlternateTextFormatString%2A> property to apply a custom format to the alternate text values for the images in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataAlternateTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataImageUrlFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DataImageUrlField">
@@ -376,11 +402,16 @@
 ## Examples  
  The following example code demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property of each image in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataImageUrlFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.AlternateText" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataAlternateTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.NullImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="DataImageUrlFormatString">
@@ -443,11 +474,13 @@
 ## Examples  
  The following example code demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlFormatString%2A> property to apply a custom format to the URL values for the images in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataAlternateTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -491,6 +524,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlFieldCell" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
       </Docs>
     </Member>
     <Member MemberName="FormatImageUrlValue">
@@ -523,6 +559,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.ImageField" /> class, you can override this method to perform a custom formatting routine.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ImageField.GetFormattedAlternateText(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeValue">
@@ -552,6 +589,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.ImageField" /> class, you can override this method to return a different value to display for the field in a designer.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ImageField.GetValue(System.Web.UI.Control,System.String,System.ComponentModel.PropertyDescriptor@)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormattedAlternateText">
@@ -584,11 +622,12 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.ImageField" /> class, you can override this method to perform a custom formatting routine.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ImageField.FormatImageUrlValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="protected virtual object GetValue (System.Web.UI.Control controlContainer, string fieldName, ref System.ComponentModel.PropertyDescriptor cachedDescriptor);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetValue(class System.Web.UI.Control controlContainer, string fieldName, class System.ComponentModel.PropertyDescriptor cachedDescriptor) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetValue(class System.Web.UI.Control controlContainer, string fieldName, class System.ComponentModel.PropertyDescriptor&amp; cachedDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageField.GetValue(System.Web.UI.Control,System.String,System.ComponentModel.PropertyDescriptor@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -629,6 +668,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.ImageField" /> object, you can override this method to provide custom routine to determine a field's value.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.Web.UI.WebControls.ImageField.GetDesignTimeValue" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -663,6 +704,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlFieldCell" />
+        <altmember cref="M:System.Web.UI.WebControls.ImageField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -699,6 +744,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlFieldCell" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlCellType" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
       </Docs>
     </Member>
     <Member MemberName="InitializeDataCell">
@@ -732,6 +780,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom initialization routine.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlFieldCell" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
       </Docs>
     </Member>
     <Member MemberName="NullDisplayText">
@@ -773,11 +823,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.NullDisplayText%2A> property to specify the text to display when the value of the field specified by the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlField%2A> property is `null`.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.NullImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="NullImageUrl">
@@ -820,11 +871,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.NullImageUrl%2A> property to specify the URL to an alternate image to display when the value of the field specified by the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlField%2A> property is `null`.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldNullImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldNullImageUrl/CS/ImageFieldNullImageUrlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldNullImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldNullImageUrl/VB/ImageFieldNullImageUrlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldNullImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldNullImageUrl/CS/ImageFieldNullImageUrlcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldNullImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldNullImageUrl/VB/ImageFieldNullImageUrlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBindField">
@@ -859,6 +911,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.ImageField" /> class, you can override this method to perform a custom binding routine.</para>
         </block>
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -896,11 +949,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.ReadOnly%2A> property to indicate that the field values that represent the URLs to the images displayed in an <xref:System.Web.UI.WebControls.ImageField> object cannot be modified in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldReadOnly#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldReadOnly/CS/ImageFieldReadOnlycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldReadOnly/VB/ImageFieldReadOnlyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldReadOnly#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldReadOnly/CS/ImageFieldReadOnlycs.aspx#1)]
+ [!code-aspx-vb[ImageFieldReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldReadOnly/VB/ImageFieldReadOnlyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageField.DataImageUrlField" />
       </Docs>
     </Member>
     <Member MemberName="ThisExpression">

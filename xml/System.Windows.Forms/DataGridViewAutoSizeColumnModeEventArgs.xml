@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property of a column in a <xref:System.Windows.Forms.DataGridView> control changes.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -31,6 +31,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventHandler" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnAutoSizeColumnModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +58,11 @@
         <param name="previousMode">The previous <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value of the column's <see cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -80,6 +92,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnAutoSizeColumnModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PreviousMode">
@@ -101,15 +118,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#280](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#280)]
  [!code-vb[System.Windows.Forms.EventExamples#280](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#280)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
       </Docs>
     </Member>
   </Members>

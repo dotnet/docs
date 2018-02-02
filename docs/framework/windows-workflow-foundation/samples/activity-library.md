@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5323e9d4-71d6-47eb-bfa6-31feac62044d
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Activity Library
 This section contains samples that demonstrate advanced custom activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

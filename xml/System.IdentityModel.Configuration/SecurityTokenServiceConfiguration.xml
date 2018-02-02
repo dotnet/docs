@@ -20,12 +20,13 @@
   
  [!code-csharp[WIFCustomTokenSTS#2](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/customsecuritytokenserviceconfiguration.cs#2)]  
   
- The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=fullName> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the `CustomSecurityTokenServiceConfiguration` class shown in the previous example.  
+ The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=nameWithType> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the `CustomSecurityTokenServiceConfiguration` class shown in the previous example.  
   
  [!code-csharp[WIFCustomTokenSTS#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/default.aspx.cs#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.SecurityTokenService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -242,7 +243,7 @@
 ## Examples  
  The code examples that are used in the <xref:System.IdentityModel.SecurityTokenService> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT) and it includes an implementation of a passive STS that is capable of serving an SWT token. For an example of how to implement an active STS, you can see the `Federation Metadata` sample. For information about these samples and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows a custom implementation of the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> class to support a passive STS that processes SWT tokens. The configuration is initialized and stored in the HTTP application state the first time the static `Current` property is accessed. The constructor initializes the properties of the custom configuration with the type of the custom STS, a custom issuer token resolver, and the default token type (the URI of the SWT token type). It also adds an SWT token handler to the default handler collection.  
   
- The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=fullName> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the current `CustomSecurityTokenServiceConfiguration` object. The `CustomSecurityTokenServiceConfiguration.Current` property is implemented by the `CustomSecurityTokenServiceConfiguration` class and returns the instance of the class that is saved in the HTTP application state.  
+ The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=nameWithType> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the current `CustomSecurityTokenServiceConfiguration` object. The `CustomSecurityTokenServiceConfiguration.Current` property is implemented by the `CustomSecurityTokenServiceConfiguration` class and returns the instance of the class that is saved in the HTTP application state.  
   
  [!code-csharp[WIFCustomTokenSTS#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/default.aspx.cs#1)]  
   
@@ -409,6 +410,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is not assignable as <see cref="T:System.IdentityModel.SecurityTokenService" />.</exception>
         <exception cref="T:System.ArgumentNullException">The specified value is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService" />
       </Docs>
     </Member>
     <Member MemberName="SigningCredentials">
@@ -533,5 +535,14 @@
         <exception cref="T:System.ArgumentNullException">The specified value is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

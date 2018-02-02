@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 1a670c63-0a29-4738-80e6-101f66af05c3
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # FLATTEN (Entity SQL)
 Converts a collection of collections into a flattened collection. The new collection contains all the same elements as the old collection, but without a nested structure.  

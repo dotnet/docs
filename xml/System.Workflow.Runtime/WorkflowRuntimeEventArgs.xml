@@ -49,7 +49,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.Runtime.WorkflowRuntimeEventArgs.IsStarted%2A> will be `true` for the <xref:System.Workflow.Runtime.WorkflowRuntime.Started?displayProperty=fullName> event and false for the <xref:System.Workflow.Runtime.WorkflowRuntime.Stopped?displayProperty=fullName> event.  
+ <xref:System.Workflow.Runtime.WorkflowRuntimeEventArgs.IsStarted%2A> will be `true` for the <xref:System.Workflow.Runtime.WorkflowRuntime.Started?displayProperty=nameWithType> event and false for the <xref:System.Workflow.Runtime.WorkflowRuntime.Stopped?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>

@@ -10,17 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "texture brushes, tiling images with"
+  - "texture brushes [Windows Forms], tiling images with"
   - "images [Windows Forms], filling shapes with"
-  - "shapes, tiling with images"
+  - "shapes [Windows Forms], tiling with images"
   - "bitmaps [Windows Forms], filling shapes with"
 ms.assetid: 6d407891-6e5c-4495-a546-3da5604e9fb8
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Tile a Shape with an Image
 Just as tiles can be placed next to each other to cover a floor, rectangular images can be placed next to each other to fill (tile) a shape. To tile the interior of a shape, use a texture brush. When you construct a <xref:System.Drawing.TextureBrush> object, one of the arguments you pass to the constructor is an <xref:System.Drawing.Image> object. When you use the texture brush to paint the interior of a shape, the shape is filled with repeated copies of this image.  

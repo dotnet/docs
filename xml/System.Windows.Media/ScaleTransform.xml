@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Media.ScaleTransform.ScaleX" />
+    <altmember cref="P:System.Windows.Media.ScaleTransform.ScaleY" />
+    <altmember cref="P:System.Windows.Media.ScaleTransform.CenterX" />
+    <altmember cref="P:System.Windows.Media.ScaleTransform.CenterY" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +85,10 @@
         <param name="centerY">The y-coordinate of the center of this <see cref="T:System.Windows.Media.ScaleTransform" />. For more information, see the <see cref="P:System.Windows.Media.ScaleTransform.CenterY" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ScaleTransform" /> class that has the specified scale factors and center point.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.ScaleTransform.ScaleX" />
+        <altmember cref="P:System.Windows.Media.ScaleTransform.ScaleY" />
+        <altmember cref="P:System.Windows.Media.ScaleTransform.CenterX" />
+        <altmember cref="P:System.Windows.Media.ScaleTransform.CenterY" />
       </Docs>
     </Member>
     <Member MemberName="CenterX">
@@ -113,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.RenderTransformOrigin" />
       </Docs>
     </Member>
     <Member MemberName="CenterXProperty">
@@ -162,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.RenderTransformOrigin" />
       </Docs>
     </Member>
     <Member MemberName="CenterYProperty">
@@ -205,7 +215,7 @@
   
  When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -233,7 +243,7 @@
 ## Remarks  
  Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -384,5 +394,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ScaleTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

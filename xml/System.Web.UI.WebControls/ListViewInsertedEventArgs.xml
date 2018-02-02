@@ -32,11 +32,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,12 +76,13 @@
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
-|<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object that is contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=nameWithType> object that is contained in the `e` parameter.|  
 |<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled%2A>|Initialized to `false`.|  
 |<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode%2A>|Initialized to `false`.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -115,6 +122,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -148,6 +160,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -182,6 +199,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="KeepInInsertMode">
@@ -216,6 +238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -239,13 +262,20 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values%2A> property to access the values of the fields for the inserted record. For example, you can use these values to keep a log of inserted records.  
   
- The <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A?displayProperty=fullName> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A?displayProperty=nameWithType> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. The advantage in using the indexer is that it returns field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
       </Docs>
     </Member>
   </Members>

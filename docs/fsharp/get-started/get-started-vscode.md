@@ -82,7 +82,7 @@ sudo apt-get install mono-complete fsharp
 
 You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website.  After that, there are two ways to find the Ionide plugin:
 
-1. Use the Command Palette (Ctrl+P on Windows, ⌘+P on macOS, Ctrl+Shift+P on Linux) and type the following:
+1. Use the Command Palette (Ctrl+Shift+P on Windows, ⌘+Shift+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 
     ```
     >ext install Ionide
@@ -100,7 +100,7 @@ To create a new F# project, open Visual Studio Code in a new folder (you can nam
 
 ![](media/getting-started-vscode/vscode-open-dir.png)
 
-Next, open the Command Palette (Ctrl+P on Windows, ⌘+P on macOS, Ctrl+Shift+P on Linux) and type the following:
+Next, open the Command Palette (Ctrl+Shift+P on Windows, ⌘+Shift+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 
 ```
 >f#: New Project

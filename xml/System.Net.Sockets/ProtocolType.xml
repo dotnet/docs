@@ -27,17 +27,11 @@
 ## Remarks  
  The <xref:System.Net.Sockets.Socket> class uses the <xref:System.Net.Sockets.ProtocolType> enumeration to inform the Windows Sockets API of the requested protocol. Low-level driver software for the requested protocol must be present on the computer for the <xref:System.Net.Sockets.Socket> to be created successfully.  
   
-   
-  
-## Examples  
- The following example demonstrates how to use <xref:System.Net.Sockets.ProtocolType> to instantiate a <xref:System.Net.Sockets.Socket>.  
-  
- [!code-cpp[Socket_Send_Recieve#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Recieve/CPP/source.cpp#1)]
- [!code-csharp[Socket_Send_Recieve#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Recieve/CS/source.cs#1)]
- [!code-vb[Socket_Send_Recieve#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Send_Recieve/VB/source.vb#1)]  
+
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Sockets.AddressFamily" />
   </Docs>
   <Members>
     <Member MemberName="Ggp">

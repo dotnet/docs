@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::AppDomainCreationFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AppDomainCreationFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainCreationFinished method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::AppDomainCreationFinished Method
 Notifies the profiler that an application domain has been created.  

@@ -77,6 +77,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Immutable.ImmutableSortedSet`1" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -709,7 +710,7 @@
 ## Remarks  
  The `memberEqualityComparer` and the current <xref:System.Collections.Generic.SortedSet%601> must have the same definition of equality.  
   
- You can use the comparer returned by this method in the <xref:System.Collections.Generic.SortedSet%601.%23ctor%28System.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=fullName> constructor to create a hash table of individual sets.  
+ You can use the comparer returned by this method in the <xref:System.Collections.Generic.SortedSet%601.%23ctor%28System.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=nameWithType> constructor to create a hash table of individual sets.  
   
    
   
@@ -1881,7 +1882,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (T equalValue, out T actualValue);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!T equalValue, !T actualValue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!T equalValue, [out] !T&amp; actualValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.TryGetValue(`0,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1944,5 +1945,15 @@
           <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSetComparer">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEqualityComparer" /> object that can be used to create a collection that contains individual sets.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

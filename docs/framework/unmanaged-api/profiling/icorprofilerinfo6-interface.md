@@ -15,13 +15,13 @@ api_location:
   - "mscorwks.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 6f2bb148-1e2b-4e45-a5a5-0ceddc40064b
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo6 Interface
 [Supported in the .NET Framework 4.6 and later versions]  

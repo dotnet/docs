@@ -22,6 +22,7 @@
     <summary>Delegates all members of the <see cref="T:System.Configuration.Internal.IInternalConfigHost" /> interface to another instance of a host.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Configuration.Internal.IInternalConfigHost" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.Internal.DelegatingConfigHost" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigBuilderHost">
+      <MemberSignature Language="C#" Value="protected System.Configuration.Internal.IInternalConfigurationBuilderHost ConfigBuilderHost { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Internal.IInternalConfigurationBuilderHost ConfigBuilderHost" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.ConfigBuilderHost" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Internal.IInternalConfigurationBuilderHost</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Configuration.Internal.IInternalConfigurationBuilderHost" /> object if the delegated host provides the functionality required by that interface.</summary>
+        <value>An <see cref="T:System.Configuration.Internal.IInternalConfigurationBuilderHost" /> object.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConfigurationContext">
@@ -276,7 +295,7 @@
     </Member>
     <Member MemberName="GetRestrictedPermissions">
       <MemberSignature Language="C#" Value="public virtual void GetRestrictedPermissions (System.Configuration.Internal.IInternalConfigRecord configRecord, out System.Security.PermissionSet permissionSet, out bool isHostReady);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRestrictedPermissions(class System.Configuration.Internal.IInternalConfigRecord configRecord, class System.Security.PermissionSet permissionSet, bool isHostReady) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRestrictedPermissions(class System.Configuration.Internal.IInternalConfigRecord configRecord, [out] class System.Security.PermissionSet&amp; permissionSet, [out] bool&amp; isHostReady) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -432,7 +451,7 @@
       </Docs>
     </Member>
     <Member MemberName="Init">
-      <MemberSignature Language="C#" Value="public virtual void Init (System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitParams);" />
+      <MemberSignature Language="C#" Value="public virtual void Init (System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -466,8 +485,8 @@
       </Docs>
     </Member>
     <Member MemberName="InitForConfiguration">
-      <MemberSignature Language="C#" Value="public virtual void InitForConfiguration (ref string locationSubPath, out string configPath, out string locationConfigPath, System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitConfigurationParams);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitForConfiguration(string locationSubPath, string configPath, string locationConfigPath, class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitConfigurationParams) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void InitForConfiguration (ref string locationSubPath, out string configPath, out string locationConfigPath, System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitConfigurationParams);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitForConfiguration(string&amp; locationSubPath, [out] string&amp; configPath, [out] string&amp; locationConfigPath, class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitConfigurationParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -844,7 +863,7 @@
     </Member>
     <Member MemberName="OpenStreamForWrite">
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream OpenStreamForWrite (string streamName, string templateStreamName, ref object writeContext);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object writeContext) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object&amp; writeContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -875,7 +894,7 @@
     </Member>
     <Member MemberName="OpenStreamForWrite">
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream OpenStreamForWrite (string streamName, string templateStreamName, ref object writeContext, bool assertPermissions);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object writeContext, bool assertPermissions) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object&amp; writeContext, bool assertPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -965,6 +984,56 @@
           <see langword="true" /> if a section of the configuration file designated by the <paramref name="sectionGroupName" /> and <paramref name="sectionName" /> parameters can be read by a <see cref="T:System.IO.Stream" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessConfigurationSection">
+      <MemberSignature Language="C#" Value="public virtual System.Configuration.ConfigurationSection ProcessConfigurationSection (System.Configuration.ConfigurationSection configSection, System.Configuration.ConfigurationBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.ConfigurationSection ProcessConfigurationSection(class System.Configuration.ConfigurationSection configSection, class System.Configuration.ConfigurationBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.ProcessConfigurationSection(System.Configuration.ConfigurationSection,System.Configuration.ConfigurationBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configSection" Type="System.Configuration.ConfigurationSection" />
+        <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="configSection">The <see cref="T:System.Configuration.ConfigurationSection" /> to process.</param>
+        <param name="builder">
+          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="configSection" />.</param>
+        <summary>Processes a <see cref="T:System.Configuration.ConfigurationSection" /> object using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
+        <returns>The processed <see cref="T:System.Configuration.ConfigurationSection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRawXml">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ProcessRawXml (System.Xml.XmlNode rawXml, System.Configuration.ConfigurationBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ProcessRawXml(class System.Xml.XmlNode rawXml, class System.Configuration.ConfigurationBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.ProcessRawXml(System.Xml.XmlNode,System.Configuration.ConfigurationBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rawXml" Type="System.Xml.XmlNode" />
+        <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="rawXml">The <see cref="T:System.Xml.XmlNode" /> to process.</param>
+        <param name="builder">
+          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="rawXml" />.</param>
+        <summary>Processes the markup of a configuration section using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
+        <returns>The processed <see cref="T:System.Xml.XmlNode" />.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequireCompleteInit">
@@ -1243,5 +1312,32 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteCompleted">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates that all writing to the configuration file has completed and specifies whether permissions should be asserted.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStreamForWrite">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStreamForRead">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

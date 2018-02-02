@@ -40,7 +40,7 @@
    
   
 ## Examples  
- The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
+ The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
   
 > [!NOTE]
 >  Not all computer languages can generate Filter clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
@@ -62,6 +62,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.MethodBody" />
+    <altmember cref="T:System.Reflection.ExceptionHandlingClause" />
   </Docs>
   <Members>
     <Member MemberName="Clause">

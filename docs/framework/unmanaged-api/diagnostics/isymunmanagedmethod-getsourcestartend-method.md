@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetSourceStartEnd"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSourceStartEnd method [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetSourceStartEnd method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetSourceStartEnd Method
 Gets the start and end document positions for the source of this method. The first array position is the start, and the second array position is the end.  

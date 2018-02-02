@@ -1,13 +1,15 @@
 ---
 title: .NET Core versioning
-description:  Understand how .NET Core versioning works.
+description: Understand how .NET Core versioning works.
 author: bleroy
 ms.author: mairaw
-ms.date: 08/11/2017
+ms.date: 08/25/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
+ms.workload: 
+  - dotnetcore
 ---
 # .NET Core versioning
 
@@ -97,7 +99,7 @@ It's also possible that .NET Core Tools need to be updated, without runtime chan
 
 ##### Preview versions
 
-Package maintainers may decide to include preview versions of the runtime and SDK. Don't include those preview versions in the unversioned `dotnet-sdk` package, but you can release them as versioned packages with an additional preview marker appended to the major and minor version sections of the name. For example, there may be a `dotnet-sdk-2.0-preview-1-final` package.
+Package maintainers may decide to include preview versions of the runtime and SDK. Don't include those preview versions in the unversioned `dotnet-sdk` package, but you can release them as versioned packages with an additional preview marker appended to the major and minor version sections of the name. For example, there may be a `dotnet-sdk-2.0-preview1-final` package.
 
 ### Docker
 
@@ -147,7 +149,7 @@ When there are multiple changes, the highest element affected by individual chan
 
 ### Preview versions
 
-Preview versions have a `-preview-[number]-([build]|"final")` appended to the version. For example, `2.0.0-preview-1-final`.
+Preview versions have a `-preview[number]-([build]|"final")` appended to the version. For example, `2.0.0-preview1-final`.
 
 ### Servicing versions
 

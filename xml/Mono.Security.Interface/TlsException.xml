@@ -112,7 +112,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.AlertDescription description, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.AlertDescription description, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Mono.Security.Interface.AlertDescription description, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertDescription,System.String,System.Object[])" />
       <MemberType>Constructor</MemberType>

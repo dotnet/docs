@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.StagingAreaInputItem" />
+    <altmember cref="T:System.Windows.Input.ProcessInputEventArgs" />
+    <altmember cref="T:System.Windows.Input.PreProcessInputEventArgs" />
+    <altmember cref="T:System.Windows.Input.NotifyInputEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -281,6 +285,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler.  Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Input.NotifyInputEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PostProcessInput">
@@ -328,6 +333,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler. Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Input.ProcessInputEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PreNotifyInput">
@@ -375,6 +381,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler. Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Input.NotifyInputEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PreProcessInput">
@@ -424,6 +431,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler. Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Input.PreProcessInputEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PrimaryKeyboardDevice">
@@ -442,6 +450,7 @@
         <summary>Gets the primary keyboard device.</summary>
         <value>The keyboard device.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.Keyboard" />
       </Docs>
     </Member>
     <Member MemberName="PrimaryMouseDevice">
@@ -460,6 +469,7 @@
         <summary>Gets the primary mouse device.</summary>
         <value>The mouse device.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.Mouse" />
       </Docs>
     </Member>
     <Member MemberName="ProcessInput">

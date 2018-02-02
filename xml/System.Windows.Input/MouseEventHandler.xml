@@ -26,35 +26,35 @@
 ## Remarks  
  This delegate is used with the following attached events:  
   
--   <xref:System.Windows.Input.Mouse.GotMouseCapture?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Mouse.GotMouseCapture?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Mouse.LostMouseCapture?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Mouse.LostMouseCapture?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Mouse.MouseEnter?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Mouse.MouseEnter?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Mouse.MouseLeave?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Mouse.MouseLeave?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Mouse.MouseMove?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Mouse.MouseMove?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Mouse.PreviewMouseMove?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Mouse.PreviewMouseMove?displayProperty=nameWithType>  
   
  This delegate is used with the following routed events. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
   
--   <xref:System.Windows.UIElement.MouseEnter?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.MouseEnter?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.MouseLeave?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.MouseLeave?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.MouseMove?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.MouseMove?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.PreviewMouseMove?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewMouseMove?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.MouseEnter?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.MouseEnter?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.MouseLeave?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.MouseLeave?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.MouseMove?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.MouseMove?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewMouseMove?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewMouseMove?displayProperty=nameWithType>  
   
  The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -64,5 +64,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+    <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+    <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
+    <altmember cref="T:System.Windows.Input.Mouse" />
   </Docs>
 </Type>

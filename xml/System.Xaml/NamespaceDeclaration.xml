@@ -27,12 +27,15 @@
   
  By convention, the identifier of a XAML namespace resembles a Uniform Resource Identifier (URI). However, the <xref:System.Xaml.NamespaceDeclaration.Namespace%2A> property of <xref:System.Xaml.NamespaceDeclaration> is of type <xref:System.String>. The APIs of .NET Framework XAML Services usually treat XAML namespace identifiers as strings. The relative versus absolute distinctions in the true <xref:System.Uri> type are irrelevant for identifying a XAML (or XML) namespace. The URI-as-namespace convention is also typical in XML.  
   
- Objects of this type are used as input for the <xref:System.Xaml.XamlObjectWriter.WriteNamespace%2A?displayProperty=fullName> method when writing XAML node stream information into an object graph. Objects of this type are used as input for the <xref:System.Xaml.XamlXmlWriter.WriteNamespace%2A?displayProperty=fullName> method when writing XAML node stream information as XML for serialization.  
+ Objects of this type are used as input for the <xref:System.Xaml.XamlObjectWriter.WriteNamespace%2A?displayProperty=nameWithType> method when writing XAML node stream information into an object graph. Objects of this type are used as input for the <xref:System.Xaml.XamlXmlWriter.WriteNamespace%2A?displayProperty=nameWithType> method when writing XAML node stream information as XML for serialization.  
   
- A namespace declaration may have a <xref:System.String.Empty?displayProperty=fullName> value for the prefix. A <xref:System.String.Empty?displayProperty=fullName> prefix represents a declaration of the default XAML namespace.  
+ A namespace declaration may have a <xref:System.String.Empty?displayProperty=nameWithType> value for the prefix. A <xref:System.String.Empty?displayProperty=nameWithType> prefix represents a declaration of the default XAML namespace.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xaml.XamlObjectWriter.WriteNamespace(System.Xaml.NamespaceDeclaration)" />
+    <altmember cref="M:System.Xaml.XamlXmlWriter.WriteNamespace(System.Xaml.NamespaceDeclaration)" />
+    <altmember cref="P:System.Xaml.XamlXmlReader.Namespace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,7 +59,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Initialization of <xref:System.Xaml.NamespaceDeclaration> does not attempt to validate values. To correctly use a XAML writer, do not use null values. A namespace declaration may have a <xref:System.String?displayProperty=fullName> value for the prefix. A <xref:System.String?displayProperty=fullName> prefix represents a declaration of the default XAML namespace.  
+ Initialization of <xref:System.Xaml.NamespaceDeclaration> does not attempt to validate values. To correctly use a XAML writer, do not use null values. A namespace declaration may have a <xref:System.String.Empty?displayProperty=nameWithType> value for the prefix. A <xref:System.String.Empty?displayProperty=nameWithType> prefix represents a declaration of the default XAML namespace.  
   
  ]]></format>
         </remarks>
@@ -106,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A namespace declaration may have a <xref:System.String?displayProperty=fullName> value for the prefix. A <xref:System.String?displayProperty=fullName> prefix represents a declaration of the default XAML namespace.  
+ A namespace declaration may have a <xref:System.String.Empty?displayProperty=nameWithType> value for the prefix. A <xref:System.String.Empty?displayProperty=nameWithType> prefix represents a declaration of the default XAML namespace.  
   
  ]]></format>
         </remarks>

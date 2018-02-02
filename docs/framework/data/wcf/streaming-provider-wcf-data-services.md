@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, providers"
   - "WCF Data Services, binary data"
@@ -16,9 +19,11 @@ helpviewer_keywords:
   - "WCF Data Services, streams"
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Streaming Provider (WCF Data Services)
 A data service can expose large object binary data. This binary data might represent video and audio streams, images, document files, or other types of binary media. When an entity in the data model includes one or more binary properties, the data service returns this binary data encoded as base-64 inside the entry in the response feed. Because loading and serializing large binary data in this manner can affect performance, the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines a mechanism for retrieving binary data independent of the entity to which it belongs. This is accomplished by separating the binary data from the entity into one or more data streams.  
@@ -88,11 +93,11 @@ A data service can expose large object binary data. This binary data might repre
   
   
 > [!NOTE]
->  You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=fullName> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+>  You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
   
  For more information, see [Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   
- By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) in the `<system.web />` configuration section, as shown in the following example:  
+ By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) in the `<system.web />` configuration section, as shown in the following example:  
   
   
   
@@ -122,7 +127,7 @@ A data service can expose large object binary data. This binary data might repre
   
 -   When you implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>, <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>, or <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> methods, you must use the eTag and Content-Type values that are supplied as method parameters. Do not set eTag or Content-Type headers in your <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider implementation.  
   
--   By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](http://msdn.microsoft.com/en-us/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
+-   By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](http://msdn.microsoft.com/library/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
   
 <a name="versioning"></a>   
 ## Versioning Requirements  
@@ -133,6 +138,6 @@ A data service can expose large object binary data. This binary data might repre
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See Also  
- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)   
- [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)   
+ [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)  
+ [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)  
  [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)

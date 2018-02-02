@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d49787f7-414e-4c71-aa33-80a5895536b1
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Security in LINQ to SQL
 Security risks are always present when you connect to a database. Although LINQ to SQL may include some new ways to work with data in SQL Server, it does not provide any additional security mechanisms.  
@@ -35,10 +37,10 @@ Security risks are always present when you connect to a database. Although LINQ 
   
 -   Secure connection strings with passwords and minimize passing around connection strings.  
   
--   Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=fullName> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=fullName> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
+-   Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=nameWithType> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
   
 -   Minimize lifetimes and touch points for all connection strings.  
   
 ## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)   
+ [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
  [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

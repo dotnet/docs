@@ -127,12 +127,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers%2A?displayProperty=fullName> property returns the same collection of <xref:System.DirectoryServices.ActiveDirectory.DirectoryServer> objects as the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers?displayProperty=fullName> method if the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition> object has been committed to the underlying directory services store.  
+ The <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers%2A?displayProperty=nameWithType> property returns the same collection of <xref:System.DirectoryServices.ActiveDirectory.DirectoryServer> objects as the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers?displayProperty=nameWithType> method if the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition> object has been committed to the underlying directory services store.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -177,6 +179,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDirectoryServers">
@@ -206,6 +209,7 @@
           <paramref name="siteName" /> is an empty string.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDiscoverableDirectoryServers">
@@ -229,6 +233,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.NotSupportedException">The application partition is an AD LDS application partition.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDiscoverableDirectoryServers">
@@ -259,6 +264,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.NotSupportedException">The application partition is an AD LDS application partition.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -305,6 +311,7 @@
 -   The <paramref name="distinguishedName" /> has a zero length  
   
 -   The <paramref name="distinguishedName" /> parameter is in an invalid format.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -327,6 +334,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -352,6 +360,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -381,6 +390,7 @@
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -412,6 +422,7 @@
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="GetApplicationPartition">
@@ -441,6 +452,7 @@
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="context" /> is not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -487,6 +499,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" />
       </Docs>
     </Member>
     <Member MemberName="SecurityReferenceDomain">
@@ -513,5 +526,45 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindDirectoryServer">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a directory server for this application partition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAllDiscoverableDirectoryServers">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the directory servers that have registered either a site-specific DNS record for the current site or a non-site-specific DNS record for the application partition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAllDirectoryServers">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the directory servers for this application partition.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

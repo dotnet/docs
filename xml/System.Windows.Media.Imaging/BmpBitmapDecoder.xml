@@ -101,5 +101,14 @@
         <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapUri" /> is not a [!INCLUDE[TLA#tla_bmp](~/includes/tlasharptla-bmp-md.md)] encoded image.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.BmpBitmapDecoder" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

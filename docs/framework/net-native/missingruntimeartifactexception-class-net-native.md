@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MissingRuntimeArtifactException Class (.NET Native)
 **.NET for Windows apps for Windows 10, [!INCLUDE[net_native](../../../includes/net-native-md.md)] only**  
@@ -43,14 +45,14 @@ manager: "wpickett"
   
 |Property|Description|  
 |--------------|-----------------|  
-|`public IDictionary Data { get; }`|Gets a collection of key/value pairs that provide additional user-defined information about the exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public string HelpLink { get; set; }`|Gets or sets a link to the help file associated with this exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public int HResult { get; protected set; }`|Gets or sets the `HRESULT`, a coded numeric value that is assigned to a specific exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public Exception InnerException { get; }`|Gets the exception that caused the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public string Message { get; }`|Gets a message that describes the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public string Source { get; set; }`|Gets or sets the name of the application or object that caused the error. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public string StackTrace { get; }`|Gets a string representation of the immediate frames on the call stack. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public MethodBase TargetSite { get; }`|Gets the method that threw the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public IDictionary Data { get; }`|Gets a collection of key/value pairs that provide additional user-defined information about the exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public string HelpLink { get; set; }`|Gets or sets a link to the help file associated with this exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public int HResult { get; protected set; }`|Gets or sets the `HRESULT`, a coded numeric value that is assigned to a specific exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public Exception InnerException { get; }`|Gets the exception that caused the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public string Message { get; }`|Gets a message that describes the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public string Source { get; set; }`|Gets or sets the name of the application or object that caused the error. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public string StackTrace { get; }`|Gets a string representation of the immediate frames on the call stack. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public MethodBase TargetSite { get; }`|Gets the method that threw the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## Methods  
   
@@ -58,18 +60,18 @@ manager: "wpickett"
 |------------|-----------------|  
 |`public bool Equals(Object obj)`|Determines whether the specified object is equal to the current object.  (Inherited from <xref:System.Object>.)|  
 |`protected void Finalize()`|Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from <xref:System.Object>.)|  
-|`public Exception GetBaseException()`|Returns the exception that is the root cause of one or more subsequent exceptions. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public Exception GetBaseException()`|Returns the exception that is the root cause of one or more subsequent exceptions. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
 |`public int GetHashCode()`|Returns a hash code for a `MissingRuntimeArtifactException` instance.   (Inherited from <xref:System.Object>.)|  
-|`public void GetObjectData(SerializationInfo info, StreamingContext context)`|Sets a <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public Type GetType()`|Gets the runtime type of the current instance. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public void GetObjectData(SerializationInfo info, StreamingContext context)`|Sets a <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public Type GetType()`|Gets the runtime type of the current instance. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
 |`protected Object MemberwiseClone()`|Creates a shallow copy of the current object. (Inherited from <xref:System.Object>.)|  
-|`public string ToString()`|Returns the string representation of the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public string ToString()`|Returns the string representation of the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## Events  
   
 |Event|Description|  
 |-----------|-----------------|  
-|`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|Occurs when an exception is serialized to create an exception state object that contains serialized data about the exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|Occurs when an exception is serialized to create an exception state object that contains serialized data about the exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## Usage Details  
  The `MissingRuntimeArtifactException` exception is thrown when an attempt is made to instantiate a type or invoke a type member and, although the type or member's metadata is present, its implementation has been removed.  
@@ -85,5 +87,5 @@ manager: "wpickett"
  The `MissingRuntimeArtifactException` class contains no unique members; all of its members are inherited from its base class, <xref:System.MemberAccessException>.  
   
 ## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)   
+ [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
  [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

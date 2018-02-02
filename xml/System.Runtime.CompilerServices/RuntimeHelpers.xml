@@ -80,7 +80,7 @@
  If the stack space is sufficient, the exception is not thrown, and most .NET Framework types and members can still be called.  
   
 > [!NOTE]
->  This method is not part of the constrained execution region (CER) support, and should not be confused with the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ProbeForSufficientStack%2A?displayProperty=fullName> method.  
+>  This method is not part of the constrained execution region (CER) support, and should not be confused with the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ProbeForSufficientStack%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -134,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteCodeWithGuaranteedCleanup">
@@ -214,16 +215,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> method always calls the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method non-virtually, even if the object's type has overridden the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method. Therefore, using <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> might differ from calling `GetHashCode` directly on the object with the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ The <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> method always calls the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method non-virtually, even if the object's type has overridden the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method. Therefore, using <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> might differ from calling `GetHashCode` directly on the object with the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
 > [!WARNING]
->  Although the <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> method returns identical hash codes for identical object references, you should not use this method to test for object identity, because this hash code does not uniquely identify an object reference. To test for object identify (that is, to test that two objects reference the same object in memory), call the <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> method. Nor should you use <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A> to test whether two strings represent equal object references, because the string is interned. To test for string interning, call the <xref:System.String.IsInterned%2A?displayProperty=fullName> method.  
+>  Although the <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> method returns identical hash codes for identical object references, you should not use this method to test for object identity, because this hash code does not uniquely identify an object reference. To test for object identify (that is, to test that two objects reference the same object in memory), call the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method. Nor should you use <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A> to test whether two strings represent equal object references, because the string is interned. To test for string interning, call the <xref:System.String.IsInterned%2A?displayProperty=nameWithType> method.  
   
- The <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> methods differ as follows:  
+ The <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> methods differ as follows:  
   
--   <xref:System.Object.GetHashCode%2A?displayProperty=fullName> returns a hash code that is based on the object's definition of equality. For example, two strings with identical contents will return the same value for <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+-   <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> returns a hash code that is based on the object's definition of equality. For example, two strings with identical contents will return the same value for <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
--   <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> returns a hash code that indicates object identity. That is, two string variables whose contents are identical and that represent a string that is interned (see the [String Interning](#interning) section) or that represent a single string in memory return identical hash codes.  
+-   <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> returns a hash code that indicates object identity. That is, two string variables whose contents are identical and that represent a string that is interned (see the [String Interning](#interning) section) or that represent a single string in memory return identical hash codes.  
   
 > [!IMPORTANT]
 >  Note that <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A> always returns identical hash codes for equal object references. However, the reverse is not true: equal hash codes do not indicate equal object references. A particular hash code value is not unique to a particular object reference; different object references can generate identical hash codes.  
@@ -232,30 +233,31 @@
   
 <a name="interning"></a>   
 ## String Interning  
- The common language runtime (CLR) maintains an internal pool of strings and stores literals in the pool. If two strings (for example, `str1` and `str2`) are formed from an identical string literal, the CLR will set `str1` and `str2` to point to the same location on the managed heap to conserve memory. Calling <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> on these two string objects will produce the same hash code, contrary to the second bulleted item in the previous section.  
+ The common language runtime (CLR) maintains an internal pool of strings and stores literals in the pool. If two strings (for example, `str1` and `str2`) are formed from an identical string literal, the CLR will set `str1` and `str2` to point to the same location on the managed heap to conserve memory. Calling <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> on these two string objects will produce the same hash code, contrary to the second bulleted item in the previous section.  
   
- The CLR adds only literals to the pool. Results of string operations such as concatenation are not added to the pool, unless the compiler resolves the string concatenation as a single string literal. Therefore, if `str2` was created as the result of a concatenation operation, and `str2` is identical to `str1`, using <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> on these two string objects will not produce the same hash code.  
+ The CLR adds only literals to the pool. Results of string operations such as concatenation are not added to the pool, unless the compiler resolves the string concatenation as a single string literal. Therefore, if `str2` was created as the result of a concatenation operation, and `str2` is identical to `str1`, using <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> on these two string objects will not produce the same hash code.  
   
- If you want to add a concatenated string to the pool explicitly, use the <xref:System.String.Intern%2A?displayProperty=fullName> method.  
+ If you want to add a concatenated string to the pool explicitly, use the <xref:System.String.Intern%2A?displayProperty=nameWithType> method.  
   
- You can also use the <xref:System.String.IsInterned%2A?displayProperty=fullName> method to check whether a string has an interned reference.  
+ You can also use the <xref:System.String.IsInterned%2A?displayProperty=nameWithType> method to check whether a string has an interned reference.  
   
    
   
 ## Examples  
- The following example demonstrates the difference between the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> methods. The output from the example illustrates the following:  
+ The following example demonstrates the difference between the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> methods. The output from the example illustrates the following:  
   
 -   Both sets of hash codes for the first set of strings passed to the `ShowHashCodes` method are different, because the strings are completely different.  
   
--   <xref:System.Object.GetHashCode%2A?displayProperty=fullName> generates the same hash code for the second set of strings passed to the `ShowHashCodes` method, because the strings are equal. However, the <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName> method does not. The first string is defined by using a string literal and so is interned. Although the value of the second string is the same, it is not interned, because it is returned by a call to the <xref:System.String.Format%2A?displayProperty=fullName> method.  
+-   <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> generates the same hash code for the second set of strings passed to the `ShowHashCodes` method, because the strings are equal. However, the <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType> method does not. The first string is defined by using a string literal and so is interned. Although the value of the second string is the same, it is not interned, because it is returned by a call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method.  
   
--   In the case of the third string, the hash codes produced by <xref:System.Object.GetHashCode%2A?displayProperty=fullName> for both strings are identical, as are the hash codes produced by <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName>. This is because the compiler has treated the value assigned to both strings as a single string literal, and so the string variables refer to the same interned string.  
+-   In the case of the third string, the hash codes produced by <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> for both strings are identical, as are the hash codes produced by <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType>. This is because the compiler has treated the value assigned to both strings as a single string literal, and so the string variables refer to the same interned string.  
   
  [!code-csharp[System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.runtimehelpers.gethashcode/cs/gethashcodeex1.cs#1)]
  [!code-vb[System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.runtimehelpers.gethashcode/vb/gethashcodeex1.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectValue">
@@ -533,7 +535,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Compilers should not call this method directly. Instead, define a CER by calling the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=fullName> method.  
+ Compilers should not call this method directly. Instead, define a CER by calling the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -751,7 +753,7 @@
   
  This method is also used by compilers.  
   
- Instead of using the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ProbeForSufficientStack%2A> method, you should use a standard CER. That is, if you are planning to use a moderate amount of stack space, call the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=fullName> method immediately before your `try`/`finally` or `try`/`catch` block. If you are calling a recursive method or plan to use a lot of stack space, you must use the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup%2A?displayProperty=fullName> method.  
+ Instead of using the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ProbeForSufficientStack%2A> method, you should use a standard CER. That is, if you are planning to use a moderate amount of stack space, call the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=nameWithType> method immediately before your `try`/`finally` or `try`/`catch` block. If you are calling a recursive method or plan to use a lot of stack space, you must use the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -857,5 +859,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PrepareMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares a method for inclusion in a constrained execution region (CER).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

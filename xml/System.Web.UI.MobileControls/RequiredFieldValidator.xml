@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class behaves identically to the ASP.NET <xref:System.Web.UI.WebControls.RequiredFieldValidator?displayProperty=fullName> control.  
+ This class behaves identically to the ASP.NET <xref:System.Web.UI.WebControls.RequiredFieldValidator?displayProperty=nameWithType> control.  
   
  By default, <xref:System.Web.UI.MobileControls.Command> controls on a form raise validator controls on the form to perform validation when the form is submitted to the server. To disable automatic validation, set the <xref:System.Web.UI.MobileControls.Command.CausesValidation%2A> property on the <xref:System.Web.UI.MobileControls.Command> to `false`.  
   
@@ -39,11 +39,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileRegExprValidatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileRegExprValidatorSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileRegExprValidatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileRegExprValidatorSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileRegExprValidatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileRegExprValidatorSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileRegExprValidatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileRegExprValidatorSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.RangeValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.CompareValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +84,7 @@
         <summary>The Web validator gets and sets the common properties of Web based validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>An aggregated Web validator.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.BaseValidator.CreateWebValidator" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
@@ -98,6 +105,7 @@
         <returns>
           <see langword="true" /> if the validator is valid, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.BaseValidator.EvaluateIsValid" />
       </Docs>
     </Member>
     <Member MemberName="InitialValue">
@@ -131,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

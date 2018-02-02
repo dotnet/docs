@@ -23,7 +23,7 @@
 ## Remarks  
  This attribute is used to specify information for methods that can be called from client script. The attribute lets you specify which HTTP verb (GET or POST) can be used to invoke a method. It also lets you specify whether the response is formatted by using either JavaScript Object Notation (JSON) or XML.  
   
- The <xref:System.Web.Script.Services.ScriptMethodAttribute> attribute is optional. (However, methods that can be called from client script must have the <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> attribute applied.). If a method is not marked with <xref:System.Web.Script.Services.ScriptMethodAttribute>, the method will be called by using the HTTP POST command and the response will be serialized as JSON. You cannot override this setting from script.  
+ The <xref:System.Web.Script.Services.ScriptMethodAttribute> attribute is optional. (However, methods that can be called from client script must have the <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> attribute applied.). If a method is not marked with <xref:System.Web.Script.Services.ScriptMethodAttribute>, the method will be called by using the HTTP POST command and the response will be serialized as JSON. You cannot override this setting from script.  
   
  <xref:System.Web.Script.Services.ScriptMethodAttribute> takes only named parameters. The following are the properties of the <xref:System.Web.Script.Services.ScriptMethodAttribute> class that can be used as named parameters:  
   
@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.WebMethodAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Script.Serialization.ScriptIgnoreAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlIgnoreAttribute" />
       </Docs>
     </Member>
     <Member MemberName="UseHttpGet">

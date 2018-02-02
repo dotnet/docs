@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.ToolBarButton.Style%2A?displayProperty=fullName>.  
+ This enumeration is used by members such as <xref:System.Windows.Forms.ToolBarButton.Style%2A?displayProperty=nameWithType>.  
   
  The toolbar button appearance is determined by the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property of the toolbar. Setting the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property to `Flat` will give the toolbar and its buttons a flat appearance. As the mouse pointer moves over the buttons, they take on a three-dimensional appearance. Also, when the toolbar has a flat appearance, button separators appear as a line rather than as a space between the buttons.  
   
@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolBarAppearance" />
+    <altmember cref="T:System.Windows.Forms.ToolBar" />
   </Docs>
   <Members>
     <Member MemberName="DropDownButton">

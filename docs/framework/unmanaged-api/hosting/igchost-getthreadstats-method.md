@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetThreadStats"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCHost::GetThreadStats method [.NET Framework hosting]"
   - "GetThreadStats method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost::GetThreadStats Method
 Gets the per-thread statistics for garbage collection.  

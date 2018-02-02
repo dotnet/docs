@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=nameWithType> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
  ASP.NET raises events of type <xref:System.Web.Management.WebViewStateFailureAuditEvent> when a view-state failure occurs. This failure indicates either an attempt to tamper with view state or its reuse from another machine with a different key. The related audit event code is <xref:System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure>.  
   
@@ -75,6 +75,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebEventCodes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -166,5 +167,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebViewStateFailureAuditEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

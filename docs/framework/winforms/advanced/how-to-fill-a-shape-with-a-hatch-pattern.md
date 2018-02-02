@@ -10,16 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "patterns, adding to shapes"
-  - "shapes, filling with patterns"
-  - "brushes, using hatch brushes"
+  - "patterns [Windows Forms], adding to shapes"
+  - "shapes [Windows Forms], filling with patterns"
+  - "brushes [Windows Forms], using hatch brushes"
 ms.assetid: 9c8300ff-187b-404f-af1f-ebd499f5b16f
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Fill a Shape with a Hatch Pattern
 A hatch pattern is made from two colors: one for the background and one for the lines that form the pattern over the background. To fill a closed shape with a hatch pattern, use a <xref:System.Drawing.Drawing2D.HatchBrush> object. The following example demonstrates how to fill an ellipse with a hatch pattern:  

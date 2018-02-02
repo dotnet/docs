@@ -1,15 +1,14 @@
 ---
 title: dotnet publish command - .NET Core CLI
-description: The dotnet publish command publishes your .NET Core project into a directory. 
-keywords: dotnet-publish, CLI, CLI command, .NET Core
-author: blackdwarf
+description: The dotnet publish command publishes your .NET Core project into a directory.
+author: mairaw
 ms.author: mairaw
-ms.date: 08/12/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet publish
 
@@ -24,7 +23,7 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [no-dependencies] [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
+dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [--no-dependencies] [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
 ```
 
@@ -89,10 +88,11 @@ Doesn't perform an implicit restore when running the command.
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
+If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
 
 `--self-contained`
 
-Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. If a runtime identifier is specified, its default value is `true`. For more infomation about the different deployment types, see [.NET Core application deployment](../deploying/index.md).
+Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. If a runtime identifier is specified, its default value is `true`. For more information about the different deployment types, see [.NET Core application deployment](../deploying/index.md).
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
@@ -127,6 +127,7 @@ Specifies one or several [target manifests](../deploying/runtime-store.md) to us
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
+If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

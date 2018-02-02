@@ -13,18 +13,20 @@ helpviewer_keywords:
   - "input architecture [WPF interoperability]"
   - "messages [WPF]"
   - "Windows Forms [WPF], interoperability with"
-  - "Windows Forms, WPF interoperation"
+  - "Windows Forms [WPF], WPF interoperation"
   - "interoperability [WPF], Windows Forms"
-  - "modeless forms"
-  - "ElementHost keyboard and messages"
+  - "modeless forms [WPF]"
+  - "ElementHost keyboard and messages [WPF]"
   - "keyboard interoperation [WPF]"
-  - "WindowsFormsHost keyboard and messages"
+  - "WindowsFormsHost keyboard and messages [WPF]"
   - "modeless dialog boxes [WPF]"
 ms.assetid: 0eb6f137-f088-4c5e-9e37-f96afd28f235
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Windows Forms and WPF Interoperability Input Architecture
 Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] requires that both technologies have the appropriate keyboard input processing. This topic describes how these technologies implement keyboard and message processing to enable smooth interoperation in hybrid applications.  
@@ -58,25 +60,25 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
 ### Acquiring Messages from the WPF Message Loop  
  The <xref:System.Windows.Interop.ComponentDispatcher> class implements the message loop manager for [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. The <xref:System.Windows.Interop.ComponentDispatcher> class provides hooks to enable external clients to filter messages before [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] processes them.  
   
- The interoperation implementation handles the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=fullName> event, which enables [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls to process messages before [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.  
+ The interoperation implementation handles the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=nameWithType> event, which enables [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls to process messages before [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.  
   
 ### Surrogate Windows Forms Message Loop  
- By default, the <xref:System.Windows.Forms.Application?displayProperty=fullName> class contains the primary message loop for [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications. During interoperation, the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] message loop does not process messages. Therefore, this logic must be reproduced. The handler for the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=fullName> event performs the following steps:  
+ By default, the <xref:System.Windows.Forms.Application?displayProperty=nameWithType> class contains the primary message loop for [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications. During interoperation, the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] message loop does not process messages. Therefore, this logic must be reproduced. The handler for the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=nameWithType> event performs the following steps:  
   
 1.  Filters the message using the <xref:System.Windows.Forms.IMessageFilter> interface.  
   
-2.  Calls the <xref:System.Windows.Forms.Control.PreProcessMessage%2A?displayProperty=fullName> method.  
+2.  Calls the <xref:System.Windows.Forms.Control.PreProcessMessage%2A?displayProperty=nameWithType> method.  
   
 3.  Translates and dispatches the message, if it is required.  
   
 4.  Passes the message to the hosting control, if no other controls process the message.  
   
 ### IKeyboardInputSink Implementation  
- The surrogate message loop handles keyboard management. Therefore, the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A?displayProperty=fullName> method is the only <xref:System.Windows.Interop.IKeyboardInputSink> member that requires an implementation in the <xref:System.Windows.Forms.Integration.WindowsFormsHost> class.  
+ The surrogate message loop handles keyboard management. Therefore, the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A?displayProperty=nameWithType> method is the only <xref:System.Windows.Interop.IKeyboardInputSink> member that requires an implementation in the <xref:System.Windows.Forms.Integration.WindowsFormsHost> class.  
   
  By default, the <xref:System.Windows.Interop.HwndHost> class returns `false` for its <xref:System.Windows.Interop.HwndHost.System%23Windows%23Interop%23IKeyboardInputSink%23TabInto%2A> implementation. This prevents tabbing from a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control to a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.  
   
- The <xref:System.Windows.Forms.Integration.WindowsFormsHost> implementation of the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A?displayProperty=fullName> method performs the following steps:  
+ The <xref:System.Windows.Forms.Integration.WindowsFormsHost> implementation of the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A?displayProperty=nameWithType> method performs the following steps:  
   
 1.  Finds the first or last [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that is contained by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control and that can receive focus. The control choice depends on traversal information.  
   
@@ -87,7 +89,7 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
 ### WindowsFormsHost Registration  
  When the window handle to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control is created, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control calls an internal static method that registers its presence for the message loop.  
   
- During registration, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control examines the message loop. If the message loop has not been started, the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=fullName> event handler is created. The message loop is considered to be running when the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=fullName> event handler is attached.  
+ During registration, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control examines the message loop. If the message loop has not been started, the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=nameWithType> event handler is created. The message loop is considered to be running when the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=nameWithType> event handler is attached.  
   
  When the window handle is destroyed, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control removes itself from registration.  
   
@@ -115,7 +117,7 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
  The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] selection logic is mapped to the <xref:System.Windows.Interop.HwndSource.System%23Windows%23Interop%23IKeyboardInputSink%23TabInto%2A> and <xref:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops%2A> methods to implement TAB and arrow key navigation. Overriding the <xref:System.Windows.Forms.Integration.ElementHost.Select%2A> method accomplishes this mapping.  
   
 ### Command Keys and Dialog Box Keys  
- To give [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] the first opportunity to process command keys and dialog keys, [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] command preprocessing is connected to the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> method. Overriding the <xref:System.Windows.Forms.Control.ProcessCmdKey%2A?displayProperty=fullName> method connects the two technologies.  
+ To give [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] the first opportunity to process command keys and dialog keys, [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] command preprocessing is connected to the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> method. Overriding the <xref:System.Windows.Forms.Control.ProcessCmdKey%2A?displayProperty=nameWithType> method connects the two technologies.  
   
  With the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> method, the hosted elements can handle any key message, such as WM_KEYDOWN, WM_KEYUP, WM_SYSKEYDOWN, or WM_SYSKEYUP, including command keys, such as TAB, ENTER, ESC, and arrow keys. If a key message is not handled, it is sent up the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] ancestor hierarchy for handling.  
   
@@ -124,7 +126,7 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
   
  Because the default <xref:System.Windows.Interop.HwndSource> implementation of the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateChar%2A> method returns `false`, WM_CHAR messages are processed using the following logic:  
   
--   The <xref:System.Windows.Forms.Control.IsInputChar%2A?displayProperty=fullName> method is overridden to ensure that all WM_CHAR messages are forwarded to hosted elements.  
+-   The <xref:System.Windows.Forms.Control.IsInputChar%2A?displayProperty=nameWithType> method is overridden to ensure that all WM_CHAR messages are forwarded to hosted elements.  
   
 -   If the ALT key is pressed, the message is WM_SYSCHAR. [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] does not preprocess this message through the <xref:System.Windows.Forms.Control.IsInputChar%2A> method. Therefore, the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method is overridden to query the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Input.AccessKeyManager> for a registered accelerator. If a registered accelerator is found, <xref:System.Windows.Input.AccessKeyManager> processes it.  
   
@@ -135,10 +137,10 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
  Messages are sent only to <xref:System.Windows.Forms.Integration.ElementHost> controls in the active form.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A>   
- <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A>   
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)   
- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)   
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A>  
+ <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A>  
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  
+ [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)  
  [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)

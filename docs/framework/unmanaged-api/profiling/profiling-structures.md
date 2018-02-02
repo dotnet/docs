@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "profiling structures [.NET Framework]"
   - "unmanaged structures [.NET Framework], profiling"
@@ -20,6 +18,8 @@ caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling Structures
 This section describes the unmanaged structures that the profiling API uses.  

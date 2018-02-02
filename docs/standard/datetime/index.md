@@ -19,6 +19,9 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Dates, times, and time zones
@@ -97,4 +100,4 @@ This section of the documentation provides the information that you need to work
 
 ## Reference
 
-<xref:System.TimeZoneInfo?displayProperty=fullName>
+<xref:System.TimeZoneInfo?displayProperty=nameWithType>

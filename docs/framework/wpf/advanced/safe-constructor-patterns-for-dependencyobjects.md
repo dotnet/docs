@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "constructor patterns for dependency objects"
-  - "dependency objects, constructor patterns"
-  - "FXCop tool"
+  - "constructor patterns for dependency objects [WPF]"
+  - "dependency objects [WPF], constructor patterns"
+  - "FXCop tool [WPF]"
 ms.assetid: f704b81c-449a-47a4-ace1-9332e3cc6d60
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Safe Constructor Patterns for DependencyObjects
 Generally, class constructors should not call callbacks such as virtual methods or delegates, because constructors can be called as base initialization of constructors for a derived class. Entering the virtual might be done at an incomplete initialization state of any given object. However, the property system itself calls and exposes callbacks internally, as part of the dependency property system. As simple an operation as setting a dependency property value with <xref:System.Windows.DependencyObject.SetValue%2A> call potentially includes a callback somewhere in the determination. For this reason, you should be careful when setting dependency property values within the body of a constructor, which can become problematic if your type is used as a base class. There is a particular pattern for implementing <xref:System.Windows.DependencyObject> constructors that avoids specific problems with dependency property states and the inherent callbacks, which is documented here.  
@@ -121,6 +123,6 @@ public MyClass : SomeBaseClass {
  These same patterns apply if you are setting a property that does not have a wrapper for property setting convenience, and set values with <xref:System.Windows.DependencyObject.SetValue%2A>. Your calls to <xref:System.Windows.DependencyObject.SetValue%2A> that pass through constructor parameters should also call the class' default constructor for initialization.  
   
 ## See Also  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
  [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)

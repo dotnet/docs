@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "hosting WPF content in Windows Forms"
-  - "composite controls, hosting WPF in"
+  - "hosting WPF content in Windows Forms [WPF]"
+  - "composite controls [WPF], hosting WPF in"
 ms.assetid: 486369a9-606a-4a3b-b086-a06f2119c7b0
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms
 This walkthrough demonstrates how you can create a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control and host it in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and forms by using the <xref:System.Windows.Forms.Integration.ElementHost> control.  
@@ -49,7 +54,7 @@ This walkthrough demonstrates how you can create a [!INCLUDE[TLA2#tla_winclient]
   
 3.  Replace the generated code with the following code.  
   
-     This code defines a <xref:System.Windows.Controls.UserControl?displayProperty=fullName> that contains two child controls. The first child control is a <xref:System.Windows.Controls.Label?displayProperty=fullName> control; the second is a <xref:System.Windows.Controls.Viewport3D> control that displays a 3-D cone.  
+     This code defines a <xref:System.Windows.Controls.UserControl?displayProperty=nameWithType> that contains two child controls. The first child control is a <xref:System.Windows.Controls.Label?displayProperty=nameWithType> control; the second is a <xref:System.Windows.Controls.Viewport3D> control that displays a 3-D cone.  
   
      [!code-xaml[HostingWpfUserControlInWf#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
   
@@ -58,7 +63,7 @@ This walkthrough demonstrates how you can create a [!INCLUDE[TLA2#tla_winclient]
   
 #### To create the host project  
   
-1.  Add a Windows application project named `WpfUserControlHost` to the solution. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
+1.  Add a Windows application project named `WpfUserControlHost` to the solution. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
   
 2.  In Solution Explorer, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.  
   
@@ -95,9 +100,9 @@ This walkthrough demonstrates how you can create a [!INCLUDE[TLA2#tla_winclient]
 4.  Press F5 to build and run the application.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)   
- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)   
- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)   
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
+ [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)  
+ [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  
  [Hosting a WPF Composite Control in Windows Forms Sample](http://go.microsoft.com/fwlink/?LinkID=160001)

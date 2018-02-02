@@ -20,18 +20,18 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.State%2A> property of the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> class. For more information, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event.  
+ This enumeration is used by the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.State%2A> property of the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> class. For more information, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=nameWithType> event.  
   
    
   
 ## Examples  
- The following example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using owner drawing. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the normal node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+ The following example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using owner drawing. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the normal node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
   
  You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
   
- In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event draws unselected nodes by calling methods of the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> class. These methods provide the default appearance for <xref:System.Windows.Forms.TreeView> elements that do not need customization. The handler draws the node tags and the custom selection highlight manually.  
+ In the example, a handler for the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=nameWithType> event draws unselected nodes by calling methods of the <xref:System.Windows.Forms.DrawTreeNodeEventArgs> class. These methods provide the default appearance for <xref:System.Windows.Forms.TreeView> elements that do not need customization. The handler draws the node tags and the custom selection highlight manually.  
   
- For the complete example, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> reference topic.  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=nameWithType> reference topic.  
   
  [!code-cpp[TreeViewOwnerDraw#3](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#3)]
  [!code-csharp[TreeViewOwnerDraw#3](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#3)]
@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DrawTreeNodeEventArgs" />
+    <altmember cref="P:System.Windows.Forms.DrawTreeNodeEventArgs.State" />
+    <altmember cref="E:System.Windows.Forms.TreeView.DrawNode" />
   </Docs>
   <Members>
     <Member MemberName="Checked">

@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The events that use the <xref:System.Windows.DependencyPropertyChangedEventArgs> class for event data, and the <xref:System.Windows.DependencyPropertyChangedEventHandler> method implementations for handlers, generally follow the naming pattern `Is*Changed`, and are generally implemented as [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] events without <xref:System.Windows.RoutedEvent> backing (they are not routed events). Some class handling methods that "handle" otherwise unexposed events that report a state change through a property change, such as <xref:System.Windows.Controls.Primitives.ButtonBase.OnIsPressedChanged%2A?displayProperty=fullName>, also use the <xref:System.Windows.DependencyPropertyChangedEventArgs> class for event data.  
+ The events that use the <xref:System.Windows.DependencyPropertyChangedEventArgs> class for event data, and the <xref:System.Windows.DependencyPropertyChangedEventHandler> method implementations for handlers, generally follow the naming pattern `Is*Changed`, and are generally implemented as [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] events without <xref:System.Windows.RoutedEvent> backing (they are not routed events). Some class handling methods that "handle" otherwise unexposed events that report a state change through a property change, such as <xref:System.Windows.Controls.Primitives.ButtonBase.OnIsPressedChanged%2A?displayProperty=nameWithType>, also use the <xref:System.Windows.DependencyPropertyChangedEventArgs> class for event data.  
   
  The scenario for <xref:System.Windows.PropertyChangedCallback> is to use the arguments to report old and new values that come from the property system evaluation of the property. A callback that processes old and new values might choose special handling depending on these values, such as choosing to not respond to value changes that are deemed insignificant.  
   
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyPropertyChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -295,5 +296,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether the provided object is equivalent to the current <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

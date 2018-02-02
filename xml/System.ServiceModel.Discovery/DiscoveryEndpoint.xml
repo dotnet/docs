@@ -31,7 +31,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> and <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryMode.Managed>.  
+ By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> and <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode%2A> is set to <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode.Managed>.  
   
  ]]></format>
         </remarks>
@@ -121,13 +121,13 @@
         <ReturnType>System.ServiceModel.Discovery.ServiceDiscoveryMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="P:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode" /> for the endpoint.</summary>
-        <value>One of the <see cref="P:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode" /> enumeration values.</value>
+        <summary>Gets the discovery mode for the endpoint.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Discovery.ServiceDiscoveryMode" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Discovery can be accomplished in two different modes: Ad-Hoc or Managed. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
+ Discovery can be accomplished in two different modes: Ad-Hoc or Managed. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
   
  ]]></format>
         </remarks>
@@ -176,5 +176,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

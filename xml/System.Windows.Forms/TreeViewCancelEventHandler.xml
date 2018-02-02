@@ -29,9 +29,9 @@
    
   
 ## Examples  
- The following example demonstrates how to change the collapse state of a <xref:System.Windows.Forms.TreeView> so that all the checked nodes are visible. First, all the nodes are collapsed, and a handler is added to the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event. Next, all the nodes are expanded. The <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event handler determines whether a given node has child nodes that are checked. If a node does not have checked children, the expansion is canceled for that node. In order to allow normal node expansion when the plus sign next to a node is clicked, the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event handler is then removed.  
+ The following example demonstrates how to change the collapse state of a <xref:System.Windows.Forms.TreeView> so that all the checked nodes are visible. First, all the nodes are collapsed, and a handler is added to the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=nameWithType> event. Next, all the nodes are expanded. The <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=nameWithType> event handler determines whether a given node has child nodes that are checked. If a node does not have checked children, the expansion is canceled for that node. In order to allow normal node expansion when the plus sign next to a node is clicked, the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=nameWithType> event handler is then removed.  
   
- This behavior can also be implemented by handling the <xref:System.Windows.Forms.TreeView.BeforeCollapse?displayProperty=fullName> event, as illustrated in the example for that topic.  
+ This behavior can also be implemented by handling the <xref:System.Windows.Forms.TreeView.BeforeCollapse?displayProperty=nameWithType> event, as illustrated in the example for that topic.  
   
  [!code-cpp[TreeViewShowCheckedNodes1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/CPP/treeviewshowcheckednodes1.cpp#1)]
  [!code-csharp[TreeViewShowCheckedNodes1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/CS/treeviewshowcheckednodes1.cs#1)]
@@ -39,5 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeViewCancelEventArgs" />
+    <altmember cref="T:System.Windows.Forms.TreeView" />
   </Docs>
 </Type>

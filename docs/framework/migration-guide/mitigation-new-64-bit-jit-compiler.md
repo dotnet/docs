@@ -19,6 +19,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Mitigation: New 64-bit JIT Compiler
 Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT compiler for just-in-time compilation. This change does not affect compilation with the  32-bit JIT compiler.  
@@ -37,7 +39,7 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
 -   Under certain conditions, the comparison of <xref:System.UInt16> values with their high bit set is incorrect if optimization is enabled.  
   
--   Under certain conditions, particularly when initializing array values, memory initialization by the <xref:System.Reflection.Emit.OpCodes.Initblk?displayProperty=fullName> IL instruction may initialize memory with an incorrect value. This can result either in an unhandled exception or incorrect output.  
+-   Under certain conditions, particularly when initializing array values, memory initialization by the <xref:System.Reflection.Emit.OpCodes.Initblk?displayProperty=nameWithType> IL instruction may initialize memory with an incorrect value. This can result either in an unhandled exception or incorrect output.  
   
 -   Under certain rare conditions, a conditional bit test can return the incorrect <xref:System.Boolean> value or throw an exception if compiler optimizations are enabled.  
   
@@ -75,5 +77,5 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
  You can also let us know about the problem by reporting a bug on [Microsoft Connect](https://connect.microsoft.com/VisualStudio).  
   
 ## See Also  
- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)   
+ [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)  
  [\<useLegacyJit> Element](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md)

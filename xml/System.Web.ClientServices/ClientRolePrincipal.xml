@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you validate a user in client application services, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> or the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to an instance of this class. The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to a new instance of the <xref:System.Web.ClientServices.ClientFormsIdentity> class. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to the <xref:System.Security.Principal.WindowsIdentity> object returned by the `static` <xref:System.Security.Principal.WindowsIdentity.GetCurrent?displayProperty=fullName> method.  
+ When you validate a user in client application services, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> or the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to an instance of this class. The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to a new instance of the <xref:System.Web.ClientServices.ClientFormsIdentity> class. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to the <xref:System.Security.Principal.WindowsIdentity> object returned by the `static` <xref:System.Security.Principal.WindowsIdentity.GetCurrent?displayProperty=nameWithType> method.  
   
  You will not typically access this class directly. Normally, you will call the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A> property. However, you can cast the <xref:System.Threading.Thread.CurrentPrincipal%2A> property value to a <xref:System.Web.ClientServices.ClientRolePrincipal> reference to call the <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A> method explicitly, as demonstrated in the Example section.  
   
@@ -34,6 +34,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
+    <altmember cref="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="P:System.Web.ClientServices.ClientRolePrincipal.Identity" />
+    <altmember cref="T:System.Web.ClientServices.ClientFormsIdentity" />
+    <altmember cref="T:System.Security.Principal.WindowsIdentity" />
+    <altmember cref="T:System.Security.Principal.IPrincipal" />
+    <altmember cref="M:System.Security.Principal.IPrincipal.IsInRole(System.String)" />
+    <altmember cref="M:System.Web.ClientServices.ClientRolePrincipal.IsInRole(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,10 +66,16 @@
 ## Remarks  
  The <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property is initialized with the value of the `identity` parameter.  
   
- When you validate a user in client application services, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> or the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to an instance of this class. The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to a new instance of the <xref:System.Web.ClientServices.ClientFormsIdentity> class. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to the <xref:System.Security.Principal.WindowsIdentity> object returned by the `static` <xref:System.Security.Principal.WindowsIdentity.GetCurrent?displayProperty=fullName> method.  
+ When you validate a user in client application services, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> or the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to an instance of this class. The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to a new instance of the <xref:System.Web.ClientServices.ClientFormsIdentity> class. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to the <xref:System.Security.Principal.WindowsIdentity> object returned by the `static` <xref:System.Security.Principal.WindowsIdentity.GetCurrent?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" />
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="P:System.Web.ClientServices.ClientRolePrincipal.Identity" />
+        <altmember cref="T:System.Web.ClientServices.ClientFormsIdentity" />
+        <altmember cref="T:System.Security.Principal.WindowsIdentity" />
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -82,10 +97,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you validate a user in client application services, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> or the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to an instance of this class. The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to a new instance of the <xref:System.Web.ClientServices.ClientFormsIdentity> class. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to the <xref:System.Security.Principal.WindowsIdentity> object returned by the `static` <xref:System.Security.Principal.WindowsIdentity.GetCurrent?displayProperty=fullName> method.  
+ When you validate a user in client application services, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> or the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to an instance of this class. The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to a new instance of the <xref:System.Web.ClientServices.ClientFormsIdentity> class. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> initializes the <xref:System.Web.ClientServices.ClientRolePrincipal.Identity%2A> property to the <xref:System.Security.Principal.WindowsIdentity> object returned by the `static` <xref:System.Security.Principal.WindowsIdentity.GetCurrent?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" />
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="P:System.Web.ClientServices.ClientRolePrincipal.Identity" />
+        <altmember cref="T:System.Web.ClientServices.ClientFormsIdentity" />
+        <altmember cref="T:System.Security.Principal.WindowsIdentity" />
       </Docs>
     </Member>
     <Member MemberName="IsInRole">
@@ -112,9 +133,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, you will call the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. However, you can cast the <xref:System.Threading.Thread.CurrentPrincipal%2A> property value to a <xref:System.Web.ClientServices.ClientRolePrincipal> reference to call this method explicitly, as demonstrated in the Example section.  
+ Normally, you will call the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. However, you can cast the <xref:System.Threading.Thread.CurrentPrincipal%2A> property value to a <xref:System.Web.ClientServices.ClientRolePrincipal> reference to call this method explicitly, as demonstrated in the Example section.  
   
- The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A> method will always return `false` if the user login has expired. This will not occur if your application calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method one time shortly after authentication. If your application must retrieve user roles at other times, you might want to add code to revalidate users whose login has expired. If all valid users are assigned to roles, you can determine whether the login has expired by calling the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A?displayProperty=fullName> method. If no roles are returned, the login has expired. For an example of this functionality, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method. This functionality is only necessary if you have selected **Require users to log on again whenever the server cookie expires** in your application configuration. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+ The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A> method will always return `false` if the user login has expired. This will not occur if your application calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method one time shortly after authentication. If your application must retrieve user roles at other times, you might want to add code to revalidate users whose login has expired. If all valid users are assigned to roles, you can determine whether the login has expired by calling the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A?displayProperty=nameWithType> method. If no roles are returned, the login has expired. For an example of this functionality, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method. This functionality is only necessary if you have selected **Require users to log on again whenever the server cookie expires** in your application configuration. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
    
   
@@ -126,6 +147,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
+        <altmember cref="T:System.Security.Principal.IPrincipal" />
+        <altmember cref="M:System.Security.Principal.IPrincipal.IsInRole(System.String)" />
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
       </Docs>
     </Member>
   </Members>

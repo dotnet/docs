@@ -1,13 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadEmbeddedResource
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadEmbeddedResource.#ctor
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

@@ -68,6 +68,19 @@
  ]]></format>
     </remarks>
     <threadsafe>Only the <see cref="M:System.Messaging.MessageQueue.GetAllMessages" /> method is thread safe.</threadsafe>
+    <altmember cref="T:System.Messaging.Message" />
+    <altmember cref="T:System.Messaging.DefaultPropertiesToSend" />
+    <altmember cref="T:System.Messaging.MessageQueueException" />
+    <altmember cref="M:System.Messaging.MessageQueue.#ctor" />
+    <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+    <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+    <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+    <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+    <altmember cref="P:System.Messaging.MessageQueue.Path" />
+    <altmember cref="P:System.Messaging.MessageQueue.Label" />
+    <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
+    <altmember cref="P:System.Messaging.MessageQueue.QueueName" />
+    <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,6 +121,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="P:System.Messaging.MessageQueue.QueueName" />
+        <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -185,6 +202,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.MessageQueue.Path" /> property is not valid, possibly because it has not been set.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="P:System.Messaging.MessageQueue.QueueName" />
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -269,6 +290,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.MessageQueue.Path" /> property is not valid, possibly because it has not been set.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="P:System.Messaging.MessageQueue.QueueName" />
+        <altmember cref="P:System.Messaging.MessageQueue.DenySharedReceive" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -429,6 +455,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.Message.UseDeadLetterQueue" />
+        <altmember cref="P:System.Messaging.Message.AcknowledgeType" />
       </Docs>
     </Member>
     <Member MemberName="BasePriority">
@@ -484,6 +512,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The base priority was set to an invalid value.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
       </Docs>
     </Member>
     <Member MemberName="BeginPeek">
@@ -544,6 +573,10 @@
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
       </Docs>
     </Member>
     <Member MemberName="BeginPeek">
@@ -610,6 +643,11 @@
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="BeginPeek">
@@ -684,6 +722,11 @@
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="BeginPeek">
@@ -749,6 +792,12 @@
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="BeginPeek">
@@ -812,6 +861,12 @@
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -886,6 +941,10 @@ myMessageQueue.BeginTransaction();
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -959,6 +1018,11 @@ myMessageQueue.BeginTransaction();
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid, possibly because it represents a negative number.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1038,6 +1102,11 @@ myMessageQueue.BeginTransaction();
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1115,6 +1184,12 @@ myMessageQueue.BeginTransaction();
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1187,6 +1262,13 @@ myMessageQueue.BeginTransaction();
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.Cursor" />
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -1242,6 +1324,8 @@ myMessageQueue.BeginTransaction();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueue.CanWrite" />
+        <altmember cref="P:System.Messaging.MessageQueue.ReadHandle" />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -1297,6 +1381,8 @@ myMessageQueue.BeginTransaction();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueue.WriteHandle" />
+        <altmember cref="P:System.Messaging.MessageQueue.CanRead" />
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -1354,6 +1440,9 @@ myMessageQueue.BeginTransaction();
         </remarks>
         <exception cref="T:System.ArgumentException">The queue category was set to an invalid value.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Id" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
       </Docs>
     </Member>
     <Member MemberName="ClearConnectionCache">
@@ -1520,6 +1609,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="M:System.Messaging.MessageQueue.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -1550,7 +1641,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
 ## Remarks  
  You can use this overload to create a transactional queue in Message Queuing. You can create a non-transactional queue, by setting the `transactional` parameter to `false` or by calling the other overload of <xref:System.Messaging.MessageQueue.Create%28System.String%29>.  
   
- To create a new instance of the <xref:System.Messaging.MessageQueue> class in your application and bind it to an existing queue, use the <xref:System.Messaging.MessageQueue.%23ctor%2A>constructor. To create a new queue in Message Queuing, call <xref:System.Messaging.MessageQueue.Create%28System.String%29>.  
+ To create a new instance of the <xref:System.Messaging.MessageQueue> class in your application and bind it to an existing queue, use the <xref:System.Messaging.MessageQueue.%23ctor%2A> constructor. To create a new queue in Message Queuing, call <xref:System.Messaging.MessageQueue.Create%28System.String%29>.  
   
  The syntax for the `path` parameter depends on the type of queue it references, as shown in the following table.  
   
@@ -1587,6 +1678,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="M:System.Messaging.MessageQueue.#ctor" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
       </Docs>
     </Member>
     <Member MemberName="CreateCursor">
@@ -1606,6 +1700,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <summary>Creates a new <see cref="T:System.Messaging.Cursor" /> for the current message queue.</summary>
         <returns>A new <see cref="T:System.Messaging.Cursor" /> for the current message queue. This cursor is used to maintain a specific location in the queue when reading the queue's messages.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Messaging.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="CreateTime">
@@ -1658,6 +1753,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.LastModifyTime" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPropertiesToSend">
@@ -1739,6 +1835,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The default properties could not be set for the queue, possibly because one of the properties is not valid.</exception>
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="T:System.Messaging.AcknowledgeTypes" />
+        <altmember cref="T:System.Messaging.EncryptionAlgorithm" />
+        <altmember cref="T:System.Messaging.HashAlgorithm" />
+        <altmember cref="F:System.Messaging.Message.InfiniteTimeout" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1805,6 +1906,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.Close" />
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
       </Docs>
     </Member>
     <Member MemberName="DenySharedReceive">
@@ -1860,6 +1963,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.#ctor" />
+        <altmember cref="P:System.Messaging.MessageQueue.EnableConnectionCache" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1891,6 +1996,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.Close" />
       </Docs>
     </Member>
     <Member MemberName="EnableConnectionCache">
@@ -1940,6 +2046,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.ClearConnectionCache" />
       </Docs>
     </Member>
     <Member MemberName="EncryptionRequired">
@@ -1994,6 +2101,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.Acknowledgment" />
+        <altmember cref="P:System.Messaging.Message.UseEncryption" />
       </Docs>
     </Member>
     <Member MemberName="EndPeek">
@@ -2050,6 +2159,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentNullException">The <paramref name="asyncResult" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The syntax of the <paramref name="asyncResult" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
       </Docs>
     </Member>
     <Member MemberName="EndReceive">
@@ -2106,6 +2217,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentNullException">The <paramref name="asyncResult" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The syntax of the <paramref name="asyncResult" /> parameter is not valid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -2182,6 +2295,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  The <see cref="M:System.Messaging.MessageQueue.Exists(System.String)" /> method is being called on a remote private queue</exception>
         <exception cref="T:System.InvalidOperationException">The application used format name syntax when verifying queue existence.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
       </Docs>
     </Member>
     <Member MemberName="FormatName">
@@ -2238,6 +2352,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Formatter">
@@ -2281,9 +2398,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  <xref:System.Messaging.BinaryMessageFormatter> and <xref:System.Messaging.ActiveXMessageFormatter> provide faster throughput than the <xref:System.Messaging.XmlMessageFormatter>. The <xref:System.Messaging.ActiveXMessageFormatter> allows interoperability with Visual Basic 6.0 Message Queuing applications.  
   
- When your application sends messages to the queue, the <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> applies only to those messages that use the default message properties, <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>. If you send a <xref:System.Messaging.Message> to the queue, Message Queuing uses the formatter defined in the <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property to serialize the body instead.  
+ When your application sends messages to the queue, the <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> applies only to those messages that use the default message properties, <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>. If you send a <xref:System.Messaging.Message> to the queue, Message Queuing uses the formatter defined in the <xref:System.Messaging.Message.Formatter%2A?displayProperty=nameWithType> property to serialize the body instead.  
   
- The <xref:System.Messaging.MessageQueue> class will always use a <xref:System.Messaging.Message> to receive or peek a message from the queue. The message is deserialized using the <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property.  
+ The <xref:System.Messaging.MessageQueue> class will always use a <xref:System.Messaging.Message> to receive or peek a message from the queue. The message is deserialized using the <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> property.  
   
  The following table shows whether this property is available in various Workgroup modes.  
   
@@ -2311,6 +2428,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.XmlMessageFormatter" />
+        <altmember cref="T:System.Messaging.ActiveXMessageFormatter" />
+        <altmember cref="T:System.Messaging.BinaryMessageFormatter" />
+        <altmember cref="P:System.Messaging.Message.Formatter" />
       </Docs>
     </Member>
     <Member MemberName="GetAllMessages">
@@ -2359,6 +2480,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -2405,6 +2528,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
       </Docs>
     </Member>
     <Member MemberName="GetMachineId">
@@ -2459,6 +2583,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
+        <altmember cref="P:System.Messaging.MessageQueue.UseJournalQueue" />
       </Docs>
     </Member>
     <Member MemberName="GetMessageEnumerator">
@@ -2506,7 +2632,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
    
   
 ## Examples  
- The following code example gets a dynamic list of messages in a queue and counts all messages with the <xref:System.Messaging.Message.Priority%2A> property set to <xref:System.Messaging.MessagePriority?displayProperty=fullName>.  
+ The following code example gets a dynamic list of messages in a queue and counts all messages with the <xref:System.Messaging.Message.Priority%2A> property set to <xref:System.Messaging.MessagePriority.Lowest?displayProperty=nameWithType>.  
   
  [!code-cpp[MessageQueue.GetMessageEnumerator#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.GetMessageEnumerator/CPP/mqgetmessageenumerator.cpp#1)]
  [!code-csharp[MessageQueue.GetMessageEnumerator#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.GetMessageEnumerator/CS/mqgetmessageenumerator.cs#1)]
@@ -2514,6 +2640,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.GetAllMessages" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetMessageEnumerator2">
@@ -2555,6 +2684,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.GetAllMessages" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetMessageQueueEnumerator">
@@ -2605,6 +2736,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
       </Docs>
     </Member>
     <Member MemberName="GetMessageQueueEnumerator">
@@ -2658,6 +2791,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
       </Docs>
     </Member>
     <Member MemberName="GetPrivateQueuesByMachine">
@@ -2707,6 +2842,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter is <see langword="null" /> or an empty string ("").</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetPublicQueues">
@@ -2754,6 +2892,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetPublicQueues">
@@ -2804,6 +2943,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueCriteria" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetPublicQueuesByCategory">
@@ -2854,6 +2995,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Category" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetPublicQueuesByLabel">
@@ -2905,6 +3049,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="label" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetPublicQueuesByMachine">
@@ -2956,6 +3103,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter has incorrect syntax.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetSecurityContext">
@@ -2975,6 +3125,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <summary>Retrieves the security context that MSMQ associates with the current user (thread identity) at the time of this call.</summary>
         <returns>A <see cref="T:System.Messaging.SecurityContext" /> object that contains the security context.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Messaging.Message.SecurityContext" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -3025,6 +3176,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Category" />
       </Docs>
     </Member>
     <Member MemberName="InfiniteQueueSize">
@@ -3056,6 +3208,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueue.MaximumJournalSize" />
+        <altmember cref="P:System.Messaging.MessageQueue.MaximumQueueSize" />
       </Docs>
     </Member>
     <Member MemberName="InfiniteTimeout">
@@ -3087,6 +3241,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -3140,6 +3298,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.ArgumentException">The label was set to an invalid value.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="LastModifyTime">
@@ -3192,6 +3354,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.CreateTime" />
+        <altmember cref="P:System.Messaging.MessageQueue.DenySharedReceive" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -3261,6 +3425,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.ArgumentException">The name of the computer is not valid, possibly because the syntax is incorrect.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.QueueName" />
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="MaximumJournalSize">
@@ -3314,6 +3483,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.ArgumentException">The maximum journal queue size was set to an invalid value.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.UseJournalQueue" />
+        <altmember cref="P:System.Messaging.MessageQueue.MaximumQueueSize" />
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteQueueSize" />
       </Docs>
     </Member>
     <Member MemberName="MaximumQueueSize">
@@ -3369,6 +3541,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.ArgumentException">The maximum queue size contains a negative value.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.MaximumJournalSize" />
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteQueueSize" />
       </Docs>
     </Member>
     <Member MemberName="MessageReadPropertyFilter">
@@ -3472,6 +3646,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The filter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="MulticastAddress">
@@ -3618,6 +3796,12 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The path is not valid, possibly because the syntax is not valid.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.QueueName" />
+        <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
+        <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="M:System.Messaging.MessageQueue.#ctor" />
+        <altmember cref="M:System.Messaging.MessageQueue.Close" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -3674,6 +3858,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -3730,6 +3916,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid, possibly <paramref name="timeout" /> is less than <see cref="F:System.TimeSpan.Zero" /> or greater than <see cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -3781,6 +3970,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid. Possibly <paramref name="timeout" /> is less than <see cref="F:System.TimeSpan.Zero" /> or greater than <see cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.Cursor" />
+        <altmember cref="T:System.Messaging.PeekAction" />
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
     <Member MemberName="PeekByCorrelationId">
@@ -3835,6 +4029,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentNullException">The <paramref name="correlationId" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="correlationId" /> could not be found.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.Message.CorrelationId" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
     <Member MemberName="PeekByCorrelationId">
@@ -3897,6 +4094,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="P:System.Messaging.Message.CorrelationId" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
     <Member MemberName="PeekById">
@@ -3948,6 +4149,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentNullException">The <paramref name="id" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">No message with the specified <paramref name="id" /> exists.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.Message.Id" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
     <Member MemberName="PeekById">
@@ -4004,6 +4208,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is not valid, possibly <paramref name="timeout" /> is less than <see cref="F:System.TimeSpan.Zero" /> or greater than <see cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />.</exception>
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="id" /> does not exist in the queue and did not arrive before the period specified by the <paramref name="timeout" /> parameter expired.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="P:System.Messaging.Message.Id" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
     <Member MemberName="PeekByLookupId">
@@ -4049,6 +4257,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.PlatformNotSupportedException">MSMQ 3.0 is not installed.</exception>
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="lookupId" /> could not be found.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.Message.LookupId" />
+        <altmember cref="M:System.Messaging.MessageQueue.ReceiveByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="PeekByLookupId">
@@ -4107,6 +4317,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="lookupId" /> could not be found.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="action" /> parameter is not one of the <see cref="T:System.Messaging.MessageLookupAction" /> members.</exception>
+        <altmember cref="P:System.Messaging.Message.LookupId" />
+        <altmember cref="M:System.Messaging.MessageQueue.ReceiveByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="PeekCompleted">
@@ -4136,7 +4348,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  <xref:System.Messaging.MessageQueue.EndPeek%28System.IAsyncResult%29> is used to complete the operation initiated by a call to <xref:System.Messaging.MessageQueue.BeginPeek%2A> and peek the message when the <xref:System.Messaging.MessageQueue.PeekCompleted> event is raised.  
   
- When you create a <xref:System.Messaging.PeekCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Messaging.PeekCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -4149,6 +4361,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.IAsyncResult" />
       </Docs>
     </Member>
     <Member MemberName="Purge">
@@ -4192,6 +4409,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.Close" />
+        <altmember cref="M:System.Messaging.MessageQueue.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="QueueName">
@@ -4255,6 +4474,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The queue name is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
       </Docs>
     </Member>
     <Member MemberName="ReadHandle">
@@ -4301,6 +4522,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.CanRead" />
+        <altmember cref="P:System.Messaging.MessageQueue.WriteHandle" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4352,6 +4575,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4413,6 +4638,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  The queue is non-transactional.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4472,6 +4701,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transactionType" /> parameter is not one of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> members.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4532,6 +4765,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  An error occurred when accessing a Message Queuing method</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4633,6 +4869,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4699,6 +4940,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4765,6 +5010,12 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.Cursor" />
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -4826,6 +5077,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  An error occurred when accessing a Message Queuing method.</exception>
         <threadsafe>The method is not thread safe.</threadsafe>
+        <altmember cref="T:System.Messaging.Cursor" />
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByCorrelationId">
@@ -4882,6 +5138,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentNullException">The <paramref name="correlationId" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="correlationId" /> could not be found.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByCorrelationId">
@@ -4949,6 +5208,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByCorrelationId">
@@ -5011,6 +5275,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="correlationId" /> could not be found.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transactionType" /> parameter is not one of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> members.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByCorrelationId">
@@ -5074,6 +5343,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByCorrelationId">
@@ -5149,6 +5422,12 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByCorrelationId">
@@ -5218,6 +5497,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveById">
@@ -5273,6 +5557,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.ArgumentNullException">The <paramref name="id" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="id" /> could not be found.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveById">
@@ -5340,6 +5627,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveById">
@@ -5402,6 +5694,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="id" /> could not be found.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transactionType" /> parameter is not one of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> members.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveById">
@@ -5467,6 +5764,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveById">
@@ -5544,6 +5845,12 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveById">
@@ -5616,6 +5923,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  An error occurred when accessing a Message Queuing method.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transactionType" /> parameter is not one of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> members.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByLookupId">
@@ -5661,6 +5973,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <exception cref="T:System.PlatformNotSupportedException">MSMQ 3.0 is not installed.</exception>
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="lookupId" /> could not be found.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.Message.LookupId" />
+        <altmember cref="M:System.Messaging.MessageQueue.PeekByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByLookupId">
@@ -5727,6 +6041,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  The queue is non-transactional.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="action" /> parameter is not one of the <see cref="T:System.Messaging.MessageLookupAction" /> members.</exception>
+        <altmember cref="P:System.Messaging.Message.LookupId" />
+        <altmember cref="M:System.Messaging.MessageQueue.PeekByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveByLookupId">
@@ -5795,6 +6111,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  The <paramref name="transactionType" /> parameter is not one of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> members.</exception>
+        <altmember cref="P:System.Messaging.Message.LookupId" />
+        <altmember cref="M:System.Messaging.MessageQueue.PeekByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveCompleted">
@@ -5824,7 +6142,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  <xref:System.Messaging.MessageQueue.EndReceive%28System.IAsyncResult%29> is used to complete the operation initiated by a call to <xref:System.Messaging.MessageQueue.BeginReceive%2A> and peek the message when the <xref:System.Messaging.MessageQueue.ReceiveCompleted> event is raised.  
   
- When you create a <xref:System.Messaging.ReceiveCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Messaging.ReceiveCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -5837,6 +6155,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.IAsyncResult" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -5879,6 +6202,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.GetPublicQueues" />
       </Docs>
     </Member>
     <Member MemberName="ResetPermissions">
@@ -5928,6 +6252,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -5958,7 +6283,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  If you do not set the <xref:System.Messaging.MessageQueue.Formatter%2A> property before calling <xref:System.Messaging.MessageQueue.Send%28System.Object%29>, the formatter defaults to the <xref:System.Messaging.XmlMessageFormatter>.  
   
- The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property.  
+ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=nameWithType> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> property.  
   
  The following table shows whether this method is available in various Workgroup modes.  
   
@@ -5987,6 +6312,13 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="P:System.Messaging.MessageQueue.Path" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6019,7 +6351,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  If you do not set the <xref:System.Messaging.MessageQueue.Formatter%2A> property before calling <xref:System.Messaging.MessageQueue.Send%28System.Object%29>, the formatter defaults to the <xref:System.Messaging.XmlMessageFormatter>.  
   
- The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property.  
+ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=nameWithType> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> property.  
   
  <xref:System.Messaging.MessageQueueTransaction> is threading apartment aware, so if your apartment state is `STA`, you cannot use the transaction in multiple threads. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception. You apply the <xref:System.MTAThreadAttribute> by using the following fragment.  
   
@@ -6058,6 +6390,14 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6090,7 +6430,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  If you do not set the <xref:System.Messaging.MessageQueue.Formatter%2A> property before calling <xref:System.Messaging.MessageQueue.Send%28System.Object%29>, the formatter defaults to the <xref:System.Messaging.XmlMessageFormatter>.  
   
- The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property.  
+ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=nameWithType> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> property.  
   
  The following table shows whether this method is available in various Workgroup modes.  
   
@@ -6117,6 +6457,14 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6151,7 +6499,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  The <xref:System.Messaging.MessageQueue.Path%2A> property for this <xref:System.Messaging.MessageQueue> instance must be specified before you send the message. If you do not set the <xref:System.Messaging.MessageQueue.Formatter%2A> property before calling <xref:System.Messaging.MessageQueue.Send%28System.Object%29>, the formatter defaults to the <xref:System.Messaging.XmlMessageFormatter>.  
   
- The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property.  
+ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=nameWithType> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> property.  
   
  The following table shows whether this method is available in various Workgroup modes.  
   
@@ -6178,6 +6526,13 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6214,7 +6569,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  If you do not set the <xref:System.Messaging.MessageQueue.Formatter%2A> property before calling <xref:System.Messaging.MessageQueue.Send%28System.Object%29>, the formatter defaults to the <xref:System.Messaging.XmlMessageFormatter>.  
   
- The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property  
+ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=nameWithType> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> property  
   
  <xref:System.Messaging.MessageQueueTransaction> is threading apartment aware, so if your apartment state is `STA`, you cannot use the transaction in multiple threads. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception. You apply the <xref:System.MTAThreadAttribute> by using the following fragment.  
   
@@ -6256,6 +6611,15 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6292,7 +6656,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  If you do not set the <xref:System.Messaging.MessageQueue.Formatter%2A> property before calling <xref:System.Messaging.MessageQueue.Send%28System.Object%29>, the formatter defaults to the <xref:System.Messaging.XmlMessageFormatter>.  
   
- The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>, and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property.  
+ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>, and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=nameWithType> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=nameWithType> property.  
   
  The following table shows whether this method is available in various Workgroup modes.  
   
@@ -6321,6 +6685,15 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  -or-  
   
  An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
+        <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
+        <altmember cref="M:System.Messaging.MessageQueue.Peek" />
+        <altmember cref="M:System.Messaging.MessageQueue.Receive" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
     <Member MemberName="SetPermissions">
@@ -6427,6 +6800,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.ResetPermissions" />
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.AccessControlList" />
       </Docs>
     </Member>
     <Member MemberName="SetPermissions">
@@ -6511,6 +6887,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.ResetPermissions" />
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessControlEntry" />
       </Docs>
     </Member>
     <Member MemberName="SetPermissions">
@@ -6598,6 +6978,9 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="user" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.ResetPermissions" />
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
       </Docs>
     </Member>
     <Member MemberName="SetPermissions">
@@ -6684,6 +7067,10 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueue.ResetPermissions" />
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
+        <altmember cref="T:System.Messaging.AccessControlEntry" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -6722,6 +7109,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+        <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
       </Docs>
     </Member>
     <Member MemberName="Transactional">
@@ -6784,6 +7173,12 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Begin" />
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Commit" />
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Abort" />
+        <altmember cref="P:System.Messaging.Message.TransactionId" />
+        <altmember cref="P:System.Messaging.Message.IsFirstInTransaction" />
+        <altmember cref="P:System.Messaging.Message.IsLastInTransaction" />
       </Docs>
     </Member>
     <Member MemberName="UseJournalQueue">
@@ -6839,6 +7234,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.MaximumJournalSize" />
       </Docs>
     </Member>
     <Member MemberName="WriteHandle">
@@ -6885,7 +7281,157 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">The message queue is not available for writing.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.CanWrite" />
+        <altmember cref="P:System.Messaging.MessageQueue.ReadHandle" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PeekById">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a copy of the message that has the specified message identifier without removing the message from the queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMessageQueueEnumerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an enumerator object for a dynamic listing of the public queues on the network.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPublicQueues">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all the public queues on the network.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an object to a queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReceiveByLookupId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Introduced in MSMQ 3.0. Receives a specific message from the queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Peek">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Returns a copy of the first message in the queue without removing the message from the queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginReceive">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Initiates an asynchronous receive operation by telling Message Queuing to begin receiving a message and notify the event handler when finished.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginPeek">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Initiates an asynchronous peek operation by telling Message Queuing to begin peeking a message and notify the event handler when finished.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReceiveByCorrelationId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives a message that matches a given correlation identifier.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Receive">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Receives the first message in the queue, removing it from the queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new queue at the specified path on a Message Queuing server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetPermissions">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds permissions to the current set. This controls who has access rights to queue properties and messages in the queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PeekByLookupId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Introduced in MSMQ 3.0. Peeks at a specific message from the queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PeekByCorrelationId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Peeks a message that matches a given correlation identifier.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReceiveById">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives the message that matches the given identifier, removing it from the queue.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

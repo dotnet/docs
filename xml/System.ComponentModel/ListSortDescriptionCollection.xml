@@ -330,7 +330,7 @@
 ## Remarks  
  This implementation returns the current instance of the <xref:System.ComponentModel.ListSortDescriptionCollection>, because this collection, once constructed, does not allow public access to the underlying list.  
   
- For more information on the <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23ICollection%23SyncRoot%2A> method, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property.  
+ For more information on the <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23ICollection%23SyncRoot%2A> method, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -396,7 +396,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=fullName> interface, it must have an <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Add%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, adding items to the collection is an invalid operation.  
+ Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=nameWithType> interface, it must have an <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Add%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, adding items to the collection is an invalid operation.  
   
  ]]></format>
         </remarks>
@@ -431,7 +431,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=fullName> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Clear%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, clearing items from the collection is an invalid operation.  
+ Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=nameWithType> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Clear%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, clearing items from the collection is an invalid operation.  
   
  ]]></format>
         </remarks>
@@ -471,7 +471,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=fullName> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Insert%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, inserting items into the collection is an invalid operation.  
+ Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=nameWithType> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Insert%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, inserting items into the collection is an invalid operation.  
   
  ]]></format>
         </remarks>
@@ -610,7 +610,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=fullName> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Remove%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, removing items from the collection is an invalid operation.  
+ Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=nameWithType> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23Remove%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, removing items from the collection is an invalid operation.  
   
  ]]></format>
         </remarks>
@@ -648,12 +648,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=fullName> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23RemoveAt%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, removing items from the collection is an invalid operation.  
+ Because the <xref:System.ComponentModel.ListSortDescriptionCollection> class implements the <xref:System.Collections.IList?displayProperty=nameWithType> interface, it must have a <xref:System.ComponentModel.ListSortDescriptionCollection.System%23Collections%23IList%23RemoveAt%2A> method. However, because the <xref:System.ComponentModel.ListSortDescriptionCollection> class represents a read-only collection, removing items from the collection is an invalid operation.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">In all cases.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListSortDescriptionCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

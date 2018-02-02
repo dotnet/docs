@@ -4,20 +4,31 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Subscribing to events
 
 The first step for using the event bus is to subscribe the microservices to the events they want to receive. That should be done in the receiver microservices.
 
-The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the Startup class) so it subscribes to the events it needs. For instance, the basket.api microservice needs to subscribe to ProductPriceChangedIntegrationEvent messages. This makes the microservice aware of any changes to the product price and lets it warn the user about the change if that product is in the user’s basket.
+The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the `Startup` class) so it subscribes to the events it needs. In this case, the `basket.api` microservice needs to subscribe to `ProductPriceChangedIntegrationEvent` and the `OrderStartedIntegrationEvent` messages. 
+
+For instance, when subscribing to the `ProductPriceChangedIntegrationEvent` event, that makes the basket microservice aware of any changes to the product price and lets it warn the user about the change if that product is in the user’s basket.
 
 ```csharp
 var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
-eventBus.Subscribe<ProductPriceChangedIntegrationEvent>(
-    ProductPriceChangedIntegrationEventHandler);
+
+eventBus.Subscribe<ProductPriceChangedIntegrationEvent, 
+                   ProductPriceChangedIntegrationEventHandler>();
+
+eventBus.Subscribe<OrderStartedIntegrationEvent, 
+                   OrderStartedIntegrationEventHandler>();
+
 ```
 
 After this code runs, the subscriber microservice will be listening through RabbitMQ channels. When any message of type ProductPriceChangedIntegrationEvent arrives, the code invokes the event handler that is passed to it and processes the event.
@@ -77,27 +88,30 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
 }
 ```
 
-In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. In more advanced microservices, it could be implemented in the CommandHandler class, right after the original data is committed.
+In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. 
+ 
+In more advanced microservices, like when using CQRS approaches, it can be implemented in the `CommandHandler` class, within the `Handle()` method. 
+
 
 ### Designing atomicity and resiliency when publishing to the event bus
 
-When you publish integration events through a distributed messaging system like your event bus, you have the problem of atomically updating the original database and publishing an event. For instance, in the simplified example shown earlier, the code commits data to the database when the product price is changed and then publishes a ProductPriceChangedIntegrationEvent message. Initially, it might look essential that these two operations be performed atomically. However, if you are using a distributed transaction involving the database and the message broker, as you do in older systems like [Microsoft Message Queuing (MSMQ)](https://msdn.microsoft.com/en-us/library/ms711472(v=vs.85).aspx), this is not recommended for the reasons described by the [CAP theorem](https://www.quora.com/What-Is-CAP-Theorem-1).
+When you publish integration events through a distributed messaging system like your event bus, you have the problem of atomically updating the original database and publishing an event. For instance, in the simplified example shown earlier, the code commits data to the database when the product price is changed and then publishes a ProductPriceChangedIntegrationEvent message. Initially, it might look essential that these two operations be performed atomically. However, if you are using a distributed transaction involving the database and the message broker, as you do in older systems like [Microsoft Message Queuing (MSMQ)](https://msdn.microsoft.com/library/ms711472(v=vs.85).aspx), this is not recommended for the reasons described by the [CAP theorem](https://www.quora.com/What-Is-CAP-Theorem-1).
 
 Basically, you use microservices to build scalable and highly available systems. Simplifying somewhat, the CAP theorem says that you cannot build a database (or a microservice that owns its model) that is continually available, strongly consistent, *and* tolerant to any partition. You must choose two of these three properties.
 
-In microservices-based architectures, you should choose availability and tolerance, and you should deemphasize strong consistency. Therefore, in most modern microservice-based applications, you usually do not want to use distributed transactions in messaging, as you do when you implement [distributed transactions](https://msdn.microsoft.com/en-us/library/ms978430.aspx#bdadotnetasync2_topic3c) based on the Windows Distributed Transaction Coordinator (DTC) with [MSMQ](https://msdn.microsoft.com/en-us/library/ms711472(v=vs.85).aspx).
+In microservices-based architectures, you should choose availability and tolerance, and you should deemphasize strong consistency. Therefore, in most modern microservice-based applications, you usually do not want to use distributed transactions in messaging, as you do when you implement [distributed transactions](https://msdn.microsoft.com/library/ms978430.aspx#bdadotnetasync2_topic3c) based on the Windows Distributed Transaction Coordinator (DTC) with [MSMQ](https://msdn.microsoft.com/library/ms711472(v=vs.85).aspx).
 
 Let’s go back to the initial issue and its example. If the service crashes after the database is updated (in this case, right after the line of code with \_context.SaveChangesAsync()), but before the integration event is published, the overall system could become inconsistent. This might be business critical, depending on the specific business operation you are dealing with.
 
 As mentioned earlier in the architecture section, you can have several approaches for dealing with this issue:
 
--   Using the full [Event Sourcing pattern](https://msdn.microsoft.com/en-us/library/dn589792.aspx).
+-   Using the full [Event Sourcing pattern](https://msdn.microsoft.com/library/dn589792.aspx).
 
 -   Using [transaction log mining](http://www.scoop.it/t/sql-server-transaction-log-mining).
 
 -   Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/). This is a transactional table to store the integration events (extending the local transaction).
 
-For this scenario, using the full Event Sourcing (ES) pattern is one of the best approaches, if not *the* best. However, in many application scenarios, you might not be able to implement a full ES system. ES means storing only domain events in your transactional database, instead of storing current state data. Storing only domain events can have great benefits, such as having the history of your system available and being able to determine the state of your system at any moment in the past. However, implementing a full ES system requires you to rearchitect most of your system and introduces many other complexities and requirements. For example, you would want to use a database specifically made for event sourcing, such as [Event Store](https://geteventstore.com/), or a document-oriented database such as Azure Document DB, MongoDB, Cassandra, CouchDB, or RavenDB. ES is a great approach for this problem, but not the easiest solution unless you are already familiar with event sourcing.
+For this scenario, using the full Event Sourcing (ES) pattern is one of the best approaches, if not *the* best. However, in many application scenarios, you might not be able to implement a full ES system. ES means storing only domain events in your transactional database, instead of storing current state data. Storing only domain events can have great benefits, such as having the history of your system available and being able to determine the state of your system at any moment in the past. However, implementing a full ES system requires you to rearchitect most of your system and introduces many other complexities and requirements. For example, you would want to use a database specifically made for event sourcing, such as [Event Store](https://geteventstore.com/), or a document-oriented database such as Azure Cosmos DB, MongoDB, Cassandra, CouchDB, or RavenDB. ES is a great approach for this problem, but not the easiest solution unless you are already familiar with event sourcing.
 
 The option to use transaction log mining initially looks very transparent. However, to use this approach, the microservice has to be coupled to your RDBMS transaction log, such as the SQL Server transaction log. This is probably not desirable. Another drawback is that the low-level updates recorded in the transaction log might not be at the same level as your high-level integration events. If so, the process of reverse-engineering those transaction log operations can be difficult.
 
@@ -146,57 +160,60 @@ For clarity, the following example shows the whole process in a single piece of 
 ```csharp
 // Update Product from the Catalog microservice
 //
-public async Task<IActionResult>
-    UpdateProduct([FromBody]CatalogItem productToUpdate)
+public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUpdate) 
 {
-    var catalogItem = await _catalogContext.CatalogItems
-        .SingleOrDefaultAsync(i => i.Id == productToUpdate.Id);
+  var catalogItem = 
+       await _catalogContext.CatalogItems.SingleOrDefaultAsync(i => i.Id == 
+                                                               productToUpdate.Id); 
+  if (catalogItem == null) return NotFound();
 
-    if (catalogItem == null) return NotFound();
+  bool raiseProductPriceChangedEvent = false; 
+  IntegrationEvent priceChangedEvent = null; 
 
-    bool raiseProductPriceChangedEvent = false;
+  if (catalogItem.Price != productToUpdate.Price) 
+          raiseProductPriceChangedEvent = true; 
 
-    IntegrationEvent priceChangedEvent = null;
+  if (raiseProductPriceChangedEvent) // Create event if price has changed
+  {
+      var oldPrice = catalogItem.Price; 
+      priceChangedEvent = new ProductPriceChangedIntegrationEvent(catalogItem.Id,
+                                                                  productToUpdate.Price, 
+                                                                  oldPrice); 
+  }
+  // Update current product
+  catalogItem = productToUpdate; 
 
-    if (catalogItem.Price != productToUpdate.Price)
-        raiseProductPriceChangedEvent = true;
+  // Just save the updated product if the Product's Price hasn't changed.
+  if !(raiseProductPriceChangedEvent) 
+  {
+      await _catalogContext.SaveChangesAsync();
+  }
+  else  // Publish to event bus only if product price changed
+  {
+        // Achieving atomicity between original DB and the IntegrationEventLog 
+        // with a local transaction
+        using (var transaction = _catalogContext.Database.BeginTransaction())
+        {
+           _catalogContext.CatalogItems.Update(catalogItem); 
+           await _catalogContext.SaveChangesAsync();
 
-    if (raiseProductPriceChangedEvent) // Create event if price has changed
-    {
-        var oldPrice = catalogItem.Price;
-        priceChangedEvent = new ProductPriceChangedIntegrationEvent(catalogItem.Id,
-            productToUpdate.Price,
-            oldPrice);
-    }
+           // Save to EventLog only if product price changed
+           if(raiseProductPriceChangedEvent) 
+               await _integrationEventLogService.SaveEventAsync(priceChangedEvent); 
 
-    // Update current product
-    catalogItem = productToUpdate;
-    // Achieving atomicity between original DB and the IntegrationEventLog
-    // with a local transaction
+           transaction.Commit();
+        }   
 
-    using (var transaction = _catalogContext.Database.BeginTransaction())
-    {
-        _catalogContext.CatalogItems.Update(catalogItem);
+      // Publish the intergation event through the event bus
+      _eventBus.Publish(priceChangedEvent); 
 
-        await _catalogContext.SaveChangesAsync();
+      integrationEventLogService.MarkEventAsPublishedAsync(
+                                                priceChangedEvent); 
+  }
 
-        // Save to EventLog only if product price changed
-        if(raiseProductPriceChangedEvent)
-            await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
-        transaction.Commit();
-   }
-
-   // Publish to event bus only if product price changed
-
-   if (raiseProductPriceChangedEvent)
-   {
-       _eventBus.Publish(priceChangedEvent);
-       integrationEventLogService.MarkEventAsPublishedAsync(
-           priceChangedEvent);
-   }
-
-   return Ok();
+  return Ok();
 }
+
 ```
 
 After the ProductPriceChangedIntegrationEvent integration event is created, the transaction that stores the original domain operation (update the catalog item) also includes the persistence of the event in the EventLog table. This makes it a single transaction, and you will always be able to check whether event messages were sent.
@@ -281,7 +298,7 @@ Some message processing is inherently idempotent. For example, if a system gener
 ### Additional resources
 
 -   **Honoring message idempotency** (subhead on this page)
-    [*https://msdn.microsoft.com/en-us/library/jj591565.aspx*](https://msdn.microsoft.com/en-us/library/jj591565.aspx)
+    [*https://msdn.microsoft.com/library/jj591565.aspx*](https://msdn.microsoft.com/library/jj591565.aspx)
 
 ## Deduplicating integration event messages
 
@@ -301,6 +318,9 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 ### Additional resources
 
+-   **Forked eShopOnContainers using NServiceBus (Particular Software)**
+    [*http://go.particular.net/eShopOnContainers*](http://go.particular.net/eShopOnContainers)
+
 -   **Event Driven Messaging**
     [*http://soapatterns.org/design\_patterns/event\_driven\_messaging*](http://soapatterns.org/design_patterns/event_driven_messaging)
 
@@ -311,7 +331,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
 
 -   **Communicating Between Bounded Contexts**
-    [*https://msdn.microsoft.com/en-us/library/jj591572.aspx*](https://msdn.microsoft.com/en-us/library/jj591572.aspx)
+    [*https://msdn.microsoft.com/library/jj591572.aspx*](https://msdn.microsoft.com/library/jj591572.aspx)
 
 -   **Eventual Consistency**
     [*https://en.wikipedia.org/wiki/Eventual\_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
@@ -326,7 +346,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*http://microservices.io/patterns/data/event-sourcing.html*](http://microservices.io/patterns/data/event-sourcing.html)
 
 -   **Introducing Event Sourcing**
-    [*https://msdn.microsoft.com/en-us/library/jj591559.aspx*](https://msdn.microsoft.com/en-us/library/jj591559.aspx)
+    [*https://msdn.microsoft.com/library/jj591559.aspx*](https://msdn.microsoft.com/library/jj591559.aspx)
 
 -   **Event Store database**. Official site.
     [*https://geteventstore.com/*](https://geteventstore.com/)
@@ -341,7 +361,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*https://www.quora.com/What-Is-CAP-Theorem-1*](https://www.quora.com/What-Is-CAP-Theorem-1)
 
 -   **Data Consistency Primer**
-    [*https://msdn.microsoft.com/en-us/library/dn589800.aspx*](https://msdn.microsoft.com/en-us/library/dn589800.aspx)
+    [*https://msdn.microsoft.com/library/dn589800.aspx*](https://msdn.microsoft.com/library/dn589800.aspx)
 
 -   **Rick Saling. The CAP Theorem: Why “Everything is Different” with the Cloud and Internet**
     [*https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/*](https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
@@ -350,7 +370,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed*](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 
 -   **Participating in External (DTC) Transactions** (MSMQ)
-    [*https://msdn.microsoft.com/en-us/library/ms978430.aspx\#bdadotnetasync2\_topic3c*](https://msdn.microsoft.com/en-us/library/ms978430.aspx%23bdadotnetasync2_topic3c)
+    [*https://msdn.microsoft.com/library/ms978430.aspx\#bdadotnetasync2\_topic3c*](https://msdn.microsoft.com/library/ms978430.aspx%23bdadotnetasync2_topic3c)
 
 -   **Azure Service Bus. Brokered Messaging: Duplicate Detection**
     [*https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25*](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)

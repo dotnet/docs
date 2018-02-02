@@ -314,16 +314,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrustEnumerator> implements the <xref:System.Collections.IEnumerator?displayProperty=fullName> interface that allows you to move within a collection.  
+ The <xref:System.Security.Policy.ApplicationTrustEnumerator> implements the <xref:System.Collections.IEnumerator?displayProperty=nameWithType> interface that allows you to move within a collection.  
   
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property to get the item currently pointed to in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to its initial position.  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to its initial position.  
   
 > [!NOTE]
->  After you create the enumerator, or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to reposition the enumerator to the start of the collection, you must then call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to position the enumerator to the first item. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  After you create the enumerator, or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to reposition the enumerator to the start of the collection, you must then call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to position the enumerator to the first item. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
  ]]></format>
         </remarks>
@@ -662,5 +662,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveRange">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a collection of application trust objects from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a range of <see cref="T:System.Security.Policy.ApplicationTrust" /> objects to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the elements that match the specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Security.Policy.ApplicationTrust" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

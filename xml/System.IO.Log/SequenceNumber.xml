@@ -211,7 +211,7 @@
         <returns>
           <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -350,5 +350,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

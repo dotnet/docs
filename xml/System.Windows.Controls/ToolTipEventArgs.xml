@@ -20,8 +20,8 @@
   
 |Events that occur when a tooltip opens|Events that occur when a tooltip closes|  
 |--------------------------------------------|---------------------------------------------|  
-|<xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>|  
-|<xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>|  
+|<xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType>|<xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=nameWithType>|  
+|<xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=nameWithType>|<xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=nameWithType>|  
   
  These events are registered by the <xref:System.Windows.Controls.ToolTipService> class as the <xref:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent> and <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> fields. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event by defining the events in the previous table  
   
@@ -31,6 +31,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
+    <altmember cref="E:System.Windows.FrameworkElement.ToolTipOpening" />
+    <altmember cref="E:System.Windows.FrameworkElement.ToolTipClosing" />
+    <altmember cref="E:System.Windows.FrameworkContentElement.ToolTipOpening" />
+    <altmember cref="E:System.Windows.FrameworkContentElement.ToolTipClosing" />
+    <altmember cref="F:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent" />
+    <altmember cref="F:System.Windows.Controls.ToolTipService.ToolTipClosingEvent" />
+    <altmember cref="E:System.Windows.Controls.ToolTip.Opened" />
+    <altmember cref="E:System.Windows.Controls.ToolTip.Closed" />
+    <altmember cref="T:System.Windows.Controls.ToolTip" />
+    <altmember cref="T:System.Windows.Controls.ToolTipService" />
   </Docs>
   <Members>
     <Member MemberName="InvokeEventHandler">

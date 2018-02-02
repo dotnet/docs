@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
 caps.latest.revision: 29
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Poison Message Handling
 A *poison message* is a message that has exceeded the maximum number of delivery attempts to the application. This situation can arise when a queue-based application cannot process a message because of errors. To meet reliability demands, a queued application receives messages under a transaction. Aborting the transaction in which a queued message was received leaves the message in the queue so that the message is retried under a new transaction. If the problem that caused the transaction to abort is not corrected, the receiving application can get stuck in a loop receiving and aborting the same message until the maximum number of delivery attempts has been exceeded and a poison message results.  
@@ -68,7 +70,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 ## Best Practice: Handling MsmqPoisonMessageException  
  When the service determines that a message is poison, the queued transport throws a <xref:System.ServiceModel.MsmqPoisonMessageException> that contains the `LookupId` of the poison message.  
   
- A receiving application can implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to handle any errors that the application requires. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Extending Control Over Error Handling and Reporting](../../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md).  
+ A receiving application can implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to handle any errors that the application requires. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Extending Control Over Error Handling and Reporting](../../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md).  
   
  The application may require some kind of automated handling of poison messages that moves the poison messages to a poison message queue so that the service can access the rest of the messages in the queue. The only scenario for using the error-handler mechanism to listen for poison-message exceptions is when the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling%2A> setting is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>. The poison-message sample for Message Queuing 3.0 demonstrates this behavior. The following outlines the steps to take to handle poison messages, including best practices:  
   
@@ -112,6 +114,6 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 -   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in a farm.  
   
 ## See Also  
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)   
- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)   
+ [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
+ [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)  
  [Specifying and Handling Faults in Contracts and Services](../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)

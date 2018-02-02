@@ -79,14 +79,14 @@
 ## Remarks  
  The <xref:System.Linq.Enumerable.Aggregate%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%600%2C%60%600%7D%29> method makes it simple to perform a calculation over a sequence of values. This method works by calling `func` one time for each element in `source` except the first one. Each time `func` is called, <xref:System.Linq.Enumerable.Aggregate%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%600%2C%60%600%7D%29> passes both the element from the sequence and an aggregated value (as the first argument to `func`). The first element of `source` is used as the initial aggregate value. The result of `func` replaces the previous aggregated value. <xref:System.Linq.Enumerable.Aggregate%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%600%2C%60%600%7D%29> returns the final result of `func`.  
   
- This overload of the <xref:System.Linq.Enumerable.Aggregate%2A>methodisn't suitable for all casesbecause it uses the first element of `source` as the initial aggregate value. You should choose another overload if the return value should include only the elements of `source` that meet a certain condition. For example, this overload isn't reliableif you want to calculate the sum of the even numbers in `source`. The result will be incorrect if the first element is odd instead of even.  
+ This overload of the <xref:System.Linq.Enumerable.Aggregate%2A> method isn't suitable for all cases because it uses the first element of `source` as the initial aggregate value. You should choose another overload if the return value should include only the elements of `source` that meet a certain condition. For example, this overload isn't reliable if you want to calculate the sum of the even numbers in `source`. The result will be incorrect if the first element is odd instead of even.  
   
  To simplify common aggregation operations, the standard query operators also include a general purpose count method, <xref:System.Linq.Enumerable.Count%2A>, and four numeric aggregation methods, namely <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Sum%2A>, and <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
 ## Examples  
- The following code example demonstrates how to reverse the order of words in a string by using<xref:System.Linq.Enumerable.Aggregate%2A>.  
+ The following code example demonstrates how to reverse the order of words in a string by using <xref:System.Linq.Enumerable.Aggregate%2A>.  
   
  [!code-csharp[System.Linq.Enumerable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#1)]
  [!code-vb[System.Linq.Enumerable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#1)]  
@@ -359,6 +359,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Linq.Enumerable.Any``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})" />
       </Docs>
     </Member>
     <Member MemberName="Any&lt;TSource&gt;">
@@ -441,6 +442,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TSource&gt;</ReturnType>
@@ -453,12 +455,14 @@
         <Parameter Name="element" Type="TSource" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <param name="source">A sequence of values.</param>
+        <param name="element">The value to append to <paramref name="source" />.</param>
+        <summary>Appends a value to the end of the sequence.</summary>
+        <returns>A new sequence that ends with <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsEnumerable&lt;TSource&gt;">
@@ -2202,7 +2206,7 @@ From i As Integer In objects
   
  The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types that implement the <xref:System.IEquatable%601> generic interface. To compare a custom data type, you need to implement this interface and provide your own <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods for the type.  
   
- For an example that uses <xref:System.Collections.Generic.IEqualityComparer%601>to define a custom comparer, see <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29>.  
+ For an example that uses <xref:System.Collections.Generic.IEqualityComparer%601> to define a custom comparer, see <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29>.  
   
    
   
@@ -3480,7 +3484,7 @@ From i As Integer In objects
 ## Remarks  
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in [!INCLUDE[csprcs](~/includes/csprcs-md.md)] or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
- If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
+ If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
   
  <xref:System.Linq.Enumerable.GroupJoin%2A> produces hierarchical results, which means that elements from `outer` are paired with collections of matching elements from `inner`. `GroupJoin` enables you to base your results on a whole set of matches for each element of `outer`.  
   
@@ -6878,6 +6882,8 @@ From i As Integer In objects
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
+        <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
     </Member>
     <Member MemberName="OrderBy&lt;TSource,TKey&gt;">
@@ -6941,6 +6947,8 @@ From i As Integer In objects
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
+        <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
     </Member>
     <Member MemberName="OrderByDescending&lt;TSource,TKey&gt;">
@@ -7006,6 +7014,8 @@ From i As Integer In objects
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
+        <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
     </Member>
     <Member MemberName="OrderByDescending&lt;TSource,TKey&gt;">
@@ -7077,6 +7087,8 @@ From i As Integer In objects
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
+        <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
     </Member>
     <Member MemberName="Prepend&lt;TSource&gt;">
@@ -7096,6 +7108,7 @@ From i As Integer In objects
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TSource&gt;</ReturnType>
@@ -7108,12 +7121,14 @@ From i As Integer In objects
         <Parameter Name="element" Type="TSource" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <param name="source">A sequence of values.</param>
+        <param name="element">The value to prepend to <paramref name="source" />.</param>
+        <summary>Adds a value to the beginning of the sequence.</summary>
+        <returns>A new sequence that begins with <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -10908,5 +10923,368 @@ From i As Integer In objects
           <paramref name="first" /> or <paramref name="second" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SingleOrDefault&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a single, specific element of a sequence, or a default value if that element is not found.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ThenBy&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a subsequent ordering of the elements in a sequence in ascending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GroupBy&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Groups the elements of a sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Single&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a single, specific element of a sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Join&lt;TOuter,TInner,TKey,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Correlates the elements of two sequences based on matching keys.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersect&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces the set intersection of two sequences.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Last&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the last element of a sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrderByDescending&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the elements of a sequence in descending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LastOrDefault&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the last element of a sequence, or a default value if no element is found.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLookup&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a generic <see cref="T:System.Linq.Lookup`2" /> from an <see cref="T:System.Collections.Generic.IEnumerable`1" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="First&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the first element of a sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Select&lt;TSource,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Projects each element of a sequence into a new form.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sum">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the sum of a sequence of numeric values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDictionary&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Collections.Generic.Dictionary`2" /> from an <see cref="T:System.Collections.Generic.IEnumerable`1" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SkipWhile&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Bypasses elements in a sequence as long as a specified condition is true and then returns the remaining elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Except&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces the set difference of two sequences.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Max">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the maximum value in a sequence of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Average">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the average of a sequence of numeric values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Min">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the minimum value in a sequence of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ThenByDescending&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a subsequent ordering of the elements in a sequence in descending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GroupJoin&lt;TOuter,TInner,TKey,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Correlates the elements of two sequences based on key equality, and groups the results.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FirstOrDefault&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the first element of a sequence, or a default value if no element is found.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Count&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of elements in a sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LongCount&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Int64" /> that represents the number of elements in a sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Any&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether any element of a sequence exists or satisfies a condition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a sequence contains a specified element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Where&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Filters a sequence of values based on a predicate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Union&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces the set union of two sequences.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectMany&lt;TSource,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Projects each element of a sequence to an <see cref="T:System.Collections.Generic.IEnumerable`1" /> and flattens the resulting sequences into one sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrderBy&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the elements of a sequence in ascending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefaultIfEmpty&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the elements of an <see cref="T:System.Collections.Generic.IEnumerable`1" />, or a default valued singleton collection if the sequence is empty.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TakeWhile&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns elements from a sequence as long as a specified condition is true, and then skips the remaining elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SequenceEqual&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two sequences are equal according to an equality comparer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

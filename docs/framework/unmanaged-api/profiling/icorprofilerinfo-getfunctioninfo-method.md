@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetFunctionInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::GetFunctionInfo method [.NET Framework profiling]"
   - "GetFunctionInfo method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetFunctionInfo Method
 Gets the parent class and metadata token for the specified function.  

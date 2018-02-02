@@ -29,6 +29,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+    <altmember cref="T:System.Web.UI.MobileControls.Style" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +75,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
       </Docs>
     </Member>
     <Member MemberName="GetPageLabelText">
@@ -104,6 +109,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />
       </Docs>
     </Member>
     <Member MemberName="GetPreviousPageText">
@@ -133,6 +141,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -188,6 +199,9 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="NextPageTextKey">
@@ -205,6 +219,8 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <Docs>
         <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="PageLabel">
@@ -272,6 +288,8 @@ void Page_Load(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="PageLabelKey">
@@ -289,6 +307,8 @@ void Page_Load(object sender, EventArgs e)
       <Docs>
         <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -347,6 +367,9 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.PagerStyle" />
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageTextKey">
@@ -364,6 +387,8 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <Docs>
         <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
   </Members>

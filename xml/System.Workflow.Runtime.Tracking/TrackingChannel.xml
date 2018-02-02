@@ -100,7 +100,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the Send method.  In this implementation, tracking messages are written to the event log when a workflow terminates.  This sample is from the Termination Tracking Service SDK sample.  For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+ The following example demonstrates an implementation of the Send method.  In this implementation, tracking messages are written to the event log when a workflow terminates.  This sample is from the Termination Tracking Service SDK sample.  For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
   
  [!code-csharp[WF_Samples#117](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#117)]
  [!code-vb[WF_Samples#117](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#117)]  

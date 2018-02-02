@@ -59,7 +59,7 @@
    
   
 ## Examples  
- The following code example creates an empty <xref:System.Collections.Generic.Dictionary%602> of strings, with integer keys, and accesses it through the <xref:System.Collections.Generic.IDictionary%602> interface.  
+ The following code example creates an empty <xref:System.Collections.Generic.Dictionary%602> of strings, with string keys, and accesses it through the <xref:System.Collections.Generic.IDictionary%602> interface.  
   
  The code example uses the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method throws <xref:System.ArgumentException> when attempting to add a duplicate key.  
   
@@ -78,6 +78,8 @@
     <block subset="none" type="overrides">
       <para>The implementing class must have a means to compare keys.</para>
     </block>
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="N:System.Collections" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -119,7 +121,7 @@
 ## Remarks  
  You can also use the <xref:System.Collections.Generic.IDictionary%602.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue` in C# (`myCollection("myNonexistentKey") = myValue` in Visual Basic). However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.Generic.IDictionary%602.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method does not modify existing elements.  
   
- Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
   
  Implementations can vary in whether they allow `key` to be `null`.  
   
@@ -128,7 +130,7 @@
 ## Examples  
  The following code example creates an empty <xref:System.Collections.Generic.Dictionary%602> of strings, with integer keys, and accesses it through the <xref:System.Collections.Generic.IDictionary%602> interface. The code example uses the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method throws an <xref:System.ArgumentException> when attempting to add a duplicate key.  
   
- This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>.  
   
  [!code-cpp[Generic.IDictionary#2](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.IDictionary/cpp/source.cpp#2)]
  [!code-csharp[Generic.IDictionary#2](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.IDictionary/CS/source.cs#2)]
@@ -140,6 +142,8 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.IDictionary`2.Item(`0)" />
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -179,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
   
  Implementations can vary in whether they allow `key` to be `null`.  
   
@@ -188,7 +192,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Collections.Generic.IDictionary%602.ContainsKey%2A> method to test whether a key exists prior to calling the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method. It also shows how to use the <xref:System.Collections.Generic.IDictionary%602.TryGetValue%2A> method, which can be a more efficient way to retrieve values if a program frequently tries key values that are not in the dictionary. Finally, it shows how to insert items using <xref:System.Collections.Generic.IDictionary%602.Item%2A> property (the indexer in C#).  
   
- This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>.  
   
  [!code-cpp[Generic.IDictionary#6](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.IDictionary/cpp/source.cpp#6)]
  [!code-csharp[Generic.IDictionary#6](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.IDictionary/CS/source.cs#6)]
@@ -246,7 +250,7 @@
   
  You can also use the <xref:System.Collections.Generic.IDictionary%602.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue` in C# (`myCollection("myNonexistentKey") = myValue` in Visual Basic). However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.Generic.IDictionary%602.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method does not modify existing elements.  
   
- Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
   
  The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.IDictionary%602.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.IDictionary%602.Item%2A> as a default property, which provides the same indexing functionality.  
   
@@ -259,7 +263,7 @@
   
  The example also shows how to use the <xref:System.Collections.Generic.IDictionary%602.TryGetValue%2A> method as a more efficient way to retrieve values if a program often must try key values that are not in the dictionary.  
   
- This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>.  
   
  [!code-cpp[Generic.IDictionary#3](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.IDictionary/cpp/source.cpp#3)]
  [!code-csharp[Generic.IDictionary#3](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.IDictionary/CS/source.cs#3)]
@@ -277,6 +281,9 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and <paramref name="key" /> is not found.</exception>
         <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.Add(`0,`1)" />
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)" />
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -318,7 +325,7 @@
 ## Examples  
  The following code example shows how to enumerate keys alone using the <xref:System.Collections.Generic.IDictionary%602.Keys%2A> property.  
   
- This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>.  
   
  [!code-cpp[Generic.IDictionary#9](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.IDictionary/cpp/source.cpp#9)]
  [!code-csharp[Generic.IDictionary#9](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.IDictionary/CS/source.cs#9)]
@@ -326,6 +333,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.ICollection`1" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -365,14 +373,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ Implementations can vary in how they determine equality of objects; for example, the <xref:System.Collections.Generic.List%601> class uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>, whereas the <xref:System.Collections.Generic.Dictionary%602> class allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
   
    
   
 ## Examples  
  The following code example shows how to remove a key/value pair from a dictionary using the <xref:System.Collections.Generic.IDictionary%602.Remove%2A> method.  
   
- This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>.  
   
  [!code-cpp[Generic.IDictionary#10](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.IDictionary/cpp/source.cpp#10)]
  [!code-csharp[Generic.IDictionary#10](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.IDictionary/CS/source.cs#10)]
@@ -383,11 +391,12 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -433,7 +442,7 @@
 ## Examples  
  The example shows how to use the <xref:System.Collections.Generic.IDictionary%602.TryGetValue%2A> method to retrieve values. If a program frequently tries key values that are not in a dictionary, the <xref:System.Collections.Generic.IDictionary%602.TryGetValue%2A> method can be more efficient than using the <xref:System.Collections.Generic.IDictionary%602.Item%2A> property (the indexer in C#), which throws exceptions when attempting to retrieve nonexistent keys.  
   
- This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>.  
   
  [!code-cpp[Generic.IDictionary#5](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.IDictionary/cpp/source.cpp#5)]
  [!code-csharp[Generic.IDictionary#5](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.IDictionary/CS/source.cs#5)]
@@ -446,6 +455,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)" />
+        <altmember cref="P:System.Collections.Generic.IDictionary`2.Item(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -487,7 +498,7 @@
 ## Examples  
  The following code example shows how to enumerate values alone using the <xref:System.Collections.Generic.IDictionary%602.Values%2A> property.  
   
- This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ This code is part of a larger example that can be compiled and executed. See <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>.  
   
  [!code-cpp[Generic.IDictionary#8](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.IDictionary/cpp/source.cpp#8)]
  [!code-csharp[Generic.IDictionary#8](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.IDictionary/CS/source.cs#8)]
@@ -495,6 +506,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.ICollection`1" />
       </Docs>
     </Member>
   </Members>

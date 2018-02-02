@@ -57,7 +57,7 @@
   <Members>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public static int Add (ref int location1, int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Add(int32 location1, int32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Add(int32&amp; location1, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int32@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32?displayProperty=fullName> and `value` is 1, the result is <xref:System.Int32?displayProperty=fullName>; if `value` is 2, the result is (<xref:System.Int32?displayProperty=fullName> + 1); and so on. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32.MaxValue?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int32.MinValue?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int32.MinValue?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
   
  ]]></format>
         </remarks>
@@ -105,7 +105,7 @@
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public static long Add (ref long location1, long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Add(int64 location1, int64 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Add(int64&amp; location1, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int64@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -144,18 +144,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64?displayProperty=fullName> and `value` is 1, the result is <xref:System.Int64?displayProperty=fullName>; if `value` is 2, the result is (<xref:System.Int64?displayProperty=fullName> + 1); and so on. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64.MaxValue?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int64.MinValue?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int64.MinValue?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
   
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <altmember cref="Overload:System.Threading.Interlocked.Increment" />
+        <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
+        <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
       <MemberSignature Language="C#" Value="public static double CompareExchange (ref double location1, double value, double comparand);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 CompareExchange(float64 location1, float64 value, float64 comparand) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 CompareExchange(float64&amp; location1, float64 value, float64 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Double@,System.Double,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -210,7 +213,7 @@
     </Member>
     <Member MemberName="CompareExchange">
       <MemberSignature Language="C#" Value="public static int CompareExchange (ref int location1, int value, int comparand);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareExchange(int32 location1, int32 value, int32 comparand) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareExchange(int32&amp; location1, int32 value, int32 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int32@,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -272,7 +275,7 @@
     </Member>
     <Member MemberName="CompareExchange">
       <MemberSignature Language="C#" Value="public static long CompareExchange (ref long location1, long value, long comparand);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 CompareExchange(int64 location1, int64 value, int64 comparand) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 CompareExchange(int64&amp; location1, int64 value, int64 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int64@,System.Int64,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -317,7 +320,7 @@
     </Member>
     <Member MemberName="CompareExchange">
       <MemberSignature Language="C#" Value="public static IntPtr CompareExchange (ref IntPtr location1, IntPtr value, IntPtr comparand);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CompareExchange(native int location1, native int value, native int comparand) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CompareExchange(native int&amp; location1, native int value, native int comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.IntPtr@,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -370,7 +373,7 @@
     </Member>
     <Member MemberName="CompareExchange">
       <MemberSignature Language="C#" Value="public static object CompareExchange (ref object location1, object value, object comparand);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CompareExchange(object location1, object value, object comparand) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CompareExchange(object&amp; location1, object value, object comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Object@,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -416,7 +419,7 @@
  Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
   
 > [!NOTE]
->  The objects are compared for reference equality, rather than <xref:System.Object.Equals%2A?displayProperty=fullName>. As a result, two boxed instances of the same value type (for example, the integer 3) always appear to be unequal, and no operation is performed. Do not use this overload with value types.  
+>  The objects are compared for reference equality, rather than <xref:System.Object.Equals%2A?displayProperty=nameWithType>. As a result, two boxed instances of the same value type (for example, the integer 3) always appear to be unequal, and no operation is performed. Do not use this overload with value types.  
   
  ]]></format>
         </remarks>
@@ -425,7 +428,7 @@
     </Member>
     <Member MemberName="CompareExchange">
       <MemberSignature Language="C#" Value="public static float CompareExchange (ref float location1, float value, float comparand);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 CompareExchange(float32 location1, float32 value, float32 comparand) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 CompareExchange(float32&amp; location1, float32 value, float32 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Single@,System.Single,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -480,7 +483,7 @@
     </Member>
     <Member MemberName="CompareExchange&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T CompareExchange&lt;T&gt; (ref T location1, T value, T comparand) where T : class;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T CompareExchange&lt;class T&gt;(!!T location1, !!T value, !!T comparand) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T CompareExchange&lt;class T&gt;(!!T&amp; location1, !!T value, !!T comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange``1(``0@,``0,``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -546,7 +549,7 @@
     </Member>
     <Member MemberName="Decrement">
       <MemberSignature Language="C#" Value="public static int Decrement (ref int location);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Decrement(int32 location) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Decrement(int32&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -583,7 +586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32?displayProperty=fullName>, `location` - 1 = <xref:System.Int32?displayProperty=fullName>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32.MinValue?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int32.MaxValue?displayProperty=nameWithType>. No exception is thrown.  
   
    
   
@@ -593,7 +596,7 @@
  [!code-csharp[System.Threading.Interlocked.Decrement#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement1.cs#1)]
  [!code-vb[System.Threading.Interlocked.Decrement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement1.vb#1)]  
   
- The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
+ The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
   
  [!code-csharp[System.Threading.Interlocked.Decrement#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement2.cs#2)]
  [!code-vb[System.Threading.Interlocked.Decrement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement2.vb#2)]  
@@ -605,7 +608,7 @@
     </Member>
     <Member MemberName="Decrement">
       <MemberSignature Language="C#" Value="public static long Decrement (ref long location);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Decrement(int64 location) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Decrement(int64&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -637,18 +640,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=fullName>, `location` - 1 = <xref:System.Int64?displayProperty=fullName>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64.MinValue?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int64.MaxValue?displayProperty=nameWithType>. No exception is thrown.  
   
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <altmember cref="Overload:System.Threading.Interlocked.Increment" />
+        <altmember cref="Overload:System.Threading.Interlocked.Add" />
+        <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
       </Docs>
     </Member>
     <Member MemberName="Exchange">
       <MemberSignature Language="C#" Value="public static double Exchange (ref double location1, double value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Exchange(float64 location1, float64 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Exchange(float64&amp; location1, float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Double@,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -684,7 +690,7 @@
     </Member>
     <Member MemberName="Exchange">
       <MemberSignature Language="C#" Value="public static int Exchange (ref int location1, int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Exchange(int32 location1, int32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Exchange(int32&amp; location1, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int32@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -736,7 +742,7 @@
     </Member>
     <Member MemberName="Exchange">
       <MemberSignature Language="C#" Value="public static long Exchange (ref long location1, long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Exchange(int64 location1, int64 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Exchange(int64&amp; location1, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int64@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -772,7 +778,7 @@
     </Member>
     <Member MemberName="Exchange">
       <MemberSignature Language="C#" Value="public static IntPtr Exchange (ref IntPtr location1, IntPtr value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int Exchange(native int location1, native int value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int Exchange(native int&amp; location1, native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.IntPtr@,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -813,7 +819,7 @@
     </Member>
     <Member MemberName="Exchange">
       <MemberSignature Language="C#" Value="public static object Exchange (ref object location1, object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Exchange(object location1, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Exchange(object&amp; location1, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Object@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -870,7 +876,7 @@
     </Member>
     <Member MemberName="Exchange">
       <MemberSignature Language="C#" Value="public static float Exchange (ref float location1, float value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Exchange(float32 location1, float32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Exchange(float32&amp; location1, float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Single@,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -906,7 +912,7 @@
     </Member>
     <Member MemberName="Exchange&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Exchange&lt;T&gt; (ref T location1, T value) where T : class;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Exchange&lt;class T&gt;(!!T location1, !!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Exchange&lt;class T&gt;(!!T&amp; location1, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange``1(``0@,``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -978,7 +984,7 @@
     </Member>
     <Member MemberName="Increment">
       <MemberSignature Language="C#" Value="public static int Increment (ref int location);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Increment(int32 location) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Increment(int32&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1015,7 +1021,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32?displayProperty=fullName>, `location` + 1 = <xref:System.Int32?displayProperty=fullName>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32.MaxValue?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int32.MinValue?displayProperty=nameWithType>. No exception is thrown.  
   
    
   
@@ -1025,7 +1031,7 @@
  [!code-csharp[System.Threading.Interlocked.Increment2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment3.cs#3)]
  [!code-vb[System.Threading.Interlocked.Increment2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment3.vb#3)]  
   
- The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
+ The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
   
  [!code-csharp[System.Threading.Interlocked.Increment2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment4.cs#4)]
  [!code-vb[System.Threading.Interlocked.Increment2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment4.vb#4)]  
@@ -1037,7 +1043,7 @@
     </Member>
     <Member MemberName="Increment">
       <MemberSignature Language="C#" Value="public static long Increment (ref long location);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Increment(int64 location) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Increment(int64&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1074,13 +1080,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=fullName>, `location` + 1 = <xref:System.Int64?displayProperty=fullName>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64.MaxValue?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int64.MinValue?displayProperty=nameWithType>. No exception is thrown.  
   
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
+        <altmember cref="Overload:System.Threading.Interlocked.Add" />
+        <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
       </Docs>
     </Member>
     <Member MemberName="MemoryBarrier">
@@ -1113,7 +1122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method was added to the <xref:System.Threading.Interlocked> class in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] as a convenience; it's a wrapper for the <xref:System.Threading.Thread.MemoryBarrier%2A?displayProperty=fullName> method.  
+ This method was added to the <xref:System.Threading.Interlocked> class in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] as a convenience; it's a wrapper for the <xref:System.Threading.Thread.MemoryBarrier%2A?displayProperty=nameWithType> method.  
   
  <xref:System.Threading.Interlocked.MemoryBarrier%2A> is required only on multiprocessor systems that have weak memory ordering (for example, a system that employs multiple Intel Itanium processors).  
   
@@ -1143,7 +1152,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public static long Read (ref long location);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Read(int64 location) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Read(int64&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Read(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1177,14 +1186,72 @@
 ## Remarks  
  The <xref:System.Threading.Interlocked.Read%2A> method is unnecessary on 64-bit systems, because 64-bit read operations are already atomic. On 32-bit systems, 64-bit read operations are not atomic unless performed using <xref:System.Threading.Interlocked.Read%2A>.  
   
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
 > [!NOTE]
 >  <xref:System.IntPtr> is a platform-specific type.  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Threading.Interlocked.Increment" />
+        <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
+        <altmember cref="Overload:System.Threading.Interlocked.Add" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Increment">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Increments a specified variable and stores the result, as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareExchange">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two values for equality and, if they are equal, replaces the first value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Decrement">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decrements a specified variable and stores the result, as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds two integers and replaces the first integer with the sum, as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Exchange">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a variable to a specified value as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

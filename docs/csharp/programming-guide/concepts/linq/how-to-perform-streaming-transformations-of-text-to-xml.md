@@ -1,7 +1,7 @@
 ---
 title: "How to: Perform Streaming Transformations of Text to XML (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 9b3bd941-d0ff-4f2d-ae41-7c3b81d8fae6
 caps.latest.revision: 3
 author: "BillWagner"
@@ -95,5 +93,5 @@ class Program
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XStreamingElement>   
+ <xref:System.Xml.Linq.XStreamingElement>  
  [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

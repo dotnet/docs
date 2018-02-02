@@ -124,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Vector3D.op_Addition" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -158,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Vector3D.op_Addition" />
       </Docs>
     </Member>
     <Member MemberName="AngleBetween">
@@ -263,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_Division(System.Windows.Media.Media3D.Vector3D,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="DotProduct">
@@ -337,6 +340,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_Equality(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -367,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_Equality(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -409,6 +414,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_Equality(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -538,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -572,6 +579,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -606,6 +614,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="Negate">
@@ -639,6 +648,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.op_UnaryNegation(System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="Normalize">
@@ -706,6 +716,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Vector3D.Add" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -740,6 +751,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Vector3D.Add" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -774,6 +786,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.Divide(System.Windows.Media.Media3D.Vector3D,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -816,6 +829,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Vector3D.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -834,9 +848,9 @@
         <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="vector">The vector to convert.</param>
+        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+        <returns>The result of converting <paramref name="vector" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -856,10 +870,17 @@
         <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The vector to convert.</param>
+        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Size3D" />.</summary>
+        <returns>The result of converting <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because a <xref:System.Windows.Media.Media3D.Size3D> structure cannot be negative, the absolute values of the <xref:System.Windows.Media.Media3D.Vector3D.X%2A>, <xref:System.Windows.Media.Media3D.Vector3D.Y%2A> and <xref:System.Windows.Media.Media3D.Vector3D.Z%2A> properties of the <xref:System.Windows.Media.Media3D.Vector3D> structure are used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -936,6 +957,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -970,6 +992,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -1004,6 +1027,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -1038,6 +1062,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Vector3D.Subtract" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -1072,6 +1097,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Vector3D.Subtract" />
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
@@ -1109,6 +1135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Vector3D.Negate" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1173,6 +1200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Subtraction(System.Windows.Vector,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -1207,6 +1235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Subtraction(System.Windows.Vector,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -1374,5 +1403,86 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or to another <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Size3D" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Multiply">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified <see cref="T:System.Double" /> or <see cref="T:System.Windows.Media.Matrix" /> and returns the result.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Multiply">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified <see cref="T:System.Double" /> or <see cref="T:System.Windows.Media.Matrix" /> and returns the result.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Addition">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or to another <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

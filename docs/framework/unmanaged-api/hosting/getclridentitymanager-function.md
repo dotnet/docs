@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetCLRIdentityManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCLRIdentityManager function [.NET Framework hosting]"
 ms.assetid: 66eeca30-adb4-45f4-aff5-347564c95724
@@ -28,6 +26,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetCLRIdentityManager Function
 Gets a pointer to an interface that allows the common language runtime (CLR) to manage identities.  

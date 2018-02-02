@@ -46,12 +46,14 @@
 ## Remarks  
  The <xref:System.Runtime.InteropServices.CriticalHandle> class is similar to the <xref:System.Runtime.InteropServices.SafeHandle> class, except that <xref:System.Runtime.InteropServices.SafeHandle> implements reference counting. You can use <xref:System.Runtime.InteropServices.CriticalHandle> instead of <xref:System.Runtime.InteropServices.SafeHandle> to address performance considerations when you can provide the necessary synchronization more efficiently yourself.  
   
- Because the <xref:System.Runtime.InteropServices.CriticalHandle> class does not perform reference counting, it does not provide protection from handle recycling security attacks. Because the reference counting algorithm implicitly serializes operations, a certain amount of thread safety is also lost. If you call the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> or <xref:System.Runtime.InteropServices.SafeHandle.Close%2A> method while an operation that is using the handle is outstanding on another thread, or if you call <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> or <xref:System.Runtime.InteropServices.SafeHandle.Close%2A> from two threads at the same time, the results are non-deterministic. The <xref:System.Runtime.InteropServices.CriticalHandle> class still provides the guaranteed critical finalization provided by the <xref:System.Runtime.ConstrainedExecution.CriticalFinalizerObject> class.  
+ Because the <xref:System.Runtime.InteropServices.CriticalHandle> class does not perform reference counting, it does not provide protection from handle recycling security attacks. Because the reference counting algorithm implicitly serializes operations, a certain amount of thread safety is also lost. If you call the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.SafeHandle.Close%2A> method while an operation that is using the handle is outstanding on another thread, or if you call <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.SafeHandle.Close%2A> from two threads at the same time, the results are non-deterministic. The <xref:System.Runtime.InteropServices.CriticalHandle> class still provides the guaranteed critical finalization provided by the <xref:System.Runtime.ConstrainedExecution.CriticalFinalizerObject> class.  
   
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+    <altmember cref="T:System.Runtime.InteropServices.SafeHandle" />
+    <altmember cref="N:Microsoft.Win32.SafeHandles" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +98,7 @@
         <exception cref="T:System.TypeLoadException">The derived class resides in an assembly without unmanaged code access permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -303,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.InteropServices.CriticalHandle.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="handle">
@@ -398,6 +402,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />
       </Docs>
     </Member>
     <Member MemberName="IsInvalid">
@@ -449,6 +454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseHandle">
@@ -608,5 +614,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Handles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Marks the handle for releasing and freeing resources.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

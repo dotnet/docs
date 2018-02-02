@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.ErrorEventArgs> contains the <xref:System.Exception> that caused the <xref:System.IO.FileSystemWatcher.Error?displayProperty=fullName> event. This class provides the <xref:System.IO.ErrorEventArgs.GetException%2A> method to retrieve the exception.  
+ <xref:System.IO.ErrorEventArgs> contains the <xref:System.Exception> that caused the <xref:System.IO.FileSystemWatcher.Error?displayProperty=nameWithType> event. This class provides the <xref:System.IO.ErrorEventArgs.GetException%2A> method to retrieve the exception.  
   
    
   
@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.ErrorEventHandler" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
+    <altmember cref="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

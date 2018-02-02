@@ -30,18 +30,27 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> class is a specialized type of <xref:System.Windows.Forms.ComboBox> that implements the <xref:System.Windows.Forms.IDataGridViewEditingControl> interface, allowing it to be hosted in a <xref:System.Windows.Forms.DataGridViewComboBoxCell> when the cell is in edit mode. When a <xref:System.Windows.Forms.DataGridViewComboBoxCell> is in edit mode, you can retrieve the <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> through the <xref:System.Windows.Forms.DataGridView.EditingControl%2A> property of the <xref:System.Windows.Forms.DataGridView> control.  
   
- Handle the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event to perform custom initialization of the editing control when a cell enters edit mode. To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A?displayProperty=fullName> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A?displayProperty=fullName> property.  
+ Handle the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event to perform custom initialization of the editing control when a cell enters edit mode. To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A?displayProperty=nameWithType> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A?displayProperty=nameWithType> property.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use an <xref:System.Windows.Forms.DataGridView.EditingControlShowing?displayProperty=fullName> event handler to add a handler for a <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> event. In the example, the editing control is cast to a <xref:System.Windows.Forms.ComboBox> to handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use an <xref:System.Windows.Forms.DataGridView.EditingControlShowing?displayProperty=nameWithType> event handler to add a handler for a <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> event. In the example, the editing control is cast to a <xref:System.Windows.Forms.ComboBox> to handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.EditingControl" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.EditingControlShowing" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
+    <altmember cref="T:System.Windows.Forms.ComboBox" />
+    <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +75,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.ComboBox" />
+        <altmember cref="P:System.Windows.Forms.Control.TabStop" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxColumn" />
       </Docs>
     </Member>
     <Member MemberName="ApplyCellStyleToEditingControl">
@@ -94,6 +108,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
+        <altmember cref="P:System.Windows.Forms.Control.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlDataGridView">
@@ -119,6 +138,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxColumn" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlFormattedValue">
@@ -144,6 +166,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.ComboBox" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.Text" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxColumn" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlRowIndex">
@@ -171,6 +198,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewComboBoxEditingControl.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlValueChanged">
@@ -199,6 +229,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.ComboBox" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.Text" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.NotifyCurrentCellDirty(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlWantsInputKey">
@@ -234,6 +268,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.Keys" />
       </Docs>
     </Member>
     <Member MemberName="EditingPanelCursor">
@@ -252,6 +288,8 @@
         <summary>Gets the cursor used during editing.</summary>
         <value>A <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor image used by the mouse pointer during editing.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="GetEditingControlFormattedValue">
@@ -274,6 +312,8 @@
         <summary>Retrieves the formatted value of the cell.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the formatted version of the cell contents.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanged">
@@ -295,6 +335,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.SelectedIndexChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ComboBox.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PrepareEditingControlForEdit">
@@ -317,6 +358,7 @@
           <see langword="true" /> to select all of the cell's content; otherwise, <see langword="false" />.</param>
         <summary>Prepares the currently selected cell for editing.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="RepositionEditingControlOnValueChange">
@@ -336,6 +378,7 @@
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
   </Members>

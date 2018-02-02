@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "key frames, animating Points with"
-  - "Points, animating with key frames"
-  - "animation, Points with key frames"
+  - "key frames [WPF], animating Points with"
+  - "Points [WPF], animating with key frames"
+  - "animation [WPF], Points with key frames"
 ms.assetid: d2e2ef10-0773-4133-856e-d41c09f60ded
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Point by Using Key Frames
 This example shows how to use the <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> class to animate a <xref:System.Windows.Point>.  
@@ -40,8 +45,8 @@ This example shows how to use the <xref:System.Windows.Media.Animation.PointAnim
  For consistency with other animation examples, the code versions of this example use a <xref:System.Windows.Media.Animation.Storyboard> object to apply the <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames>. However, when applying a single animation in code, it's simpler to use the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method instead of using a <xref:System.Windows.Media.Animation.Storyboard>. For an example, see [Animate a Property Without Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-without-using-a-storyboard.md).  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames>   
- <xref:System.Windows.Media.EllipseGeometry.Center%2A?displayProperty=fullName>   
- <xref:System.Windows.Media.EllipseGeometry>   
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
+ <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames>  
+ <xref:System.Windows.Media.EllipseGeometry.Center%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Media.EllipseGeometry>  
+ [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
  [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

@@ -25,7 +25,7 @@
 |Row type|Description|  
 |--------------|-----------------|  
 |`DataRow`|A data row in the <xref:System.Web.UI.WebControls.GridView> control.|  
-|`EmptyDataRow`|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when the <xref:System.Web.UI.WebControls.GridView> control has no records to display and the <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A?displayProperty=fullName> template is not `null`.|  
+|`EmptyDataRow`|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when the <xref:System.Web.UI.WebControls.GridView> control has no records to display and the <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A?displayProperty=nameWithType> template is not `null`.|  
 |`Footer`|The footer row in the <xref:System.Web.UI.WebControls.GridView> control.|  
 |`Header`|The header row in the <xref:System.Web.UI.WebControls.GridView> control.|  
 |`Pager`|A pager row in the <xref:System.Web.UI.WebControls.GridView> control.|  
@@ -65,19 +65,33 @@
 ## Examples  
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.GridViewRow> object to retrieve a field value from a cell in the <xref:System.Web.UI.WebControls.GridView> control and then display the value on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRow/CS/gridviewrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRow/VB/gridviewrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRow/CS/gridviewrowcs.aspx#1)]
+ [!code-aspx-vb[GridViewRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRow/VB/gridviewrowvb.aspx#1)]  
   
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.GridViewRow> object to retrieve a <xref:System.Web.UI.WebControls.TextBox> control declared in a <xref:System.Web.UI.WebControls.TemplateField> field column's edit item template. The value of the text box is then passed to a <xref:System.Web.UI.WebControls.SqlDataSource> control for updating in the data source.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowFindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowFindControl/CS/gridviewrowfindcontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowFindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowFindControl/VB/gridviewrowfindcontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowFindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowFindControl/CS/gridviewrowfindcontrolcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowFindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowFindControl/VB/gridviewrowfindcontrolvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRowCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+    <altmember cref="T:System.Web.UI.DataBoundLiteralControl" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
+    <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
+    <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowState" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +132,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -149,11 +166,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRow.DataItem%2A> property to retrieve a field value. The value is then used to pre-select an item in a <xref:System.Web.UI.WebControls.DropDownList> control displayed when a row is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataItem/CS/gridviewrowdataitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataItem/VB/gridviewrowdataitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDataItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataItem/CS/gridviewrowdataitemcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataItem/VB/gridviewrowdataitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -182,6 +202,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -235,6 +258,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="RowState">
@@ -272,11 +297,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRow.RowState%2A> property to determine whether a row is in edit mode or is selected. If the user selects a different row while the <xref:System.Web.UI.WebControls.GridView> control is in edit mode, the <xref:System.Web.UI.WebControls.GridView> control exits edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowRowState#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowRowState/CS/gridviewrowrowstatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowRowState#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowRowState/VB/gridviewrowrowstatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowRowState#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowRowState/CS/gridviewrowrowstatecs.aspx#1)]
+ [!code-aspx-vb[GridViewRowRowState#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowRowState/VB/gridviewrowrowstatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
       </Docs>
     </Member>
     <Member MemberName="RowType">
@@ -316,11 +344,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property to determine whether a row being created is a footer row. If the row is a footer row, the value for the sum of the column is updated into the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowRowType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowRowType/CS/gridviewrowrowtypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowRowType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowRowType/VB/gridviewrowrowtypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowRowType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowRowType/CS/gridviewrowrowtypecs.aspx#1)]
+ [!code-aspx-vb[GridViewRowRowType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowRowType/VB/gridviewrowrowtypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItem">
@@ -346,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -371,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -396,6 +429,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
   </Members>

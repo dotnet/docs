@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the [\&lt;authenticationModules\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md) configuration element.  
+ This class corresponds to the [&lt;authenticationModules&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md) configuration element.  
   
  This class is used to access information about modules registered to authenticate requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
   
@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.IAuthenticationModule" />
+    <altmember cref="T:System.Net.AuthenticationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +48,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticationModules">
@@ -76,6 +80,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="InitializeDefault">

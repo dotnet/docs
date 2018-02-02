@@ -17,7 +17,7 @@
 ## Remarks  
  The role of the object describes the function of the object and is used by accessibility applications.  
   
- This enumeration is used by <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=fullName>  
+ This enumeration is used by <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=nameWithType>  
   
  For additional information about the accessibility application, search for "Microsoft Active Accessibility" in the Microsoft Developer Network (MSDN) library.  
   
@@ -34,6 +34,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.AccessibleEvents" />
+    <altmember cref="T:System.Windows.Forms.AccessibleNavigation" />
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleSelection" />
+    <altmember cref="T:System.Windows.Forms.AccessibleStates" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleRole" />
   </Docs>
   <Members>
     <Member MemberName="Alert">

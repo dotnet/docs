@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "examples [Windows Forms], brushes"
-  - "shapes, filling"
+  - "shapes [Windows Forms], filling"
   - "brushes"
 ms.assetid: bf8f7fff-5a90-41e8-9051-494449fb2844
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using a Brush to Fill Shapes
 A [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:System.Drawing.Brush> object is used to fill the interior of a closed shape. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] defines several fill styles: solid color, hatch pattern, image texture, and color gradient.  
@@ -38,19 +38,19 @@ A [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:Syst
  Describes how to tile an image in a shape.  
   
 ## Reference  
- <xref:System.Drawing.Brush?displayProperty=fullName>  
+ <xref:System.Drawing.Brush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members  
   
- <xref:System.Drawing.SolidBrush?displayProperty=fullName>  
+ <xref:System.Drawing.SolidBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members  
   
- <xref:System.Drawing.TextureBrush?displayProperty=fullName>  
+ <xref:System.Drawing.TextureBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members.  
   
- <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=fullName>  
+ <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members.  
   
- <xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=fullName>  
+ <xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members.  
   
 ## Related Sections  

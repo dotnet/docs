@@ -39,11 +39,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.TabPage> controls represent the tabbed pages in a <xref:System.Windows.Forms.TabControl> control. The order of tab pages in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection reflects the order of tabs in the <xref:System.Windows.Forms.TabControl> control. To change the order of tabs in the control, you must change their positions in the collection by removing them and inserting them at new indexes.  
+ <xref:System.Windows.Forms.TabPage> controls represent the tabbed pages in a <xref:System.Windows.Forms.TabControl> control. The order of tab pages in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=nameWithType> collection reflects the order of tabs in the <xref:System.Windows.Forms.TabControl> control. To change the order of tabs in the control, you must change their positions in the collection by removing them and inserting them at new indexes.  
   
  <xref:System.Windows.Forms.TabPage> controls are constrained by their container, so some of the properties inherited from the <xref:System.Windows.Forms.Control> base class will have no effect, including <xref:System.Windows.Forms.Control.Top%2A>, <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Width%2A>, <xref:System.Windows.Forms.Control.Show%2A>, and <xref:System.Windows.Forms.Control.Hide%2A>.  
   
- The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl> but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection.  
+ The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl> but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=nameWithType> collection.  
   
 > [!NOTE]
 >  In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
@@ -53,7 +53,7 @@
 > [!NOTE]
 >  Controls contained in a <xref:System.Windows.Forms.TabPage> are not created until the tab page is shown, and any data bindings in these controls are not activated until the tab page is shown.  
   
- In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property lets you indicate whether the background of the tab page should render using the current visual style. This occurs only when the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance.Normal>. Otherwise, the background is painted normally.  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property lets you indicate whether the background of the tab page should render using the current visual style. This occurs only when the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=nameWithType> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance.Normal>. Otherwise, the background is painted normally.  
   
    
   
@@ -68,6 +68,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TabControl" />
+    <altmember cref="T:System.Windows.Forms.TabPage" />
+    <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -272,12 +275,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is the value of the <xref:System.Windows.Forms.Control.DefaultBackColor%2A?displayProperty=fullName> property unless the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> has a value of <xref:System.Windows.Forms.TabAppearance.Normal>, in which case the default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is <xref:System.Drawing.Color.Transparent%2A>. Child controls that you place on the <xref:System.Windows.Forms.TabPage> inherit the <xref:System.Windows.Forms.TabPage.BackColor%2A> value by default, so this behavior causes the background of the child controls to render with the current visual style.  
+ The default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is the value of the <xref:System.Windows.Forms.Control.DefaultBackColor%2A?displayProperty=nameWithType> property unless the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=nameWithType> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> has a value of <xref:System.Windows.Forms.TabAppearance.Normal>, in which case the default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is <xref:System.Drawing.Color.Transparent%2A>. Child controls that you place on the <xref:System.Windows.Forms.TabPage> inherit the <xref:System.Windows.Forms.TabPage.BackColor%2A> value by default, so this behavior causes the background of the child controls to render with the current visual style.  
   
  Changing the value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property automatically sets the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property to `false`. If you want the <xref:System.Windows.Forms.TabPage> background to render using visual styles but you want the child controls to inherit a <xref:System.Windows.Forms.TabPage.BackColor%2A> value that you specify, set the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property after you set the <xref:System.Windows.Forms.TabPage.BackColor%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Drawing.Color.Transparent" />
+        <altmember cref="P:System.Windows.Forms.Control.DefaultBackColor" />
+        <altmember cref="P:System.Windows.Forms.TabPage.UseVisualStyleBackColor" />
+        <altmember cref="P:System.Windows.Forms.Application.RenderWithVisualStyles" />
+        <altmember cref="T:System.Windows.Forms.TabControl" />
+        <altmember cref="P:System.Windows.Forms.TabControl.Appearance" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlsInstance">
@@ -297,6 +307,7 @@
         <summary>Creates a new instance of the control collection for the control.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControlsInstance" />
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -502,6 +513,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Windows.Forms.TabPage.ImageIndex" /> value is less than -1.</exception>
+        <altmember cref="P:System.Windows.Forms.TabControl.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -692,6 +704,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabPage.OnEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabPage.OnEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -727,6 +740,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabPage.OnLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabPage.OnLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -751,7 +765,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The system calls this method to paint the background of the <xref:System.Windows.Forms.TabPage>. When the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance.Normal>, this method paints the background using the current visual style. Otherwise, this method paints the background as usual.  
+ The system calls this method to paint the background of the <xref:System.Windows.Forms.TabPage>. When the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=nameWithType> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance.Normal>, this method paints the background using the current visual style. Otherwise, this method paints the background as usual.  
   
  ]]></format>
         </remarks>
@@ -839,10 +853,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Control.TabIndex%2A?displayProperty=fullName> property indicates the order in which controls receive focus as a user presses the TAB key on a form. <xref:System.Windows.Forms.TabPage> controls are contained within <xref:System.Windows.Forms.TabControl> controls, however, and do not receive focus individually as part of the form's TAB order. This property is therefore meaningless for this class.  
+ The <xref:System.Windows.Forms.Control.TabIndex%2A?displayProperty=nameWithType> property indicates the order in which controls receive focus as a user presses the TAB key on a form. <xref:System.Windows.Forms.TabPage> controls are contained within <xref:System.Windows.Forms.TabControl> controls, however, and do not receive focus individually as part of the form's TAB order. This property is therefore meaningless for this class.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexChanged">
@@ -972,7 +987,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Changing the <xref:System.Windows.Forms.TabPage.Text%2A> property value does not automatically center the new value on the tab if the <xref:System.Windows.Forms.TabControl> has a <xref:System.Windows.Forms.TabControl.SizeMode%2A> property value of <xref:System.Windows.Forms.TabSizeMode.Fixed>. You can work around this limitation by setting the <xref:System.Windows.Forms.TabControl.ItemSize%2A?displayProperty=fullName> property or by removing the <xref:System.Windows.Forms.TabPage> from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection and adding it back to the collection. Both of these actions will automatically center the text.  
+ Changing the <xref:System.Windows.Forms.TabPage.Text%2A> property value does not automatically center the new value on the tab if the <xref:System.Windows.Forms.TabControl> has a <xref:System.Windows.Forms.TabControl.SizeMode%2A> property value of <xref:System.Windows.Forms.TabSizeMode.Fixed>. You can work around this limitation by setting the <xref:System.Windows.Forms.TabControl.ItemSize%2A?displayProperty=nameWithType> property or by removing the <xref:System.Windows.Forms.TabPage> from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=nameWithType> collection and adding it back to the collection. Both of these actions will automatically center the text.  
   
    
   
@@ -1056,6 +1071,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
+        <altmember cref="T:System.Windows.Forms.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1115,14 +1132,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.TabPage> background uses the current visual style only when the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true`.  
+ The <xref:System.Windows.Forms.TabPage> background uses the current visual style only when the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=nameWithType> property values are both `true`.  
   
- When the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance.Normal>, the default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is <xref:System.Drawing.Color.Transparent%2A>. Child controls that you place on the <xref:System.Windows.Forms.TabPage> inherit the <xref:System.Windows.Forms.TabPage.BackColor%2A> value by default, so this behavior causes the background of the child controls to render with the current visual style.  
+ When the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=nameWithType> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance.Normal>, the default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is <xref:System.Drawing.Color.Transparent%2A>. Child controls that you place on the <xref:System.Windows.Forms.TabPage> inherit the <xref:System.Windows.Forms.TabPage.BackColor%2A> value by default, so this behavior causes the background of the child controls to render with the current visual style.  
   
  Changing the value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property automatically sets the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property to `false`. If you want the <xref:System.Windows.Forms.TabPage> background to render using visual styles but you want the child controls to inherit a <xref:System.Windows.Forms.TabPage.BackColor%2A> value that you specify, set the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property after you set the <xref:System.Windows.Forms.TabPage.BackColor%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
+        <altmember cref="P:System.Windows.Forms.TabControl.Appearance" />
+        <altmember cref="P:System.Windows.Forms.Application.RenderWithVisualStyles" />
+        <altmember cref="P:System.Windows.Forms.TabPage.BackColor" />
+        <altmember cref="P:System.Drawing.Color.Transparent" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1194,5 +1216,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

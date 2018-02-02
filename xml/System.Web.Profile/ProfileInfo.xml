@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This <xref:System.Web.Profile.ProfileInfo?displayProperty=fullName> constructor is not intended to be used from your code. Instead, use the <xref:System.Web.Profile.ProfileInfo.%23ctor%2A?displayProperty=fullName>.  
+ This <xref:System.Web.Profile.ProfileInfo?displayProperty=nameWithType> constructor is not intended to be used from your code. Instead, use the <xref:System.Web.Profile.ProfileInfo.%23ctor%2A?displayProperty=nameWithType>.  
   
  <xref:System.Web.Profile.ProfileInfo> objects are constructed and returned as part of a <xref:System.Web.Profile.ProfileInfoCollection> by the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of a <xref:System.Web.Profile.ProfileProvider>.  
   
@@ -192,5 +192,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

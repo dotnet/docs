@@ -59,7 +59,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessagePartSpecification (System.Xml.XmlQualifiedName[] headerTypes);" />
+      <MemberSignature Language="C#" Value="public MessagePartSpecification (params System.Xml.XmlQualifiedName[] headerTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName[] headerTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Xml.XmlQualifiedName[])" />
       <MemberType>Constructor</MemberType>
@@ -91,7 +91,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessagePartSpecification (bool isBodyIncluded, System.Xml.XmlQualifiedName[] headerTypes);" />
+      <MemberSignature Language="C#" Value="public MessagePartSpecification (bool isBodyIncluded, params System.Xml.XmlQualifiedName[] headerTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isBodyIncluded, class System.Xml.XmlQualifiedName[] headerTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Boolean,System.Xml.XmlQualifiedName[])" />
       <MemberType>Constructor</MemberType>
@@ -295,5 +295,15 @@
           <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Security.MessagePartSpecification" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

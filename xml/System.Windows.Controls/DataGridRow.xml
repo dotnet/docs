@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridRow" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="AlternationIndex">
@@ -56,12 +58,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Alternating rows are rows to which you can assign different characteristics, such as alternating background colors. You can set the <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> property of the <xref:System.Windows.Controls.DataGrid> to indicate the number of rows within a set of alternating rows. For more information about alternating rows, see <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A?displayProperty=fullName>.  
+ Alternating rows are rows to which you can assign different characteristics, such as alternating background colors. You can set the <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> property of the <xref:System.Windows.Controls.DataGrid> to indicate the number of rows within a set of alternating rows. For more information about alternating rows, see <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A?displayProperty=nameWithType>.  
   
- Override the <xref:System.Windows.Controls.DataGridRow.OnPropertyChanged%2A> method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
+ Override the <xref:System.Windows.Controls.DataGridRow.OnPropertyChanged%2A> method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.AlternatingRowBackground" />
+        <altmember cref="P:System.Windows.Controls.ItemsControl.AlternationCount" />
       </Docs>
     </Member>
     <Member MemberName="AlternationIndexProperty">
@@ -82,10 +87,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
+ The <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
@@ -108,6 +114,7 @@
         <summary>Arranges the content of the row.</summary>
         <returns>The actual area used by the row.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="DetailsTemplate">
@@ -126,6 +133,8 @@
         <summary>Gets or sets the template that is used to display the details section of the row.</summary>
         <value>The template that is used to display the row details section or <see langword="null" /> to use the <see cref="P:System.Windows.Controls.DataGrid.RowDetailsTemplate" /> setting. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowDetailsTemplate" />
       </Docs>
     </Member>
     <Member MemberName="DetailsTemplateProperty">
@@ -143,6 +152,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.DetailsTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="DetailsTemplateSelector">
@@ -161,6 +171,8 @@
         <summary>Gets or sets a template selector that provides custom logic for choosing a row details template.</summary>
         <value>A template selector for choosing the row details template. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowDetailsTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="DetailsTemplateSelectorProperty">
@@ -178,6 +190,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.DetailsTemplateSelector" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="DetailsVisibility">
@@ -196,6 +209,8 @@
         <summary>Gets or sets a value that indicates when the details section of the row is displayed.</summary>
         <value>A value that specifies the visibility of the row details. The registered default is <see cref="F:System.Windows.Visibility.Collapsed" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowDetailsVisibilityMode" />
       </Docs>
     </Member>
     <Member MemberName="DetailsVisibilityProperty">
@@ -213,6 +228,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.DetailsVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="GetIndex">
@@ -232,6 +248,8 @@
         <summary>Returns the index of the row's data item within the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection of the <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
         <returns>The index of the row's data item, or -1 if the item was not found.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.ItemsControl.Items" />
       </Docs>
     </Member>
     <Member MemberName="GetRowContainingElement">
@@ -254,6 +272,7 @@
         <summary>Returns the <see cref="T:System.Windows.Controls.DataGridRow" /> that contains the specified element.</summary>
         <returns>The <see cref="T:System.Windows.Controls.DataGridRow" /> that contains the specified element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -272,6 +291,7 @@
         <summary>Gets or sets an object that represents the row header contents.</summary>
         <value>The row header contents. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="HeaderProperty">
@@ -289,6 +309,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.Header" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -312,10 +333,12 @@
 ## Remarks  
  To define a <xref:System.Windows.Style> for a row header, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.Primitives.DataGridRowHeader>.  
   
- A <xref:System.Windows.Style> can be applied to all row headers, or to an individual row header. To apply a <xref:System.Windows.Style> to an individual header set the <xref:System.Windows.Controls.DataGridRow.HeaderStyle%2A?displayProperty=fullName> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.RowHeaderStyle%2A?displayProperty=fullName> property.  
+ A <xref:System.Windows.Style> can be applied to all row headers, or to an individual row header. To apply a <xref:System.Windows.Style> to an individual header set the <xref:System.Windows.Controls.DataGridRow.HeaderStyle%2A?displayProperty=nameWithType> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.RowHeaderStyle%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowHeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyleProperty">
@@ -333,6 +356,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.HeaderStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -351,6 +375,8 @@
         <summary>Gets or sets the template that is used to display the row header.</summary>
         <value>The template that is used to display the row header or <see langword="null" /> to use the <see cref="P:System.Windows.Controls.DataGrid.RowHeaderTemplate" /> setting. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowHeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateProperty">
@@ -368,6 +394,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.HeaderTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateSelector">
@@ -386,6 +413,7 @@
         <summary>Gets or sets a template selector that provides custom logic for choosing a row header template.</summary>
         <value>A template selector for choosing the row header template. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateSelectorProperty">
@@ -403,6 +431,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.HeaderTemplateSelector" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="IsEditing">
@@ -422,6 +451,7 @@
         <value>
           <see langword="true" /> if the row is in editing mode; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="IsEditingProperty">
@@ -439,6 +469,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.IsEditing" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="IsNewItem">
@@ -518,6 +549,7 @@
         <value>
           <see langword="true" /> if the row is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -535,6 +567,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.IsSelected" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -553,6 +586,7 @@
         <summary>Gets or sets the data item that the row represents.</summary>
         <value>The data item that the row represents. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="ItemProperty">
@@ -570,6 +604,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.Item" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="ItemsPanel">
@@ -588,6 +623,7 @@
         <summary>Gets or sets the template that defines the panel that controls the layout of cells in the row.</summary>
         <value>The template that defines the panel to use for the layout of cells in the row. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="ItemsPanelProperty">
@@ -605,6 +641,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.ItemsPanel" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnsChanged">
@@ -628,6 +665,8 @@
         <param name="e">The event data from the <see cref="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" /> event of the <see cref="P:System.Windows.Controls.DataGrid.Columns" /> collection.</param>
         <summary>Called to update the displayed cells when the <see cref="P:System.Windows.Controls.DataGrid.Columns" /> collection has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.Columns" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -647,6 +686,8 @@
         <summary>Returns a new <see cref="T:System.Windows.Automation.Peers.DataGridRowAutomationPeer" /> for this row.</summary>
         <returns>A new automation peer for this row.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Automation.Peers.DataGridRowAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="OnHeaderChanged">
@@ -670,6 +711,8 @@
         <param name="newHeader">The new value of the <see cref="P:System.Windows.Controls.DataGridRow.Header" /> property.</param>
         <summary>Called when the value of the <see cref="P:System.Windows.Controls.DataGridRow.Header" /> property has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.Header" />
       </Docs>
     </Member>
     <Member MemberName="OnItemChanged">
@@ -693,6 +736,8 @@
         <param name="newItem">The new value of the <see cref="P:System.Windows.Controls.DataGridRow.Item" /> property.</param>
         <summary>Updates the displayed cells when the <see cref="P:System.Windows.Controls.DataGridRow.Item" /> property value has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.Item" />
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -717,15 +762,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=fullName>. The specific dependency property that changed is reported in the arguments parameter.  
+ This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=nameWithType>. The specific dependency property that changed is reported in the arguments parameter.  
   
- Override this method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
+ Override this method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>Always call the base implementation as the first operation in your implementation. Failure to do this will significantly disable the entire [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system, which causes incorrect values to be reported. The specific <see cref="T:System.Windows.Controls.DataGridRow" /> implementation is also responsible for maintaining the correct state for the <see cref="P:System.Windows.Controls.DataGridRow.AlternationIndex" /> property, which affects the visible user interface and invalidates the visual tree based on property value changes at appropriate times.</para>
         </block>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.AlternationIndex" />
+        <altmember cref="M:System.Windows.FrameworkElement.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelected">
@@ -750,7 +798,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGridRow.OnSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -759,6 +807,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Controls.DataGridRow.OnSelected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure to call the base class’s <see cref="M:System.Windows.Controls.DataGridRow.OnSelected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGridRow.Selected" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="OnTemplateChanged">
@@ -782,6 +833,8 @@
         <param name="newTemplate">The new template.</param>
         <summary>Called whenever the control's template changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Control.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="OnUnselected">
@@ -806,7 +859,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGridRow.OnUnselected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -815,6 +868,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Controls.DataGridRow.OnUnselected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure to call the base class’s <see cref="M:System.Windows.Controls.DataGridRow.OnUnselected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGridRow.Unselected" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -839,6 +895,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="SelectedEvent">
@@ -856,6 +914,7 @@
       <Docs>
         <summary>Identifies the <see cref="E:System.Windows.Controls.DataGridRow.Selected" /> routed event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="Unselected">
@@ -880,6 +939,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="UnselectedEvent">
@@ -897,6 +958,7 @@
       <Docs>
         <summary>Identifies the <see cref="E:System.Windows.Controls.DataGridRow.Unselected" /> routed event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="ValidationErrorTemplate">
@@ -915,6 +977,8 @@
         <summary>Gets or sets the template that is used to visually indicate an error in row validation.</summary>
         <value>The template that is used to visually indicate an error in row validation, or <see langword="null" /> to use the <see cref="P:System.Windows.Controls.DataGrid.RowValidationErrorTemplate" /> setting. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowValidationErrorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ValidationErrorTemplateProperty">
@@ -932,6 +996,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.ValidationErrorTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +39,8 @@
         <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridPreparingCellForEditEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -55,6 +59,8 @@
         <summary>Gets the column that contains the cell to be edited.</summary>
         <value>The column that contains the cell to be edited.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" />
       </Docs>
     </Member>
     <Member MemberName="EditingElement">
@@ -73,6 +79,8 @@
         <summary>Gets the element that the column displays for a cell in editing mode.</summary>
         <value>The element that the column displays for a cell in editing mode.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" />
       </Docs>
     </Member>
     <Member MemberName="EditingEventArgs">
@@ -91,6 +99,8 @@
         <summary>Gets information about the user gesture that caused the cell to enter edit mode.</summary>
         <value>Information about the user gesture that caused the cell to enter edit mode.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -109,6 +119,8 @@
         <summary>Gets the row that contains the cell to be edited.</summary>
         <value>The row that contains the cell to be edited.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" />
       </Docs>
     </Member>
   </Members>

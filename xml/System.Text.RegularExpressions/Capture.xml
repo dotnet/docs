@@ -29,9 +29,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Text.RegularExpressions.Capture> object is immutable and has no public constructor. Instances are returned through the <xref:System.Text.RegularExpressions.CaptureCollection> object, which is returned by the `Match.Captures` and <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> properties. However, the `Match.Captures` property provides information about the same match as the <xref:System.Text.RegularExpressions.Match> object.  
+ A <xref:System.Text.RegularExpressions.Capture> object is immutable and has no public constructor. Instances are returned through the <xref:System.Text.RegularExpressions.CaptureCollection> object, which is returned by the `Match.Captures` and <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> properties. However, the `Match.Captures` property provides information about the same match as the <xref:System.Text.RegularExpressions.Match> object.  
   
- If you do not apply a  to a capturing group, the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property returns a <xref:System.Text.RegularExpressions.CaptureCollection> with a single <xref:System.Text.RegularExpressions.Capture> object that provides information about the same capture as the <xref:System.Text.RegularExpressions.Group> object. If you do apply a quantifier to a capturing group, the `Group.Index`, `Group.Length`, and `Group.Value` properties provide information only about the last captured group, whereas the <xref:System.Text.RegularExpressions.Capture> objects in the <xref:System.Text.RegularExpressions.CaptureCollection> provide information about all subexpression captures. The example provides an illustration.  
+ If you do not apply a  to a capturing group, the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property returns a <xref:System.Text.RegularExpressions.CaptureCollection> with a single <xref:System.Text.RegularExpressions.Capture> object that provides information about the same capture as the <xref:System.Text.RegularExpressions.Group> object. If you do apply a quantifier to a capturing group, the `Group.Index`, `Group.Length`, and `Group.Value` properties provide information only about the last captured group, whereas the <xref:System.Text.RegularExpressions.Capture> objects in the <xref:System.Text.RegularExpressions.CaptureCollection> provide information about all subexpression captures. The example provides an illustration.  
   
    
   
@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.RegularExpressions.CaptureCollection" />
   </Docs>
   <Members>
     <Member MemberName="Index">
@@ -189,12 +190,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a call to the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> or <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=fullName> method fails to find a match, the value of the returned `Match.Value` property is <xref:System.String.Empty?displayProperty=fullName>. If the regular expression engine is unable to match a capturing group. the value of the returned `Group.Value` property is <xref:System.String.Empty?displayProperty=fullName>. See the second example for an illustration.  
+ If a call to the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method fails to find a match, the value of the returned `Match.Value` property is <xref:System.String.Empty?displayProperty=nameWithType>. If the regular expression engine is unable to match a capturing group. the value of the returned `Group.Value` property is <xref:System.String.Empty?displayProperty=nameWithType>. See the second example for an illustration.  
   
    
   
 ## Examples  
- The following example defines a regular expression that matches sentences that contain no punctuation except for a period ("."). The `Match.Value` property displays the result string, which consists of a matched sentence, for each match. The `Group.Value` property displays the result string for each capturing group; it consists of the last string captured by that capturing group. The <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=fullName> property displays the result string for each capture.  
+ The following example defines a regular expression that matches sentences that contain no punctuation except for a period ("."). The `Match.Value` property displays the result string, which consists of a matched sentence, for each match. The `Group.Value` property displays the result string for each capturing group; it consists of the last string captured by that capturing group. The <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=nameWithType> property displays the result string for each capture.  
   
  [!code-csharp[System.Text.RegularExpressions.Capture.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.capture.class/cs/example1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.Capture.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.capture.class/vb/example1.vb#1)]  
@@ -210,7 +211,7 @@
   
  In this example, the input string consists of two sentences. As the output shows, the first sentence consists of only one word, so the <xref:System.Text.RegularExpressions.CaptureCollection> object has a single <xref:System.Text.RegularExpressions.Capture> object that represents the same capture as the <xref:System.Text.RegularExpressions.Group> object. The second sentence consists of multiple words, so the <xref:System.Text.RegularExpressions.Group> objects only contain information about the last matched subexpression. Group 1, which represents the first capture, contains the last word in the sentence that has a closing period. Group 2, which represents the second capture, contains the last word in the sentence. However, the <xref:System.Text.RegularExpressions.Capture> objects in the group's <xref:System.Text.RegularExpressions.CaptureCollection> object capture each subexpression match. The <xref:System.Text.RegularExpressions.Capture> objects in the first capturing group's collection of captures contain information about each captured word and white-space character or period. The <xref:System.Text.RegularExpressions.Capture> objects in the second capturing group's collection of captures contain information about each captured word.  
   
- The following example uses a regular expression pattern, `^([a-z]+)(\d+)*\.([a-z]+(\d)*)$`, to match a product number that consists of two parts separated by a period. Both parts consist of alphabetic characters followed by optional numbers. Because the first input string does not match the pattern, the value of the returned <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> object's `Value` property is <xref:System.String.Empty?displayProperty=fullName>. Similarly, when the regular expression pattern is unable to match a capturing group, the value of the corresponding <xref:System.Text.RegularExpressions.Group> object's `Value` property is <xref:System.String.Empty?displayProperty=fullName>.  
+ The following example uses a regular expression pattern, `^([a-z]+)(\d+)*\.([a-z]+(\d)*)$`, to match a product number that consists of two parts separated by a period. Both parts consist of alphabetic characters followed by optional numbers. Because the first input string does not match the pattern, the value of the returned <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object's `Value` property is <xref:System.String.Empty?displayProperty=nameWithType>. Similarly, when the regular expression pattern is unable to match a capturing group, the value of the corresponding <xref:System.Text.RegularExpressions.Group> object's `Value` property is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Text.RegularExpressions.Capture.Value#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.capture.value/cs/value1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.Capture.Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.capture.value/vb/value1.vb#1)]  
@@ -220,7 +221,7 @@
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Begin the match at the beginning of the string.|  
-|`([a-z]+)`|Match one or more occurrences of any character from a to z. Because the regular expression engine is passed the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option, this comparison is case-insensitive. This is the first capturing group.|  
+|`([a-z]+)`|Match one or more occurrences of any character from a to z. Because the regular expression engine is passed the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option, this comparison is case-insensitive. This is the first capturing group.|  
 |`(\d+)?`|Match zero or one occurrence of one or more decimal digits. This is the second capturing group.|  
 |`\.`|Match a literal period character.|  
 |`([a-z]+`|Match one or more occurrences of any character from a to z. The comparison is case-insensitive.|  

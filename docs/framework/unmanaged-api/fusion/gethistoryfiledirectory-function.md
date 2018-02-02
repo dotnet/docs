@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetHistoryFileDirectory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHistoryFileDirectory function [.NET Framework fusion]"
 ms.assetid: 93232222-926e-42ac-b85d-8a6d33977672
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetHistoryFileDirectory Function
 Retrieves the path of the application history directory.  
@@ -69,6 +69,6 @@ HRESULT GetHistoryFileDirectory (
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See Also  
- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)   
- [NukeDownloadedCache Function](../../../../docs/framework/unmanaged-api/fusion/nukedownloadedcache-function.md)   
+ [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)  
+ [NukeDownloadedCache Function](../../../../docs/framework/unmanaged-api/fusion/nukedownloadedcache-function.md)  
  [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

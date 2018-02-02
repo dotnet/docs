@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionControl::SetILFunctionBody"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerFunctionControl::SetILFunctionBody method [.NET Framework profiling]"
   - "SetILFunctionBody method, ICorProfilerFunctionControl interface [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerFunctionControl::SetILFunctionBody Method
 Replaces the Common Intermediate Language (CIL) body of the method.  

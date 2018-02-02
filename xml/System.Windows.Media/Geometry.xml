@@ -33,7 +33,7 @@
 ## Remarks  
   
 ## Geometry Compared to Shape  
- The <xref:System.Windows.Shapes.Shape?displayProperty=fullName> class has a <xref:System.Windows.Shapes.Shape.Fill%2A>, <xref:System.Windows.Shapes.Shape.Stroke%2A>, and other rendering properties that <xref:System.Windows.Media.Geometry> and its derived classes lack. The <xref:System.Windows.Shapes.Shape> class is a <xref:System.Windows.FrameworkElement> and therefore participates in the layout system; its derived classes can be used as the content of any element that supports <xref:System.Windows.UIElement> children.  
+ The <xref:System.Windows.Shapes.Shape?displayProperty=nameWithType> class has a <xref:System.Windows.Shapes.Shape.Fill%2A>, <xref:System.Windows.Shapes.Shape.Stroke%2A>, and other rendering properties that <xref:System.Windows.Media.Geometry> and its derived classes lack. The <xref:System.Windows.Shapes.Shape> class is a <xref:System.Windows.FrameworkElement> and therefore participates in the layout system; its derived classes can be used as the content of any element that supports <xref:System.Windows.UIElement> children.  
   
  The <xref:System.Windows.Media.Geometry> class, on the other hand, simply defines the geometry of a shape, and cannot render itself. Because of its simplicity, it has a wider range of uses.  
   
@@ -44,6 +44,7 @@
     <block subset="none" type="overrides">
       <para>Although this class is abstract, it is not publicly extensible.</para>
     </block>
+    <altmember cref="T:System.Windows.Shapes.Path" />
   </Docs>
   <Members>
     <Member MemberName="Bounds">
@@ -93,7 +94,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -121,7 +122,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1140,5 +1141,104 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FillContainsWithDetail">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that describes the intersection between the geometry and the specified geometry.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Combine">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines two <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetArea">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the area of the filled region of a <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillContains">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the <see cref="T:System.Windows.Media.Geometry" /> completely contains the specified <see cref="T:System.Windows.Media.Geometry" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetWidenedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is the shape defined by the stroke on the <see cref="T:System.Windows.Media.Geometry" /> produced by the specified <see cref="T:System.Windows.Media.Pen" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of the object based on the current culture.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="StrokeContainsWithDetail">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that describes the intersection between the specified geometry and the current geometry's stroke.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetOutlinedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a simplified outline of the filled region of the <see cref="T:System.Windows.Media.Geometry" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFlattenedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a polygonal approximation of the <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetRenderBounds">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an axis-aligned rectangle that is exactly large enough to contain the geometry and its stroke.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="StrokeContains">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the geometry's stroke contains the specified <see cref="T:System.Windows.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -16,6 +16,8 @@ caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Configure Client Application Services
 This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] **Project Designer** to enable and configure client application services. You can use client application services to validate users and retrieve user roles and settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application service. After configuration, you can access the enabled services in your application code as described in [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md). For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
@@ -48,7 +50,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
 6.  Optionally, if you selected **Use Forms authentication**, you can specify a value in the **Credentials provider** box. The credentials provider must implement the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> interface. By using a credentials provider, you can separate your login user interface from your other application code. This enables you to create a single login dialog box for use in multiple applications. For more information, see [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md).  
   
-     If you specify a credentials provider, you must specify it as an assembly-qualified type name. For more information, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> and [Assembly Names](../../../docs/framework/app-domains/assembly-names.md). In its simplest form, an assembly-qualified type name looks similar to the following example:  
+     If you specify a credentials provider, you must specify it as an assembly-qualified type name. For more information, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> and [Assembly Names](../../../docs/framework/app-domains/assembly-names.md). In its simplest form, an assembly-qualified type name looks similar to the following example:  
   
     ```  
     MyNamespace.MyLoginClass, MyAssembly  
@@ -71,7 +73,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
 2.  Select or clear **Save password hash locally to enable offline login**. When you select this option, an encrypted form of the user's password will be cached locally. This is useful if you implement offline mode for your application. With this option selected, you can validate users even when the <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A> property has been set to `true`.  
   
-3.  Select or clear **Require users to log on again whenever the server cookie expires**. The authentication cookie is configured on the remote service, and indicates how long a user's login will remain active. For more information about how to configure the cookie, see the `timeout` attribute in [forms Element for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3).  
+3.  Select or clear **Require users to log on again whenever the server cookie expires**. The authentication cookie is configured on the remote service, and indicates how long a user's login will remain active. For more information about how to configure the cookie, see the `timeout` attribute in [forms Element for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3).  
   
      If you select this option, attempting to access the remote roles or Web settings services after the authentication cookie has expired will throw a <xref:System.Net.WebException>. You can handle this exception and display a login dialog box to revalidate users. For an example of this behavior, see [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md). This option is useful for applications deployed in public locations to make sure that users who leave the application running after use will not remain authenticated indefinitely.  
   
@@ -93,7 +95,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
      The default value of `Data Source = |SQL/CE|` appears in the text box.  
   
-3.  To generate and use a SQL Server Compact database, keep the default connection string value. [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] will generate a database file and put it in the directory indicated by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=fullName> property.  
+3.  To generate and use a SQL Server Compact database, keep the default connection string value. [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] will generate a database file and put it in the directory indicated by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType> property.  
   
 4.  To generate and use an encrypted [!INCLUDE[ssEW](../../../includes/ssew-md.md)] database, add `password` and `encrypt database` values to the connection string as shown in the following example.  
   
@@ -118,7 +120,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
     ```  
   
 ## Using Custom Providers  
- By default, the client application services feature uses the providers in the <xref:System.Web.ClientServices.Providers?displayProperty=fullName> namespace. When you configure your application by using the **Services** page of the **Project Designer**, references to these providers are added to your App.config file. These default providers access corresponding providers on the server. Web services are often configured to access user data through providers such as <xref:System.Web.Security.SqlMembershipProvider> and <xref:System.Web.Security.SqlRoleProvider>.  
+ By default, the client application services feature uses the providers in the <xref:System.Web.ClientServices.Providers?displayProperty=nameWithType> namespace. When you configure your application by using the **Services** page of the **Project Designer**, references to these providers are added to your App.config file. These default providers access corresponding providers on the server. Web services are often configured to access user data through providers such as <xref:System.Web.Security.SqlMembershipProvider> and <xref:System.Web.Security.SqlRoleProvider>.  
   
  If you want to use custom service providers, you will typically change the providers on the server side so that they affect all client applications that access the server. However, you do have the option of using non-default providers on the client side. You can specify custom authentication or roles providers in your project's App.config file, as shown in the following procedure. For information about how to create custom authentication and role providers, see [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582) and [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d). You can also use a custom settings provider by modifying your project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]). For more information, see [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md).  
   
@@ -134,7 +136,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
 4.  Find the `<providers>` element within the `<membership>` or `<roleManager>` element. These elements are children of the `<system.web>` element. The `<membership>` element is used to specify authentication providers, and the `<roleManager>` element is used to specify role providers.  
   
-5.  Add an `<add>` element as a child of the `<providers>` element. You must specify `name` and `type` attributes as shown in the following example. The `type` attribute value must be an assembly-qualified type name. For more information, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> and [Assembly Names](../../../docs/framework/app-domains/assembly-names.md).  
+5.  Add an `<add>` element as a child of the `<providers>` element. You must specify `name` and `type` attributes as shown in the following example. The `type` attribute value must be an assembly-qualified type name. For more information, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> and [Assembly Names](../../../docs/framework/app-domains/assembly-names.md).  
   
     ```xml  
     <add name="MyCustomRoleProvider" type="MyNamespace.MyRoleProvider, MyAssembly" />  
@@ -147,13 +149,13 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
     ```  
   
 ## See Also  
- [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)   
- [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)   
- [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109)   
- [Advanced Settings for Services Dialog Box](/visualstudio/ide/reference/advanced-settings-for-services-dialog-box)   
- [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)   
- [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)   
- [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)   
- [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)   
- [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md)   
+ [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)  
+ [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
+ [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109)  
+ [Advanced Settings for Services Dialog Box](/visualstudio/ide/reference/advanced-settings-for-services-dialog-box)  
+ [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)  
+ [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
+ [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)  
+ [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)  
+ [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md)  
  [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)

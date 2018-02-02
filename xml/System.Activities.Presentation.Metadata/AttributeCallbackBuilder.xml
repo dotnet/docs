@@ -42,7 +42,7 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -80,7 +80,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.ComponentModel.MemberDescriptor descriptor, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.ComponentModel.MemberDescriptor descriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.ComponentModel.MemberDescriptor descriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.ComponentModel.MemberDescriptor,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -120,7 +120,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.Reflection.MemberInfo member, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.Reflection.MemberInfo member, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Reflection.MemberInfo member, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Reflection.MemberInfo,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -160,7 +160,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (string memberName, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (string memberName, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(string memberName, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.String,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -200,7 +200,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.Windows.DependencyProperty dp, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.Windows.DependencyProperty dp, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Windows.DependencyProperty dp, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Windows.DependencyProperty,System.Attribute[])" />
       <MemberType>Method</MemberType>

@@ -29,7 +29,7 @@
       <aspSample:StyledRegister ButtonText="Register" 
         OnSubmit="StyledRegister_Submit" ID="StyledRegister1"
         Runat="server" NameLabelText="Name:" EmailLabelText="Email:" 
-        EmailErrorMessage="You must enter your e-mail address."
+        EmailErrorMessage="You must enter your email address."
         NameErrorMessage="You must enter your name." 
         BorderStyle="Solid" BorderWidth="1px" BackColor="#E0E0E0">
         <TextBoxStyle Font-Names="Arial" BorderStyle="Solid" 

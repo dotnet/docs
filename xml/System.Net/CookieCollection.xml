@@ -36,6 +36,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Cookie" />
+    <altmember cref="T:System.Net.CookieCollection" />
+    <altmember cref="T:System.Net.CookieContainer" />
+    <altmember cref="T:System.Net.CookieException" />
+    <altmember cref="T:System.Collections.ICollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +81,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Cookie" />
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -111,6 +120,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="cookie" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -153,6 +165,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="cookies" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -283,6 +298,10 @@
         <summary>Gets the number of cookies contained in a <see cref="T:System.Net.CookieCollection" />.</summary>
         <value>The number of cookies contained in a <see cref="T:System.Net.CookieCollection" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Cookie" />
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -351,6 +370,9 @@
         <value>
           <see langword="true" /> if this is a read-only <see cref="T:System.Net.CookieCollection" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -426,6 +448,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or <paramref name="index" /> is greater than or equal to <see cref="P:System.Net.CookieCollection.Count" />.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -476,6 +501,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -510,6 +538,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -577,5 +606,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of this <see cref="T:System.Net.CookieCollection" /> to the specified destination array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific <see cref="T:System.Net.Cookie" /> from a <see cref="T:System.Net.CookieCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Net.Cookie" /> to a <see cref="T:System.Net.CookieCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

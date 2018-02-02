@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ConsoleKeyInfo> type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
+ The <xref:System.ConsoleKeyInfo> type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.ConsoleKeyInfo> object describes the <xref:System.ConsoleKey> constant and Unicode character, if any, that correspond to the pressed console key. The <xref:System.ConsoleKeyInfo> object also describes, in a bitwise combination of <xref:System.ConsoleModifiers> values, whether one or more SHIFT, ALT, or CTRL modifier keys was pressed simultaneously with the console key.  
   
@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ConsoleModifiers" />
+    <altmember cref="T:System.ConsoleKey" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
+ This type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.ConsoleKeyInfo> type does not specify whether the left or right SHIFT, ALT, or CTRL modifier key was pressed.  
   
@@ -128,7 +130,7 @@
 ## Remarks  
  Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
   
- The <xref:System.ConsoleKeyInfo.Equals%2A> method performs slightly better than the <xref:System.ConsoleKeyInfo.Equals%28System.Object%29?displayProperty=fullName> method because it does not have to convert `obj` to an object.  
+ The <xref:System.ConsoleKeyInfo.Equals%2A> method performs slightly better than the <xref:System.ConsoleKeyInfo.Equals%28System.Object%29?displayProperty=nameWithType> method because it does not have to convert `obj` to an object.  
   
  ]]></format>
         </remarks>
@@ -387,7 +389,7 @@
 ## Remarks  
  Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
   
- The equivalent method for this operator is <xref:System.ConsoleKeyInfo.Equals%28System.ConsoleKeyInfo%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.ConsoleKeyInfo.Equals%28System.ConsoleKeyInfo%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -433,5 +435,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether an object or specified <see cref="T:System.ConsoleKeyInfo" /> object is equal to the current <see cref="T:System.ConsoleKeyInfo" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

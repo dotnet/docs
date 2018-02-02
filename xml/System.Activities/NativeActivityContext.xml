@@ -2915,5 +2915,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Abort">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aborts the current workflow instance during runtime.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScheduleActivity">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Schedules a <see cref="T:System.Activities.NativeActivity" /> child activity for execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a bookmark from the currently executing <see cref="T:System.Activities.NativeActivity" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AbortChildInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aborts an instance of a <see cref="T:System.Activities.NativeActivity" /> child activity.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

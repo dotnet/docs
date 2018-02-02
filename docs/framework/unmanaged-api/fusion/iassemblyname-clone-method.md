@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::Clone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Clone method, IAssemblyName interface [.NET Framework fusion]"
   - "IAssemblyName::Clone method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyName::Clone Method
 Creates a shallow copy of this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) object.  

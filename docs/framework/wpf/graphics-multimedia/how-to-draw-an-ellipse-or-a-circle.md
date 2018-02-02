@@ -10,17 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ellipses, drawing"
-  - "circles, drawing"
-  - "drawing circles"
-  - "drawing ellipses"
-  - "graphics, drawing circles"
-  - "graphics, drawing ellipses"
+  - "ellipses [WPF], drawing"
+  - "circles [WPF], drawing"
+  - "drawing circles [WPF]"
+  - "drawing ellipses [WPF]"
+  - "graphics [WPF], drawing circles"
+  - "graphics [WPF], drawing ellipses"
 ms.assetid: 99763b8c-bfc8-44be-8231-8a70daf5481a
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw an Ellipse or a Circle
 This example shows how to draw ellipses and circles by using the <xref:System.Windows.Shapes.Ellipse> element. To draw an ellipse, create an <xref:System.Windows.Shapes.Ellipse> element and specify its <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A>. Use its <xref:System.Windows.Shapes.Shape.Fill%2A> property to specify the <xref:System.Windows.Media.Brush> that is used to paint the interior of the ellipse. Use its <xref:System.Windows.Shapes.Shape.Stroke%2A> property to specify the <xref:System.Windows.Media.Brush> that is used to paint the outline of the ellipse. The <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> property specifies the thickness of the ellipse outline.  
@@ -37,6 +39,6 @@ This example shows how to draw ellipses and circles by using the <xref:System.Wi
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
- <xref:System.Windows.Shapes.Ellipse>   
- <xref:System.Windows.Shapes.Shape>   
+ <xref:System.Windows.Shapes.Ellipse>  
+ <xref:System.Windows.Shapes.Shape>  
  [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)

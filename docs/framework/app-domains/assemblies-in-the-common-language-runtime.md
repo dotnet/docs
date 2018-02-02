@@ -24,6 +24,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Assemblies in the Common Language Runtime
 Assemblies are the building blocks of .NET Framework applications; they form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. An assembly provides the common language runtime with the information it needs to be aware of type implementations. To the runtime, a type does not exist outside the context of an assembly.  
@@ -46,7 +48,7 @@ Assemblies are the building blocks of .NET Framework applications; they form the
   
  Assemblies can be static or dynamic. Static assemblies can include .NET Framework types (interfaces and classes), as well as resources for the assembly (bitmaps, JPEG files, resource files, and so on). Static assemblies are stored on disk in portable executable (PE) files. You can also use the .NET Framework to create dynamic assemblies, which are run directly from memory and are not saved to disk before execution. You can save dynamic assemblies to disk after they have executed.  
   
- There are several ways to create assemblies. You can use development tools, such as Visual Studio, that you have used in the past to create .dll or .exe files. You can use tools provided in the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] to create assemblies with modules created in other development environments. You can also use common language runtime APIs, such as <xref:System.Reflection.Emit?displayProperty=fullName>, to create dynamic assemblies.  
+ There are several ways to create assemblies. You can use development tools, such as Visual Studio, that you have used in the past to create .dll or .exe files. You can use tools provided in the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] to create assemblies with modules created in other development environments. You can also use common language runtime APIs, such as <xref:System.Reflection.Emit?displayProperty=nameWithType>, to create dynamic assemblies.  
   
 ## Related Topics  
   
@@ -65,4 +67,4 @@ Assemblies are the building blocks of .NET Framework applications; they form the
 |[How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)|Describes how the .NET Framework resolves assembly references at run time.|  
   
 ## Reference  
- <xref:System.Reflection.Assembly?displayProperty=fullName>
+ <xref:System.Reflection.Assembly?displayProperty=nameWithType>

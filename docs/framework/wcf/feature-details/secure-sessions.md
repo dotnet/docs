@@ -14,12 +14,14 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Secure Sessions
 A feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is reliable sessions that guarantee messages are received in the order they were sent. The topics in this section discuss the security implications to consider when creating a reliable session. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] reliable sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
   
 > [!NOTE]
->  When impersonation is required on Windows XP, use a secure session without a stateful security context token (SCT). When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+>  When impersonation is required on Windows XP, use a secure session without a stateful security context token (SCT). When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
   
 ## In This Section  
   
@@ -41,6 +43,6 @@ A feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is reliable
  [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)  
   
 ## See Also  
- [How to: Enable Message Replay Detection](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)   
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)   
+ [How to: Enable Message Replay Detection](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)  
+ [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
  [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)

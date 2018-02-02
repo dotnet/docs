@@ -10,21 +10,23 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "application user interface thread"
+  - "application user interface thread [WPF]"
   - "stylus plug-in"
-  - "ink threading model"
-  - "ink, rendering"
-  - "pen thread"
-  - "threading model"
-  - "rendering ink"
-  - "dynamic rendering thread"
+  - "ink threading model [WPF]"
+  - "ink [WPF], rendering"
+  - "pen thread [WPF]"
+  - "threading model [WPF]"
+  - "rendering ink [WPF]"
+  - "dynamic rendering thread [WPF]"
   - "ink collection plug-in"
-  - "plug-ins, for ink"
+  - "plug-ins [WPF], for ink"
 ms.assetid: c85fcad1-cb50-4431-847c-ac4145a35c89
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # The Ink Threading Model
 One of the benefits of ink on a Tablet PC is that it feels a lot like writing with a regular pen and paper.  To accomplish this, the tablet pen collects input data at a much higher rate than a mouse does and renders the ink as the user writes.  The application's user interface (UI) thread is not sufficient for collecting pen data and rendering ink, because it can become blocked.  To solve this, a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application uses two additional threads when a user writes ink.  

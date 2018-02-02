@@ -1,43 +1,24 @@
 ---
 title: "Parameter List (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "parameters, Visual Basic"
-  - "parameters, lists"
-  - "parameter lists"
+  - "parameters [Visual Basic], Visual Basic"
+  - "parameters [Visual Basic], lists"
+  - "parameter lists [Visual Basic]"
   - "Visual Basic code, parameter lists"
   - "arguments [Visual Basic], Visual Basic"
-  - "procedures, parameter lists"
+  - "procedures [Visual Basic], parameter lists"
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Parameter List (Visual Basic)
 Specifies the parameters a procedure expects when it is called. Multiple parameters are separated by commas. The following is the syntax for one parameter.  
@@ -109,11 +90,11 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
  [!code-vb[VbVbalrStatements#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-list_1.vb)]  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ <xref:System.Runtime.InteropServices.DllImportAttribute>  
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)  
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

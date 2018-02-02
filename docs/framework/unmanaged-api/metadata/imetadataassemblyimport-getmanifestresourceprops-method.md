@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetManifestResourceProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetManifestResourceProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetManifestResourceProps method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetManifestResourceProps Method
 Gets the set of properties of the manifest resource with the specified metadata signature.  

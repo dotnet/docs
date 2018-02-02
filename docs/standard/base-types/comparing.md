@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "value comparisons of strings"
   - "LastIndexOf method"
@@ -24,23 +28,26 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Comparing Strings in .NET
 .NET provides several methods to compare the values of strings. The following table lists and describes the value-comparison methods.  
   
 |Method name|Use|  
 |-----------------|---------|  
-|<xref:System.String.Compare%2A?displayProperty=fullName>|Compares the values of two strings. Returns an integer value.|  
-|<xref:System.String.CompareOrdinal%2A?displayProperty=fullName>|Compares two strings without regard to local culture. Returns an integer value.|  
-|<xref:System.String.CompareTo%2A?displayProperty=fullName>|Compares the current string object to another string. Returns an integer value.|  
-|<xref:System.String.StartsWith%2A?displayProperty=fullName>|Determines whether a string begins with the string passed. Returns a Boolean value.|  
-|<xref:System.String.EndsWith%2A?displayProperty=fullName>|Determines whether a string ends with the string passed. Returns a Boolean value.|  
-|<xref:System.String.Equals%2A?displayProperty=fullName>|Determines whether two strings are the same. Returns a Boolean value.|  
-|<xref:System.String.IndexOf%2A?displayProperty=fullName>|Returns the index position of a character or string, starting from the beginning of the string you are examining. Returns an integer value.|  
-|<xref:System.String.LastIndexOf%2A?displayProperty=fullName>|Returns the index position of a character or string, starting from the end of the string you are examining. Returns an integer value.|  
+|<xref:System.String.Compare%2A?displayProperty=nameWithType>|Compares the values of two strings. Returns an integer value.|  
+|<xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType>|Compares two strings without regard to local culture. Returns an integer value.|  
+|<xref:System.String.CompareTo%2A?displayProperty=nameWithType>|Compares the current string object to another string. Returns an integer value.|  
+|<xref:System.String.StartsWith%2A?displayProperty=nameWithType>|Determines whether a string begins with the string passed. Returns a Boolean value.|  
+|<xref:System.String.EndsWith%2A?displayProperty=nameWithType>|Determines whether a string ends with the string passed. Returns a Boolean value.|  
+|<xref:System.String.Equals%2A?displayProperty=nameWithType>|Determines whether two strings are the same. Returns a Boolean value.|  
+|<xref:System.String.IndexOf%2A?displayProperty=nameWithType>|Returns the index position of a character or string, starting from the beginning of the string you are examining. Returns an integer value.|  
+|<xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>|Returns the index position of a character or string, starting from the end of the string you are examining. Returns an integer value.|  
   
 ## Compare  
- The static <xref:System.String.Compare%2A?displayProperty=fullName> method provides a thorough way of comparing two strings. This method is culturally aware. You can use this function to compare two strings or substrings of two strings. Additionally, overloads are provided that regard or disregard case and cultural variance. The following table shows the three integer values that this method might return.  
+ The static <xref:System.String.Compare%2A?displayProperty=nameWithType> method provides a thorough way of comparing two strings. This method is culturally aware. You can use this function to compare two strings or substrings of two strings. Additionally, overloads are provided that regard or disregard case and cultural variance. The following table shows the three integer values that this method might return.  
   
 |Return value|Condition|  
 |------------------|---------------|  
@@ -49,9 +56,9 @@ manager: "wpickett"
 |A positive integer<br /><br /> -or-<br /><br /> 1|The first string follows the second string in the sort order.<br /><br /> -or-<br /><br /> The second string is `null`.|  
   
 > [!IMPORTANT]
->  The <xref:System.String.Compare%2A?displayProperty=fullName> method is primarily intended for use when ordering or sorting strings. You should not use the <xref:System.String.Compare%2A?displayProperty=fullName> method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method.  
+>  The <xref:System.String.Compare%2A?displayProperty=nameWithType> method is primarily intended for use when ordering or sorting strings. You should not use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method.  
   
- The following example uses the <xref:System.String.Compare%2A?displayProperty=fullName> method to determine the relative values of two strings.  
+ The following example uses the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to determine the relative values of two strings.  
   
  [!code-cpp[Conceptual.String.BasicOps#6](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#6)]
  [!code-csharp[Conceptual.String.BasicOps#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#6)]
@@ -59,13 +66,13 @@ manager: "wpickett"
   
  This example displays `-1` to the console.  
   
- The preceding example is culture-sensitive by default. To perform a culture-insensitive string comparison, use an overload of the <xref:System.String.Compare%2A?displayProperty=fullName> method that allows you to specify the culture to use by supplying a *culture* parameter. For an example that demonstrates how to use the <xref:System.String.Compare%2A?displayProperty=fullName> method to perform a culture-insensitive comparison, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
+ The preceding example is culture-sensitive by default. To perform a culture-insensitive string comparison, use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> method that allows you to specify the culture to use by supplying a *culture* parameter. For an example that demonstrates how to use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to perform a culture-insensitive comparison, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
   
 ## CompareOrdinal  
- The <xref:System.String.CompareOrdinal%2A?displayProperty=fullName> method compares two string objects without considering the local culture. The return values of this method are identical to the values returned by the **Compare** method in the previous table.  
+ The <xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType> method compares two string objects without considering the local culture. The return values of this method are identical to the values returned by the **Compare** method in the previous table.  
   
 > [!IMPORTANT]
->  The <xref:System.String.CompareOrdinal%2A?displayProperty=fullName> method is primarily intended for use when ordering or sorting strings. You should not use the <xref:System.String.CompareOrdinal%2A?displayProperty=fullName> method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method.  
+>  The <xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType> method is primarily intended for use when ordering or sorting strings. You should not use the <xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType> method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method.  
   
  The following example uses the **CompareOrdinal** method to compare the values of two strings.  
   
@@ -76,12 +83,12 @@ manager: "wpickett"
  This example displays `-32` to the console.  
   
 ## CompareTo  
- The <xref:System.String.CompareTo%2A?displayProperty=fullName> method compares the string that the current string object encapsulates to another string or object. The return values of this method are identical to the values returned by the <xref:System.String.Compare%2A?displayProperty=fullName> method in the previous table.  
+ The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method compares the string that the current string object encapsulates to another string or object. The return values of this method are identical to the values returned by the <xref:System.String.Compare%2A?displayProperty=nameWithType> method in the previous table.  
   
 > [!IMPORTANT]
->  The <xref:System.String.CompareTo%2A?displayProperty=fullName> method is primarily intended for use when ordering or sorting strings. You should not use the <xref:System.String.CompareTo%2A?displayProperty=fullName> method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method.  
+>  The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method is primarily intended for use when ordering or sorting strings. You should not use the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method.  
   
- The following example uses the <xref:System.String.CompareTo%2A?displayProperty=fullName> method to compare the `string1` object to the `string2` object.  
+ The following example uses the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method to compare the `string1` object to the `string2` object.  
   
  [!code-cpp[Conceptual.String.BasicOps#8](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#8)]
  [!code-csharp[Conceptual.String.BasicOps#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#8)]
@@ -89,7 +96,7 @@ manager: "wpickett"
   
  This example displays `-1` to the console.  
   
- All overloads of the <xref:System.String.CompareTo%2A?displayProperty=fullName> method perform culture-sensitive and case-sensitive comparisons by default. No overloads of this method are provided that allow you to perform a culture-insensitive comparison. For code clarity, we recommend that you use the **String.Compare** method instead, specifying <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> for culture-sensitive operations or <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> for culture-insensitive operations. For examples that demonstrate how to use the **String.Compare** method to perform both culture-sensitive and culture-insensitive comparisons, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
+ All overloads of the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method perform culture-sensitive and case-sensitive comparisons by default. No overloads of this method are provided that allow you to perform a culture-insensitive comparison. For code clarity, we recommend that you use the **String.Compare** method instead, specifying <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> for culture-sensitive operations or <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> for culture-insensitive operations. For examples that demonstrate how to use the **String.Compare** method to perform both culture-sensitive and culture-insensitive comparisons, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
   
 ## Equals  
  The **String.Equals** method can easily determine if two strings are the same. This case-sensitive method returns a **true** or **false** Boolean value. It can be used from an existing class, as illustrated in the next example. The following example uses the **Equals** method to determine whether a string object contains the phrase "Hello World".  
@@ -149,5 +156,5 @@ manager: "wpickett"
  Both methods are useful when used in conjunction with the **String.Remove** method. You can use either the **IndexOf** or **LastIndexOf** methods to retrieve the position of a character, and then supply that position to the **Remove** method in order to remove a character or a word that begins with that character.  
   
 ## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)   
+ [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
  [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

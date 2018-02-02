@@ -81,7 +81,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -193,7 +193,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string subcategory, string code, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string subcategory, string code, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string subcategory, string code, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -402,5 +402,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

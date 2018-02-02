@@ -43,13 +43,13 @@
   
      The conversion of a string to the following types in the <xref:System> namespace can throw a <xref:System.FormatException> exception:  
   
-    -   <xref:System.Boolean>. The <xref:System.Boolean.Parse%28System.String%29?displayProperty=fullName> and <xref:System.Convert.ToBoolean%28System.String%29?displayProperty=fullName> methods require the string to be converted to be "True", "true", "False", or "false". Any other value throws a <xref:System.FormatException> exception.  
+    -   <xref:System.Boolean>. The <xref:System.Boolean.Parse%28System.String%29?displayProperty=nameWithType> and <xref:System.Convert.ToBoolean%28System.String%29?displayProperty=nameWithType> methods require the string to be converted to be "True", "true", "False", or "false". Any other value throws a <xref:System.FormatException> exception.  
   
-    -   <xref:System.DateTime> and <xref:System.DateTimeOffset>. All date and time data is interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. When you call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> and <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> methods, date and time data must also conform *exactly* to a pattern specified by one or more [standard format strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [custom format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) that are provided as arguments in the method call. If it doesn't conform to an expected culture-specific pattern, a <xref:System.FormatException> exception is thrown. This means that date and time data saved in a culture-specific format on one system might not parse successfully on another system.  
+    -   <xref:System.DateTime> and <xref:System.DateTimeOffset>. All date and time data is interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. When you call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> and <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> methods, date and time data must also conform *exactly* to a pattern specified by one or more [standard format strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [custom format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) that are provided as arguments in the method call. If it doesn't conform to an expected culture-specific pattern, a <xref:System.FormatException> exception is thrown. This means that date and time data saved in a culture-specific format on one system might not parse successfully on another system.  
   
          For more information about parsing dates and times, see [Parsing Date and Time Strings](~/docs/standard/base-types/parsing-datetime.md) and the documentation for the method that threw the exception.  
   
-    -   **GUIDs.** The string representation of a GUID must consist of 32 hexadecimal digits (0-F), and must be in one of the five formats output by the <xref:System.Guid.ToString%2A?displayProperty=fullName> method. For more information, see the <xref:System.Guid.Parse%2A?displayProperty=fullName> method.  
+    -   **GUIDs.** The string representation of a GUID must consist of 32 hexadecimal digits (0-F), and must be in one of the five formats output by the <xref:System.Guid.ToString%2A?displayProperty=nameWithType> method. For more information, see the <xref:System.Guid.Parse%2A?displayProperty=nameWithType> method.  
   
     -   **Numeric types, including all signed integers, unsigned integers, and floating-point types.** The string to be parsed must consist of the Latin digits 0-9. A positive or negative sign, decimal separator, group separators, and currency symbol may also be permitted. Trying to parse a string that contains any other character always throws a <xref:System.FormatException> exception.  
   
@@ -69,12 +69,12 @@
      [!code-csharp[System.FormatException#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable2.cs#8)]
      [!code-vb[System.FormatException#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable2.vb#8)]  
   
-     A <xref:System.FormatException> exception can also be thrown by parsing methods, such as <xref:System.DateTime.ParseExact%2A?displayProperty=fullName> and <xref:System.Guid.ParseExact%2A?displayProperty=fullName>, that require the string to be parsed to conform exactly to the pattern specified by a format string. In the following example, the string representation of a GUID is expected to conform to the pattern specified by the "G" standard format string. However, the <xref:System.Guid> structure's implementation of <xref:System.IFormattable> does not support the "G" format string.  
+     A <xref:System.FormatException> exception can also be thrown by parsing methods, such as <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> and <xref:System.Guid.ParseExact%2A?displayProperty=nameWithType>, that require the string to be parsed to conform exactly to the pattern specified by a format string. In the following example, the string representation of a GUID is expected to conform to the pattern specified by the "G" standard format string. However, the <xref:System.Guid> structure's implementation of <xref:System.IFormattable> does not support the "G" format string.  
   
      [!code-csharp[System.FormatException#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable3.cs#9)]
      [!code-vb[System.FormatException#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable3.vb#9)]  
   
-     This exception also results from a coding error. To correct it, call a parsing method that doesn’t require a precise format, such as <xref:System.DateTime.Parse%2A?displayProperty=fullName> or <xref:System.Guid.Parse%2A?displayProperty=fullName>, or substitute a valid format string. The following example corrects the error by calling the <xref:System.Guid.Parse%2A?displayProperty=fullName> method.  
+     This exception also results from a coding error. To correct it, call a parsing method that doesn’t require a precise format, such as <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.Guid.Parse%2A?displayProperty=nameWithType>, or substitute a valid format string. The following example corrects the error by calling the <xref:System.Guid.Parse%2A?displayProperty=nameWithType> method.  
   
      [!code-csharp[System.FormatException#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable4.cs#10)]
      [!code-vb[System.FormatException#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable4.vb#10)]  
@@ -101,7 +101,7 @@
      [!code-csharp[System.String.Format#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#24)]
      [!code-vb[System.String.Format#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#24)]  
   
-     The exception is also thrown if your format string contains a typo. The following call to the <xref:System.String.Format%2A?displayProperty=fullName> method omits a closing brace and pairs an opening brace with a closing bracket.  
+     The exception is also thrown if your format string contains a typo. The following call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method omits a closing brace and pairs an opening brace with a closing bracket.  
   
      [!code-csharp[System.FormatException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example3.cs#3)]
      [!code-vb[System.FormatException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example3.vb#3)]  
@@ -111,7 +111,7 @@
      [!code-csharp[System.FormatException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example3.cs#4)]
      [!code-vb[System.FormatException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example3.vb#4)]  
   
--   You've supplied the object list in a composite formatting method as a strongly typed parameter array, and the <xref:System.FormatException> exception indicates that the index of one or more format items exceeds the number of arguments in the object list. This occurs because no explicit conversion between array types exists, so instead the compiler treats the array as a single argument rather than as a parameter array. For example, the following call to the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method throws a <xref:System.FormatException> exception, although the highest index of the format items is 3, and the parameter array of type <xref:System.Int32> has four elements.  
+-   You've supplied the object list in a composite formatting method as a strongly typed parameter array, and the <xref:System.FormatException> exception indicates that the index of one or more format items exceeds the number of arguments in the object list. This occurs because no explicit conversion between array types exists, so instead the compiler treats the array as a single argument rather than as a parameter array. For example, the following call to the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method throws a <xref:System.FormatException> exception, although the highest index of the format items is 3, and the parameter array of type <xref:System.Int32> has four elements.  
   
      [!code-csharp[System.FormatException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/qa1.cs#5)]
      [!code-vb[System.FormatException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/qa1.vb#5)]  
@@ -127,6 +127,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -203,7 +204,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
   
  The following table shows the initial property values for an instance of <xref:System.FormatException>.  
   
@@ -297,7 +298,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.FormatException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

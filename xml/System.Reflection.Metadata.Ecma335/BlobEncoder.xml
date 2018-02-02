@@ -80,7 +80,7 @@
     </Member>
     <Member MemberName="CustomAttributeSignature">
       <MemberSignature Language="C#" Value="public void CustomAttributeSignature (out System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder fixedArguments, out System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder namedArguments);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CustomAttributeSignature(valuetype System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder fixedArguments, valuetype System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder namedArguments) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CustomAttributeSignature([out] valuetype System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&amp; fixedArguments, [out] valuetype System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&amp; namedArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.CustomAttributeSignature(System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder@,System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

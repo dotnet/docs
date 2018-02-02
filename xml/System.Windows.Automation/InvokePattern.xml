@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IInvokeProvider" />
   </Docs>
   <Members>
     <Member MemberName="Invoke">
@@ -48,7 +49,7 @@
    
   
 ## Examples  
- In the following example an <xref:System.Windows.Automation.InvokePattern>control pattern is obtained from a control and the <xref:System.Windows.Automation.InvokePattern.Invoke%2A> method is called.  
+ In the following example an <xref:System.Windows.Automation.InvokePattern> control pattern is obtained from a control and the <xref:System.Windows.Automation.InvokePattern.Invoke%2A> method is called.  
   
  [!code-csharp[UIAInvokePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAInvokePattern_snip/CSharp/UIAInvokePattern_snippets.cs#101)]
  [!code-vb[UIAInvokePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAInvokePattern_snip/VisualBasic/UIAInvokePattern_snippets.vb#101)]  

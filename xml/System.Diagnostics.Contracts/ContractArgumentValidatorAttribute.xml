@@ -39,12 +39,12 @@
  [!code-csharp[System.Diagnostics.Contracts.ContractArgumentValidatorAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.contracts.contractargumentvalidatorattribute/cs/ifthenthrow1.cs#1)]
  [!code-vb[System.Diagnostics.Contracts.ContractArgumentValidatorAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.diagnostics.contracts.contractargumentvalidatorattribute/vb/ifthenthrow1.vb#1)]  
   
- In this example, `Execute` has an elective precondition specifying that the parameter value should not be `null`. To enable the contract tools to recognize that the call to `ValidationHelper.NotNull` represents a contract, you can mark the called method with the  <xref:System.Diagnostics.Contracts.ContractArgumentValidatorAttribute> attribute. The <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A?displayProperty=fullName> method call should be used to enable the tools to extract the proper specifications for document generation and static checking, as follows.  
+ In this example, `Execute` has an elective precondition specifying that the parameter value should not be `null`. To enable the contract tools to recognize that the call to `ValidationHelper.NotNull` represents a contract, you can mark the called method with the  <xref:System.Diagnostics.Contracts.ContractArgumentValidatorAttribute> attribute. The <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A?displayProperty=nameWithType> method call should be used to enable the tools to extract the proper specifications for document generation and static checking, as follows.  
   
  [!code-csharp[System.Diagnostics.Contracts.ContractArgumentValidatorAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.contracts.contractargumentvalidatorattribute/cs/ifthenthrow2.cs#2)]
  [!code-vb[System.Diagnostics.Contracts.ContractArgumentValidatorAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.diagnostics.contracts.contractargumentvalidatorattribute/vb/ifthenthrow2.vb#2)]  
   
- In addition to `if-then-throw` statements, the contract section of contract validator methods may contain calls to other contract validator methods. However, no other contracts (such as <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=fullName>, or <xref:System.Diagnostics.Contracts.Contract.Ensures%2A?displayProperty=fullName>) are allowed. Code that follows the <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A?displayProperty=fullName> call is ignored by all contract tools.  
+ In addition to `if-then-throw` statements, the contract section of contract validator methods may contain calls to other contract validator methods. However, no other contracts (such as <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=nameWithType>, or <xref:System.Diagnostics.Contracts.Contract.Ensures%2A?displayProperty=nameWithType>) are allowed. Code that follows the <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A?displayProperty=nameWithType> call is ignored by all contract tools.  
   
  The following example shows a range argument validator written in terms of an existing `NotNull` validator method.  
   
@@ -60,7 +60,7 @@ Contract.Requires<ArgumentOutOfRangeException>(position < data.Length);
   
 ```  
   
- In standard methods, calls to contract validator methods can be freely mixed with other contracts such as <xref:System.Diagnostics.Contracts.Contract.Ensures%2A?displayProperty=fullName> or <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=fullName>.  
+ In standard methods, calls to contract validator methods can be freely mixed with other contracts such as <xref:System.Diagnostics.Contracts.Contract.Ensures%2A?displayProperty=nameWithType> or <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>

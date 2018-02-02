@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "routed events, handling"
-  - "bubbling events"
+  - "routed events [WPF], handling"
+  - "bubbling events [WPF]"
 ms.assetid: 157787b4-f469-4047-8777-5b034145f32e
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Handle a Routed Event
 This example shows how bubbling events work and how to write a handler that can process the routed event data.  
@@ -24,7 +29,7 @@ This example shows how bubbling events work and how to write a handler that can 
 ## Example  
  In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], elements are arranged in an element tree structure. The parent element can participate in the handling of events that are initially raised by child elements in the element tree. This is possible because of event routing.  
   
- Routed events typically follow one of two routing strategies, bubbling or tunneling. This example focuses on the bubbling event and uses the <xref:System.Windows.Controls.Primitives.ButtonBase.Click?displayProperty=fullName> event to show how routing works.  
+ Routed events typically follow one of two routing strategies, bubbling or tunneling. This example focuses on the bubbling event and uses the <xref:System.Windows.Controls.Primitives.ButtonBase.Click?displayProperty=nameWithType> event to show how routing works.  
   
  The following example creates two <xref:System.Windows.Controls.Button> controls and uses [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] attribute syntax to attach an event handler to a common parent element, which in this example is <xref:System.Windows.Controls.StackPanel>. Instead of attaching individual event handlers for each <xref:System.Windows.Controls.Button> child element, the example uses attribute syntax to attach the event handler to the <xref:System.Windows.Controls.StackPanel> parent element. This event-handling pattern shows how to use event routing as a technique for reducing the number of elements where a handler is attached. All the bubbling events for each <xref:System.Windows.Controls.Button> route through the parent element.  
   
@@ -38,8 +43,8 @@ This example shows how bubbling events work and how to write a handler that can 
  [!code-vb[RoutedEventHandle#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventHandle/VisualBasic/MainWindow.xaml.vb#handler)]  
   
 ## See Also  
- <xref:System.Windows.RoutedEvent>   
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)   
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)   
+ <xref:System.Windows.RoutedEvent>  
+ [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)  
  [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)

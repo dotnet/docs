@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyboardEventArgs" />
+    <altmember cref="T:System.Windows.Input.KeyEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="AddGotKeyboardFocusHandler">
@@ -64,7 +66,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -94,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -124,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -154,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -184,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -214,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -244,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -274,7 +276,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -304,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -334,7 +336,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -498,6 +500,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.KeyStates" />
       </Docs>
     </Member>
     <Member MemberName="GotKeyboardFocusEvent">
@@ -560,6 +564,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.IsDown" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyToggled">
@@ -598,6 +604,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.IsToggled" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyUp">
@@ -636,6 +644,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.IsUp" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardInputProviderAcquireFocusEvent">
@@ -915,6 +925,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardDevice" />
       </Docs>
     </Member>
     <Member MemberName="RemoveGotKeyboardFocusHandler">
@@ -941,7 +952,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -971,7 +982,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1001,7 +1012,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1031,7 +1042,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1061,7 +1072,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1091,7 +1102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1121,7 +1132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1151,7 +1162,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1181,7 +1192,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>
@@ -1211,7 +1222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=fullName> attached event.  
+ This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=nameWithType> attached event.  
   
  ]]></format>
         </remarks>

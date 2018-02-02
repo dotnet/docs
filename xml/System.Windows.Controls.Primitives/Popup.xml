@@ -64,6 +64,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.PlacementMode" />
+    <altmember cref="T:System.Windows.Controls.ToolTip" />
+    <altmember cref="T:System.Windows.Controls.ToolTipService" />
+    <altmember cref="T:System.Windows.Controls.Primitives.CustomPopupPlacementCallback" />
+    <altmember cref="T:System.Windows.Controls.Primitives.PopupAnimation" />
+    <altmember cref="T:System.Windows.Controls.Primitives.PopupPrimaryAxis" />
+    <altmember cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -127,6 +134,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for setting this property to <see langword="true" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Windows.Window.AllowsTransparency" />
       </Docs>
     </Member>
     <Member MemberName="AllowsTransparencyProperty">
@@ -255,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Primitives.Popup.Opened" />
       </Docs>
     </Member>
     <Member MemberName="CreateRootPopup">
@@ -358,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.CustomPopupPlacementCallback" />
       </Docs>
     </Member>
     <Member MemberName="CustomPopupPlacementCallbackProperty">
@@ -416,7 +426,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A drop shadow effect displays when the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A?displayProperty=fullName> property are set to `true`.  
+ A drop shadow effect displays when the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=nameWithType> property and the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A?displayProperty=nameWithType> property are set to `true`.  
   
 <a name="dependencyPropertyInfo_HasDropShadow"></a>   
 ## Dependency Property Information  
@@ -545,6 +555,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.PlacementRectangle" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.Placement" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffsetProperty">
@@ -871,6 +885,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Primitives.Popup.Closed" />
       </Docs>
     </Member>
     <Member MemberName="Placement">
@@ -921,6 +936,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.PlacementMode" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.Placement" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="PlacementProperty">
@@ -986,6 +1005,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.Placement" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="PlacementRectangleProperty">
@@ -1054,6 +1077,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.Placement" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.PlacementRectangle" />
       </Docs>
     </Member>
     <Member MemberName="PlacementTargetProperty">
@@ -1126,6 +1153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.PopupAnimation" />
       </Docs>
     </Member>
     <Member MemberName="PopupAnimationProperty">
@@ -1194,6 +1222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.IsOpen" />
       </Docs>
     </Member>
     <Member MemberName="StaysOpenProperty">
@@ -1333,6 +1362,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.PlacementRectangle" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.Placement" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="VerticalOffsetProperty">

@@ -60,6 +60,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="P:System.Web.UI.MobileControls.MobileControl.CustomAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.TextBox.LoadPostData%2A> method first attempts to call the  <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A?displayProperty=fullName> method on the <xref:System.Web.UI.MobileControls.IControlAdapter> object referenced by <xref:System.Web.UI.MobileControls.MobileControl.Adapter%2A>. If the adapter has no device-specific implementation for loading the post data into the control, that call returns `false` and the <xref:System.Web.UI.MobileControls.TextBox.LoadPostData%2A?displayProperty=fullName> method then tests the value of the object referenced by the `data` parameter at the specified `key` against <xref:System.Web.UI.MobileControls.TextControl.Text%2A>. If the values are not equal, the new value is set. If either attempt to load the posted data, whether through the adapter or directly, results in the data being changed, a <xref:System.Web.UI.MobileControls.TextBox.RaisePostDataChangedEvent%2A> will occur.  
+ The <xref:System.Web.UI.MobileControls.TextBox.LoadPostData%2A> method first attempts to call the  <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A?displayProperty=nameWithType> method on the <xref:System.Web.UI.MobileControls.IControlAdapter> object referenced by <xref:System.Web.UI.MobileControls.MobileControl.Adapter%2A>. If the adapter has no device-specific implementation for loading the post data into the control, that call returns `false` and the <xref:System.Web.UI.MobileControls.TextBox.LoadPostData%2A?displayProperty=nameWithType> method then tests the value of the object referenced by the `data` parameter at the specified `key` against <xref:System.Web.UI.MobileControls.TextControl.Text%2A>. If the values are not equal, the new value is set. If either attempt to load the posted data, whether through the adapter or directly, results in the data being changed, a <xref:System.Web.UI.MobileControls.TextBox.RaisePostDataChangedEvent%2A> will occur.  
   
  ]]></format>
         </remarks>
@@ -300,6 +301,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -332,6 +334,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -357,6 +360,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -384,11 +388,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.TextBox.TextChanged> event to change the items in a <xref:System.Web.UI.MobileControls.SelectionList>.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileTextBoxSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextBoxSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileTextBoxSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextBoxSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileTextBoxSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextBoxSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileTextBoxSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextBoxSample/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.TextBox.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Title">

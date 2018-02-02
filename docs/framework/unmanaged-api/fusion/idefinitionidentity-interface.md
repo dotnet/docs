@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDefinitionIdentity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDefinitionIdentity interface [.NET Framework fusion]"
 ms.assetid: ce5ba888-5fbe-4efd-91cf-f0ff94d8428b
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDefinitionIdentity Interface
 Represents the unique signature of the code that defines the application in the current scope.  

@@ -25,12 +25,17 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListViewPagedDataSource> class encapsulates the properties that enable the <xref:System.Web.UI.WebControls.ListView> control to perform paging.  
   
- This class uses the best available method to enumerate the associated data. If the underlying data source supports indexed access (such as <xref:System.Array?displayProperty=fullName> and <xref:System.Collections.IList?displayProperty=fullName> objects), the class uses that access. Otherwise, the class uses the enumerator that is created by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
+ This class uses the best available method to enumerate the associated data. If the underlying data source supports indexed access (such as <xref:System.Array?displayProperty=nameWithType> and <xref:System.Collections.IList?displayProperty=nameWithType> objects), the class uses that access. Otherwise, the class uses the enumerator that is created by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewPagedDataSource> class, see the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.%23ctor%2A> constructor.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Array" />
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.IEnumerable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,10 +117,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the data source into the specified <xref:System.Array?displayProperty=fullName> object, starting at the specified index. The <xref:System.Array?displayProperty=fullName> object is often used to iterate through the items in the data source.  
+ Use this method to copy the contents of the data source into the specified <xref:System.Array?displayProperty=nameWithType> object, starting at the specified index. The <xref:System.Array?displayProperty=nameWithType> object is often used to iterate through the items in the data source.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -149,6 +155,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.MaximumRows" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.StartRowIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -174,6 +184,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceCount">
@@ -203,6 +215,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data source object does not implement the <see cref="T:System.Collections.ICollection" /> interface.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.TotalRowCount" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -225,13 +241,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to get an <xref:System.Collections.IEnumerator?displayProperty=fullName> object that you can use to access individual items in the data source. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection. To move the enumerator to its original position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
+ Use this method to get an <xref:System.Collections.IEnumerator?displayProperty=nameWithType> object that you can use to access individual items in the data source. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection. To move the enumerator to its original position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  When you first get the enumerator or when you call the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item that is represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  When you first get the enumerator or when you call the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item that is represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -257,10 +277,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method to obtain a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> object that represents the properties that are used to bind data. The <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method calls the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A?displayProperty=fullName> method of the underlying data source object. If the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource%2A> property is `null` or does not implement the <xref:System.ComponentModel.ITypedList?displayProperty=fullName> interface, `null` is returned.  
+ Use the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method to obtain a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=nameWithType> object that represents the properties that are used to bind data. The <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method calls the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A?displayProperty=nameWithType> method of the underlying data source object. If the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource%2A> property is `null` or does not implement the <xref:System.ComponentModel.ITypedList?displayProperty=nameWithType> interface, `null` is returned.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -286,10 +310,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is inherited from the <xref:System.ComponentModel.ITypedList?displayProperty=fullName> interface and does not apply to this class. It has been implemented so that it returns <xref:System.String.Empty?displayProperty=fullName> for all cases. For more information about the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetListName%2A> method, see <xref:System.ComponentModel.ITypedList.GetListName%2A?displayProperty=fullName>.  
+ This method is inherited from the <xref:System.ComponentModel.ITypedList?displayProperty=nameWithType> interface and does not apply to this class. It has been implemented so that it returns <xref:System.String.Empty?displayProperty=nameWithType> for all cases. For more information about the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetListName%2A> method, see <xref:System.ComponentModel.ITypedList.GetListName%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -328,6 +355,7 @@
         <value>
           <see langword="true" /> if server-based paging is indicated by using the <see cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.AllowServerPaging" /> property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.AllowServerPaging" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -350,12 +378,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> interface and is overridden to always return `false` , which indicates that this class is not thread-safe.  
+ This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface and is overridden to always return `false` , which indicates that this class is not thread-safe.  
   
- For more information about the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information about the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="MaximumRows">
@@ -415,10 +445,13 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Web.UI.WebControls.ListViewPagedDataSource> object itself.  
   
- For more information about the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information about the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="TotalRowCount">
@@ -437,6 +470,7 @@
         <summary>Gets or sets the total number of items in the data source when server-based paging is being used.</summary>
         <value>The total number of items in the data source when server-based paging is being used.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount" />
       </Docs>
     </Member>
   </Members>

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "global static functions [.NET Framework profiling]"
   - "profiling global static functions [.NET Framework]"
@@ -20,6 +18,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling Global Static Functions
 This section describes the unmanaged API functions that the profiling API uses.  

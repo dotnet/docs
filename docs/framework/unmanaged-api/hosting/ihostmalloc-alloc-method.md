@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMAlloc::Alloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Alloc method, IHostMAlloc interface [.NET Framework hosting]"
   - "IHostMAlloc::Alloc method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMAlloc::Alloc Method
 Requests that the host allocate the specified amount of memory from the heap.  
@@ -78,5 +78,5 @@ HRESULT Alloc (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)   
+ [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)  
  [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)

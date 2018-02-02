@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.IAuthenticationModule" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -205,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionGroupId">
@@ -293,6 +295,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
       </Docs>
     </Member>
     <Member MemberName="MutuallyAuthenticated">
@@ -373,5 +376,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Authorization" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

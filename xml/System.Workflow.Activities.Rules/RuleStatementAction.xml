@@ -231,11 +231,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Workflow.Activities.Rules.RuleStatementAction> contains errors (the Validate method returns false), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
+ If the <xref:System.Workflow.Activities.Rules.RuleStatementAction> contains errors (the Validate method returns false), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=nameWithType> will contain the list of errors encountered.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleStatementAction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

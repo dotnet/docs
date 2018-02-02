@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7ddcd497-3e04-427e-bc04-3610ad98b01e
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Installing Message Queuing (MSMQ)
 The following procedures show how to install Message Queuing 4.0 and Message Queuing 3.0.  

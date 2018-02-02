@@ -34,8 +34,8 @@
 > [!NOTE]
 >  This class is intended primarily for developers that want to create a custom implementation. This example demonstrates the implementation provided by the .NET Framework.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IStyleSheet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheet/CS/istylesheetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IStyleSheet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheet/VB/istylesheetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.IStyleSheet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheet/CS/istylesheetcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.IStyleSheet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheet/VB/istylesheetvb.aspx#1)]  
   
  The following is the code-behind file for the Web page in the preceding example.  
   
@@ -43,6 +43,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlHead" />
   </Docs>
   <Members>
     <Member MemberName="CreateStyleRule">
@@ -83,8 +85,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.Page.Header%2A> implementation of <xref:System.Web.UI.IStyleSheet> to demonstrate defining a new <xref:System.Web.UI.WebControls.Style> object, `bodyStyle`. Then `bodyStyle` is added to the current URL by calling <xref:System.Web.UI.IStyleSheet.CreateStyleRule%2A>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IStyleSheetCreateStyleRule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheetCreateStyleRule/CS/istylesheetcreatestylerulecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IStyleSheetCreateStyleRule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheetCreateStyleRule/VB/istylesheetcreatestylerulevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.IStyleSheetCreateStyleRule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheetCreateStyleRule/CS/istylesheetcreatestylerulecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.IStyleSheetCreateStyleRule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheetCreateStyleRule/VB/istylesheetcreatestylerulevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -128,8 +130,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.Page.Header%2A> implementation of <xref:System.Web.UI.IStyleSheet> to demonstrate creating a custom <xref:System.Web.UI.WebControls.Style> object, `labelStyle`, and then registering it for the current location (URL). Then the `label1` label calls the <xref:System.Web.UI.WebControls.WebControl.MergeStyle%2A> method so that the `labelStyle` style is applied to the `label1` label.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IStyleSheetRegisterStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheetRegisterStyle/CS/istylesheetregisterstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IStyleSheetRegisterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheetRegisterStyle/VB/istylesheetregisterstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.IStyleSheetRegisterStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheetRegisterStyle/CS/istylesheetregisterstylecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.IStyleSheetRegisterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheetRegisterStyle/VB/istylesheetregisterstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>

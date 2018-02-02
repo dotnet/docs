@@ -38,6 +38,7 @@
         <param name="options">An <see cref="T:System.Windows.Forms.Design.AxImporter.Options" /> that indicates the options for the ActiveX control importer to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxImporter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.AxImporter.Options" />
       </Docs>
     </Member>
     <Member MemberName="GeneratedAssemblies">
@@ -92,6 +93,7 @@
         <summary>Gets the attributes for the generated type library.</summary>
         <value>An array of type <see cref="T:System.Runtime.InteropServices.TYPELIBATTR" /> that indicates the attributes for the generated type library.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.InteropServices.TYPELIBATTR" />
       </Docs>
     </Member>
     <Member MemberName="GenerateFromFile">
@@ -138,6 +140,7 @@
         <returns>An assembly qualified name for the type of ActiveX control for which a wrapper was generated.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">No registered ActiveX control was found in <paramref name="typeLib" />.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.UCOMITypeLib" />
       </Docs>
     </Member>
     <Member MemberName="GenerateFromTypeLibrary">
@@ -167,7 +170,7 @@
     </Member>
     <Member MemberName="GetFileOfTypeLib">
       <MemberSignature Language="C#" Value="public static string GetFileOfTypeLib (ref System.Runtime.InteropServices.TYPELIBATTR tlibattr);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileOfTypeLib(valuetype System.Runtime.InteropServices.TYPELIBATTR tlibattr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileOfTypeLib(valuetype System.Runtime.InteropServices.TYPELIBATTR&amp; tlibattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.GetFileOfTypeLib(System.Runtime.InteropServices.TYPELIBATTR@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -187,5 +190,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateFromTypeLibrary">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a wrapper for an ActiveX control for use in the design-time environment.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

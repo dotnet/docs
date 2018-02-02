@@ -47,7 +47,7 @@
 ## Remarks  
  This delegate is used by several methods of the <xref:System.Array> and <xref:System.Collections.Generic.List%601> classes to search for elements in the collection.  
   
- Typically, the <xref:System.Predicate%601> delegate is represented by a lambda expression. Because locally scoped variables are available to the lambda expression, it is easy to test for a condition that is not precisely known at compile time. This is simulated in the following example, which defines a `HockeyTeam` class that contains information about a National Hockey League team and the year in which it was founded. The example defines an array of integer values that represent years, and randomly assigns one element of the array to `foundedBeforeYear`, which is a variable that is locally scoped to the example's `Main` method. Because locally scoped variables are available to a lambda expression, the lambda expression passed to the <xref:System.Collections.Generic.List%601.FindAll%2A?displayProperty=fullName> method is able to return a `HockeyTeam` object for each team founded on or before that year.  
+ Typically, the <xref:System.Predicate%601> delegate is represented by a lambda expression. Because locally scoped variables are available to the lambda expression, it is easy to test for a condition that is not precisely known at compile time. This is simulated in the following example, which defines a `HockeyTeam` class that contains information about a National Hockey League team and the year in which it was founded. The example defines an array of integer values that represent years, and randomly assigns one element of the array to `foundedBeforeYear`, which is a variable that is locally scoped to the example's `Main` method. Because locally scoped variables are available to a lambda expression, the lambda expression passed to the <xref:System.Collections.Generic.List%601.FindAll%2A?displayProperty=nameWithType> method is able to return a `HockeyTeam` object for each team founded on or before that year.  
   
  [!code-csharp[System.Predicate\`1#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Predicate`1/cs/predicate1.cs#3)]
  [!code-vb[System.Predicate\`1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Predicate`1/vb/predicate1.vb#3)]  
@@ -55,7 +55,7 @@
    
   
 ## Examples  
- The following code example uses a <xref:System.Predicate%601> delegate with the <xref:System.Array.Find%2A?displayProperty=fullName> method to search an array of <xref:System.Drawing.Point> structures. The example explicitly defines a <xref:System.Predicate%601> delegate named `predicate` and assigns it a method named `FindPoints` that returns `true` if the product of the <xref:System.Drawing.Point.X%2A?displayProperty=fullName> and <xref:System.Drawing.Point.Y%2A?displayProperty=fullName> fields is greater than 100,000. Note that it is customary to use a lambda expression rather than to explicitly define a delegate of type <xref:System.Predicate%601>, as the second example illustrates.  
+ The following code example uses a <xref:System.Predicate%601> delegate with the <xref:System.Array.Find%2A?displayProperty=nameWithType> method to search an array of <xref:System.Drawing.Point> structures. The example explicitly defines a <xref:System.Predicate%601> delegate named `predicate` and assigns it a method named `FindPoints` that returns `true` if the product of the <xref:System.Drawing.Point.X%2A?displayProperty=nameWithType> and <xref:System.Drawing.Point.Y%2A?displayProperty=nameWithType> fields is greater than 100,000. Note that it is customary to use a lambda expression rather than to explicitly define a delegate of type <xref:System.Predicate%601>, as the second example illustrates.  
   
  [!code-csharp[System.Predicate\`1#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Predicate`1/cs/predicateex2.cs#4)]
  [!code-vb[System.Predicate\`1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Predicate`1/vb/predicateex2.vb#4)]  
@@ -67,5 +67,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
   </Docs>
 </Type>

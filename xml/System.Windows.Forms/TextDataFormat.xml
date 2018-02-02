@@ -19,20 +19,23 @@
   
  This enumeration is used with the following methods:  
   
--   <xref:System.Windows.Forms.Clipboard.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.Clipboard.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.Clipboard.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.Clipboard.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.Clipboard.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.Clipboard.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.DataObject.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataObject.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.DataObject.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataObject.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.DataObject.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataObject.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=nameWithType>  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Clipboard" />
+    <altmember cref="T:System.Windows.Forms.DataObject" />
+    <altmember cref="T:System.Windows.Forms.DataFormats" />
   </Docs>
   <Members>
     <Member MemberName="CommaSeparatedValue">

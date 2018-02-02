@@ -26,7 +26,7 @@
    
   
 ## Examples  
- The following example shows an individual character being rotated. Each character is rotated independently at 1-second intervals. The example a defines a <xref:System.Windows.Media.TextEffect> that contains a <xref:System.Windows.Media.RotateTransform> that applies to each character in the <xref:System.Windows.Controls.TextBlock.Text%2A?displayProperty=fullName> property. The example defines the animations for the <xref:System.Windows.Media.RotateTransform.Angle%2A> and <xref:System.Windows.Media.RotateTransform.CenterX%2A> properties of the <xref:System.Windows.Media.RotateTransform> object. A third animation of type <xref:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames> changes the <xref:System.Windows.Media.TextEffect.PositionStart%2A> property from 0 to 12 during the animation sequence, corresponding to the 13-character text string.  
+ The following example shows an individual character being rotated. Each character is rotated independently at 1-second intervals. The example a defines a <xref:System.Windows.Media.TextEffect> that contains a <xref:System.Windows.Media.RotateTransform> that applies to each character in the <xref:System.Windows.Controls.TextBlock.Text%2A?displayProperty=nameWithType> property. The example defines the animations for the <xref:System.Windows.Media.RotateTransform.Angle%2A> and <xref:System.Windows.Media.RotateTransform.CenterX%2A> properties of the <xref:System.Windows.Media.RotateTransform> object. A third animation of type <xref:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames> changes the <xref:System.Windows.Media.TextEffect.PositionStart%2A> property from 0 to 12 during the animation sequence, corresponding to the 13-character text string.  
   
  ![Screenshot of text effect rotating text](~/add/media/texteffect01.jpg "Screenshot of text effect rotating text")  
   
@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.TextEffectCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,7 +171,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -198,7 +199,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -445,5 +446,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextEffect" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Trust managers must implement the <xref:System.Security.Policy.IApplicationTrustManager> interface. The host calls the <xref:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust%2A?displayProperty=fullName> method to determine whether an application should be executed and which permissions should be granted to the application.  
+ Trust managers must implement the <xref:System.Security.Policy.IApplicationTrustManager> interface. The host calls the <xref:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust%2A?displayProperty=nameWithType> method to determine whether an application should be executed and which permissions should be granted to the application.  
   
  In the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and later, there is only one trust manager, which can be a custom implementation of the <xref:System.Security.Policy.IApplicationTrustManager> interface. The default trust manager implementation prompts the user for permission to install the application and to elevate the permissions granted to the application. Other trust manager implementations might provide different user experiences. For example, an implementation might check an enterprise list for trusted applications instead of prompting the user for that information.  
   

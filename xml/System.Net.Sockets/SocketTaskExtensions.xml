@@ -14,13 +14,14 @@
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class contains extension methods to the <see cref="T:System.Net.Sockets.Socket" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,6 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.Socket&gt;</ReturnType>
@@ -49,9 +51,9 @@
         <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket that is listening for connections.</param>
+        <summary>Performs an asynchronous operation on to accept an incoming connection attempt on the socket.</summary>
+        <returns>An asynchronous task that completes with a <see cref="T:System.Net.Sockets.Socket" /> to handle communication with the remote host.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.Socket&gt;</ReturnType>
@@ -81,10 +84,10 @@
         <Parameter Name="acceptSocket" Type="System.Net.Sockets.Socket" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="acceptSocket">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket that is listening for incoming connections.</param>
+        <param name="acceptSocket">The accepted <see cref="T:System.Net.Sockets.Socket" /> object. This value may be <see langword="null" />.</param>
+        <summary>Performs an asynchronous operation on to accept an incoming connection attempt on the socket.</summary>
+        <returns>An asynchronous task that completes with a <see cref="T:System.Net.Sockets.Socket" /> to handle communication with the remote host.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,6 +108,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -114,10 +118,10 @@
         <Parameter Name="remoteEP" Type="System.Net.EndPoint" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="remoteEP">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket that is used for establishing a connection.</param>
+        <param name="remoteEP">An EndPoint that represents the remote device.</param>
+        <summary>Establishes a connection to a remote host.</summary>
+        <returns>An asynchronous Task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,6 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -148,10 +153,10 @@
         <Parameter Name="port" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="address">To be added.</param>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="socket">The socket to perform the connect operation on.</param>
+        <param name="address">The IP address of the remote host.</param>
+        <param name="port">The port number of the remote host.</param>
+        <summary>Establishes a connection to a remote host. The host is specified by an IP address and a port number.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,6 +178,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -183,11 +189,11 @@
         <Parameter Name="port" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="addresses">To be added.</param>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket that the connect operation is performed on.</param>
+        <param name="addresses">The IP addresses of the remote host.</param>
+        <param name="port">The port number of the remote host.</param>
+        <summary>Establishes a connection to a remote host. The host is specified by an array of IP addresses and a port number.</summary>
+        <returns>A task that represents the asynchronous connect operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,6 +214,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -218,11 +225,11 @@
         <Parameter Name="port" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="host">To be added.</param>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the connect operation on.</param>
+        <param name="host">The name of the remote host.</param>
+        <param name="port">The port number of the remote host.</param>
+        <summary>Establishes a connection to a remote host. The host is specified by a host name and a port number.</summary>
+        <returns>Returns an asynchronous Task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,6 +250,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -253,11 +261,11 @@
         <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="socketFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the receive operation on.</param>
+        <param name="buffer">An array that is the storage location for the received data.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <summary>Receive data from a connected socket.</summary>
+        <returns>A task that represents the asynchronous receive operation. The value of the <paramref name="TResult" /> parameter contains the number of bytes received.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,6 +286,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -288,11 +297,11 @@
         <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="buffers">To be added.</param>
-        <param name="socketFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the receive operation on.</param>
+        <param name="buffers">An array that is the storage location for the received data.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <summary>Receives data from a connected socket.</summary>
+        <returns>A task that represents the asynchronous receive operation. The value of the <paramref name="TResult" /> parameter contains the number of bytes received.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,6 +322,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.SocketReceiveFromResult&gt;</ReturnType>
@@ -324,12 +334,12 @@
         <Parameter Name="remoteEndPoint" Type="System.Net.EndPoint" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="remoteEndPoint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the ReceiveFrom operation on.</param>
+        <param name="buffer">An array of type Byte that is the storage location for the received data.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="remoteEndPoint">An EndPoint that represents the source of the data.</param>
+        <summary>Receive data from a specified network device.</summary>
+        <returns>An asynchronous Task that completes with a SocketReceiveFromResult struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,6 +360,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.SocketReceiveMessageFromResult&gt;</ReturnType>
@@ -361,12 +372,12 @@
         <Parameter Name="remoteEndPoint" Type="System.Net.EndPoint" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="remoteEndPoint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the operation on.</param>
+        <param name="buffer">An array that is the storage location for received data.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="remoteEndPoint">An <see cref="T:System.Net.EndPoint" />, that represents the remote server.</param>
+        <summary>Receives the specified number of bytes of data into the specified location of the data buffer, using the specified <see cref="T:System.Net.Sockets.SocketFlags" />, and stores the endpoint and packet information.</summary>
+        <returns>An asynchronous Task that completes with a <see cref="T:System.Net.Sockets.SocketReceiveMessageFromResult" /> struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -397,11 +409,11 @@
         <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="socketFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the operation on.</param>
+        <param name="buffer">An array of type Byte that contains the data to send.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <summary>Sends data to a connected socket.</summary>
+        <returns>An asynchronous task that completes with number of bytes sent to the socket if the operation was successful. Otherwise, the task will complete with an invalid socket error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -422,6 +434,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -432,11 +445,11 @@
         <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="buffers">To be added.</param>
-        <param name="socketFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the operation on.</param>
+        <param name="buffers">An array that contains the data to send.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <summary>Sends data to a connected socket.</summary>
+        <returns>An asynchronous task that completes with number of bytes sent to the socket if the operation was successful. Otherwise, the task will complete with an invalid socket error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,6 +470,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -468,12 +482,12 @@
         <Parameter Name="remoteEP" Type="System.Net.EndPoint" />
       </Parameters>
       <Docs>
-        <param name="socket">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="remoteEP">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="socket">The socket to perform the operation on.</param>
+        <param name="buffer">An array that contains the data to send.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="remoteEP">An <see cref="T:System.Net.EndPoint" /> that represents the remote device.</param>
+        <summary>Sends data asynchronously to a specific remote host.</summary>
+        <returns>An asynchronous task that completes with number of bytes sent if the operation was successful. Otherwise, the task will complete with an invalid socket error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

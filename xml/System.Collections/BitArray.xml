@@ -43,7 +43,7 @@
   
  The <xref:System.Collections.Specialized.BitVector32> class is a structure that provides the same functionality as <xref:System.Collections.BitArray>, but with faster performance. <xref:System.Collections.Specialized.BitVector32> is faster because it is a value type and therefore allocated on the stack, whereas <xref:System.Collections.BitArray> is a reference type and, therefore, allocated on the heap.  
   
- <xref:System.Collections.Specialized.BitVector32?displayProperty=fullName> can store exactly 32 bits, whereas <xref:System.Collections.BitArray> can store a variable number of bits. <xref:System.Collections.Specialized.BitVector32> stores both bit flags and small integers, thereby making it ideal for data that is not exposed to the user. However, if the number of required bit flags is unknown, is variable, or is greater than 32, use <xref:System.Collections.BitArray> instead.  
+ <xref:System.Collections.Specialized.BitVector32?displayProperty=nameWithType> can store exactly 32 bits, whereas <xref:System.Collections.BitArray> can store a variable number of bits. <xref:System.Collections.Specialized.BitVector32> stores both bit flags and small integers, thereby making it ideal for data that is not exposed to the user. However, if the number of required bit flags is unknown, is variable, or is greater than 32, use <xref:System.Collections.BitArray> instead.  
   
  <xref:System.Collections.BitArray> is in the <xref:System.Collections> namespace; <xref:System.Collections.Specialized.BitVector32> is in the <xref:System.Collections.Specialized> namespace.  
   
@@ -65,6 +65,7 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.BitArray" />.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.Specialized.BitVector32" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -432,7 +433,7 @@
 ## Remarks  
  The specified array must be of a compatible type. Only `bool`, `int`, and `byte` types of arrays are supported.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.BitArray.Count%2A>.  
   
@@ -458,6 +459,7 @@
   
  The number of elements in the source <see cref="T:System.Collections.BitArray" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.BitArray" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -600,6 +602,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -630,7 +633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.BitArray> implements the <xref:System.Collections.BitArray.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ <xref:System.Collections.BitArray> implements the <xref:System.Collections.BitArray.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=nameWithType> interface.  
   
  A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
   
@@ -670,7 +673,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.BitArray> implements the <xref:System.Collections.BitArray.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ <xref:System.Collections.BitArray> implements the <xref:System.Collections.BitArray.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
@@ -687,6 +690,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.BitArray.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -737,6 +741,7 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.BitArray.Count" />.</exception>
+        <altmember cref="P:System.Collections.BitArray.Count" />
       </Docs>
     </Member>
     <Member MemberName="LeftShift">
@@ -1076,6 +1081,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.BitArray.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -1214,5 +1220,16 @@
           <paramref name="value" /> and the current <see cref="T:System.Collections.BitArray" /> do not have the same number of elements.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.BitArray" /> class whose capacity and initial values can be specified.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

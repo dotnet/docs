@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4ca3ed06-b9af-4b85-8b70-88c2186aefa3
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Required Arguments and Overload Groups
 Activities can be configured so that certain arguments are required to be bound for the activity to be valid for execution. The `RequiredArgument` attribute is used to indicate that certain arguments on an activity are required and the `OverloadGroup` attribute is used to group categories of required arguments together. By using the attributes, activity authors can provide simple or complex activity validation configurations.  
@@ -65,7 +67,7 @@ public sealed class Add : CodeActivity<int>
   
  If the activity is used and either of the required arguments is not bound the following validation error is returned.  
   
- **Value for a required activity argument 'Operand1' was not supplied.**   
+ **Value for a required activity argument 'Operand1' was not supplied.**  
 > [!NOTE]
 >  [!INCLUDE[crabout](../../../includes/crabout-md.md)] about checking for and handling validation errors and warnings, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).  
   

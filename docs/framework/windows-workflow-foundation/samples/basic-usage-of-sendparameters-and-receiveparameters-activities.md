@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1b6b1681-3d41-403f-bfe2-3f600f24aa8c
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic Usage of SendParameters and ReceiveParameters Activities
 This sample shows the use of <xref:System.ServiceModel.Activities.SendParametersContent> and <xref:System.ServiceModel.Activities.ReceiveParametersContent> activities. The service exposes one operation that takes a string argument and echoes the input back to the client. The sample shows how to set up the parameters for these messaging activities.  
@@ -33,6 +35,4 @@ This sample shows the use of <xref:System.ServiceModel.Activities.SendParameters
   
 3.  Second, run the EchoWorkflowClient application generated in [solution base directory]\EchoWorkflowClient\bin\debug.  
   
-4.  The client calls Echo operation on the service and prints the results. When complete, press ENTER to exit the client and then the service.  
-  
-## See Also
+4.  The client calls Echo operation on the service and prints the results. When complete, press ENTER to exit the client and then the service.

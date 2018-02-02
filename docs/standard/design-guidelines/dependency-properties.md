@@ -8,16 +8,14 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 212cfb1e-cec4-4047-94a6-47209b387f6f
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Dependency Properties
 A dependency property (DP) is a regular property that stores its value in a property store instead of storing it in a type variable (field), for example.  
@@ -29,9 +27,9 @@ A dependency property (DP) is a regular property that stores its value in a prop
 ## Dependency Property Design  
  **✓ DO** inherit from <xref:System.Windows.DependencyObject>, or one of its subtypes, when implementing dependency properties. The type provides a very efficient implementation of a property store and automatically supports WPF data binding.  
   
- **✓ DO** provide a regular CLR property and public static read-only field storing an instance of <xref:System.Windows.DependencyProperty?displayProperty=fullName> for each dependency property.  
+ **✓ DO** provide a regular CLR property and public static read-only field storing an instance of <xref:System.Windows.DependencyProperty?displayProperty=nameWithType> for each dependency property.  
   
- **✓ DO** implement dependency properties by calling instance methods <xref:System.Windows.DependencyObject.GetValue%2A?displayProperty=fullName> and <xref:System.Windows.DependencyObject.SetValue%2A?displayProperty=fullName>.  
+ **✓ DO** implement dependency properties by calling instance methods <xref:System.Windows.DependencyObject.GetValue%2A?displayProperty=nameWithType> and <xref:System.Windows.DependencyObject.SetValue%2A?displayProperty=nameWithType>.  
   
  **✓ DO** name the dependency property static field by suffixing the name of the property with "Property."  
   
@@ -48,7 +46,7 @@ A dependency property (DP) is a regular property that stores its value in a prop
 ## Attached Dependency Property Design  
  Dependency properties described in the preceding section represent intrinsic properties of the declaring type; for example, the `Text` property is a property of `TextButton`, which declares it. A special kind of dependency property is the attached dependency property.  
   
- A classic example of an attached property is the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=fullName> property. The property represents Button’s (not Grid’s) column position, but it is only relevant if the Button is contained in a Grid, and so it's "attached" to Buttons by Grids.  
+ A classic example of an attached property is the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> property. The property represents Button’s (not Grid’s) column position, but it is only relevant if the Button is contained in a Grid, and so it's "attached" to Buttons by Grids.  
   
 ```  
 <Grid>  
@@ -106,5 +104,5 @@ public class Grid {
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
+ [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
  [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)

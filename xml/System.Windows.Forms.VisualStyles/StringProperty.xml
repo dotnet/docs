@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.VisualStyles.StringProperty> enumeration represents a set of string properties that describe visual style elements. The <xref:System.Windows.Forms.VisualStyles.StringProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetString%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+ The <xref:System.Windows.Forms.VisualStyles.StringProperty> enumeration represents a set of string properties that describe visual style elements. The <xref:System.Windows.Forms.VisualStyles.StringProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetString%2A?displayProperty=nameWithType> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
   
  ]]></format>
     </remarks>

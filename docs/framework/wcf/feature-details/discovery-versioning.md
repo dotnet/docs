@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f91c6d0a-3af2-45c5-9a5c-e75390619836
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Versioning
 This topic provides a brief overview of the implementation of some new discovery features. It also gives an overview on how to select the discovery version to use.  
@@ -32,10 +34,10 @@ This topic provides a brief overview of the implementation of some new discovery
 -   <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>  
   
 ### DiscoveryVersion.WSDiscoveryApril2005  
- Providing<xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> as a constructor parameter makes the implementation use the April2005 version of the WS-Discovery protocol. This version corresponds to the published version of the WS-Discovery protocol specification. This version should be used to interoperate with legacy application utilizing the April2005 version of WS-Discovery.  
+ Providing <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> as a constructor parameter makes the implementation use the April2005 version of the WS-Discovery protocol. This version corresponds to the published version of the WS-Discovery protocol specification. This version should be used to interoperate with legacy application utilizing the April2005 version of WS-Discovery.  
   
 ### DiscoveryVersion.WSDiscovery11  
- The default discovery version used by the APIs is<xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11>. This is the current standardized version of the WS-Discovery protocol.  
+ The default discovery version used by the APIs is <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11>. This is the current standardized version of the WS-Discovery protocol.  
   
 ## DiscoveryVersion.WSDiscoveryCD1  
  Providing <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryCD1> as a constructor parameter makes the implementation use the committee draft 1 version of the WS-Discovery protocol. This version of the protocol should be used to interoperate with implementations running the CD1 version of the WS-Discovery protocol.  

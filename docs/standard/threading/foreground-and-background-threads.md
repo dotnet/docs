@@ -18,14 +18,17 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Foreground and Background Threads
 A managed thread is either a background thread or a foreground thread. Background threads are identical to foreground threads with one exception: a background thread does not keep the managed execution environment running. Once all foreground threads have been stopped in a managed process (where the .exe file is a managed assembly), the system stops all background threads and shuts down.  
   
 > [!NOTE]
->  When the runtime stops a background thread because the process is shutting down, no exception is thrown in the thread. However, when threads are stopped because the <xref:System.AppDomain.Unload%2A?displayProperty=fullName> method unloads the application domain, a <xref:System.Threading.ThreadAbortException> is thrown in both foreground and background threads.  
+>  When the runtime stops a background thread because the process is shutting down, no exception is thrown in the thread. However, when threads are stopped because the <xref:System.AppDomain.Unload%2A?displayProperty=nameWithType> method unloads the application domain, a <xref:System.Threading.ThreadAbortException> is thrown in both foreground and background threads.  
   
- Use the <xref:System.Threading.Thread.IsBackground%2A?displayProperty=fullName> property to determine whether a thread is a background or a foreground thread, or to change its status. A thread can be changed to a background thread at any time by setting its <xref:System.Threading.Thread.IsBackground%2A> property to `true`.  
+ Use the <xref:System.Threading.Thread.IsBackground%2A?displayProperty=nameWithType> property to determine whether a thread is a background or a foreground thread, or to change its status. A thread can be changed to a background thread at any time by setting its <xref:System.Threading.Thread.IsBackground%2A> property to `true`.  
   
 > [!IMPORTANT]
 >  The foreground or background status of a thread does not affect the outcome of an unhandled exception in the thread. In the .NET Framework version 2.0, an unhandled exception in either foreground or background threads results in termination of the application. See [Exceptions in Managed Threads](../../../docs/standard/threading/exceptions-in-managed-threads.md).  
@@ -35,6 +38,6 @@ A managed thread is either a background thread or a foreground thread. Backgroun
  If you use a thread to monitor an activity, such as a socket connection, set its <xref:System.Threading.Thread.IsBackground%2A> property to `true` so that the thread does not prevent your process from terminating.  
   
 ## See Also  
- <xref:System.Threading.Thread.IsBackground%2A?displayProperty=fullName>   
- <xref:System.Threading.Thread>   
+ <xref:System.Threading.Thread.IsBackground%2A?displayProperty=nameWithType>  
+ <xref:System.Threading.Thread>  
  <xref:System.Threading.ThreadAbortException>

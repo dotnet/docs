@@ -49,14 +49,14 @@
   
 -   Inline claims-based code access checks can be performed by configuring your application with a custom claims authorization manager and using either the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> class to perform imperative access checks or the <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> to perform declarative access checks. Claims-based code access checks are performed inline, outside of the processing pipeline, and so are available to all applications as long as a claims authorization manager is configured.  
   
- You can obtain a <xref:System.Security.Claims.ClaimsPrincipal> instance for the principal associated with a request in an RP application (or the principal under which a thread is executing) by casting the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to <xref:System.Security.Claims.ClaimsPrincipal>. The claims associated with an <xref:System.Security.Claims.ClaimsPrincipal> object are available through its <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property. The <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property returns all of the claims contained by the identities associated with the principal. In the uncommon case in which the <xref:System.Security.Claims.ClaimsPrincipal> contains multiple <xref:System.Security.Claims.ClaimsIdentity> instances, you can use the <xref:System.Security.Claims.ClaimsPrincipal.Identities%2A> property or you can access the primary identity by using the <xref:System.Security.Claims.ClaimsPrincipal.Identity%2A> property. <xref:System.Security.Claims.ClaimsPrincipal> provides several methods through which these claims may be searched and fully supports Language Integrated Query (LINQ). Identities can be added to the principal by using the <xref:System.Security.Claims.ClaimsPrincipal.AddIdentities%2A> or <xref:System.Security.Claims.ClaimsPrincipal.AddIdentity%2A> methods.  
+ You can obtain a <xref:System.Security.Claims.ClaimsPrincipal> instance for the principal associated with a request in an RP application (or the principal under which a thread is executing) by casting the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to <xref:System.Security.Claims.ClaimsPrincipal>. The claims associated with an <xref:System.Security.Claims.ClaimsPrincipal> object are available through its <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property. The <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property returns all of the claims contained by the identities associated with the principal. In the uncommon case in which the <xref:System.Security.Claims.ClaimsPrincipal> contains multiple <xref:System.Security.Claims.ClaimsIdentity> instances, you can use the <xref:System.Security.Claims.ClaimsPrincipal.Identities%2A> property or you can access the primary identity by using the <xref:System.Security.Claims.ClaimsPrincipal.Identity%2A> property. <xref:System.Security.Claims.ClaimsPrincipal> provides several methods through which these claims may be searched and fully supports Language Integrated Query (LINQ). Identities can be added to the principal by using the <xref:System.Security.Claims.ClaimsPrincipal.AddIdentities%2A> or <xref:System.Security.Claims.ClaimsPrincipal.AddIdentity%2A> methods.  
   
 > [!NOTE]
 >  To add identities to the <xref:System.Security.Claims.ClaimsPrincipal>, a caller must have full trust.  
   
  By default, WIF prioritizes <xref:System.Security.Principal.WindowsIdentity> objects when selecting the primary identity to return through the <xref:System.Security.Claims.ClaimsPrincipal.Identity%2A> property. You can modify this behavior by supplying a delegate through the <xref:System.Security.Claims.ClaimsPrincipal.PrimaryIdentitySelector%2A> property to perform the selection. The <xref:System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector%2A> property provides similar functionality for the <xref:System.Security.Claims.ClaimsPrincipal.Current%2A> property.  
   
- In the claim-based model, whether a principal is in a specified role is determined by the claims presented by its underlying identities. The <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%2A> method essentially examines each identity associated with the principal to determine whether it possesses a claim with the specified role value. The type of the claim (represented by its <xref:System.Security.Claims.Claim.Type%2A?displayProperty=fullName> property) used to determine which claims should be examined during role checks is specified on an identity through its <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A?displayProperty=fullName> property. Thus, the claims examined during role checks can be of a different type for different identities associated with the principal.  
+ In the claim-based model, whether a principal is in a specified role is determined by the claims presented by its underlying identities. The <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%2A> method essentially examines each identity associated with the principal to determine whether it possesses a claim with the specified role value. The type of the claim (represented by its <xref:System.Security.Claims.Claim.Type%2A?displayProperty=nameWithType> property) used to determine which claims should be examined during role checks is specified on an identity through its <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A?displayProperty=nameWithType> property. Thus, the claims examined during role checks can be of a different type for different identities associated with the principal.  
   
    
   
@@ -77,6 +77,10 @@ if (null != principal)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Claims.Claim" />
+    <altmember cref="T:System.Security.Claims.ClaimsIdentity" />
+    <altmember cref="T:System.Security.Claims.ClaimsAuthenticationManager" />
+    <altmember cref="T:System.Security.Claims.ClaimsAuthorizationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -251,7 +255,7 @@ if (null != principal)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified principal is assignable from <xref:System.Security.Claims.ClaimsPrincipal>, all of its identities are added to the <xref:System.Security.Claims.ClaimsPrincipal.Identities%2A> collection. If the specified principal is not assignable from <xref:System.Security.Claims.ClaimsPrincipal>, a new <xref:System.Security.Claims.ClaimsIdentity> is created from the <xref:System.Security.Principal.IIdentity> in its <xref:System.Security.Principal.IPrincipal.Identity%2A?displayProperty=fullName> property and added to the <xref:System.Security.Claims.ClaimsPrincipal.Identities%2A> collection.  
+ If the specified principal is assignable from <xref:System.Security.Claims.ClaimsPrincipal>, all of its identities are added to the <xref:System.Security.Claims.ClaimsPrincipal.Identities%2A> collection. If the specified principal is not assignable from <xref:System.Security.Claims.ClaimsPrincipal>, a new <xref:System.Security.Claims.ClaimsIdentity> is created from the <xref:System.Security.Principal.IIdentity> in its <xref:System.Security.Principal.IPrincipal.Identity%2A?displayProperty=nameWithType> property and added to the <xref:System.Security.Claims.ClaimsPrincipal.Identities%2A> collection.  
   
  ]]></format>
         </remarks>
@@ -465,6 +469,7 @@ if (null != principal)
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Set operation requires full trust for the immediate caller. This member cannot be set by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Security.Claims.ClaimsPrincipal.Current" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -559,10 +564,11 @@ if (null != principal)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> is returned. You can change this behavior by setting the <xref:System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector%2A> property to specify a delegate to be called to determine the current principal.  
+ By default, <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> is returned. You can change this behavior by setting the <xref:System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector%2A> property to specify a delegate to be called to determine the current principal.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector" />
       </Docs>
     </Member>
     <Member MemberName="CustomSerializationData">
@@ -943,6 +949,7 @@ if (null != principal)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsPrincipal.PrimaryIdentitySelector" />
       </Docs>
     </Member>
     <Member MemberName="IsInRole">
@@ -979,10 +986,10 @@ if (null != principal)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%2A> method checks whether an identity that this claims principal possesses contains a claim of type <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A?displayProperty=fullName> where the value of the claim is equal to the value specified by the `role` parameter.  
+ The <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%2A> method checks whether an identity that this claims principal possesses contains a claim of type <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A?displayProperty=nameWithType> where the value of the claim is equal to the value specified by the `role` parameter.  
   
 > [!NOTE]
->  Each <xref:System.Security.Claims.ClaimsIdentity> has its own definition of the claim type that represents a role. This claim type can be accessed and set through the <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A?displayProperty=fullName> property.  
+>  Each <xref:System.Security.Claims.ClaimsIdentity> has its own definition of the claim type that represents a role. This claim type can be accessed and set through the <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1027,6 +1034,7 @@ if (null != principal)
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Set operation requires full trust for the immediate caller. This member cannot be set by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Security.Claims.ClaimsPrincipal.Identity" />
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -1099,5 +1107,45 @@ if (null != principal)
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all of the claims that match a specified condition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsPrincipal" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HasClaim">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether any of the claims identities associated with this claims principal contains a claim that matches specified conditions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindFirst">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the first claim that matches a specified condition.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

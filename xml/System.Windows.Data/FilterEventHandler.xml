@@ -24,12 +24,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.Data.CollectionViewSource.Filter?displayProperty=fullName> event. In this example, `listingDataView` is an instance of <xref:System.Windows.Data.CollectionViewSource>.  
+ The following example shows how to set an event handler for the <xref:System.Windows.Data.CollectionViewSource.Filter?displayProperty=nameWithType> event. In this example, `listingDataView` is an instance of <xref:System.Windows.Data.CollectionViewSource>.  
   
  [!code-csharp[DataBindingLab#10](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#10)]
  [!code-vb[DataBindingLab#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#10)]  
   
- The following example shows the implementation of the example `ShowOnlyBargainsFilter` filter event handler. This event handler uses the <xref:System.Windows.Data.FilterEventArgs.Accepted%2A?displayProperty=fullName> property to filter out `AuctionItem` objects that have a `CurrentPrice` of $25.00 or greater.  
+ The following example shows the implementation of the example `ShowOnlyBargainsFilter` filter event handler. This event handler uses the <xref:System.Windows.Data.FilterEventArgs.Accepted%2A?displayProperty=nameWithType> property to filter out `AuctionItem` objects that have a `CurrentPrice` of $25.00 or greater.  
   
  [!code-csharp[DataBindingLab#5](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#5)]
  [!code-vb[DataBindingLab#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#5)]  
@@ -38,5 +38,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Data.CollectionViewSource.Filter" />
   </Docs>
 </Type>

@@ -28,12 +28,6 @@
   
  A <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> is never cached.  
   
-<a name="xamlTextUsage_ColorConvertedBitmap"></a>   
-## XAML Text Usage  
- See Remarks  
-  
-   
-  
 ## Examples  
  The following example shows how to create an instance of <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> and use it to convert color.  
   
@@ -42,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="T:System.Windows.Media.ColorContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +99,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
+        <altmember cref="T:System.Windows.Media.PixelFormat" />
+        <altmember cref="T:System.Windows.Media.PixelFormats" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -141,6 +141,8 @@
  -or-  
   
  The <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> has already been initialized.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit" />
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -165,7 +167,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -214,7 +216,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -281,9 +283,6 @@
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
   
-<a name="xamlTextUsage_Property"></a>   
-## XAML Text Usage  
-  
 <a name="dependencyPropertyInfo_DestinationColorContext"></a>   
 ## Dependency Property Information  
   
@@ -302,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
       </Docs>
     </Member>
     <Member MemberName="DestinationColorContextProperty">
@@ -342,9 +342,6 @@
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
   
-<a name="xamlTextUsage_Property2"></a>   
-## XAML Text Usage  
-  
 <a name="dependencyPropertyInfo_DestinationFormat"></a>   
 ## Dependency Property Information  
   
@@ -363,6 +360,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PixelFormat" />
+        <altmember cref="T:System.Windows.Media.PixelFormats" />
       </Docs>
     </Member>
     <Member MemberName="DestinationFormatProperty">
@@ -423,6 +422,8 @@
  -or-  
   
  The <see cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit" /> method is called without first calling <see cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit" />.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit" />
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -488,9 +489,6 @@
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
   
-<a name="xamlTextUsage_Property3"></a>   
-## XAML Text Usage  
-  
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
   
@@ -509,6 +507,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="SourceColorContext">
@@ -532,9 +531,6 @@
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
   
-<a name="xamlTextUsage_Property4"></a>   
-## XAML Text Usage  
-  
 <a name="dependencyPropertyInfo_SourceColorContext"></a>   
 ## Dependency Property Information  
   
@@ -553,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
       </Docs>
     </Member>
     <Member MemberName="SourceColorContextProperty">
@@ -596,5 +593,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

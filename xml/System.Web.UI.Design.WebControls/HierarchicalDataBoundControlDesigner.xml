@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +82,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -105,6 +112,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+        <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToDataSource">
@@ -132,6 +143,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="E:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged" />
+        <altmember cref="E:System.Web.UI.Design.DataSourceDesigner.SchemaRefreshed" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.ConnectToDataSource" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSource">
@@ -157,6 +172,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.CreateDataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -187,6 +204,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.GetDesignTimeDataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceDesigner">
@@ -208,10 +231,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=fullName> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+ The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=nameWithType> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DesignerView">
@@ -233,10 +260,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=fullName> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+ The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=nameWithType> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DisconnectFromDataSource">
@@ -262,6 +293,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="E:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged" />
+        <altmember cref="E:System.Web.UI.Design.DataSourceDesigner.SchemaRefreshed" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DisconnectFromDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeDataSource">
@@ -288,6 +323,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.GetSampleDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetSampleDataSource">
@@ -314,6 +352,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.GetDesignTimeDataSource" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -338,7 +379,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  For controls that are derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class, the <xref:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.PreFilterProperties%2A> method creates design-time properties to shadow the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID%2A> properties.  
   
@@ -355,6 +396,12 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change the attributes of properties in the design-time property collection. Be sure to call the base method before performing other processing.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="UseDataSourcePickerActionList">
@@ -385,6 +432,11 @@
         <block subset="none" type="overrides">
           <para>If you do not want the default data source action list items to be displayed, override the <see cref="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.UseDataSourcePickerActionList" /> property to return <see langword="false" />. If you want other data source action list items to be displayed, override the <see cref="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.UseDataSourcePickerActionList" /> to return <see langword="false" /> and override the <see cref="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists" /> property to add the appropriate <see cref="T:System.ComponentModel.Design.DesignerActionItem" /> objects to the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that it returns.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
       </Docs>
     </Member>
   </Members>

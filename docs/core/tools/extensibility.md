@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
+ms.workload: 
+  - dotnetcore
 ---
 
 # .NET Core CLI tools extensibility model
@@ -48,6 +50,8 @@ category.
 
 ### Consuming per-project tools
 Consuming these tools requires you to add a `<DotNetCliToolReference>` element to your project file for each tool you want to use. Inside the `<DotNetCliToolReference>` element, you reference the package in which the tool resides and specify the version you need. After running [`dotnet restore`](dotnet-restore.md), the tool and its dependencies are restored.
+
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 For tools that need to load the build output of the project for execution, there is usually another dependency which is
 listed under the regular dependencies in the project file. Since CLI uses MSBuild as its build engine, we recommend that these parts of the tool be written as custom MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and [tasks](/visualstudio/msbuild/msbuild-tasks), since they can then take part in the overall build process. Also, they can get any and all data easily that is produced via the build, such as the location of the output files, the current configuration being built, etc. All this information becomes a set of MSBuild properties that can be read from any target. You can see how to add a custom target using NuGet later in this document.

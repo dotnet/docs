@@ -45,6 +45,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.NetDataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.XmlObjectSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -494,7 +497,7 @@
 ## Remarks  
  The <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> determines whether it can read an object by examining the name and namespace of the XML element the reader is positioned at, and comparing the values to expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
   
- You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29?displayProperty=fullName>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29?displayProperty=fullName>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29?displayProperty=fullName>.  
+ You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29?displayProperty=nameWithType>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29?displayProperty=nameWithType>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -731,6 +734,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISurrogateSelector" />
+        <altmember cref="T:System.Runtime.Serialization.IFormatter" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteEndObject">
@@ -980,5 +985,25 @@
         <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening XML element using the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

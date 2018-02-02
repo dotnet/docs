@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;diagnostics&gt;
 The `diagnostics` element defines settings that can be used by an administrator for run-time inspection and control.  
@@ -88,5 +90,5 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.DiagnosticSection>   
+ <xref:System.ServiceModel.Configuration.DiagnosticSection>  
  <xref:System.ServiceModel.Diagnostics>

@@ -27,11 +27,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute enables you to mark fields by using a type that is more specific than the database intrinsic type. The type name is selected from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration type. For example, a string data field that contains e-mail addresses can be specified as the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> type. This information is then accessed by the field templates to modify how the data field is processed.  
+ The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute enables you to mark fields by using a type that is more specific than the database intrinsic type. The type name is selected from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration type. For example, a string data field that contains email addresses can be specified as the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> type. This information is then accessed by the field templates to modify how the data field is processed.  
   
  You use the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute for the following reasons:  
   
--   To provide additional type information for a data field. You do this by applying the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to a data field in the data model and by specifying the additional type name from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration. The field template that processes the data field can access this additional metadata type information to determine how to process the field. For example, the text field template can generate hyperlinks for e-mail addresses whose intrinsic type is `String`.  
+-   To provide additional type information for a data field. You do this by applying the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to a data field in the data model and by specifying the additional type name from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration. The field template that processes the data field can access this additional metadata type information to determine how to process the field. For example, the text field template can generate hyperlinks for email addresses whose intrinsic type is `String`.  
   
 -   To associate a custom field template with a data field. The specified custom field template will then be used to process the data field. This is an alternative to using the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute.  
   
@@ -43,40 +43,42 @@
   
 -   Issue validation errors as appropriate.  
   
- For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/en-us/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
-  
- See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.ComponentModel.DataAnnotations.DataTypeAttribute).  
-  
-   
-  
+ For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/library/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
+
+
 ## Examples  
- The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of the EmailAddress data field. The e-mail addresses are shown as hyperlinks instead of as simple text, which is what Dynamic Data would infer from the intrinsic data type. The example code is in three parts, and it performs the following steps:  
+ The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of the EmailAddress data field. The email addresses are shown as hyperlinks instead of as simple text, which is what Dynamic Data would infer from the intrinsic data type. The example code is in three parts, and it performs the following steps:  
   
 -   It implements a metadata partial class and the associated metadata class.  
   
--   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This indicates to the Text.ascx field template that it should customize the display of e-mail addresses.  
+-   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This indicates to the Text.ascx field template that it should customize the display of email addresses.  
   
 -   It modifies the Text.ascx field template to customize the display of the EmailAddress data fields.  
   
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)] -->
- <!-- TODO: review snippet reference [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)] -->   
+ [!code-aspx-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)]
+ [!code-aspx-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)]
   
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]  
   
  To compile and run the example code, you need the following:  
   
--   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
+-   Any edition of Visual Studio 2010 or later.
   
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases) on GitHub. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running.  
   
 -   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+    <altmember cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
+    <altmember cref="T:System.ComponentModel.DataAnnotations.DataType" />
+    <altmember cref="T:System.AttributeUsageAttribute" />
+    <altmember cref="T:System.AttributeTargets" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name is one of the values that are defined by the <xref:System.ComponentModel.DataAnnotations.DataType?displayProperty=fullName> enumeration.  
+ The name is one of the values that are defined by the <xref:System.ComponentModel.DataAnnotations.DataType?displayProperty=nameWithType> enumeration.  
   
    
   
@@ -221,6 +223,7 @@
         <summary>Gets a data-field display format.</summary>
         <value>The data-field display format.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetDataTypeName">
@@ -289,7 +292,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

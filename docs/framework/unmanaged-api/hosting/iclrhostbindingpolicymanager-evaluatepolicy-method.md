@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRHostBindingPolicyManager::EvaluatePolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRHostBindingPolicyManager::EvaluatePolicy method [.NET Framework hosting]"
   - "EvaluatePolicy method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRHostBindingPolicyManager::EvaluatePolicy Method
 Evaluates binding policy on behalf of the host.  

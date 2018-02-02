@@ -38,7 +38,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ActionMessageFilter (string[] actions);" />
+      <MemberSignature Language="C#" Value="public ActionMessageFilter (params string[] actions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ActionMessageFilter.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>

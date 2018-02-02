@@ -9,16 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "msmqIntegrationBinding Element"
 ms.assetid: edf277f3-e3bf-4ed8-9f55-83b5788430a7
 caps.latest.revision: 34
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;msmqIntegrationBinding&gt;
 Defines a binding that provides queuing support by routing messages through MSMQ.  
@@ -104,7 +103,7 @@ msmqIntegrationBinding
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- This binding element can be used to enable Windows Communication Foundation (WCF) applications to send messages to and receive messages from existing MSMQ applications that use either COM, MSMQ native APIs, or the types defined in the <xref:System.Messaging?displayProperty=fullName> namespace You can use this configuration element to specify ways to address the queue, transfer assurances, whether messages must be durably stored, and how messages should be protected and authenticated. For more information, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md).  
+ This binding element can be used to enable Windows Communication Foundation (WCF) applications to send messages to and receive messages from existing MSMQ applications that use either COM, MSMQ native APIs, or the types defined in the <xref:System.Messaging?displayProperty=nameWithType> namespace You can use this configuration element to specify ways to address the queue, transfer assurances, whether messages must be durably stored, and how messages should be protected and authenticated. For more information, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md).  
   
 ## Example  
   
@@ -140,11 +139,11 @@ msmqIntegrationBinding
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement>   
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>   
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement>  
+ <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>  
+ <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

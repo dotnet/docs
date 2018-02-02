@@ -276,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.PropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -320,6 +321,7 @@
   
  The exact behavior of the merge is up to you. You could choose to have values combined, revert to base value if the derived metadata were left at the default, or many other behaviors based on the types of properties you have added to your particular metadata class, and their meanings.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="OnApply">
@@ -380,5 +382,14 @@
         <exception cref="T:System.InvalidOperationException">Cannot set a metadata property once it is applied to a dependency property operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.PropertyMetadata" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

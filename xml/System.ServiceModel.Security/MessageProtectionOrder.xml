@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used with the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=fullName> property of the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> and the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=fullName> property of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> classes.  
+ This enumeration is used with the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> property of the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> and the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> property of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> classes.  
   
  If a message is vulnerable to a digest attack (for example, if the message is short or the entropy is low), you should use the SignBeforeEncryptAndEncryptSignature or EncryptBeforeSign option. (*Entropy* is random data provided by a server, a client, or both, and is used to create a shared key for encrypting and decrypting data.)  
   
@@ -37,6 +37,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceModel.Security.MessageProtectionOrder" />
+    <altmember cref="T:System.ServiceModel.Channels.AsymmetricSecurityBindingElement" />
+    <altmember cref="T:System.ServiceModel.Channels.SymmetricSecurityBindingElement" />
   </Docs>
   <Members>
     <Member MemberName="EncryptBeforeSign">

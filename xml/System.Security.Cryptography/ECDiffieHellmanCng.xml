@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method and must be either a named or explicit prime.  
+ `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method and must be either a named or explicit prime.  
   
  ]]></format>
         </remarks>
@@ -524,7 +524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=fullName> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+ If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters.Curve?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
   
  ]]></format>
         </remarks>
@@ -612,7 +612,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `curve` must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method) and must not be implicit.  
+ `curve` must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method) and must not be implicit.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -701,7 +701,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.ECDiffieHellmanCng.ImportParameters%2A> method replaces the existing key that this object is working with by creating a         new <xref:System.Security.Cryptography.CngKey> object. If `parameters` contains only the <xref:System.Security.Cryptography.ECParameters.Q> field, then only a public key is imported.         If `parameters` also contains <xref:System.Security.Cryptography.ECParameters.D>, then a full key pair is be imported.          The `parameter`<xref:System.Security.Cryptography.ECParameters.Curve>value specifies the type of the curve to import.  
+ The <xref:System.Security.Cryptography.ECDiffieHellmanCng.ImportParameters%2A> method replaces the existing key that this object is working with by creating a         new <xref:System.Security.Cryptography.CngKey> object. If `parameters` contains only the <xref:System.Security.Cryptography.ECParameters.Q> field, then only a public key is imported.         If `parameters` also contains <xref:System.Security.Cryptography.ECParameters.D>, then a full key pair is be imported. The `parameter` <xref:System.Security.Cryptography.ECParameters.Curve> value specifies the type of the curve to import.  
   
  ]]></format>
         </remarks>
@@ -963,5 +963,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromXmlString">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the key information from an XML string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToXmlString">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes the key information to an XML string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeriveKeyFromHash">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a hash function .</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeriveKeyFromHmac">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

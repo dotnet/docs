@@ -1139,5 +1139,14 @@
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A?displayProperty=fullName> method, all resolved discovery documents and a file containing a map of all those files are saved to a directory. The map file is described in XML with the root element being <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile>; this class is passed to the <xref:System.Xml.Serialization.XmlSerializer> class to serialize the results.  
+ When you invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A?displayProperty=nameWithType> method, all resolved discovery documents and a file containing a map of all those files are saved to a directory. The map file is described in XML with the root element being <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile>; this class is passed to the <xref:System.Xml.Serialization.XmlSerializer> class to serialize the results.  
   
    
   

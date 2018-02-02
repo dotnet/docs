@@ -1,13 +1,9 @@
 ---
 title: "This single-instance application could not connect to the original instance"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrAppModel_SingleInstanceCantConnect"
@@ -15,22 +11,6 @@ ms.assetid: 7c2c0cee-02a1-4157-be03-39d18e18408f
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # This single-instance application could not connect to the original instance
 This single-instance application could not connect to the original instance. Some of the possible causes for this problem are as follows:  
@@ -54,6 +34,5 @@ This single-instance application could not connect to the original instance. Som
 5.  Note the circumstances under which the error occurred, and telephone Microsoft Product Support Services.  
   
 ## See Also  
- [NIB: How to: Specify Instancing Behavior for an Application (Visual Basic)](http://msdn.microsoft.com/en-us/48539ad8-d960-4210-beab-ee65f6c6dc6e)   
- [Debugger Basics](/visualstudio/debugger/debugger-basics)   
- [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)  
+

@@ -14,6 +14,7 @@
   <Docs>
     <summary>Contains extended error information about an error that occurred when the <see cref="M:System.DirectoryServices.DirectoryEntry.Invoke(System.String,System.Object[])" /> method is called.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.DirectoryServices.DirectoryEntry.Invoke(System.String,System.Object[])" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,7 +154,18 @@
         <param name="streamingContext">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that is the destination for this serialization.</param>
         <summary>Populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data needed to serialize the <see cref="T:System.DirectoryServices.DirectoryServicesCOMException" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectoryServicesCOMException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

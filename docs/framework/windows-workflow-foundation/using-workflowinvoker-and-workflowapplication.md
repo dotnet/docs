@@ -9,12 +9,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cd0e583c-a3f9-4fa2-b247-c7b3368c48a7
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using WorkflowInvoker and WorkflowApplication
-[!INCLUDE[wf](../../../includes/wf-md.md)] provides several methods of hosting workflows. <xref:System.Activities.WorkflowInvoker> provides a simple way for invoking a workflow as if it were a method call and can be used only for workflows that do not use persistence. <xref:System.Activities.WorkflowApplication> provides a richer model for executing workflows that includes notification of lifecycle events, execution control, bookmark resumption, and persistence. <xref:System.ServiceModel.Activities.WorkflowServiceHost> provides support for messaging activities and is primarily used with workflow services. This topic introduces you to workflow hosting with <xref:System.Activities.WorkflowInvoker> and <xref:System.Activities.WorkflowApplication>. [!INCLUDE[crabout](../../../includes/crabout-md.md)]hosting workflows with <xref:System.ServiceModel.Activities.WorkflowServiceHost>, see [Workflow Services](../../../docs/framework/wcf/feature-details/workflow-services.md) and [Hosting Workflow Services Overview](../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md).  
+[!INCLUDE[wf](../../../includes/wf-md.md)] provides several methods of hosting workflows. <xref:System.Activities.WorkflowInvoker> provides a simple way for invoking a workflow as if it were a method call and can be used only for workflows that do not use persistence. <xref:System.Activities.WorkflowApplication> provides a richer model for executing workflows that includes notification of lifecycle events, execution control, bookmark resumption, and persistence. <xref:System.ServiceModel.Activities.WorkflowServiceHost> provides support for messaging activities and is primarily used with workflow services. This topic introduces you to workflow hosting with <xref:System.Activities.WorkflowInvoker> and <xref:System.Activities.WorkflowApplication>. [!INCLUDE[crabout](../../../includes/crabout-md.md)] hosting workflows with <xref:System.ServiceModel.Activities.WorkflowServiceHost>, see [Workflow Services](../../../docs/framework/wcf/feature-details/workflow-services.md) and [Hosting Workflow Services Overview](../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md).  
   
 ## Using WorkflowInvoker  
  <xref:System.Activities.WorkflowInvoker> provides a model for executing a workflow as if it were a method call. To invoke a workflow using <xref:System.Activities.WorkflowInvoker>, call the <xref:System.Activities.WorkflowInvoker.Invoke%2A> method and pass in the workflow definition of the workflow to invoke. In this example, a <xref:System.Activities.Statements.WriteLine> activity is invoked using <xref:System.Activities.WorkflowInvoker>.  
@@ -64,14 +66,14 @@ manager: "erikre"
  [!code-csharp[CFX_WorkflowApplicationExample#30](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#30)]  
   
 ### Retrieving Output Arguments of a Workflow  
- When a workflow completes, any output arguments can be retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler by accessing the <xref:System.Activities.WorkflowApplicationCompletedEventArgs.Outputs%2A?displayProperty=fullName> dictionary. The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the workflow completes, the outputs are retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler.  
+ When a workflow completes, any output arguments can be retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler by accessing the <xref:System.Activities.WorkflowApplicationCompletedEventArgs.Outputs%2A?displayProperty=nameWithType> dictionary. The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the workflow completes, the outputs are retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#130](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#130)]  
   
  [!code-csharp[CFX_WorkflowApplicationExample#21](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#21)]  
   
 > [!NOTE]
->  <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowInvoker> take a dictionary of input arguments and return a dictionary of `out` arguments. These dictionary parameters, properties, and return values are of type `IDictionary<string, object>`. The actual instance of the dictionary class that is passed in can be any class that implements `IDictionary<string, object>`. In these examples, `Dictionary<string, object>` is used. [!INCLUDE[crabout](../../../includes/crabout-md.md)]dictionaries, see <xref:System.Collections.Generic.IDictionary%602> and <xref:System.Collections.Generic.Dictionary%602>.  
+>  <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowInvoker> take a dictionary of input arguments and return a dictionary of `out` arguments. These dictionary parameters, properties, and return values are of type `IDictionary<string, object>`. The actual instance of the dictionary class that is passed in can be any class that implements `IDictionary<string, object>`. In these examples, `Dictionary<string, object>` is used. [!INCLUDE[crabout](../../../includes/crabout-md.md)] dictionaries, see <xref:System.Collections.Generic.IDictionary%602> and <xref:System.Collections.Generic.Dictionary%602>.  
   
 ### Passing Data into a Running Workflow Using Bookmarks  
  Bookmarks are the mechanism by which an activity can passively wait to be resumed and are a mechanism for passing data into a running workflow instance. If an activity is waiting for data, it can create a <xref:System.Activities.Bookmark> and register a callback method to be called when the <xref:System.Activities.Bookmark> is resumed, as shown in the following example.  
@@ -88,7 +90,7 @@ manager: "erikre"
   
  The following code example is like the previous example except that the active bookmarks are enumerated before the bookmark is resumed. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
   
- **What is your name?**   
+ **What is your name?**  
 **BookmarkName: UserName - OwnerDisplayName: ReadLine**   
 **Steve**   
 **Hello, Steve**

@@ -14,6 +14,10 @@
     <summary>Represents the information that is used to call a function. This includes the function, the caller, the arguments, and information about the stack frame. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.FunctionObject" />
+    <altmember cref="T:Microsoft.JScript.FunctionPrototype" />
+    <altmember cref="T:Microsoft.JScript.StackFrame" />
+    <altmember cref="T:Microsoft.JScript.Closure" />
   </Docs>
   <Members>
     <Member MemberName="callee">
@@ -32,6 +36,10 @@
         <summary>A closure function that represents the function that is being called.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:Microsoft.JScript.FunctionPrototype" />
+        <altmember cref="T:Microsoft.JScript.StackFrame" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
       </Docs>
     </Member>
     <Member MemberName="caller">
@@ -50,6 +58,10 @@
         <summary>The calling scope information from the stack frame.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:Microsoft.JScript.FunctionPrototype" />
+        <altmember cref="T:Microsoft.JScript.StackFrame" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
       </Docs>
     </Member>
     <Member MemberName="length">
@@ -68,6 +80,10 @@
         <summary>The number of arguments.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:Microsoft.JScript.FunctionPrototype" />
+        <altmember cref="T:Microsoft.JScript.StackFrame" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
       </Docs>
     </Member>
   </Members>

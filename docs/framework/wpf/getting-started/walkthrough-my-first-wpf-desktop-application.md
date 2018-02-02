@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "getting started, WPF"
-  - "WPF, getting started"
+  - "getting started [WPF], WPF"
+  - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 caps.latest.revision: 71
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: My first WPF desktop application
 This walkthrough provides an introduction to the development of a [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] application that includes the elements that are common to most [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications: [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] markup, code-behind, application definitions, controls, layout, data binding, and styles. 
@@ -48,7 +53,7 @@ For more information about installing the latest version of Visual Studio, see [
 ## Creating the application project  
  In this section, you create the application infrastructure, which includes an application definition, two pages, and an image. 
   
-1. Create a new WPF Application project in Visual Basic or Visual C# named `ExpenseIt`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82). 
+1. Create a new WPF Application project in Visual Basic or Visual C# named `ExpenseIt`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82). 
   
     > [!NOTE]
     >  This walkthrough uses the <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4. Be sure that your project targets the .NET Framework 4 or later. For more information, see[How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework). 
@@ -107,7 +112,7 @@ For more information about installing the latest version of Visual Studio, see [
 ## Adding files to the application  
  In this section, you add two pages and an image to the application. 
   
-1. Add a new Page (WPF) to the project named `ExpenseItHome.xaml`. For more information, see [How to: Add New Items to a WPF Project](http://msdn.microsoft.com/en-us/17e6b238-fc32-4385-98ef-2f66ca09d9ad). 
+1. Add a new Page (WPF) to the project named `ExpenseItHome.xaml`. For more information, see [How to: Add New Items to a WPF Project](http://msdn.microsoft.com/library/17e6b238-fc32-4385-98ef-2f66ca09d9ad). 
   
      This page is the first page that is displayed when the application is launched. It will show a list of people from which a user can select a person to show an expense report for. 
   
@@ -163,7 +168,7 @@ For more information about installing the latest version of Visual Studio, see [
     [!code-csharp[ExpenseIt#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/ExpenseReportPage.xaml.cs#5)]
     [!code-vb[ExpenseIt#5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]  
   
-10. Add an image named watermark.png to the project. You can either create your own image, or copy the file from the sample code. For more information, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3). 
+10. Add an image named watermark.png to the project. You can either create your own image, or copy the file from the sample code. For more information, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/library/15f4cfb7-78ab-457f-9f14-099a25a6a2d3). 
 
 ## Building and running the application  
  In this section, you build and run the application. 
@@ -223,7 +228,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 -   <xref:System.Windows.Controls.Button> (to click to view the expense report for the person that is selected in the list). 
   
- Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=fullName> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md). 
+ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md). 
   
 1. Open ExpenseItHome.xaml. 
   
@@ -250,7 +255,7 @@ For more information about installing the latest version of Visual Studio, see [
   
     [!code-xaml[ExpenseIt#11b](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt5/ExpenseItHome.xaml#11b)]  
   
-4. Move the controls to the second column by setting <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=fullName> to 1. Move each control down a row, by increasing the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=fullName> by 1. 
+4. Move the controls to the second column by setting <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> to 1. Move each control down a row, by increasing the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> by 1. 
   
     [!code-xaml[ExpenseIt#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt5/ExpenseItHome.xaml#12)]  
   
@@ -272,7 +277,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 1. Open ExpenseItHome.xaml. 
   
-2. Add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to the <xref:System.Windows.Controls.Button> element. For more information, see [How to: Create a Simple Event Handler](http://msdn.microsoft.com/en-us/b1456e07-9dec-4354-99cf-18666b64f480). 
+2. Add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to the <xref:System.Windows.Controls.Button> element. For more information, see [How to: Create a Simple Event Handler](http://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480). 
   
     [!code-xaml[ExpenseIt#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseItHome.xaml#15)]  
   
@@ -312,7 +317,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 1. Open Application.xaml or App.xaml. 
   
-2. Add the following XAML between the <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> tags:  
+2. Add the following XAML between the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> tags:  
   
     [!code-xaml[ExpenseIt#18](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt7/App.xaml#18)]  
   
@@ -330,7 +335,7 @@ For more information about installing the latest version of Visual Studio, see [
   
     -  `buttonStyle`: To format the <xref:System.Windows.Controls.Button> on ExpenseItHome.xaml. 
   
-     Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md). 
+     Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md). 
   
 3. Open ExpenseItHome.xaml. 
   
@@ -455,7 +460,7 @@ For more information about installing the latest version of Visual Studio, see [
 -   [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
   
 ## See also  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)   
- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)   
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
+ [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
+ [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)  
  [Styles and Templates](../../../../docs/framework/wpf/controls/styles-and-templates.md)

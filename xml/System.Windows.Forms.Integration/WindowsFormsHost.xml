@@ -52,12 +52,13 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a <xref:System.Windows.Forms.MaskedTextBox?displayProperty=fullName> control. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML](~/docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf-by-using-xaml.md).  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML](~/docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf-by-using-xaml.md).  
   
  [!code-xaml[HostingWfInWpfWithXaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> class.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
@@ -96,6 +98,7 @@
         <summary>When implemented in a derived class, positions child elements and determines a size for a <see cref="T:System.Windows.FrameworkElement" />-derived class.</summary>
         <returns>The actual size used.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -117,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.BackgroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=fullName> properties of the hosted control.  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.BackgroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=nameWithType> properties of the hosted control.  
   
  For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Background%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
@@ -143,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -160,6 +164,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Background" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="BuildWindowCore">
@@ -182,6 +187,8 @@
         <summary>Overrides the base class implementation of <see cref="M:System.Windows.Interop.HwndHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" /> to build the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
         <returns>The window handle for this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Integration.WindowsFormsHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -236,6 +243,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to assign a top-level form as the hosted control.</exception>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="ChildChanged">
@@ -266,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Child" />
       </Docs>
     </Member>
     <Member MemberName="DestroyWindowCore">
@@ -287,6 +296,8 @@
         <param name="hwnd">A window handle. This parameter is not used.</param>
         <summary>Overrides <see cref="M:System.Windows.Interop.HwndHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" /> to delete the window containing this object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Integration.WindowsFormsHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -337,11 +348,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call the <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method to forward all keyboard messages when a <xref:System.Windows.Forms.Form?displayProperty=fullName> is opened modelessly. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method installs a message filter that is required for modeless forms to function correctly when opened by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. You need to call this method only once for a particular <xref:System.Windows.Forms.Integration.WindowsFormsHost> instance.  
+ Call the <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method to forward all keyboard messages when a <xref:System.Windows.Forms.Form?displayProperty=nameWithType> is opened modelessly. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method installs a message filter that is required for modeless forms to function correctly when opened by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. You need to call this method only once for a particular <xref:System.Windows.Forms.Integration.WindowsFormsHost> instance.  
   
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop(System.Windows.Window)" />
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -365,7 +377,7 @@
 ## Remarks  
  This property setting affects only those controls whose template uses the property as a parameter. It has no effect on other controls.  
   
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontFamily"></a>   
 ## XAML Attribute Usage  
@@ -389,6 +401,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.FontFamily" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
@@ -406,6 +420,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontFamily" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.FontFamily" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontSize">
@@ -427,7 +443,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontSize"></a>   
 ## XAML Attribute Usage  
@@ -451,6 +467,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
@@ -468,6 +485,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontSize" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -489,7 +507,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontStyle"></a>   
 ## XAML Attribute Usage  
@@ -513,6 +531,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.FontStyle" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontStyleProperty">
@@ -530,6 +550,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontWeight">
@@ -551,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontWeight"></a>   
 ## XAML Attribute Usage  
@@ -575,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.FontWeight" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontWeightProperty">
@@ -592,6 +615,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontWeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Foreground">
@@ -613,7 +637,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.ForeColor%2A?displayProperty=fullName> property of the hosted control. For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Foreground%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.ForeColor%2A?displayProperty=nameWithType> property of the hosted control. For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Foreground%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_Foreground"></a>   
 ## XAML Attribute Usage  
@@ -637,6 +661,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Brush" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="ForegroundProperty">
@@ -654,6 +680,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Foreground" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="LayoutError">
@@ -684,6 +711,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.LayoutExceptionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -713,6 +741,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -760,6 +789,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -812,6 +842,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Thickness" />
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -862,6 +893,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.PropertyMap" />
       </Docs>
     </Member>
     <Member MemberName="ScaleChild">
@@ -943,6 +975,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexProperty">
@@ -960,6 +993,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.TabIndex" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="TabInto">
@@ -992,11 +1026,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override IntPtr WndProc (IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool handled) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool&amp; handled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

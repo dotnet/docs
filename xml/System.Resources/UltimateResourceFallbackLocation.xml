@@ -29,12 +29,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Resources.UltimateResourceFallbackLocation> enumeration is used with the <xref:System.Resources.NeutralResourcesLanguageAttribute.%23ctor%28System.String%2CSystem.Resources.UltimateResourceFallbackLocation%29?displayProperty=fullName> constructor to specify whether a <xref:System.Resources.ResourceManager> object retrieves the resources of the app's default culture from the main app assembly (the default), or from a satellite assembly. In a localized application, the resources of the default culture are used if no culture-specific resources are found after using the resource fallback process. For more information, see the "Resource Fallback Process" section in [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+ The <xref:System.Resources.UltimateResourceFallbackLocation> enumeration is used with the <xref:System.Resources.NeutralResourcesLanguageAttribute.%23ctor%28System.String%2CSystem.Resources.UltimateResourceFallbackLocation%29?displayProperty=nameWithType> constructor to specify whether a <xref:System.Resources.ResourceManager> object retrieves the resources of the app's default culture from the main app assembly (the default), or from a satellite assembly. In a localized application, the resources of the default culture are used if no culture-specific resources are found after using the resource fallback process. For more information, see the "Resource Fallback Process" section in [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
  If you specify a value of MainAssembly or no value to the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute and resource manager cannot load a resource set that belongs to the default culture, it throws a <xref:System.Resources.MissingManifestResourceException> exception. If you specify a value of Satellite to the <xref:System.Resources.NeutralResourcesLanguageAttribute> and resource manager cannot load a resource set that belongs to the default culture, it throws a <xref:System.Resources.MissingSatelliteAssemblyException> exception.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Resources.ResourceManager" />
+    <altmember cref="T:System.Resources.NeutralResourcesLanguageAttribute" />
   </Docs>
   <Members>
     <Member MemberName="MainAssembly">

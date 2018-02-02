@@ -28,7 +28,7 @@
   
  Remove installers through the <xref:System.Configuration.Install.InstallerCollection.Remove%2A> method. Check whether an installer is in the collection by using the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. Find where an installer is located in the collection by using the <xref:System.Configuration.Install.InstallerCollection.IndexOf%2A> method.  
   
- The installers in a collection are run when the installer containing the collection, as specified by the <xref:System.Configuration.Install.Installer.Parent%2A?displayProperty=fullName> property, calls their <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
+ The installers in a collection are run when the installer containing the collection, as specified by the <xref:System.Configuration.Install.Installer.Parent%2A?displayProperty=nameWithType> property, calls their <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
   
  For examples of the usage of an installer collection, see the <xref:System.Configuration.Install.AssemblyInstaller> and <xref:System.Configuration.Install.TransactedInstaller> classes.  
   
@@ -43,6 +43,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.Install.Installer" />
+    <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
+    <altmember cref="T:System.Configuration.Install.AssemblyInstaller" />
+    <altmember cref="T:System.Configuration.Install.TransactedInstaller" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -81,6 +88,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.AddRange(System.Configuration.Install.InstallerCollection)" />
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Remove(System.Configuration.Install.Installer)" />
+        <altmember cref="T:System.Configuration.Install.Installer" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -118,6 +128,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Add(System.Configuration.Install.Installer)" />
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Remove(System.Configuration.Install.Installer)" />
+        <altmember cref="T:System.Configuration.Install.Installer" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -155,6 +168,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Add(System.Configuration.Install.Installer)" />
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Remove(System.Configuration.Install.Installer)" />
+        <altmember cref="T:System.Configuration.Install.Installer" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -189,6 +205,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Add(System.Configuration.Install.Installer)" />
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.AddRange(System.Configuration.Install.InstallerCollection)" />
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Remove(System.Configuration.Install.Installer)" />
+        <altmember cref="T:System.Configuration.Install.Installer" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -328,6 +348,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Install.Installer" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -436,7 +457,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.Add(System.Configuration.Install.Installer)" />
+        <altmember cref="M:System.Configuration.Install.InstallerCollection.AddRange(System.Configuration.Install.InstallerCollection)" />
+        <altmember cref="T:System.Configuration.Install.Installer" />
+        <altmember cref="P:System.Configuration.Install.Installer.Parent" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified installers to this collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

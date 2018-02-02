@@ -41,14 +41,14 @@
   
  The main causes of the exception include the following:  
   
--   The resource set is not identified by its fully qualified name. For example, if the `baseName` parameter in the call to the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29?displayProperty=fullName> method specifies the root name of the resource set without a namespace, but the resource set is assigned a namespace when it is stored in its assembly, the call to the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName> method throws this exception.  
+-   The resource set is not identified by its fully qualified name. For example, if the `baseName` parameter in the call to the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29?displayProperty=nameWithType> method specifies the root name of the resource set without a namespace, but the resource set is assigned a namespace when it is stored in its assembly, the call to the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> method throws this exception.  
   
      If you have embedded the .resources file that contains the default culture's resources in your executable and your app is throwing a <xref:System.Resources.MissingManifestResourceException>, you can use a reflection tool such as  to determine the fully qualified name of the resource. In ILDasm, double click the executable's **MANIFEST** label to open the **MANIFEST** window. Resources appear as `.mresource` items and are listed after external assembly references and custom assembly-level attributes. You can also compile the following simple utility, which lists the fully qualified names of embedded resources in the assembly whose name is passed to it as a command-line parameter.  
   
      [!code-csharp[System.Resources.ResourceManager.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/resourcenames.cs#4)]
      [!code-vb[System.Resources.ResourceManager.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/resourcenames.vb#4)]  
   
--   You identify the resource set by its resource file name (along with its optional namespace) and its file extension rather than by its namespace and root file name alone. For example, this exception is thrown if the neutral culture's resource set is named `GlobalResources` and you supply a value of `GlobalResources.resources` (instead of `GlobalResources`) to the `baseName` parameter of the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29?displayProperty=fullName> constructor.  
+-   You identify the resource set by its resource file name (along with its optional namespace) and its file extension rather than by its namespace and root file name alone. For example, this exception is thrown if the neutral culture's resource set is named `GlobalResources` and you supply a value of `GlobalResources.resources` (instead of `GlobalResources`) to the `baseName` parameter of the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29?displayProperty=nameWithType> constructor.  
   
 -   The culture-specific resource set that is identified in a method call cannot be found, and the fallback resource set cannot be loaded. For example, if you create satellite assemblies for the English (United States) and Russia (Russian) cultures but you fail to provide a resource set for the neutral culture, this exception is thrown if your app's current culture is English (Great Britain).  
   
@@ -70,6 +70,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
+    <altmember cref="T:System.Resources.ResourceManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -227,7 +229,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingManifestResourceException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1707,7 +1708,7 @@
     </Member>
     <Member MemberName="TryResolveIssuerToken">
       <MemberSignature Language="C#" Value="protected virtual bool TryResolveIssuerToken (System.IdentityModel.Tokens.SamlAssertion assertion, System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, out System.IdentityModel.Tokens.SecurityToken token);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryResolveIssuerToken(class System.IdentityModel.Tokens.SamlAssertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryResolveIssuerToken(class System.IdentityModel.Tokens.SamlAssertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, [out] class System.IdentityModel.Tokens.SecurityToken&amp; token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.TryResolveIssuerToken(System.IdentityModel.Tokens.SamlAssertion,System.IdentityModel.Selectors.SecurityTokenResolver,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2395,5 +2396,14 @@
           <paramref name="token" /> is not a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> object.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

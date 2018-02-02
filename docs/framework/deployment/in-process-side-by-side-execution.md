@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "in-process side-by-side execution"
   - "side-by-side execution, in-process"
@@ -22,6 +17,8 @@ caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # In-Process Side-by-Side Execution
 Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use in-process side-by-side hosting to run multiple versions of the common language runtime (CLR) in a single process. By default, managed COM components run with the .NET Framework version they were built with, regardless of the .NET Framework version that is loaded for the process.  
@@ -41,7 +38,7 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
 -   **Application developers**. Side-by-side hosting has almost no effect on application developers. By default, applications always run against the version of the .NET Framework they were built on; this has not changed. However, developers can override this behavior and direct the application to run under a newer version of the .NET Framework (see [scenario 2](#scenarios)).  
   
--   **Library developers and consumers**. Side-by-side hosting does not solve the compatibility problems that library developers face. A library that is directly loaded by an application -- either through a direct reference or through an <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> call -- continues to use the runtime of the <xref:System.AppDomain> it is loaded into. You should test your libraries against all versions of the .NET Framework that you want to support. If an application is compiled using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime but includes a library that was built using an earlier runtime, that library will use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime as well. However, if you have an application that was built using an earlier runtime and a library that was built using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must force your application to also use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] (see [scenario 3](#scenarios)).  
+-   **Library developers and consumers**. Side-by-side hosting does not solve the compatibility problems that library developers face. A library that is directly loaded by an application -- either through a direct reference or through an <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> call -- continues to use the runtime of the <xref:System.AppDomain> it is loaded into. You should test your libraries against all versions of the .NET Framework that you want to support. If an application is compiled using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime but includes a library that was built using an earlier runtime, that library will use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime as well. However, if you have an application that was built using an earlier runtime and a library that was built using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must force your application to also use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] (see [scenario 3](#scenarios)).  
   
 -   **Managed COM component developers**. In the past, managed COM components automatically ran using the latest version of the runtime installed on the computer. You can now execute COM components against the version of the runtime they were built with.  
   
@@ -183,5 +180,5 @@ int _tmain(int argc, _TCHAR* argv[])
 ```  
   
 ## See Also  
- [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)   
+ [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)  
  [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

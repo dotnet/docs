@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGrid [WPF], validation"
   - "validation [WPF], DataGrid"
@@ -17,6 +20,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement Validation with the DataGrid Control
 The <xref:System.Windows.Controls.DataGrid> control enables you to perform validation at both the cell and row level. With cell-level validation, you validate individual properties of a bound data object when a user updates a value. With row-level validation, you validate entire data objects when a user commits changes to a row. You can also provide customized visual feedback for validation errors, or use the default visual feedback that the <xref:System.Windows.Controls.DataGrid> control provides.  
@@ -35,7 +40,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 ### To customize cell validation feedback  
   
--   Set the column's <xref:System.Windows.Controls.DataGridBoundColumn.EditingElementStyle%2A> property to a style appropriate for the column's editing control. Because the editing controls are created at run time, you cannot use the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=fullName> attached property like you would with simple controls.  
+-   Set the column's <xref:System.Windows.Controls.DataGridBoundColumn.EditingElementStyle%2A> property to a style appropriate for the column's editing control. Because the editing controls are created at run time, you cannot use the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=nameWithType> attached property like you would with simple controls.  
   
      The following example updates the previous example by adding an error style shared by the three columns with validation rules. When a user enters an invalid value, the style changes the cell background color and adds a ToolTip. Note the use of a trigger to determine whether there is a validation error. This is required because there is currently no dedicated error template for cells.  
   
@@ -52,7 +57,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
      [!code-csharp[DataGrid_Validation#CourseValidationRule](../../../../samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml.cs#coursevalidationrule)]
      [!code-vb[DataGrid_Validation#CourseValidationRule](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_validation/vb/mainwindow.xaml.vb#coursevalidationrule)]  
   
-2.  Add the validation rule to the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A?displayProperty=fullName> collection. The <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property provides direct access to the <xref:System.Windows.Data.BindingGroup.ValidationRules%2A> property of a <xref:System.Windows.Data.BindingGroup> instance that groups all the bindings used by the control.  
+2.  Add the validation rule to the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A?displayProperty=nameWithType> collection. The <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property provides direct access to the <xref:System.Windows.Data.BindingGroup.ValidationRules%2A> property of a <xref:System.Windows.Data.BindingGroup> instance that groups all the bindings used by the control.  
   
      The following example sets the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property in XAML. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> property is set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> so that the validation occurs only after the bound data object is updated.  
   
@@ -62,7 +67,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 ### To customize row validation feedback  
   
--   Set the <xref:System.Windows.Controls.DataGrid.RowValidationErrorTemplate%2A?displayProperty=fullName> property. This property enables you to customize row validation feedback for individual <xref:System.Windows.Controls.DataGrid> controls. You can also affect multiple controls by using an implicit row style to set the <xref:System.Windows.Controls.DataGridRow.ValidationErrorTemplate%2A?displayProperty=fullName> property.  
+-   Set the <xref:System.Windows.Controls.DataGrid.RowValidationErrorTemplate%2A?displayProperty=nameWithType> property. This property enables you to customize row validation feedback for individual <xref:System.Windows.Controls.DataGrid> controls. You can also affect multiple controls by using an implicit row style to set the <xref:System.Windows.Controls.DataGridRow.ValidationErrorTemplate%2A?displayProperty=nameWithType> property.  
   
      The following example replaces the default row validation feedback with a more visible indicator. When a user enters an invalid value, a red circle with a white exclamation mark appears in the row header. This occurs for both row and cell validation errors. The associated error message is displayed in a ToolTip.  
   
@@ -94,8 +99,8 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
  [!code-xaml[DataGrid_Validation#FullXaml](../../../../samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#fullxaml)]  
   
 ## See Also  
- <xref:System.Windows.Controls.DataGrid>   
- [DataGrid](../../../../docs/framework/wpf/controls/datagrid.md)   
- [Data Binding](../../../../docs/framework/wpf/data/data-binding-wpf.md)   
- [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)   
+ <xref:System.Windows.Controls.DataGrid>  
+ [DataGrid](../../../../docs/framework/wpf/controls/datagrid.md)  
+ [Data Binding](../../../../docs/framework/wpf/data/data-binding-wpf.md)  
+ [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)  
  [Implement Validation Logic on Custom Objects](../../../../docs/framework/wpf/data/how-to-implement-validation-logic-on-custom-objects.md)

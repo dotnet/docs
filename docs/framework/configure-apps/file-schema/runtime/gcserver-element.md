@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcServer"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#gcServer"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "gcServer element"
   - "<gcServer> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;gcServer&gt; Element
 Specifies whether the common language runtime runs server garbage collection.  
@@ -67,7 +64,7 @@ Specifies whether the common language runtime runs server garbage collection.
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- The common language runtime (CLR) supports two types of garbage collection: workstation garbage collection, which is available on all systems, and server garbage collection, which is available on multiprocessor systems. You use the `<gcServer>` element to control the type of garbage collection the CLR performs. Use the <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=fullName> property to determine if server garbage collection is enabled.  
+ The common language runtime (CLR) supports two types of garbage collection: workstation garbage collection, which is available on all systems, and server garbage collection, which is available on multiprocessor systems. You use the `<gcServer>` element to control the type of garbage collection the CLR performs. Use the <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType> property to determine if server garbage collection is enabled.  
   
  For single-processor computers, the default workstation garbage collection should be the fastest option. Either workstation or server can be used for two-processor computers. Server garbage collection should be the fastest option for more than two processors.  
   
@@ -88,7 +85,7 @@ Specifies whether the common language runtime runs server garbage collection.
 ```  
   
 ## See Also  
- <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=fullName>   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
- [How to: Disable Concurrent Garbage Collection](http://msdn.microsoft.com/en-us/ba2c6c67-5778-497c-9fac-5f793b5500c7)
+ <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+ [How to: Disable Concurrent Garbage Collection](http://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)

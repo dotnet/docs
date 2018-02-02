@@ -74,6 +74,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Windows.Media.Brush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. Depending on whether your class must perform additional initialization work or contains non-dependency property data members, you might need to override additional <see cref="T:System.Windows.Freezable" /> methods. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</para>
     </block>
+    <altmember cref="T:System.Windows.Media.Brushes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,7 +114,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -141,7 +142,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -230,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Brush.Transform" />
       </Docs>
     </Member>
     <Member MemberName="RelativeTransformProperty">
@@ -345,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Brush.RelativeTransform" />
       </Docs>
     </Member>
     <Member MemberName="TransformProperty">
@@ -364,5 +367,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

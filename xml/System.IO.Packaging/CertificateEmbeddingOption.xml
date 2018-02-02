@@ -17,7 +17,7 @@
 ## Remarks  
  If the certificate is NotEmbedded in the package, an application that verifies signatures must provide a copy of the certificate in order to verify the signatures that are signed by it.  
   
- InSignaturePart adds two informational elements, `<KeyName>` and `<KeyValue>`, as part of the <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A>field of the stored digital signature. The `<KeyName>` and `<KeyValue>` elements are not processed as part of signature validation and are therefore not secure from modification. Applications should not make any assumption regarding the validity of these two elements. To avoid undetected modification and possible confusion, applications should use the InCertificatePart option instead of InSignaturePart. The InCertificatePart option does not provide or expose either `<KeyName>` or `<KeyValue>`.  
+ InSignaturePart adds two informational elements, `<KeyName>` and `<KeyValue>`, as part of the <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A> field of the stored digital signature. The `<KeyName>` and `<KeyValue>` elements are not processed as part of signature validation and are therefore not secure from modification. Applications should not make any assumption regarding the validity of these two elements. To avoid undetected modification and possible confusion, applications should use the InCertificatePart option instead of InSignaturePart. The InCertificatePart option does not provide or expose either `<KeyName>` or `<KeyValue>`.  
   
    
   
@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.IO.Packaging.PackageDigitalSignatureManager.CertificateOption" />
+    <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.CertificateEmbeddingOption" />
   </Docs>
   <Members>
     <Member MemberName="InCertificatePart">

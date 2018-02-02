@@ -27,7 +27,7 @@
 ## Remarks  
  <xref:System.Net.AuthenticationManager> is a static class that manages the authentication modules that an application uses. When a request is made to protected resources, the <xref:System.Net.AuthenticationManager> calls the <xref:System.Net.AuthenticationManager.Authenticate%2A> method to get an <xref:System.Net.Authorization> instance to use in subsequent requests.  
   
- The <xref:System.Net.AuthenticationManager> queries each registered authentication module by calling the <xref:System.Net.IAuthenticationModule.Authenticate%2A?displayProperty=fullName> method for each module. The first authentication module to return an <xref:System.Net.Authorization> instance is used to authenticate the request.  
+ The <xref:System.Net.AuthenticationManager> queries each registered authentication module by calling the <xref:System.Net.IAuthenticationModule.Authenticate%2A?displayProperty=nameWithType> method for each module. The first authentication module to return an <xref:System.Net.Authorization> instance is used to authenticate the request.  
   
  Modules that provide the basic, digest, negotiate, NTLM, and Kerberos authentication types are registered with the <xref:System.Net.AuthenticationManager> by default. Additional authentication modules that implement the <xref:System.Net.IAuthenticationModule> interface can be added using the <xref:System.Net.AuthenticationManager.Register%2A> method. Authentication modules are called in the order in which they were added to the list.  
   
@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.AuthenticationManager.Authenticate%2A> method calls the <xref:System.Net.IAuthenticationModule.Authenticate%2A?displayProperty=fullName> method on each registered authentication module until one of the module responds with an <xref:System.Net.Authorization> instance.  
+ The <xref:System.Net.AuthenticationManager.Authenticate%2A> method calls the <xref:System.Net.IAuthenticationModule.Authenticate%2A?displayProperty=nameWithType> method on each registered authentication module until one of the module responds with an <xref:System.Net.Authorization> instance.  
   
  The first <xref:System.Net.Authorization> instance returned is used to authenticate the request. If no authentication module can authenticate the request, the <xref:System.Net.AuthenticationManager.Authenticate%2A> method returns `null`.  
   
@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An SPN is a name by which a client uniquely identifies an instance of a service or application on a server for purposes of mutual authentication. Mutual authentication is requested by default, and you can require it by setting <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=fullName> to <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequired> in your request.  
+ An SPN is a name by which a client uniquely identifies an instance of a service or application on a server for purposes of mutual authentication. Mutual authentication is requested by default, and you can require it by setting <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=nameWithType> to <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequired> in your request.  
   
  When a <xref:System.Net.WebRequest> requires mutual authentication, the SPN for the destination must be supplied by the client. If you know the SPN, you can add it to the <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A> before sending the request. If you have not added SPN information to this dictionary, the <xref:System.Net.AuthenticationManager> uses the <xref:System.Net.WebRequest.RequestUri%2A> method to compose the most likely SPN; however, this is a computed value and might be incorrect. If mutual authentication is attempted and fails, you can check the dictionary to determine the computed SPN. No SPN is entered into the dictionary if the authentication protocol does not support mutual authentication.  
   
@@ -190,7 +190,7 @@
 > [!NOTE]
 >  When Kerberos authentication is performed through a proxy, both the proxy and the ultimate host name need to be resolved to an SPN. The proxy name resolution is protected by a timeout. Resolution of the ultimate host name to a SPN requires a DNS lookup, and there is no timeout associated directly with this operation. Therefore synchronous operations may take longer to timeout. To overcome this, add the ultimate host's URI prefix to the SPN cache prior to making requests to it.  
   
- Version 3.5 SP1 now defaults to specifying the host name used in the request URL in the SPN in the NTLM (NT LAN Manager) authentication exchange when the <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A> property is not set. The host name used in the request URL may be different from the Host header specified in the <xref:System.Net.HttpRequestHeader?displayProperty=fullName> in the client request. The host name used in the request URL may be different from the actual host name of the server, the machine name of the server, the computer's IP address, or the loopback address. In these cases, Windows will fail the authentication request. To address the issue, you may need to notify Windows that the host name used in the request URL in the client request ("contoso", for example) is actually an alternate name for the local computer.  
+ Version 3.5 SP1 now defaults to specifying the host name used in the request URL in the SPN in the NTLM (NT LAN Manager) authentication exchange when the <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A> property is not set. The host name used in the request URL may be different from the Host header specified in the <xref:System.Net.HttpRequestHeader?displayProperty=nameWithType> in the client request. The host name used in the request URL may be different from the actual host name of the server, the machine name of the server, the computer's IP address, or the loopback address. In these cases, Windows will fail the authentication request. To address the issue, you may need to notify Windows that the host name used in the request URL in the client request ("contoso", for example) is actually an alternate name for the local computer.  
   
    
   
@@ -240,7 +240,7 @@
 ## Remarks  
  If the authentication module can preauthenticate the request, the <xref:System.Net.AuthenticationManager.PreAuthenticate%2A> method returns an Authentication instance and sends the authorization information to the server preemptively instead of waiting for the resource to issue a challenge. This behavior is outlined in section 3.3 of RFC 2617 (HTTP Authentication: Basic and Digest Access Authentication). Authentication modules that support preauthentication allow clients to improve server efficiency by avoiding extra round trips caused by authentication challenges.  
   
- Authorization modules that can preauthenticate requests set the <xref:System.Net.IAuthenticationModule.CanPreAuthenticate%2A?displayProperty=fullName> property to `true`.  
+ Authorization modules that can preauthenticate requests set the <xref:System.Net.IAuthenticationModule.CanPreAuthenticate%2A?displayProperty=nameWithType> property to `true`.  
   
  ]]></format>
         </remarks>
@@ -440,5 +440,15 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for executing unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Unregister">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes authentication modules from the list of registered modules.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

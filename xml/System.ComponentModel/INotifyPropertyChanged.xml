@@ -376,7 +376,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event can indicate all properties on the object have changed by using either `null` or <xref:System.String.Empty?displayProperty=fullName> as the property name in the <xref:System.ComponentModel.PropertyChangedEventArgs>.  
+ The <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event can indicate all properties on the object have changed by using either `null` or <xref:System.String.Empty?displayProperty=nameWithType> as the property name in the <xref:System.ComponentModel.PropertyChangedEventArgs>.  
   
    
   
@@ -388,6 +388,7 @@ End Class
     
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyChangedEventArgs" />
       </Docs>
     </Member>
   </Members>

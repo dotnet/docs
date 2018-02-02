@@ -1,6 +1,6 @@
 ---
 title: "?: Operator (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: "07/20/2015"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -9,8 +9,6 @@ f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
   - ":_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
@@ -18,21 +16,6 @@ ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ?: Operator (C# Reference)
 The conditional operator (`?:`) returns one of two values depending on the value of a Boolean expression. Following is the syntax for the conditional operator.  
@@ -48,7 +31,7 @@ condition ? first_expression : second_expression;
   
  You can express calculations that might otherwise require an `if-else` construction more concisely by using the conditional operator. For example, the following code uses first an `if` statement and then a conditional operator to classify an integer as positive or negative.  
   
-```  
+```csharp
 int input = Convert.ToInt32(Console.ReadLine());  
 string classify;  
   
@@ -67,12 +50,12 @@ classify = (input > 0) ? "positive" : "negative";
  The conditional operator cannot be overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#41](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-operator_1.cs)]  
+ [!code-csharp[csRefOperators#41](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-operator_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [if-else](../../../csharp/language-reference/keywords/if-else.md)   
- [?. and ?Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Operators](../../../csharp/language-reference/operators/index.md)  
+ [if-else](../../../csharp/language-reference/keywords/if-else.md)  
+ [?. and ?Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)  
  [?? Operator](../../../csharp/language-reference/operators/null-conditional-operator.md)

@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Windows Forms controls"
+  - "Windows Forms controls [Windows Forms]"
   - "Windows Forms controls, creating"
   - "controls [Windows Forms]"
   - "controls [Windows Forms], creating"
@@ -23,6 +21,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Developing Windows Forms Controls at Design Time
 For control authors, the .NET Framework provides a wealth of control authoring technology. Authors are no longer limited to designing composite controls that act as a collection of preexisting controls. Through inheritance, you can create your own controls from preexisting composite controls or preexisting Windows Forms controls. You can also design your own controls that implement custom painting. These options enable a great deal of flexibility to the design and functionality of the visual interface. To take advantage of these features, you should be familiar with object-based programming concepts.  
@@ -49,7 +49,7 @@ For control authors, the .NET Framework provides a wealth of control authoring t
  Shows how to use the smart tag feature on Windows Forms controls.  
   
  [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](../../../../docs/framework/winforms/controls/serializing-collections-designerserializationvisibilityattribute.md)  
- Shows how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=fullName> attribute to serialize a collection.  
+ Shows how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=nameWithType> attribute to serialize a collection.  
   
  [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
  Shows how to debug the design-time behavior of a Windows Forms control.  
@@ -91,10 +91,10 @@ For control authors, the .NET Framework provides a wealth of control authoring t
  Shows how to diagnose and fix common issues that can occur when you author a custom component or control.  
   
 ## Reference  
- <xref:System.Windows.Forms.Control?displayProperty=fullName>  
+ <xref:System.Windows.Forms.Control?displayProperty=nameWithType>  
  Describes this class and has links to all of its members.  
   
- <xref:System.Windows.Forms.UserControl?displayProperty=fullName>  
+ <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>  
  Describes this class and has links to all of its members.  
   
 ## Related Sections  

@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Remoting.Activation.UrlAttribute> is passed in the activation attributes array as a parameter to <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> when creating activated objects with the <xref:System.Activator.CreateInstance%2A> method.  
+ The <xref:System.Runtime.Remoting.Activation.UrlAttribute> is passed in the activation attributes array as a parameter to <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> when creating activated objects with the <xref:System.Activator.CreateInstance%2A> method.  
   
  For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
+    <altmember cref="T:System.Runtime.Remoting.Contexts.IContextProperty" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the default <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ This method overrides the default <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -204,6 +206,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
       </Docs>
     </Member>
     <Member MemberName="UrlValue">

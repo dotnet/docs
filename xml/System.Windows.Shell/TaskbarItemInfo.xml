@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Shell.TaskbarItemInfo> class provides a managed wrapper for [!INCLUDE[win7](~/includes/win7-md.md)] taskbar functionality. For more information about the Windows shell and native taskbar APIs, see [Taskbar Extensions](http://go.microsoft.com/fwlink/?LinkId=178479). <xref:System.Windows.Shell.TaskbarItemInfo> is exposed as the <xref:System.Windows.Window.TaskbarItemInfo%2A?displayProperty=fullName> dependency property on a <xref:System.Windows.Window>.  
+ The <xref:System.Windows.Shell.TaskbarItemInfo> class provides a managed wrapper for [!INCLUDE[win7](~/includes/win7-md.md)] taskbar functionality. For more information about the Windows shell and native taskbar APIs, see [Taskbar Extensions](http://go.microsoft.com/fwlink/?LinkId=178479). <xref:System.Windows.Shell.TaskbarItemInfo> is exposed as the <xref:System.Windows.Window.TaskbarItemInfo%2A?displayProperty=nameWithType> dependency property on a <xref:System.Windows.Window>.  
   
  The [!INCLUDE[win7](~/includes/win7-md.md)] taskbar provides enhanced functionality that enables you to use the taskbar item to communicate status to a user and expose common tasks when the window is minimized or hidden. The functionality that is exposed by the <xref:System.Windows.Shell.TaskbarItemInfo> class is unavailable in versions of Windows earlier than [!INCLUDE[win7](~/includes/win7-md.md)]. Applications that use the <xref:System.Windows.Shell.TaskbarItemInfo> class can still run in earlier versions of Windows; however, these taskbar enhancements are unavailable in the earlier versions.  
   
@@ -183,6 +183,8 @@ Windows Taskbar Overlay
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Version" />
+        <altmember cref="P:System.Environment.OSVersion" />
       </Docs>
     </Member>
     <Member MemberName="OverlayProperty">
@@ -231,7 +233,7 @@ Windows Taskbar Progress Indicator
    
   
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressState%2A> property in code. The state is set in the handler of a <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=fullName> event to indicate whether the background task was stopped by the user, ended with an error, or completed normally. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+ The following example shows how to set the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressState%2A> property in code. The state is set in the handler of a <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=nameWithType> event to indicate whether the background task was stopped by the user, ended with an error, or completed normally. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
  [!code-csharp[Shell_TaskbarItemSample#120](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml.cs#120)]
  [!code-vb[Shell_TaskbarItemSample#120](~/samples/snippets/visualbasic/VS_Snippets_Wpf/shell_taskbaritemsample/vb/mainwindow.xaml.vb#120)]  
@@ -288,7 +290,7 @@ Windows Taskbar Progress Indicator
    
   
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressValue%2A> property in code. The value is set in the handler of a <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=fullName> event to indicate the current progress of the background task. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+ The following example shows how to set the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressValue%2A> property in code. The value is set in the handler of a <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=nameWithType> event to indicate the current progress of the background task. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
  [!code-csharp[Shell_TaskbarItemSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml.cs#130)]
  [!code-vb[Shell_TaskbarItemSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/shell_taskbaritemsample/vb/mainwindow.xaml.vb#130)]  

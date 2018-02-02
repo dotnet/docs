@@ -38,8 +38,7 @@
  The following example raises an event by adding an element to the tree.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root", "content");  
+XElement root = new XElement("Root", "content");  
 root.Changing += (sender, e) =>  
     {  
         Console.WriteLine("Changing event raised");  
@@ -69,8 +68,7 @@ Changed event raised
  The following example raises an event by removing an element from the tree.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Child", "content")  
 );  
 root.Changing += (sender, e) =>  
@@ -102,8 +100,7 @@ Changed event raised
  The following example raises an event by changing the name of an element.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root", "content");  
+XElement root = new XElement("Root", "content");  
 root.Changing += (sender, e) =>  
     {  
         Console.WriteLine("Changing event raised");  
@@ -133,8 +130,7 @@ Changed event raised
  The following example raises an event by setting the value of an attribute.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", "att value")  
 );  
 root.Changing += (sender, e) =>  

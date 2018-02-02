@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.RenderOptions" />
+    <altmember cref="T:System.Windows.Threading.Dispatcher" />
   </Docs>
   <Members>
     <Member MemberName="IsPixelShaderVersionSupported">
@@ -62,6 +64,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="IsPixelShaderVersionSupportedInSoftware">
@@ -94,6 +99,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="IsShaderEffectSoftwareRenderingSupported">
@@ -118,6 +126,9 @@
         <value>
           <see langword="true" /> if the system can render bitmap effects in software; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="MaxHardwareTextureSize">
@@ -143,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.BitmapCache" />
       </Docs>
     </Member>
     <Member MemberName="MaxPixelShaderInstructionSlots">
@@ -176,6 +188,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="Tier">

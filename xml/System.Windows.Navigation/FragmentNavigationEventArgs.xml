@@ -18,13 +18,13 @@
 ## Remarks  
  T These event arguments contain information about the content fragment that is being navigated to, and are passed to handlers of the **FragmentNavigation** event, which is implemented by the following:  
   
--   <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationWindow.FragmentNavigation?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationWindow.FragmentNavigation?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.Frame.FragmentNavigation?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Frame.FragmentNavigation?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Application.FragmentNavigation?displayProperty=fullName>  
+-   <xref:System.Windows.Application.FragmentNavigation?displayProperty=nameWithType>  
   
  By default, a content fragment is content that is contained by a named <xref:System.Windows.UIElement>, which is a <xref:System.Windows.UIElement> whose <xref:System.Windows.FrameworkElement.Name%2A> attribute is set, e.g.:  
   

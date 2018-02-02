@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Methods and properties that are marked with this attribute can be used within calls to <xref:System.Diagnostics.Contracts.Contract?displayProperty=fullName> methods, but they have no run-time behavior.  
+ Methods and properties that are marked with this attribute can be used within calls to <xref:System.Diagnostics.Contracts.Contract?displayProperty=nameWithType> methods, but they have no run-time behavior.  
   
  ]]></format>
     </remarks>

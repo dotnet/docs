@@ -25,11 +25,13 @@
   
  The following code example demonstrates how to recursively iterate through an <xref:System.Web.UI.IHierarchicalEnumerable> collection, extract the <xref:System.Web.UI.IHierarchyData> item from the enumerator using the <xref:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData%2A> method, and perform basic work with the data item.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IHierarchyData_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/CS/ihd_1.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IHierarchyData_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/VB/ihd_1.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.IHierarchyData_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/CS/ihd_1.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.IHierarchyData_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/VB/ihd_1.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
+    <altmember cref="T:System.Web.SiteMapNode" />
   </Docs>
   <Members>
     <Member MemberName="GetChildren">
@@ -64,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.HasChildren" />
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -98,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IHierarchyData.GetChildren" />
+        <altmember cref="P:System.Web.UI.IHierarchyData.HasChildren" />
       </Docs>
     </Member>
     <Member MemberName="HasChildren">
@@ -132,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IHierarchyData.GetChildren" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -165,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.Type" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -201,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.Url" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -222,7 +230,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IHierarchyData.Type%2A> property does not return the <xref:System.Type?displayProperty=fullName> of the object represented in an <xref:System.Web.UI.IHierarchyData> object. It returns a name used by data-bound controls to differentiate between items in a hierarchy that have different bindable properties.  
+ The <xref:System.Web.UI.IHierarchyData.Type%2A> property does not return the <xref:System.Type?displayProperty=nameWithType> of the object represented in an <xref:System.Web.UI.IHierarchyData> object. It returns a name used by data-bound controls to differentiate between items in a hierarchy that have different bindable properties.  
   
    
   
@@ -234,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.Item" />
       </Docs>
     </Member>
   </Members>

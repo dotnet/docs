@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.SystemParameter" />
   </Docs>
   <Members>
     <Member MemberName="ActiveWindowTrackingDelay">
@@ -60,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeDirection">
@@ -94,6 +96,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ArrangeDirection" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.ArrangeStartingPosition" />
+        <altmember cref="T:System.Windows.Forms.ArrangeStartingPosition" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeStartingPosition">
@@ -128,6 +134,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ArrangeStartingPosition" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.ArrangeDirection" />
+        <altmember cref="T:System.Windows.Forms.ArrangeDirection" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="BootMode">
@@ -163,6 +173,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Forms.BootMode" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="Border3DSize">
@@ -201,6 +213,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.BorderSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FrameBorderSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FixedFrameBorderSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="BorderMultiplierFactor">
@@ -230,6 +247,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.BorderSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.Border3DSize" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="BorderSize">
@@ -268,6 +288,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.Border3DSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FrameBorderSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FixedFrameBorderSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="CaptionButtonSize">
@@ -304,6 +329,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="CaptionHeight">
@@ -338,6 +365,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="CaretBlinkTime">
@@ -367,6 +395,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="CaretWidth">
@@ -405,6 +434,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="ComputerName">
@@ -442,6 +472,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.UserName" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="CursorSize">
@@ -476,6 +508,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="DbcsEnabled">
@@ -511,6 +545,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="DebugOS">
@@ -542,6 +577,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClickSize">
@@ -578,6 +614,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.DoubleClickTime" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClickTime">
@@ -614,6 +653,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.DoubleClickSize" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="DragFullWindows">
@@ -649,6 +690,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="DragSize">
@@ -685,6 +727,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="FixedFrameBorderSize">
@@ -721,6 +765,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.BorderSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.Border3DSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FrameBorderSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="FontSmoothingContrast">
@@ -759,6 +808,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsFontSmoothingEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FontSmoothingType" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="FontSmoothingType">
@@ -805,6 +857,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsFontSmoothingEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FontSmoothingContrast" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="FrameBorderSize">
@@ -841,6 +896,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.BorderSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.Border3DSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.FixedFrameBorderSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="GetBorderSizeForDpi">
@@ -969,6 +1029,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalFocusThickness">
@@ -1007,6 +1068,16 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalResizeBorderThickness">
@@ -1041,6 +1112,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarArrowWidth">
@@ -1070,6 +1151,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarHeight">
@@ -1099,6 +1190,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarThumbWidth">
@@ -1133,6 +1233,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IconHorizontalSpacing">
@@ -1167,6 +1277,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IconVerticalSpacing" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IconSize">
@@ -1196,6 +1308,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IconSpacingSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IconSpacingSize">
@@ -1230,6 +1345,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IconSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IconVerticalSpacing">
@@ -1264,6 +1382,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IconSpacingSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IconSize" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsActiveWindowTrackingEnabled">
@@ -1302,6 +1423,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsComboBoxAnimationEnabled">
@@ -1342,6 +1464,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsDropShadowEnabled">
@@ -1379,6 +1502,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsFlatMenuEnabled">
@@ -1397,6 +1521,7 @@
         <summary>Gets a value indicating whether native user menus have a flat menu appearance.</summary>
         <value>This property is not used and always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsFontSmoothingEnabled">
@@ -1432,6 +1557,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsHotTrackingEnabled">
@@ -1470,6 +1596,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsIconTitleWrappingEnabled">
@@ -1500,6 +1627,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardPreferred">
@@ -1538,6 +1666,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsListBoxSmoothScrollingEnabled">
@@ -1576,6 +1705,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsMenuAnimationEnabled">
@@ -1616,6 +1746,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsMenuFadeEnabled" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsMenuFadeEnabled">
@@ -1659,6 +1791,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsMenuAnimationEnabled" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsMinimizeRestoreAnimationEnabled">
@@ -1694,6 +1828,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectionFadeEnabled">
@@ -1732,6 +1867,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsSnapToDefaultEnabled">
@@ -1767,6 +1903,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsTitleBarGradientEnabled">
@@ -1805,6 +1942,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="IsToolTipAnimationEnabled">
@@ -1843,6 +1981,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="KanjiWindowHeight">
@@ -1877,6 +2016,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.DbcsEnabled" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardDelay">
@@ -1913,6 +2054,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.KeyboardSpeed" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardSpeed">
@@ -1949,6 +2092,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.KeyboardDelay" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MaxWindowTrackSize">
@@ -1983,6 +2128,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="P:System.Windows.Forms.Form.MaximumSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MenuAccessKeysUnderlined">
@@ -2021,6 +2170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MenuBarButtonSize">
@@ -2042,7 +2192,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Size.Width%2A?displayProperty=fullName> value of this property indicates the default width for a button on a menu-bar, in pixels. The <xref:System.Drawing.Size.Height%2A?displayProperty=fullName> value of this property indicates the height of a menu bar, in pixels.  
+ The <xref:System.Drawing.Size.Width%2A?displayProperty=nameWithType> value of this property indicates the default width for a button on a menu-bar, in pixels. The <xref:System.Drawing.Size.Height%2A?displayProperty=nameWithType> value of this property indicates the height of a menu bar, in pixels.  
   
    
   
@@ -2055,6 +2205,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MenuButtonSize">
@@ -2089,6 +2241,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.ToolWindowCaptionButtonSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MenuCheckSize">
@@ -2123,6 +2278,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MenuFont">
@@ -2157,6 +2314,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MenuHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MenuHeight">
@@ -2191,6 +2350,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MenuFont" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MenuShowDelay">
@@ -2225,6 +2386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MidEastEnabled">
@@ -2260,6 +2422,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MinimizedWindowSize">
@@ -2294,6 +2457,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MinimizedWindowSpacingSize">
@@ -2330,6 +2495,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MinimumWindowSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MinimumWindowSize">
@@ -2367,6 +2535,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MinWindowTrackSize">
@@ -2403,6 +2573,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimumSize" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MonitorCount">
@@ -2440,6 +2614,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MonitorsSameDisplayFormat" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MonitorsSameDisplayFormat">
@@ -2483,6 +2659,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MonitorCount" />
+        <altmember cref="T:System.Drawing.Imaging.PixelFormat" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseButtons">
@@ -2519,6 +2698,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MousePresent" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseButtonsSwapped" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseButtonsSwapped">
@@ -2549,6 +2731,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseButtons" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseHoverSize">
@@ -2576,6 +2760,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseHoverTime" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseHoverTime">
@@ -2612,6 +2798,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseHoverSize" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MousePresent">
@@ -2652,6 +2840,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseWheelPresent" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseButtons" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseSpeed">
@@ -2689,6 +2880,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheelPresent">
@@ -2727,6 +2919,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.NativeMouseWheelSupport" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseWheelScrollLines" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseWheelScrollDelta" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheelScrollDelta">
@@ -2761,6 +2957,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseWheelScrollLines" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheelScrollLines">
@@ -2798,6 +2996,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseWheelScrollDelta" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="NativeMouseWheelSupport">
@@ -2836,6 +3036,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="Network">
@@ -2874,6 +3075,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="PenWindows">
@@ -2909,6 +3111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="PopupMenuAlignment">
@@ -2938,6 +3141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="PowerStatus">
@@ -2967,6 +3171,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.PowerStatus" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="PrimaryMonitorMaximizedWindowSize">
@@ -2996,6 +3202,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="PrimaryMonitorSize">
@@ -3030,6 +3238,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VirtualScreen" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.PrimaryMonitorMaximizedWindowSize" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="RightAlignedMenus">
@@ -3060,6 +3272,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="ScreenOrientation">
@@ -3089,6 +3302,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="Secure">
@@ -3125,6 +3339,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="ShowSounds">
@@ -3162,6 +3377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="SizingBorderWidth">
@@ -3191,6 +3407,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionButtonSize">
@@ -3225,6 +3442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="SmallIconSize">
@@ -3259,6 +3477,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="TerminalServerSession">
@@ -3297,6 +3517,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="ToolWindowCaptionButtonSize">
@@ -3331,6 +3552,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="ToolWindowCaptionHeight">
@@ -3360,6 +3583,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.ToolWindowCaptionButtonSize" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="UIEffectsEnabled">
@@ -3411,6 +3636,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsComboBoxAnimationEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsTitleBarGradientEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsHotTrackingEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsListBoxSmoothScrollingEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsMenuAnimationEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MenuAccessKeysUnderlined" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsSelectionFadeEnabled" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.IsToolTipAnimationEnabled" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="UserDomainName">
@@ -3450,6 +3684,9 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The operating system does not support this feature.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for reading an environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.UserName" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.ComputerName" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="UserInteractive">
@@ -3490,6 +3727,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -3527,6 +3765,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.UserDomainName" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.ComputerName" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="VerticalFocusThickness">
@@ -3565,6 +3806,16 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="VerticalResizeBorderThickness">
@@ -3599,6 +3850,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarArrowHeight">
@@ -3633,6 +3894,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarThumbHeight">
@@ -3667,6 +3938,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarWidth">
@@ -3696,6 +3977,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="VirtualScreen">
@@ -3738,6 +4029,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
     <Member MemberName="WorkingArea">
@@ -3761,7 +4054,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SystemInformation.WorkingArea%2A> property indicates the bounds of the screen that can be used by applications. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.  
   
- <xref:System.Windows.Forms.SystemInformation.WorkingArea%2A> always returns the work area of the primary monitor. If you need the work area of a monitor in a multiple display environment, you can call one of the overloads of <xref:System.Windows.Forms.Screen.GetWorkingArea%2A?displayProperty=fullName>.  
+ <xref:System.Windows.Forms.SystemInformation.WorkingArea%2A> always returns the work area of the primary monitor. If you need the work area of a monitor in a multiple display environment, you can call one of the overloads of <xref:System.Windows.Forms.Screen.GetWorkingArea%2A?displayProperty=nameWithType>.  
   
    
   
@@ -3774,6 +4067,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
   </Members>

@@ -84,7 +84,7 @@ and `Union`.
 
 Build and Run
 =============
-
+.
 To build and run the sample, type the following two commands in any of the subdirectories:
 
 `dotnet restore`
@@ -92,3 +92,6 @@ To build and run the sample, type the following two commands in any of the subdi
 
 `dotnet restore` restores the dependencies for this sample.
 `dotnet run` builds the sample and runs the output assembly.
+
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+

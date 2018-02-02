@@ -829,7 +829,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrix%29?displayProperty=fullName> method is equivalent to calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrixFlag%29?displayProperty=fullName> method and passing <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> for the `flags` parameter. <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> specifies that all colors (including grays) are adjusted by the color-adjustment matrix, not the grayscale-adjustment matrix. Therefore, the grayscale-adjustment matrix passed to this method has no effect.  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrix%29?displayProperty=nameWithType> method is equivalent to calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrixFlag%29?displayProperty=nameWithType> method and passing <xref:System.Drawing.Imaging.ColorMatrixFlag.Default?displayProperty=nameWithType> for the `flags` parameter. <xref:System.Drawing.Imaging.ColorMatrixFlag.Default?displayProperty=nameWithType> specifies that all colors (including grays) are adjusted by the color-adjustment matrix, not the grayscale-adjustment matrix. Therefore, the grayscale-adjustment matrix passed to this method has no effect.  
   
  ]]></format>
         </remarks>
@@ -933,7 +933,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%28System.Drawing.Imaging.ColorMatrix%29?displayProperty=fullName> method is equivalent to calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrixFlag%29?displayProperty=fullName> method and passing <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> for the `flags` parameter. <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> specifies that all colors (including grays) are adjusted by the color-adjustment matrix  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%28System.Drawing.Imaging.ColorMatrix%29?displayProperty=nameWithType> method is equivalent to calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrixFlag%29?displayProperty=nameWithType> method and passing <xref:System.Drawing.Imaging.ColorMatrixFlag.Default?displayProperty=nameWithType> for the `flags` parameter. <xref:System.Drawing.Imaging.ColorMatrixFlag.Default?displayProperty=nameWithType> specifies that all colors (including grays) are adjusted by the color-adjustment matrix  
   
    
   
@@ -1243,7 +1243,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `ShowOutputChannels`, passing `e` as<xref:System.Windows.Forms.PaintEventArgs>.  
+ The following code example demonstrates how to use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `ShowOutputChannels`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.Misc3#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#4)]
  [!code-vb[System.Drawing.Misc3#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#4)]  
@@ -1287,7 +1287,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `ShowOutputChannels`, passing `e` as<xref:System.Windows.Forms.PaintEventArgs>.  
+ The following code example demonstrates how to use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `ShowOutputChannels`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.Misc3#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#4)]
  [!code-vb[System.Drawing.Misc3#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#4)]  
@@ -1586,7 +1586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%29> method is equivalent to calling <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%2CSystem.Drawing.Color%29> and passing <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> for the `color` parameter. <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> specifies the color of pixels outside of a rendered image. This color is visible if the mode parameter is set to <xref:System.Drawing.Drawing2D.WrapMode.Clamp> and the source rectangle passed to the <xref:System.Drawing.Graphics.DrawImage%2A> method is larger than the image itself.  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%29> method is equivalent to calling <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%2CSystem.Drawing.Color%29> and passing <xref:System.Drawing.Color.Black%2A?displayProperty=nameWithType> for the `color` parameter. <xref:System.Drawing.Color.Black%2A?displayProperty=nameWithType> specifies the color of pixels outside of a rendered image. This color is visible if the mode parameter is set to <xref:System.Drawing.Drawing2D.WrapMode.Clamp> and the source rectangle passed to the <xref:System.Drawing.Graphics.DrawImage%2A> method is larger than the image itself.  
   
    
   
@@ -1671,5 +1671,167 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetGamma">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the gamma value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearGamma">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disables gamma correction.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetWrapMode">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the wrap mode.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetColorKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color key (transparency range).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearColorMatrix">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the color-adjustment matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearOutputChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the CMYK (cyan-magenta-yellow-black) output channel setting.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetColorMatrix">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color-adjustment matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetRemapTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color-remap table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetOutputChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the CMYK (cyan-magenta-yellow-black) output channel.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetColorMatrices">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color-adjustment matrix and the grayscale-adjustment matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetOutputChannelColorProfile">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the output channel color-profile file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetNoOp">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Turns off color adjustment.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearColorKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the color key (transparency range).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearNoOp">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the <see langword="NoOp" /> setting.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearRemapTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the color-remap table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetThreshold">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the threshold (transparency range).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearThreshold">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the threshold value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearOutputChannelColorProfile">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the output channel color profile setting.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

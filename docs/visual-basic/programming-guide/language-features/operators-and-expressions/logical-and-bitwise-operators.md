@@ -1,54 +1,36 @@
 ---
 title: "Logical and Bitwise Operators in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "short-circuiting"
   - "Boolean expressions"
-  - "logical operators, Boolean expressions"
+  - "logical operators [Visual Basic], Boolean expressions"
   - "operators [Visual Basic], logical"
-  - "AndAlso operator"
+  - "AndAlso operator [Visual Basic]"
   - "Not operator [Visual Basic], Boolean expressions"
   - "Xor operator [Visual Basic], Boolean expressions"
   - "And operator [Visual Basic], logical operators"
-  - "logical operators"
+  - "logical operators [Visual Basic]"
   - "expressions [Visual Basic], Boolean"
-  - "Or operator, logical operators"
+  - "Or operator [Visual Basic], logical operators"
   - "Visual Basic code, operators"
-  - "short-circuiting, logical operators"
-  - "logical operators, short-circuiting"
+  - "short-circuiting [Visual Basic], logical operators"
+  - "logical operators [Visual Basic], short-circuiting"
   - "Visual Basic code, expressions"
-  - "logical operators, binary"
+  - "logical operators [Visual Basic], binary"
   - "OrElse operator [Visual Basic]"
-  - "logical operators, unary"
+  - "logical operators [Visual Basic], unary"
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Logical and Bitwise Operators in Visual Basic
 Logical operators compare `Boolean` expressions and return a `Boolean` result. The `And`, `Or`, `AndAlso`, `OrElse`, and `Xor` operators are *binary* because they take two operands, while the `Not` operator is *unary* because it takes a single operand. Some of these operators can also perform bitwise logical operations on integral values.  
@@ -118,9 +100,9 @@ Logical operators compare `Boolean` expressions and return a `Boolean` result. T
 >  Bitwise operations can be performed on integral types only. Floating-point values must be converted to integral types before bitwise operation can proceed.  
   
 ## See Also  
- [Logical/Bitwise Operators (Visual Basic)](../../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)   
- [Boolean Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)   
- [Arithmetic Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)   
- [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
- [Concatenation Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md)   
+ [Logical/Bitwise Operators (Visual Basic)](../../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
+ [Boolean Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)  
+ [Arithmetic Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)  
+ [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
+ [Concatenation Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md)  
  [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)

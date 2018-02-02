@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # .NET Native and Compilation
 Windows 8.1 applications and Windows Desktop applications that target the.NET Framework are written in a particular programming language and compiled into intermediate language (IL). At runtime, a just-in-time (JIT) compiler is responsible for compiling the IL into native code for the local machine just before a method is executed for the first time. In contrast, the .NET Native tool chain converts source code to native code at compile time. This topic compares .NET Native with other compilation technologies available for .NET Framework apps, and also provides a practical overview of how .NET Native produces native code that can help you understand why exceptions that occur in code compiled with .NET Native do not occur in JIT-compiled code.  
@@ -45,7 +47,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
   
  In the course of converting an app from IL to native code, the .NET Native tool chain performs operations like the following:  
   
--   For certain code paths, it replaces code that relies on reflection and metadata with static native code. For example, if a value type does not override the <xref:System.ValueType.Equals%2A?displayProperty=fullName> method, the default test for equality uses reflection to retrieve <xref:System.Reflection.FieldInfo> objects that represent the value type's fields, then compares the field values of two instances. When compiling to native code, the .NET Native tool chain replaces the reflection code and metadata with a static comparison of the field values.  
+-   For certain code paths, it replaces code that relies on reflection and metadata with static native code. For example, if a value type does not override the <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> method, the default test for equality uses reflection to retrieve <xref:System.Reflection.FieldInfo> objects that represent the value type's fields, then compares the field values of two instances. When compiling to native code, the .NET Native tool chain replaces the reflection code and metadata with a static comparison of the field values.  
   
 -   Where possible, it attempts to eliminate all metadata.  
   
@@ -105,7 +107,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
 -   NGEN images tend to be fragile. For example, a patch or change to a dependency typically requires that the assemblies that use it also be re-NGENed. This is particularly true of system assemblies in the .NET Framework Class Library. In contrast, .NET Native allows applications to be served independently of one another.  
   
 ## See Also  
- [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)   
- [Inside .NET Native (Channel 9 Video)](http://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)   
- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)   
+ [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)  
+ [Inside .NET Native (Channel 9 Video)](http://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)  
+ [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)  
  [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)

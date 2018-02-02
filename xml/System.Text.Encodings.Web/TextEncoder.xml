@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- TextEncoder subclasses can be used to do HTML encoding, URI encoding, and JavaScript encoding. Instances of such subclasses can be accessed using the <xref:System.Text.Encodings.Web.HtmlEncoder.Default?displayProperty=fullName>, <xref:System.Text.Encodings.Web.UrlEncoder.Default?displayProperty=fullName>, and <xref:System.Text.Encodings.Web.JavaScriptEncoder.Default?displayProperty=fullName> properties.   
+ TextEncoder subclasses can be used to do HTML encoding, URI encoding, and JavaScript encoding. Instances of such subclasses can be accessed using the <xref:System.Text.Encodings.Web.HtmlEncoder.Default?displayProperty=nameWithType>, <xref:System.Text.Encodings.Web.UrlEncoder.Default?displayProperty=nameWithType>, and <xref:System.Text.Encodings.Web.JavaScriptEncoder.Default?displayProperty=nameWithType> properties.   
 
  The source code for this type is available in the [System.Text.Encodings.Web project](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web) on GitHub. Unit tests that can also serve as code examples are found in the [System.Text.Encodings.Web/tests](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web/tests) folder on GitHub.  
  ]]></format>
@@ -243,7 +243,7 @@
     </Member>
     <Member MemberName="TryEncodeUnicodeScalar">
       <MemberSignature Language="C#" Value="public abstract bool TryEncodeUnicodeScalar (int unicodeScalar, char* buffer, int bufferLength, out int numberOfCharactersWritten);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryEncodeUnicodeScalar(int32 unicodeScalar, char* buffer, int32 bufferLength, int32 numberOfCharactersWritten) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryEncodeUnicodeScalar(int32 unicodeScalar, char* buffer, int32 bufferLength, [out] int32&amp; numberOfCharactersWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -281,7 +281,7 @@
           <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode%20> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
+ This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode%2A> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
  ]]></format>
         </remarks>
       </Docs>

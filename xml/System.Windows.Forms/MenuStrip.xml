@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripMenuItem" />
+    <altmember cref="T:System.Windows.Forms.ContextMenu" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overflow feature moves menu items to a drop-down menu when there is not enough room to display them in a <xref:System.Windows.Forms.MenuStrip>. When you set the <xref:System.Windows.Forms.MenuStrip.CanOverflow%2A> property to `true`, you must also enable overflow for specific menu items by setting the <xref:System.Windows.Forms.ToolStripMenuItem.Overflow%2A?displayProperty=fullName> property. By default, menu items are not displayed if they cannot fit within the available space.  
+ The overflow feature moves menu items to a drop-down menu when there is not enough room to display them in a <xref:System.Windows.Forms.MenuStrip>. When you set the <xref:System.Windows.Forms.MenuStrip.CanOverflow%2A> property to `true`, you must also enable overflow for specific menu items by setting the <xref:System.Windows.Forms.ToolStripMenuItem.Overflow%2A?displayProperty=nameWithType> property. By default, menu items are not displayed if they cannot fit within the available space.  
   
  ]]></format>
         </remarks>
@@ -134,12 +136,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you do not explicitly call the <xref:System.Windows.Forms.MenuStrip.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=fullName> property is referenced.  
+ If you do not explicitly call the <xref:System.Windows.Forms.MenuStrip.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType> property is referenced.  
   
 > [!NOTE]
->  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=fullName> property, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
+>  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType> property, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
   
- For a code example of using <xref:System.Windows.Forms.MenuStrip.CreateAccessibilityInstance%2A>, see <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A?displayProperty=fullName>.  
+ For a code example of using <xref:System.Windows.Forms.MenuStrip.CreateAccessibilityInstance%2A>, see <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -242,7 +244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MenuStrip.DefaultShowItemToolTips%2A?displayProperty=fullName> property always returns `false` because typically, ToolTips are not used for menus or menu items.  
+ The <xref:System.Windows.Forms.MenuStrip.DefaultShowItemToolTips%2A?displayProperty=nameWithType> property always returns `false` because typically, ToolTips are not used for menus or menu items.  
   
  ]]></format>
         </remarks>
@@ -360,7 +362,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MenuStrip.MenuActivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MenuStrip.MenuActivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MenuStrip> named `MenuStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MenuStrip.MenuActivate> event.  
   
@@ -396,7 +398,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MenuStrip> named `MenuStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> event.  
   
@@ -475,7 +477,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -524,7 +526,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MenuStrip.ShowItemToolTips%2A?displayProperty=fullName> property returns `false` by default because typically, ToolTips are not used for menus or menu items.  
+ The <xref:System.Windows.Forms.MenuStrip.ShowItemToolTips%2A?displayProperty=nameWithType> property returns `false` by default because typically, ToolTips are not used for menus or menu items.  
   
  ]]></format>
         </remarks>
@@ -556,7 +558,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -583,7 +585,7 @@
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. Refer to the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values. Actual constant values can be found in the windows.h header file included in the Platform SDK (Core SDK section) download, which is also available on MSDN.  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. Refer to the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values. Actual constant values can be found in the windows.h header file included in the Platform SDK (Core SDK section) download, which is also available on MSDN.  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]

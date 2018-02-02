@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugExceptionCallbackType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugExceptionCallbackType enumeration [.NET Framework debugging]"
 ms.assetid: 4d946ad4-3c19-42cb-bec9-8633325ba769
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugExceptionCallbackType Enumeration
 Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-exception-method.md) event.  

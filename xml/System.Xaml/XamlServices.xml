@@ -19,7 +19,7 @@
  The modes of the <xref:System.Xaml.XamlServices> class that are used in the most common XAML reading and writing scenarios rely on creating instances of XAML readers and XAML writers. These readers and writers are specialized but internal implementations of public classes, such as <xref:System.Xml.XmlReader>, <xref:System.Xaml.XamlXmlReader>, and <xref:System.Xaml.XamlObjectWriter>. To use <xref:System.Xaml.XamlServices> for most scenarios, you can rely on the default internal implementations to obtain the results that you want. For more specialized scenarios, you might define readers and writers yourself, and then pass them as arguments for overloads of the <xref:System.Xaml.XamlServices> methods.  
   
 > [!IMPORTANT]
->  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing WPF-defined types, or types based on WPF. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML (or BAML); and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use .NET Framework XAML Services APIs and the XAML readers and XAML writers internally in their implementation; however, they also provide support and specialized XAML schema context for WPF-specific concepts, such as optimizations for dependency properties and WPF known types.  
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing WPF-defined types, or types based on WPF. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> for reading or loading XAML (or BAML); and <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType> for writing back XAML. These classes use .NET Framework XAML Services APIs and the XAML readers and XAML writers internally in their implementation; however, they also provide support and specialized XAML schema context for WPF-specific concepts, such as optimizations for dependency properties and WPF known types.  
   
  ]]></format>
     </remarks>
@@ -59,7 +59,7 @@
 -   The XAML types that are specified in the source XAML must resolve to backing types in the relevant XAML namespaces. For example, XAML types for WPF namespaces can resolve to a WPF XAML namespace as specified in the XAML; the assemblies for WPF must be included in the project or available in the run time; and so on.  
   
 > [!IMPORTANT]
->  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML; and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> for reading or loading XAML; and <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
   
  ]]></format>
         </remarks>
@@ -235,7 +235,7 @@
 -   The XAML types that are specified in the `xaml` input must resolve to backing types in the relevant XAML namespaces. For example, XAML types for a WPF namespace can resolve to a WPF XAML namespace as specified in the XAML; the assemblies for WPF must be included in the project or be available in the run time; and so on.  
   
 > [!IMPORTANT]
->  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML, and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> for reading or loading XAML, and <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
   
  ]]></format>
         </remarks>
@@ -266,7 +266,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The output from this method is the `ToString` result of an <xref:System.Xml.XmlWriter> that is created by the method call. That <xref:System.Xml.XmlWriter> is created by using the following settings: <xref:System.Xml.XmlWriterSettings.Indent%2A?displayProperty=fullName> is `true`; and <xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A?displayProperty=fullName> is `true`.  
+ The output from this method is the `ToString` result of an <xref:System.Xml.XmlWriter> that is created by the method call. That <xref:System.Xml.XmlWriter> is created by using the following settings: <xref:System.Xml.XmlWriterSettings.Indent%2A?displayProperty=nameWithType> is `true`; and <xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A?displayProperty=nameWithType> is `true`.  
   
  The returned string can be loaded as valid XML through the <xref:System.Xml.XmlReader.Create%2A> method if you processed the string into a stream, or into a reader more specifically dedicated for XAML.  
   
@@ -300,7 +300,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML; and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> for reading or loading XAML; and <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
   
  ]]></format>
         </remarks>
@@ -357,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `fileName` parameter value is used as the `outputFileName` input for a call to <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName>, which creates a <xref:System.Xml.XmlWriter> as part of the method call.  
+ The `fileName` parameter value is used as the `outputFileName` input for a call to <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType>, which creates a <xref:System.Xml.XmlWriter> as part of the method call.  
   
  ]]></format>
         </remarks>
@@ -490,5 +490,32 @@
         <exception cref="T:System.Xaml.XamlException">The XAML schema context does not match between the provided <paramref name="xamlReader" /> and <paramref name="xamlWriter" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects a <see cref="T:System.Xaml.XamlReader" /> and a <see cref="T:System.Xaml.XamlWriter" /> in order to use a common XAML node set intermediary. Potentially transforms the content, depending on the types of readers and writers that are provided.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Processes a provided object graph into a XAML node representation and then into an output format for serialization.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads source for a XAML reader and writes its output as an object graph.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

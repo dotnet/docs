@@ -19,6 +19,11 @@
     <summary>Defines services for colorizing text when JScript code is being authored in an editor.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JSAuthor" />
+    <altmember cref="T:Microsoft.JScript.ITokenEnumerator" />
+    <altmember cref="T:Microsoft.JScript.ITokenColorInfo" />
+    <altmember cref="T:Microsoft.JScript.TokenColor" />
+    <altmember cref="T:Microsoft.JScript.JSToken" />
   </Docs>
   <Members>
     <Member MemberName="Colorize">
@@ -44,6 +49,10 @@
         <returns>An enumeration of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects that represent units of code to colorize.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSAuthor" />
+        <altmember cref="T:Microsoft.JScript.ITokenEnumerator" />
+        <altmember cref="T:Microsoft.JScript.TokenColor" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
       </Docs>
     </Member>
     <Member MemberName="GetStateForText">
@@ -69,6 +78,11 @@
         <returns>The state of the source code.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSAuthor" />
+        <altmember cref="T:Microsoft.JScript.ITokenEnumerator" />
+        <altmember cref="T:Microsoft.JScript.ITokenColorInfo" />
+        <altmember cref="T:Microsoft.JScript.TokenColor" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
       </Docs>
     </Member>
   </Members>

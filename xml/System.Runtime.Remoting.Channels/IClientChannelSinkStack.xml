@@ -25,12 +25,13 @@
 ## Remarks  
  The <xref:System.Runtime.Remoting.Channels.IClientChannelSinkStack> is used during processing of responses to asynchronous calls.  
   
- During a synchronous call, the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A?displayProperty=fullName> method is called when a message is outbound to the server. Each sink in the sink chain calls the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> method on the next sink until the call reaches the transport sink at the end of the chain. From there the message is transported to the server.  
+ During a synchronous call, the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A?displayProperty=nameWithType> method is called when a message is outbound to the server. Each sink in the sink chain calls the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> method on the next sink until the call reaches the transport sink at the end of the chain. From there the message is transported to the server.  
   
  When the formatter sink is called through the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method, it dispatches the call asynchronously by calling <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> on the next channel sink. A stack of reply sinks is needed to process the response. Any sink that wants to process the response needs to push itself to the client channel sink stack inside of <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Remoting.Channels.IClientChannelSink" />
   </Docs>
   <Members>
     <Member MemberName="Pop">

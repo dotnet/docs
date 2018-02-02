@@ -27,11 +27,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class to specify the style settings for the submenus in a <xref:System.Web.UI.WebControls.Menu> control based on the submenu's level. In this example, the <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property returns a <xref:System.Web.UI.WebControls.SubMenuStyleCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]
+ [!code-aspx-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemStyleCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,6 +67,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnValidate(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsertComplete(System.Int32,System.Object)" />
+        <altmember cref="T:System.Web.UI.StateManagedCollection" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -91,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnValidate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -169,6 +180,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.StyleCollection.CreateKnownType(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetKnownTypes">
@@ -191,13 +204,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method is a helper function that is used to create an array of data types supported by the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class. The array is often searched to determine the index of a desired data type. The index is then passed to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method to create an <xref:System.Object?displayProperty=fullName> of the corresponding data type.  
+ The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method is a helper function that is used to create an array of data types supported by the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class. The array is often searched to determine the index of a desired data type. The index is then passed to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method to create an <xref:System.Object?displayProperty=nameWithType> of the corresponding data type.  
   
 > [!NOTE]
 >  This method is used only by control developers.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" />
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -317,6 +332,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not of type <see cref="T:System.Web.UI.WebControls.SubMenuStyle" />.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsertComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -348,6 +364,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection is read-only.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemove(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemoveComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -383,6 +402,9 @@
  \- or -  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Web.UI.StateManagedCollection.Count" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.Remove(System.Web.UI.WebControls.SubMenuStyle)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemove(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemoveComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">

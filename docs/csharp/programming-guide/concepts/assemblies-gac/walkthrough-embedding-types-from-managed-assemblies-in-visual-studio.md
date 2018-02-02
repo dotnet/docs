@@ -1,26 +1,17 @@
 ---
 title: "Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)
 If you embed type information from a strong-named managed assembly, you can loosely couple types in an application to achieve version independence. That is, your program can be written to use types from multiple versions of a managed library without having to be recompiled for each version.  
@@ -45,7 +36,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 -   Constants are not embedded.  
   
--   The <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> class does not support an embedded type as a key. You can implement your own dictionary type to support an embedded type as a key.  
+-   The <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> class does not support an embedded type as a key. You can implement your own dictionary type to support an embedded type as a key.  
   
  In this walkthrough, you will do the following:  
   
@@ -71,7 +62,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  In **Solution Explorer**, right-click the Class1.cs file and click **Rename**. Rename the file to `ISampleInterface.cs` and press ENTER. Renaming the file will also rename the class to `ISampleInterface`. This class will represent the public interface for the class.  
   
-4.  Right-click the TypeEquivalenceInterface project and click **Properties**. Click the the **Build** tab. Set the output path to a valid location on your development computer, such as `C:\TypeEquivalenceSample`. This location will also be used in a later step in this walkthrough.  
+4.  Right-click the TypeEquivalenceInterface project and click **Properties**. Click the **Build** tab. Set the output path to a valid location on your development computer, such as `C:\TypeEquivalenceSample`. This location will also be used in a later step in this walkthrough.  
   
 5.  While still editing the project properties, click the **Signing** tab. Select the **Sign the assembly** option. In the **Choose a strong name key file** list, click **<New...>**. In the **Key file name** box, type `key.snk`. Clear the **Protect my key file with a password** check box. Click **OK**.  
   
@@ -246,7 +237,7 @@ If you embed type information from a strong-named managed assembly, you can loos
 6.  In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample). Double-click the TypeEquivalenceClient.exe to run the program. The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.  
   
 ## See Also  
- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)   
+ [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)  
  [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

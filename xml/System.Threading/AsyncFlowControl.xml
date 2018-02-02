@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An execution context contains all execution-related information for a logical thread. The flow of the execution context to other threads can be prevented by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=fullName> method, which returns an <xref:System.Threading.AsyncFlowControl> structure. The <xref:System.Threading.AsyncFlowControl.Undo%2A> method of the returned <xref:System.Threading.AsyncFlowControl> structure can be used to undo the flow suppression. The <xref:System.Threading.AsyncFlowControl> structure must be used on the same thread on which it was created.  
+ An execution context contains all execution-related information for a logical thread. The flow of the execution context to other threads can be prevented by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType> method, which returns an <xref:System.Threading.AsyncFlowControl> structure. The <xref:System.Threading.AsyncFlowControl.Undo%2A> method of the returned <xref:System.Threading.AsyncFlowControl> structure can be used to undo the flow suppression. The <xref:System.Threading.AsyncFlowControl> structure must be used on the same thread on which it was created.  
   
  ]]></format>
     </remarks>
@@ -203,7 +203,7 @@
         <returns>
           <see langword="true" /> if the two structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -239,7 +239,7 @@
         <returns>
           <see langword="true" /> if the structures are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=fullName> method returns an <xref:System.Threading.AsyncFlowControl> structure that is used to restore the flow.  
+ The <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType> method returns an <xref:System.Threading.AsyncFlowControl> structure that is used to restore the flow.  
   
  The <xref:System.Threading.AsyncFlowControl.Undo%2A> method must be called only on the <xref:System.Threading.AsyncFlowControl> structure returned by its associated <xref:System.Threading.ExecutionContext.SuppressFlow%2A> method.  
   
@@ -289,5 +289,15 @@
  The <see cref="T:System.Threading.AsyncFlowControl" /> structure has already been used to call <see cref="M:System.Threading.AsyncFlowControl.Dispose" /> or <see cref="M:System.Threading.AsyncFlowControl.Undo" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two instances are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

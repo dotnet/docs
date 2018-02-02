@@ -709,7 +709,7 @@
       <Docs>
         <param name="fileName">The file to locate in the System folder.</param>
         <summary>Gets a fully qualified path to a file in the system directory.</summary>
-        <returns>A string containing the fully qualified path to the the file in the system directory.</returns>
+        <returns>A string containing the fully qualified path to the file in the system directory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1346,5 +1346,149 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPathToDotNetFramework">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a fully qualified path to the .NET Framework root directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPathToDotNetFrameworkSdkFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the fully qualified path to a file in the .NET Framework SDK.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPathToWindowsSdkFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the path to a file in the Windows SDK for the desired .NET Framework and Visual Studio version. Note that this is only supported for a targeted .NET Framework version of 4.5 and above.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDotNetFrameworkSdkInstallKeyValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the name of the value under the <see cref="M:Microsoft.Build.Utilities.ToolLocationHelper.GetDotNetFrameworkRootRegistryKey(Microsoft.Build.Utilities.TargetDotNetFrameworkVersion)" /> that contains the .NET Framework SDK installation path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPathToDotNetFrameworkFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a fully qualified path to a file in the .NET Framework directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPlatformExtensionSDKLocation">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>For specified parameters, get the path to the SDK root if it exists.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSDKRedistFolders">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Get the list of SDK folders which contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSDKReferenceFolders">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Get the list of SDK folders which contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTargetPlatformSdks">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Get a list of target platform SDKs on the machine.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSDKDesignTimeFolders">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Get the list of SDK folders which contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPathToReferenceAssemblies">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the paths to the reference assemblies location for the given target framework.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPlatformExtensionSDKLocations">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Get a list of SDK's installed on the machine for a given target platform.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPathToDotNetFrameworkSdk">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the fully qualified path to the \bin directory of the .NET Framework SDK.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPlatformSDKLocation">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Given a target platform identifier and a target platform version, search the default SDK locations for the platform SDK for that target platform.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDotNetFrameworkSdkRootRegistryKey">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the full name of the .NET Framework SDK root registry key.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPathToStandardLibraries">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the path to the reference assemblies location for the given target framework's standard libraries (i.e. mscorlib). This method will assume the requested ReferenceAssemblyRoot path will be the ProgramFiles directory specified by Environment.SpecialFolder.ProgramFiles In addition when the .NETFramework or .NET Framework targetFrameworkIdentifiers are seen and targetFrameworkVersion is 2.0, 3.0, 3.5 or 4.0 we will return the correctly chained reference assembly paths for the legacy .NET Framework versions. This chaining will use the existing GetPathToDotNetFrameworkReferenceAssemblies to build up the list of reference assembly paths.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

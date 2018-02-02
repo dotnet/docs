@@ -56,10 +56,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>.  
+ Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DocumentReferenceCollection.CollectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -77,6 +78,8 @@
       <Docs>
         <summary>Occurs when an element is added or removed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.CollectionChangeEventHandler" />
+        <altmember cref="M:System.Windows.Documents.DocumentReferenceCollection.Add(System.Windows.Documents.DocumentReference)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -103,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.CopyTo%2A?displayProperty=fullName>.  
+ Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.CopyTo%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -173,6 +176,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.DocumentReferenceCollection.Add(System.Windows.Documents.DocumentReference)" />
+        <altmember cref="M:System.Windows.Documents.DocumentReferenceCollection.CopyTo(System.Windows.Documents.DocumentReference[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

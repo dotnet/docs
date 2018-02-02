@@ -98,6 +98,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -117,6 +118,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -157,5 +159,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

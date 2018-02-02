@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can create a registry key that is available only in memory and that will not be persisted when the computer is restarted. This is known as a volatile key. You can specify that you want to create a volatile or non-volatile key by using the <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A?displayProperty=fullName> method overloads that take an `options` parameter.  
+ You can create a registry key that is available only in memory and that will not be persisted when the computer is restarted. This is known as a volatile key. You can specify that you want to create a volatile or non-volatile key by using the <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A?displayProperty=nameWithType> method overloads that take an `options` parameter.  
   
  ]]></format>
     </remarks>

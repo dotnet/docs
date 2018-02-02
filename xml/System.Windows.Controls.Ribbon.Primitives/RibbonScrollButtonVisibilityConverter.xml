@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" />
+    <altmember cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Data.Binding.DoNothing?displayProperty=fullName> is returned to indicate that the binding should use the fallback or default value.  
+ <xref:System.Windows.Data.Binding.DoNothing?displayProperty=nameWithType> is returned to indicate that the binding should use the fallback or default value.  
   
  ]]></format>
         </remarks>

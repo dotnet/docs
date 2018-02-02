@@ -14,6 +14,7 @@
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ArrayObject" />
   </Docs>
   <Members>
     <Member MemberName="ConstructArray">
@@ -40,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.ArrayObject CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ArrayObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ArrayObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -74,7 +75,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.ArrayObject Invoke (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ArrayObject Invoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ArrayObject Invoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayConstructor.Invoke(System.Object[])" />
       <MemberType>Method</MemberType>

@@ -151,6 +151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -201,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="BaselineOffsetProperty">
@@ -262,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
@@ -355,6 +358,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
@@ -404,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="FontStretchProperty">
@@ -461,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="FontStyleProperty">
@@ -517,6 +523,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="FontWeightProperty">
@@ -573,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="ForegroundProperty">
@@ -680,10 +688,12 @@
  `pt` is points; 1pt==(96/72) px  
   
  *Auto*  
- An automatic line height determination. If you programmatically set the *Auto* value, its value corresponds to <xref:System.Double.NaN?displayProperty=fullName>.  
+ An automatic line height determination. If you programmatically set the *Auto* value, its value corresponds to <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
+        <altmember cref="P:System.Windows.Controls.AccessText.LineStackingStrategy" />
       </Docs>
     </Member>
     <Member MemberName="LineHeightProperty">
@@ -916,6 +926,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignment">
@@ -1019,6 +1030,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="TextDecorationsProperty">
@@ -1090,6 +1102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="TextEffectsProperty">
@@ -1157,6 +1170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="TextTrimmingProperty">
@@ -1213,6 +1227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
     <Member MemberName="TextWrappingProperty">
@@ -1248,6 +1263,7 @@
         <summary>Gets the number of child elements that are visual.</summary>
         <value>Returns an integer that represents the number of child elements that are visible.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.TextBlock" />
       </Docs>
     </Member>
   </Members>

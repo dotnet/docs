@@ -30,42 +30,29 @@ namespace ContentControlNew
     }
 
     //<Snippet2>
-    public class NumderDataTemplateSelector : DataTemplateSelector
+    public class NumberDataTemplateSelector : DataTemplateSelector
     {
+        public DataTemplate NumberTemplate { get; set; }
+        public DataTemplate LargeNumberTemplate { get; set; }
+
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
-            string numberStr = item as string;
+            // Null value can be passed by IDE designer
+            if (item == null) return null;
 
-            if (numberStr != null)
+            var num = Convert.ToInt32((string)item);
+            
+            // Select one of the DataTemplate objects, based on the 
+            // value of the selected item in the ComboBox.
+            if (num < 5)
             {
-                int num;
-                Window win = Application.Current.MainWindow;
-
-                try
-                {
-                    num = Convert.ToInt32(numberStr);
-                }
-                catch
-                {
-                    return null;
-                }
-
-                // Select one of the DataTemplate objects, based on the 
-                // value of the selected item in the ComboBox.
-                if (num < 5)
-                {
-                    return win.FindResource("numberTemplate") as DataTemplate;
-                }
-                else
-                {
-                    return win.FindResource("largeNumberTemplate") as DataTemplate;
-
-                }
+                return NumberTemplate;
             }
-
-            return null;
+            else
+            {
+                return LargeNumberTemplate;
+            }
         }
-
     }
     //</Snippet2>
 }

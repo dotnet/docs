@@ -77,5 +77,14 @@
           <paramref name="providerName" /> does not match any of the existing providers.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Flushes all currently buffered events for providers that are in the <see langword="healthMonitoring" /> section.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

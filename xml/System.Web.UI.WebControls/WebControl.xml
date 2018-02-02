@@ -51,6 +51,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BackColor" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.ForeColor" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderWidth" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderColor" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Height" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Width" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.TabIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.ToolTip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +129,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagName" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -138,7 +153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebControl> class using the specified <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> value.  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebControl> class using the specified <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType> value.  
   
  The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.WebControl>.  
   
@@ -157,11 +172,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.WebControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.WebControl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.WebControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.WebControl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.WebControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.WebControl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.WebControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.WebControl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="AccessKey">
@@ -203,8 +220,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.AccessKey Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.AccessKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.AccessKey Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.AccessKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -233,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To render attributes and styles for a Web Server control on the client, you typically call the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods to insert each attribute and style individually to the <xref:System.Web.UI.HtmlTextWriter> output stream. To simplify the process, this method encapsulates all calls to the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods for every attribute and style associated with the Web server control. All attributes and styles are inserted into the <xref:System.Web.UI.HtmlTextWriter> output stream in a single method call. This method is typically overridden by control developers in derived classes to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for the class.  
+ To render attributes and styles for a Web Server control on the client, you typically call the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=nameWithType> methods to insert each attribute and style individually to the <xref:System.Web.UI.HtmlTextWriter> output stream. To simplify the process, this method encapsulates all calls to the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=nameWithType> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=nameWithType> methods for every attribute and style associated with the Web server control. All attributes and styles are inserted into the <xref:System.Web.UI.HtmlTextWriter> output stream in a single method call. This method is typically overridden by control developers in derived classes to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for the class.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method cannot be used to insert client script. To use client script, see the <xref:System.Web.UI.ClientScriptManager> class.  
@@ -248,6 +265,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddAttribute" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddStyleAttribute" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="ApplyStyle">
@@ -277,11 +297,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebControlApplyStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlApplyStyle/CS/webcontrolapplystylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebControlApplyStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlApplyStyle/VB/webcontrolapplystylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebControlApplyStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlApplyStyle/CS/webcontrolapplystylecs.aspx#1)]
+ [!code-aspx-vb[WebControlApplyStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlApplyStyle/VB/webcontrolapplystylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.MergeStyle(System.Web.UI.WebControls.Style)" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -330,11 +352,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Attributes Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Attributes Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Attributes Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Attributes Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
+        <altmember cref="T:System.Web.UI.ClientScriptManager" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -364,7 +388,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property to specify the background color of the Web server control. This property is set using a <xref:System.Drawing.Color?displayProperty=fullName> object.  
+ Use the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property to specify the background color of the Web server control. This property is set using a <xref:System.Drawing.Color?displayProperty=nameWithType> object.  
   
 > [!NOTE]
 >  This property will render for only certain controls. For example, <xref:System.Web.UI.WebControls.Table>, <xref:System.Web.UI.WebControls.Panel>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Calendar>, and <xref:System.Web.UI.WebControls.ValidationSummary> will render this property. It will also work for <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList> and <xref:System.Web.UI.WebControls.DataList> if their `RepeatLayout` property is `RepeatLayout.Table`, not `RepeatLayout.Flow`.  
@@ -378,11 +402,22 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BackColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BackColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BackColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BackColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BackColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BackColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BackColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BackColor Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.Panel" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.Web.UI.WebControls.ValidationSummary" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -424,19 +459,30 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BorderColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BorderColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/VB/sourcevb.aspx#1)]  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  
+[!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]
+[!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.Panel" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.Web.UI.WebControls.ValidationSummary" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -486,19 +532,21 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BorderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BorderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/VB/sourcevb.aspx#1)]  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  
+[!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]
+[!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -540,20 +588,22 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderWidth Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderWidth Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BorderWidth Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BorderWidth Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/VB/sourcevb.aspx#1)]  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  
+[!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]
+[!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified border width is a negative value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Unit" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="ControlStyle">
@@ -587,6 +637,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ControlStyleCreated" />
       </Docs>
     </Member>
     <Member MemberName="ControlStyleCreated">
@@ -617,6 +669,7 @@
         <value>
           <see langword="true" /> if a <see cref="T:System.Web.UI.WebControls.Style" /> object has been created for the <see cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" /> property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" />
       </Docs>
     </Member>
     <Member MemberName="CopyBaseAttributes">
@@ -647,6 +700,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="controlSrc" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Style" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -675,6 +729,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" />
       </Docs>
     </Member>
     <Member MemberName="CssClass">
@@ -734,8 +790,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.CssClass Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.CssClass Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.CssClass Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.CssClass Example/VB/sourcevb.aspx#1)]  -->
+ [!code-aspx-csharp[Classic WebControl.CssClass Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.CssClass Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.CssClass Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.CssClass Example/VB/sourcevb.aspx#1)]
  [!code-xml[Classic WebControl.CssClass Example#1](~/samples/snippets/common/VS_Snippets_WebNet/Classic WebControl.CssClass Example/Common/source.xml#1)]  
   
  ]]></format>
@@ -798,6 +854,10 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -856,11 +916,16 @@ void Application_Start(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Enabled Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Enabled Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Enabled Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Enabled Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.EnsureChildControls" />
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -898,6 +963,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableTheming" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SkinID" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -944,11 +1011,13 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Font Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Font Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Font Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Font Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Font Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Font Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Font Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Font Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -988,11 +1057,13 @@ void Application_Start(object sender, EventArgs e)
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="HasAttributes">
@@ -1027,6 +1098,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1072,12 +1144,23 @@ void Application_Start(object sender, EventArgs e)
 ## Examples  
  The following example illustrates how to declaratively set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Height Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Height Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Height Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Height Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The height was set to a negative value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.Unit" />
+        <altmember cref="T:System.Web.UI.WebControls.Label" />
+        <altmember cref="T:System.Web.UI.WebControls.HyperLink" />
+        <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -1116,6 +1199,10 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1146,6 +1233,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="MergeStyle">
@@ -1175,8 +1264,8 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebControlMergeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlMergeStyle/CS/webcontrolmergestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebControlMergeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlMergeStyle/VB/webcontrolmergestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebControlMergeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlMergeStyle/CS/webcontrolmergestylecs.aspx#1)]
+ [!code-aspx-vb[WebControlMergeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlMergeStyle/VB/webcontrolmergestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1240,6 +1329,9 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -1270,6 +1362,9 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -1298,6 +1393,9 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1328,6 +1426,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -1363,6 +1463,7 @@ void Application_Start(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The skin specified in the <see cref="P:System.Web.UI.WebControls.WebControl.SkinID" /> property does not exist in the theme.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.EnableTheming" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1409,11 +1510,12 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Style Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Style Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Style Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Style Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CssStyleCollection" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1464,9 +1566,9 @@ void Application_Start(object sender, EventArgs e)
  When you use Visual Studio to upgrade a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the `controlRenderingCompatibilityVersion` attribute in the Web.config file (which sets the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property) to the earlier version number. Because the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property always returns `true` when the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property is lower than 4.0, this causes Web controls to render HTML for disabled controls as they did in the earlier version. If you want an upgraded Web site to render HTML using the algorithm introduced in ASP.NET 4, you can change or remove the `controlRenderingCompatibilityVersion` attribute. For more information, see the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property.  
   
 ## Setting a Disabled Appearance By Using CSS  
- If the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property of a control is `false` and the control is disabled, ASP.NET sets the `class` attribute of the rendered HTML element to the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property. The default value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property is "aspNetDisabled".  
+ If the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property of a control is `false` and the control is disabled, ASP.NET sets the `class` attribute of the rendered HTML element to the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=nameWithType> property. The default value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=nameWithType> property is "aspNetDisabled".  
   
- To provide a disabled appearance for disabled controls, you must define a CSS rule for the class that is represented by the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property.  
+ To provide a disabled appearance for disabled controls, you must define a CSS rule for the class that is represented by the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=nameWithType> property.  
   
  The HTML element that is rendered for a control might have more than one value in its `class` attribute if there is a value in its <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property. For more information, see the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property.  
   
@@ -1487,6 +1589,11 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.Configuration.PagesSection.ControlRenderingCompatibilityVersion" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -1516,6 +1623,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -1546,6 +1654,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -1593,8 +1702,8 @@ void Application_Start(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.TabIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.TabIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.TabIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.TabIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1632,6 +1741,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="TagName">
@@ -1709,8 +1819,8 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.ToolTip Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.ToolTip Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.ToolTip Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.ToolTip Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1741,6 +1851,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1786,13 +1898,23 @@ void Application_Start(object sender, EventArgs e)
 ## Examples  
  The following example illustrates how to declaratively set the <xref:System.Web.UI.WebControls.WebControl.Width%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Width Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Width Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Width Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Width Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Width Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Width Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Width Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Width Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The width of the Web server control was set to a negative value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

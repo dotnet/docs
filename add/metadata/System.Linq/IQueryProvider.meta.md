@@ -3,7 +3,7 @@ uid: System.Linq.IQueryProvider
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -20,14 +20,14 @@ uid: System.Linq.IQueryProvider.CreateQuery``1(System.Linq.Expressions.Expressio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.IQueryProvider.Execute
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,14 +35,14 @@ uid: System.Linq.IQueryProvider.Execute``1(System.Linq.Expressions.Expression)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.IQueryProvider.CreateQuery
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

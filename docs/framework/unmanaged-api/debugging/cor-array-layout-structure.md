@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_ARRAY_LAYOUT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_DEBUG_IL_TO_NATIVE_MAP structure [.NET Framework debugging]"
 ms.assetid: aa20ac3d-6f60-4aa2-91c5-f3a86f82eba8
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_ARRAY_LAYOUT Structure
 Provides information about the layout of an array object in memory.  
@@ -75,5 +75,5 @@ typedef struct COR_ARRAY_LAYOUT {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -34,7 +34,7 @@
   
     2.  Calls the <xref:System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper%2A> method to create a new domain using the <xref:System.AppDomainSetup> object.  
   
-    3.  The <xref:System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper%2A> method calls the <xref:System.Security.HostSecurityManager.DetermineApplicationTrust%2A?displayProperty=fullName> method to acquire an <xref:System.Security.Policy.ApplicationTrust> object for the add-in. If the <xref:System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun%2A> property returns `true`, the add-in is executed. If not, <xref:System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper%2A> throws a <xref:System.Security.Policy.PolicyException> indicating that execution permission could not be acquired.  
+    3.  The <xref:System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper%2A> method calls the <xref:System.Security.HostSecurityManager.DetermineApplicationTrust%2A?displayProperty=nameWithType> method to acquire an <xref:System.Security.Policy.ApplicationTrust> object for the add-in. If the <xref:System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun%2A> property returns `true`, the add-in is executed. If not, <xref:System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper%2A> throws a <xref:System.Security.Policy.PolicyException> indicating that execution permission could not be acquired.  
   
     4.  If the add-in is trusted to run, then a new <xref:System.AppDomain> is created and configured for the <xref:System.ActivationContext> of the add-in, and the add-in is loaded and executed.  
   
@@ -176,5 +176,15 @@
         <exception cref="T:System.Security.Policy.PolicyException">The application instance failed to execute because the policy settings on the current application domain do not provide permission for this application to run.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the application to be activated, using an activation context that identifies the application.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

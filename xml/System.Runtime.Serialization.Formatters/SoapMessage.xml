@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Runtime.Serialization.Formatters.SoapMessage> is the root of a serialization graph, SOAP is produced in RPC (Remote Procedure Call) format and a <xref:System.Runtime.Serialization.Formatters.SoapMessage> object is used to specify the method call parameter types. The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A?displayProperty=fullName> property can be set to this object during deserialization.  
+ When <xref:System.Runtime.Serialization.Formatters.SoapMessage> is the root of a serialization graph, SOAP is produced in RPC (Remote Procedure Call) format and a <xref:System.Runtime.Serialization.Formatters.SoapMessage> object is used to specify the method call parameter types. The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A?displayProperty=nameWithType> property can be set to this object during deserialization.  
   
  ]]></format>
     </remarks>
@@ -65,6 +65,7 @@
         <summary>Gets or sets the out-of-band data of the called method.</summary>
         <value>The out-of-band data of the called method.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Messaging.Header" />
       </Docs>
     </Member>
     <Member MemberName="MethodName">

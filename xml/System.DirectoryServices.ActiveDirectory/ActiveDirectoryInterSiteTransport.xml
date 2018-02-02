@@ -115,6 +115,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transport" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -158,7 +160,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectoryInterSiteTransport.IgnoreReplicationSchedule%2A?displayProperty=fullName> is `true`, any site link availability schedules that have been configured are ignored, and all site links become always-available for replication. When set to `false`, any previously configured site link availability schedules go back into effect. If no site link availability schedules have been configured, setting this property has no effect.  
+ When the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectoryInterSiteTransport.IgnoreReplicationSchedule%2A?displayProperty=nameWithType> is `true`, any site link availability schedules that have been configured are ignored, and all site links become always-available for replication. When set to `false`, any previously configured site link availability schedules go back into effect. If no site link availability schedules have been configured, setting this property has no effect.  
   
  ]]></format>
         </remarks>
@@ -210,6 +212,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection" />
       </Docs>
     </Member>
     <Member MemberName="SiteLinks">
@@ -232,6 +236,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -253,6 +259,7 @@
         <returns>A <see cref="T:System.String" /> that represents the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> transport type of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryInterSiteTransport" /> object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
     <Member MemberName="TransportType">
@@ -273,7 +280,18 @@
         <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> values that represents the transport type for this object.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources that are used by the object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

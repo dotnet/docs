@@ -1290,7 +1290,7 @@
     </Member>
     <Member MemberName="GetNonAtomizedNames">
       <MemberSignature Language="C#" Value="public virtual void GetNonAtomizedNames (out string localName, out string namespaceUri);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNonAtomizedNames(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNonAtomizedNames([out] string&amp; localName, [out] string&amp; namespaceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.GetNonAtomizedNames(System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1546,7 +1546,7 @@
     </Member>
     <Member MemberName="IsStartArray">
       <MemberSignature Language="C#" Value="public virtual bool IsStartArray (out Type type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsStartArray(class System.Type type) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsStartArray([out] class System.Type&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.IsStartArray(System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3026,7 +3026,7 @@
     </Member>
     <Member MemberName="ReadContentAsQualifiedName">
       <MemberSignature Language="C#" Value="public virtual void ReadContentAsQualifiedName (out string localName, out string namespaceUri);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadContentAsQualifiedName(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadContentAsQualifiedName([out] string&amp; localName, [out] string&amp; namespaceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.ReadContentAsQualifiedName(System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3134,7 +3134,7 @@
     </Member>
     <Member MemberName="ReadContentAsString">
       <MemberSignature Language="C#" Value="public virtual string ReadContentAsString (string[] strings, out int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ReadContentAsString(string[] strings, int32 index) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ReadContentAsString(string[] strings, [out] int32&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.ReadContentAsString(System.String[],System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3169,7 +3169,7 @@
     </Member>
     <Member MemberName="ReadContentAsString">
       <MemberSignature Language="C#" Value="public virtual string ReadContentAsString (System.Xml.XmlDictionaryString[] strings, out int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ReadContentAsString(class System.Xml.XmlDictionaryString[] strings, int32 index) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ReadContentAsString(class System.Xml.XmlDictionaryString[] strings, [out] int32&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.ReadContentAsString(System.Xml.XmlDictionaryString[],System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4706,7 +4706,7 @@
     </Member>
     <Member MemberName="TryGetArrayLength">
       <MemberSignature Language="C#" Value="public virtual bool TryGetArrayLength (out int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetArrayLength(int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetArrayLength([out] int32&amp; count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.TryGetArrayLength(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4739,7 +4739,7 @@
     </Member>
     <Member MemberName="TryGetBase64ContentLength">
       <MemberSignature Language="C#" Value="public virtual bool TryGetBase64ContentLength (out int length);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetBase64ContentLength(int32 length) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetBase64ContentLength([out] int32&amp; length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.TryGetBase64ContentLength(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4772,7 +4772,7 @@
     </Member>
     <Member MemberName="TryGetLocalNameAsDictionaryString">
       <MemberSignature Language="C#" Value="public virtual bool TryGetLocalNameAsDictionaryString (out System.Xml.XmlDictionaryString localName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetLocalNameAsDictionaryString(class System.Xml.XmlDictionaryString localName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetLocalNameAsDictionaryString([out] class System.Xml.XmlDictionaryString&amp; localName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.TryGetLocalNameAsDictionaryString(System.Xml.XmlDictionaryString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4805,7 +4805,7 @@
     </Member>
     <Member MemberName="TryGetNamespaceUriAsDictionaryString">
       <MemberSignature Language="C#" Value="public virtual bool TryGetNamespaceUriAsDictionaryString (out System.Xml.XmlDictionaryString namespaceUri);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetNamespaceUriAsDictionaryString(class System.Xml.XmlDictionaryString namespaceUri) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetNamespaceUriAsDictionaryString([out] class System.Xml.XmlDictionaryString&amp; namespaceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.TryGetNamespaceUriAsDictionaryString(System.Xml.XmlDictionaryString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4838,7 +4838,7 @@
     </Member>
     <Member MemberName="TryGetValueAsDictionaryString">
       <MemberSignature Language="C#" Value="public virtual bool TryGetValueAsDictionaryString (out System.Xml.XmlDictionaryString value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValueAsDictionaryString(class System.Xml.XmlDictionaryString value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValueAsDictionaryString([out] class System.Xml.XmlDictionaryString&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReader.TryGetValueAsDictionaryString(System.Xml.XmlDictionaryString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4869,5 +4869,195 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadFullStartElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks whether the current node is an element and advances the reader to the next node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToStartElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests whether the current content node is a start element or an empty element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadInt32Array">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the contents of a series of nodes into an array of integers (<see cref="T:System.Int32" />).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadDecimalArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a node's content to a <see cref="T:System.Decimal" /> array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadDateTimeArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a node's content to a <see cref="T:System.DateTime" /> array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadContentAsString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a node's content to a string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadSingleArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the contents of a series of nodes into an array of <see langword="float" /> numbers (<see cref="T:System.Single" />).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the contents of the current node into a string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadTimeSpanArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the contents of a series of nodes into a <see cref="T:System.TimeSpan" /> array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadGuidArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the contents of a series of nodes into an array of <see cref="T:System.Guid" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadContentAsBinHex">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the content and returns the <see langword="BinHex" /> decoded binary bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadInt64Array">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the contents of a series of nodes into an array of <see langword="long" /> integers (<see cref="T:System.Int64" />).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadBooleanArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads repeated occurrences of <see cref="T:System.Boolean" /> nodes into a typed array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsNamespaceUri">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks whether the parameter, <paramref name="namespaceUri" />, is the namespace of the current node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsLocalName">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks whether the parameter, <paramref name="localName" />, is the local name of the current node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadInt16Array">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the contents of a series of nodes into an array of <see langword="short" /> integers (<see cref="T:System.Int16" />).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IndexOfLocalName">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the index of the local name of the current node within an array of names.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads repeated occurrences of a data type into a typed array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadDoubleArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a node's content to a <see cref="T:System.Double" /> array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

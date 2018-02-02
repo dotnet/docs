@@ -235,6 +235,7 @@ while (reader.Read())
         </remarks>
         <exception cref="T:System.ArgumentException">The value for <paramref name="prefix" /> is "xml" or "xmlns".</exception>
         <exception cref="T:System.ArgumentNullException">The value for <paramref name="prefix" /> or <paramref name="uri" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Xml.XmlNamespaceManager.RemoveNamespace(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DefaultNamespace">
@@ -281,6 +282,7 @@ while (reader.Read())
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlNamespaceManager.LookupNamespace(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -478,6 +480,7 @@ Loop
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlNamespaceManager.LookupPrefix(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LookupPrefix">
@@ -522,7 +525,7 @@ Loop
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Xml.XmlNamespaceManager.LookupPrefix%2A> method when writing an attribute. It uses the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=fullName> method to start the attribute, looks up the prefix for the `urn:samples` namespace URI, and then uses that prefix in the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=fullName> when writing the `ISBN` attribute:  
+ The following example shows how to use the <xref:System.Xml.XmlNamespaceManager.LookupPrefix%2A> method when writing an attribute. It uses the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=nameWithType> method to start the attribute, looks up the prefix for the `urn:samples` namespace URI, and then uses that prefix in the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=nameWithType> when writing the `ISBN` attribute:  
   
 ```vb  
 Dim prefix As String = nsMgr.LookupPrefix("urn:samples")  
@@ -561,6 +564,7 @@ writer.WriteEndElement()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlNamespaceManager.LookupNamespace(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="NameTable">
@@ -598,6 +602,7 @@ writer.WriteEndElement()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="PopScope">
@@ -646,6 +651,7 @@ writer.WriteEndElement()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlNamespaceManager.PushScope" />
       </Docs>
     </Member>
     <Member MemberName="PushScope">
@@ -692,6 +698,7 @@ writer.WriteEndElement()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlNamespaceManager.PopScope" />
       </Docs>
     </Member>
     <Member MemberName="RemoveNamespace">
@@ -728,6 +735,7 @@ writer.WriteEndElement()
         <summary>Removes the given namespace for the given prefix.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="prefix" /> or <paramref name="uri" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Xml.XmlNamespaceManager.AddNamespace(System.String,System.String)" />
       </Docs>
     </Member>
   </Members>

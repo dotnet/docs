@@ -25,15 +25,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Interoperates with the [IDispatch interface](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</summary>
+    <summary>Interoperates with the [IDispatch interface](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.IReflect> interface is used to interoperate with the [IDispatch interface](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5). <xref:System.Reflection.IReflect> defines a subset of the <xref:System.Type> reflection methods. Implementing this interface enables a type to customize its behavior when the object is being accessed from COM as an `IDispatch` object. The <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler> class can be used to marshal an object that implements <xref:System.Reflection.IReflect> or <xref:System.Runtime.InteropServices.Expando.IExpando> as a COM `IDispatch` object, and vice versa.  
+ The <xref:System.Reflection.IReflect> interface is used to interoperate with the [IDispatch interface](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5). <xref:System.Reflection.IReflect> defines a subset of the <xref:System.Type> reflection methods. Implementing this interface enables a type to customize its behavior when the object is being accessed from COM as an `IDispatch` object. The <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler> class can be used to marshal an object that implements <xref:System.Reflection.IReflect> or <xref:System.Runtime.InteropServices.Expando.IExpando> as a COM `IDispatch` object, and vice versa.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler" />
   </Docs>
   <Members>
     <Member MemberName="GetField">
@@ -68,6 +69,7 @@
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object containing the field information for the named object that meets the search constraints specified in <paramref name="bindingAttr" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple fields with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -102,10 +104,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The match is based upon a name. Each field must have a unique name. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that non-public methods are included in the search. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that public methods are included in the search.  
+ The match is based upon a name. Each field must have a unique name. The <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> flag specifies that non-public methods are included in the search. The <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> flag specifies that public methods are included in the search.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -142,10 +145,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.IReflect.GetMember%2A> method retrieves an array of <xref:System.Reflection.MemberInfo> objects by using the name and binding attribute that correspond to all public members or to all members that match a specified name. The case of the specified name is observed or ignored, as specified by <xref:System.Reflection.BindingFlags?displayProperty=fullName>.  
+ The <xref:System.Reflection.IReflect.GetMember%2A> method retrieves an array of <xref:System.Reflection.MemberInfo> objects by using the name and binding attribute that correspond to all public members or to all members that match a specified name. The case of the specified name is observed or ignored, as specified by <xref:System.Reflection.BindingFlags.IgnoreCase?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -184,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -218,6 +223,7 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object containing the method information, with the match being based on the method name and search constraints specified in <paramref name="bindingAttr" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple methods with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -265,6 +271,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple methods with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -303,6 +313,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -334,6 +345,7 @@
         <summary>Retrieves an array of <see cref="T:System.Reflection.PropertyInfo" /> objects corresponding to all public properties or to all properties of the current class.</summary>
         <returns>An array of <see cref="T:System.Reflection.PropertyInfo" /> objects for all the properties defined on the reflection object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -368,6 +380,7 @@
         <returns>A <see cref="T:System.Reflection.PropertyInfo" /> object for the located property that meets the search constraints specified in <paramref name="bindingAttr" />, or <see langword="null" /> if the property was not located.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple fields with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -416,6 +429,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -471,7 +488,7 @@
 > [!NOTE]
 >  The array of parameter modifiers passed to the <xref:System.Reflection.IReflect.InvokeMember%2A> method must contain a single parameter modifier. Only the first parameter modifier is considered when determining which argument needs to be passed by reference when exposed to COM.  
   
- The binder finds all matching methods, in accordance with the type of binding requested (<xref:System.Reflection.BindingFlags?displayProperty=fullName>, <xref:System.Reflection.IReflect.GetProperties%2A>, and so on). The set of methods is filtered by the name, number of arguments, and a set of search modifiers defined in the binder. After the method is selected, it is invoked, and accessibility is checked at that point. The search may control which set of methods is searched based upon the accessibility attribute associated with the method. <xref:System.Reflection.Binder.BindToMethod%2A> selects the method to be invoked. The default binder selects the most specific match.  
+ The binder finds all matching methods, in accordance with the type of binding requested (<xref:System.Reflection.BindingFlags.InvokeMethod?displayProperty=nameWithType>, <xref:System.Reflection.IReflect.GetProperties%2A>, and so on). The set of methods is filtered by the name, number of arguments, and a set of search modifiers defined in the binder. After the method is selected, it is invoked, and accessibility is checked at that point. The search may control which set of methods is searched based upon the accessibility attribute associated with the method. <xref:System.Reflection.Binder.BindToMethod%2A> selects the method to be invoked. The default binder selects the most specific match.  
   
  Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked through reflection whenever the code is fully trusted.  
   
@@ -490,6 +507,9 @@
         <exception cref="T:System.MissingFieldException">The field or property cannot be found.</exception>
         <exception cref="T:System.MissingMethodException">The method cannot be found.</exception>
         <exception cref="T:System.Security.SecurityException">A private member is invoked without the necessary <see cref="T:System.Security.Permissions.ReflectionPermission" />.</exception>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -517,7 +537,28 @@
         <summary>Gets the underlying type that represents the <see cref="T:System.Reflection.IReflect" /> object.</summary>
         <value>The underlying type that represents the <see cref="T:System.Reflection.IReflect" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a <see cref="T:System.Reflection.MethodInfo" /> object that corresponds to a specified method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProperty">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a <see cref="T:System.Reflection.PropertyInfo" /> object corresponding to a specified property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

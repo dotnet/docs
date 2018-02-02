@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.SubscriptionListChanged" /> event is signaled.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.SubscriptionListChanged" />
   </Docs>
   <Members>
     <Member MemberName="PeerChangeType">
@@ -32,6 +33,7 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> enumeration that specifies the type of change performed on the Subscription List.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" />
       </Docs>
     </Member>
     <Member MemberName="PeerContact">
@@ -51,6 +53,8 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object for which the Subscription List was changed.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.SubscriptionListChanged" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Docs>
     </Member>
     <Member MemberName="PeerEndPoint">
@@ -70,6 +74,8 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object for which the Subscription List was changed.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.SubscriptionListChanged" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Docs>
     </Member>
   </Members>

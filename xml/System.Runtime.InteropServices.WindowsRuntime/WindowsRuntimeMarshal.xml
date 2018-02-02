@@ -93,6 +93,7 @@
         <exception cref="T:System.PlatformNotSupportedException">The [!INCLUDE[wrt](~/includes/wrt-md.md)] is not supported on the current version of the operating system.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <forInternalUseOnly />
+        <altmember cref="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetActivationFactory">
@@ -278,6 +279,7 @@
           <paramref name="s" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <forInternalUseOnly />
+        <altmember cref="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString(System.IntPtr)" />
       </Docs>
     </Member>
   </Members>

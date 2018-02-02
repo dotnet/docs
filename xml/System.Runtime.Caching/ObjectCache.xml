@@ -515,7 +515,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetValues">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IDictionary&lt;string,object&gt; GetValues (string regionName, string[] keys);" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IDictionary&lt;string,object&gt; GetValues (string regionName, params string[] keys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; GetValues(string regionName, string[] keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.GetValues(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -545,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.GetValues%2A?displayProperty=fullName> method overload is like the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload, but lets you pass the named region by using optional parameter syntax that is supported by managed languages such as C#.  
+ The <xref:System.Runtime.Caching.ObjectCache.GetValues%2A?displayProperty=nameWithType> method overload is like the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload, but lets you pass the named region by using optional parameter syntax that is supported by managed languages such as C#.  
   
  This method is a virtual method because the <xref:System.Runtime.Caching.ObjectCache> class provides a default implementation that passes the `params` array to the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload.  
   
@@ -906,5 +906,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a set of cache entries.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

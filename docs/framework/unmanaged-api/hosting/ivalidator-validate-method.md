@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "Validate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IValidator::Validate method [.NET Framework hosting]"
   - "Validate method, IValidator interface [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IValidator::Validate Method
 Validates the specified portable executable (PE) or Microsoft intermediate language (MSIL) file.  

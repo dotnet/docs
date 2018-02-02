@@ -30,6 +30,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
       </Docs>
     </Member>
     <Member MemberName="CurrentOperation">
@@ -49,6 +50,8 @@
         <summary>Gets the current replication operation.</summary>
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" /> object that represents the current replication operation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
       </Docs>
     </Member>
     <Member MemberName="OperationStartTime">
@@ -68,6 +71,8 @@
         <summary>Gets the time that this replication operation started.</summary>
         <value>A <see cref="T:System.DateTime" /> object that contains the date and time that this replication operation started.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
       </Docs>
     </Member>
     <Member MemberName="PendingOperations">
@@ -87,6 +92,8 @@
         <summary>Gets the replication operations that have not been run.</summary>
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection" /> object that contains the pending replication operations.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
       </Docs>
     </Member>
   </Members>

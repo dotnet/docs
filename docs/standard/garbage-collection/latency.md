@@ -16,11 +16,14 @@ caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Latency Modes
-To reclaim objects, the garbage collector must stop all the executing threads in an application. In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance. You can adjust the intrusiveness of the garbage collector by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=fullName> property to one of the <xref:System.Runtime.GCLatencyMode?displayProperty=fullName> values.  
+To reclaim objects, the garbage collector must stop all the executing threads in an application. In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance. You can adjust the intrusiveness of the garbage collector by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=nameWithType> property to one of the <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> values.  
   
- Latency refers to the time that the garbage collector intrudes in your application. During low latency periods, the garbage collector is more conservative and less intrusive in reclaiming objects. The <xref:System.Runtime.GCLatencyMode?displayProperty=fullName> enumeration provides two low latency settings:  
+ Latency refers to the time that the garbage collector intrudes in your application. During low latency periods, the garbage collector is more conservative and less intrusive in reclaiming objects. The <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> enumeration provides two low latency settings:  
   
 -   <xref:System.Runtime.GCLatencyMode.LowLatency> suppresses generation 2 collections and performs only generation 0 and 1 collections. It can be used only for short periods of time. Over longer periods, if the system is under memory pressure, the garbage collector will trigger a collection, which can briefly pause the application and disrupt a time-critical operation. This setting is available only for workstation garbage collection.  
   
@@ -30,7 +33,7 @@ To reclaim objects, the garbage collector must stop all the executing threads in
   
 -   The system receives a low memory notification from the operating system.  
   
--   Your application code induces a collection by calling the <xref:System.GC.Collect%2A?displayProperty=fullName> method and specifying 2 for the `generation` parameter.  
+-   Your application code induces a collection by calling the <xref:System.GC.Collect%2A?displayProperty=nameWithType> method and specifying 2 for the `generation` parameter.  
   
  The following table lists the application scenarios for using the <xref:System.Runtime.GCLatencyMode> values.  
   
@@ -54,9 +57,9 @@ To reclaim objects, the garbage collector must stop all the executing threads in
   
 -   Wrap the low latency code in constrained execution regions (for more information, see [Constrained Execution Regions](../../../docs/framework/performance/constrained-execution-regions.md)).  
   
--   You can force generation 2 collections during a low latency period by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=fullName> method.  
+-   You can force generation 2 collections during a low latency period by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=nameWithType> method.  
   
 ## See Also  
- <xref:System.GC?displayProperty=fullName>   
- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)   
+ <xref:System.GC?displayProperty=nameWithType>  
+ [Induced Collections](../../../docs/standard/garbage-collection/induced.md)  
  [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

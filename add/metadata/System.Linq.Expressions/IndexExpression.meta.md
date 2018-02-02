@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.IndexExpression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -72,5 +72,5 @@ uid: System.Linq.Expressions.IndexExpression.Update(System.Linq.Expressions.Expr
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

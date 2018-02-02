@@ -20,10 +20,13 @@
   
  When the <xref:System.Windows.Input.RoutedCommand.Execute%2A> or <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method of a <xref:System.Windows.Input.RoutedCommand> is called, the <xref:System.Windows.Input.CommandBinding.PreviewExecuted>/<xref:System.Windows.Input.CommandBinding.Executed> or the <xref:System.Windows.Input.CommandBinding.PreviewCanExecute>/<xref:System.Windows.Input.CommandBinding.CanExecute> events are raised on the command target.  If the command target has a <xref:System.Windows.Input.CommandBinding> for the command, the appropriate handlers are called.  If the command target does not have a <xref:System.Windows.Input.CommandBinding> for the command, the events are routed through the element tree until an element that has a <xref:System.Windows.Input.CommandBinding> is found.  
   
- A <xref:System.Windows.Input.CommandBinding> has limited use with an <xref:System.Windows.Input.ICommand> that is not a<xref:System.Windows.Input.RoutedCommand>.  This is because a <xref:System.Windows.Input.CommandBinding> binds the command to the <xref:System.Windows.Input.ExecutedRoutedEventHandler> and the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> which listen to the <xref:System.Windows.Input.CommandManager.Executed> and <xref:System.Windows.Input.CommandManager.CanExecute> routed events which are raised when the <xref:System.Windows.Input.RoutedCommand.Execute%2A> and <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method of the <xref:System.Windows.Input.RoutedCommand> are called.  
+ A <xref:System.Windows.Input.CommandBinding> has limited use with an <xref:System.Windows.Input.ICommand> that is not a <xref:System.Windows.Input.RoutedCommand>.  This is because a <xref:System.Windows.Input.CommandBinding> binds the command to the <xref:System.Windows.Input.ExecutedRoutedEventHandler> and the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> which listen to the <xref:System.Windows.Input.CommandManager.Executed> and <xref:System.Windows.Input.CommandManager.CanExecute> routed events which are raised when the <xref:System.Windows.Input.RoutedCommand.Execute%2A> and <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method of the <xref:System.Windows.Input.RoutedCommand> are called.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.RoutedCommand" />
+    <altmember cref="T:System.Windows.Input.InputBinding" />
+    <altmember cref="T:System.Windows.Input.CommandManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +42,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +155,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -194,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="Executed">
@@ -244,6 +256,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="PreviewCanExecute">
@@ -279,6 +294,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="PreviewExecuted">
@@ -314,7 +332,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

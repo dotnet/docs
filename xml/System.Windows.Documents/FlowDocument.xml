@@ -260,7 +260,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above (excepting `Auto`), followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -294,6 +294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       </Docs>
     </Member>
     <Member MemberName="ColumnGapProperty">
@@ -358,6 +360,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnGap" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       </Docs>
     </Member>
     <Member MemberName="ColumnRuleBrushProperty">
@@ -424,7 +428,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -455,6 +459,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnGap" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
       </Docs>
     </Member>
     <Member MemberName="ColumnRuleWidthProperty">
@@ -521,7 +527,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -599,7 +605,7 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentEnd%2A> property is often used to append content to the end of a <xref:System.Windows.Documents.FlowDocument>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>.  
   
    
   
@@ -611,6 +617,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ContentStart" />
       </Docs>
     </Member>
     <Member MemberName="ContentStart">
@@ -634,7 +641,7 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentStart%2A> property is often used to insert content to the beginning of a <xref:System.Windows.Documents.FlowDocument>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>.  
   
    
   
@@ -646,6 +653,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ContentEnd" />
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -743,7 +751,7 @@
   
  When multiple families are specified, the second and subsequent font families serve as fallback families to be used in cases where the primary font family is unavailable or not applicable.  
   
- This property specifies a preference only.  If the specified font family is not available, the <xref:System.Windows.Documents.FlowDocument> will silently fall back to the font determined by the <xref:System.Windows.SystemFonts.MessageFontFamily%2A?displayProperty=fullName> value.  
+ This property specifies a preference only.  If the specified font family is not available, the <xref:System.Windows.Documents.FlowDocument> will silently fall back to the font determined by the <xref:System.Windows.SystemFonts.MessageFontFamily%2A?displayProperty=nameWithType> value.  
   
 <a name="xamlAttributeUsage_FontFamily"></a>   
 ## XAML Attribute Usage  
@@ -856,7 +864,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -1445,7 +1453,7 @@
  `pt` is points; 1pt==(96/72) px  
   
  Auto  
- Causes the line height to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
+ Causes the line height to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_LineHeight"></a>   
 ## Dependency Property Information  
@@ -1466,7 +1474,7 @@
   
  ![Screenshot: FlowDocument LineHeight](~/add/media/flowdocument-lineheight.png "Screenshot: FlowDocument LineHeight")  
   
- The following figure shows how the same <xref:System.Windows.Documents.FlowDocument> renders with the default setting of <xref:System.Windows.Documents.FlowDocument.LineHeight%2A>=<xref:System.Double.NaN?displayProperty=fullName>.  
+ The following figure shows how the same <xref:System.Windows.Documents.FlowDocument> renders with the default setting of <xref:System.Windows.Documents.FlowDocument.LineHeight%2A>=<xref:System.Double.NaN?displayProperty=nameWithType>.  
   
  ![Screenshot: FlowDocument LineHeight default](~/add/media/flowdocument-lineheightdefault.png "Screenshot: FlowDocument LineHeight default")  
   
@@ -1602,7 +1610,7 @@
 ## Remarks  
  If viewed on a continuum, the <xref:System.Windows.Documents.FlowDocument.MinPageHeight%2A> property takes precedence over the <xref:System.Windows.Documents.FlowDocument.MaxPageHeight%2A> property, which in turn takes precedence over the <xref:System.Windows.Documents.FlowDocument.PageHeight%2A> property. If all three properties are set on a given page, this is the order in which the properties are evaluated.  
   
- This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageHeight%2A> is set to <xref:System.Double.NaN?displayProperty=fullName> (auto).  
+ This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageHeight%2A> is set to <xref:System.Double.NaN?displayProperty=nameWithType> (auto).  
   
 <a name="xamlAttributeUsage_MaxPageHeight"></a>   
 ## XAML Attribute Usage  
@@ -1618,7 +1626,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -1698,7 +1706,7 @@
 ## Remarks  
  If viewed on a continuum, the <xref:System.Windows.Documents.FlowDocument.MinPageWidth%2A> property takes precedence over the <xref:System.Windows.Documents.FlowDocument.MaxPageWidth%2A> property, which in turn takes precedence over the <xref:System.Windows.Documents.FlowDocument.PageWidth%2A> property. If all three properties are set on a given page, this is the order in which the properties are evaluated.  
   
- This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageWidth%2A> is set to <xref:System.Double.NaN?displayProperty=fullName> (auto).  
+ This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageWidth%2A> is set to <xref:System.Double.NaN?displayProperty=nameWithType> (auto).  
   
 <a name="xamlAttributeUsage_MaxPageWidth"></a>   
 ## XAML Attribute Usage  
@@ -1714,7 +1722,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -1794,7 +1802,7 @@
 ## Remarks  
  If viewed on a continuum, the <xref:System.Windows.Documents.FlowDocument.MinPageHeight%2A> property takes precedence over the <xref:System.Windows.Documents.FlowDocument.MaxPageHeight%2A> property, which in turn takes precedence over the <xref:System.Windows.Documents.FlowDocument.PageHeight%2A> property. If all three properties are set on a given page, this is the order in which the properties are evaluated.  
   
- This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageHeight%2A> is set to <xref:System.Double.NaN?displayProperty=fullName> (auto).  
+ This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageHeight%2A> is set to <xref:System.Double.NaN?displayProperty=nameWithType> (auto).  
   
 <a name="xamlAttributeUsage_MinPageHeight"></a>   
 ## XAML Attribute Usage  
@@ -1810,7 +1818,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -1890,7 +1898,7 @@
 ## Remarks  
  If viewed on a continuum, the <xref:System.Windows.Documents.FlowDocument.MinPageWidth%2A> property takes precedence over the <xref:System.Windows.Documents.FlowDocument.MaxPageWidth%2A> property, which in turn takes precedence over the <xref:System.Windows.Documents.FlowDocument.PageWidth%2A> property. If all three properties are set on a given page, this is the order in which the properties are evaluated.  
   
- This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageWidth%2A> is set to <xref:System.Double.NaN?displayProperty=fullName> (auto).  
+ This property has no effect when <xref:System.Windows.Documents.FlowDocument.PageWidth%2A> is set to <xref:System.Double.NaN?displayProperty=nameWithType> (auto).  
   
 <a name="xamlAttributeUsage_MinPageWidth"></a>   
 ## XAML Attribute Usage  
@@ -1906,7 +1914,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -2008,10 +2016,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkContentElement.OnPropertyChanged%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkContentElement.OnPropertyChanged%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PageHeight">
@@ -2056,7 +2065,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -2070,7 +2079,7 @@
  `pt` is points; 1pt==(96/72) px  
   
  *Auto*  
- Causes the page height to be determined automatically.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
+ Causes the page height to be determined automatically.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_PageHeight"></a>   
 ## Dependency Property Information  
@@ -2258,7 +2267,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=fullName>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -2272,7 +2281,7 @@
  `pt` is points; 1pt==(96/72) px  
   
  *Auto*  
- Causes the page width to be determined automatically.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
+ Causes the page width to be determined automatically.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_PageWidth"></a>   
 ## Dependency Property Information  
@@ -2588,5 +2597,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.FlowDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

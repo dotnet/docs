@@ -25,6 +25,7 @@ Typical 3x3 matrix for 2-D translations
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Matrix" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +87,7 @@ Typical 3x3 matrix for 2-D translations
   
  When this method copies dependency properties, it copies resource references and data bindings, although they might no longer resolve. It does not copy animations or their current values.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -114,7 +115,7 @@ Typical 3x3 matrix for 2-D translations
 ## Remarks  
  Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -188,6 +189,7 @@ Typical 3x3 matrix for 2-D translations
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TranslateTransform.Y" />
       </Docs>
     </Member>
     <Member MemberName="XProperty">
@@ -238,6 +240,7 @@ Typical 3x3 matrix for 2-D translations
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TranslateTransform.X" />
       </Docs>
     </Member>
     <Member MemberName="YProperty">
@@ -257,5 +260,14 @@ Typical 3x3 matrix for 2-D translations
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TranslateTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

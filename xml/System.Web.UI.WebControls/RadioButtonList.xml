@@ -139,11 +139,14 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButtonList Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButtonList Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+    <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatDirection" />
+    <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatLayout" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -203,11 +206,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.CellPadding%2A> property to pad the cells of a <xref:System.Web.UI.WebControls.RadioButtonList> control with 10 pixels.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButtonList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.CellPadding Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButtonList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.CellPadding Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -243,11 +247,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.CellSpacing%2A> property to space the cells of a <xref:System.Web.UI.WebControls.RadioButtonList> control apart by 10 pixels.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.CellSpacing Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.CellSpacing Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.CellSpacing Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.CellSpacing Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButtonList.CellSpacing Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.CellSpacing Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButtonList.CellSpacing Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.CellSpacing Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -277,8 +282,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.RadioButtonList.CreateControlStyle%2A> method in a custom server control so that it always returns an empty <xref:System.Web.UI.WebControls.TableStyle> object for the <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomRadioButtonListCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/CS/custom_radiobuttonlist_createcontrolstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomRadioButtonListCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/VB/custom_radiobuttonlist_createcontrolstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomRadioButtonListCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/CS/custom_radiobuttonlist_createcontrolstylecs.aspx#1)]
+ [!code-aspx-vb[CustomRadioButtonListCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/VB/custom_radiobuttonlist_createcontrolstylevb.aspx#1)]  
 [!code-csharp[CustomRadioButtonListCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/CS/custom_radiobuttonlist_createcontrolstyle.cs#2)]
 [!code-vb[CustomRadioButtonListCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/VB/custom_radiobuttonlist_createcontrolstyle.vb#2)]  
   
@@ -313,7 +318,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
   
- The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method overrides the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=fullName> method of the base <xref:System.Web.UI.Control> class. You should not override this version of the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method overrides the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=nameWithType> method of the base <xref:System.Web.UI.Control> class. You should not override this version of the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -515,6 +520,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -548,8 +555,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.RadioButtonList.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.RadioButtonList> control is always displayed with descriptive text.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomRadioButtonListRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListRender/CS/custom_radiobuttonlist_rendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomRadioButtonListRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListRender/VB/custom_radiobuttonlist_rendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomRadioButtonListRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListRender/CS/custom_radiobuttonlist_rendercs.aspx#1)]
+ [!code-aspx-vb[CustomRadioButtonListRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListRender/VB/custom_radiobuttonlist_rendervb.aspx#1)]  
 [!code-csharp[CustomRadioButtonListRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListRender/CS/custom_radiobuttonlist_render.cs#2)]
 [!code-vb[CustomRadioButtonListRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListRender/VB/custom_radiobuttonlist_render.vb#2)]  
   
@@ -653,12 +660,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> property to display the items of a <xref:System.Web.UI.WebControls.RadioButtonList> control in two columns.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.RepeatColumns Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatColumns Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.RepeatColumns Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatColumns Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButtonList.RepeatColumns Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatColumns Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButtonList.RepeatColumns Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatColumns Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of columns is set to a negative value.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatLayout" />
+        <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatDirection" />
       </Docs>
     </Member>
     <Member MemberName="RepeatDirection">
@@ -711,12 +720,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatDirection%2A> property to display the items of a <xref:System.Web.UI.WebControls.RadioButtonList> control in columns filled top to bottom, and then left to right.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.RepeatDirection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatDirection Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.RepeatDirection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatDirection Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButtonList.RepeatDirection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatDirection Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButtonList.RepeatDirection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatDirection Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The display direction of the list is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.RepeatDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatColumns" />
       </Docs>
     </Member>
     <Member MemberName="RepeatedItemCount">
@@ -740,7 +751,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
   
- If there are no items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is zero. If there are items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is the same as the <xref:System.Web.UI.WebControls.ListItemCollection.Count%2A?displayProperty=fullName> property on the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
+ If there are no items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is zero. If there are items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is the same as the <xref:System.Web.UI.WebControls.ListItemCollection.Count%2A?displayProperty=nameWithType> property on the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
   
  ]]></format>
         </remarks>
@@ -782,12 +793,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property to display the items of a <xref:System.Web.UI.WebControls.RadioButtonList> control in a table.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.RepeatLayout Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatLayout Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.RepeatLayout Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatLayout Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButtonList.RepeatLayout Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatLayout Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButtonList.RepeatLayout Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatLayout Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The radio button layout is not one of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -816,15 +828,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A?displayProperty=fullName> method to process posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A?displayProperty=nameWithType> method to process posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
- The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -846,7 +859,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control changes.  
   
  The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23IPostBackDataHandler%23RaisePostDataChangedEvent%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
@@ -855,6 +868,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle">
@@ -882,7 +896,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.GetItemStyle%2A?displayProperty=fullName> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.GetItemStyle%2A?displayProperty=nameWithType> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
  The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23GetItemStyle%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
@@ -891,6 +905,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for retrieving the style of an item in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method to retrieve the style of an item.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter">
@@ -1008,7 +1023,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A?displayProperty=fullName> method to render items in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A?displayProperty=nameWithType> method to render items in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
  The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RenderItem%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
@@ -1017,6 +1032,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for rendering items in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method to render an item in the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount">
@@ -1078,11 +1094,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.TextAlign%2A> property to display the text associated with the radio buttons on the left side of the <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.TextAlign Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.TextAlign Example/CS/sourcecs.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButtonList.TextAlign Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.TextAlign Example/CS/sourcecs.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The label text alignment associated with the radio buttons is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TextAlign" />
       </Docs>
     </Member>
   </Members>

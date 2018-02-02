@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "initializing trace listeners"
   - "trace listeners, creating"
@@ -25,9 +23,11 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create and Initialize Trace Listeners
-The <xref:System.Diagnostics.Debug?displayProperty=fullName> and <xref:System.Diagnostics.Trace?displayProperty=fullName> classes send messages to objects called listeners that receive and process these messages. One such listener, the <xref:System.Diagnostics.DefaultTraceListener?displayProperty=fullName>, is automatically created and initialized when tracing or debugging is enabled. If you want <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> output to be directed to any additional sources, you must create and initialize additional trace listeners.  
+The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:System.Diagnostics.Trace?displayProperty=nameWithType> classes send messages to objects called listeners that receive and process these messages. One such listener, the <xref:System.Diagnostics.DefaultTraceListener?displayProperty=nameWithType>, is automatically created and initialized when tracing or debugging is enabled. If you want <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> output to be directed to any additional sources, you must create and initialize additional trace listeners.  
   
  The listeners you create should reflect your application's needs. For example, if you want a text record of all trace output, create a <xref:System.Diagnostics.TextWriterTraceListener> listener, which writes all output to a new text file when it is enabled. On the other hand, if you want to view output only during application execution, create a <xref:System.Diagnostics.ConsoleTraceListener> listener, which directs all output to a console window. The <xref:System.Diagnostics.EventLogTraceListener> can direct trace output to an event log. For more information, see [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md).  
   
@@ -101,7 +101,7 @@ The <xref:System.Diagnostics.Debug?displayProperty=fullName> and <xref:System.Di
     ```  
   
 ## See Also  
- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)   
- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)   
- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)   
+ [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)  
+ [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)  
+ [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
  [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)

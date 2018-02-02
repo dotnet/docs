@@ -59,7 +59,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HttpMessageHandlerFactory (Type[] handlers);" />
+      <MemberSignature Language="C#" Value="public HttpMessageHandlerFactory (params Type[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpMessageHandlerFactory.#ctor(System.Type[])" />
       <MemberType>Constructor</MemberType>
@@ -136,5 +136,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpMessageHandlerFactory" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

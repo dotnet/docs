@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Example: Troubleshooting Dynamic Programming
 > [!NOTE]
@@ -54,9 +56,9 @@ AppViewModel.Current.LayoutVM.PageMap
   
  A likely candidate for the failure is that `App.Core.ViewModels.Layout.LayoutApplicationVM` is missing metadata because it's in a different namespace.  
   
- In this case, adding a runtime directive for `App.Core.ViewModels` resolved the issue. The root cause was an API call to the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method that returned **null**, and the app silently ignored the problem until a crash occurred.  
+ In this case, adding a runtime directive for `App.Core.ViewModels` resolved the issue. The root cause was an API call to the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method that returned **null**, and the app silently ignored the problem until a crash occurred.  
   
- In dynamic programming, a good practice when using reflection APIs under [!INCLUDE[net_native](../../../includes/net-native-md.md)] is to use the <xref:System.Type.GetType%2A?displayProperty=fullName> overloads that throw an exception on failure.  
+ In dynamic programming, a good practice when using reflection APIs under [!INCLUDE[net_native](../../../includes/net-native-md.md)] is to use the <xref:System.Type.GetType%2A?displayProperty=nameWithType> overloads that throw an exception on failure.  
   
 ## Is this an isolated case?  
  Other issues might also arise when using `App.Core.ViewModels`.  You must decide whether it’s worth identifying and fixing each missing metadata exception, or saving time and adding directives for a larger class of types.  Here, adding `dynamic` metadata for `App.Core.ViewModels` might be the best approach if the resulting size increase of the output binary isn’t an issue.  
@@ -65,5 +67,5 @@ AppViewModel.Current.LayoutVM.PageMap
  If the app had used `typeof(LayoutApplicationVM)` instead of `Type.GetType("LayoutApplicationVM")`, the tool chain could have preserved `browse` metadata.  However, it still wouldn't have created `invoke` metadata, which would have led to a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception when instantiating the type. To prevent the exception, you'd still have to add a runtime directive for the namespace or the type that specifies the `dynamic` policy. For information on runtime directives, see the [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
   
 ## See Also  
- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)   
+ [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)  
  [Example: Handling Exceptions When Binding Data](../../../docs/framework/net-native/example-handling-exceptions-when-binding-data.md)

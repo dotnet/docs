@@ -14,6 +14,7 @@
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.VBArrayObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -33,6 +34,7 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="dimensions">
@@ -61,10 +63,12 @@
         <returns>The number of dimensions in <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
+        <altmember cref="T:Microsoft.JScript.VBArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="getItem">
-      <MemberSignature Language="C#" Value="public static object getItem (object thisob, object[] args);" />
+      <MemberSignature Language="C#" Value="public static object getItem (object thisob, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object getItem(object thisob, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.getItem(System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -104,6 +108,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
+        <altmember cref="T:Microsoft.JScript.VBArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="lbound">
@@ -134,6 +140,8 @@
         <returns>The lower bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
+        <altmember cref="T:Microsoft.JScript.VBArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="toArray">
@@ -165,6 +173,8 @@
           <paramref name="thisob" /> expressed as an <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
+        <altmember cref="T:Microsoft.JScript.VBArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="ubound">
@@ -195,6 +205,8 @@
         <returns>The upper bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
+        <altmember cref="T:Microsoft.JScript.VBArrayObject" />
       </Docs>
     </Member>
   </Members>

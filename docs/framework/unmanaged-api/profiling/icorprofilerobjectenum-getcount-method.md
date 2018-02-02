@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerObjectEnum::GetCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerObjectEnum::GetCount method [.NET Framework profiling]"
   - "GetCount method, ICorProfilerObjectEnum interface [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerObjectEnum::GetCount Method
 Gets the total number of frozen objects in the collection.  

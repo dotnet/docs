@@ -39,7 +39,7 @@
     </Member>
     <Member MemberName="CopyData">
       <MemberSignature Language="C#" Value="public int CopyData (ref System.Drawing.PointF[] points, ref byte[] types, int startIndex, int endIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CopyData(valuetype System.Drawing.PointF[] points, unsigned int8[] types, int32 startIndex, int32 endIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CopyData(valuetype System.Drawing.PointF[]&amp; points, unsigned int8[]&amp; types, int32 startIndex, int32 endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.CopyData(System.Drawing.PointF[]@,System.Byte[]@,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -140,7 +140,7 @@
     </Member>
     <Member MemberName="Enumerate">
       <MemberSignature Language="C#" Value="public int Enumerate (ref System.Drawing.PointF[] points, ref byte[] types);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Enumerate(valuetype System.Drawing.PointF[] points, unsigned int8[] types) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Enumerate(valuetype System.Drawing.PointF[]&amp; points, unsigned int8[]&amp; types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Enumerate(System.Drawing.PointF[]@,System.Byte[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -310,7 +310,7 @@
     </Member>
     <Member MemberName="NextMarker">
       <MemberSignature Language="C#" Value="public int NextMarker (out int startIndex, out int endIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextMarker(int32 startIndex, int32 endIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextMarker([out] int32&amp; startIndex, [out] int32&amp; endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -364,7 +364,7 @@
     </Member>
     <Member MemberName="NextPathType">
       <MemberSignature Language="C#" Value="public int NextPathType (out byte pathType, out int startIndex, out int endIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextPathType(unsigned int8 pathType, int32 startIndex, int32 endIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextPathType([out] unsigned int8&amp; pathType, [out] int32&amp; startIndex, [out] int32&amp; endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextPathType(System.Byte@,System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -417,7 +417,7 @@
     </Member>
     <Member MemberName="NextSubpath">
       <MemberSignature Language="C#" Value="public int NextSubpath (System.Drawing.Drawing2D.GraphicsPath path, out bool isClosed);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath(class System.Drawing.Drawing2D.GraphicsPath path, bool isClosed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath(class System.Drawing.Drawing2D.GraphicsPath path, [out] bool&amp; isClosed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Drawing.Drawing2D.GraphicsPath,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -466,7 +466,7 @@
     </Member>
     <Member MemberName="NextSubpath">
       <MemberSignature Language="C#" Value="public int NextSubpath (out int startIndex, out int endIndex, out bool isClosed);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath(int32 startIndex, int32 endIndex, bool isClosed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath([out] int32&amp; startIndex, [out] int32&amp; endIndex, [out] bool&amp; isClosed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -558,5 +558,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="NextMarker">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the iterator to the next marker in the path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="NextSubpath">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the subpath to the next subpath in the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

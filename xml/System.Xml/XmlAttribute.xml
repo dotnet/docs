@@ -31,7 +31,7 @@
 ## Remarks  
  Attributes can be associated with an element. Use the <xref:System.Xml.XmlAttribute.OwnerElement%2A> property to get the <xref:System.Xml.XmlElement> to which the attribute belongs.  
   
- The `XmlElement` class has several methods which allow you to access attribute nodes (<xref:System.Xml.XmlElement.GetAttribute%2A?displayProperty=fullName>, <xref:System.Xml.XmlElement.SetAttribute%2A?displayProperty=fullName>, <xref:System.Xml.XmlElement.RemoveAttribute%2A?displayProperty=fullName>, and so on). Additionally, you can call the <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=fullName> property, which returns an <xref:System.Xml.XmlAttributeCollection> enabling you to access attributes by name or index from the collection.  
+ The `XmlElement` class has several methods which allow you to access attribute nodes (<xref:System.Xml.XmlElement.GetAttribute%2A?displayProperty=nameWithType>, <xref:System.Xml.XmlElement.SetAttribute%2A?displayProperty=nameWithType>, <xref:System.Xml.XmlElement.RemoveAttribute%2A?displayProperty=nameWithType>, and so on). Additionally, you can call the <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=nameWithType> property, which returns an <xref:System.Xml.XmlAttributeCollection> enabling you to access attributes by name or index from the collection.  
   
  ]]></format>
     </remarks>
@@ -119,7 +119,7 @@
 ## Remarks  
  If the `newChild` is already in the tree, it is first removed.  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
    
   
@@ -170,7 +170,7 @@
 ## Remarks  
  A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
   
- For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
+ For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=nameWithType>.  
   
  This property is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -189,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlAttribute.OwnerElement" />
       </Docs>
     </Member>
     <Member MemberName="CloneNode">
@@ -247,6 +248,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlElement" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -287,6 +289,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlAttribute.InnerXml" />
+        <altmember cref="P:System.Xml.XmlNode.OuterXml" />
       </Docs>
     </Member>
     <Member MemberName="InnerXml">
@@ -326,6 +330,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The XML specified when setting this property is not well-formed.</exception>
+        <altmember cref="P:System.Xml.XmlAttribute.InnerText" />
+        <altmember cref="P:System.Xml.XmlNode.OuterXml" />
       </Docs>
     </Member>
     <Member MemberName="InsertAfter">
@@ -368,7 +374,7 @@
 ## Remarks  
  If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. If `newChild` is an <xref:System.Xml.XmlDocumentFragment> object, its child nodes are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is first removed.  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -429,7 +435,7 @@
 ## Remarks  
  If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. If `newChild` is an <xref:System.Xml.XmlDocumentFragment> object, its child nodes are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is first removed.  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
    
   
@@ -535,6 +541,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlAttribute.LocalName" />
       </Docs>
     </Member>
     <Member MemberName="NamespaceURI">
@@ -613,6 +620,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>The node type for <see langword="XmlAttribute" /> nodes is XmlNodeType.Attribute.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="OwnerDocument">
@@ -834,7 +842,7 @@
 ## Remarks  
  If the `newChild` is already in the tree, it is first removed.  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -936,7 +944,7 @@
 ## Remarks  
  If the `newChild` is already in the tree, it is first removed.  
   
- If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document.  
+ If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document.  
   
    
   
@@ -1155,7 +1163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A?displayProperty=fullName> property.  
+ This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

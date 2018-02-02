@@ -13,13 +13,15 @@ f1_keywords:
   - "ComponentResourceKey"
   - "ComponentResourceKeyExtension"
 helpviewer_keywords: 
-  - "ComponentResourceKey markup extension"
-  - "XAML, ComponentResourceKey markup extension"
+  - "ComponentResourceKey markup extension [WPF]"
+  - "XAML [WPF], ComponentResourceKey markup extension"
 ms.assetid: d6bcdbe6-61b3-40a7-b381-4e02185b5a85
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ComponentResourceKey Markup Extension
 Defines and references keys for resources that are loaded from external assemblies. This enables a resource lookup to specify a target type in an assembly, rather than an explicit resource dictionary in an assembly or on a class.  
@@ -70,7 +72,7 @@ Defines and references keys for resources that are loaded from external assembli
   
  For both establishing keys and referencing keyed resources, attribute syntax is commonly used for the `ComponentResourceKey` markup extension.  
   
- The compact syntax shown relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A?displayProperty=fullName> constructor signature and positional parameter usage of a markup extension. The order in which the `targetTypeName` and `targetID` are given is important. The verbose syntax relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A?displayProperty=fullName> default constructor, and then sets the <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> in a way that is analogous to a true attribute syntax on an object element. In the verbose syntax, the order in which the properties are set is not important. The relationship and mechanisms of these two alternatives (compact and verbose) is described in more detail in the topic [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+ The compact syntax shown relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A?displayProperty=nameWithType> constructor signature and positional parameter usage of a markup extension. The order in which the `targetTypeName` and `targetID` are given is important. The verbose syntax relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A?displayProperty=nameWithType> default constructor, and then sets the <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> in a way that is analogous to a true attribute syntax on an object element. In the verbose syntax, the order in which the properties are set is not important. The relationship and mechanisms of these two alternatives (compact and verbose) is described in more detail in the topic [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
  Technically, the value for `targetID` can be any object, it does not have to be a string. However, the most common usage in WPF is to align the `targetID` value with forms that are strings, and where such strings are valid in the [XamlName Grammar](../../../../docs/framework/xaml-services/xamlname-grammar.md).  
   
@@ -81,8 +83,8 @@ Defines and references keys for resources that are loaded from external assembli
  `ComponentResourceKey` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] use the { and } characters in their attribute syntax, which is the convention by which a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
 ## See Also  
- <xref:System.Windows.ComponentResourceKey>   
- <xref:System.Windows.Controls.ControlTemplate>   
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ <xref:System.Windows.ComponentResourceKey>  
+ <xref:System.Windows.Controls.ControlTemplate>  
+ [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

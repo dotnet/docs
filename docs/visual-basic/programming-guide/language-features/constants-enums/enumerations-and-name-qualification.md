@@ -1,50 +1,32 @@
 ---
 title: "Enumerations and Name Qualification (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "declarations, enumerations"
-  - "Imports statement, namespace declarations"
-  - "declaring namespaces, enumerations"
+  - "declarations [Visual Basic], enumerations"
+  - "Imports statement [Visual Basic], namespace declarations"
+  - "declaring namespaces [Visual Basic], enumerations"
   - "name collisions"
-  - "ambiguous names, enumerations"
+  - "ambiguous names [Visual Basic], enumerations"
   - "enumerations [Visual Basic], name qualification"
-  - "names, avoiding conflicts"
-  - "namespaces, declaring"
+  - "names [Visual Basic], avoiding conflicts"
+  - "namespaces [Visual Basic], declaring"
   - "naming conflicts, enumerations"
   - "naming conflicts, qualifying names"
   - "declaring enumerations"
-  - "references, enumeration members"
-  - "naming conventions, naming conflicts"
-  - "declarations, namespaces"
+  - "references [Visual Basic], enumeration members"
+  - "naming conventions [Visual Basic], naming conflicts"
+  - "declarations [Visual Basic], namespaces"
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Enumerations and Name Qualification (Visual Basic)
 Normally, when referring to a member of an enumeration, you must qualify the member name with the enumeration name. For example, to refer to the `Sunday` member of your `Days` enumeration, you would use the following syntax:  
@@ -71,13 +53,13 @@ Normally, when referring to a member of an enumeration, you must qualify the mem
  [!code-vb[VbEnumsTask#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_5.vb)]  
   
 ## See Also  
- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)   
- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)   
- [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)   
- [How to: Iterate Through An Enumeration in Visual Basic](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-iterate-through-an-enumeration.md)   
- [How to: Determine the String Associated with an Enumeration Value](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-determine-the-string-associated-with-an-enumeration-value.md)   
- [When to Use an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md)   
- [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)   
- [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)   
- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
+ [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)  
+ [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)  
+ [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)  
+ [How to: Iterate Through An Enumeration in Visual Basic](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-iterate-through-an-enumeration.md)  
+ [How to: Determine the String Associated with an Enumeration Value](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-determine-the-string-associated-with-an-enumeration-value.md)  
+ [When to Use an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md)  
+ [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)  
+ [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  
+ [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)

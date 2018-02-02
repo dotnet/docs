@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "metadata [WCF]"
 ms.assetid: 66a61bd0-18d3-4e7e-bf8b-177a10ac2f60
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides an infrastructure for exporting, publishing, retrieving, and importing service metadata. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services use metadata to describe how to interact with the service's endpoints so that tools, such as Svcutil.exe, can automatically generate client code for accessing the service.  

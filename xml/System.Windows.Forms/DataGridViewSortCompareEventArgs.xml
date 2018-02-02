@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can handle the <xref:System.Windows.Forms.DataGridView.SortCompare> event to provide custom sorting. This event occurs only when the <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName> property is not set and the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=fullName> property is set to `false`. This event occurs once for each pair of cells in the column being sorted. It occurs only when the user clicks the header of a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=fullName> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>, or when you call the <xref:System.Windows.Forms.DataGridView.Sort%28System.Windows.Forms.DataGridViewColumn%2CSystem.ComponentModel.ListSortDirection%29?displayProperty=fullName> overload. When this event occurs for a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=fullName> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=fullName> property.  
+ You can handle the <xref:System.Windows.Forms.DataGridView.SortCompare> event to provide custom sorting. This event occurs only when the <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType> property is not set and the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=nameWithType> property is set to `false`. This event occurs once for each pair of cells in the column being sorted. It occurs only when the user clicks the header of a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>, or when you call the <xref:System.Windows.Forms.DataGridView.Sort%28System.Windows.Forms.DataGridViewColumn%2CSystem.ComponentModel.ListSortDirection%29?displayProperty=nameWithType> overload. When this event occurs for a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType> property.  
   
- You can use this event to sort rows using the cell values in one column or in multiple columns. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2%2A> properties to compare cell values in the column specified in the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column%2A> property. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2%2A> properties to access values in other columns through the <xref:System.Windows.Forms.DataGridView.Rows%2A?displayProperty=fullName> collection.  
+ You can use this event to sort rows using the cell values in one column or in multiple columns. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2%2A> properties to compare cell values in the column specified in the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column%2A> property. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2%2A> properties to access values in other columns through the <xref:System.Windows.Forms.DataGridView.Rows%2A?displayProperty=nameWithType> collection.  
   
    
   
@@ -30,6 +30,18 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewSortCompareEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +68,10 @@
         <param name="rowIndex2">The index of the row containing the second cell.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="CellValue1">
@@ -89,6 +105,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       </Docs>
     </Member>
     <Member MemberName="CellValue2">
@@ -122,6 +144,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -155,6 +183,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex1">
@@ -188,6 +219,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex2">
@@ -221,6 +256,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
       </Docs>
     </Member>
     <Member MemberName="SortResult">
@@ -242,7 +281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this value is typically the last operation you will perform in a handler for the <xref:System.Windows.Forms.DataGridView.SortCompare?displayProperty=fullName> event. You will typically set this value to the return value of a comparison method such as <xref:System.String.Compare%2A?displayProperty=fullName>.  
+ Setting this value is typically the last operation you will perform in a handler for the <xref:System.Windows.Forms.DataGridView.SortCompare?displayProperty=nameWithType> event. You will typically set this value to the return value of a comparison method such as <xref:System.String.Compare%2A?displayProperty=nameWithType>.  
   
    
   
@@ -254,6 +293,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="Overload:System.String.Compare" />
       </Docs>
     </Member>
   </Members>

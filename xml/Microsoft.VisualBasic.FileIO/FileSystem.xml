@@ -55,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.FileIO.SpecialDirectories" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -132,6 +133,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="baseDirectory" /> or <paramref name="relativePath" /> are malformed paths.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetParentPath(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CopyDirectory">
@@ -190,6 +192,7 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">A destination file exists but cannot be accessed.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CopyDirectory">
@@ -253,6 +256,7 @@
           <paramref name="ShowUI" /> is set to <see langword="UIOption.AllDialogs" /> and the user cancels the operation, or one or more files in the directory cannot be copied.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CopyDirectory">
@@ -314,6 +318,7 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">A destination file exists but cannot be accessed.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CopyDirectory">
@@ -379,6 +384,7 @@
           <paramref name="ShowUI" /> is set to <see langword="UIOption.AllDialogs" /> and the user cancels the operation, or one or more files in the directory cannot be copied.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -444,6 +450,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -512,6 +519,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -580,6 +588,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -652,6 +661,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="CreateDirectory">
@@ -701,6 +711,7 @@
         <exception cref="T:System.IO.IOException">The parent directory of the directory to be created is read-only</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have permission to create the directory.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="M:System.IO.Directory.CreateDirectory(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CurrentDirectory">
@@ -794,6 +805,7 @@
         <exception cref="T:System.Security.SecurityException">The user does not have required permissions.</exception>
         <exception cref="T:System.OperationCanceledException">The user cancels the operation or the directory cannot be deleted.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption" />
       </Docs>
     </Member>
     <Member MemberName="DeleteDirectory">
@@ -856,6 +868,8 @@
         <exception cref="T:System.OperationCanceledException">The user cancels the operation or the directory cannot be deleted.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
       </Docs>
     </Member>
     <Member MemberName="DeleteDirectory">
@@ -920,6 +934,9 @@
         <exception cref="T:System.OperationCanceledException">The user cancels the operation or the directory cannot be deleted.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
       </Docs>
     </Member>
     <Member MemberName="DeleteFile">
@@ -1041,6 +1058,8 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have permission to delete the file or the file is read-only.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
       </Docs>
     </Member>
     <Member MemberName="DeleteFile">
@@ -1108,6 +1127,9 @@
         <exception cref="T:System.OperationCanceledException">The user cancelled the operation and <paramref name="onUserCancel" /> is set to <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
       </Docs>
     </Member>
     <Member MemberName="DirectoryExists">
@@ -1175,6 +1197,8 @@
         </remarks>
         <altCompliant cref="None" />
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <altmember cref="T:System.IO.DriveInfo" />
       </Docs>
     </Member>
     <Member MemberName="FileExists">
@@ -1275,10 +1299,12 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
       </Docs>
     </Member>
     <Member MemberName="FindInFiles">
-      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; FindInFiles (string directory, string containsText, bool ignoreCase, Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] fileWildcards);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; FindInFiles (string directory, string containsText, bool ignoreCase, Microsoft.VisualBasic.FileIO.SearchOption searchType, params string[] fileWildcards);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; FindInFiles(string directory, string containsText, bool ignoreCase, valuetype Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] fileWildcards) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.FileSystem.FindInFiles(System.String,System.String,System.Boolean,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -1345,6 +1371,8 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
@@ -1398,10 +1426,12 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
-      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetDirectories (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetDirectories (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, params string[] wildcards);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; GetDirectories(string directory, valuetype Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -1464,6 +1494,8 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryInfo">
@@ -1509,6 +1541,7 @@
         <exception cref="T:System.NotSupportedException">The directory path contains a colon (:) or is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.IO.DirectoryInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetDriveInfo">
@@ -1554,6 +1587,8 @@
         <exception cref="T:System.IO.PathTooLongException">The path exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.IO.DriveInfo" />
+        <altmember cref="T:System.IO.DriveType" />
       </Docs>
     </Member>
     <Member MemberName="GetFileInfo">
@@ -1591,7 +1626,7 @@
    
   
 ## Examples  
- This example retrieves a <xref:System.IO.FileInfo?displayProperty=fullName> object for the file `MyLogFile.log` and uses it to report the file's full name, last access time, and length.  
+ This example retrieves a <xref:System.IO.FileInfo?displayProperty=nameWithType> object for the file `MyLogFile.log` and uses it to report the file's full name, last access time, and length.  
   
  [!code-vb[VbRefFile#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefFile/VB/Class1.vb#1)]  
   
@@ -1605,6 +1640,7 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks ACL (access control list) access to the file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.IO.FileInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
@@ -1668,10 +1704,11 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
-      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetFiles (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetFiles (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, params string[] wildcards);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; GetFiles(string directory, valuetype Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -1741,6 +1778,8 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.SearchOption" />
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -1915,6 +1954,8 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory" />
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -1970,6 +2011,9 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -2025,6 +2069,8 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory" />
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -2085,6 +2131,10 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="MoveFile">
@@ -2208,6 +2258,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
       </Docs>
     </Member>
     <Member MemberName="MoveFile">
@@ -2338,6 +2389,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UIOption" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="OpenTextFieldParser">
@@ -2392,10 +2445,11 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
       </Docs>
     </Member>
     <Member MemberName="OpenTextFieldParser">
-      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, int[] fieldWidths);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, params int[] fieldWidths);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser(string file, int32[] fieldWidths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String,System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -2454,10 +2508,11 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
       </Docs>
     </Member>
     <Member MemberName="OpenTextFieldParser">
-      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, string[] delimiters);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, params string[] delimiters);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser(string file, string[] delimiters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2516,6 +2571,7 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
       </Docs>
     </Member>
     <Member MemberName="OpenTextFileReader">
@@ -2563,6 +2619,8 @@
         <exception cref="T:System.IO.FileNotFoundException">The specified file cannot be found.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to read from the file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="T:System.IO.StreamReader" />
       </Docs>
     </Member>
     <Member MemberName="OpenTextFileReader">
@@ -2612,6 +2670,8 @@
         <exception cref="T:System.IO.FileNotFoundException">The specified file cannot be found.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to read from the file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="T:System.IO.StreamReader" />
       </Docs>
     </Member>
     <Member MemberName="OpenTextFileWriter">
@@ -2665,6 +2725,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The file name ends with a trailing slash.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="T:System.IO.StreamWriter" />
       </Docs>
     </Member>
     <Member MemberName="OpenTextFileWriter">
@@ -2720,6 +2782,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The file name ends with a trailing slash.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="T:System.IO.StreamWriter" />
       </Docs>
     </Member>
     <Member MemberName="ReadAllBytes">
@@ -2836,6 +2900,9 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to write the string to buffer.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText" />
+        <altmember cref="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
       </Docs>
     </Member>
     <Member MemberName="ReadAllText">
@@ -2899,6 +2966,8 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to write the string to buffer.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
       </Docs>
     </Member>
     <Member MemberName="RenameDirectory">
@@ -2951,6 +3020,7 @@
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.MoveDirectory" />
       </Docs>
     </Member>
     <Member MemberName="RenameFile">
@@ -3138,6 +3208,8 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to write the string to buffer.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText" />
       </Docs>
     </Member>
     <Member MemberName="WriteAllText">
@@ -3206,7 +3278,134 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to write the string to buffer.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteDirectory">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDirectories">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of strings representing the path names of subdirectories within a directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAllText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes text to a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveDirectory">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves a directory from one location to another.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenTextFileWriter">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a <see cref="T:System.IO.StreamWriter" /> object to write to the specified file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a file to a new location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindInFiles">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a read-only collection of strings representing the names of files containing the specified text.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFiles">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a read-only collection of strings representing the names of files within a directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyDirectory">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the contents of a directory to another directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenTextFileReader">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a <see cref="T:System.IO.StreamReader" /> object to read from a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves a file to a new location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadAllText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the contents of a text file as a <see langword="String" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenTextFieldParser">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see langword="OpenTextFieldParser" /> method allows you to create a <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object, which provides a way to easily and efficiently parse structured text files, such as logs. The <see langword="TextFieldParser" /> object can be used to read both delimited and fixed-width files.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

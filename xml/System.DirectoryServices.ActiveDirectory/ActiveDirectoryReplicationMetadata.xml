@@ -14,6 +14,9 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" /> class contains replication information for a set of Active Directory Domain Services attributes.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetReplicationMetadata(System.String)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetReplicationMetadata(System.String)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.GetReplicationMetadata(System.String)" />
   </Docs>
   <Members>
     <Member MemberName="AttributeNames">
@@ -33,6 +36,7 @@
         <summary>Gets the names that are contained in this collection.</summary>
         <value>An <see cref="T:System.Collections.ICollection" /> object that contains the LDAP display names of the attributes in this collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -110,6 +114,7 @@
         <summary>Gets an <see cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" /> object in this collection.</summary>
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" /> object that represents the specified attribute.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -129,6 +134,8 @@
         <summary>Gets the values that are contained in this collection.</summary>
         <value>An <see cref="T:System.Collections.ICollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" /> objects in this collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" />
       </Docs>
     </Member>
   </Members>

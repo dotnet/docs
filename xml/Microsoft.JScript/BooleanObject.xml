@@ -14,6 +14,8 @@
     <summary>Represents a Boolean object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.BooleanPrototype" />
+    <altmember cref="T:Microsoft.JScript.BooleanConstructor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +37,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BooleanObject" /> class, specifying the parent and subtype.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanPrototype" />
+        <altmember cref="T:Microsoft.JScript.BooleanConstructor" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -56,6 +60,8 @@
           <see cref="T:System.Boolean" /> or <see cref="T:Microsoft.JScript.BooleanObject" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanPrototype" />
+        <altmember cref="T:Microsoft.JScript.BooleanConstructor" />
       </Docs>
     </Member>
   </Members>

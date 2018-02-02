@@ -52,12 +52,12 @@
   
 -   Adding or removing access control entries in ways that do not maintain the canonical ordering.  
   
- To modify Windows access control security for a registry key, use the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.RegistrySecurity> object. Modify the security object by adding and removing rules, and then use the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method to reattach it.  
+ To modify Windows access control security for a registry key, use the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method to get the <xref:System.Security.AccessControl.RegistrySecurity> object. Modify the security object by adding and removing rules, and then use the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method to reattach it.  
   
 > [!IMPORTANT]
->  Changes you make to a <xref:System.Security.AccessControl.RegistrySecurity> object do not affect the access levels of the registry key until you call the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the registry key.  
+>  Changes you make to a <xref:System.Security.AccessControl.RegistrySecurity> object do not affect the access levels of the registry key until you call the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method to assign the altered security object to the registry key.  
   
- To copy access control security from one registry key to another, use the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.RegistrySecurity> object representing the access and audit rules for the first registry key, and then use the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method to assign those rules to the second registry key. You can also assign the rules to a second registry key with an <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=fullName> or <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A?displayProperty=fullName> method that takes a <xref:System.Security.AccessControl.RegistrySecurity> object parameter.  
+ To copy access control security from one registry key to another, use the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method to get a <xref:System.Security.AccessControl.RegistrySecurity> object representing the access and audit rules for the first registry key, and then use the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method to assign those rules to the second registry key. You can also assign the rules to a second registry key with an <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A?displayProperty=nameWithType> method that takes a <xref:System.Security.AccessControl.RegistrySecurity> object parameter.  
   
  Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a registry key, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.  
   
@@ -70,12 +70,12 @@
   
  The following code example shows how the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method removes rights from a compatible rule, and how the <xref:System.Security.AccessControl.RegistrySecurity.AddAccessRule%2A> method merges rights with compatible rules.  
   
- The example creates a <xref:System.Security.AccessControl.RegistrySecurity> object and adds a rule that allows the current user <xref:System.Security.AccessControl.RegistryRights?displayProperty=fullName> rights. The example then creates a rule that grants the user <xref:System.Security.AccessControl.RegistryRights?displayProperty=fullName>, with the same inheritance and propagation rights as the first rule, and uses the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method to remove this new rule from the <xref:System.Security.AccessControl.RegistrySecurity> object. <xref:System.Security.AccessControl.RegistryRights.SetValue> is a constituent of <xref:System.Security.AccessControl.RegistryRights.ReadKey>, so it is removed from the compatible rule. The rules in the <xref:System.Security.AccessControl.RegistrySecurity> object are displayed, showing the remaining constituents of <xref:System.Security.AccessControl.RegistryRights.ReadKey>.  
+ The example creates a <xref:System.Security.AccessControl.RegistrySecurity> object and adds a rule that allows the current user <xref:System.Security.AccessControl.RegistryRights.ReadKey?displayProperty=nameWithType> rights. The example then creates a rule that grants the user <xref:System.Security.AccessControl.RegistryRights.SetValue?displayProperty=nameWithType>, with the same inheritance and propagation rights as the first rule, and uses the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method to remove this new rule from the <xref:System.Security.AccessControl.RegistrySecurity> object. <xref:System.Security.AccessControl.RegistryRights.SetValue> is a constituent of <xref:System.Security.AccessControl.RegistryRights.ReadKey>, so it is removed from the compatible rule. The rules in the <xref:System.Security.AccessControl.RegistrySecurity> object are displayed, showing the remaining constituents of <xref:System.Security.AccessControl.RegistryRights.ReadKey>.  
   
  The example code then calls the <xref:System.Security.AccessControl.RegistrySecurity.AddAccessRule%2A> method to merge the <xref:System.Security.AccessControl.RegistryRights.SetValue> right back into the rule in the <xref:System.Security.AccessControl.RegistrySecurity> object.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. The second example in this section attaches a security object, and so do the examples in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> and <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. The second example in this section attaches a security object, and so do the examples in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/VB/source.vb#1)]  
@@ -203,7 +203,7 @@
  The recommended way to create access control rules is to use the constructors of the <xref:System.Security.AccessControl.RegistryAccessRule> class.  
   
 > [!NOTE]
->  Although you can specify the <xref:System.Security.AccessControl.InheritanceFlags?displayProperty=fullName> flag, there is no point in doing so. For the purposes of access control, the name/value pairs in a subkey are not separate objects. The access rights to name/value pairs are controlled by the rights of the subkey. Furthermore, since all subkeys are containers (that is, they can contain other subkeys), they are not affected by the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag. Finally, specifying the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag needlessly complicates the maintenance of rules, because it interferes with the normal combination of compatible rules.  
+>  Although you can specify the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit?displayProperty=nameWithType> flag, there is no point in doing so. For the purposes of access control, the name/value pairs in a subkey are not separate objects. The access rights to name/value pairs are controlled by the rights of the subkey. Furthermore, since all subkeys are containers (that is, they can contain other subkeys), they are not affected by the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag. Finally, specifying the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag needlessly complicates the maintenance of rules, because it interferes with the normal combination of compatible rules.  
   
  ]]></format>
         </remarks>
@@ -286,7 +286,7 @@
 ## Remarks  
  The <xref:System.Security.AccessControl.RegistrySecurity.AddAccessRule%2A> method searches for rules with the same user or group and the same <xref:System.Security.AccessControl.AccessControlType> as `rule`. If none are found, `rule` is added. If a matching rule is found, the rights in `rule` are merged with the existing rule.  
   
- Rules cannot be merged if they have different inheritance flags. For example, if a user is allowed read access with no inheritance flags, and <xref:System.Security.AccessControl.RegistrySecurity.AddAccessRule%2A> is used to add a rule giving the user write access with inheritance for subkeys (<xref:System.Security.AccessControl.InheritanceFlags?displayProperty=fullName>), the two rules cannot be merged.  
+ Rules cannot be merged if they have different inheritance flags. For example, if a user is allowed read access with no inheritance flags, and <xref:System.Security.AccessControl.RegistrySecurity.AddAccessRule%2A> is used to add a rule giving the user write access with inheritance for subkeys (<xref:System.Security.AccessControl.InheritanceFlags.ContainerInherit?displayProperty=nameWithType>), the two rules cannot be merged.  
   
  Rules with different <xref:System.Security.AccessControl.AccessControlType> values are never merged.  
   
@@ -298,7 +298,7 @@
  The following code example creates registry access rules and adds them to a <xref:System.Security.AccessControl.RegistrySecurity> object, showing how rules that allow and deny rights remain separate, while compatible rules of the same kind are merged.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. Examples that attach security objects can be found in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> and <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. Examples that attach security objects can be found in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  A code example that demonstrates inheritance and propagation flags can be found in the <xref:System.Security.AccessControl.RegistryAccessRule> class.  
   
@@ -344,7 +344,7 @@
 ## Remarks  
  The <xref:System.Security.AccessControl.RegistrySecurity.AddAuditRule%2A> method searches for rules with the same user or group as `rule`. If none are found, `rule` is added. If a matching rule is found, the flags in `rule` are merged into the existing rule.  
   
- Rules cannot be merged if they have different inheritance flags. For example, if failed attempts to write to a key are audited for a particular user, with no inheritance flags, and <xref:System.Security.AccessControl.RegistrySecurity.AddAuditRule%2A> is used to add a rule specifying that failed attempts to change permissions are to be audited for the same user, but with inheritance for subkeys (<xref:System.Security.AccessControl.InheritanceFlags?displayProperty=fullName>), the two rules cannot be merged.  
+ Rules cannot be merged if they have different inheritance flags. For example, if failed attempts to write to a key are audited for a particular user, with no inheritance flags, and <xref:System.Security.AccessControl.RegistrySecurity.AddAuditRule%2A> is used to add a rule specifying that failed attempts to change permissions are to be audited for the same user, but with inheritance for subkeys (<xref:System.Security.AccessControl.InheritanceFlags.ContainerInherit?displayProperty=nameWithType>), the two rules cannot be merged.  
   
  ]]></format>
         </remarks>
@@ -395,7 +395,7 @@
  The recommended way to create audit rules is to use the constructors of the <xref:System.Security.AccessControl.RegistryAuditRule> class.  
   
 > [!NOTE]
->  Although you can specify the <xref:System.Security.AccessControl.InheritanceFlags?displayProperty=fullName> flag, there is no point in doing so. For the purposes of audit control, the name/value pairs in a subkey are not separate objects. The audit rights to name/value pairs are controlled by the rights of the subkey. Furthermore, since all subkeys are containers (that is, they can contain other subkeys), they are not affected by the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag. Finally, specifying the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag needlessly complicates the maintenance of rules, because it interferes with the normal combination of compatible rules.  
+>  Although you can specify the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit?displayProperty=nameWithType> flag, there is no point in doing so. For the purposes of audit control, the name/value pairs in a subkey are not separate objects. The audit rights to name/value pairs are controlled by the rights of the subkey. Furthermore, since all subkeys are containers (that is, they can contain other subkeys), they are not affected by the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag. Finally, specifying the <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag needlessly complicates the maintenance of rules, because it interferes with the normal combination of compatible rules.  
   
  ]]></format>
         </remarks>
@@ -485,12 +485,12 @@
 ## Examples  
  The following code example shows how the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method removes rights from a compatible rule, and how the <xref:System.Security.AccessControl.RegistrySecurity.AddAccessRule%2A> method merges rights with compatible rules.  
   
- The example creates a <xref:System.Security.AccessControl.RegistrySecurity> object and adds a rule that allows the current user <xref:System.Security.AccessControl.RegistryRights?displayProperty=fullName> rights. The example then creates a rule that grants the user <xref:System.Security.AccessControl.RegistryRights?displayProperty=fullName>, with the same inheritance and propagation rights as the first rule, and uses the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method to remove this new rule from the <xref:System.Security.AccessControl.RegistrySecurity> object. <xref:System.Security.AccessControl.RegistryRights.SetValue> is a constituent of <xref:System.Security.AccessControl.RegistryRights.ReadKey>, so it is removed from the compatible rule. The rules in the <xref:System.Security.AccessControl.RegistrySecurity> object are displayed, showing the remaining constituents of <xref:System.Security.AccessControl.RegistryRights.ReadKey>.  
+ The example creates a <xref:System.Security.AccessControl.RegistrySecurity> object and adds a rule that allows the current user <xref:System.Security.AccessControl.RegistryRights.ReadKey?displayProperty=nameWithType> rights. The example then creates a rule that grants the user <xref:System.Security.AccessControl.RegistryRights.SetValue?displayProperty=nameWithType>, with the same inheritance and propagation rights as the first rule, and uses the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method to remove this new rule from the <xref:System.Security.AccessControl.RegistrySecurity> object. <xref:System.Security.AccessControl.RegistryRights.SetValue> is a constituent of <xref:System.Security.AccessControl.RegistryRights.ReadKey>, so it is removed from the compatible rule. The rules in the <xref:System.Security.AccessControl.RegistrySecurity> object are displayed, showing the remaining constituents of <xref:System.Security.AccessControl.RegistryRights.ReadKey>.  
   
  The example code then calls the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method to merge the <xref:System.Security.AccessControl.RegistryRights.SetValue> right back into the rule in the <xref:System.Security.AccessControl.RegistrySecurity> object.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. The second example in this section attaches a security object, and so do the examples in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName><xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. The second example in this section attaches a security object, and so do the examples in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType><xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/VB/source.vb#1)]  
@@ -534,7 +534,7 @@
 ## Remarks  
  The current <xref:System.Security.AccessControl.RegistrySecurity> is searched for rules that have the same user and the same <xref:System.Security.AccessControl.AccessControlType> value as `rule`. Any rights, inheritance flags, or propagation flags specified by `rule` are ignored when performing this search. If no matching rules are found, no action is taken.  
   
- For example, if a user has multiple rules that allow various rights with different inheritance and propagation flags, you can remove all those rules by creating a <xref:System.Security.AccessControl.RegistryAccessRule> object that specifies the user and <xref:System.Security.AccessControl.AccessControlType?displayProperty=fullName>, with any arbitrary rights and flags, and passing that rule to the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll%2A> method.  
+ For example, if a user has multiple rules that allow various rights with different inheritance and propagation flags, you can remove all those rules by creating a <xref:System.Security.AccessControl.RegistryAccessRule> object that specifies the user and <xref:System.Security.AccessControl.AccessControlType.Allow?displayProperty=nameWithType>, with any arbitrary rights and flags, and passing that rule to the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll%2A> method.  
   
    
   
@@ -544,7 +544,7 @@
  The example creates a <xref:System.Security.AccessControl.RegistrySecurity> object and adds rules that allow and deny various rights for the current user, with different inheritance and propagation flags. The example then creates a new rule that allows the current user to take ownership, and passes that rule to the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll%2A> method to remove the two rules that allow access.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method.  
+>  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
@@ -599,7 +599,7 @@
  The example creates two rules that allow different rights. The rules have compatible inheritance and propagation flags, so when the second rule is added it merges with the first. The example calls the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific%2A> method, specifying the first rule, but because the rules are merged there is no rule that matches. The example then calls the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule%2A> method to the remove the second rule from the merged rule, and finally calls the <xref:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific%2A> method to remove the first rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method.  
+>  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
@@ -773,7 +773,7 @@
  The example creates a <xref:System.Security.AccessControl.RegistrySecurity> object and adds rules that allow and deny various rights for the current user, with different inheritance and propagation flags. The example then creates a new rule that allows the current user only to read the key, and uses the <xref:System.Security.AccessControl.RegistrySecurity.ResetAccessRule%2A> method to remove the all rules for the user and replace them with the new rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method.  
+>  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Security.AccessControl.RegistrySecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.ResetAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.RegistrySecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.ResetAccessRule/VB/source.vb#1)]  
@@ -825,7 +825,7 @@
  The example creates a <xref:System.Security.AccessControl.RegistrySecurity> object and adds rules that allow and deny various rights for the current user, with different inheritance and propagation flags. The example then creates a new rule that allows the current user only to read the key, and uses the <xref:System.Security.AccessControl.RegistrySecurity.SetAccessRule%2A> method to remove the two rules that allow access and to replace them with the new rule. The rule that denies access is not affected.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=fullName> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method.  
+>  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Security.AccessControl.RegistrySecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.SetAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.RegistrySecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.SetAccessRule/VB/source.vb#1)]  

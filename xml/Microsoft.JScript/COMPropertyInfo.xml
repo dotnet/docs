@@ -26,6 +26,10 @@
     <summary>Enables JScript to communicate with an external COM property. This class is used by an external COM implementation to expose its objects to JScript because JScript needs a managed <see cref="T:System.Reflection.MemberInfo" /> in order to bind to an external object.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+    <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+    <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+    <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.COMPropertyInfo" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -63,6 +71,10 @@
         </value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -83,6 +95,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -103,6 +119,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -122,6 +142,10 @@
         <value>null, because the type that declares this property is an external COM object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetAccessors">
@@ -146,6 +170,10 @@
         <returns>A two-element array of <see cref="T:System.Reflection.MethodInfo" /> objects that contains the get and set methods of this property.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCOMMemberInfo">
@@ -166,6 +194,9 @@
         <returns>A managed object that enables JScript to communicate with this external COM property.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -190,6 +221,10 @@
         <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -216,6 +251,10 @@
         <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetGetMethod">
@@ -240,6 +279,10 @@
         <returns>The get accessor for this property.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetIndexParameters">
@@ -260,6 +303,10 @@
         <returns>An array of <see cref="T:System.Reflection.ParameterInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetSetMethod">
@@ -284,6 +331,10 @@
         <returns>The set accessor for this property.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -315,6 +366,10 @@
         <returns>The value of the external COM property.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -339,6 +394,9 @@
         <summary>Initializes the information that enables JScript to communicate with this external COM property.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -366,6 +424,10 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -386,6 +448,10 @@
           <see cref="F:System.Reflection.MemberTypes.Property" />, because this class derives from <see cref="T:System.Reflection.PropertyInfo" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -405,6 +471,10 @@
         <value>The name of the external COM property that this object represents.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="PropertyType">
@@ -424,6 +494,10 @@
         <value>The type of <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -443,6 +517,10 @@
         <value>null, because this instance was not obtained through reflection.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -475,7 +553,24 @@
         <summary>Sets the value of the external COM property by using the <see cref="T:Microsoft.JScript.COMMemberInfo" /> that was specified to the <see cref="M:Microsoft.JScript.COMPropertyInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)" /> method.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array that contains the custom attributes that are attached to this property.</summary>
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,20 +1,20 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.InputTaskItem
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

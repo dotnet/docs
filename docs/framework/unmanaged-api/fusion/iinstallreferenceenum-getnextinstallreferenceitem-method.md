@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IInstallReferenceEnum::GetNextInstallReferenceItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IInstallReferenceEnum::GetNextInstallReferenceItem method [.NET Framework fusion]"
   - "GetNextInstallReferenceItem method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IInstallReferenceEnum::GetNextInstallReferenceItem Method
 Gets a pointer to the next [IInstallReferenceItem](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md) object contained in this [IInstallReferenceEnum](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md) object.  
@@ -61,5 +61,5 @@ HRESULT GetNextInstallReferenceItem (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)   
+ [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)  
  [IInstallReferenceEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md)

@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.MessageContractMemberAttribute</BaseTypeName>
   </Base>
@@ -26,9 +32,9 @@
   
  The <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A> property is used to specify the order of body parts in cases where the default alphabetical order is not appropriate.  
   
- The other properties are inherited from the base class, <xref:System.ServiceModel.MessageContractMemberAttribute?displayProperty=fullName>.  
+ The other properties are inherited from the base class, <xref:System.ServiceModel.MessageContractMemberAttribute?displayProperty=nameWithType>.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
  [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using Message Contracts](~/docs/framework/wcf/feature-details/using-message-contracts.md).  
   
@@ -54,6 +60,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageBodyMemberAttribute" /> class.</summary>
@@ -76,6 +88,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

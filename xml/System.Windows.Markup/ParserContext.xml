@@ -20,18 +20,17 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XAML parser that this context refers to is the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] era XAML parser API that is specific to the WPF implementation, as exposed in <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName>.  
+ The XAML parser that this context refers to is the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] era XAML parser API that is specific to the WPF implementation, as exposed in <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> and <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType>.  
   
  The XAML system in [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] uses a more sophisticated XAML type system and thus also uses a different type of context for XAML processing operations. For more information, see <xref:System.Xaml.XamlSchemaContext>.  
   
- A <xref:System.Windows.Markup.ParserContext> is typically used as an input for a call to a <xref:System.Windows.Markup.XamlReader> operation. In these cases, you are using overloads of <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName> or <xref:System.Windows.Markup.XamlReader.LoadAsync%2A?displayProperty=fullName> where supplying the  <xref:System.Windows.Markup.ParserContext> provides greater control over factors such as the type mapping to XAML, or altering XML processing defaults. Using a <xref:System.Windows.Markup.ParserContext> as opposed to using <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> default behavior is an advanced scenario.  
+ A <xref:System.Windows.Markup.ParserContext> is typically used as an input for a call to a <xref:System.Windows.Markup.XamlReader> operation. In these cases, you are using overloads of <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType> or <xref:System.Windows.Markup.XamlReader.LoadAsync%2A?displayProperty=nameWithType> where supplying the  <xref:System.Windows.Markup.ParserContext> provides greater control over factors such as the type mapping to XAML, or altering XML processing defaults. Using a <xref:System.Windows.Markup.ParserContext> as opposed to using <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> default behavior is an advanced scenario.  
   
  `xml:lang` and `xml:space` behavior is one of the aspects of a context you can override. By default, the parser context uses `en-us` based values. For more information on why the language-level context for XAML uses `en-us` rather than a culture-invariant value, see [WPF Globalization and Localization Overview](~/docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
-<a name="xamlTextUsage_ParserContext"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.XamlReader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,10 +89,9 @@
 ## Remarks  
  The <xref:System.Windows.Markup.ParserContext.BaseUri%2A> is used to resolve external resources that are referenced in XAML.  
   
-<a name="xamlTextUsage_BaseUri"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlParserContext.BaseURI" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -112,10 +110,12 @@
         <Parameter Name="parserContext" Type="System.Windows.Markup.ParserContext" />
       </Parameters>
       <Docs>
-        <param name="parserContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parserContext">The XAML parser context to convert to an <see cref="T:System.Xml.XmlParserContext" />.</param>
+        <summary>Converts a XAML <see cref="T:System.Windows.Markup.ParserContext" /> to an <see cref="T:System.Xml.XmlParserContext" />.</summary>
+        <returns>The converted XML parser context.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parserContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToXmlParserContext">
@@ -158,6 +158,7 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> to use with this <see cref="T:System.Windows.Markup.ParserContext" />.</summary>
         <value>The type mapper to use when mapping XAML elements to CLR types.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.XamlTypeMapper" />
       </Docs>
     </Member>
     <Member MemberName="XmlLang">
@@ -179,12 +180,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is analogous to <xref:System.Xml.XmlReader.XmlLang%2A?displayProperty=fullName>.  
+ This property is analogous to <xref:System.Xml.XmlReader.XmlLang%2A?displayProperty=nameWithType>.  
   
-<a name="xamlTextUsage_XmlLang"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XmlLanguage" />
+        <altmember cref="T:System.Windows.Markup.XmlLangPropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="XmlnsDictionary">
@@ -210,10 +211,9 @@
   
  The <xref:System.Windows.Markup.XmlnsDictionary> uses XAML namespace prefixes as keys and the complete XAML namespace identifier (typically a URI in string form) as values.  
   
-<a name="xamlTextUsage_XmlnsDictionary"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XmlnsDictionary" />
       </Docs>
     </Member>
     <Member MemberName="XmlSpace">
@@ -235,13 +235,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is analogous to <xref:System.Xml.XmlReader.XmlSpace%2A?displayProperty=fullName>.  
+ This property is analogous to <xref:System.Xml.XmlReader.XmlSpace%2A?displayProperty=nameWithType>.  
   
-<a name="xamlTextUsage_XmlSpace"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ParserContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

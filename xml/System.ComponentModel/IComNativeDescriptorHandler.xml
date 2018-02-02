@@ -443,7 +443,7 @@
     </Member>
     <Member MemberName="GetPropertyValue">
       <MemberSignature Language="C#" Value="public object GetPropertyValue (object component, int dispid, ref bool success);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object component, int32 dispid, bool success) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object component, int32 dispid, bool&amp; success) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetPropertyValue(System.Object,System.Int32,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -487,7 +487,7 @@
     </Member>
     <Member MemberName="GetPropertyValue">
       <MemberSignature Language="C#" Value="public object GetPropertyValue (object component, string propertyName, ref bool success);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object component, string propertyName, bool success) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object component, string propertyName, bool&amp; success) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetPropertyValue(System.Object,System.String,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -529,5 +529,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the events for the specified component.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

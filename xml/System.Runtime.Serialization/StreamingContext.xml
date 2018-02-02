@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Runtime.Serialization.StreamingContext.State" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +74,7 @@
         <param name="state">A bitwise combination of the <see cref="T:System.Runtime.Serialization.StreamingContextStates" /> values that specify the source or destination context for this <see cref="T:System.Runtime.Serialization.StreamingContext" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.StreamingContext" /> class with a given context state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.FlagsAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +114,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.FlagsAttribute" />
+        <altmember cref="M:System.Runtime.Serialization.StreamingContext.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -154,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.Serialization.StreamingContext.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -271,5 +276,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.StreamingContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

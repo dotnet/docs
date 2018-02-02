@@ -66,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentPage.BleedBox" />
       </Docs>
     </Member>
     <Member MemberName="BleedBox">
@@ -93,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentPage.BleedBox" />
       </Docs>
     </Member>
     <Member MemberName="ContentBox">
@@ -166,7 +168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Return the value <xref:System.Windows.Documents.DocumentPage.Missing?displayProperty=fullName> when calling code requests a page that does not exist; for example, page 2 of a one-page document.  
+ Return the value <xref:System.Windows.Documents.DocumentPage.Missing?displayProperty=nameWithType> when calling code requests a page that does not exist; for example, page 2 of a one-page document.  
   
  There is always just one missing page object. Its <xref:System.Windows.Documents.DocumentPage.Visual%2A> property is `null`. Its <xref:System.Windows.Documents.DocumentPage.Size%2A>, <xref:System.Windows.Documents.DocumentPage.BleedBox%2A>, and <xref:System.Windows.Documents.DocumentPage.ContentBox%2A> properties are all set to special "empty" values.  
   
@@ -355,5 +357,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentPage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

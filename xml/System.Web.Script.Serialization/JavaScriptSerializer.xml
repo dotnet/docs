@@ -37,8 +37,8 @@
 |Primitive numeric (or numeric-compatible) types: <xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Double>, and <xref:System.Single>. The culture-invariant string representation is used.|Number|  
 |<xref:System.DateTime>|Date object, represented in JSON as "\\/Date(number of ticks)\\/". The number of ticks is a positive or negative long value that indicates the number of ticks (milliseconds) that have elapsed since midnight 01 January, 1970 UTC.<br /><br /> The maximum supported date value is <xref:System.DateTime.MaxValue> (12/31/9999 11:59:59 PM) and the minimum supported date value is <xref:System.DateTime.MinValue> (1/1/0001 12:00:00 AM).|  
 |Enumerations of integer type|Integer equivalent of the enumeration value|  
-|Types that implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> that are not also implementations of <xref:System.Collections.IDictionary> or <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>. This includes types such as <xref:System.Array>, <xref:System.Collections.ArrayList>, and <xref:System.Collections.Generic.List%601>.|Array that uses JSON array syntax|  
-|Types that implement <xref:System.Collections.IDictionary> or <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>. This includes types such as <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Hashtable>.|JavaScript object that uses JSON dictionary syntax|  
+|Types that implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> that are not also implementations of <xref:System.Collections.IDictionary> or <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>. This includes types such as <xref:System.Array>, <xref:System.Collections.ArrayList>, and <xref:System.Collections.Generic.List%601>.|Array that uses JSON array syntax|  
+|Types that implement <xref:System.Collections.IDictionary> or <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>. This includes types such as <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Hashtable>.|JavaScript object that uses JSON dictionary syntax|  
 |Custom concrete (non-abstract) types that have public instance properties that have get accessors or public instance fields.<br /><br /> Note that public write-only properties, public property or public field attributes marked with <xref:System.Web.Script.Serialization.ScriptIgnoreAttribute>, and public indexed properties in these types are ignored.|JavaScript object that uses JSON dictionary syntax. A special metadata property named "__type" is included to ensure correct deserialization. Make sure that public instance properties have get and set accessors to ensure correct deserialization.|  
 |<xref:System.Guid>|String representation of a GUID|  
 |<xref:System.Uri>|String representation of the return value of <xref:System.Uri.GetComponents%2A>|  
@@ -51,13 +51,13 @@
  [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]
  [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  
   
- [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/person.cs#2)]
- [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/person.vb#2)]  
+ [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#2)]
+ [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#2)]  
   
  The next example shows a more complicated and complete project that uses the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class to save and restore the state of an object by using JSON serialization. This code uses a custom converter that is provided for the <xref:System.Web.Script.Serialization.JavaScriptConverter> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Script.Serialization#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Script.Serialization#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Script.Serialization#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#4)]
+ [!code-aspx-vb[System.Web.Script.Serialization#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#4)]  
   
  ]]></format>
     </remarks>
@@ -115,6 +115,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Script.Serialization.JavaScriptTypeResolver" />
+        <altmember cref="T:System.Web.Script.Serialization.SimpleTypeResolver" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToType">
@@ -325,12 +327,16 @@
    
   
 ## Examples  
- The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+The following example provides a simple illustration of how to serialize and deserialize data objects.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  -->  
-  
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  -->  
-  
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  
+
+It requires a class named `Person`, which is shown in the following example. 
+
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#2)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#2)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="input" /> length exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
@@ -462,6 +468,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a value that is less than one.</exception>
+        <altmember cref="P:System.Web.Configuration.ScriptingJsonSerializationSection.MaxJsonLength" />
       </Docs>
     </Member>
     <Member MemberName="RecursionLimit">
@@ -494,6 +501,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a value that is less than one.</exception>
+        <altmember cref="P:System.Web.Configuration.ScriptingJsonSerializationSection.RecursionLimit" />
       </Docs>
     </Member>
     <Member MemberName="RegisterConverters">
@@ -527,7 +535,7 @@
    
   
 ## Examples  
- The following example shows how to register a custom converter with a <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance. This code example is part of a larger example provided for the <xref:System.Web.Script.Serialization.JavaScriptSerializer>class.  
+ The following example shows how to register a custom converter with a <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance. This code example is part of a larger example provided for the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class.  
   
  [!code-csharp[System.Web.Script.Serialization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#1)]
  [!code-vb[System.Web.Script.Serialization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#1)]  
@@ -568,11 +576,15 @@
    
   
 ## Examples  
- The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+The following example provides a simple illustration of how to serialize and deserialize data objects.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  -->  
-  
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  -->  
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  
+
+It requires a class named `Person`, which is shown in the following example. 
+
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#2)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#2)]  
   
  ]]></format>
         </remarks>
@@ -624,5 +636,23 @@
           <paramref name="output" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an object to a JSON string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

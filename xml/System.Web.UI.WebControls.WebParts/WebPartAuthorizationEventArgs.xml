@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event occurs before a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is added to a page. There are a number of common scenarios where a control can be added to a page. For a full description of these, see the Remarks section for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event occurs before a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is added to a page. There are a number of common scenarios where a control can be added to a page. For a full description of these, see the Remarks section for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs> class provides access to properties about the Web Parts control being added to the page. When a control is added, it must be checked to see whether its <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property has been set and, if so, whether the control is authorized to be added to the page.  
   
@@ -64,6 +64,7 @@
         <summary>Gets the string value assigned to the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, used for authorizing whether a control can be added to a page.</summary>
         <value>A <see cref="T:System.String" /> used in determining whether a control is authorized to be added to a page.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" />
       </Docs>
     </Member>
     <Member MemberName="IsAuthorized">
@@ -83,6 +84,7 @@
         <value>
           <see langword="true" /> if the Web Parts control can be added to the page; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
       </Docs>
     </Member>
     <Member MemberName="IsShared">

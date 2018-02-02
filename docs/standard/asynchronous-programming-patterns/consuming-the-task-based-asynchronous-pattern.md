@@ -19,23 +19,26 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Consuming the Task-based Asynchronous Pattern
-When you use the Task-based Asynchronous Pattern (TAP) to work with asynchronous operations, you can use callbacks to achieve waiting without blocking.  For tasks, this is achieved through methods such as <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=fullName>. Language-based asynchronous support hides callbacks by allowing asynchronous operations to be awaited within normal control flow, and compiler-generated code provides this same API-level support.  
+When you use the Task-based Asynchronous Pattern (TAP) to work with asynchronous operations, you can use callbacks to achieve waiting without blocking.  For tasks, this is achieved through methods such as <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType>. Language-based asynchronous support hides callbacks by allowing asynchronous operations to be awaited within normal control flow, and compiler-generated code provides this same API-level support.  
   
 ## Suspending Execution with Await  
  Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], you can use the [await](~/docs/csharp/language-reference/keywords/await.md) keyword in C# and the [Await Operator](~/docs/visual-basic/language-reference/operators/await-operator.md) in Visual Basic to asynchronously await <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. When you're awaiting a <xref:System.Threading.Tasks.Task>, the `await` expression is of type `void`. When you're awaiting a <xref:System.Threading.Tasks.Task%601>, the `await` expression is of type `TResult`. An `await` expression must occur inside the body of an asynchronous method. For more information about C# and Visual Basic language support in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], see the C# and Visual Basic language specifications.  
   
- Under the covers, the await functionality installs a callback on the task by using a continuation.  This callback resumes the asynchronous method at the point of suspension. When the asynchronous method is resumed, if the awaited operation completed successfully and was a <xref:System.Threading.Tasks.Task%601>, its `TResult` is returned.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state, an <xref:System.OperationCanceledException> exception is thrown.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, the exception that caused it to fault is thrown. A `Task` can fault as a result of multiple exceptions, but only one of these exceptions is propagated. However, the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=fullName> property returns an <xref:System.AggregateException> exception that contains all the errors.  
+ Under the covers, the await functionality installs a callback on the task by using a continuation.  This callback resumes the asynchronous method at the point of suspension. When the asynchronous method is resumed, if the awaited operation completed successfully and was a <xref:System.Threading.Tasks.Task%601>, its `TResult` is returned.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state, an <xref:System.OperationCanceledException> exception is thrown.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, the exception that caused it to fault is thrown. A `Task` can fault as a result of multiple exceptions, but only one of these exceptions is propagated. However, the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property returns an <xref:System.AggregateException> exception that contains all the errors.  
   
- If a synchronization context (<xref:System.Threading.SynchronizationContext> object) is associated with the thread that was executing the asynchronous method at the time of suspension (for example, if the <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=fullName> property is not `null`), the asynchronous method resumes on that same synchronization context by using the context’s <xref:System.Threading.SynchronizationContext.Post%2A> method. Otherwise, it relies on the task scheduler (<xref:System.Threading.Tasks.TaskScheduler> object) that was current at the time of suspension. Typically, this is the default task scheduler (<xref:System.Threading.Tasks.TaskScheduler.Default%2A?displayProperty=fullName>), which targets the thread pool. This task scheduler determines whether the awaited asynchronous operation should resume where it completed or whether the resumption should be scheduled. The default scheduler typically allows the continuation to run on the thread that the awaited operation completed.  
+ If a synchronization context (<xref:System.Threading.SynchronizationContext> object) is associated with the thread that was executing the asynchronous method at the time of suspension (for example, if the <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType> property is not `null`), the asynchronous method resumes on that same synchronization context by using the context’s <xref:System.Threading.SynchronizationContext.Post%2A> method. Otherwise, it relies on the task scheduler (<xref:System.Threading.Tasks.TaskScheduler> object) that was current at the time of suspension. Typically, this is the default task scheduler (<xref:System.Threading.Tasks.TaskScheduler.Default%2A?displayProperty=nameWithType>), which targets the thread pool. This task scheduler determines whether the awaited asynchronous operation should resume where it completed or whether the resumption should be scheduled. The default scheduler typically allows the continuation to run on the thread that the awaited operation completed.  
   
  When an asynchronous method is called, it synchronously executes the body of the function up until the first await expression on an awaitable instance that has not yet completed, at which point the invocation returns to the caller. If the asynchronous method does not return `void`, a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> object is returned to represent the ongoing computation. In a non-void asynchronous method, if a return statement is encountered or the end of the method body is reached, the task is completed in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> final state. If an unhandled exception causes control to leave the body of the asynchronous method, the task ends in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state. If that exception is an <xref:System.OperationCanceledException>, the task instead ends in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state. In this manner, the result or exception is eventually published.  
   
  There are several important variations of this behavior.  For performance reasons, if a task has already completed by the time the task is awaited, control is not yielded, and the function continues to execute.  Additionally, returning to the original context isn't always the desired behavior and can be changed; this is described in more detail in the next section.  
   
 ### Configuring Suspension and Resumption with Yield and ConfigureAwait  
- Several methods provide more control over an asynchronous method’s execution. For example, you can use the <xref:System.Threading.Tasks.Task.Yield%2A?displayProperty=fullName> method to introduce a yield point into the asynchronous method:  
+ Several methods provide more control over an asynchronous method’s execution. For example, you can use the <xref:System.Threading.Tasks.Task.Yield%2A?displayProperty=nameWithType> method to introduce a yield point into the asynchronous method:  
   
 ```csharp  
 public class Task : …  
@@ -48,7 +51,7 @@ public class Task : …
  This is equivalent to asynchronously posting or scheduling back to the current context.  
   
 ```csharp  
-Task.Run(async  delegate  
+Task.Run(async delegate  
 {  
     for(int i=0; i<1000000; i++)  
     {  
@@ -58,7 +61,7 @@ Task.Run(async  delegate
 });  
 ```  
   
- You can also use the <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=fullName> method for better control over suspension and resumption in an asynchronous method.  As mentioned previously, by default, the current context is captured at the time an asynchronous  method is suspended, and that captured context is used to invoke the asynchronous  method’s continuation upon resumption.  In many cases, this is the exact behavior you want.  In other cases, you may not care about the continuation context, and you can achieve better performance by avoiding such posts back to the original context.  To enable this, use the <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=fullName> method to inform the await operation not to capture and resume on the context, but to continue execution wherever the asynchronous operation that was being awaited completed:  
+ You can also use the <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=nameWithType> method for better control over suspension and resumption in an asynchronous method.  As mentioned previously, by default, the current context is captured at the time an asynchronous  method is suspended, and that captured context is used to invoke the asynchronous  method’s continuation upon resumption.  In many cases, this is the exact behavior you want.  In other cases, you may not care about the continuation context, and you can achieve better performance by avoiding such posts back to the original context.  To enable this, use the <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=nameWithType> method to inform the await operation not to capture and resume on the context, but to continue execution wherever the asynchronous operation that was being awaited completed:  
   
 ```csharp  
 await someTask.ConfigureAwait(continueOnCapturedContext:false);  
@@ -98,7 +101,7 @@ var cts = new CancellationTokenSource();
   
  Cancellation requests may be initiated from any thread.  
   
- You can pass the <xref:System.Threading.CancellationToken.None%2A?displayProperty=fullName> value to any method that accepts a cancellation token to indicate that cancellation will never be requested.  This causes the <xref:System.Threading.CancellationToken.CanBeCanceled%2A?displayProperty=fullName> property to return `false`, and the called method can optimize accordingly.  For testing purposes, you can also pass in a pre-canceled cancellation token that is instantiated by using the constructor that accepts a Boolean value to indicate whether the token should start in an already-canceled or not-cancelable state.  
+ You can pass the <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType> value to any method that accepts a cancellation token to indicate that cancellation will never be requested.  This causes the <xref:System.Threading.CancellationToken.CanBeCanceled%2A?displayProperty=nameWithType> property to return `false`, and the called method can optimize accordingly.  For testing purposes, you can also pass in a pre-canceled cancellation token that is instantiated by using the constructor that accepts a Boolean value to indicate whether the token should start in an already-canceled or not-cancelable state.  
   
  This approach to cancellation has several advantages:  
   
@@ -114,7 +117,7 @@ var cts = new CancellationTokenSource();
  Some asynchronous methods expose progress through a progress interface passed into the asynchronous method.  For example, consider a function which asynchronously downloads a string of text, and along the way raises progress updates that include the percentage of the download that has completed thus far.  Such a method could be consumed in a Windows Presentation Foundation (WPF) application as follows:  
   
 ```csharp  
-private async  void btnDownload_Click(object sender, RoutedEventArgs e)    
+private async void btnDownload_Click(object sender, RoutedEventArgs e)    
 {  
     btnDownload.IsEnabled = false;  
     try  
@@ -134,7 +137,7 @@ private async  void btnDownload_Click(object sender, RoutedEventArgs e)
  The <xref:System.Threading.Tasks.Task> class includes several <xref:System.Threading.Tasks.Task.Run%2A> methods that let you easily offload work as a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> to the thread pool, for example:  
   
 ```csharp  
-public async  void button1_Click(object sender, EventArgs e)  
+public async void button1_Click(object sender, EventArgs e)  
 {  
     textBox1.Text = await Task.Run(() =>  
     {  
@@ -144,10 +147,10 @@ public async  void button1_Click(object sender, EventArgs e)
 }  
 ```  
   
- Some of these <xref:System.Threading.Tasks.Task.Run%2A> methods, such as the <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=fullName> overload, exist as shorthand for the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method.  Other overloads, such as <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=fullName>, enable you to use await within the offloaded work, for example:  
+ Some of these <xref:System.Threading.Tasks.Task.Run%2A> methods, such as the <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> overload, exist as shorthand for the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method.  Other overloads, such as <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType>, enable you to use await within the offloaded work, for example:  
   
 ```csharp  
-public async  void button1_Click(object sender, EventArgs e)  
+public async void button1_Click(object sender, EventArgs e)  
 {  
     pictureBox1.Image = await Task.Run(async() =>  
     {  
@@ -158,7 +161,7 @@ public async  void button1_Click(object sender, EventArgs e)
 }  
 ```  
   
- Such overloads are logically equivalent to using the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method in conjunction with the <xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A> extension method in the Task Parallel Library.  
+ Such overloads are logically equivalent to using the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method in conjunction with the <xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A> extension method in the Task Parallel Library.  
   
 ### Task.FromResult  
  Use the <xref:System.Threading.Tasks.Task.FromResult%2A> method in scenarios where data may already be available and just needs to be returned from a task-returning method lifted into a <xref:System.Threading.Tasks.Task%601>:  
@@ -172,7 +175,7 @@ public Task<int> GetValueAsync(string key)
         GetValueAsyncInternal();  
 }  
   
-private async  Task<int> GetValueAsyncInternal(string key)  
+private async Task<int> GetValueAsyncInternal(string key)  
 {  
     …  
 }  
@@ -314,7 +317,7 @@ foreach(Task recommendation in recommendations)
  or even:  
   
 ```  
-private static async  void LogCompletionIfFailed(IEnumerable<Task> tasks)  
+private static async void LogCompletionIfFailed(IEnumerable<Task> tasks)  
 {  
     foreach(var task in tasks)  
     {  
@@ -427,7 +430,7 @@ public void btnCancel_Click(object sender, EventArgs e)
     if (m_cts != null) m_cts.Cancel();  
 }  
   
-public async  void btnRun_Click(object sender, EventArgs e)  
+public async void btnRun_Click(object sender, EventArgs e)  
 {  
     m_cts = new CancellationTokenSource();  
     btnRun.Enabled = false;  
@@ -445,7 +448,7 @@ public async  void btnRun_Click(object sender, EventArgs e)
     finally { btnRun.Enabled = true; }  
 }  
   
-private static async  Task UntilCompletionOrCancellation(  
+private static async Task UntilCompletionOrCancellation(  
     Task asyncOp, CancellationToken ct)  
 {  
     var tcs = new TaskCompletionSource<bool>();  
@@ -460,7 +463,7 @@ private static async  Task UntilCompletionOrCancellation(
 ```csharp  
 private CancellationTokenSource m_cts;  
   
-public async  void btnRun_Click(object sender, EventArgs e)  
+public async void btnRun_Click(object sender, EventArgs e)  
 {  
     m_cts = new CancellationTokenSource();  
   
@@ -480,14 +483,14 @@ public async  void btnRun_Click(object sender, EventArgs e)
  Another example of early bailout involves using the <xref:System.Threading.Tasks.Task.WhenAny%2A> method in conjunction with the <xref:System.Threading.Tasks.Task.Delay%2A> method, as discussed in the next section.  
   
 ### Task.Delay  
- You can use the <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=fullName> method to introduce pauses into an asynchronous method’s execution.  This is useful for many kinds of functionality, including building polling loops and delaying the handling of user input for a predetermined period of time.  The <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=fullName> method can also be useful in combination with <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> for implementing time-outs on awaits.  
+ You can use the <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> method to introduce pauses into an asynchronous method’s execution.  This is useful for many kinds of functionality, including building polling loops and delaying the handling of user input for a predetermined period of time.  The <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> method can also be useful in combination with <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> for implementing time-outs on awaits.  
   
- If a task that’s part of a larger asynchronous operation (for example, an ASP.NET web service) takes too long to complete, the overall operation could suffer, especially if it fails to ever complete.  For this reason, it’s important to be able to time out when waiting on an asynchronous operation.  The synchronous <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName>, <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName>, and <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=fullName> methods accept time-out values, but the corresponding <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=fullName>/<xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> and the previously mentioned <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>/<xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> methods do not.  Instead, you can use <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=fullName> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> in combination to implement a time-out.  
+ If a task that’s part of a larger asynchronous operation (for example, an ASP.NET web service) takes too long to complete, the overall operation could suffer, especially if it fails to ever complete.  For this reason, it’s important to be able to time out when waiting on an asynchronous operation.  The synchronous <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> methods accept time-out values, but the corresponding <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=nameWithType>/<xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> and the previously mentioned <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>/<xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> methods do not.  Instead, you can use <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> in combination to implement a time-out.  
   
  For example, in your UI application, let's say that you want to download an image and disable the UI while the image is downloading. However, if the download takes too long, you want to re-enable the UI and discard the download:  
   
 ```csharp  
-public async  void btnDownload_Click(object sender, EventArgs e)  
+public async void btnDownload_Click(object sender, EventArgs e)  
 {  
     btnDownload.Enabled = false;  
     try  
@@ -514,7 +517,7 @@ public async  void btnDownload_Click(object sender, EventArgs e)
  The same applies to multiple downloads, because <xref:System.Threading.Tasks.Task.WhenAll%2A> returns a task:  
   
 ```csharp  
-public async  void btnDownload_Click(object sender, RoutedEventArgs e)  
+public async void btnDownload_Click(object sender, RoutedEventArgs e)  
 {  
     btnDownload.Enabled = false;  
     try  
@@ -558,7 +561,7 @@ public static T RetryOnFault<T>(
  You can build an almost identical helper method for asynchronous operations that are implemented with TAP and thus return tasks:  
   
 ```csharp  
-public static async  Task<T> RetryOnFault<T>(  
+public static async Task<T> RetryOnFault<T>(  
     Func<Task<T>> function, int maxTries)  
 {  
     for(int i=0; i<maxTries; i++)  
@@ -581,7 +584,7 @@ string pageContents = await RetryOnFault(
  You could extend the `RetryOnFault` function further. For example, the function could accept another `Func<Task>` that will be invoked between retries to determine when to try the operation again; for example:  
   
 ```csharp  
-public static async  Task<T> RetryOnFault<T>(  
+public static async Task<T> RetryOnFault<T>(  
     Func<Task<T>> function, int maxTries, Func<Task> retryWhen)  
 {  
     for(int i=0; i<maxTries; i++)  
@@ -607,7 +610,7 @@ string pageContents = await RetryOnFault(
  Sometimes, you can take advantage of redundancy to improve an operation’s latency and chances for success.  Consider multiple web services that provide stock quotes, but at various times of the day, each service may provide different levels of quality and response times.  To deal with these fluctuations, you may issue requests to all the web services, and as soon as you get a response from one, cancel the remaining requests.  You can implement a helper function to make it easier to implement this common pattern of launching multiple operations, waiting for any, and then canceling the rest. The `NeedOnlyOne` function in the following example illustrates this scenario:  
   
 ```csharp  
-public static async  Task<T> NeedOnlyOne(  
+public static async Task<T> NeedOnlyOne(  
     params Func<CancellationToken,Task<T>> [] functions)  
 {  
     var cts = new CancellationTokenSource();  
@@ -740,7 +743,7 @@ private AsyncCache<string,string> m_webPages =
  You can then use this cache in asynchronous methods whenever you need the contents of a web page. The `AsyncCache` class ensures that you’re downloading as few pages as possible, and caches the results.  
   
 ```csharp  
-private async  void btnDownload_Click(object sender, RoutedEventArgs e)   
+private async void btnDownload_Click(object sender, RoutedEventArgs e)   
 {  
     btnDownload.IsEnabled = false;  
     try  
@@ -798,7 +801,7 @@ public class AsyncProducerConsumerCollection<T>
 ```csharp  
 private static AsyncProducerConsumerCollection<int> m_data = …;  
 …  
-private static async  Task ConsumerAsync()  
+private static async Task ConsumerAsync()  
 {  
     while(true)  
     {  
@@ -818,7 +821,7 @@ private static void Produce(int data)
 ```csharp  
 private static BufferBlock<int> m_data = …;  
 …  
-private static async  Task ConsumerAsync()  
+private static async Task ConsumerAsync()  
 {  
     while(true)  
     {  
@@ -837,6 +840,6 @@ private static void Produce(int data)
 >  The <xref:System.Threading.Tasks.Dataflow> namespace is available in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] through **NuGet**. To install the assembly that contains the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the Microsoft.Tpl.Dataflow package.  
   
 ## See Also  
- [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)   
- [Implementing the Task-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md)   
+ [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)  
+ [Implementing the Task-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md)  
  [Interop with Other Asynchronous Patterns and Types](../../../docs/standard/asynchronous-programming-patterns/interop-with-other-asynchronous-patterns-and-types.md)

@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#filter"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/add/filter"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "initializeData attribute"
   - "<filter> element for <add> for <listeners> for <source>"
@@ -26,6 +21,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;
 Adds a filter to a listener in the `Listeners` collection for a trace source.  
@@ -102,8 +99,8 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.TraceSource>   
- <xref:System.Diagnostics.TraceListener>   
- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=fullName>   
- <xref:System.Diagnostics.TraceFilter>   
+ <xref:System.Diagnostics.TraceSource>  
+ <xref:System.Diagnostics.TraceListener>  
+ <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>  
+ <xref:System.Diagnostics.TraceFilter>  
  [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> classes and conversion of XML data types, see the [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) topic.  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> classes and conversion of XML data types, see the [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) topic.  
   
  ]]></format>
         </remarks>
@@ -148,7 +148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> classes and conversion of XML data types, see the [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) topic.  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> classes and conversion of XML data types, see the [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) topic.  
   
  ]]></format>
         </remarks>
@@ -346,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlTypeCode" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -378,7 +379,7 @@
 ## Remarks  
  The <xref:System.Xml.Schema.XmlSchemaDatatype.ValueType%2A> property gets the CLR type of the item. For example, an element of type `xs:int` would have a <xref:System.Xml.Schema.XmlSchemaDatatype.ValueType%2A> of <xref:System.Int32> by default. However, the <xref:System.Xml.Schema.XmlSchemaDatatype.ValueType%2A> could be any one of the valid types that can be mapped to `xs:int`, such as <xref:System.Int16> or <xref:System.Double>.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
    
   
@@ -414,7 +415,18 @@
         <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchemaDatatypeVariety" /> value for the simple type.</summary>
         <value>The <see cref="T:System.Xml.Schema.XmlSchemaDatatypeVariety" /> value for the simple type.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaDatatypeVariety" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ChangeType">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value specified, whose type is one of the valid Common Language Runtime (CLR) representations of the XML schema type represented by the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" />, to another valid CLR representation of the same value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -241,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property can only get an item. To set an item, use the <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property, which can both set and get an item.  
+ The <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=nameWithType> property can only get an item. To set an item, use the <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=nameWithType> property, which can both set and get an item.  
   
  ]]></format>
         </remarks>
@@ -308,7 +308,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload gets the key from the object referenced by the `deviceFilter` parameter and then calls the <xref:System.Web.Mobile.DeviceFilterElementCollection.Remove%2A?displayProperty=fullName> method with the key as the argument.  
+ This overload gets the key from the object referenced by the `deviceFilter` parameter and then calls the <xref:System.Web.Mobile.DeviceFilterElementCollection.Remove%2A?displayProperty=nameWithType> method with the key as the argument.  
   
  ]]></format>
         </remarks>
@@ -335,5 +335,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a specified object from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

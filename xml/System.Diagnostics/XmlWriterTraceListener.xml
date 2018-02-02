@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+ This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
   
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
@@ -242,7 +242,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+ This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
   
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
@@ -282,7 +282,7 @@
 > [!NOTE]
 >  To reduce the chance of an exception, any character that might invalidate the output is replaced with a "?" character.  
   
- The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+ The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
   
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =  
@@ -338,7 +338,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default behavior is to display the message and detailed message in a message box when the application is running in user-interface mode, and to the <xref:System.Diagnostics.TraceListener> instances in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. By default, the collection contains an instance of <xref:System.Diagnostics.DefaultTraceListener>. You can customize this behavior by adding or removing a <xref:System.Diagnostics.TraceListener> from the collection.  
+ The default behavior is to display the message and detailed message in a message box when the application is running in user-interface mode, and to the <xref:System.Diagnostics.TraceListener> instances in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection. By default, the collection contains an instance of <xref:System.Diagnostics.DefaultTraceListener>. You can customize this behavior by adding or removing a <xref:System.Diagnostics.TraceListener> from the collection.  
   
  ]]></format>
         </remarks>
@@ -386,7 +386,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object[] data);" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -472,7 +472,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -509,7 +509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method is called, passing in the `format` string and `args` array as parameters, to format the `args` object array as the `Message` element.  
+ The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method is called, passing in the `format` string and `args` array as parameters, to format the `args` object array as the `Message` element.  
   
 > [!IMPORTANT]
 >  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
@@ -549,7 +549,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is used for the correlation of related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId`value to a "B" formatted string, which appears in the header. The `SubTypeName` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType.Transfer>.  
+ The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is used for the correlation of related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType> method is called to convert the `relatedActivityId`value to a "B" formatted string, which appears in the header. The `SubTypeName` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType.Transfer>.  
   
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is not intended to be called by application code.  It is intended to be called by a <xref:System.Diagnostics.TraceSource> object to emit the trace information for its <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method.  
@@ -617,5 +617,32 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes event trace information to the output file or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the output file or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

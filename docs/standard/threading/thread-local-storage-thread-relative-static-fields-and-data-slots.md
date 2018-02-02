@@ -18,6 +18,9 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Thread Local Storage: Thread-Relative Static Fields and Data Slots
 You can use managed thread local storage (TLS) to store data that is unique to a thread and application domain. The .NET Framework provides two ways to use managed TLS: thread-relative static fields and data slots.  
@@ -28,7 +31,7 @@ You can use managed thread local storage (TLS) to store data that is unique to a
   
  In unmanaged C++, you use `TlsAlloc` to allocate slots dynamically and `__declspec(thread)` to declare that a variable should be allocated in thread-relative storage. Thread-relative static fields and data slots provide the managed version of this behavior.  
   
- In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use the <xref:System.Threading.ThreadLocal%601?displayProperty=fullName> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md).  
+ In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md).  
   
 ## Uniqueness of Data in Managed TLS  
  Whether you use thread-relative static fields or data slots, data in managed TLS is unique to the combination of thread and application domain.  
@@ -51,17 +54,17 @@ You can use managed thread local storage (TLS) to store data that is unique to a
 ## Data Slots  
  The .NET Framework provides dynamic data slots that are unique to a combination of thread and application-domain. There are two types of data slots: named slots and unnamed slots. Both are implemented by using the <xref:System.LocalDataStoreSlot> structure.  
   
--   To create a named data slot, use the <xref:System.Threading.Thread.AllocateNamedDataSlot%2A?displayProperty=fullName> or <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=fullName> method. To get a reference to an existing named slot, pass its name to the <xref:System.Threading.Thread.GetNamedDataSlot%2A> method.  
+-   To create a named data slot, use the <xref:System.Threading.Thread.AllocateNamedDataSlot%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType> method. To get a reference to an existing named slot, pass its name to the <xref:System.Threading.Thread.GetNamedDataSlot%2A> method.  
   
--   To create an unnamed data slot, use the <xref:System.Threading.Thread.AllocateDataSlot%2A?displayProperty=fullName> method.  
+-   To create an unnamed data slot, use the <xref:System.Threading.Thread.AllocateDataSlot%2A?displayProperty=nameWithType> method.  
   
- For both named and unnamed slots, use the <xref:System.Threading.Thread.SetData%2A?displayProperty=fullName> and <xref:System.Threading.Thread.GetData%2A?displayProperty=fullName> methods to set and retrieve the information in the slot. These are static methods that always act on the data for the thread that is currently executing them.  
+ For both named and unnamed slots, use the <xref:System.Threading.Thread.SetData%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.GetData%2A?displayProperty=nameWithType> methods to set and retrieve the information in the slot. These are static methods that always act on the data for the thread that is currently executing them.  
   
  Named slots can be convenient, because you can retrieve the slot when you need it by passing its name to the <xref:System.Threading.Thread.GetNamedDataSlot%2A> method, instead of maintaining a reference to an unnamed slot. However, if another component uses the same name for its thread-relative storage and a thread executes code from both your component and the other component, the two components might corrupt each other's data. (This scenario assumes that both components are running in the same application domain, and that they are not designed to share the same data.)  
   
 ## See Also  
- <xref:System.ContextStaticAttribute>   
- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=fullName>   
- <xref:System.ThreadStaticAttribute>   
- <xref:System.Runtime.Remoting.Messaging.CallContext>   
+ <xref:System.ContextStaticAttribute>  
+ <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>  
+ <xref:System.ThreadStaticAttribute>  
+ <xref:System.Runtime.Remoting.Messaging.CallContext>  
  [Threading](../../../docs/standard/threading/index.md)

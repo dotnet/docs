@@ -219,5 +219,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SignFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Signs a ClickOnce manifest or PE file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

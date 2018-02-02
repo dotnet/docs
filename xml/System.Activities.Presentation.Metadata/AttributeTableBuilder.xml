@@ -87,7 +87,7 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type type, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -127,7 +127,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.ComponentModel.MemberDescriptor descriptor, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.ComponentModel.MemberDescriptor descriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, class System.ComponentModel.MemberDescriptor descriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.ComponentModel.MemberDescriptor,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -169,7 +169,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.Reflection.MemberInfo member, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.Reflection.MemberInfo member, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, class System.Reflection.MemberInfo member, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.Reflection.MemberInfo,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -211,7 +211,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, string memberName, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, string memberName, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, string memberName, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.String,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -253,7 +253,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
-      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.Windows.DependencyProperty dp, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.Windows.DependencyProperty dp, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, class System.Windows.DependencyProperty dp, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.Windows.DependencyProperty,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -371,7 +371,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some overrides of <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A>cannot validate that values passed to their parameters represent valid members on classes. <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable%2A> verifies that all custom attribute information corresponds to actual members. This method can take a long time to complete and is not recommended unless validation is explicitly needed.  
+ Some overrides of <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> cannot validate that values passed to their parameters represent valid members on classes. <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable%2A> verifies that all custom attribute information corresponds to actual members. This method can take a long time to complete and is not recommended unless validation is explicitly needed.  
   
  ]]></format>
         </remarks>

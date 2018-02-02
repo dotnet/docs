@@ -26,7 +26,7 @@
             <tr>
                <th>First Name</th>
                <th>Last Name</th>
-               <th>E-mail</th>
+               <th>Email</th>
             </tr>        
         </HeaderTemplate>
         <ItemTemplate>

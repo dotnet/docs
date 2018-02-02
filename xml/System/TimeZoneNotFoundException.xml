@@ -40,7 +40,7 @@
   
 -   By calling one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a time zone.  
   
- See the examples for the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=fullName> and <xref:System.TimeZoneInfo.FromSerializedString%2A> methods.  
+ See the examples for the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=nameWithType> and <xref:System.TimeZoneInfo.FromSerializedString%2A> methods.  
   
  ]]></format>
     </remarks>
@@ -198,5 +198,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.TimeZoneNotFoundException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

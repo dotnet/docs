@@ -35,6 +35,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+    <altmember cref="T:System.ComponentModel.ToolboxItemAttribute" />
+    <altmember cref="T:System.Drawing.Design.ToolboxItemCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,7 +105,7 @@
 ## Remarks  
  The <xref:System.Drawing.Design.ToolboxService.CreateItemContainer%2A> method gives you the opportunity to provide a derived version of a <xref:System.Drawing.Design.ToolboxItemContainer>. By default, the <xref:System.Drawing.Design.ToolboxService> class does not support linked items, so it returns `null` for link parameters that are not `null`. To provide link support, you should override this method to create a derived <xref:System.Drawing.Design.ToolboxItemContainer> that is capable of handling links.  
   
- The data object passed in should contain data obtained from a prior call to the <xref:System.Drawing.Design.ToolboxItemContainer.ToolboxData%2A?displayProperty=fullName> property on a toolbox item container.  
+ The data object passed in should contain data obtained from a prior call to the <xref:System.Drawing.Design.ToolboxItemContainer.ToolboxData%2A?displayProperty=nameWithType> property on a toolbox item container.  
   
  ]]></format>
         </remarks>
@@ -153,6 +156,7 @@
   
  Linked toolbox items make possible scenarios such as disabling the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] toolbox items when the Windows Forms designer is open.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
     <Member MemberName="FilterChanged">
@@ -336,6 +340,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="an" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.AppDomain" />
+        <altmember cref="T:System.Reflection.AssemblyName" />
+        <altmember cref="T:System.Reflection.Assembly" />
       </Docs>
     </Member>
     <Member MemberName="GetToolboxItems">
@@ -381,6 +388,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="a" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.AppDomain" />
+        <altmember cref="T:System.Reflection.Assembly" />
       </Docs>
     </Member>
     <Member MemberName="GetToolboxItems">
@@ -511,6 +520,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataObject" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
     <Member MemberName="IsItemContainerSupported">
@@ -1441,5 +1451,122 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.AddToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified toolbox item to the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetToolboxItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Drawing.Design.ToolboxItem" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.IsToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified object is a serialized toolbox item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.RemoveToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified toolbox item from the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.AddCreator">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new toolbox item creator for a specified data format.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.GetToolboxItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of toolbox items from the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.DeserializeToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a toolbox item from the specified object that represents a toolbox item in serialized form.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.GetSelectedToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the currently selected toolbox item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.AddLinkedToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a project-linked toolbox item to the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.IsSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified object which represents a serialized toolbox item can be used by the specified designer host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Drawing.Design.IToolboxService.RemoveCreator">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a previously added toolbox item creator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateItemContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new toolbox item container from a toolbox item or a saved data object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a toolbox item for a given type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,7 +20,7 @@
   
  This class has one static property, <xref:System.Drawing.BufferedGraphicsManager.Current%2A>, which returns the main <xref:System.Drawing.BufferedGraphicsContext> for the current application domain. The <xref:System.Drawing.BufferedGraphicsContext> class creates <xref:System.Drawing.BufferedGraphics> instances that can be used to draw buffered graphics.  
   
- The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> object for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> object for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property.  
+ The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> object for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> object for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=nameWithType> property.  
   
  For more information on double buffering, see [Double Buffered Graphics](~/docs/framework/winforms/advanced/double-buffered-graphics.md), <xref:System.Drawing.BufferedGraphics>, and <xref:System.Drawing.BufferedGraphicsContext>.  
   
@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.BufferedGraphicsContext" />
+    <altmember cref="T:System.Drawing.BufferedGraphics" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -69,6 +71,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.BufferedGraphicsContext" />
+        <altmember cref="T:System.Drawing.BufferedGraphics" />
       </Docs>
     </Member>
   </Members>

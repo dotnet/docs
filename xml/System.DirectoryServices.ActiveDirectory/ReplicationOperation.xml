@@ -33,6 +33,7 @@
         <summary>Contains the operation number of this replication operation.</summary>
         <value>An integer that contains the operation number of this replication operation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" />
       </Docs>
     </Member>
     <Member MemberName="OperationType">
@@ -52,6 +53,8 @@
         <summary>Contains the type of replication operation that this operation represents.</summary>
         <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationType" /> members that indicates the type of replication operation that this operation represents.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationType" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" />
       </Docs>
     </Member>
     <Member MemberName="PartitionName">
@@ -71,6 +74,7 @@
         <summary>Contains the distinguished name of the partition that is associated with this replication operation.</summary>
         <value>A string that contains the distinguished name of the partition that is associated with this replication operation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" />
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -97,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" />
       </Docs>
     </Member>
     <Member MemberName="SourceServer">
@@ -116,6 +121,7 @@
         <summary>Contains the DNS name of the source server for this replication operation.</summary>
         <value>A string that contains the DNS name of the source server for this replication operation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" />
       </Docs>
     </Member>
     <Member MemberName="TimeEnqueued">
@@ -135,6 +141,8 @@
         <summary>Contains the time that this replication operation was added to the operation queue.</summary>
         <value>A <see cref="T:System.DateTime" /> object that contains the date and time that this replication operation was added to the operation queue.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" />
       </Docs>
     </Member>
   </Members>

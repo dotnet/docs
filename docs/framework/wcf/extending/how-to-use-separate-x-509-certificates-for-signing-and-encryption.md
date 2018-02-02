@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF, extensibility"
   - "ClientCredentials class"
   - "ClientCredentialsSecurityTokenManager class"
 ms.assetid: 0b06ce4e-7835-4d82-8baf-d525c71a0e49
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Use Separate X.509 Certificates for Signing and Encryption
 This topic shows how to configure [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to use different certificates for message signing and encryption on both the client and service.  
@@ -93,9 +98,9 @@ This topic shows how to configure [!INCLUDE[indigo1](../../../../includes/indigo
      [!code-vb[c_FourCerts#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb/source.vb#7)]  
   
 ## See Also  
- <xref:System.ServiceModel.Description.ClientCredentials>   
- <xref:System.ServiceModel.Description.ServiceCredentials>   
- <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>   
- <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager>   
- <xref:System.ServiceModel.Security.IdentityVerifier>   
+ <xref:System.ServiceModel.Description.ClientCredentials>  
+ <xref:System.ServiceModel.Description.ServiceCredentials>  
+ <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>  
+ <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager>  
+ <xref:System.ServiceModel.Security.IdentityVerifier>  
  [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)

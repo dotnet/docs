@@ -9,21 +9,26 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 2d45cf41-d8ae-4409-af3e-a96a7e476d85
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating a DataTable from a DataView
-Once you have retrieved data from a data source, and have filled a <xref:System.Data.DataTable> with the data, you may want to sort, filter, or otherwise limit the returned data without retrieving it again. The <xref:System.Data.DataView> class makes this possible. In addition, if you need to create a new <xref:System.Data.DataTable>from the <xref:System.Data.DataView>, you can use the <xref:System.Data.DataView.ToTable%2A> method to copy all the rows and columns, or a subset of the data into a new <xref:System.Data.DataTable>. The <xref:System.Data.DataView.ToTable%2A> method provides overloads to:  
+Once you have retrieved data from a data source, and have filled a <xref:System.Data.DataTable> with the data, you may want to sort, filter, or otherwise limit the returned data without retrieving it again. The <xref:System.Data.DataView> class makes this possible. In addition, if you need to create a new <xref:System.Data.DataTable> from the <xref:System.Data.DataView>, you can use the <xref:System.Data.DataView.ToTable%2A> method to copy all the rows and columns, or a subset of the data into a new <xref:System.Data.DataTable>. The <xref:System.Data.DataView.ToTable%2A> method provides overloads to:  
   
 -   Create a <xref:System.Data.DataTable> containing columns that are a subset of the columns in the <xref:System.Data.DataView>.  
   
--   Create a <xref:System.Data.DataTable>that includes only distinct rows from the <xref:System.Data.DataView>, analogously to the DISTINCT keyword in Transact-SQL.  
+-   Create a <xref:System.Data.DataTable> that includes only distinct rows from the <xref:System.Data.DataView>, analogously to the DISTINCT keyword in Transact-SQL.  
   
 ## Example  
- The following console application example creates a <xref:System.Data.DataTable>that contains data from the **Person.Contact** table in the **AdventureWorks** sample database. Next, the example creates a sorted and filtered <xref:System.Data.DataView>based on the <xref:System.Data.DataTable>. After displaying the contents of the <xref:System.Data.DataTable>and the <xref:System.Data.DataView>, the example creates a new <xref:System.Data.DataTable>from the <xref:System.Data.DataView> by calling the <xref:System.Data.DataView.ToTable%2A> method, selecting only a subset of the available columns. Finally, the example displays the contents of the new <xref:System.Data.DataTable>.  
+ The following console application example creates a <xref:System.Data.DataTable> that contains data from the **Person.Contact** table in the **AdventureWorks** sample database. Next, the example creates a sorted and filtered <xref:System.Data.DataView> based on the <xref:System.Data.DataTable>. After displaying the contents of the <xref:System.Data.DataTable> and the <xref:System.Data.DataView>, the example creates a new <xref:System.Data.DataTable> from the <xref:System.Data.DataView> by calling the <xref:System.Data.DataView.ToTable%2A> method, selecting only a subset of the available columns. Finally, the example displays the contents of the new <xref:System.Data.DataTable>.  
   
 ```vb  
 Private Sub DemonstrateDataView()  
@@ -209,6 +214,6 @@ Console.WriteLine();
  }  
   
 ## See Also  
- <xref:System.Data.DataView.ToTable%2A>   
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)   
+ <xref:System.Data.DataView.ToTable%2A>  
+ [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

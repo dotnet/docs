@@ -9,16 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "XML Reader"
 ms.assetid: 60e5848d-7d9c-4ea5-bed9-22758c9ac16c
 caps.latest.revision: 32
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XmlReader Sample
 The XmlReader sample demonstrates the processing of a message body using an <xref:System.Xml.XmlReader>. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements a calculator service. An additional service operation, `Sum`, has been added that accepts a message that contains an array of values to add together. The service reads the message using an <xref:System.Xml.XmlReader>.  

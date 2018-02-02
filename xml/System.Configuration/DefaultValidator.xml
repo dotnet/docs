@@ -17,6 +17,11 @@
   <Docs>
     <summary>Provides validation of an object. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Configuration.ConfigurationValidatorBase" />
+    <altmember cref="T:System.Configuration.TimeSpanValidator" />
+    <altmember cref="T:System.Configuration.StringValidator" />
+    <altmember cref="T:System.Configuration.LongValidator" />
+    <altmember cref="T:System.Configuration.IntegerValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

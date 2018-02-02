@@ -19,11 +19,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.IMessageFilter" />
+    <altmember cref="T:System.Windows.Forms.Application" />
+    <altmember cref="M:System.Windows.Forms.Application.AddMessageFilter(System.Windows.Forms.IMessageFilter)" />
   </Docs>
   <Members>
     <Member MemberName="PreFilterMessage">
       <MemberSignature Language="C#" Value="public bool PreFilterMessage (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PreFilterMessage(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PreFilterMessage(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

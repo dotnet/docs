@@ -36,6 +36,10 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />
+    <altmember cref="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" />
+    <altmember cref="T:System.Runtime.Remoting.Messaging.IMethodMessage" />
+    <altmember cref="T:System.Runtime.Remoting.Messaging.IMessage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

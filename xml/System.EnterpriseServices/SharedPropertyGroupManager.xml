@@ -63,7 +63,7 @@
     </Member>
     <Member MemberName="CreatePropertyGroup">
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedPropertyGroup CreatePropertyGroup (string name, ref System.EnterpriseServices.PropertyLockMode dwIsoMode, ref System.EnterpriseServices.PropertyReleaseMode dwRelMode, out bool fExist);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedPropertyGroup CreatePropertyGroup(string name, valuetype System.EnterpriseServices.PropertyLockMode dwIsoMode, valuetype System.EnterpriseServices.PropertyReleaseMode dwRelMode, bool fExist) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedPropertyGroup CreatePropertyGroup(string name, valuetype System.EnterpriseServices.PropertyLockMode&amp; dwIsoMode, valuetype System.EnterpriseServices.PropertyReleaseMode&amp; dwRelMode, [out] bool&amp; fExist) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.CreatePropertyGroup(System.String,System.EnterpriseServices.PropertyLockMode@,System.EnterpriseServices.PropertyReleaseMode@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

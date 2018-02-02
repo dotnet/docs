@@ -28,7 +28,7 @@
  The rows of the <xref:System.Web.UI.HtmlControls.HtmlTable> control are stored in the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of the control. This allows you to programmatically access the individual rows of the table.  
   
 > [!NOTE]
->  A complex table model is not supported. You cannot have an <xref:System.Web.UI.HtmlControls.HtmlTable> control with nested `<caption>`, `<col>`, `<colgroup>`, `<tbody>`, `<thead>`, or `<tfoot>` elements. These elements are removed without warning and do not appear in the output HTML. An exception will be thrown if you attempt to programmatically add these table model elements to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+>  A complex table model is not supported. You cannot have an <xref:System.Web.UI.HtmlControls.HtmlTable> control with nested `<caption>`, `<col>`, `<colgroup>`, `<tbody>`, `<thead>`, or `<tfoot>` elements. These elements are removed without warning and do not appear in the output HTML. An exception will be thrown if you attempt to programmatically add these table model elements to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlTable>, see the <xref:System.Web.UI.HtmlControls.HtmlTable.%23ctor%2A> constructor.  
   
@@ -37,16 +37,21 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.HtmlControls.HtmlTable> control to display information in a table.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  
   
  The following code example demonstrates how to dynamically create an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTable#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTable/CS/htmltablecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTable#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTable/VB/htmltablevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTable#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTable/CS/htmltablecs.aspx#1)]
+ [!code-aspx-vb[HtmlTable#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTable/VB/htmltablevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCellCollection" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,11 +83,13 @@
 ## Examples  
  The following code example demonstrates how to programmatically create a new instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control and place it on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.#ctor" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableCell.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -133,11 +140,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Align%2A> property to specify the alignment of the <xref:System.Web.UI.HtmlControls.HtmlTable> control in relation to other elements on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.CellSpacing" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.CellPadding" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableCell.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableCell.VAlign" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
       </Docs>
     </Member>
     <Member MemberName="BgColor">
@@ -199,11 +214,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.BgColor%2A> property to programmatically control the background color of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Border" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Width" />
+        <altmember cref="T:System.Drawing.KnownColor" />
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -240,11 +260,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Border%2A> property to programmatically control the border width of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Width" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -306,11 +330,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.BorderColor%2A> property to programmatically control the border color of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Border" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Width" />
+        <altmember cref="T:System.Drawing.KnownColor" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -347,11 +376,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.CellPadding%2A> property to programmatically control the spacing between the contents of the cell and the cell's border in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -388,11 +419,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.CellSpacing%2A> property to programmatically control the spacing of cells in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -421,6 +454,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -460,11 +495,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Height%2A> property to programmatically control the height of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Border" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Width" />
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -488,11 +527,12 @@
 ## Remarks  
   
 > [!CAUTION]
->  Do not read from or assign a value to this property. Otherwise, a <xref:System.NotSupportedException?displayProperty=fullName> exception is thrown. This property is inherited from the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class and is not applicable to the <xref:System.Web.UI.HtmlControls.HtmlTable> class.  
+>  Do not read from or assign a value to this property. Otherwise, a <xref:System.NotSupportedException?displayProperty=nameWithType> exception is thrown. This property is inherited from the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class and is not applicable to the <xref:System.Web.UI.HtmlControls.HtmlTable> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -516,11 +556,12 @@
 ## Remarks  
   
 > [!CAUTION]
->  Do not read from or assign a value to this property. Otherwise, a <xref:System.NotSupportedException?displayProperty=fullName> exception is thrown. This property is inherited from the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class and is not applicable to the <xref:System.Web.UI.HtmlControls.HtmlTable> class.  
+>  Do not read from or assign a value to this property. Otherwise, a <xref:System.NotSupportedException?displayProperty=nameWithType> exception is thrown. This property is inherited from the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class and is not applicable to the <xref:System.Web.UI.HtmlControls.HtmlTable> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -545,7 +586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method provides additional formatting before and after calling the base class's <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=fullName> method. The additional formatting makes the rendered HTML of the <xref:System.Web.UI.HtmlControls.HtmlTable> control easier to read by inserting a line return and indenting before rendering the <xref:System.Web.UI.HtmlControls.HtmlTable> control's child controls.  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method provides additional formatting before and after calling the base class's <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=nameWithType> method. The additional formatting makes the rendered HTML of the <xref:System.Web.UI.HtmlControls.HtmlTable> control easier to read by inserting a line return and indenting before rendering the <xref:System.Web.UI.HtmlControls.HtmlTable> control's child controls.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
@@ -554,14 +595,17 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method in a custom server control so that a new table row is appended to the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTableRenderChildren#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/CS/custom_htmltable_renderchildrencs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlTableRenderChildren#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/VB/custom_htmltable_renderchildrenvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlTableRenderChildren#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/CS/custom_htmltable_renderchildrencs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlTableRenderChildren#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/VB/custom_htmltable_renderchildrenvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlTableRenderChildren#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/CS/custom_htmltable_renderchildren.cs#2)]
  [!code-vb[CustomHtmlTableRenderChildren#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/VB/custom_htmltable_renderchildren.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.Indent" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -586,7 +630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderEndTag%2A> method provides additional formatting after calling the base class's <xref:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag%2A?displayProperty=fullName> method. The additional formatting makes the rendered HTML of the <xref:System.Web.UI.HtmlControls.HtmlTable> control easier to read by inserting a line return after the closing `<table>` tag.  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderEndTag%2A> method provides additional formatting after calling the base class's <xref:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag%2A?displayProperty=nameWithType> method. The additional formatting makes the rendered HTML of the <xref:System.Web.UI.HtmlControls.HtmlTable> control easier to read by inserting a line return after the closing `<table>` tag.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
@@ -595,14 +639,16 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTable.RenderEndTag%2A> method so that it always writes an end tag and a new line in a custom <xref:System.Web.UI.HtmlControls.HtmlTable> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTableRenderEndTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/CS/custom_htmltable_renderendtagcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlTableRenderEndTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/VB/custom_htmltable_renderendtagvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlTableRenderEndTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/CS/custom_htmltable_renderendtagcs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlTableRenderEndTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/VB/custom_htmltable_renderendtagvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlTableRenderEndTag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/CS/custom_htmltable_renderendtag.cs#2)]
  [!code-vb[CustomHtmlTableRenderEndTag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/VB/custom_htmltable_renderendtag.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -642,11 +688,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> collection to programmatically add a row to the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTable#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTable/CS/htmltablecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTable#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTable/VB/htmltablevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTable#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTable/CS/htmltablecs.aspx#1)]
+ [!code-aspx-vb[HtmlTable#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTable/VB/htmltablevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -686,11 +733,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Width%2A> property to programmatically control the width of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Border" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Height" />
       </Docs>
     </Member>
   </Members>

@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Internet, asynchronous access"
   - "Networking"
@@ -23,12 +21,14 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Making Asynchronous Requests
 The <xref:System.Net> classes use the .NET Framework's standard asynchronous programming model for asynchronous access to Internet resources. The <xref:System.Net.WebRequest.BeginGetResponse%2A> and <xref:System.Net.WebRequest.EndGetResponse%2A> methods of the <xref:System.Net.WebRequest> class start and complete asynchronous requests for an Internet resource.  
   
 > [!NOTE]
->  Using synchronous calls in asynchronous callback methods can result in severe performance penalties. Internet requests made with **WebRequest** and its descendants must use <xref:System.IO.Stream.BeginRead%2A?displayProperty=fullName> to read the stream returned by the <xref:System.Net.WebResponse.GetResponseStream%2A?displayProperty=fullName> method.  
+>  Using synchronous calls in asynchronous callback methods can result in severe performance penalties. Internet requests made with **WebRequest** and its descendants must use <xref:System.IO.Stream.BeginRead%2A?displayProperty=nameWithType> to read the stream returned by the <xref:System.Net.WebResponse.GetResponseStream%2A?displayProperty=nameWithType> method.  
   
  The following sample code demonstrates how to use asynchronous calls with the **WebRequest** class. The sample is a console program that takes a URI from the command line, requests the resource at the URI, and then prints data to the console as it is received from the Internet.  
   

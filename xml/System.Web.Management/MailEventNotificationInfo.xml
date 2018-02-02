@@ -16,12 +16,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used to pass information to the e-mail template for a <xref:System.Web.Management.TemplatedMailWebEventProvider> object when an event notification occurs. The e-mail template then formats the event information for the e-mail message body.  
+ This class is used to pass information to the email template for a <xref:System.Web.Management.TemplatedMailWebEventProvider> object when an event notification occurs. The email template then formats the event information for the email message body.  
   
  A notification occurs when buffering is disabled, the event-buffering system sends out messages for accumulated events, or an event occurs and the event-buffering system is disabled.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebEventProvider" />
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+    <altmember cref="T:System.Web.Management.TemplatedMailWebEventProvider" />
+    <altmember cref="T:System.Web.Management.SimpleMailWebEventProvider" />
   </Docs>
   <Members>
     <Member MemberName="Events">
@@ -40,6 +44,7 @@
         <summary>Gets a collection of events for the current message.</summary>
         <value>A <see cref="T:System.Web.Management.WebBaseEventCollection" /> of events for the current message.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Management.WebBaseEventCollection" />
       </Docs>
     </Member>
     <Member MemberName="EventsDiscardedByBuffer">
@@ -92,6 +97,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.MailWebEventProvider" />
+        <altmember cref="T:System.Web.Management.SimpleMailWebEventProvider" />
+        <altmember cref="T:System.Web.Management.TemplatedMailWebEventProvider" />
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="EventsInBuffer">
@@ -193,8 +202,8 @@
         <ReturnType>System.Net.Mail.MailMessage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the e-mail message that will be sent as the current message.</summary>
-        <value>A <see cref="T:System.Web.Mail.MailMessage" /> that specifies the e-mail message to send.</value>
+        <summary>Gets the email message that will be sent as the current message.</summary>
+        <value>A <see cref="T:System.Web.Mail.MailMessage" /> that specifies the email message to send.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -293,6 +302,7 @@
         <summary>Gets the type of the current notification.</summary>
         <value>The <see cref="T:System.Web.Management.EventNotificationType" /> for the current notification.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Management.EventNotificationType" />
       </Docs>
     </Member>
   </Members>

@@ -36,12 +36,14 @@
   
  If you use platform invoke to call a managed object, and the object is not referenced elsewhere after the platform invoke call, it is possible for the garbage collector to finalize the managed object. This action releases the resource and invalidates the handle, causing the platform invoke call to fail. Wrapping a handle with <xref:System.Runtime.InteropServices.HandleRef> guarantees that the managed object is not garbage collected until the platform invoke call completes. For a description of platform invoke services, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
- The <xref:System.Runtime.InteropServices.HandleRef> value type, like <xref:System.Runtime.InteropServices.GCHandle>, is a special type recognized by the interop marshaler. A normal, nonpinned <xref:System.Runtime.InteropServices.GCHandle> also prevents untimely garbage collection, yet <xref:System.Runtime.InteropServices.HandleRef> provides better performance. Although using <xref:System.Runtime.InteropServices.HandleRef> to keep an object alive for the duration of a platform invoke call is preferred, you can also use the <xref:System.GC.KeepAlive%2A?displayProperty=fullName> method for the same purpose.  
+ The <xref:System.Runtime.InteropServices.HandleRef> value type, like <xref:System.Runtime.InteropServices.GCHandle>, is a special type recognized by the interop marshaler. A normal, nonpinned <xref:System.Runtime.InteropServices.GCHandle> also prevents untimely garbage collection, yet <xref:System.Runtime.InteropServices.HandleRef> provides better performance. Although using <xref:System.Runtime.InteropServices.HandleRef> to keep an object alive for the duration of a platform invoke call is preferred, you can also use the <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> method for the same purpose.  
   
  The <xref:System.Runtime.InteropServices.HandleRef> constructor takes two parameters: an <xref:System.Object> representing the wrapper, and an <xref:System.IntPtr> representing the unmanaged handle. The interop marshaler passes only the handle to unmanaged code, and guarantees that the wrapper (passed as the first parameter to the constructor of the `HandleRef`) remains alive for the duration of the call.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.SafeHandle" />
+    <altmember cref="T:System.Runtime.InteropServices.CriticalHandle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,10 +127,12 @@
         <Parameter Name="value" Type="System.Runtime.InteropServices.HandleRef" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object that needs a handle.</param>
+        <summary>Returns the handle to a resource of the specified <see cref="T:System.Runtime.InteropServices.HandleRef" /> object.</summary>
+        <returns>The handle to a resource of the specified <see cref="T:System.Runtime.InteropServices.HandleRef" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.HandleRef.Handle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToIntPtr">

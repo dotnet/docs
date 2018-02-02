@@ -20,7 +20,7 @@
   
  The level of the audit log is specified by setting the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A> or the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A> property of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class to one of the <xref:System.ServiceModel.AuditLevel> values.  
   
- You can also specify audit behavior using the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) binding.  
+ You can also specify audit behavior using the [&lt;serviceSecurityAudit&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) binding.  
   
 > [!IMPORTANT]
 >  If the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> property is set to Security and `Audit Object Access` is not set in the `Local Security Policy`, audit events will not be written to the Security log. No failure is returned, but audit entries will not be written to the Security log. In addition, the calling thread must have `SeAuditPrivilege` to be able to write to the Security log.  
@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceModel.Description.ServiceSecurityAuditBehavior" />
+    <altmember cref="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel" />
+    <altmember cref="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel" />
+    <altmember cref="T:System.ServiceModel.AuditLevel" />
   </Docs>
   <Members>
     <Member MemberName="Application">

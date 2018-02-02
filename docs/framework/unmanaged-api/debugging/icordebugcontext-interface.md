@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugContext interface [.NET Framework debugging]"
 ms.assetid: b9907b98-4253-4cb6-a296-37ae9977c81a
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugContext Interface1
 Represents a context object. This interface has not been implemented yet.  

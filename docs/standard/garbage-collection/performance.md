@@ -16,6 +16,9 @@ caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Garbage Collection and Performance
 <a name="top"></a> This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.  
@@ -40,7 +43,7 @@ manager: "wpickett"
   
 <a name="sos"></a>   
 ### Debugging with SOS  
- You can use the [Windows Debugger (WinDbg)](http://go.microsoft.com/fwlink/?LinkId=186482) to inspect objects on the managed heap.  
+ You can use the [Windows Debugger (WinDbg)](/windows-hardware/drivers/debugger/index) to inspect objects on the managed heap.  
   
  To install WinDbg, install Debugging Tools for Windows from the [WDK and Developer Tools Web site](http://go.microsoft.com/fwlink/?LinkID=103787).  
   
@@ -445,7 +448,7 @@ manager: "wpickett"
     …  
     ```  
   
-     Using an integer instead of a string for an ID can be more efficient. If the same string is being repeated thousands of times, consider string interning. For more information about string interning, see the reference topic for the <xref:System.String.Intern%2A?displayProperty=fullName> method.  
+     Using an integer instead of a string for an ID can be more efficient. If the same string is being repeated thousands of times, consider string interning. For more information about string interning, see the reference topic for the <xref:System.String.Intern%2A?displayProperty=nameWithType> method.  
   
 <a name="ObjRef"></a>   
 ##### To determine references to objects  
@@ -491,7 +494,7 @@ manager: "wpickett"
     GC.Collect();  
     ```  
   
-     If the test resolves the problem, this means that the garbage collector was not reclaiming objects, because the finalizers for those objects had been suspended. The <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=fullName> method enables the finalizers to complete their tasks, and fixes the problem.  
+     If the test resolves the problem, this means that the garbage collector was not reclaiming objects, because the finalizers for those objects had been suspended. The <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=nameWithType> method enables the finalizers to complete their tasks, and fixes the problem.  
   
 <a name="Finalize"></a>   
 ##### To determine whether there are objects waiting to be finalized  

@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.AppDomain" />
+    <altmember cref="T:System.Windows.Forms.Application" />
+    <altmember cref="T:System.Environment" />
+    <altmember cref="T:System.Windows.Forms.SystemInformation" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.OSFeature" />
       </Docs>
     </Member>
     <Member MemberName="Feature">
@@ -91,6 +96,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.OSFeature.#ctor" />
+        <altmember cref="T:System.Version" />
+        <altmember cref="T:System.Windows.Forms.FeatureSupport" />
+        <altmember cref="F:System.Windows.Forms.OSFeature.LayeredWindows" />
       </Docs>
     </Member>
     <Member MemberName="GetVersionPresent">
@@ -129,6 +138,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Version" />
+        <altmember cref="P:System.Windows.Forms.OSFeature.Feature" />
+        <altmember cref="T:System.Windows.Forms.FeatureSupport" />
+        <altmember cref="F:System.Windows.Forms.OSFeature.LayeredWindows" />
       </Docs>
     </Member>
     <Member MemberName="IsPresent">
@@ -157,12 +170,12 @@
 ## Remarks  
  Typically, you use the <xref:System.Windows.Forms.OSFeature.IsPresent%2A> method to determine if the operating system supports the specific feature or metric identified by `enumValue`. Based upon the value returned from <xref:System.Windows.Forms.OSFeature.IsPresent%2A>, you would perform conditional actions in your code. For example, if calling this method with a parameter value of <xref:System.Windows.Forms.SystemParameter.FlatMenu> returns `true`, you could create owner-drawn menus in your application in a flat style.  
   
- Accessing some system features or metrics can raise exceptions if they are not available on a specific operating system version. In this case, first use the corresponding <xref:System.Windows.Forms.SystemParameter> enumeration value, along with <xref:System.Windows.Forms.OSFeature.IsPresent%2A>, to determine if the metric is supported. For example, call <xref:System.Windows.Forms.OSFeature.IsPresent%2A> with <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A> before getting the <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A?displayProperty=fullName> property value.  
+ Accessing some system features or metrics can raise exceptions if they are not available on a specific operating system version. In this case, first use the corresponding <xref:System.Windows.Forms.SystemParameter> enumeration value, along with <xref:System.Windows.Forms.OSFeature.IsPresent%2A>, to determine if the metric is supported. For example, call <xref:System.Windows.Forms.OSFeature.IsPresent%2A> with <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A> before getting the <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A?displayProperty=nameWithType> property value.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.OSFeature.IsPresent%2A> method with the <xref:System.Windows.Forms.SystemParameter> enumeration. The example determines if the operating system supports the `CaretWidth` metric before calling the <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A?displayProperty=fullName> property.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.OSFeature.IsPresent%2A> method with the <xref:System.Windows.Forms.SystemParameter> enumeration. The example determines if the operating system supports the `CaretWidth` metric before calling the <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[System.Windows.Forms.OSFeature.IsPresent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.OSFeature.IsPresent/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.OSFeature.IsPresent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.OSFeature.IsPresent/CS/form1.cs#1)]
@@ -173,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LayeredWindows">
@@ -210,6 +225,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.OSFeature.IsPresent" />
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.OSFeature.Feature" />
       </Docs>
     </Member>
     <Member MemberName="Themes">
@@ -230,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A theme is a collection of visual interface settings that include wallpaper, cursors, fonts, sounds, and icons first introduced in Microsoft Plus! for Windows 95. The .NET Framework does not directly support manipulating themes, although it does have extensive support for visual styles in the <xref:System.Windows.Forms.VisualStyles?displayProperty=fullName> namespace. For more information about Windows Themes, see the topics Themes and Visual Styles and Visual Styles Reference in the Win32 SDK.  
+ A theme is a collection of visual interface settings that include wallpaper, cursors, fonts, sounds, and icons first introduced in Microsoft Plus! for Windows 95. The .NET Framework does not directly support manipulating themes, although it does have extensive support for visual styles in the <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace. For more information about Windows Themes, see the topics Themes and Visual Styles and Visual Styles Reference in the Win32 SDK.  
   
  To determine if the themes feature is installed, call the base class method <xref:System.Windows.Forms.FeatureSupport.IsPresent%2A> with <xref:System.Windows.Forms.OSFeature.Themes> as the feature to look for.  
   
@@ -238,6 +256,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.OSFeature.IsPresent" />
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.OSFeature.Feature" />
       </Docs>
     </Member>
   </Members>

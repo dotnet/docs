@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "federation [WCF], and trust"
 ms.assetid: 4bdec4f2-f8a2-4512-bdcf-14ef54b5877a
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Federation and Trust
 This topic covers various aspects related to federated applications, trust boundaries and configuration, and use of issued tokens in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
@@ -44,7 +46,7 @@ This topic covers various aspects related to federated applications, trust bound
  Whether an issued token is serialized in a message sent from a client to a federated endpoint or not is controlled by setting the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> property of the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> class. This property can be set to one of the <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode> enumeration values, but it is not useful in most federated scenarios. The `SecurityTokenInclusionMode.Never` and `SecurityTokenInclusionMode.AlwaysToInitiator` values cause the client to send a reference to the token issued by the security token service to the relying party. Unless the relying party possesses a copy of the issued token, authentication will fail because the token reference is not resolvable. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] treats `SecurityTokenInclusionMode.Once` as equivalent to `SecurityTokenInclusionMode.AlwaysToRecipient`.  
   
 ## See Also  
- <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>   
- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)   
- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)   
+ <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>  
+ [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
+ [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
  [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)

@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pages, navigating to"
-  - "navigation, to page"
+  - "pages [WPF], navigating to"
+  - "navigation [WPF], to page"
 ms.assetid: 2a556fc0-748b-417f-a58a-0d05a7afb66f
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Navigate to a Page
 This example illustrates several ways in which a page can be navigated to from a <xref:System.Windows.Navigation.NavigationWindow>.  
@@ -35,6 +40,6 @@ This example illustrates several ways in which a page can be navigated to from a
 >  [!INCLUDE[TLA#tla_uri#initcap#plural](../../../../includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
 ## See Also  
- <xref:System.Windows.Controls.Frame>   
- <xref:System.Windows.Controls.Page>   
+ <xref:System.Windows.Controls.Frame>  
+ <xref:System.Windows.Controls.Page>  
  <xref:System.Windows.Navigation.NavigationService>

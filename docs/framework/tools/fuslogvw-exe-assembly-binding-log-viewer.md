@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "failed assembly binds"
   - "Fuslogvw.exe"
@@ -26,6 +21,8 @@ caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fuslogvw.exe (Assembly Binding Log Viewer)
 The Assembly Binding Log Viewer displays details for assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at run time. These failures are usually the result of an assembly deployed to the wrong location, a native image that is no longer valid, or a mismatch in version numbers or cultures. The common language runtime's failure to locate an assembly typically shows up as a <xref:System.TypeLoadException> in your application.  
@@ -215,7 +212,7 @@ Discarding native image.
      See the Important note regarding assemblies that are loaded as domain neutral.  
   
 > [!IMPORTANT]
->  When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=fullName> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=fullName>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.  
+>  When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.  
   
 #### To enable a custom log path  
   
@@ -238,8 +235,8 @@ Discarding native image.
     >  This box is enabled only on Windows 8 or later.  
   
 ## See Also  
- <xref:System.TypeLoadException>   
- [Tools](../../../docs/framework/tools/index.md)   
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)   
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
+ <xref:System.TypeLoadException>  
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
+ [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

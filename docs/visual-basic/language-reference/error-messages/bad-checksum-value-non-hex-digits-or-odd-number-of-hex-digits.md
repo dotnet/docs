@@ -1,40 +1,21 @@
 ---
 title: "Bad checksum value, non hex digits or odd number of hex digits"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc42033"
   - "vbc42033"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42033"
 ms.assetid: 4575554d-3615-46e4-9c6a-18e9c338e4ed
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Bad checksum value, non hex digits or odd number of hex digits
 A checksum value contains invalid hexadecimal digits or has an odd number of digits.  
@@ -54,5 +35,5 @@ A checksum value contains invalid hexadecimal digits or has an odd number of dig
 3.  If the warning still persists, or if you are not using ASP.NET, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
- [ASP.NET Overview](https://msdn.microsoft.com/library/4w3ex9c2.aspx)   
+ [ASP.NET Overview](https://msdn.microsoft.com/library/4w3ex9c2.aspx)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

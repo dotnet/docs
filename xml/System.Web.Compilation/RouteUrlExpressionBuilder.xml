@@ -106,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeExpression">
@@ -201,7 +202,7 @@
     </Member>
     <Member MemberName="TryParseRouteExpression">
       <MemberSignature Language="C#" Value="public static bool TryParseRouteExpression (string expression, System.Web.Routing.RouteValueDictionary routeValues, out string routeName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseRouteExpression(string expression, class System.Web.Routing.RouteValueDictionary routeValues, string routeName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseRouteExpression(string expression, class System.Web.Routing.RouteValueDictionary routeValues, [out] string&amp; routeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteUrlExpressionBuilder.TryParseRouteExpression(System.String,System.Web.Routing.RouteValueDictionary,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

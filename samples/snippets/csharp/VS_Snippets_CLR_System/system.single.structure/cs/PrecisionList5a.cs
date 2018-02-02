@@ -9,7 +9,7 @@ public class Example
       StreamWriter sw = new StreamWriter(@".\Singles.dat");
       Single[] values = { 3.2f/1.11f, 1.0f/3f, (float) Math.PI };
       for (int ctr = 0; ctr < values.Length; ctr++) 
-         sw.Write("{0:R}{1}", values[ctr], ctr < values.Length - 1 ? "|" : "" );
+         sw.Write("{0:G9}{1}", values[ctr], ctr < values.Length - 1 ? "|" : "" );
       
       sw.Close();
       

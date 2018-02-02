@@ -316,7 +316,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -416,7 +416,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=nameWithType> property.  
   
  If <xref:System.Windows.Forms.ToolStripItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
   
@@ -599,7 +599,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -860,5 +860,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds <see cref="T:System.Windows.Forms.ToolStripItem" /> controls to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.ToolStripItem" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the item at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -79,10 +79,15 @@
   
 -   Their fields are mutable rather than read-only.  
   
- The value tuple types provide the runtime implementation that supports [tuples in C#](~/docs/csharp/tuples.md) and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%608> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%60%608%28%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%29?displayProperty=fullName> factory method.  
-  
+ The value tuple types provide the runtime implementation that supports [tuples in C#](~/docs/csharp/tuples.md) and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%608> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%60%608%28%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%29?displayProperty=nameWithType> factory method.  
+
+### Serialization and value tuples
+
+The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in the .NET Framework 4.7 and earlier versions. In addition, .NET Standard, including .NET Standard 2.0, does not mandate serialization of <xref:System.ValueTuple%608> instances; whether or not a <xref:System.ValueTuple%608> instance is serializable depends on the individual .NET Standard implementation. To determine whether a <xref:System.ValueTuple%608> type is serializable on a particular .NET implementation, get a <xref:System.Type> object that represents the <xref:System.ValueTuple%608> type and retrieve the value of its <xref:System.Type.IsSerializable%2A> property. For a list of serializable types in .NET Core and the .NET Framework, see [Binary Serialization](~/docs/standard/serialization/binary-serialization.md).
+    
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ValueTuple" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,12 +136,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to using your language's build-in support for tuples, you can also create a value tuple by calling the static <xref:System.ValueTuple.Create%60%608%28%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%29?displayProperty=fullName> method without having to explicitly specify the types of its elements.  
+ In addition to using your language's build-in support for tuples, you can also create a value tuple by calling the static <xref:System.ValueTuple.Create%60%608%28%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%29?displayProperty=nameWithType> method without having to explicitly specify the types of its elements.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="rest" /> is not a generic value tuple type.</exception>
+        <altmember cref="M:System.ValueTuple.Create``8(``0,``1,``2,``3,``4,``5,``6,``7)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -170,9 +176,9 @@
       <Docs>
         <param name="other">The tuple to compare with this instance.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple`8" /> instance to a specified <see cref="T:System.ValueTuple`8" /> instance</summary>
-        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following table.  
   
- <list type="table"><listheader><term> Vaue  
+ <list type="table"><listheader><term> Value  
   
  </term><description> Description  
   
@@ -600,9 +606,9 @@
         <param name="other">The object to compare with the current instance.</param>
         <param name="comparer">An object that provides custom rules for comparison.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple`8" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
-        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following table.  
   
- <list type="table"><listheader><term> Vaue  
+ <list type="table"><listheader><term> Value  
   
  </term><description> Description  
   
@@ -627,7 +633,7 @@
   
  This method lets you define customized comparisons of <xref:System.ValueTuple%608> objects. For example, you can use this method to order <xref:System.ValueTuple%608> objects based on the value of a specific component.  
   
- Although this method can be called directly, it is most commonly called by collection-sorting methods that include <xref:System.Collections.IComparer> parameters to order the members of a collection. For example, it is called by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29?displayProperty=fullName> method and the <xref:System.Collections.SortedList.Add%2A> method of a <xref:System.Collections.SortedList> object that is instantiated by using the <xref:System.Collections.SortedList.%23ctor%28System.Collections.IComparer%29?displayProperty=fullName> constructor.  
+ Although this method can be called directly, it is most commonly called by collection-sorting methods that include <xref:System.Collections.IComparer> parameters to order the members of a collection. For example, it is called by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29?displayProperty=nameWithType> method and the <xref:System.Collections.SortedList.Add%2A> method of a <xref:System.Collections.SortedList> object that is instantiated by using the <xref:System.Collections.SortedList.%23ctor%28System.Collections.IComparer%29?displayProperty=nameWithType> constructor.  
   
 > [!CAUTION]
 >  The <xref:System.ValueTuple%608.System%23Collections%23IStructuralComparable%23CompareTo%2A> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.ValueTuple%608.System%23Collections%23IStructuralEquatable%23Equals%2A> method.  
@@ -679,7 +685,7 @@
 ## Remarks  
  This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple%608> instance is cast to an  <xref:System.Collections.IStructuralEquatable> interface.  
   
- The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple%608> object that has the same total number of components (including those in nested tuple objects) of the same types as the current instance. The <xref:System.Collections.IStructuralEquatable.Equals%28System.Object%2CSystem.Collections.IEqualityComparer%29?displayProperty=fullName> method first passes the <xref:System.ValueTuple%608.Item1> values of the <xref:System.ValueTuple%608> objects to be compared to the <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation. If this method call returns `true`, the method is called again and passed the <xref:System.ValueTuple%608.Item2> values of the two <xref:System.ValueTuple%608> objects. This continues until the method call returns `false` when it compares a specific pair of values, or the two <xref:System.ValueTuple%608.Rest> values are passed to the method.  
+ The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=nameWithType> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple%608> object that has the same total number of components (including those in nested tuple objects) of the same types as the current instance. The <xref:System.Collections.IStructuralEquatable.Equals%28System.Object%2CSystem.Collections.IEqualityComparer%29?displayProperty=nameWithType> method first passes the <xref:System.ValueTuple%608.Item1> values of the <xref:System.ValueTuple%608> objects to be compared to the <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=nameWithType> implementation. If this method call returns `true`, the method is called again and passed the <xref:System.ValueTuple%608.Item2> values of the two <xref:System.ValueTuple%608> objects. This continues until the method call returns `false` when it compares a specific pair of values, or the two <xref:System.ValueTuple%608.Rest> values are passed to the method.  
   
  ]]></format>
         </remarks>
@@ -721,7 +727,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple%608> instance is cast to an  <xref:System.Collections.IStructuralEquatable> interface.  The method simply wraps a call to the `comparer` object's <xref:System.Collections.IEqualityComparer.GetHashCode%2A?displayProperty=fullName> implementation.  
+ This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple%608> instance is cast to an  <xref:System.Collections.IStructuralEquatable> interface.  The method simply wraps a call to the `comparer` object's <xref:System.Collections.IEqualityComparer.GetHashCode%2A?displayProperty=nameWithType> implementation.  
   
  The algorithm used to compute the hash code should return the same hash code for two <xref:System.ValueTuple%608> objects that are considered to be equal.  
   
@@ -785,10 +791,10 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.ValueTuple%608> instance is cast to an <xref:System.IComparable> interface.  
   
- This method provides the <xref:System.IComparable.CompareTo%2A?displayProperty=fullName> implementation for the <xref:System.ValueTuple%608> structure. Although the method can be called directly, it is most commonly called by the default overloads of collection-sorting methods, such as <xref:System.Array.Sort%28System.Array%29?displayProperty=fullName> and <xref:System.Collections.SortedList.Add%2A?displayProperty=fullName>, to order the members of a collection.  
+ This method provides the <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> implementation for the <xref:System.ValueTuple%608> structure. Although the method can be called directly, it is most commonly called by the default overloads of collection-sorting methods, such as <xref:System.Array.Sort%28System.Array%29?displayProperty=nameWithType> and <xref:System.Collections.SortedList.Add%2A?displayProperty=nameWithType>, to order the members of a collection.  
   
 > [!CAUTION]
->  The <xref:System.ValueTuple%608.System%23IComparable%23CompareTo%2A?displayProperty=fullName> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.ValueTuple%608.Equals%28System.Object%29?displayProperty=fullName> method.  
+>  The <xref:System.ValueTuple%608.System%23IComparable%23CompareTo%2A?displayProperty=nameWithType> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.ValueTuple%608.Equals%28System.Object%29?displayProperty=nameWithType> method.  
   
  This method uses the default object comparer to compare each component.  
   
@@ -807,6 +813,10 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -814,10 +824,23 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The value of the specified <see langword="ValueTuple" /> element. <c>index</c> can range from 0 for <see langword="Item1" /> to one less than the number of elements in the <see langword="ValueTuple" />.</param>
+        <summary>Gets the value of the specified <see langword="ValueTuple" /> element.</summary>
+        <value>The value of the <see langword="ValueTuple" /> element at the specified position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ValueTuple%608.System%23Runtime%23CompilerServices%23ITuple%23Item%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%608> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than or equal to <see cref="P:System.ValueTuple`8.System#Runtime#CompilerServices#ITuple#Length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Length">
@@ -829,13 +852,24 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements in the <see langword="ValueTuple" />.</summary>
+        <value>The number of elements in the <see langword="ValueTuple" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ValueTuple%608.System%23Runtime%23CompilerServices%23ITuple%23Length%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%608> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -871,11 +905,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, *Item7*, *Item8*…), where *Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, and *Item7* represent the values of the <xref:System.ValueTuple%608.Item1>, <xref:System.ValueTuple%608.Item2>, <xref:System.ValueTuple%608.Item3>, <xref:System.ValueTuple%608.Item4>, <xref:System.ValueTuple%608.Item5>, <xref:System.ValueTuple%608.Item6>, and <xref:System.ValueTuple%608.Item7> fields. *Item8* represents the value of the <xref:System.ValueTuple%608> instance's `Next.Item1` field. The value of any additional nested elements follows *Item8*. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+ The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, *Item7*, *Item8*…), where *Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, and *Item7* represent the values of the <xref:System.ValueTuple%608.Item1>, <xref:System.ValueTuple%608.Item2>, <xref:System.ValueTuple%608.Item3>, <xref:System.ValueTuple%608.Item4>, <xref:System.ValueTuple%608.Item5>, <xref:System.ValueTuple%608.Item6>, and <xref:System.ValueTuple%608.Item7> fields. *Item8* represents the value of the <xref:System.ValueTuple%608> instance's `Next.Item1` field. The value of any additional nested elements follows *Item8*. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`8" /> instance is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

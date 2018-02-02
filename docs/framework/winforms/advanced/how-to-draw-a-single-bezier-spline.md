@@ -10,15 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Bezier splines, drawing"
-  - "drawing, Bezier splines"
+  - "Bezier splines [Windows Forms], drawing"
+  - "drawing [Windows Forms], Bezier splines"
 ms.assetid: f4f3fe30-f0a6-4743-ac91-11310cebea9f
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Single B&#233;zier Spline
 A Bézier spline is defined by four points: a start point, two control points, and an endpoint.  
@@ -37,6 +40,6 @@ A Bézier spline is defined by four points: a start point, two control points, a
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See Also  
- <xref:System.Drawing.Graphics.DrawBezier%2A>   
- [Bézier Splines in GDI+](../../../../docs/framework/winforms/advanced/bezier-splines-in-gdi.md)   
+ <xref:System.Drawing.Graphics.DrawBezier%2A>  
+ [Bézier Splines in GDI+](../../../../docs/framework/winforms/advanced/bezier-splines-in-gdi.md)  
  [How to: Draw a Sequence of Bézier Splines](../../../../docs/framework/winforms/advanced/how-to-draw-a-sequence-of-bezier-splines.md)

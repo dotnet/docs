@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyEnum interface [.NET Framework fusion]"
 ms.assetid: 634ef9f9-e94b-4776-a9e1-866df9a76c8f
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyEnum Interface
 Represents an enumerator for an array of `IAssemblyName` objects.  
@@ -48,5 +48,5 @@ Represents an enumerator for an array of `IAssemblyName` objects.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)   
+ [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
  [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

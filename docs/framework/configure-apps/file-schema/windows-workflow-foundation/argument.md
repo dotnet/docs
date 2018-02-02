@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a7144d53-8023-4e90-971f-895e016fd58a
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;argument&gt;
 A configuration element that represents an argument associated with an activity state query.  
@@ -80,7 +82,7 @@ A configuration element that represents an argument associated with an activity 
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement?displayProperty=fullName>       
- <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=fullName>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement?displayProperty=nameWithType>       
+ <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>       
+ [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

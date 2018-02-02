@@ -268,6 +268,7 @@
         </remarks>
         <exception cref="T:System.UriFormatException">
           <paramref name="Address" /> is an invalid URI.</exception>
+        <altmember cref="P:System.Net.WebProxy.BypassProxyOnLocal" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -407,6 +408,8 @@
         </remarks>
         <exception cref="T:System.UriFormatException">
           <paramref name="Address" /> is an invalid URI.</exception>
+        <altmember cref="P:System.Net.WebProxy.BypassProxyOnLocal" />
+        <altmember cref="P:System.Net.WebProxy.BypassList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -505,6 +508,8 @@
         </remarks>
         <exception cref="T:System.UriFormatException">
           <paramref name="Address" /> is an invalid URI.</exception>
+        <altmember cref="P:System.Net.WebProxy.BypassProxyOnLocal" />
+        <altmember cref="P:System.Net.WebProxy.BypassList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -674,6 +679,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="BypassProxyOnLocal">
@@ -820,7 +826,7 @@
   
  The <xref:System.Net.WebProxy.GetDefaultProxy%2A> method does not pick up any dynamic settings that are generated from scripts run by Internet Explorer, from automatic configuration entries, or from DHCP or DNS lookups.  
   
- Applications should use the <xref:System.Net.WebRequest.DefaultWebProxy%2A?displayProperty=fullName> property and the <xref:System.Net.WebRequest.GetSystemWebProxy%2A?displayProperty=fullName> method instead of the <xref:System.Net.WebProxy.GetDefaultProxy%2A> method.  
+ Applications should use the <xref:System.Net.WebRequest.DefaultWebProxy%2A?displayProperty=nameWithType> property and the <xref:System.Net.WebRequest.GetSystemWebProxy%2A?displayProperty=nameWithType> method instead of the <xref:System.Net.WebProxy.GetDefaultProxy%2A> method.  
   
    
   
@@ -1071,5 +1077,15 @@
         <exception cref="T:System.InvalidOperationException">You attempted to set this property when the <see cref="P:System.Net.WebProxy.Credentials" /> property contains credentials other than the default credentials.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebProxy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

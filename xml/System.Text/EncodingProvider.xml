@@ -36,21 +36,21 @@
 ## Remarks  
  An encoding provider supplies encodings that are not otherwise available on a particular target platform.  
   
- The .NET Framework on the Windows desktop supports a large number of character encodings and code pages. You can get a complete list of encodings available in the .NET Framework on the Windows desktop by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> method. .NET Core, on the other hand, by default supports only the following encodings:  
+ The .NET Framework on the Windows desktop supports a large number of character encodings and code pages. You can get a complete list of encodings available in the .NET Framework on the Windows desktop by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method. .NET Core, on the other hand, by default supports only the following encodings:  
   
--   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=fullName> property.  
+-   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=nameWithType> property.  
   
 -   ISO-8859-1 (code page 28591).  
   
--   UTF-7 (code page 65000), which is returned by the <xref:System.Text.Encoding.UTF7%2A?displayProperty=fullName> property.  
+-   UTF-7 (code page 65000), which is returned by the <xref:System.Text.Encoding.UTF7%2A?displayProperty=nameWithType> property.  
   
--   UTF-8 (code page 65001), which is returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property.  
+-   UTF-8 (code page 65001), which is returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property.  
   
 -   UTF-16 and UTF-16LE (code page 1200), which is returned by the <xref:System.Text.Encoding.Unicode%2A> property.  
   
--   UTF-16BE (code page 1201), which is instantiated by calling the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=fullName> or <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor with a `bigEndian` value of `true`.  
+-   UTF-16BE (code page 1201), which is instantiated by calling the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> or <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor with a `bigEndian` value of `true`.  
   
--   UTF-32 and UTF-32LE (code page 12000), which is returned by the <xref:System.Text.Encoding.UTF32%2A?displayProperty=fullName> property.  
+-   UTF-32 and UTF-32LE (code page 12000), which is returned by the <xref:System.Text.Encoding.UTF32%2A?displayProperty=nameWithType> property.  
   
 -   UTF-32BE (code page 12001), which is instantiated by calling an <xref:System.Text.UTF32Encoding> constructor that has a `bigEndian` parameter and providing a value of `true` in the method call.  
   
@@ -60,14 +60,15 @@
   
 2.  Optionally, you can override the virtual <xref:System.Text.EncodingProvider.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29> and <xref:System.Text.EncodingProvider.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29> methods. In most cases, this is not necessary, since the base class provides a default implementation.  
   
-3.  Pass the <xref:System.Text.EncodingProvider> instance to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=fullName> method to make the encodings supplied by the <xref:System.Text.EncodingProvider> object available to the common language runtime.  
+3.  Pass the <xref:System.Text.EncodingProvider> instance to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=nameWithType> method to make the encodings supplied by the <xref:System.Text.EncodingProvider> object available to the common language runtime.  
   
-4.  Call an <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> overload to retrieve the encoding. The <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> method will call the corresponding <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=fullName> to determine whether it can supply the requested encoding.  
+4.  Call an <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> overload to retrieve the encoding. The <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method will call the corresponding <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=nameWithType> to determine whether it can supply the requested encoding.  
   
- The .NET Framework Class Library provides one static property, <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=fullName>, that returns an <xref:System.Text.EncodingProvider> object that makes the full set of encodings available on the desktop .NET Framework Class Library available to [!INCLUDE[net_core](~/includes/net-core-md.md)] applications. In addition, you can derive from the <xref:System.Text.EncodingProvider> class to make your own encodings available.  
+ The .NET Framework Class Library provides one static property, <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=nameWithType>, that returns an <xref:System.Text.EncodingProvider> object that makes the full set of encodings available on the desktop .NET Framework Class Library available to [!INCLUDE[net_core](~/includes/net-core-md.md)] applications. In addition, you can derive from the <xref:System.Text.EncodingProvider> class to make your own encodings available.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Text.Encoding.GetEncoding(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -147,6 +148,13 @@ This method is called by the [Encoding.GetEncoding(Int32)](<xref:System.Text.Enc
 
         ]]></format>
         </remarks>
+        <block subset="none" type="overrides">
+          <para>You override the <see cref="M:System.Text.EncodingProvider.GetEncoding(System.Int32)" /> method to return the encoding or encodings supported by your <see cref="T:System.Text.EncodingProvider" /> subclass. When user code attempts to retrieve an encoding by calling the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method, the method passes the <paramref name="codepage" /> identifier to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method attempts to retrieve a cached encoding whose code page identifier is <paramref name="codepage" />. Because of this, if <paramref name="codepage" /> is not the code page identifier of an encoding that you support, the method should return <see langword="null" />; it should never throw an exception.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method. You should not call it directly from user code.</para>
+        </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -193,6 +201,13 @@ You override the [GetEncoding(String)](<xref:System.Text.EncodingProvider.GetEnc
 This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.Encoding.GetEncoding(System.String)>) method. You should not call it directly from user code.
         ]]></format>
         </remarks>
+        <block subset="none" type="overrides">
+          <para>You override the <see cref="M:System.Text.EncodingProvider.GetEncoding(System.String)" /> method to return the encoding or encodings supported by your <see cref="T:System.Text.EncodingProvider" /> subclass. When user code attempts to retrieve an encoding by calling the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method, the method passes the <paramref name="name" /> argument to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method attempts to retrieve a cached encoding whose name is <paramref name="name" />. Because of this, if <paramref name="name" /> is not the name of an encoding that you support, the method should return <see langword="null" />. The only case in which the method should throw an exception is if <paramref name="name" /> is <see langword="null" />.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method. You should not call it directly from user code.</para>
+        </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -239,7 +254,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
   
 -   Exception fallback. If the `encoderFallback` argument is an instance of <xref:System.Text.EncoderExceptionFallback>, or the `decoderExceptionFallback` argument is an instance of <xref:System.Text.DecoderExceptionFallback>, the encoding method throws an exception if characters cannot be encoded, and the decoding method throws an exception if a byte sequence cannot be decoded.  
   
--   Replacement fallback. If the `encoderFallback` argument is an instance of <xref:System.Text.EncoderReplacementFallback>, or the `decoderExceptionFallback` argument is an instance of <xref:System.Text.DecoderReplacementFallback>, the encoding and decoding methods substitute a replacement string for characters that cannot be encoded and byte sequences cannot be decoded. If you instantiated the replacement fallback object by calling the default constructor, the replacement character is a "?". If you call the <xref:System.Text.EncoderReplacementFallback.%23ctor%28System.String%29?displayProperty=fullName> or <xref:System.Text.DecoderReplacementFallback.%23ctor%28System.String%29?displayProperty=fullName> constructor, you can specify the replacement string.  
+-   Replacement fallback. If the `encoderFallback` argument is an instance of <xref:System.Text.EncoderReplacementFallback>, or the `decoderExceptionFallback` argument is an instance of <xref:System.Text.DecoderReplacementFallback>, the encoding and decoding methods substitute a replacement string for characters that cannot be encoded and byte sequences cannot be decoded. If you instantiated the replacement fallback object by calling the default constructor, the replacement character is a "?". If you call the <xref:System.Text.EncoderReplacementFallback.%23ctor%28System.String%29?displayProperty=nameWithType> or <xref:System.Text.DecoderReplacementFallback.%23ctor%28System.String%29?displayProperty=nameWithType> constructor, you can specify the replacement string.  
   
 -   Best-fit fallback. You can derive from the <xref:System.Text.EncoderFallback> or <xref:System.Text.DecoderFallback> class to implement a best-fit replacement mechanism.  
   
@@ -251,6 +266,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
         <block subset="none" type="usage">
           <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" /> method. You should not call it directly from user code.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -297,7 +313,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
   
 -   Exception fallback. If the `encoderFallback` argument is an instance of <xref:System.Text.EncoderExceptionFallback>, or the `decoderExceptionFallback` argument is an instance of <xref:System.Text.DecoderExceptionFallback>, the encoding method throws an exception if characters cannot be encoded, and the decoding method throws an exception if a byte sequence cannot be decoded.  
   
--   Replacement fallback. If the `encoderFallback` argument is an instance of <xref:System.Text.EncoderReplacementFallback>, or the `decoderExceptionFallback` argument is an instance of <xref:System.Text.DecoderReplacementFallback>, the encoding and decoding methods substitute a replacement string for characters that cannot be encoded and byte sequences cannot be decoded. If you instantiated the replacement fallback object by calling the default constructor, the replacement character is a "?". If you call the <xref:System.Text.EncoderReplacementFallback.%23ctor%28System.String%29?displayProperty=fullName> or <xref:System.Text.DecoderReplacementFallback.%23ctor%28System.String%29?displayProperty=fullName> constructor, you can specify the replacement string.  
+-   Replacement fallback. If the `encoderFallback` argument is an instance of <xref:System.Text.EncoderReplacementFallback>, or the `decoderExceptionFallback` argument is an instance of <xref:System.Text.DecoderReplacementFallback>, the encoding and decoding methods substitute a replacement string for characters that cannot be encoded and byte sequences cannot be decoded. If you instantiated the replacement fallback object by calling the default constructor, the replacement character is a "?". If you call the <xref:System.Text.EncoderReplacementFallback.%23ctor%28System.String%29?displayProperty=nameWithType> or <xref:System.Text.DecoderReplacementFallback.%23ctor%28System.String%29?displayProperty=nameWithType> constructor, you can specify the replacement string.  
   
 -   Best-fit fallback. You can derive from the <xref:System.Text.EncoderFallback> or <xref:System.Text.DecoderFallback> class to implement a best-fit replacement mechanism.  
   
@@ -309,7 +325,17 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
         <block subset="none" type="usage">
           <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)" /> method. You should not call it directly from user code.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEncoding">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an encoding.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

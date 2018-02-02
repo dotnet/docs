@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a80efb59-591a-4a37-bb3c-8fffa6ca0b7d
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Security in WCF
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] has two major modes for providing security (`Transport` and `Message`) and a third mode (`TransportWithMessageCredential`) that combines the two. This topic discusses message security and the reasons to use it.  
@@ -65,7 +67,7 @@ manager: "erikre"
 -   Requires implementation of XML-level security mechanisms and support for WS-Security specification. This might affect the interoperability.  
   
 ## See Also  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)   
- [How to: Use Transport Security and Message Credentials](../../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)   
+ [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)  
+ [How to: Use Transport Security and Message Credentials](../../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)  
  [Microsoft Patterns and Practices, Chapter 3: Implementing Transport and Message Layer Security](http://go.microsoft.com/fwlink/?LinkId=88897)

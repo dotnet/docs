@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.WebPartsSection" />
+    <altmember cref="T:System.Web.Configuration.AuthorizationRule" />
+    <altmember cref="T:System.Web.Configuration.AuthorizationRuleAction" />
+    <altmember cref="T:System.Web.Configuration.AuthorizationRuleCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.AuthorizationRule" />
       </Docs>
     </Member>
   </Members>

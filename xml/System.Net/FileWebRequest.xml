@@ -31,7 +31,7 @@
 ## Remarks  
  The <xref:System.Net.FileWebRequest> class implements the <xref:System.Net.WebRequest>`abstract` base class for Uniform Resource Identifiers (URIs) that use the `file://` scheme to request local files.  
   
- Do not use the <xref:System.Net.FileWebRequest.%23ctor%2A> constructor. Use the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method to initialize new instances of the <xref:System.Net.FileWebRequest> class. If the URI scheme is `file://`, the <xref:System.Net.WebRequest.Create%2A> method returns a <xref:System.Net.FileWebRequest> object.  
+ Do not use the <xref:System.Net.FileWebRequest.%23ctor%2A> constructor. Use the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method to initialize new instances of the <xref:System.Net.FileWebRequest> class. If the URI scheme is `file://`, the <xref:System.Net.WebRequest.Create%2A> method returns a <xref:System.Net.FileWebRequest> object.  
   
  The <xref:System.Net.FileWebRequest.GetResponse%2A> method makes a synchronous request for the file specified in the <xref:System.Net.FileWebRequest.RequestUri%2A> property and returns a <xref:System.Net.FileWebResponse> object that contains the response. You can make an asynchronous request for the file using the <xref:System.Net.FileWebRequest.BeginGetResponse%2A> and <xref:System.Net.FileWebRequest.EndGetResponse%2A> methods.  
   
@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.File" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -180,6 +181,8 @@
         <exception cref="T:System.InvalidOperationException">The stream is being used by a previous call to <see cref="M:System.Net.FileWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.ApplicationException">No write stream is available.</exception>
         <exception cref="T:System.Net.WebException">The <see cref="T:System.Net.FileWebRequest" /> was aborted.</exception>
+        <altmember cref="M:System.Net.FileWebRequest.GetRequestStream" />
+        <altmember cref="M:System.Net.FileWebRequest.EndGetRequestStream(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="BeginGetResponse">
@@ -231,6 +234,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The stream is already in use by a previous call to <see cref="M:System.Net.FileWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.Net.WebException">The <see cref="T:System.Net.FileWebRequest" /> was aborted.</exception>
+        <altmember cref="M:System.Net.FileWebRequest.GetResponse" />
+        <altmember cref="M:System.Net.FileWebRequest.EndGetResponse(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionGroupName">
@@ -425,6 +430,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.FileWebRequest.GetRequestStream" />
+        <altmember cref="M:System.Net.FileWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">
@@ -474,6 +481,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.FileWebRequest.GetResponse" />
+        <altmember cref="M:System.Net.FileWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -558,6 +567,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The request times out.</exception>
+        <altmember cref="M:System.Net.FileWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetResponse">

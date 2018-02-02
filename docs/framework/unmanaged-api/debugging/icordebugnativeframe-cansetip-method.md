@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::CanSetIP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugNativeFrame::CanSetIP method [.NET Framework debugging]"
   - "CanSetIP method, ICorDebugNativeFrame interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugNativeFrame::CanSetIP Method
 Gets an HRESULT that indicates whether it is safe to set the instruction pointer (IP) to the specified offset location in native code.  

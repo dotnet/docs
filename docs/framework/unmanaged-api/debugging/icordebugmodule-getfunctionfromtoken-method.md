@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetFunctionFromToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunctionFromToken method, ICorDebugModule interface [.NET Framework debugging]"
   - "ICorDebugModule::GetFunctionFromToken method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::GetFunctionFromToken Method
 Gets the function that is specified by the metadata token.  

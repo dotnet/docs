@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0f4b0d5b-6522-4ad5-9f3a-baa78316d7d1
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hello World with the Routing Service
 This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Routing Service. The Routing Service is a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] component that makes it easy to include a content-based router in your application. This sample adapts the standard [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Calculator Sample to communicate using the Routing Service. In this sample, the Calculator client is configured to send messages to an endpoint exposed by the router. The Routing Service is configured to accept all messages sent to it and to forward them to an endpoint that corresponds to the Calculator service. Thus messages sent from the client are received by the router and re-routed to the actual Calculator service. Messages from the Calculator service are sent back to the router, which in turn passes them back to the Calculator client.  

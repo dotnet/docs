@@ -10,15 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "private font collections, creating"
-  - "fonts, creating private collections"
+  - "private font collections [Windows Forms], creating"
+  - "fonts [Windows Forms], creating private collections"
 ms.assetid: 6533d5e5-a8dc-4b76-9fc4-3bf75c8b9212
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Private Font Collection
 The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xref:System.Drawing.Text.FontCollection> abstract base class. You can use a <xref:System.Drawing.Text.PrivateFontCollection> object to maintain a set of fonts specifically for your application. A private font collection can include installed system fonts as well as fonts that have not been installed on the computer. To add a font file to a private font collection, call the <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile%2A> method of a <xref:System.Drawing.Text.PrivateFontCollection> object.  
@@ -57,5 +60,5 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- <xref:System.Drawing.Text.PrivateFontCollection>   
+ <xref:System.Drawing.Text.PrivateFontCollection>  
  [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)

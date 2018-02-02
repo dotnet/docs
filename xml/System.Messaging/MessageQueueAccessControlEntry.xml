@@ -22,14 +22,19 @@
   
  An overload of the <xref:System.Messaging.MessageQueueAccessControlEntry.%23ctor%2A> constructor allows you specify a <xref:System.Messaging.AccessControlEntryType> member to indicate whether to allow or deny rights to the trustee. The order in which rights are allowed or denied in the resource's DACL affects whether the trustee has the specified rights. For example, if rights have already been granted to the trustee and you later add an entry that denies them, the system finds the granted rights first, so the user is granted rights you might have intended they be denied. You can use two entry types to override this behavior: `Set` and `Revoke`. For more information about controlling the way in which access rights are determined, see the <xref:System.Messaging.AccessControlEntryType> enumeration topic.  
   
- The <xref:System.Messaging.MessageQueueAccessControlEntry> class is associated with security based on access control lists (ACLs), which you can use to give users access to the Message Queuing system itself. This is different from code access security, which is implemented through the <xref:System.Messaging.MessageQueuePermission> and related classes. Message Queuing code access security defines queue-specific operations or queue access that an application might require which is subject to security control; it does not represent a right for the application to perform these operations or receive access in and of itself. See the topic [&#91;\<topic://cpconcodeaccesssecurity>&#93;](http://msdn.microsoft.com/en-us/23a20143-241d-4fe5-9d9f-3933fd594c03) for more information about code access security.  
+ The <xref:System.Messaging.MessageQueueAccessControlEntry> class is associated with security based on access control lists (ACLs), which you can use to give users access to the Message Queuing system itself. This is different from code access security, which is implemented through the <xref:System.Messaging.MessageQueuePermission> and related classes. Message Queuing code access security defines queue-specific operations or queue access that an application might require which is subject to security control; it does not represent a right for the application to perform these operations or receive access in and of itself. See the topic [&#91;\<topic://cpconcodeaccesssecurity>&#93;](http://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03) for more information about code access security.  
   
  To set message queue permissions for a trustee, create a new instance of the <xref:System.Messaging.AccessControlEntry.Trustee%2A> class and pass it into an overload of the <xref:System.Messaging.MessageQueueAccessControlEntry.%23ctor%2A> constructor. Specify the message queue access rights either by passing an instance of <xref:System.Messaging.MessageQueueAccessRights> into the constructor or by setting the <xref:System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights%2A> property on an existing <xref:System.Messaging.MessageQueueAccessControlEntry> instance.  
   
- You can then pass the <xref:System.Messaging.MessageQueueAccessControlEntry> instance directly to the <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName> method, or alternately add the entry to an instance of <xref:System.Messaging.AccessControlList> before calling <xref:System.Messaging.MessageQueue.SetPermissions%2A>.  
+ You can then pass the <xref:System.Messaging.MessageQueueAccessControlEntry> instance directly to the <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=nameWithType> method, or alternately add the entry to an instance of <xref:System.Messaging.AccessControlList> before calling <xref:System.Messaging.MessageQueue.SetPermissions%2A>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
+    <altmember cref="T:System.Messaging.Trustee" />
+    <altmember cref="T:System.Messaging.AccessControlList" />
+    <altmember cref="T:System.Messaging.AccessControlEntryType" />
+    <altmember cref="T:System.Messaging.MessageQueuePermission" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +64,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
+        <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
+        <altmember cref="T:System.Messaging.AccessControlList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,6 +101,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
+        <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
+        <altmember cref="T:System.Messaging.AccessControlList" />
       </Docs>
     </Member>
     <Member MemberName="MessageQueueAccessRights">
@@ -113,11 +126,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights%2A> property enables you to specify Message Queuing object-specific rights such as receiving, peeking, or writing messages, or setting queue properties. The value of this property is set by the <xref:System.Messaging.MessageQueueAccessControlEntry.%23ctor%2A> constructor, but you can change it at any time before using this instance of <xref:System.Messaging.MessageQueueAccessControlEntry> in a call to <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName>.  
+ The <xref:System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights%2A> property enables you to specify Message Queuing object-specific rights such as receiving, peeking, or writing messages, or setting queue properties. The value of this property is set by the <xref:System.Messaging.MessageQueueAccessControlEntry.%23ctor%2A> constructor, but you can change it at any time before using this instance of <xref:System.Messaging.MessageQueueAccessControlEntry> in a call to <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueAccessControlEntry.#ctor" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueAccessControlEntry" /> class with the specified trustee and Message Queuing access rights.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

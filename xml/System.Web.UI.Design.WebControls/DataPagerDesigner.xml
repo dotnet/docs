@@ -22,7 +22,7 @@
   
 -   The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.ActionLists%2A> property returns the list of items that are used to create a smart tag panel.  
   
--   The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PagedControlID%2A> property is used as the designer (shadowed) version of the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A?displayProperty=fullName> property.  
+-   The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PagedControlID%2A> property is used as the designer (shadowed) version of the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A?displayProperty=nameWithType> property.  
   
 -   The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.TemplateGroups%2A> property returns a collection of template groups for the templated pager fields of the associated <xref:System.Web.UI.WebControls.DataPager> control.  
   
@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -78,6 +80,7 @@
         <summary>Gets the list of items that are used to create the smart tag panel for the associated <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</summary>
         <value>The list of items that are used to create the smart tag panel for the associated <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -100,10 +103,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> collection is not empty, the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetDesignTimeHtml> method refreshes the <xref:System.ComponentModel.TypeDescriptor> object to force the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties%2A> method to be called and then calls its base implementation. If the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> collection is empty, the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetDesignTimeHtml> method invokes the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml%2A> method to generate the markup.  
+ If the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=nameWithType> collection is not empty, the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetDesignTimeHtml> method refreshes the <xref:System.ComponentModel.TypeDescriptor> object to force the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties%2A> method to be called and then calls its base implementation. If the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=nameWithType> collection is empty, the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetDesignTimeHtml> method invokes the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml%2A> method to generate the markup.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -126,10 +134,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml%2A> method is used by the designer to render the <xref:System.Web.UI.WebControls.DataPager> control at design time if the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> collection is empty. The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%28System.String%29> method to create a placeholder that displays the type and the ID of the control, and additional instructions for the user.  
+ The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml%2A> method is used by the designer to render the <xref:System.Web.UI.WebControls.DataPager> control at design time if the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=nameWithType> collection is empty. The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%28System.String%29> method to create a placeholder that displays the type and the ID of the control, and additional instructions for the user.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -160,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="PagedControlID">
@@ -178,6 +189,8 @@
         <summary>Gets or sets a value for the designer version of the <see cref="P:System.Web.UI.WebControls.DataPager.PagedControlID" /> property.</summary>
         <value>The value of the <see cref="P:System.Web.UI.WebControls.DataPager.PagedControlID" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.PagedControlID" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -202,13 +215,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties%2A> method adds a new property to the property grid of the <xref:System.Web.UI.WebControls.DataPager> control that corresponds to the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A?displayProperty=fullName> property. If the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property is set to `true`, the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties%2A> method also sets the <xref:System.ComponentModel.BrowsableAttribute> attribute of the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> property to `BrowsableAttribute.No`. This prevents pager fields from being deleted by using the `Fields` dialog box when a templated pager field is in template mode.  
+ The <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties%2A> method adds a new property to the property grid of the <xref:System.Web.UI.WebControls.DataPager> control that corresponds to the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A?displayProperty=nameWithType> property. If the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property is set to `true`, the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties%2A> method also sets the <xref:System.ComponentModel.BrowsableAttribute> attribute of the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=nameWithType> property to `BrowsableAttribute.No`. This prevents pager fields from being deleted by using the `Fields` dialog box when a templated pager field is in template mode.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Make sure that you call the base class’s <see cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method before you perform other processing.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.PagedControlID" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -234,6 +251,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -253,6 +274,7 @@
         <value>
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
   </Members>

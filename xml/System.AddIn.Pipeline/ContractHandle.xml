@@ -197,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName>. Application code should not call this method; an object's <xref:System.AddIn.Pipeline.ContractHandle.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. Application code should not call this method; an object's <xref:System.AddIn.Pipeline.ContractHandle.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
  When called by the garbage collector, this method calls the <xref:System.AddIn.Pipeline.ContractHandle.Dispose%28System.Boolean%29> method.  
   
@@ -205,5 +205,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Revokes the lifetime token on a contract.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

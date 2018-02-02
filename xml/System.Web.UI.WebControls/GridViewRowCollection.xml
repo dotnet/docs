@@ -28,7 +28,7 @@
   
 -   Use the <xref:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator%2A> method to retrieve an enumerator that can be used to iterate through the collection.  
   
--   Use the <xref:System.Web.UI.WebControls.GridViewRowCollection.CopyTo%2A> method to copy the items in the collection into an <xref:System.Array?displayProperty=fullName> object, which can then be used to access the items in the collection.  
+-   Use the <xref:System.Web.UI.WebControls.GridViewRowCollection.CopyTo%2A> method to copy the items in the collection into an <xref:System.Array?displayProperty=nameWithType> object, which can then be used to access the items in the collection.  
   
  To determine the total number of items in the collection, use the <xref:System.Web.UI.WebControls.GridViewRowCollection.Count%2A> property  
   
@@ -37,11 +37,18 @@
 ## Examples  
  The following example demonstrates how to iterate through the <xref:System.Web.UI.WebControls.GridView.Rows%2A> collection of a <xref:System.Web.UI.WebControls.GridView> control and display the values of a column on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+    <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.CopyTo(System.Web.UI.WebControls.GridViewRow[],System.Int32)" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Count" />
+    <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,10 +70,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewRowCollection> class using the specified <xref:System.Collections.ArrayList?displayProperty=fullName> object. The <xref:System.Collections.ArrayList?displayProperty=fullName> object should contain the <xref:System.Web.UI.WebControls.GridViewRow> objects with which to populate the collection.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewRowCollection> class using the specified <xref:System.Collections.ArrayList?displayProperty=nameWithType> object. The <xref:System.Collections.ArrayList?displayProperty=nameWithType> object should contain the <xref:System.Web.UI.WebControls.GridViewRow> objects with which to populate the collection.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -93,21 +102,24 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the items in the <xref:System.Web.UI.WebControls.GridViewRowCollection> object into the specified <xref:System.Array?displayProperty=fullName> object, starting at the specified index. The <xref:System.Array?displayProperty=fullName> object can then be used to access the items in the collection.  
+ Use this method to copy the items in the <xref:System.Web.UI.WebControls.GridViewRowCollection> object into the specified <xref:System.Array?displayProperty=nameWithType> object, starting at the specified index. The <xref:System.Array?displayProperty=nameWithType> object can then be used to access the items in the collection.  
   
 > [!NOTE]
->  You must use a zero-based <xref:System.Array?displayProperty=fullName> object for the `array` parameter.  
+>  You must use a zero-based <xref:System.Array?displayProperty=nameWithType> object for the `array` parameter.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowCollection.CopyTo%2A> method to copy the items of collection into an array. The array is iterated through and the values of the first cell are displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/CS/gridviewrowcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/VB/gridviewrowcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/CS/gridviewrowcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/VB/gridviewrowcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -136,11 +148,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowCollection.Count%2A> property to determine whether the <xref:System.Web.UI.WebControls.GridView> control contains any records. A value greater than zero indicates that the <xref:System.Web.UI.WebControls.GridView> control contains at least one record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -163,21 +176,27 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to get an enumerator that can be iterated through linearly to access each item in the <xref:System.Web.UI.WebControls.GridViewRowCollection>. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection. To move the enumerator to its initial position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
+ Use this method to get an enumerator that can be iterated through linearly to access each item in the <xref:System.Web.UI.WebControls.GridViewRowCollection>. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection. To move the enumerator to its initial position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  When you initially get the enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item that is represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  When you initially get the enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item that is represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator%2A> method to retrieve an enumerator that contains the values from the collection. The enumerator is iterated through and the values of the first cell are displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/CS/gridviewrowcollectiongetenumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/VB/gridviewrowcollectiongetenumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/CS/gridviewrowcollectiongetenumeratorcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/VB/gridviewrowcollectiongetenumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.CopyTo(System.Web.UI.WebControls.GridViewRow[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -206,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -232,10 +252,12 @@
 > [!NOTE]
 >  This property has been overridden to always return `false` to indicate that the <xref:System.Web.UI.WebControls.GridViewRowCollection> object is not thread-safe.  
   
- For more information on the <xref:System.Web.UI.WebControls.GridViewRowCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.GridViewRowCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -268,11 +290,16 @@
 ## Examples  
  The following example demonstrates how to use the indexer to retrieve a <xref:System.Web.UI.WebControls.GridViewRow> object from the collection. The values of the cells in the <xref:System.Web.UI.WebControls.GridViewRow> object are displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionIndexer/CS/gridviewrowcollectionindexercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionIndexer/VB/gridviewrowcollectionindexervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionIndexer/CS/gridviewrowcollectionindexercs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionIndexer/VB/gridviewrowcollectionindexervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.CopyTo(System.Web.UI.WebControls.GridViewRow[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -296,10 +323,12 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.GridViewRowCollection.SyncRoot%2A> property to get an object that can be used to synchronize access to the collection. The object returned in this implementation is the <xref:System.Web.UI.WebControls.GridViewRowCollection> object itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.GridViewRowCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.GridViewRowCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -326,10 +355,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.GridViewRowCollection> instance is cast to the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.GridViewRowCollection> instance is cast to the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowCollection" />
       </Docs>
     </Member>
   </Members>

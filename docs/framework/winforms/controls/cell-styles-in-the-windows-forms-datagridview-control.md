@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], cell styles"
-  - "cells, styles"
-  - "data grids, cell styles"
+  - "cells [Windows Forms], styles"
+  - "data grids [Windows Forms], cell styles"
 ms.assetid: dbb75ed6-8804-4232-8382-f9920c2e380c
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Cell Styles in the Windows Forms DataGridView Control
 Each cell within the <xref:System.Windows.Forms.DataGridView> control can have its own style, such as text format, background color, foreground color, and font. Typically, however, multiple cells will share particular style characteristics.  
@@ -73,25 +73,25 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
 ## Style Inheritance  
  Each <xref:System.Windows.Forms.DataGridViewCell> gets its appearance from its <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property. The <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by this property inherits its values from a hierarchy of properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. These properties are listed below in the order in which the <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> for non-header cells obtains its values.  
   
-1.  <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName>  
+1.  <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType>  
   
-2.  <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName>  
+2.  <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
-3.  <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName> (only for cells in rows with odd index numbers)  
+3.  <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType> (only for cells in rows with odd index numbers)  
   
-4.  <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>  
+4.  <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType>  
   
-5.  <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=fullName>  
+5.  <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
-6.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>  
+6.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
  For row and column header cells, the <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property is populated by values from the following list of source properties in the given order.  
   
-1.  <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName>  
+1.  <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType>  
   
-2.  <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A?displayProperty=fullName>  
+2.  <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A?displayProperty=nameWithType>  
   
-3.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>  
+3.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
  The following diagram illustrates this process.  
   
@@ -99,19 +99,19 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
   
  You can also access the styles inherited by specific rows and columns. The column <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A> property inherits its values from the following properties.  
   
-1.  <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=fullName>  
+1.  <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
-2.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>  
+2.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
  The row <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property inherits its values from the following properties.  
   
-1.  <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName>  
+1.  <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
-2.  <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName> (only for cells in rows with odd index numbers)  
+2.  <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType> (only for cells in rows with odd index numbers)  
   
-3.  <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>  
+3.  <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType>  
   
-4.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>  
+4.  <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
  For each property in a <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by an `InheritedStyle` property, the property value is obtained from the first cell style in the appropriate list that has the corresponding property set to a value other than the <xref:System.Windows.Forms.DataGridViewCellStyle> class defaults.  
   
@@ -119,14 +119,14 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
   
 |Property of type `DataGridViewCellStyle`|Example `ForeColor` value for retrieved object|  
 |----------------------------------------------|----------------------------------------------------|  
-|<xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName>|<xref:System.Drawing.Color.Empty?displayProperty=fullName>|  
-|<xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName>|<xref:System.Drawing.Color.Red%2A?displayProperty=fullName>|  
-|<xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName>|<xref:System.Drawing.Color.Empty?displayProperty=fullName>|  
-|<xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>|<xref:System.Drawing.Color.Empty?displayProperty=fullName>|  
-|<xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=fullName>|<xref:System.Drawing.Color.DarkBlue%2A?displayProperty=fullName>|  
-|<xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>|<xref:System.Drawing.Color.Black%2A?displayProperty=fullName>|  
+|<xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType>|<xref:System.Drawing.Color.Empty?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=nameWithType>|<xref:System.Drawing.Color.Red%2A?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType>|<xref:System.Drawing.Color.Empty?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType>|<xref:System.Drawing.Color.Empty?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=nameWithType>|<xref:System.Drawing.Color.DarkBlue%2A?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>|<xref:System.Drawing.Color.Black%2A?displayProperty=nameWithType>|  
   
- In this case, the <xref:System.Drawing.Color.Red%2A?displayProperty=fullName> value from the cell's row is the first real value on the list. This becomes the <xref:System.Windows.Forms.DataGridViewCellStyle.ForeColor%2A> property value of the cell's <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A>.  
+ In this case, the <xref:System.Drawing.Color.Red%2A?displayProperty=nameWithType> value from the cell's row is the first real value on the list. This becomes the <xref:System.Windows.Forms.DataGridViewCellStyle.ForeColor%2A> property value of the cell's <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A>.  
   
  The following diagram illustrates how different <xref:System.Windows.Forms.DataGridViewCellStyle> properties can inherit their values from different places.  
   
@@ -142,34 +142,34 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
  The <xref:System.Windows.Forms.DataGridViewButtonColumn>, <xref:System.Windows.Forms.DataGridViewImageColumn>, and <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> types also initialize some values of the object returned by the column <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property. For more information, see the reference documentation for these types.  
   
 ## Setting Styles Dynamically  
- To customize the styles of cells with particular values, implement a handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event. Handlers for this event receive an argument of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs> type. This object contains properties that let you determine the value of the cell being formatted along with its location in the <xref:System.Windows.Forms.DataGridView> control. This object also contains a <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A> property that is initialized to the value of the <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property of the cell being formatted. You can modify the cell style properties to specify style information appropriate to the cell value and location.  
+ To customize the styles of cells with particular values, implement a handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event. Handlers for this event receive an argument of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs> type. This object contains properties that let you determine the value of the cell being formatted along with its location in the <xref:System.Windows.Forms.DataGridView> control. This object also contains a <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A> property that is initialized to the value of the <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property of the cell being formatted. You can modify the cell style properties to specify style information appropriate to the cell value and location.  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView.RowPrePaint> and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events also receive a <xref:System.Windows.Forms.DataGridViewCellStyle> object in the event data, but in their case, it is a copy of the row <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property for read-only purposes, and changes to it do not affect the control.  
   
- You can also dynamically modify the styles of individual cells in response to events such as the <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridView.CellMouseLeave> events. For example, in a handler for the <xref:System.Windows.Forms.DataGridView.CellMouseEnter> event, you could store the current value of the cell background color (retrieved through the cell's <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property), then set it to a new color that will highlight the cell when the mouse hovers over it. In a handler for the <xref:System.Windows.Forms.DataGridView.CellMouseLeave> event, you can then restore the background color to the original value.  
+ You can also dynamically modify the styles of individual cells in response to events such as the <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataGridView.CellMouseLeave> events. For example, in a handler for the <xref:System.Windows.Forms.DataGridView.CellMouseEnter> event, you could store the current value of the cell background color (retrieved through the cell's <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property), then set it to a new color that will highlight the cell when the mouse hovers over it. In a handler for the <xref:System.Windows.Forms.DataGridView.CellMouseLeave> event, you can then restore the background color to the original value.  
   
 > [!NOTE]
 >  Caching the values stored in the cell's <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property is important regardless of whether a particular style value is set. If you temporarily replace a style setting, restoring it to its original "not set" state ensures that the cell will go back to inheriting the style setting from a higher level. If you need to determine the actual style in effect for a cell regardless of whether the style is inherited, use the cell's <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridViewCellStyle>   
- <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewBand.InheritedStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewBand.DefaultCellStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.CellStyleContentChanged?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.RowPostPaint?displayProperty=fullName>   
- [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)   
- [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridViewCellStyle>  
+ <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewBand.InheritedStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewBand.DefaultCellStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.CellStyleContentChanged?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.RowPostPaint?displayProperty=nameWithType>  
+ [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)  
+ [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)  
  [Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-formatting-in-the-windows-forms-datagridview-control.md)

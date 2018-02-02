@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: f542cee6-3169-4dcf-a631-3a6a79ccd473
 ---
 # Perform left outer joins
@@ -25,12 +24,12 @@ A left outer join is a join in which each element of the first collection is ret
 > [!NOTE]
 >  The default value for a reference type is `null`; therefore, the example checks for a null reference before accessing each element of each `Pet` collection.  
   
- [!code-cs[CsLINQProgJoining#7](../../../samples/snippets/csharp/concepts/linq/how-to-perform-left-outer-joins_1.cs)]  
+ [!code-csharp[CsLINQProgJoining#7](../../../samples/snippets/csharp/concepts/linq/how-to-perform-left-outer-joins_1.cs)]  
  
 ## See also  
- <xref:System.Linq.Enumerable.Join%2A>   
- <xref:System.Linq.Enumerable.GroupJoin%2A>   
- [Perform inner joins](perform-inner-joins.md)   
- [Perform grouped joins](perform-grouped-joins.md)   
- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)   
+ <xref:System.Linq.Enumerable.Join%2A>  
+ <xref:System.Linq.Enumerable.GroupJoin%2A>  
+ [Perform inner joins](perform-inner-joins.md)  
+ [Perform grouped joins](perform-grouped-joins.md)  
+ [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
  

@@ -45,7 +45,7 @@
 > [!NOTE]
 >  An instance of the <xref:System.TimeZoneInfo.AdjustmentRule> class is immutable. Once an object has been created, its values cannot be modified.  
   
- To create a <xref:System.TimeZoneInfo.AdjustmentRule> object, call the `static` (`Shared` in Visual Basic) <xref:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule%2A?displayProperty=fullName> method. You can then supply an array of <xref:System.TimeZoneInfo.AdjustmentRule> objects to two of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method. To retrieve the adjustment rules of a particular time zone, call its <xref:System.TimeZoneInfo.GetAdjustmentRules%2A?displayProperty=fullName> method, which returns an array of <xref:System.TimeZoneInfo.AdjustmentRule> objects.  
+ To create a <xref:System.TimeZoneInfo.AdjustmentRule> object, call the `static` (`Shared` in Visual Basic) <xref:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule%2A?displayProperty=nameWithType> method. You can then supply an array of <xref:System.TimeZoneInfo.AdjustmentRule> objects to two of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method. To retrieve the adjustment rules of a particular time zone, call its <xref:System.TimeZoneInfo.GetAdjustmentRules%2A?displayProperty=nameWithType> method, which returns an array of <xref:System.TimeZoneInfo.AdjustmentRule> objects.  
   
    
   
@@ -116,6 +116,7 @@ W. Central Africa Standard Time has no adjustment rules
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.TimeZoneInfo" />
   </Docs>
   <Members>
     <Member MemberName="CreateAdjustmentRule">
@@ -172,9 +173,9 @@ DateTime.Now.Date
 dateVariable.Date  
 ```  
   
- The <xref:System.DateTime.Kind%2A> property of the `dateStart` and `dateEnd` parameters must also be <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The <xref:System.DateTime.Kind%2A> property of the `dateStart` and `dateEnd` parameters must also be <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.  
   
- The value of the `daylightDelta` parameter can range from -14 to 14. The sum of the `daylightDelta` parameter and the `baseUtcOffset` parameter used in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method must also range from -14 to 14 or an <xref:System.InvalidTimeZoneException> is thrown.  
+ The value of the `daylightDelta` parameter can range from -14 to 14. The sum of the `daylightDelta` parameter and the `baseUtcOffset` parameter used in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method must also range from -14 to 14 or an <xref:System.InvalidTimeZoneException> is thrown.  
   
 > [!NOTE]
 >  The `daylightDelta` parameter defines the difference between a time zone's standard time and its daylight saving time. It is not intended to define the time zone's standard time offset from Coordinated Universal Time (UTC). The <xref:System.TimeZoneInfo> class assumes that this offset from UTC is constant throughout the life of the time zone. To reflect a change in a time zone's offset from UTC that is not caused by the application of an adjustment rule, you must use the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a new custom time zone.  
@@ -182,7 +183,7 @@ dateVariable.Date
    
   
 ## Examples  
- The following example creates an alternate Central Standard Time zone and defines three adjustment rules for the periods 1976-1986, 1987-2006, and 2007 and beyond. These rules are added to a generic <xref:System.Collections.Generic.List%601> object whose elements are then copied to a <xref:System.TimeZoneInfo.AdjustmentRule> array. This array is then used in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%29?displayProperty=fullName> method.  
+ The following example creates an alternate Central Standard Time zone and defines three adjustment rules for the periods 1976-1986, 1987-2006, and 2007 and beyond. These rules are added to a generic <xref:System.Collections.Generic.List%601> object whose elements are then copied to a <xref:System.TimeZoneInfo.AdjustmentRule> array. This array is then used in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%29?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.TimeZone2.AdjustmentRule.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.AdjustmentRule.Class/cs/System.TimeZone2.AdjustmentRule.Class.cs#1)]
  [!code-vb[System.TimeZone2.AdjustmentRule.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.AdjustmentRule.Class/vb/System.TimeZone2.AdjustmentRule.Class.vb#1)]  
@@ -475,7 +476,7 @@ TimeZoneTime = BaseUtcOffset + DaylightDelta + UtcTime
    
   
 ## Examples  
- The following example calls the <xref:System.TimeZoneInfo.AdjustmentRule.Equals%28System.TimeZoneInfo.AdjustmentRule%29?displayProperty=fullName> method to compare the adjustment rules for Central Standard Time with those for Canada Central Standard Time and Mexico Standard Time.  
+ The following example calls the <xref:System.TimeZoneInfo.AdjustmentRule.Equals%28System.TimeZoneInfo.AdjustmentRule%29?displayProperty=nameWithType> method to compare the adjustment rules for Central Standard Time with those for Canada Central Standard Time and Mexico Standard Time.  
   
  [!code-csharp[System.TimeZone2.AdjustmentRule.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.AdjustmentRule.Class/cs/System.TimeZone2.AdjustmentRule.Class.cs#2)]
  [!code-vb[System.TimeZone2.AdjustmentRule.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.AdjustmentRule.Class/vb/System.TimeZone2.AdjustmentRule.Class.vb#2)]  

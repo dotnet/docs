@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet::SetRegisters"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetRegisters method, ICorDebugRegisterSet interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet::SetRegisters method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRegisterSet::SetRegisters Method
 `SetRegisters` is not implemented in the .NET Framework version 2.0. Do not call this method.  
@@ -56,5 +56,5 @@ HRESULT SetRegisters (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See Also  
- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)   
+ [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)  
  [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)

@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.Windows.Controls.DataGridCell.IsReadOnly%2A> property to `true` to make an individual cell read-only. Set the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in an individual column read-only. Set the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in the <xref:System.Windows.Controls.DataGrid> read-only If there is a conflict between the settings at the <xref:System.Windows.Controls.DataGrid>, column, and cell levels, a value of `true` takes precedence over a value of `false`.  
+ Set the <xref:System.Windows.Controls.DataGridCell.IsReadOnly%2A> property to `true` to make an individual cell read-only. Set the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=nameWithType> property to `true` to make all cells in an individual column read-only. Set the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=nameWithType> property to `true` to make all cells in the <xref:System.Windows.Controls.DataGrid> read-only If there is a conflict between the settings at the <xref:System.Windows.Controls.DataGrid>, column, and cell levels, a value of `true` takes precedence over a value of `false`.  
   
  ]]></format>
         </remarks>
@@ -199,6 +199,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Selected" />
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Unselected" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -430,7 +432,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGridCell.OnSelected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -491,7 +493,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGridCell.OnUnselected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -524,6 +526,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Unselected" />
+        <altmember cref="P:System.Windows.Controls.DataGridCell.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="SelectedEvent">
@@ -565,6 +569,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Selected" />
+        <altmember cref="P:System.Windows.Controls.DataGridCell.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="UnselectedEvent">

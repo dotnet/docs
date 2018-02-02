@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drawing, lines"
+  - "drawing [WPF], lines"
   - "graphics [WPF], lines"
-  - "lines, drawing"
+  - "lines [WPF], drawing"
 ms.assetid: 0513ee01-6b27-4bb3-85f3-3a3e6710d80e
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Line
 This example shows you how to draw lines by using the <xref:System.Windows.Shapes.Line> element.  
@@ -26,7 +28,7 @@ This example shows you how to draw lines by using the <xref:System.Windows.Shape
   
  Setting the <xref:System.Windows.Shapes.Shape.Fill%2A> element for a line has no effect, because a line has no interior.  
   
- The following example draws three lines inside a <xref:System.Windows.Controls.Canvas>element.  
+ The following example draws three lines inside a <xref:System.Windows.Controls.Canvas> element.  
   
 ## Example  
  [!code-xaml[drawingwithshapeelements#LineExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/lineexample.xaml#lineexample1)]  
@@ -34,5 +36,5 @@ This example shows you how to draw lines by using the <xref:System.Windows.Shape
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
- <xref:System.Windows.Shapes.Line>   
+ <xref:System.Windows.Shapes.Line>  
  [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)

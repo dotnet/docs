@@ -221,7 +221,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.OpCode.Equals%28System.Reflection.Emit.OpCode%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.OpCode.Equals%28System.Reflection.Emit.OpCode%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -258,7 +258,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.OpCode.Equals%28System.Reflection.Emit.OpCode%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.OpCode.Equals%28System.Reflection.Emit.OpCode%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -465,7 +465,7 @@
    
   
 ## Examples  
- The following example displays the property values of the <xref:System.Reflection.Emit.OpCodes.Add?displayProperty=fullName> instruction.  
+ The following example displays the property values of the <xref:System.Reflection.Emit.OpCodes.Add?displayProperty=nameWithType> instruction.  
   
  [!code-csharp[System.Reflection.Emit.OpCode.Value#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.emit.opcode.value/cs/value1.cs#1)]
  [!code-vb[System.Reflection.Emit.OpCode.Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.emit.opcode.value/vb/value1.vb#1)]  
@@ -474,5 +474,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the current instance is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

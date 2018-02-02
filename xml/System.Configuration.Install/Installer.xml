@@ -43,7 +43,7 @@
   
  Two situations illustrate the need to save information in the state-saver <xref:System.Collections.IDictionary>. First, suppose that your installer sets a registry key. It should save the key's original value in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the original value can be restored. Second, suppose the installer replaces an existing file. Save the existing file in a temporary directory and the location of the new location of the file in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the newer file is deleted and replaced by the original from the temporary location.  
   
- The <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
+ The <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
   
    
   
@@ -56,6 +56,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.Install.AssemblyInstaller" />
+    <altmember cref="T:System.Configuration.Install.ComponentInstaller" />
+    <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+    <altmember cref="T:System.Configuration.Install.TransactedInstaller" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +103,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.BeforeInstall" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="AfterRollback">
@@ -127,6 +134,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.BeforeRollback" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="AfterUninstall">
@@ -155,6 +165,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.BeforeUninstall" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="BeforeInstall">
@@ -183,6 +196,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.AfterInstall" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="BeforeRollback">
@@ -211,6 +227,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.AfterRollback" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="BeforeUninstall">
@@ -239,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.AfterUninstall" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -280,6 +302,11 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method first in your derived method. The <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method is called only if the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of each installer in this instance's <see cref="T:System.Configuration.Install.InstallerCollection" /> succeeds. The <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method stores information needed to do a correct uninstallation, and calls the <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method of each installer in the collection.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
       </Docs>
     </Member>
     <Member MemberName="Committed">
@@ -308,6 +335,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.Committing" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Committing">
@@ -336,6 +366,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Configuration.Install.Installer.Committed" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -382,6 +415,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.InstallContext" />
+        <altmember cref="P:System.Configuration.Install.Installer.Parent" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -412,6 +451,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">One of the installers in the installer collection specifies a null reference instead of help text. A likely cause for this exception is that a field to contain the help text is defined but not initialized.</exception>
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -455,6 +495,12 @@
   
 -   If you need to add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method, be sure to perform the same additions to the collection in the <see cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" /> method. However, you can avoid maintaining the collection in both methods if you add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the class constructor for your custom installer.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Installers">
@@ -491,6 +537,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Install.AssemblyInstaller" />
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.ComponentInstaller" />
+        <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Parent" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.TransactedInstaller" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterInstall">
@@ -535,6 +590,13 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterRollback">
@@ -570,6 +632,13 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterUninstall">
@@ -605,6 +674,12 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeInstall">
@@ -649,6 +724,13 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeRollback">
@@ -684,6 +766,13 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeUninstall">
@@ -719,6 +808,13 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnCommitted">
@@ -763,6 +859,13 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnCommitting">
@@ -807,6 +910,13 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -843,6 +953,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -884,6 +1000,11 @@
         <block subset="none" type="overrides">
           <para>When you override the <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method first in your derived method. A rollback operation restores the computer to the state it was in before the installations occurred. The <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method is called if the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of this instance of <see cref="T:System.Configuration.Install.Installer" />, or any installer in the installer collection, fail to run correctly. Any exceptions generated by calling the <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> methods of the installers in the installer collection are ignored and the rollback of the other installers continues.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -923,6 +1044,11 @@
   
 -   If you need to add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method, be sure to perform the same additions to the collection in the <see cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" /> method. However, you can avoid maintaining the collection in both methods if you add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the class constructor for your custom installer.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
       </Docs>
     </Member>
   </Members>

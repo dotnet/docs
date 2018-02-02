@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=fullName> properties to get the printer resolutions that are available on the printer and to set the printing resolution for a page, respectively.  
+ This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A?displayProperty=nameWithType> and <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=nameWithType> properties to get the printer resolutions that are available on the printer and to set the printing resolution for a page, respectively.  
   
  Use the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> property to determine whether the printer resolution type is the <xref:System.Drawing.Printing.PrinterResolutionKind> value <xref:System.Drawing.Printing.PrinterResolutionKind.Custom>. If so, use the <xref:System.Drawing.Printing.PrinterResolution.X%2A> and <xref:System.Drawing.Printing.PrinterResolution.Y%2A> properties to determine the printer resolution in the horizontal and vertical directions, respectively.  
   
@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+    <altmember cref="P:System.Drawing.Printing.PageSettings.PrinterResolution" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +82,7 @@
         <value>One of the <see cref="T:System.Drawing.Printing.PrinterResolutionKind" /> values.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not a member of the <see cref="T:System.Drawing.Printing.PrinterResolutionKind" /> enumeration.</exception>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -124,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
       </Docs>
     </Member>
     <Member MemberName="Y">

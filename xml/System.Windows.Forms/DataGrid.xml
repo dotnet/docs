@@ -43,9 +43,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> displays Web-like links to child tables. You can click on a link to navigate to the child table. When a child table is displayed, a back button appears in the caption that can be clicked to navigate back to the parent table. The data from the parent rows is displayed below the caption and above the column headers. You can hide the parent row information by clicking the button to the right of the back button.  
+ The <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> displays Web-like links to child tables. You can click on a link to navigate to the child table. When a child table is displayed, a back button appears in the caption that can be clicked to navigate back to the parent table. The data from the parent rows is displayed below the caption and above the column headers. You can hide the parent row information by clicking the button to the right of the back button.  
   
- To display a table in the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> at run time, use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method to set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties to a valid data source. The following data sources are valid:  
+ To display a table in the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> at run time, use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method to set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties to a valid data source. The following data sources are valid:  
   
 -   A <xref:System.Data.DataTable>  
   
@@ -78,17 +78,17 @@
   
  To manage the appearance of the control at run time, several properties for setting the color and caption attributes are available, including the <xref:System.Windows.Forms.DataGrid.CaptionForeColor%2A>, <xref:System.Windows.Forms.DataGrid.CaptionBackColor%2A>, <xref:System.Windows.Forms.DataGrid.CaptionFont%2A>, and so on.  
   
- The appearance of the displayed grid (or grids) can be further modified by creating <xref:System.Windows.Forms.DataGridTableStyle> objects and adding them to the <xref:System.Windows.Forms.GridTableStylesCollection>, which is accessed through the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property. For example, if the <xref:System.Windows.Forms.DataGrid.DataSource%2A> is set to a <xref:System.Data.DataSet> containing three <xref:System.Data.DataTable> objects, you can add three <xref:System.Windows.Forms.DataGridTableStyle> objects to the collection, one for each table. To synchronize each <xref:System.Windows.Forms.DataGridTableStyle> object with a <xref:System.Data.DataTable>, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> of the <xref:System.Windows.Forms.DataGridTableStyle> to the <xref:System.Data.DataTable.TableName%2A> of the <xref:System.Data.DataTable>. For more information about binding to an array of objects, see the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=fullName> property.  
+ The appearance of the displayed grid (or grids) can be further modified by creating <xref:System.Windows.Forms.DataGridTableStyle> objects and adding them to the <xref:System.Windows.Forms.GridTableStylesCollection>, which is accessed through the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property. For example, if the <xref:System.Windows.Forms.DataGrid.DataSource%2A> is set to a <xref:System.Data.DataSet> containing three <xref:System.Data.DataTable> objects, you can add three <xref:System.Windows.Forms.DataGridTableStyle> objects to the collection, one for each table. To synchronize each <xref:System.Windows.Forms.DataGridTableStyle> object with a <xref:System.Data.DataTable>, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> of the <xref:System.Windows.Forms.DataGridTableStyle> to the <xref:System.Data.DataTable.TableName%2A> of the <xref:System.Data.DataTable>. For more information about binding to an array of objects, see the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=nameWithType> property.  
   
  To create a customized view of a table, create an instance of a <xref:System.Windows.Forms.DataGridTextBoxColumn> or <xref:System.Windows.Forms.DataGridBoolColumn> class and add the object to the <xref:System.Windows.Forms.GridTableStylesCollection> accessed through the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property. Both classes inherit from <xref:System.Windows.Forms.DataGridColumnStyle>. For each column style, set the <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> to the <xref:System.Data.DataColumn.ColumnName%2A> of a column that you want to show in the grid. To hide a column, set its <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> to something other than a valid <xref:System.Data.DataColumn.ColumnName%2A>.  
   
  To format the text of a column, set the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property of the <xref:System.Windows.Forms.DataGridTextBoxColumn> to one of the values found in [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
- To bind the <xref:System.Windows.Forms.DataGrid> to a strongly typed array of objects, the object type must contain public properties. To create a <xref:System.Windows.Forms.DataGridTableStyle> that displays the array, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=fullName> property to `typename[]` where `typename` is replaced by the name of the object type. Also note that the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property is case-sensitive; the type name must be matched exactly. See the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property for an example.  
+ To bind the <xref:System.Windows.Forms.DataGrid> to a strongly typed array of objects, the object type must contain public properties. To create a <xref:System.Windows.Forms.DataGridTableStyle> that displays the array, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=nameWithType> property to `typename[]` where `typename` is replaced by the name of the object type. Also note that the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property is case-sensitive; the type name must be matched exactly. See the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property for an example.  
   
  You can also bind the <xref:System.Windows.Forms.DataGrid> to an <xref:System.Collections.ArrayList>. A feature of the <xref:System.Collections.ArrayList> is that it can contain objects of multiple types, but the <xref:System.Windows.Forms.DataGrid> can only bind to such a list when all items in the list are of the same type as the first item. This means that all objects must either be of the same type, or they must inherit from the same class as the first item in the list. For example, if the first item in a list is a <xref:System.Windows.Forms.Control>, the second item could be a <xref:System.Windows.Forms.TextBox> (which inherits from <xref:System.Windows.Forms.Control>). If, on the other hand, the first item is a <xref:System.Windows.Forms.TextBox>, the second object cannot be a <xref:System.Windows.Forms.Control>. Further, the <xref:System.Collections.ArrayList> must have items in it when it is bound. An empty <xref:System.Collections.ArrayList> will result in an empty grid. In addition, the objects in the <xref:System.Collections.ArrayList> must contain public properties. When binding to an <xref:System.Collections.ArrayList>, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> of the <xref:System.Windows.Forms.DataGridTableStyle> to "ArrayList" (the type name).  
   
- For each <xref:System.Windows.Forms.DataGridTableStyle>, you can set color and caption attributes that override the settings for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control. However, if those properties are not set, the settings for the control are used by default. The following properties can be overridden by <xref:System.Windows.Forms.DataGridTableStyle> properties:  
+ For each <xref:System.Windows.Forms.DataGridTableStyle>, you can set color and caption attributes that override the settings for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control. However, if those properties are not set, the settings for the control are used by default. The following properties can be overridden by <xref:System.Windows.Forms.DataGridTableStyle> properties:  
   
 -   <xref:System.Windows.Forms.DataGridTableStyle.AllowSorting%2A>  
   
@@ -137,7 +137,7 @@
    
   
 ## Examples  
- The following code example creates a Windows form, a <xref:System.Data.DataSet> containing two <xref:System.Data.DataTable> objects, and a <xref:System.Data.DataRelation> that relates the two tables. To display the data, a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control is then bound to the <xref:System.Data.DataSet> through the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method. A button on the form changes the appearance of the grid by creating two <xref:System.Windows.Forms.DataGridTableStyle> objects and setting the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> of each object to a <xref:System.Data.DataTable.TableName%2A> of one of the <xref:System.Data.DataTable> objects. The example also contains code in the <xref:System.Windows.Forms.Control.MouseUp> event that uses the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method to print the column, row, and part of the grid that has been clicked.  
+ The following code example creates a Windows form, a <xref:System.Data.DataSet> containing two <xref:System.Data.DataTable> objects, and a <xref:System.Data.DataRelation> that relates the two tables. To display the data, a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control is then bound to the <xref:System.Data.DataSet> through the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method. A button on the form changes the appearance of the grid by creating two <xref:System.Windows.Forms.DataGridTableStyle> objects and setting the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> of each object to a <xref:System.Data.DataTable.TableName%2A> of one of the <xref:System.Data.DataTable> objects. The example also contains code in the <xref:System.Windows.Forms.Control.MouseUp> event that uses the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method to print the column, row, and part of the grid that has been clicked.  
   
  [!code-cpp[Classic DataGrid Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid Example/CS/source.cs#1)]
@@ -145,6 +145,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.DataSet" />
+    <altmember cref="T:System.Data.DataView" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="T:System.Data.DataRow" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -163,17 +167,23 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To populate a newly created <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control, set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to a valid source, such as a <xref:System.Data.DataView>, <xref:System.Data.DataSet>, or <xref:System.Data.DataViewManager>.  
+ To populate a newly created <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control, set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to a valid source, such as a <xref:System.Data.DataView>, <xref:System.Data.DataSet>, or <xref:System.Data.DataViewManager>.  
   
    
   
 ## Examples  
- The following code example creates a new <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> and uses the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method to set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties.  
+ The following code example creates a new <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> and uses the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method to set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties.  
   
  [!code-vb[Classic DataGrid.DataGrid Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.DataGrid Example/VB/source.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumnCollection" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
+        <altmember cref="T:System.Data.DataView" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Windows.Forms.GridTableStylesCollection" />
       </Docs>
     </Member>
     <Member MemberName="AllowNavigation">
@@ -274,13 +284,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is overridden by the <xref:System.Windows.Forms.DataGridTableStyle.AllowSorting%2A?displayProperty=fullName> property if there is a <xref:System.Windows.Forms.DataGridTableStyle> currently in effect for the control.  
+ This property is overridden by the <xref:System.Windows.Forms.DataGridTableStyle.AllowSorting%2A?displayProperty=nameWithType> property if there is a <xref:System.Windows.Forms.DataGridTableStyle> currently in effect for the control.  
   
  If sorting is allowed, clicking on a column header will sort the table data by that column.  
   
  You can also sort using an expression for a <xref:System.Data.DataColumn>. See <xref:System.Data.DataColumn.Expression%2A> for details on creating a sort expression.  
   
- If the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> is bound to a <xref:System.Data.DataView>, you can set a custom sort for the table using the <xref:System.Data.DataView> class's <xref:System.Data.DataView.Sort%2A> property. Similarly, if the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> is bound to a <xref:System.Data.DataViewManager>, each table in the <xref:System.Data.DataViewManager> can have a custom sort by setting the <xref:System.Data.DataViewManager.DataViewSettings%2A> class's <xref:System.Data.DataViewSetting.Sort%2A> property.  
+ If the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> is bound to a <xref:System.Data.DataView>, you can set a custom sort for the table using the <xref:System.Data.DataView> class's <xref:System.Data.DataView.Sort%2A> property. Similarly, if the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> is bound to a <xref:System.Data.DataViewManager>, each table in the <xref:System.Data.DataViewManager> can have a custom sort by setting the <xref:System.Data.DataViewManager.DataViewSettings%2A> class's <xref:System.Data.DataViewSetting.Sort%2A> property.  
   
    
   
@@ -293,6 +303,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.Expression" />
+        <altmember cref="P:System.Data.DataView.Sort" />
+        <altmember cref="P:System.Data.DataViewSetting.Sort" />
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.AllowSorting" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingBackColor">
@@ -358,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AllowNavigation" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -394,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.BackgroundColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundColor">
@@ -415,7 +432,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGrid.BackgroundColor%2A> determines the color of the nonrow area of the grid, which is only visible when no table is displayed by the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or if the grid is scrolled to the bottom, or if only a few rows are contained in the grid.  
+ The <xref:System.Windows.Forms.DataGrid.BackgroundColor%2A> determines the color of the nonrow area of the grid, which is only visible when no table is displayed by the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or if the grid is scrolled to the bottom, or if only a few rows are contained in the grid.  
   
    
   
@@ -428,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundColorChanged">
@@ -613,6 +631,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -638,6 +657,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -698,7 +718,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGrid.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGrid.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGrid> named `DataGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGrid.BorderStyleChanged> event.  
   
@@ -746,12 +766,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGrid.CaptionBackColor%2A> property of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The following code example sets the <xref:System.Windows.Forms.DataGrid.CaptionBackColor%2A> property of the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  [!code-vb[Classic DataGrid.CaptionBackColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.CaptionBackColor Example/VB/source.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionFont" />
       </Docs>
     </Member>
     <Member MemberName="CaptionFont">
@@ -792,6 +814,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="CaptionForeColor">
@@ -813,12 +837,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGrid.CaptionForeColor%2A> property of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The following code example sets the <xref:System.Windows.Forms.DataGrid.CaptionForeColor%2A> property of the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  [!code-vb[Classic DataGrid.CaptionForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.CaptionForeColor Example/VB/source.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionFont" />
       </Docs>
     </Member>
     <Member MemberName="CaptionText">
@@ -848,7 +874,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example sets the caption of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ The following code example sets the caption of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic DataGrid.CaptionText Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.CaptionText Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.CaptionText Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.CaptionText Example/CS/source.cs#1)]
@@ -856,6 +882,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionFont" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
       </Docs>
     </Member>
     <Member MemberName="CaptionVisible">
@@ -951,12 +981,13 @@
    
   
 ## Examples  
- The following code example collapses all rows in the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The following code example collapses all rows in the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  [!code-vb[Classic DataGrid.Collapse Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.Collapse Example/VB/source.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.IsExpanded(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeadersVisible">
@@ -990,6 +1021,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.RowHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
       </Docs>
     </Member>
     <Member MemberName="ColumnStartedEditing">
@@ -1014,7 +1050,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method enables the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control to show a pencil in the row header.  
+ When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method enables the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control to show a pencil in the row header.  
   
  ]]></format>
         </remarks>
@@ -1042,7 +1078,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method enables the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control to show a pencil in the row header.  
+ When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method enables the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control to show a pencil in the row header.  
   
  ]]></format>
         </remarks>
@@ -1078,10 +1114,11 @@
   
 -   <xref:System.Windows.Forms.AccessibleObject.Name%2A>  
   
- All other properties are handled by the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> itself.  
+ All other properties are handled by the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> itself.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateGridColumn">
@@ -1129,6 +1166,8 @@
         <summary>Creates a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> using the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
         <returns>The new <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCell">
@@ -1171,6 +1210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridCell" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.FirstVisibleColumn" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCellChanged">
@@ -1235,7 +1276,7 @@
 ## Remarks  
  Setting the <xref:System.Windows.Forms.DataGrid.CurrentRowIndex%2A> property to a value other than its current value scrolls the control so that the specified row is in view.  
   
- The <xref:System.Windows.Forms.DataGrid.CurrentRowIndex%2A> property enables you to iterate through a parent table's rows even if you are viewing the child table rows. For example, if you are viewing a child table, incrementing the <xref:System.Windows.Forms.DataGrid.CurrentRowIndex%2A> will cause the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> to display the next set of records in the child table that are linked to the parent table.  
+ The <xref:System.Windows.Forms.DataGrid.CurrentRowIndex%2A> property enables you to iterate through a parent table's rows even if you are viewing the child table rows. For example, if you are viewing a child table, incrementing the <xref:System.Windows.Forms.DataGrid.CurrentRowIndex%2A> will cause the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> to display the next set of records in the child table that are linked to the parent table.  
   
  If the user is viewing a parent table, or a table with no child relations, then the property returns the zero-based index of the current row.  
   
@@ -1251,6 +1292,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">There is no <see cref="T:System.Windows.Forms.CurrencyManager" />.</exception>
+        <altmember cref="T:System.Windows.Forms.CurrencyManager" />
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -1340,7 +1382,7 @@
 ## Remarks  
  If a <xref:System.Windows.Forms.DataGrid.DataSource%2A> contains multiple sources of data, you should set the <xref:System.Windows.Forms.DataGrid.DataMember%2A> to one of the sources. For example, if the <xref:System.Windows.Forms.DataGrid.DataSource%2A> is a <xref:System.Data.DataSet> or <xref:System.Data.DataViewManager> that contains three tables named `Customers`, `Orders`, and `OrderDetails`, you must specify one of the tables to bind to. If the <xref:System.Data.DataSet> or <xref:System.Data.DataViewManager> contains only one <xref:System.Data.DataTable>, you should set the <xref:System.Windows.Forms.DataGrid.DataMember%2A> to the <xref:System.Data.DataTable.TableName%2A> of that <xref:System.Data.DataTable>.  
   
- If the <xref:System.Windows.Forms.DataGrid.DataSource%2A> is set to a <xref:System.Data.DataSet> that contains <xref:System.Data.DataRelation> objects, parent tables will appear with a plus sign (+) in each row header. Clicking the plus sign causes a node to appear that contains links to child tables. For example, if a <xref:System.Data.DataSet> contains two <xref:System.Data.DataTable> objects named `Customers` and `Orders`, setting the <xref:System.Windows.Forms.DataGrid.DataMember%2A> to the `Customers` table causes the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> to display a parent table with a plus sign visible on each row header. If the <xref:System.Windows.Forms.DataGrid.DataMember%2A> is set to `Orders`, however, the row headers will be blank.  
+ If the <xref:System.Windows.Forms.DataGrid.DataSource%2A> is set to a <xref:System.Data.DataSet> that contains <xref:System.Data.DataRelation> objects, parent tables will appear with a plus sign (+) in each row header. Clicking the plus sign causes a node to appear that contains links to child tables. For example, if a <xref:System.Data.DataSet> contains two <xref:System.Data.DataTable> objects named `Customers` and `Orders`, setting the <xref:System.Windows.Forms.DataGrid.DataMember%2A> to the `Customers` table causes the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> to display a parent table with a plus sign visible on each row header. If the <xref:System.Windows.Forms.DataGrid.DataMember%2A> is set to `Orders`, however, the row headers will be blank.  
   
  If the <xref:System.Windows.Forms.DataGrid.DataSource%2A> is a <xref:System.Data.DataTable>, <xref:System.Data.DataView>, collection, or array, setting the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property throws an exception.  
   
@@ -1350,7 +1392,7 @@
    
   
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The following code example sets the <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  [!code-cpp[Classic DataGrid.DataMember Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.DataMember Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.DataMember Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.DataMember Example/CS/source.cs#1)]
@@ -1358,6 +1400,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataSource" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataViewManager" />
+        <altmember cref="M:System.Windows.Forms.DataGrid.SetDataBinding(System.Object,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -1414,14 +1460,14 @@
   
  You can create a grid that enables users to edit data but prevents them from adding new rows by using a <xref:System.Data.DataView> as the data source and setting the <xref:System.Data.DataView.AddNew%2A> property to `false`.  
   
- To bind the <xref:System.Windows.Forms.DataGrid> to a strongly typed array of objects, the object type must contain public properties. To create a <xref:System.Windows.Forms.DataGridTableStyle> that displays the array, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=fullName> property to `typename` where `typename` is replaced by the name of the object type. Also note that the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property is case-sensitive; the type name must be matched exactly. See the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property for an example.  
+ To bind the <xref:System.Windows.Forms.DataGrid> to a strongly typed array of objects, the object type must contain public properties. To create a <xref:System.Windows.Forms.DataGridTableStyle> that displays the array, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=nameWithType> property to `typename` where `typename` is replaced by the name of the object type. Also note that the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property is case-sensitive; the type name must be matched exactly. See the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property for an example.  
   
  You can also bind the <xref:System.Windows.Forms.DataGrid> to an <xref:System.Collections.ArrayList>. A feature of the <xref:System.Collections.ArrayList> is that it can contain objects of multiple types, but the <xref:System.Windows.Forms.DataGrid> can only bind to such a list when all items in the list are of the same type as the first item. This means that all objects must either be of the same type, or they must inherit from the same class as the first item in the list. For example, if the first item in a list is a <xref:System.Windows.Forms.Control>, the second item could be a <xref:System.Windows.Forms.TextBox> (which inherits from <xref:System.Windows.Forms.Control>). If, on the other hand, the first item is a <xref:System.Windows.Forms.TextBox>, the second object cannot be a <xref:System.Windows.Forms.Control>. Further, the <xref:System.Collections.ArrayList> must have items in it when it is bound. An empty <xref:System.Collections.ArrayList> will result in an empty grid. In addition, the objects in the <xref:System.Collections.ArrayList> must contain public properties. When binding to an <xref:System.Collections.ArrayList>, set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> of the <xref:System.Windows.Forms.DataGridTableStyle> to "ArrayList" (the type name).  
   
    
   
 ## Examples  
- The following code example shows how to set the <xref:System.Windows.Forms.DataGrid.DataSource%2A>, and when needed, the <xref:System.Windows.Forms.DataGrid.DataMember%2A>, to bind a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> to both a <xref:System.Data.DataView> and a <xref:System.Data.DataSet>. The example also shows how to return data sources from the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ The following code example shows how to set the <xref:System.Windows.Forms.DataGrid.DataSource%2A>, and when needed, the <xref:System.Windows.Forms.DataGrid.DataMember%2A>, to bind a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> to both a <xref:System.Data.DataView> and a <xref:System.Data.DataSet>. The example also shows how to return data sources from the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic DataGrid.DataSource Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.DataSource Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.DataSource Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.DataSource Example/CS/source.cs#1)]
@@ -1429,6 +1475,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataViewManager" />
+        <altmember cref="T:System.Data.DataView" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -1462,6 +1512,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.SetDataBinding(System.Object,System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -1505,7 +1558,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Windows.Forms.DataGrid.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. The <xref:System.Windows.Forms.DataGrid.Dispose%2A> method leaves the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> in an unusable state. After calling <xref:System.Windows.Forms.DataGrid.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> so the memory it was occupying can be reclaimed by garbage collection.  
+ Call <xref:System.Windows.Forms.DataGrid.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. The <xref:System.Windows.Forms.DataGrid.Dispose%2A> method leaves the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> in an unusable state. After calling <xref:System.Windows.Forms.DataGrid.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> so the memory it was occupying can be reclaimed by garbage collection.  
   
    
   
@@ -1551,7 +1604,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.DataGrid.BeginEdit%2A> and <xref:System.Windows.Forms.DataGrid.EndEdit%2A> methods to edit a value in a grid displayed by the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The following code example uses the <xref:System.Windows.Forms.DataGrid.BeginEdit%2A> and <xref:System.Windows.Forms.DataGrid.EndEdit%2A> methods to edit a value in a grid displayed by the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  [!code-cpp[Classic DataGrid.EndEdit Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.EndEdit Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.EndEdit Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.EndEdit Example/CS/source.cs#1)]
@@ -1559,6 +1612,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -1584,6 +1638,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="Expand">
@@ -1614,6 +1669,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.Expand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="FirstVisibleColumn">
@@ -1653,6 +1709,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CurrentCell" />
       </Docs>
     </Member>
     <Member MemberName="FlatMode">
@@ -1716,6 +1773,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.FlatMode" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -1778,6 +1836,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.GetCurrentCellBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetCellBounds">
@@ -1818,6 +1877,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.GetCurrentCellBounds" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CurrentCell" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentCellBounds">
@@ -1853,6 +1914,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.GetCellBounds(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetOutputTextDelimiter">
@@ -1930,6 +1992,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is not set.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.GridLineStyle" />
       </Docs>
     </Member>
     <Member MemberName="GridLineStyle">
@@ -1962,6 +2025,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.GridLineColor" />
       </Docs>
     </Member>
     <Member MemberName="GridVScrolled">
@@ -2013,6 +2077,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">While trying to set the property, a <see langword="Color.Empty" /> was passed.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.FlatMode" />
       </Docs>
     </Member>
     <Member MemberName="HeaderFont">
@@ -2034,7 +2100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2065,6 +2131,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.FlatMode" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.HeaderBackColor" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -2090,9 +2158,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGrid.HitTestInfo>, in conjunction with the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control, is used to determine which part of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control the user has clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> contains the row, column, and part of the grid that was clicked. Additionally, the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property returns a <xref:System.Windows.Forms.DataGrid.HitTestType> enumeration.  
+ The <xref:System.Windows.Forms.DataGrid.HitTestInfo>, in conjunction with the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control, is used to determine which part of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control the user has clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> contains the row, column, and part of the grid that was clicked. Additionally, the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property returns a <xref:System.Windows.Forms.DataGrid.HitTestType> enumeration.  
   
- The <xref:System.Windows.Forms.DataGrid.HitTest%2A> method takes an x and y argument supplied by the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control's <xref:System.Windows.Forms.Control.DragDrop>, <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragOver>, <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseMove>, <xref:System.Windows.Forms.Control.MouseUp> and <xref:System.Windows.Forms.Control.MouseWheel> events.  
+ The <xref:System.Windows.Forms.DataGrid.HitTest%2A> method takes an x and y argument supplied by the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control's <xref:System.Windows.Forms.Control.DragDrop>, <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragOver>, <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseMove>, <xref:System.Windows.Forms.Control.MouseUp> and <xref:System.Windows.Forms.Control.MouseWheel> events.  
   
    
   
@@ -2103,6 +2171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -2130,9 +2199,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGrid.HitTestInfo>, in conjunction with the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control, is used to determine which part of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control the user has clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> contains the row, column, and part of the grid that was clicked. Additionally, the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property returns a <xref:System.Windows.Forms.DataGrid.HitTestType> enumeration.  
+ The <xref:System.Windows.Forms.DataGrid.HitTestInfo>, in conjunction with the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control, is used to determine which part of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control the user has clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> contains the row, column, and part of the grid that was clicked. Additionally, the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property returns a <xref:System.Windows.Forms.DataGrid.HitTestType> enumeration.  
   
- The <xref:System.Windows.Forms.DataGrid.HitTest%2A> method takes an x and y argument supplied by the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control's <xref:System.Windows.Forms.Control.DragDrop>, <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragOver>, <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseMove>, <xref:System.Windows.Forms.Control.MouseUp> and <xref:System.Windows.Forms.Control.MouseWheel> events.  
+ The <xref:System.Windows.Forms.DataGrid.HitTest%2A> method takes an x and y argument supplied by the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control's <xref:System.Windows.Forms.Control.DragDrop>, <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragOver>, <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseMove>, <xref:System.Windows.Forms.Control.MouseUp> and <xref:System.Windows.Forms.Control.MouseWheel> events.  
   
    
   
@@ -2143,6 +2212,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="HorizScrollBar">
@@ -2161,6 +2231,7 @@
         <summary>Gets the horizontal scroll bar for the grid.</summary>
         <value>The <see cref="T:System.Windows.Forms.ScrollBar" /> for the grid.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.VertScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="IsExpanded">
@@ -2195,6 +2266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.Collapse(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -2272,6 +2344,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CurrentCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridCell" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2336,10 +2410,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.LinkColor" />
       </Docs>
     </Member>
     <Member MemberName="LinkHoverColor">
@@ -2490,6 +2565,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.NavigateBack" />
       </Docs>
     </Member>
     <Member MemberName="OnAllowNavigationChanged">
@@ -2558,7 +2634,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnBackColorChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2612,7 +2688,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnBindingContextChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2708,7 +2784,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnDataSourceChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2783,7 +2859,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnFontChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2816,7 +2892,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnForeColorChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2849,7 +2925,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnHandleCreated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2882,7 +2958,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnHandleDestroyed%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2915,7 +2991,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnKeyDown%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2948,7 +3024,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnKeyPress%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2981,7 +3057,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnLayout%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3014,7 +3090,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnLeave%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3047,7 +3123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -3087,7 +3163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3118,7 +3194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3149,7 +3225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3180,7 +3256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3232,7 +3308,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3263,7 +3339,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> is a complex control, this override is implemented to have no action. Therefore, calling this method will have no effect.  
+ Because the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> is a complex control, this override is implemented to have no action. Therefore, calling this method will have no effect.  
   
  ]]></format>
         </remarks>
@@ -3291,7 +3367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnParentRowsLabelStyleChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3345,7 +3421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnReadOnlyChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3378,7 +3454,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3541,6 +3617,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The enumerator was not valid.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AllowNavigation" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsVisible" />
       </Docs>
     </Member>
     <Member MemberName="ParentRowsLabelStyleChanged">
@@ -3673,6 +3753,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is less than 0.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.PreferredRowHeight" />
       </Docs>
     </Member>
     <Member MemberName="PreferredRowHeight">
@@ -3707,6 +3789,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.PreferredColumnWidth" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -3764,7 +3848,7 @@
     </Member>
     <Member MemberName="ProcessKeyPreview">
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3845,7 +3929,7 @@
   
  The <xref:System.Windows.Forms.DataGridColumnStyle> also has a <xref:System.Windows.Forms.DataGridColumnStyle.ReadOnly%2A> property that can be set to true to prevent data from being edited, on a column-by-column basis.  
   
- The <xref:System.Windows.Forms.DataGrid.ReadOnly%2A> can be set to true if you want to prohibit the user from editing the data directly in the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. For example, you might want to let users to see all columns in a table, but allow them to edit specific fields only through <xref:System.Windows.Forms.TextBox> controls on a different form.  
+ The <xref:System.Windows.Forms.DataGrid.ReadOnly%2A> can be set to true if you want to prohibit the user from editing the data directly in the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. For example, you might want to let users to see all columns in a table, but allow them to edit specific fields only through <xref:System.Windows.Forms.TextBox> controls on a different form.  
   
    
   
@@ -3856,6 +3940,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChanged">
@@ -3884,6 +3969,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ResetAlternatingBackColor">
@@ -3905,7 +3991,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeAlternatingBackColor%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeAlternatingBackColor%2A> method to determine whether the property value has changed from its default.  
   
    
   
@@ -3918,6 +4004,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AlternatingBackColor" />
       </Docs>
     </Member>
     <Member MemberName="ResetBackColor">
@@ -3939,7 +4026,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
    
   
@@ -3973,7 +4060,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
    
   
@@ -3986,6 +4073,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AlternatingBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.BackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ForeColor" />
+        <altmember cref="M:System.Windows.Forms.DataGrid.ResetAlternatingBackColor" />
       </Docs>
     </Member>
     <Member MemberName="ResetGridLineColor">
@@ -4007,7 +4100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeGridLineColor%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeGridLineColor%2A> method to determine whether the property value has changed from its default.  
   
    
   
@@ -4041,7 +4134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeHeaderBackColor%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeHeaderBackColor%2A> method to determine whether the property value has changed from its default.  
   
    
   
@@ -4075,7 +4168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeHeaderFont%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeHeaderFont%2A> method to determine whether the property value has changed from its default.  
   
    
   
@@ -4109,7 +4202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeHeaderForeColor%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeHeaderForeColor%2A> method to determine whether the property value has changed from its default.  
   
    
   
@@ -4143,7 +4236,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
    
   
@@ -4177,7 +4270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeLinkHoverColor%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeLinkHoverColor%2A> method to determine whether the property value has changed from its default.  
   
  ]]></format>
         </remarks>
@@ -4227,7 +4320,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeSelectionBackColor%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeSelectionBackColor%2A> method to determine whether the property value has changed from its default.  
   
    
   
@@ -4261,7 +4354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeSelectionForeColor%2A> method to determine whether the property value has changed from its default.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. You can use the <xref:System.Windows.Forms.DataGrid.ShouldSerializeSelectionForeColor%2A> method to determine whether the property value has changed from its default.  
   
    
   
@@ -4315,6 +4408,10 @@
         <value>
           <see langword="true" /> if row headers are visible; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.RowHeaderWidth" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderWidth">
@@ -4435,7 +4532,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
    
   
@@ -4522,6 +4619,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments are invalid.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dataSource" /> argument is <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataSource" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataView" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeAlternatingBackColor">
@@ -4545,7 +4646,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4572,7 +4673,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4599,7 +4700,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4626,7 +4727,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4653,7 +4754,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4680,7 +4781,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4707,7 +4808,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4734,7 +4835,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4761,10 +4862,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.ResetLinkHoverColor" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeParentRowsBackColor">
@@ -4788,7 +4890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4815,7 +4917,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method only if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4842,7 +4944,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4869,7 +4971,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4896,7 +4998,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4946,6 +5048,7 @@
         <summary>Gets or sets the site of the control.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the Control, if any.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Site" />
       </Docs>
     </Member>
     <Member MemberName="SubObjectsSiteChange">
@@ -4997,7 +5100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.GridTableStylesCollection> retrieved through the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property to create customized views of each table displayed by the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ Use the <xref:System.Windows.Forms.GridTableStylesCollection> retrieved through the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property to create customized views of each table displayed by the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  By default, the collection returned by <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property does not contain any <xref:System.Windows.Forms.DataGridTableStyle> objects. To create a set of customized views:  
   
@@ -5025,6 +5128,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
+        <altmember cref="T:System.Windows.Forms.GridTableStylesCollection" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -5152,6 +5259,7 @@
         <summary>Gets the vertical scroll bar of the control.</summary>
         <value>The vertical <see cref="T:System.Windows.Forms.ScrollBar" /> of the grid.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.HorizScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="VisibleColumnCount">
@@ -5189,6 +5297,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.FirstVisibleColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
       </Docs>
     </Member>
     <Member MemberName="VisibleRowCount">
@@ -5215,18 +5325,65 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The number of visible rows can be changed at run time if the user is allowed to resize the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The number of visible rows can be changed at run time if the user is allowed to resize the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
    
   
 ## Examples  
- The following code example returns the number of rows visible in a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The following code example returns the number of rows visible in a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  [!code-vb[Classic DataGrid.VisibleRowCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.VisibleRowCount Example/VB/source.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets information about the <see cref="T:System.Windows.Forms.DataGrid" /> control at a specified point on the screen.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ColumnStartedEditing">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Informs the <see cref="T:System.Windows.Forms.DataGrid" /> control that the user has begun editing a column.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCellBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> that specifies the four corners of a cell.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateGridColumn">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> that is added to the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the value of a specified cell.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

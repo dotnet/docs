@@ -9,15 +9,16 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 00833027-1428-4586-83c1-42f5de3323d1
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XDR Validation with XmlSchemaCollection
 If the XML-Data Reduced (XDR) schema you are validating against is stored in the **XmlSchemaCollection**, it is associated with the namespace URI specified when the schema was added to the collection. **XmlValidatingReader** maps the namespace URI in the XML document to the schema that corresponds to that URI in the collection.  
@@ -162,6 +163,6 @@ namespace ValidationSample
 ```  
   
 ## See Also  
- <xref:System.Xml.XmlValidatingReader.ValidationType%2A>   
+ <xref:System.Xml.XmlValidatingReader.ValidationType%2A>  
  <!--zz <xref:System.Xml.XmlValidatingReader.Settings%2A>-->  `System.Xml.XmlValidatingReader.Settings`  
  [XmlSchemaCollection Schema Compilation](../../../../docs/standard/data/xml/xmlschemacollection-schema-compilation.md)

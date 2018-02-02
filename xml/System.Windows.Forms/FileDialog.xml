@@ -37,16 +37,16 @@
   
 |Path or program category|Class and members to use|  
 |------------------------------|------------------------------|  
-|Standard Windows paths, such as Program Files, MyDocuments, the Desktop and so on|The <xref:System.Environment?displayProperty=fullName> class is the most complete source for these, either through its static methods, such as <xref:System.Environment.SystemDirectory%2A>, or through the <xref:System.Environment.GetFolderPath%2A> method, using one of the <xref:System.Environment.SpecialFolder> enumerated values.|  
-|Paths related to the current application|The <xref:System.Windows.Forms.Application> class has static members to obtain certain paths, such as <xref:System.Windows.Forms.Application.StartupPath%2A>, <xref:System.Windows.Forms.Application.ExecutablePath%2A>, <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>, and <xref:System.Windows.Forms.Application.CommonAppDataPath%2A>.<br /><br /> The <xref:System.IO.Path.GetTempPath%2A> method of the <xref:System.IO.Path?displayProperty=fullName> returns the path of the temporary folder.<br /><br /> The <xref:System.IO.Directory.GetCurrentDirectory%2A> method of the <xref:System.IO.Directory?displayProperty=fullName> class returns the application's current executing directory.<br /><br /> The <xref:System.IO.DriveInfo.RootDirectory%2A> property of the <xref:System.IO.DriveInfo> class represents the specified drive's root directory.|  
+|Standard Windows paths, such as Program Files, MyDocuments, the Desktop and so on|The <xref:System.Environment?displayProperty=nameWithType> class is the most complete source for these, either through its static methods, such as <xref:System.Environment.SystemDirectory%2A>, or through the <xref:System.Environment.GetFolderPath%2A> method, using one of the <xref:System.Environment.SpecialFolder> enumerated values.|  
+|Paths related to the current application|The <xref:System.Windows.Forms.Application> class has static members to obtain certain paths, such as <xref:System.Windows.Forms.Application.StartupPath%2A>, <xref:System.Windows.Forms.Application.ExecutablePath%2A>, <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>, and <xref:System.Windows.Forms.Application.CommonAppDataPath%2A>.<br /><br /> The <xref:System.IO.Path.GetTempPath%2A> method of the <xref:System.IO.Path?displayProperty=nameWithType> returns the path of the temporary folder.<br /><br /> The <xref:System.IO.Directory.GetCurrentDirectory%2A> method of the <xref:System.IO.Directory?displayProperty=nameWithType> class returns the application's current executing directory.<br /><br /> The <xref:System.IO.DriveInfo.RootDirectory%2A> property of the <xref:System.IO.DriveInfo> class represents the specified drive's root directory.|  
 |Paths stored as application settings|Access the corresponding applications settings property of the wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase>. For more information, see [Application Settings for Windows Forms](~/docs/framework/winforms/advanced/application-settings-for-windows-forms.md).|  
 |Registry storage|Some applications store directory information in the registry. The <xref:System.Windows.Forms.Application> class has the <xref:System.Windows.Forms.Application.CommonAppDataPath%2A> and <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A> properties that resolve to a <xref:Microsoft.Win32.RegistryKey> value.|  
 |ClickOnce applications|For ClickOnce applications, use <xref:System.Windows.Forms.Application> class members such as <xref:System.Windows.Forms.Application.UserAppDataPath%2A>, which will return a pointer to the ClickOnce data directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).|  
-|International applications|For international applications, retrieve the relative path portion from a string resource in your application by using the <xref:System.Resources.ResourceReader?displayProperty=fullName> class. For more information about globalization and localization, see the topic [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).|  
+|International applications|For international applications, retrieve the relative path portion from a string resource in your application by using the <xref:System.Resources.ResourceReader?displayProperty=nameWithType> class. For more information about globalization and localization, see the topic [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).|  
   
  Notice that a full path may be built up using one or more of the described techniques. For example, the <xref:System.Environment.GetFolderPath%2A> method might be used to obtain the path to the MyDocuments folder, then an application setting may be used to add a relative subdirectory portion.  
   
- The <xref:System.IO.Path?displayProperty=fullName> class contains static members to assist in manipulating absolute and relative path strings, whereas the <xref:System.IO.File?displayProperty=fullName> and <xref:System.IO.Directory?displayProperty=fullName> classes have static members that actually manipulate files and directories, respectively.  
+ The <xref:System.IO.Path?displayProperty=nameWithType> class contains static members to assist in manipulating absolute and relative path strings, whereas the <xref:System.IO.File?displayProperty=nameWithType> and <xref:System.IO.Directory?displayProperty=nameWithType> classes have static members that actually manipulate files and directories, respectively.  
   
 > [!IMPORTANT]
 >  If the user of your application changes the folder in the <xref:System.Windows.Forms.FileDialog>, then the current working directory for your application is set to the location specified in the <xref:System.Windows.Forms.FileDialog>. To prevent this, set the <xref:System.Windows.Forms.FileDialog.RestoreDirectory%2A> property to `true`.  
@@ -62,6 +62,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.CommonDialog" />
+    <altmember cref="T:System.Windows.Forms.OpenFileDialog" />
+    <altmember cref="T:System.Windows.Forms.SaveFileDialog" />
+    <altmember cref="T:System.Windows.Forms.FolderBrowserDialog" />
+    <altmember cref="T:System.IO.Path" />
+    <altmember cref="T:System.IO.File" />
+    <altmember cref="T:System.IO.Directory" />
+    <altmember cref="T:System.Environment" />
+    <altmember cref="T:System.Windows.Forms.Application" />
+    <altmember cref="T:Microsoft.Win32.Registry" />
+    <altmember cref="T:System.Resources.ResourceReader" />
   </Docs>
   <Members>
     <Member MemberName="AddExtension">
@@ -98,6 +109,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for adding an extension if the user omits it. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:System.Windows.Forms.FileDialog.Filter" />
+        <altmember cref="P:System.Windows.Forms.FileDialog.FilterIndex" />
       </Docs>
     </Member>
     <Member MemberName="AutoUpgradeEnabled">
@@ -163,6 +176,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to display a warning if the file already exists. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CheckPathExists" />
       </Docs>
     </Member>
     <Member MemberName="CheckPathExists">
@@ -188,6 +202,7 @@
           <see langword="true" /> if the dialog box displays a warning when the user specifies a path that does not exist; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to display a warning if the user specifies a path that already exists. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CheckFileExists" />
       </Docs>
     </Member>
     <Member MemberName="CustomPlaces">
@@ -260,7 +275,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=fullName> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A?displayProperty=fullName> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A?displayProperty=nameWithType> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=nameWithType> members.  
   
  This is a complete example that is ready to run when you copy it to your project.  
   
@@ -347,7 +362,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=fullName> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A?displayProperty=fullName> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A?displayProperty=nameWithType> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=nameWithType> members.  
   
  This is a complete example that is ready to run when you copy it to your project.  
   
@@ -358,6 +373,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to get or set the file name. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:System.Windows.Forms.FileDialog.FileNames" />
+        <altmember cref="T:System.Windows.Forms.SaveFileDialog" />
+        <altmember cref="T:System.Windows.Forms.OpenFileDialog" />
       </Docs>
     </Member>
     <Member MemberName="FileNames">
@@ -400,6 +418,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to get the file names. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.AllAccess" />.</permission>
+        <altmember cref="P:System.Windows.Forms.FileDialog.FileName" />
       </Docs>
     </Member>
     <Member MemberName="FileOk">
@@ -425,7 +444,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.FileDialog.FileNames%2A> property, handling the <xref:System.Windows.Forms.FileDialog.FileOk> event and using the <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> method. When the example runs, a user can select graphics files from an <xref:System.Windows.Forms.OpenFileDialog> object. The selected files are displayed in the form. The <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> method forces a repaint of the form for each graphics file opened. To run this example paste the following code in a form containing a <xref:System.Windows.Forms.PictureBox> named `PictureBox1`, an <xref:System.Windows.Forms.OpenFileDialog> named `OpenFileDialog1`, and a <xref:System.Windows.Forms.Button> named `fileButton`. Call the `InitializePictureBox` and `InitializeOpenFileDialog` methods from the form's constructor or `Load` method. When the example is running, display the dialog box by clicking the button.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.FileDialog.FileNames%2A> property, handling the <xref:System.Windows.Forms.FileDialog.FileOk> event and using the <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=nameWithType> method. When the example runs, a user can select graphics files from an <xref:System.Windows.Forms.OpenFileDialog> object. The selected files are displayed in the form. The <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=nameWithType> method forces a repaint of the form for each graphics file opened. To run this example paste the following code in a form containing a <xref:System.Windows.Forms.PictureBox> named `PictureBox1`, an <xref:System.Windows.Forms.OpenFileDialog> named `OpenFileDialog1`, and a <xref:System.Windows.Forms.Button> named `fileButton`. Call the `InitializePictureBox` and `InitializeOpenFileDialog` methods from the form's constructor or `Load` method. When the example is running, display the dialog box by clicking the button.  
   
  [!code-cpp[System.Windows.Forms.FileDialog#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CPP/filedialogform.cpp#1)]
  [!code-csharp[System.Windows.Forms.FileDialog#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CS/filedialogform.cs#1)]
@@ -433,6 +452,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.FileDialog.OnFileOk(System.ComponentModel.CancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -487,6 +507,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Filter" /> format is invalid.</exception>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CheckFileExists" />
+        <altmember cref="P:System.Windows.Forms.FileDialog.FilterIndex" />
       </Docs>
     </Member>
     <Member MemberName="FilterIndex">
@@ -529,6 +551,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CheckFileExists" />
+        <altmember cref="P:System.Windows.Forms.FileDialog.Filter" />
       </Docs>
     </Member>
     <Member MemberName="HookProc">
@@ -621,6 +645,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Required to set the initial directory. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:System.Windows.Forms.FileDialog.RestoreDirectory" />
+        <altmember cref="T:Microsoft.Win32.Registry" />
+        <altmember cref="T:System.Windows.Forms.Application" />
+        <altmember cref="T:System.Environment" />
+        <altmember cref="T:System.IO.Path" />
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -660,6 +689,7 @@
         <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.FileDialog.FileOk" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Forms.FileDialog.FileOk" />
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -742,6 +772,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to set the property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:System.Windows.Forms.FileDialog.InitialDirectory" />
       </Docs>
     </Member>
     <Member MemberName="RunDialog">
@@ -846,6 +877,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.Filter" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -880,7 +912,7 @@
    
   
 ## Examples  
- The following code example demonstrates initializing an <xref:System.Windows.Forms.OpenFileDialog>, setting the <xref:System.Windows.Forms.FileDialog.Title%2A> and <xref:System.Windows.Forms.FileDialog.Filter%2A> properties, and allowing the user to select multiple files by setting the <xref:System.Windows.Forms.OpenFileDialog.Multiselect%2A?displayProperty=fullName> property to true. To run this example, paste the following code in a form containing an <xref:System.Windows.Forms.OpenFileDialog> named `OpenFileDialog1` and a <xref:System.Windows.Forms.Button> named `fileButton`. Call the `InitializeOpenFileDialog` method in the form's constructor or `Load` method. The example also requires that the `Click` event of the `Button` control is connected to the event handler defined in the example.  
+ The following code example demonstrates initializing an <xref:System.Windows.Forms.OpenFileDialog>, setting the <xref:System.Windows.Forms.FileDialog.Title%2A> and <xref:System.Windows.Forms.FileDialog.Filter%2A> properties, and allowing the user to select multiple files by setting the <xref:System.Windows.Forms.OpenFileDialog.Multiselect%2A?displayProperty=nameWithType> property to true. To run this example, paste the following code in a form containing an <xref:System.Windows.Forms.OpenFileDialog> named `OpenFileDialog1` and a <xref:System.Windows.Forms.Button> named `fileButton`. Call the `InitializeOpenFileDialog` method in the form's constructor or `Load` method. The example also requires that the `Click` event of the `Button` control is connected to the event handler defined in the example.  
   
  [!code-cpp[System.Windows.Forms.FileDialog#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CPP/filedialogform.cpp#6)]
  [!code-csharp[System.Windows.Forms.FileDialog#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CS/filedialogform.cs#6)]

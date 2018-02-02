@@ -67,7 +67,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AggregateCatalog (System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs);" />
+      <MemberSignature Language="C#" Value="public AggregateCatalog (params System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog[])" />
       <MemberType>Constructor</MemberType>
@@ -264,5 +264,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateCatalog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

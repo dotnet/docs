@@ -41,7 +41,7 @@
 >   
 >  See [Unicode Technical Standard #46: IDNA Compatibility Processing](http://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.  
   
- The <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=fullName> method normalizes a domain name, converts the normalized name to a representation that consists of displayable Unicode characters in the US-ASCII code point range (U+0020 to U+007E), and prepends an ASCII-compatible encoding (ACE) prefix ("xn--") to each label. The <xref:System.Globalization.IdnMapping.GetUnicode%2A?displayProperty=fullName> method restores the domain name labels converted by the <xref:System.Globalization.IdnMapping.GetAscii%2A> method.  
+ The <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> method normalizes a domain name, converts the normalized name to a representation that consists of displayable Unicode characters in the US-ASCII code point range (U+0020 to U+007E), and prepends an ASCII-compatible encoding (ACE) prefix ("xn--") to each label. The <xref:System.Globalization.IdnMapping.GetUnicode%2A?displayProperty=nameWithType> method restores the domain name labels converted by the <xref:System.Globalization.IdnMapping.GetAscii%2A> method.  
   
  If the string to be converted includes the label separator characters IDEOGRAPHIC FULL STOP (U+3002), FULLWIDTH FULL STOP (U+FF0E), and HALFWIDTH IDEOGRAPHIC FULL STOP (U+FF61), the <xref:System.Globalization.IdnMapping.GetAscii%2A> method converts them to the label separator FULL STOP (period, U+002E). The <xref:System.Globalization.IdnMapping.GetUnicode%2A> method, however, does not restore the original label separator character.  
   
@@ -55,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.String.Normalize" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.IdnMapping.AllowUnassigned%2A?displayProperty=fullName> and <xref:System.Globalization.IdnMapping.UseStd3AsciiRules%2A?displayProperty=fullName> properties are initialized to `false`. A small subset of ASCII characters other than A-Z, 0-9, the hyphen (-) character (U+002D), and the period (.) character are permitted in domain names, but unassigned Unicode code points are not.  
+ The <xref:System.Globalization.IdnMapping.AllowUnassigned%2A?displayProperty=nameWithType> and <xref:System.Globalization.IdnMapping.UseStd3AsciiRules%2A?displayProperty=nameWithType> properties are initialized to `false`. A small subset of ASCII characters other than A-Z, 0-9, the hyphen (-) character (U+002D), and the period (.) character are permitted in domain names, but unassigned Unicode code points are not.  
   
  ]]></format>
         </remarks>
@@ -128,7 +129,7 @@
  A registered domain name cannot contain unassigned code points. Consequently, the default value of the <xref:System.Globalization.IdnMapping.AllowUnassigned%2A> property is `false`. The IDNA specification permits unassigned code points only in queries for matching strings (that is, in domain name lookup). For more information about the use of unassigned code points in domain names, see [RFC 3454, "Preparation of Internationalized Strings (stringprep)"](http://go.microsoft.com/fwlink/?LinkId=231873) and [RFC 5891, "Internationalized Domain Names in Applications (IDNA): Protocol"](http://go.microsoft.com/fwlink/?LinkId=231875).  
   
 > [!IMPORTANT]
->  If the<xref:System.Globalization.IdnMapping.AllowUnassigned%2A> property is `false`, the behavior associated with the property depends on the underlying operating system. On [!INCLUDE[win8](~/includes/win8-md.md)], the <xref:System.Globalization.IdnMapping> class conforms to IDNA 2008, which is based on the Unicode 6.0 standard. On previous versions of Windows, the <xref:System.Globalization.IdnMapping> class is based on IDNA 2003, which is based on Unicode 3.*x*. Some code points that were unassigned in IDNA 2003 have been assigned characters and are supported in IDNA 2008. For example, U+0221 was introduced in Unicode 4.0. On [!INCLUDE[win8](~/includes/win8-md.md)], it is encoded as "xn—6la". On previous versions of Windows, it throws an <xref:System.ArgumentException> exception.  
+>  If the <xref:System.Globalization.IdnMapping.AllowUnassigned%2A> property is `false`, the behavior associated with the property depends on the underlying operating system. On [!INCLUDE[win8](~/includes/win8-md.md)], the <xref:System.Globalization.IdnMapping> class conforms to IDNA 2008, which is based on the Unicode 6.0 standard. On previous versions of Windows, the <xref:System.Globalization.IdnMapping> class is based on IDNA 2003, which is based on Unicode 3.*x*. Some code points that were unassigned in IDNA 2003 have been assigned characters and are supported in IDNA 2008. For example, U+0221 was introduced in Unicode 4.0. On [!INCLUDE[win8](~/includes/win8-md.md)], it is encoded as "xn—6la". On previous versions of Windows, it throws an <xref:System.ArgumentException> exception.  
   
  ]]></format>
         </remarks>
@@ -504,7 +505,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method.  
+ For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method.  
   
    
   
@@ -560,7 +561,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method.  
+ For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -616,7 +617,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method.  
+ For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -688,5 +689,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAscii">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a string of domain name labels that include Unicode characters outside the US-ASCII character range to a string of displayable Unicode characters in the US-ASCII character range (U+0020 to U+007E). The string is formatted according to the IDNA standard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUnicode">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes one or more domain name labels encoded according to the IDNA standard to a string of Unicode characters.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

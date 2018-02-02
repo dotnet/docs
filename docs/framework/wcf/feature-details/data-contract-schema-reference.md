@@ -13,15 +13,17 @@ helpviewer_keywords:
   - "data contracts [WCF], schema reference"
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Contract Schema Reference
 This topic describes the subset of the XML Schema (XSD) used by <xref:System.Runtime.Serialization.DataContractSerializer> to describe common language runtime (CLR) types for XML serialization.  
   
 ## DataContractSerializer Mappings  
- The `DataContractSerializer` maps CLR types to XSD when metadata is exported from a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service using a metadata endpoint or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Data Contract Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).  
+ The `DataContractSerializer` maps CLR types to XSD when metadata is exported from a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service using a metadata endpoint or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).  
   
  The `DataContractSerializer` also maps XSD to CLR types when Svcutil.exe is used to access Web Services Description Language (WSDL) or XSD documents and generate data contracts for services or clients.  
   
@@ -330,7 +332,7 @@ public enum MyEnum
     </EnumerationValue>  
    </xs:appinfo>  
   </xs:annotation>  
- </xs:enumeration>   
+ </xs:enumeration>  
 </xs:restriction>  
 </xs:simpleType>  
 ```  
@@ -562,7 +564,7 @@ public class Employee : Person
  <!-- Top-level elements for primitive types. -->  
  <xs:element name="anyType" nillable="true" type="xs:anyType"/>  
  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>  
- <xs:element name="base64Binary"   
+ <xs:element name="base64Binary"  
        nillable="true" type="xs:base64Binary"/>  
  <xs:element name="boolean" nillable="true" type="xs:boolean"/>  
  <xs:element name="byte" nillable="true" type="xs:byte"/>  
@@ -575,13 +577,13 @@ public class Employee : Person
  <xs:element name="QName" nillable="true" type="xs:QName"/>  
  <xs:element name="short" nillable="true" type="xs:short"/>  
  <xs:element name="string" nillable="true" type="xs:string"/>  
- <xs:element name="unsignedByte"   
+ <xs:element name="unsignedByte"  
        nillable="true" type="xs:unsignedByte"/>  
- <xs:element name="unsignedInt"   
+ <xs:element name="unsignedInt"  
        nillable="true" type="xs:unsignedInt"/>  
- <xs:element name="unsignedLong"   
+ <xs:element name="unsignedLong"  
        nillable="true" type="xs:unsignedLong"/>  
- <xs:element name="unsignedShort"   
+ <xs:element name="unsignedShort"  
        nillable="true" type="xs:unsignedShort"/>  
   
  <!-- Primitive types introduced for certain .NET simple types. -->  
@@ -590,7 +592,7 @@ public class Employee : Person
   <xs:restriction base="xs:int"/>  
  </xs:simpleType>  
   
- <!-- xs:duration is restricted to an ordered value space,   
+ <!-- xs:duration is restricted to an ordered value space,  
     to map to System.TimeSpan -->  
  <xs:element name="duration" nillable="true" type="tns:duration"/>  
  <xs:simpleType name="duration">  
@@ -689,8 +691,8 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
 ```  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute>   
- <xref:System.Runtime.Serialization.XsdDataContractImporter>   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute>  
+ <xref:System.Runtime.Serialization.XsdDataContractImporter>  
  [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)

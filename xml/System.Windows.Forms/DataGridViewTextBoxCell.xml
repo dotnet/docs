@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewTextBoxCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display a single string of editable text-based information. The currently selected <xref:System.Windows.Forms.DataGridViewTextBoxCell> hosts a <xref:System.Windows.Forms.DataGridViewTextBoxEditingControl> control in which the user can edit the cell's value (assuming the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> property of the <xref:System.Windows.Forms.DataGridViewTextBoxCell> is set to `false`).  
   
- The <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewTextBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewTextBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ The <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A?displayProperty=nameWithType> is initialized to a new <xref:System.Windows.Forms.DataGridViewTextBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewTextBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
   
  The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
   
@@ -36,6 +36,11 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +67,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -91,6 +98,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.Clone" /> method so that the properties of the base class are copied to the new cell, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DetachEditingControl">
@@ -114,6 +122,7 @@
       <Docs>
         <summary>Removes the cell's editing control from the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.DetachEditingControl" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValueType">
@@ -140,13 +149,19 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxCell.ValueType" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -173,6 +188,7 @@
         <summary>Returns the bounding rectangle that encloses the cell's content area, which is calculated using the specified <see cref="T:System.Drawing.Graphics" /> and cell style.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's contents.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorIconBounds">
@@ -199,6 +215,7 @@
         <summary>Returns the bounding rectangle that encloses the cell's error icon, if one is displayed.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's error icon, if one is displayed; otherwise, <see cref="F:System.Drawing.Rectangle.Empty" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -227,6 +244,7 @@
         <summary>Calculates the preferred size, in pixels, of the cell.</summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that represents the preferred size, in pixels, of the cell.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeEditingControl">
@@ -255,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl%2A> method initializes the hosted editing control as described in the base <xref:System.Windows.Forms.DataGridViewCell.InitializeEditingControl%2A?displayProperty=fullName> method. For every invocation, this method also sets the following visual attributes of the editing control:  
+ The <xref:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl%2A> method initializes the hosted editing control as described in the base <xref:System.Windows.Forms.DataGridViewCell.InitializeEditingControl%2A?displayProperty=nameWithType> method. For every invocation, this method also sets the following visual attributes of the editing control:  
   
 -   The <xref:System.Windows.Forms.TextBoxBase.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle.None>.  
   
@@ -265,6 +283,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.BorderStyle" />
+        <altmember cref="P:System.Windows.Forms.TextBox.Multiline" />
+        <altmember cref="P:System.Windows.Forms.TextBox.AcceptsReturn" />
+        <altmember cref="P:System.Windows.Forms.TextBox.Text" />
       </Docs>
     </Member>
     <Member MemberName="KeyEntersEditMode">
@@ -297,6 +321,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EditMode" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MaxInputLength">
@@ -330,6 +357,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 0.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.MaxInputLength" />
       </Docs>
     </Member>
     <Member MemberName="OnEnter">
@@ -357,13 +386,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.Control.Enter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnEnter%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.Control.Enter?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.OnEnter(System.Int32,System.Boolean)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.OnEnter(System.Int32,System.Boolean)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnEnter(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -393,13 +425,16 @@
 ## Remarks  
  Resets the instance's click state to ensure that leaving then re-entering the cell requires a double click to start edit mode.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.OnLeave(System.Int32,System.Boolean)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.OnLeave(System.Int32,System.Boolean)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnLeave(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseClick">
@@ -426,13 +461,17 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewTextBoxCell.OnMouseClick%2A> determines whether the mouse click is part of a double click that starts an edit session.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewTextBoxCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseClick(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -474,6 +513,7 @@
         <param name="paintParts">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values that specifies which parts of the cell need to be painted.</param>
         <summary>Paints the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
       </Docs>
     </Member>
     <Member MemberName="PositionEditingControl">
@@ -536,6 +576,7 @@
         <summary>Returns a string that describes the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -554,6 +595,7 @@
         <summary>Gets or sets the data type of the values in the cell.</summary>
         <value>A <see cref="T:System.Type" /> representing the data type of the value in the cell.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
       </Docs>
     </Member>
   </Members>

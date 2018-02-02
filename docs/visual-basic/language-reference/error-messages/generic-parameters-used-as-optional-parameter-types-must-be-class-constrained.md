@@ -1,40 +1,21 @@
 ---
 title: "Generic parameters used as optional parameter types must be class constrained"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc32124"
   - "bc32124"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32124"
 ms.assetid: 55aa8b2a-9ce3-4620-a710-2f9b0feb6143
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Generic parameters used as optional parameter types must be class constrained
 A procedure is declared with an optional parameter that uses a type parameter that is not constrained to be a reference type.  
@@ -50,9 +31,9 @@ A procedure is declared with an optional parameter that uses a type parameter th
 -   Constrain the type parameter to accept only a reference type, or do not use it for the optional parameter.  
   
 ## See Also  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
+ [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [Nothing](../../../visual-basic/language-reference/nothing.md)

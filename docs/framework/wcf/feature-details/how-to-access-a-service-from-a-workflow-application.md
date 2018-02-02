@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How To: Access a Service From a Workflow Application
 This topic describes how to call a workflow service from a workflow console application. It depends on completion of the [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md) topic. Although this topic describes how to call a workflow service from a workflow application, the same methods can be used to call any [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service from a workflow application.  
@@ -54,7 +56,7 @@ This topic describes how to call a workflow service from a workflow console appl
   
      ![Adding a variable](../../../../docs/framework/wcf/feature-details/media/instringvar.JPG "inStringVar")  
   
-9. Drag and drop an **Echo** activity into the <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence`. In the properties window bind the _string argument to the `inString` variable and the `out_string` argument to the outString variable as shown in the following illustration. This passes in the value of the `inString` variable to the operation and then takes the return value and places it in the `outString` variable.  
+9. Drag and drop an **Echo** activity into the <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence`. In the properties window bind the `inMsg` argument to the `inString` variable and the `outMsg` argument to the `outString` variable as shown in the following illustration. This passes in the value of the `inString` variable to the operation and then takes the return value and places it in the `outString` variable.  
   
      ![Binding the arguments to variables](../../../../docs/framework/wcf/feature-details/media/argumentbind.JPG "ArgumentBind")  
   
@@ -69,6 +71,6 @@ This topic describes how to call a workflow service from a workflow console appl
 12. Press Ctrl + F5 to launch both the service and the client. The ASP.NET Development Server hosts the service, Internet Explorer displays the WCF help page, and the client workflow application is launched in a console window and displays the string returned from the service ("Hello, world").  
   
 ## See Also  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)   
- [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md)   
+ [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
+ [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md)  
  [Consuming a WCF Service from a Workflow in a Web Project](http://go.microsoft.com/fwlink/?LinkId=207725)

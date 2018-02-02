@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -88,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -156,7 +160,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException" /> class.</summary>
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

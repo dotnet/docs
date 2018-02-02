@@ -225,7 +225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method should return `null` for cases where the <xref:System.Xaml.XamlType> for this <xref:System.Xaml.Schema.XamlTypeInvoker> is not a writeable collection or dictionary. Specifically, should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=fullName> returns `None`.  
+ This method should return `null` for cases where the <xref:System.Xaml.XamlType> for this <xref:System.Xaml.Schema.XamlTypeInvoker> is not a writeable collection or dictionary. Specifically, should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=nameWithType> returns `None`.  
   
 > [!IMPORTANT]
 >  If you are not accessing a fully trusted XAML type system, this method has the potential to report false <xref:System.Reflection.MethodInfo> information to callers.  
@@ -262,7 +262,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=fullName> returns `None`.  
+ Should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=nameWithType> returns `None`.  
   
 > [!IMPORTANT]
 >  If you are not accessing a fully trusted XAML type system, this method has the potential to report false <xref:System.Reflection.MethodInfo> information to callers.  
@@ -391,5 +391,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

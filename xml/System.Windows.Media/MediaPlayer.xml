@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Drawing" />
+    <altmember cref="T:System.Windows.Media.VideoDrawing" />
+    <altmember cref="T:System.Windows.Media.DrawingContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -194,7 +197,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -224,10 +227,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -318,7 +322,7 @@
   
  This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

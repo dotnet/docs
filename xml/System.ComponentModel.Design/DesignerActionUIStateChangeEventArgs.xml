@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler" />
+    <altmember cref="E:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,10 +46,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event, the `relatedObject` parameter always references the <xref:System.ComponentModel.Component?displayProperty=fullName> that the panel is associated with.  
+ For the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event, the `relatedObject` parameter always references the <xref:System.ComponentModel.Component?displayProperty=nameWithType> that the panel is associated with.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
+        <altmember cref="E:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.RelatedObject" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.ChangeType" />
       </Docs>
     </Member>
     <Member MemberName="ChangeType">
@@ -72,6 +79,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.#ctor(System.Object,System.ComponentModel.Design.DesignerActionUIStateChangeType)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="RelatedObject">
@@ -97,6 +108,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.#ctor(System.Object,System.ComponentModel.Design.DesignerActionUIStateChangeType)" />
+        <altmember cref="E:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionListsChangedEventArgs.RelatedObject" />
       </Docs>
     </Member>
   </Members>

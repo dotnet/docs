@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EnumerateProcesses"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateProcesses method [.NET Framework debugging]"
   - "ICorDebug::EnumerateProcesses method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::EnumerateProcesses Method
 Gets an enumerator for the processes that are being debugged.  

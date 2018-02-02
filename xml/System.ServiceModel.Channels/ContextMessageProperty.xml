@@ -29,10 +29,11 @@
   
  If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `true`, context is established at the channel layer, and all incoming messages on the client and the service have this context property attached by the context channel. If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `false` the <xref:System.ServiceModel.Channels.ContextMessageProperty> is used to attach context to an outgoing message on the client or the service at the application layer.  
   
- The <xref:System.ServiceModel.Channels.ContextMessageProperty> can be used on the client or on the service. Alternatively, on the client only, the current context can be obtained or a new context can be set on channel instance using <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> and <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A>properties.  
+ The <xref:System.ServiceModel.Channels.ContextMessageProperty> can be used on the client or on the service. Alternatively, on the client only, the current context can be obtained or a new context can be set on channel instance using <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> and <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A> properties.  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ServiceModel.Channels.Message.Properties" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessage%28System.ServiceModel.Channels.Message%29?displayProperty=fullName> method overwrites the value of the `ContextMessageProperty` property if a value is already set.  
+ The <xref:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessage%28System.ServiceModel.Channels.Message%29?displayProperty=nameWithType> method overwrites the value of the `ContextMessageProperty` property if a value is already set.  
   
  ]]></format>
         </remarks>
@@ -180,7 +181,7 @@
     </Member>
     <Member MemberName="TryCreateFromHttpCookieHeader">
       <MemberSignature Language="C#" Value="public static bool TryCreateFromHttpCookieHeader (string httpCookieHeader, out System.ServiceModel.Channels.ContextMessageProperty context);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreateFromHttpCookieHeader(string httpCookieHeader, class System.ServiceModel.Channels.ContextMessageProperty context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreateFromHttpCookieHeader(string httpCookieHeader, [out] class System.ServiceModel.Channels.ContextMessageProperty&amp; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.TryCreateFromHttpCookieHeader(System.String,System.ServiceModel.Channels.ContextMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -207,7 +208,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.ContextMessageProperty contextMessageProperty);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.ContextMessageProperty contextMessageProperty) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.ContextMessageProperty&amp; contextMessageProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.ContextMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -232,7 +233,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.ContextMessageProperty contextMessageProperty);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.ContextMessageProperty contextMessageProperty) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.ContextMessageProperty&amp; contextMessageProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.ContextMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -255,5 +256,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ContextMessageProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the <see langword="ContextMessageProperty" /> from a specified message or collection of message properties.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

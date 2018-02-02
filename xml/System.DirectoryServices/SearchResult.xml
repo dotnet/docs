@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Instances of the <xref:System.DirectoryServices.SearchResult> class are very similar to instances of <xref:System.DirectoryServices.DirectoryEntry> class. The crucial difference is that the <xref:System.DirectoryServices.DirectoryEntry> class retrieves its information from the Active Directory Domain Services hierarchy each time a new object is accessed, whereas the data for <xref:System.DirectoryServices.SearchResult> is already available in the <xref:System.DirectoryServices.SearchResultCollection>, where it gets returned from a query that is performed with the <xref:System.DirectoryServices.DirectorySearcher> class. Only those properties that are specified through the <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=fullName> collection in your query will be available from <xref:System.DirectoryServices.SearchResult>.  
+ Instances of the <xref:System.DirectoryServices.SearchResult> class are very similar to instances of <xref:System.DirectoryServices.DirectoryEntry> class. The crucial difference is that the <xref:System.DirectoryServices.DirectoryEntry> class retrieves its information from the Active Directory Domain Services hierarchy each time a new object is accessed, whereas the data for <xref:System.DirectoryServices.SearchResult> is already available in the <xref:System.DirectoryServices.SearchResultCollection>, where it gets returned from a query that is performed with the <xref:System.DirectoryServices.DirectorySearcher> class. Only those properties that are specified through the <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=nameWithType> collection in your query will be available from <xref:System.DirectoryServices.SearchResult>.  
   
    
   
@@ -360,7 +360,7 @@ Console::WriteLine("The path for the 'mySearchResult' search result is : {0}\n",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This collection only contains properties that were explicitly requested through <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=fullName>.  
+ This collection only contains properties that were explicitly requested through <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=nameWithType>.  
   
    
   

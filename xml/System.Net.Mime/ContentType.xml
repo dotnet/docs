@@ -25,20 +25,22 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data contained in an e-mail message in such a way that software that displays e-mail can present the content in an appropriate manner. <xref:System.Net.Mime.ContentType> is used with the <xref:System.Net.Mail.Attachment> class to specify the type of content in the attachment.  
+ The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data contained in an email message in such a way that software that displays email can present the content in an appropriate manner. <xref:System.Net.Mime.ContentType> is used with the <xref:System.Net.Mail.Attachment> class to specify the type of content in the attachment.  
   
  The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information about MIME media types and their parameters. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
   
    
   
 ## Examples  
- The following code example sends an e-mail message with an attachment and displays the <xref:System.Net.Mail.Attachment.ContentDisposition%2A> properties for the attachment.  
+ The following code example sends an email message with an attachment and displays the <xref:System.Net.Mail.Attachment.ContentDisposition%2A> properties for the attachment.  
   
  [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
  [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -160,7 +162,7 @@
   
  `content-type: multipart/mixed; boundary=-----boundary---0`  
   
- Set this property to `null` or <xref:System.String?displayProperty=fullName> to remove the boundary information from the header.  
+ Set this property to `null` or <xref:System.String.Empty?displayProperty=nameWithType> to remove the boundary information from the header.  
   
  The syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the boundary parameter is contained in RFC 2046 Section 5.1.1. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -208,7 +210,7 @@
   
  `content-type: application/x-myType; charset=us-ascii`  
   
- Set this property to `null` or <xref:System.String?displayProperty=fullName> to remove the charset information from the header.  
+ Set this property to `null` or <xref:System.String.Empty?displayProperty=nameWithType> to remove the charset information from the header.  
   
  A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the charset parameter is contained in RFC 2046 Section 4.1.2. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -316,7 +318,7 @@
   
  `content-type: application/x-myType; name=data.xyz`  
   
- Set this property to `null` or <xref:System.String?displayProperty=fullName> to remove the name information from the header.  
+ Set this property to `null` or <xref:System.String.Empty?displayProperty=nameWithType> to remove the name information from the header.  
   
  The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information on MIME media types. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -474,5 +476,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mime.ContentType" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

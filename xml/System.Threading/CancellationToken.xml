@@ -38,7 +38,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Threading.CancellationToken> enables cooperative cancellation between threads, thread pool work items, or <xref:System.Threading.Tasks.Task> objects. You create a cancellation token by instantiating a <xref:System.Threading.CancellationTokenSource> object, which manages cancellation tokens retrieved from its <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=fullName> property. You then  pass the cancellation token to any number of threads, tasks, or operations that should receive notice of cancellation. The token cannot be used to initiate cancellation. When the owning object calls <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName>, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property on every copy of the cancellation token is set to `true`. The objects that receive the notification can respond in whatever manner is appropriate.  
+ A <xref:System.Threading.CancellationToken> enables cooperative cancellation between threads, thread pool work items, or <xref:System.Threading.Tasks.Task> objects. You create a cancellation token by instantiating a <xref:System.Threading.CancellationTokenSource> object, which manages cancellation tokens retrieved from its <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property. You then  pass the cancellation token to any number of threads, tasks, or operations that should receive notice of cancellation. The token cannot be used to initiate cancellation. When the owning object calls <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType>, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property on every copy of the cancellation token is set to `true`. The objects that receive the notification can respond in whatever manner is appropriate.  
   
  For more information and code examples see [Cancellation in Managed Threads](~/docs/standard/threading/cancellation-in-managed-threads.md).  
   
@@ -47,7 +47,7 @@
 ## Examples  
  The following example uses a random number generator to emulate a data collection application that reads 10 integral values from eleven different instruments. A value of zero indicates that the measurement has failed for one instrument, in which case the operation should be cancelled and no overall mean should be computed.  
   
- To handle the possible cancellation of the operation, the example instantiates a <xref:System.Threading.CancellationTokenSource> object that generates a cancellation token which is passed to a <xref:System.Threading.Tasks.TaskFactory> object. The <xref:System.Threading.Tasks.TaskFactory> object in turn passes the cancellation token to each of the tasks responsible for collecting readings for a particular instrument. The <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%60%602%28System.Threading.Tasks.Task%7B%60%600%7D%5B%5D%2CSystem.Func%7BSystem.Threading.Tasks.Task%7B%60%600%7D%5B%5D%2C%60%601%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method is called to ensure that the mean is computed only after all readings have been gathered successfully. If a task has not because it has been cancelled, the call to the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=fullName> method throws an exception.  
+ To handle the possible cancellation of the operation, the example instantiates a <xref:System.Threading.CancellationTokenSource> object that generates a cancellation token which is passed to a <xref:System.Threading.Tasks.TaskFactory> object. The <xref:System.Threading.Tasks.TaskFactory> object in turn passes the cancellation token to each of the tasks responsible for collecting readings for a particular instrument. The <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%60%602%28System.Threading.Tasks.Task%7B%60%600%7D%5B%5D%2CSystem.Func%7BSystem.Threading.Tasks.Task%7B%60%600%7D%5B%5D%2C%60%601%7D%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method is called to ensure that the mean is computed only after all readings have been gathered successfully. If a task has not because it has been cancelled, the call to the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=nameWithType> method throws an exception.  
   
  [!code-csharp[System.Threading.CancellationTokenSource.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.cancellationtokensource.class/cs/cancel1.cs#1)]
  [!code-vb[System.Threading.CancellationTokenSource.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.cancellationtokensource.class/vb/cancel1.vb#1)]  
@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Threading.CancellationToken.CanBeCanceled%2A> returns `false`, it is guaranteed that the token will never transition into a canceled state, meaning that <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> will never return `true`. A cancellation token that cannot be canceled is returned by the static <xref:System.Threading.CancellationToken.None%2A?displayProperty=fullName> property.  
+ If <xref:System.Threading.CancellationToken.CanBeCanceled%2A> returns `false`, it is guaranteed that the token will never transition into a canceled state, meaning that <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> will never return `true`. A cancellation token that cannot be canceled is returned by the static <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType> property.  
   
  You can optionally use this property to determine whether a cancellation token can be canceled before examing the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property to determine whether it has been canceled.  
   
@@ -170,11 +170,24 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">The other object to which to compare this instance.</param>
+        <param name="other">The other object to compare with this instance.</param>
         <summary>Determines whether the current <see cref="T:System.Threading.CancellationToken" /> instance is equal to the specified <see cref="T:System.Object" />.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="other" /> is a <see cref="T:System.Threading.CancellationToken" /> and if the two instances are equal; otherwise, <see langword="false" />. Two tokens are equal if they are associated with the same <see cref="T:System.Threading.CancellationTokenSource" /> or if they were both constructed from public <see cref="T:System.Threading.CancellationToken" /> constructors and their <see cref="P:System.Threading.CancellationToken.IsCancellationRequested" /> values are equal.</returns>
-        <remarks>To be added.</remarks>
+          <see langword="true" /> if <paramref name="other" /> is a <see cref="T:System.Threading.CancellationToken" /> and if the two instances are equal; otherwise, <see langword="false" />. See the Remarks section for more information. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+Two cancellation tokens are equal if any one of the following conditions is true: 
+
+- They are associated with the same <xref:System.Threading.CancellationTokenSource>.
+
+- They were both constructed from public <xref:System.Threading.CancellationToken> constructors, and their <xref:System.Threading.CancellationToken.IsCancellationRequested?displayProperty=nameWithType> values are equal.
+
+- The value of both cancellation tokens is <xref:System.Threading.CancellationToken.None?displayProperty=nameWithType>.
+
+       ]]></format>
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">An associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -208,11 +221,24 @@
         <Parameter Name="other" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="other">The other <see cref="T:System.Threading.CancellationToken" /> to which to compare this instance.</param>
+        <param name="other">The other <see cref="T:System.Threading.CancellationToken" /> to compare with this instance.</param>
         <summary>Determines whether the current <see cref="T:System.Threading.CancellationToken" /> instance is equal to the specified token.</summary>
         <returns>
-          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />. Two tokens are equal if they are associated with the same <see cref="T:System.Threading.CancellationTokenSource" /> or if they were both constructed from public <see cref="T:System.Threading.CancellationToken" /> constructors and their <see cref="P:System.Threading.CancellationToken.IsCancellationRequested" /> values are equal.</returns>
-        <remarks>To be added.</remarks>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />. See the Remarks section for more information. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+Two cancellation tokens are equal if any one of the following conditions is true: 
+
+- They are associated with the same <xref:System.Threading.CancellationTokenSource>.
+
+- They were both constructed from public <xref:System.Threading.CancellationToken> constructors, and their <xref:System.Threading.CancellationToken.IsCancellationRequested?displayProperty=nameWithType> values are equal.
+
+- The value of both cancellation tokens is <xref:System.Threading.CancellationToken.None?displayProperty=nameWithType>.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -294,7 +320,7 @@
  [!code-csharp[System.Threading.Tasks.CancellationToken.IsCancellationRequested#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.Tasks.CancellationToken.IsCancellationRequested/cs/cancellation.cs#12)]
  [!code-vb[System.Threading.Tasks.CancellationToken.IsCancellationRequested#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.Tasks.CancellationToken.IsCancellationRequested/vb/cancelthreads.vb#12)]  
   
- The example instantiates a <xref:System.Threading.CancellationTokenSource> object, which controls access to the cancellation token. It then defines two thread procedures. The first is defined as a lambda expression that pools the keyboard and, when the "C" key is pressed, calls <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> to set the cancellation token to the cancelled state. The second is a parameterized method, `ServerClass.StaticMethod`, that executes a loop until the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property is `true`.  
+ The example instantiates a <xref:System.Threading.CancellationTokenSource> object, which controls access to the cancellation token. It then defines two thread procedures. The first is defined as a lambda expression that pools the keyboard and, when the "C" key is pressed, calls <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> to set the cancellation token to the cancelled state. The second is a parameterized method, `ServerClass.StaticMethod`, that executes a loop until the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property is `true`.  
   
  The main thread then starts the two threads and blocks until the thread that executes the `ServerClass.StaticMethod` method terminates.  
   
@@ -337,7 +363,9 @@
 ## Remarks  
  The cancellation token returned by this property cannot be canceled; that is, its <xref:System.Threading.CancellationToken.CanBeCanceled%2A> property is `false`.  
   
- You can also use the C#  [default(CancellationToken)](~/docs/csharp/language-reference/keywords/default.md) statement to create an empty cancellation token.  
+ You can also use the C#  [default(CancellationToken)](~/docs/csharp/language-reference/keywords/default.md) statement to create an empty cancellation token. 
+
+ Two empty cancellation tokens are always equal.
   
  ]]></format>
         </remarks>
@@ -378,8 +406,20 @@
         <param name="right">The second instance.</param>
         <summary>Determines whether two <see cref="T:System.Threading.CancellationToken" /> instances are equal.</summary>
         <returns>
-          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" /> See the Remarks section for more information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+Two cancellation tokens are equal if any one of the following conditions is true: 
+
+- They are associated with the same <xref:System.Threading.CancellationTokenSource>.
+
+- They were both constructed from public <xref:System.Threading.CancellationToken> constructors, and their <xref:System.Threading.CancellationToken.IsCancellationRequested?displayProperty=nameWithType> values are equal.
+
+- The value of both cancellation tokens is <xref:System.Threading.CancellationToken.None?displayProperty=nameWithType>.
+       ]]></format>
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">An associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -419,7 +459,15 @@
         <summary>Determines whether two <see cref="T:System.Threading.CancellationToken" /> instances are not equal.</summary>
         <returns>
           <see langword="true" /> if the instances are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+For the definition of equality, see the <xref:System.Threading.CancellationToken.Equals%2A> method. 
+       ]]></format>
+        
+
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">An associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -462,8 +510,10 @@
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
-  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ The current <xref:System.Threading.SynchronizationContext> is not captured.
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
@@ -512,7 +562,9 @@
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
   
- If `useSynchronizationContext` is `true`, the current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ If `useSynchronizationContext` is `true`, the current <xref:System.Threading.SynchronizationContext>, if one exists, is also captured along with the delegate and will be used when executing it. Otherwise, <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -562,7 +614,9 @@
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ The current <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -614,7 +668,9 @@
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ If `useSynchronizationContext` is `true`, the current <xref:System.Threading.SynchronizationContext>, if one exists, is also captured along with the delegate and will be used when executing it. Otherwise, <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -717,5 +773,25 @@ End If
         <exception cref="T:System.ObjectDisposedException">The associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current <see cref="T:System.Threading.CancellationToken" /> instance is equal to the specified token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a delegate that will be called when this <see cref="T:System.Threading.CancellationToken" /> is canceled.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

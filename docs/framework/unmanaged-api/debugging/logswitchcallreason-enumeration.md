@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "LogSwitchCallReason"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LogSwitchCallReason enumeration [.NET Framework debugging]"
 ms.assetid: 5bbb8d1b-bbc4-47b0-b1b1-2d54cc0be291
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LogSwitchCallReason Enumeration
 Indicates the operation that was performed on a debugging/tracing switch.  

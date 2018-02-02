@@ -26,11 +26,13 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[CalendarNextPrevFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CalendarNextPrevFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CalendarNextPrevFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx#1)]
+ [!code-aspx-vb[CalendarNextPrevFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.NextPrevFormat" />
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
   </Docs>
   <Members>
     <Member MemberName="CustomText">

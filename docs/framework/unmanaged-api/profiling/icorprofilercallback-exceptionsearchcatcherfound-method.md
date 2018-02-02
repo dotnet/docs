@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchCatcherFound"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionSearchCatcherFound method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchCatcherFound method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionSearchCatcherFound Method
 Notifies the profiler that the search phase of exception handling has located a handler for the exception that was thrown.  

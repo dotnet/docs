@@ -13,6 +13,9 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.LoadingRow" /> and <see cref="E:System.Windows.Controls.DataGrid.UnloadingRow" /> events.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRow" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRow" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +34,9 @@
         <param name="row">The row for which the event occurred.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridRowEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRow" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRow" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -49,6 +55,9 @@
         <summary>Gets the row for which the event occurred.</summary>
         <value>The row for which the event occurred.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRow" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRow" />
       </Docs>
     </Member>
   </Members>

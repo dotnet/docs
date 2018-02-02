@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
   - "SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
@@ -27,6 +25,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDomainManager::SetPropertiesForDefaultAppDomain Method
 Sets properties that will be used to initialize the default application domain.  
@@ -60,7 +60,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
 |HRESULT_FROM_WIN32(ERROR_UNKNOWN_PROPERTY)|`pwszPropertyNames` includes a property name that is not recognized by this method.|  
   
 ## Remarks  
- The property value for "PARTIAL_TRUST_VISIBLE_ASSEMBLIES" is a list of assemblies that have the conditional <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute with the <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault?displayProperty=fullName> flag, which are to be made visible to partially trusted callers in the default application domain.  
+ The property value for "PARTIAL_TRUST_VISIBLE_ASSEMBLIES" is a list of assemblies that have the conditional <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute with the <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault?displayProperty=nameWithType> flag, which are to be made visible to partially trusted callers in the default application domain.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -72,5 +72,5 @@ HRESULT SetPropertiesForDefaultAppDomain(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)   
+ [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
  [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)

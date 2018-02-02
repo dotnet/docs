@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "interop marshaling, default"
   - "interoperation with unmanaged code, marshaling"
@@ -23,6 +21,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Default Marshaling Behavior
 Interop marshaling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshaling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the marshaler provides performance optimizations.  
@@ -30,7 +30,7 @@ Interop marshaling operates on rules that dictate how data associated with metho
  This section identifies the default behavioral characteristics of the interop marshaling service. It presents detailed information on marshaling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   
 > [!NOTE]
->  Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](http://msdn.microsoft.com/en-us/26b88e03-085b-4b53-94ba-a5a9c709ce58).  
+>  Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](http://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58).  
   
 ## Memory management with the interop marshaler  
  The interop marshaler always attempts to free memory allocated by unmanaged code. This behavior complies with COM memory management rules, but differs from the rules that govern native C++.  
@@ -47,10 +47,10 @@ BSTR MethodOne (BSTR b) {
   
  However, if you define the method as a platform invoke prototype, replace each **BSTR** type with a <xref:System.String> type, and call `MethodOne`, the common language runtime attempts to free `b` twice. You can change the marshaling behavior by using <xref:System.IntPtr> types rather than **String** types.  
   
- The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](http://msdn.microsoft.com/en-us/e30d36e8-d7c4-4936-916a-8fdbe4d9ffd5).  
+ The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](http://msdn.microsoft.com/library/e30d36e8-d7c4-4936-916a-8fdbe4d9ffd5).  
   
 ## Default marshaling for classes  
- Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
 ### Passing Classes to COM  
  When a managed class is passed to COM, the interop marshaler automatically wraps the class with a COM proxy and passes the class interface produced by the proxy to the COM method call. The proxy then delegates all calls on the class interface back to the managed object. The proxy also exposes other interfaces that are not explicitly implemented by the class. The proxy automatically implements interfaces such as **IUnknown** and **IDispatch** on behalf of the class.  
@@ -81,7 +81,7 @@ BSTR MethodOne (BSTR b) {
   
 -   For platform invoke, a delegate is marshaled as an unmanaged function pointer by default.  
   
--   For COM interop, a delegate is marshaled as a COM interface of type **_Delegate** by default. The **_Delegate** interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke%2A?displayProperty=fullName> method, which enables you to call the method that the delegate references.  
+-   For COM interop, a delegate is marshaled as a COM interface of type **_Delegate** by default. The **_Delegate** interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke%2A?displayProperty=nameWithType> method, which enables you to call the method that the delegate references.  
   
  The following table shows the marshaling options for the managed delegate data type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal delegates.  
   
@@ -359,34 +359,34 @@ interface _Graphics {
   
 <a name="cpcondefaultmarshalingforvaluetypesanchor1"></a>   
 ### System Value Types  
- The <xref:System> namespace has several value types that represent the boxed form of the runtime primitive types. For example, the value type <xref:System.Int32?displayProperty=fullName> structure represents the boxed form of **ELEMENT_TYPE_I4**. Instead of marshaling these types as structures, as other formatted types are, you marshal them in the same way as the primitive types they box. **System.Int32** is therefore marshaled as **ELEMENT_TYPE_I4** instead of as a structure containing a single member of type **long**. The following table contains a list of the value types in the **System** namespace that are boxed representations of primitive types.  
+ The <xref:System> namespace has several value types that represent the boxed form of the runtime primitive types. For example, the value type <xref:System.Int32?displayProperty=nameWithType> structure represents the boxed form of **ELEMENT_TYPE_I4**. Instead of marshaling these types as structures, as other formatted types are, you marshal them in the same way as the primitive types they box. **System.Int32** is therefore marshaled as **ELEMENT_TYPE_I4** instead of as a structure containing a single member of type **long**. The following table contains a list of the value types in the **System** namespace that are boxed representations of primitive types.  
   
 |System value type|Element type|  
 |-----------------------|------------------|  
-|<xref:System.Boolean?displayProperty=fullName>|**ELEMENT_TYPE_BOOLEAN**|  
-|<xref:System.SByte?displayProperty=fullName>|**ELEMENT_TYPE_I1**|  
-|<xref:System.Byte?displayProperty=fullName>|**ELEMENT_TYPE_UI1**|  
-|<xref:System.Char?displayProperty=fullName>|**ELEMENT_TYPE_CHAR**|  
-|<xref:System.Int16?displayProperty=fullName>|**ELEMENT_TYPE_I2**|  
-|<xref:System.UInt16?displayProperty=fullName>|**ELEMENT_TYPE_U2**|  
-|<xref:System.Int32?displayProperty=fullName>|**ELEMENT_TYPE_I4**|  
-|<xref:System.UInt32?displayProperty=fullName>|**ELEMENT_TYPE_U4**|  
-|<xref:System.Int64?displayProperty=fullName>|**ELEMENT_TYPE_I8**|  
-|<xref:System.UInt64?displayProperty=fullName>|**ELEMENT_TYPE_U8**|  
-|<xref:System.Single?displayProperty=fullName>|**ELEMENT_TYPE_R4**|  
-|<xref:System.Double?displayProperty=fullName>|**ELEMENT_TYPE_R8**|  
-|<xref:System.String?displayProperty=fullName>|**ELEMENT_TYPE_STRING**|  
-|<xref:System.IntPtr?displayProperty=fullName>|**ELEMENT_TYPE_I**|  
-|<xref:System.UIntPtr?displayProperty=fullName>|**ELEMENT_TYPE_U**|  
+|<xref:System.Boolean?displayProperty=nameWithType>|**ELEMENT_TYPE_BOOLEAN**|  
+|<xref:System.SByte?displayProperty=nameWithType>|**ELEMENT_TYPE_I1**|  
+|<xref:System.Byte?displayProperty=nameWithType>|**ELEMENT_TYPE_UI1**|  
+|<xref:System.Char?displayProperty=nameWithType>|**ELEMENT_TYPE_CHAR**|  
+|<xref:System.Int16?displayProperty=nameWithType>|**ELEMENT_TYPE_I2**|  
+|<xref:System.UInt16?displayProperty=nameWithType>|**ELEMENT_TYPE_U2**|  
+|<xref:System.Int32?displayProperty=nameWithType>|**ELEMENT_TYPE_I4**|  
+|<xref:System.UInt32?displayProperty=nameWithType>|**ELEMENT_TYPE_U4**|  
+|<xref:System.Int64?displayProperty=nameWithType>|**ELEMENT_TYPE_I8**|  
+|<xref:System.UInt64?displayProperty=nameWithType>|**ELEMENT_TYPE_U8**|  
+|<xref:System.Single?displayProperty=nameWithType>|**ELEMENT_TYPE_R4**|  
+|<xref:System.Double?displayProperty=nameWithType>|**ELEMENT_TYPE_R8**|  
+|<xref:System.String?displayProperty=nameWithType>|**ELEMENT_TYPE_STRING**|  
+|<xref:System.IntPtr?displayProperty=nameWithType>|**ELEMENT_TYPE_I**|  
+|<xref:System.UIntPtr?displayProperty=nameWithType>|**ELEMENT_TYPE_U**|  
   
  Some other value types in the **System** namespace are handled differently. Because the unmanaged code already has well-established formats for these types, the marshaler has special rules for marshaling them. The following table lists the special value types in the **System** namespace, as well as the unmanaged type they are marshaled to.  
   
 |System value type|IDL type|  
 |-----------------------|--------------|  
-|<xref:System.DateTime?displayProperty=fullName>|**DATE**|  
-|<xref:System.Decimal?displayProperty=fullName>|**DECIMAL**|  
-|<xref:System.Guid?displayProperty=fullName>|**GUID**|  
-|<xref:System.Drawing.Color?displayProperty=fullName>|**OLE_COLOR**|  
+|<xref:System.DateTime?displayProperty=nameWithType>|**DATE**|  
+|<xref:System.Decimal?displayProperty=nameWithType>|**DECIMAL**|  
+|<xref:System.Guid?displayProperty=nameWithType>|**GUID**|  
+|<xref:System.Drawing.Color?displayProperty=nameWithType>|**OLE_COLOR**|  
   
  The following code shows the definition of the unmanaged types **DATE**, **GUID**, **DECIMAL**, and **OLE_COLOR** in the Stdole2 type library.  
   
@@ -445,8 +445,8 @@ interface IValueTypes : IDispatch {
 ```  
   
 ## See Also  
- [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)   
- [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)   
- [Default Marshaling for Arrays](../../../docs/framework/interop/default-marshaling-for-arrays.md)   
- [Default Marshaling for Objects](../../../docs/framework/interop/default-marshaling-for-objects.md)   
+ [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)  
+ [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)  
+ [Default Marshaling for Arrays](../../../docs/framework/interop/default-marshaling-for-arrays.md)  
+ [Default Marshaling for Objects](../../../docs/framework/interop/default-marshaling-for-objects.md)  
  [Default Marshaling for Strings](../../../docs/framework/interop/default-marshaling-for-strings.md)

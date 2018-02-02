@@ -78,7 +78,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CallInfo (int argCount, string[] argNames);" />
+      <MemberSignature Language="C#" Value="public CallInfo (int argCount, params string[] argNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 argCount, string[] argNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.#ctor(System.Int32,System.String[])" />
       <MemberType>Constructor</MemberType>
@@ -245,5 +245,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new CallInfo that represents arguments in the dynamic binding process.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

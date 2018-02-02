@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeObjectCreateExpression" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,7 +92,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (System.CodeDom.CodeTypeReference createType, System.CodeDom.CodeExpression[] initializers);" />
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (System.CodeDom.CodeTypeReference createType, params System.CodeDom.CodeExpression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference createType, class System.CodeDom.CodeExpression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -169,7 +170,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (string createType, System.CodeDom.CodeExpression[] initializers);" />
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (string createType, params System.CodeDom.CodeExpression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string createType, class System.CodeDom.CodeExpression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -247,7 +248,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (Type createType, System.CodeDom.CodeExpression[] initializers);" />
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (Type createType, params System.CodeDom.CodeExpression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type createType, class System.CodeDom.CodeExpression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.Type,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -395,5 +396,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

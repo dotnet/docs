@@ -18,9 +18,9 @@
 ## Remarks  
  Each item of qualification data consists of a name/value pair that was applied to a pipeline segment by using the <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute, to provide information that qualifies the use of the segment (for example, the recommended isolation level for the segment). The <xref:System.AddIn.Hosting.QualificationDataItem> structure contains one name/value pair and the type of pipeline segment it was applied to.  
   
- Use the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A?displayProperty=fullName> property to get a nested set of dictionaries that contains <xref:System.AddIn.Hosting.QualificationDataItem> structures for the pipeline segments associated with an <xref:System.AddIn.Hosting.AddInToken>.  
+ Use the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A?displayProperty=nameWithType> property to get a nested set of dictionaries that contains <xref:System.AddIn.Hosting.QualificationDataItem> structures for the pipeline segments associated with an <xref:System.AddIn.Hosting.AddInToken>.  
   
- Alternatively, use the <xref:System.AddIn.Hosting.AddInToken.GetEnumerator%2A?displayProperty=fullName> method to get an enumerator for the <xref:System.AddIn.Hosting.QualificationDataItem> structures of the pipeline segments associated with a token, or simply use a `foreach` statement (`For Each` in Visual Basic, `for each` in Visual C++) to treat the token as if it were a collection of <xref:System.AddIn.Hosting.QualificationDataItem> structures.  
+ Alternatively, use the <xref:System.AddIn.Hosting.AddInToken.GetEnumerator%2A?displayProperty=nameWithType> method to get an enumerator for the <xref:System.AddIn.Hosting.QualificationDataItem> structures of the pipeline segments associated with a token, or simply use a `foreach` statement (`For Each` in Visual Basic, `for each` in Visual C++) to treat the token as if it were a collection of <xref:System.AddIn.Hosting.QualificationDataItem> structures.  
   
    
   

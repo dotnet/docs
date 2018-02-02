@@ -1,19 +1,15 @@
 ---
 title: "= Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Assign"
   - "vb.="
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "= operator [Visual Basic]"
   - "= assignment statements [Visual Basic]"
@@ -21,21 +17,6 @@ ms.assetid: 2dac2e49-86c8-42f8-80c1-458452fb5e29
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # = Operator (Visual Basic)
 Assigns a value to a variable or property.  
@@ -68,14 +49,14 @@ variableorproperty = value
  [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
   
 ## See Also  
- [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   
- [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)   
- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)   
- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)   
- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)   
- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
- [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)   
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)   
- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)   
+ [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
+ [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)  
+ [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
+ [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
+ [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
+ [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
+ [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)  
+ [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
+ [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
+ [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)  
  [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

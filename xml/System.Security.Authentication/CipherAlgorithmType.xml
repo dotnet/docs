@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.CipherAlgorithm?displayProperty=fullName> property.  
+ This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.CipherAlgorithm?displayProperty=nameWithType> property.  
   
    
   
@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Security.SslStream" />
+    <altmember cref="P:System.Net.Security.SslStream.CipherStrength" />
   </Docs>
   <Members>
     <Member MemberName="Aes">

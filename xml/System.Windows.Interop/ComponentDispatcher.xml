@@ -28,6 +28,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+    <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
   </Docs>
   <Members>
     <Member MemberName="CurrentKeyboardMessage">
@@ -52,6 +53,7 @@
         <value>The last message.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
       </Docs>
     </Member>
     <Member MemberName="EnterThreadModal">
@@ -78,6 +80,9 @@
         <summary>Occurs when a thread becomes modal.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PushModal" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PopModal" />
       </Docs>
     </Member>
     <Member MemberName="IsThreadModal">
@@ -103,6 +108,9 @@
           <see langword="true" /> if the thread is modal; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PushModal" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PopModal" />
       </Docs>
     </Member>
     <Member MemberName="LeaveThreadModal">
@@ -129,6 +137,9 @@
         <summary>Occurs when a modal thread becomes nonmodal.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PushModal" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PopModal" />
       </Docs>
     </Member>
     <Member MemberName="PopModal">
@@ -153,6 +164,9 @@
         <summary>Called to indicate that a modal thread is no longer modal.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PushModal" />
+        <altmember cref="E:System.Windows.Interop.ComponentDispatcher.EnterThreadModal" />
       </Docs>
     </Member>
     <Member MemberName="PushModal">
@@ -177,6 +191,9 @@
         <summary>Called to indicate that the thread is modal.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">All members of this class require <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> permission.</permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.PopModal" />
+        <altmember cref="E:System.Windows.Interop.ComponentDispatcher.LeaveThreadModal" />
       </Docs>
     </Member>
     <Member MemberName="RaiseIdle">
@@ -201,11 +218,13 @@
         <summary>Called to indicate that a thread is idle.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="E:System.Windows.Interop.ComponentDispatcher.ThreadIdle" />
       </Docs>
     </Member>
     <Member MemberName="RaiseThreadMessage">
       <MemberSignature Language="C#" Value="public static bool RaiseThreadMessage (ref System.Windows.Interop.MSG msg);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RaiseThreadMessage(valuetype System.Windows.Interop.MSG msg) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RaiseThreadMessage(valuetype System.Windows.Interop.MSG&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage(System.Windows.Interop.MSG@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -237,6 +256,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="E:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage" />
       </Docs>
     </Member>
     <Member MemberName="ThreadFilterMessage">
@@ -263,6 +284,9 @@
         <summary>Occurs when the message pump receives a keyboard message.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage(System.Windows.Interop.MSG@)" />
+        <altmember cref="E:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage" />
       </Docs>
     </Member>
     <Member MemberName="ThreadIdle">
@@ -296,6 +320,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.RaiseIdle" />
       </Docs>
     </Member>
     <Member MemberName="ThreadPreprocessMessage">
@@ -329,6 +355,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
+        <altmember cref="M:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage(System.Windows.Interop.MSG@)" />
+        <altmember cref="E:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage" />
       </Docs>
     </Member>
   </Members>

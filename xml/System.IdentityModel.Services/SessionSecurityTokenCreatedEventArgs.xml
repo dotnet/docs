@@ -18,7 +18,7 @@
 ## Remarks  
  By default:  
   
--   In the session authentication module (SAM) the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenCreated> event is raised from within the <xref:System.IdentityModel.Services.SessionAuthenticationModule.OnAuthenticateRequest%2A?displayProperty=fullName> method after a session token (<xref:System.IdentityModel.Tokens.SessionSecurityToken>) has been created. This happens, for example, if an event handler for the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived> event modifies the token. You can use the <xref:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs> to modify the session token before it is passed further along the pipeline and is used to authenticate the entity making the request (user).  
+-   In the session authentication module (SAM) the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenCreated> event is raised from within the <xref:System.IdentityModel.Services.SessionAuthenticationModule.OnAuthenticateRequest%2A?displayProperty=nameWithType> method after a session token (<xref:System.IdentityModel.Tokens.SessionSecurityToken>) has been created. This happens, for example, if an event handler for the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived> event modifies the token. You can use the <xref:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs> to modify the session token before it is passed further along the pipeline and is used to authenticate the entity making the request (user).  
   
 -   In the WS-Federation authentication module (WSFAM), the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SessionSecurityTokenCreated> event is raised from the request processing pipeline just after a session token has been created from the WS-Federation sign-in response message received from the STS and just before the SAM is called to set the thread principal and write the session cookie.  
   
@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenCreated" />
+    <altmember cref="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SessionSecurityTokenCreated" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

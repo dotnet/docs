@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "regular expressions, behavior"
   - ".NET Framework regular expressions, behavior"
@@ -16,6 +19,9 @@ caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Details of Regular Expression Behavior
 The .NET Framework regular expression engine is a backtracking regular expression matcher that incorporates a traditional Nondeterministic Finite Automaton (NFA) engine such as that used by Perl, Python, Emacs, and Tcl. This distinguishes it from faster, but more limited, pure regular expression Deterministic Finite Automaton (DFA) engines such as those found in awk, egrep, or lex. This also distinguishes it from standardized, but slower, POSIX NFAs. The following section describes the three types of regular expression engines, and explains why regular expressions in the .NET Framework are implemented by using a traditional NFA engine.  
@@ -63,7 +69,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |Pattern|Description|  
     |-------------|-----------------|  
     |`\b`|Begin the match at a word boundary.|  
-    |`[A-Z]+`|Match any alphabetic character one or more times. Because the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option, the comparison is case-insensitive.|  
+    |`[A-Z]+`|Match any alphabetic character one or more times. Because the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option, the comparison is case-insensitive.|  
     |`\b`|End the match at a word boundary.|  
     |`(?=\P{P})`|Look ahead to determine whether the next character is a punctuation symbol. If it is not, the match succeeds.|  
   
@@ -116,14 +122,14 @@ The .NET Framework regular expression engine is a backtracking regular expressio
   
      For more information about nonbacktracking subexpressions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
   
--   Right-to-left matching, which is specified by supplying the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=fullName> option to a <xref:System.Text.RegularExpressions.Regex> class constructor or static instance matching method. This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left. As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers. The example conducts two searches for a sentence that ends in a number. The left-to-right search that uses the greedy quantifier `+` matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits. For an description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.  
+-   Right-to-left matching, which is specified by supplying the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option to a <xref:System.Text.RegularExpressions.Regex> class constructor or static instance matching method. This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left. As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers. The example conducts two searches for a sentence that ends in a number. The left-to-right search that uses the greedy quantifier `+` matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits. For an description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.  
   
      [!code-csharp[Conceptual.RegularExpressions.Design#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/rtl1.cs#6)]
      [!code-vb[Conceptual.RegularExpressions.Design#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/rtl1.vb#6)]  
   
      For more information about right-to-left matching, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
   
--   Positive and negative lookbehind: `(?<=`*subexpression*`)` for positive lookbehind, and `(?<!`*subexpression*`)` for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate e-mail addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md).  
+-   Positive and negative lookbehind: `(?<=`*subexpression*`)` for positive lookbehind, and `(?<!`*subexpression*`)` for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate email addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md).  
   
      [!code-csharp[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookbehind1.cs#5)]
      [!code-vb[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookbehind1.vb#5)]  
@@ -153,4 +159,4 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 |[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|  
   
 ## Reference  
- <xref:System.Text.RegularExpressions?displayProperty=fullName>
+ <xref:System.Text.RegularExpressions?displayProperty=nameWithType>

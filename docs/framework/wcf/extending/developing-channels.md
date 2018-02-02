@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0513af9f-a0c2-457b-9a50-5b6bfee48513
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Developing Channels
 To develop a protocol or transport channel that can be used with the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application layer requires several steps. This topic describes those steps and points you to specific topics for more information. To understand the channel model and the various types that are mentioned in this topic, see [Channel Model Overview](../../../../docs/framework/wcf/extending/channel-model-overview.md). For a complete transport channel sample, see [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md).  
@@ -25,7 +27,7 @@ To develop a protocol or transport channel that can be used with the [!INCLUDE[i
   
 2.  Create a channel factory and listener (<xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener>) that support your message exchange pattern. For details about developing factories, see [Client: Channel Factories and Channels](../../../../docs/framework/wcf/extending/client-channel-factories-and-channels.md). For details about developing listeners, see [Service: Channel Listeners and Channels](../../../../docs/framework/wcf/extending/service-channel-listeners-and-channels.md).  
   
-3.  Ensure that any network-specific exceptions are normalized to either <xref:System.TimeoutException?displayProperty=fullName> or the appropriate derived class of <xref:System.ServiceModel.CommunicationException>. For details, see [Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md).  
+3.  Ensure that any network-specific exceptions are normalized to either <xref:System.TimeoutException?displayProperty=nameWithType> or the appropriate derived class of <xref:System.ServiceModel.CommunicationException>. For details, see [Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md).  
   
 4.  To enable use from the application layer, add a <xref:System.ServiceModel.Channels.BindingElement> that adds the custom channel to a channel stack. For more information, see [Creating a BindingElement](../../../../docs/framework/wcf/extending/creating-a-bindingelement.md).  
   

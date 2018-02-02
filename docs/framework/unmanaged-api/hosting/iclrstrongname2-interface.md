@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName2 interface [.NET Framework hosting]"
 ms.assetid: 9f098a74-201e-4628-a468-8dee9ab99b4a
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName2 Interface
 Provides the ability to create strong names using the SHA-2 group of Secure Hash Algorithms (SHA-256, SHA-384, and SHA-512).  

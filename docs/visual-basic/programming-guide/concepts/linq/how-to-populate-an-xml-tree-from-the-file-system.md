@@ -1,7 +1,7 @@
 ---
 title: "How to: Populate an XML Tree from the File System (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 34eec79e-7945-4ba8-9f74-d05bb8ec67f6
 caps.latest.revision: 3
 author: dotnet-bot

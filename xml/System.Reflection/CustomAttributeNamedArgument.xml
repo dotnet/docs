@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Code that is being examined in the reflection-only context cannot be executed, so it is not always possible to examine custom attributes by creating instances of them and then examining their properties, using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName>, <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName>, and so on. If the code for the attribute type itself is loaded into the reflection-only context, it cannot be executed.  
+ Code that is being examined in the reflection-only context cannot be executed, so it is not always possible to examine custom attributes by creating instances of them and then examining their properties, using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>, <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType>, and so on. If the code for the attribute type itself is loaded into the reflection-only context, it cannot be executed.  
   
  The <xref:System.Reflection.CustomAttributeNamedArgument> structure is used by the <xref:System.Reflection.CustomAttributeData> class to provide access to a named argument specified for a custom attribute instance, without executing the code of the corresponding property of the custom attribute type. The <xref:System.Reflection.CustomAttributeNamedArgument.TypedValue%2A> property returns a <xref:System.Reflection.CustomAttributeTypedArgument> structure that contains the type and value of the named argument.  
   
@@ -60,6 +60,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.CustomAttributeData" />
+    <altmember cref="T:System.Reflection.CustomAttributeTypedArgument" />
+    <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -345,7 +348,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -385,7 +388,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> structures are different; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -474,7 +477,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.CustomAttributeData" />
+        <altmember cref="T:System.Reflection.CustomAttributeTypedArgument" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

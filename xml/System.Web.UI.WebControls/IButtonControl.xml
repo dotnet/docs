@@ -70,10 +70,11 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.IButtonControl.Click> event is raised when the button control is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -96,10 +97,11 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.IButtonControl.Command> event is raised when the button control is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -125,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -150,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="PostBackUrl">

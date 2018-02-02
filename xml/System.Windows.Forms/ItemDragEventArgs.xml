@@ -28,7 +28,7 @@
 ## Examples  
  The following example illustrates the use of <xref:System.Windows.Forms.ItemDragEventArgs> when enabling drag-and-drop operations within a <xref:System.Windows.Forms.TreeView>. The <xref:System.Windows.Forms.ItemDragEventArgs.Button%2A> property determines whether the dragged node should be moved or copied to its destination. The node, represented by the <xref:System.Windows.Forms.ItemDragEventArgs.Item%2A> property, is then passed to the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.Control.DoDragDrop%2A> method along with a value indicating the desired effect.  
   
- For the complete example, see the <xref:System.Windows.Forms.TreeView.ItemDrag?displayProperty=fullName> reference topic.  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.ItemDrag?displayProperty=nameWithType> reference topic.  
   
  [!code-cpp[TreeViewDragDrop#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewDragDrop/CPP/treeviewdragdrop.cpp#2)]
  [!code-csharp[TreeViewDragDrop#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewDragDrop/CS/treeviewdragdrop.cs#2)]
@@ -109,7 +109,7 @@
 ## Examples  
  The following example illustrates the use of the <xref:System.Windows.Forms.ItemDragEventArgs> class when you enable drag-and-drop operations within a <xref:System.Windows.Forms.TreeView> control. The <xref:System.Windows.Forms.ItemDragEventArgs.Button%2A> property determines whether the dragged node should be moved or copied to its destination. The node, represented by the <xref:System.Windows.Forms.ItemDragEventArgs.Item%2A> property, is then passed to the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.Control.DoDragDrop%2A> method, along with a value that indicates the desired effect of the drag-and-drop operation.  
   
- For the complete example, see the <xref:System.Windows.Forms.TreeView.ItemDrag?displayProperty=fullName> reference topic.  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.ItemDrag?displayProperty=nameWithType> reference topic.  
   
  [!code-cpp[TreeViewDragDrop#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewDragDrop/CPP/treeviewdragdrop.cpp#2)]
  [!code-csharp[TreeViewDragDrop#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewDragDrop/CS/treeviewdragdrop.cs#2)]
@@ -145,7 +145,7 @@
 ## Examples  
  The following example illustrates the use of <xref:System.Windows.Forms.ItemDragEventArgs> when enabling drag-and-drop operations within a <xref:System.Windows.Forms.TreeView> control. The <xref:System.Windows.Forms.ItemDragEventArgs.Button%2A> property determines whether the dragged node should be moved or copied to its destination. The node, represented by the <xref:System.Windows.Forms.ItemDragEventArgs.Item%2A> property, is then passed to the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.Control.DoDragDrop%2A> method along with a value that indicates the desired effect of the drag-and-drop operation.  
   
- For the complete example, see the <xref:System.Windows.Forms.TreeView.ItemDrag?displayProperty=fullName> reference topic.  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.ItemDrag?displayProperty=nameWithType> reference topic.  
   
  [!code-cpp[TreeViewDragDrop#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewDragDrop/CPP/treeviewdragdrop.cpp#2)]
  [!code-csharp[TreeViewDragDrop#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewDragDrop/CS/treeviewdragdrop.cs#2)]
@@ -155,5 +155,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ItemDragEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

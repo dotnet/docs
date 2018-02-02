@@ -34,7 +34,7 @@
   
  Represents the execution environment of an <xref:System.Workflow.ComponentModel.Activity>. This class selectively exposes workflow runtime capabilities and services to individual activities. This class cannot be inherited.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Understanding the Activity Execution Context](http://msdn.microsoft.com/en-us/60a032ef-4c51-482f-9aa8-fce406856b29).  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Understanding the Activity Execution Context](http://msdn.microsoft.com/library/60a032ef-4c51-482f-9aa8-fce406856b29).  
   
  ]]></format>
     </remarks>
@@ -321,5 +321,14 @@
         <exception cref="T:System.ObjectDisposedException">If the <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this instance is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrackData">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+    <altmember cref="T:System.Web.UI.WebControls.Wizard" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,11 +107,12 @@
 ## Examples  
  The following example demonstrates using the <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property to stop the user from returning to a step in the <xref:System.Web.UI.WebControls.Wizard> control after it has been accessed. In the example, the `Step1` step has its <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property set to `false`. After the user leaves the `Step1` step, no Previous button appears on the `Step2` step.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/CS/wizardstepbaseallowreturncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/VB/wizardstepbaseallowreturnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/CS/wizardstepbaseallowreturncs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/VB/wizardstepbaseallowreturnvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -143,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableTheming" />
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -173,8 +177,8 @@
 ## Examples  
  The following code example defines three wizard steps for a <xref:System.Web.UI.WebControls.Wizard> control in a Web Forms page. In code for the page, the wizard step instances are named by their ID values, and they can be referenced in the code as `WizardStep1`, `WizardStep2`, and `WizardStep3`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -208,6 +212,7 @@
         <param name="savedState">An <see cref="T:System.Object" /> that represents the that represents the control state to be restored.</param>
         <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -241,6 +246,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.Title" />
+        <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.ID" />
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -333,6 +340,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -371,11 +380,13 @@
 ## Examples  
  The following example demonstrates using the <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property to display a user-friendly title for a step in the <xref:System.Web.UI.WebControls.Wizard> control. In the example, `Step1` does not have its <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property set, so it appears in the <xref:System.Web.UI.WebControls.Wizard> control as "WizardStep1". `Step2` does have its <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property set, so it appears as "Step 2".  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/CS/wizardstepbasetitlecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/VB/wizardstepbasetitlevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/CS/wizardstepbasetitlecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/VB/wizardstepbasetitlevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.Name" />
       </Docs>
     </Member>
     <Member MemberName="Wizard">
@@ -402,6 +413,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.WebControls.Wizard" /> control that is the parent of the object derived from <see cref="T:System.Web.UI.WebControls.WizardStepBase" />.</summary>
         <value>The <see cref="T:System.Web.UI.WebControls.Wizard" /> control that is the parent of the object derived from <see cref="T:System.Web.UI.WebControls.WizardStepBase" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
       </Docs>
     </Member>
   </Members>

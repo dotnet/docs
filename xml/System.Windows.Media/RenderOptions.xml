@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.RenderCapability" />
   </Docs>
   <Members>
     <Member MemberName="BitmapScalingModeProperty">
@@ -160,6 +161,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetBitmapScalingMode(System.Windows.DependencyObject,System.Windows.Media.BitmapScalingMode)" />
       </Docs>
     </Member>
     <Member MemberName="GetCacheInvalidationThresholdMaximum">
@@ -198,6 +200,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCachingHint(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="GetCacheInvalidationThresholdMinimum">
@@ -236,6 +240,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCachingHint(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="GetCachingHint">
@@ -274,6 +280,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="GetClearTypeHint">
@@ -382,6 +390,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Interop.RenderMode" />
       </Docs>
     </Member>
     <Member MemberName="SetBitmapScalingMode">
@@ -423,6 +432,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetBitmapScalingMode(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetCacheInvalidationThresholdMaximum">
@@ -462,6 +472,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCachingHint(System.Windows.DependencyObject,System.Windows.Media.CachingHint)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="SetCacheInvalidationThresholdMinimum">
@@ -501,6 +513,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCachingHint(System.Windows.DependencyObject,System.Windows.Media.CachingHint)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="SetCachingHint">
@@ -546,6 +560,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="SetClearTypeHint">

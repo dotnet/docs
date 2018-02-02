@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -45,7 +45,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -88,7 +88,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -140,7 +140,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -165,7 +165,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -217,7 +217,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -242,7 +242,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -258,7 +258,7 @@ manager: "wpickett"
 uid: System.Globalization.HebrewCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

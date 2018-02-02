@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Internet, WebRequest and WebResponse classes exceptions"
   - "Status property"
@@ -43,6 +41,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Handling Errors
 The <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes throw both system exceptions (such as <xref:System.ArgumentException>) and Web-specific exceptions (which are <xref:System.Net.WebException> thrown by the <xref:System.Net.WebRequest.GetResponse%2A> method).  
@@ -174,5 +174,5 @@ End Try
  When a **SocketException** is thrown, the **SocketException** class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Winsock 2.0 API error code documentation in MSDN.  
   
 ## See Also  
- [Exception Handling Fundamentals](../../../docs/standard/exceptions/exception-handling-fundamentals.md)   
+ [Exception Handling Fundamentals](../../../docs/standard/exceptions/exception-handling-fundamentals.md)  
  [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

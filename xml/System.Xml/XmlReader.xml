@@ -40,15 +40,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml/Xml/System/Xml/Core/XmlReader.cs#086471e5cca0825f). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  <xref:System.Xml.XmlReader> provides forward-only, read-only access to XML data in adocument or stream. This class conforms to the W3C [Extensible Markup Language (XML) 1.0 (fourth edition)](http://www.w3.org/TR/2006/REC-xml-20060816/) and the [Namespaces in XML 1.0 (third edition)](http://www.w3.org/TR/REC-xml-names/) recommendations.  
   
- <xref:System.Xml.XmlReader>methods let you move through XML data and read the contents of a node. The properties of the class reflect the value of the current node, which is where the reader is positioned.The <xref:System.Xml.XmlReader.ReadState%2A> property value indicates the current state of the XML reader. For example, the property is set to <xref:System.Xml.ReadState.Initial> by the <xref:System.Xml.XmlReader.Read%2A?displayProperty=fullName> method and <xref:System.Xml.ReadState.Closed> by the <xref:System.Xml.XmlReader.Close%2A?displayProperty=fullName> method. <xref:System.Xml.XmlReader> also provides data conformance checks and validation against a DTD or schema.  
+ <xref:System.Xml.XmlReader> methods let you move through XML data and read the contents of a node. The properties of the class reflect the value of the current node, which is where the reader is positioned.The <xref:System.Xml.XmlReader.ReadState%2A> property value indicates the current state of the XML reader. For example, the property is set to <xref:System.Xml.ReadState.Initial> by the <xref:System.Xml.XmlReader.Read%2A?displayProperty=nameWithType> method and <xref:System.Xml.ReadState.Closed> by the <xref:System.Xml.XmlReader.Close%2A?displayProperty=nameWithType> method. <xref:System.Xml.XmlReader> also provides data conformance checks and validation against a DTD or schema.  
   
- <xref:System.Xml.XmlReader>uses a pull model to retrieve data. This model:  
+ <xref:System.Xml.XmlReader> uses a pull model to retrieve data. This model:  
   
 -   Simplifies state management by a natural, top-down procedural refinement.  
   
@@ -73,7 +69,7 @@
   
 <a name="xmlreader_create"></a>   
 ## Creating an XML reader  
- Use the <xref:System.Xml.XmlReader.Create%2A> method to create an <xref:System.Xml.XmlReader>instance.  
+ Use the <xref:System.Xml.XmlReader.Create%2A> method to create an <xref:System.Xml.XmlReader> instance.  
   
  Although the .NET Framework provides concrete implementations of the <xref:System.Xml.XmlReader> class, such as the <xref:System.Xml.XmlTextReader>, <xref:System.Xml.XmlNodeReader>, and the <xref:System.Xml.XmlValidatingReader> classes, we recommend that you use the specialized classes only in these scenarios:  
   
@@ -81,9 +77,9 @@
   
 -   If you must expand entities on request, you don't want your text content normalized, or you don't want default attributes returned, use the <xref:System.Xml.XmlTextReader> class.  
   
- To specify the set of features you want to enable on the XML reader, pass an <xref:System.Xml.XmlReaderSettings?displayProperty=fullName> object to the <xref:System.Xml.XmlReader.Create%2A> method. You can use a single <xref:System.Xml.XmlReaderSettings?displayProperty=fullName> object to create multiple readers with the same functionality, or modify the <xref:System.Xml.XmlReaderSettings?displayProperty=fullName>object to create a new reader with a different set of features. You can also easily add features to an existing reader.  
+ To specify the set of features you want to enable on the XML reader, pass an <xref:System.Xml.XmlReaderSettings?displayProperty=nameWithType> object to the <xref:System.Xml.XmlReader.Create%2A> method. You can use a single <xref:System.Xml.XmlReaderSettings?displayProperty=nameWithType> object to create multiple readers with the same functionality, or modify the <xref:System.Xml.XmlReaderSettings?displayProperty=nameWithType> object to create a new reader with a different set of features. You can also easily add features to an existing reader.  
   
- If you don't use a<xref:System.Xml.XmlReaderSettings?displayProperty=fullName>object, default settings are used. See the <xref:System.Xml.XmlReader.Create%2A> reference page for details.  
+ If you don't use a <xref:System.Xml.XmlReaderSettings?displayProperty=nameWithType> object, default settings are used. See the <xref:System.Xml.XmlReader.Create%2A> reference page for details.  
   
  <xref:System.Xml.XmlReader> throws an <xref:System.Xml.XmlException> on XML parse errors. After an exception is thrown, the state of the reader is not predictable. For example, the reported node type may be different from the actual node type of the current node. Use the <xref:System.Xml.XmlReader.ReadState%2A> property to check whether the reader is in error state.  
   
@@ -93,7 +89,7 @@
   
  You can validate the data against a DTD, an inline XSD Schema, or an XSD Schema stored in an <xref:System.Xml.Schema.XmlSchemaSet> object (a cache); these scenarios are described on the <xref:System.Xml.XmlReader.Create%2A> reference page. <xref:System.Xml.XmlReader> doesn't support XML-Data Reduced (XDR) schema validation.  
   
- You use the following settings on the <xref:System.Xml.XmlReaderSettings> class to specify what type of validation, if any, the<xref:System.Xml.XmlReader> instance supports.  
+ You use the following settings on the <xref:System.Xml.XmlReaderSettings> class to specify what type of validation, if any, the <xref:System.Xml.XmlReader> instance supports.  
   
 |Use this <xref:System.Xml.XmlReaderSettings> member|To specify|  
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|  
@@ -102,7 +98,7 @@
 |<xref:System.Xml.XmlReaderSettings.ValidationEventHandler> event|An event handler for receiving information about validation events. If an event handler is not provided, an <xref:System.Xml.XmlException> is thrown on the first validation error.|  
 |<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> property|Additional validation options through the <xref:System.Xml.Schema.XmlSchemaValidationFlags> enumeration members:<br /><br /> -   `AllowXmlAttributes`-- Allow XML attributes (`xml:*`) in instance documents even when they're not defined in the schema. The attributes are validated based on their data type.See the <xref:System.Xml.Schema.XmlSchemaValidationFlags> reference page for  the setting to use in specific scenarios. (Disabled by default.)<br />-   `ProcessIdentityConstraints` --Process identity constraints (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, `xs:unique`) encountered during validation. (Enabled by default.)<br />-   `ProcessSchemaLocation` --Process schemas specified by the `xsi:schemaLocation` or `xsi:noNamespaceSchemaLocation` attribute. (Enabled by default.)<br />-   `ProcessInlineSchema`-- Process inline XML Schemas during validation. (Disabled by default.)<br />-   `ReportValidationWarnings`--Report events if a validation warning occurs. A warning is typically issued when there is no DTD or XML Schema to validate a particular element or attribute against. The <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> is used for notification. (Disabled by default.)|  
 |<xref:System.Xml.XmlReaderSettings.Schemas%2A>|The <xref:System.Xml.Schema.XmlSchemaSet> to use for validation.|  
-|<xref:System.Xml.XmlReaderSettings.XmlResolver%2A> property|The <xref:System.Xml.XmlResolver>for  resolving and accessing external resources. This can include external entities such as DTD and schemas, and any `xs:include` or `xs:import` elements contained in the XML Schema. If you don't specify an <xref:System.Xml.XmlResolver>, the <xref:System.Xml.XmlReader> uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials.|  
+|<xref:System.Xml.XmlReaderSettings.XmlResolver%2A> property|The <xref:System.Xml.XmlResolver> for resolving and accessing external resources. This can include external entities such as DTD and schemas, and any `xs:include` or `xs:import` elements contained in the XML Schema. If you don't specify an <xref:System.Xml.XmlResolver>, the <xref:System.Xml.XmlReader> uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials.|  
   
 <a name="xmlreader_data"></a>   
 ## Data conformance  
@@ -122,12 +118,12 @@
   
 |Use this <xref:System.Xml.XmlReaderSettings> property|To|Default|  
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------|  
-|<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> property|Enable or disable checks for the following:<br /><br /> -   Characters are within the range of legal XML characters, as defined by the [2.2 Characters](http://www.w3.org/TR/2006/REC-xml-20060816/#charsets) section of the W3C XML 1.0 Recommendation.<br />-   All XML names are valid, as defined by the [2.3 Common Syntactic Constructs](http://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) section of the W3C XML 1.0 Recommendation.<br /><br /> When this property is set to `true` (default), an <xref:System.Xml.XmlException> exception is thrown if the XML file contains illegal characters or invalid XML names (for example, an element name starts with a number).|Character and name checking is enabled.<br /><br /> Setting <xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> to `false` turns off character checking for character entity references. If the reader is processing text data, it always checks that XML names are valid, regardless of this setting. **Note:**  The XML 1.0 recommendation requires document-level conformance when a DTD is present. Therefore, if the reader is configured to support <xref:System.Xml.ConformanceLevel?displayProperty=fullName>, but the XML data contains a document type definition (DTD), an <xref:System.Xml.XmlException> is thrown.|  
+|<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> property|Enable or disable checks for the following:<br /><br /> -   Characters are within the range of legal XML characters, as defined by the [2.2 Characters](http://www.w3.org/TR/2006/REC-xml-20060816/#charsets) section of the W3C XML 1.0 Recommendation.<br />-   All XML names are valid, as defined by the [2.3 Common Syntactic Constructs](http://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) section of the W3C XML 1.0 Recommendation.<br /><br /> When this property is set to `true` (default), an <xref:System.Xml.XmlException> exception is thrown if the XML file contains illegal characters or invalid XML names (for example, an element name starts with a number).|Character and name checking is enabled.<br /><br /> Setting <xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> to `false` turns off character checking for character entity references. If the reader is processing text data, it always checks that XML names are valid, regardless of this setting. **Note:**  The XML 1.0 recommendation requires document-level conformance when a DTD is present. Therefore, if the reader is configured to support <xref:System.Xml.ConformanceLevel.Fragment?displayProperty=nameWithType>, but the XML data contains a document type definition (DTD), an <xref:System.Xml.XmlException> is thrown.|  
 |<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A> property|Choose the level of conformance to enforce:<br /><br /> -   <xref:System.Xml.ConformanceLevel.Document>. Conforms to the rules for a [well-formed XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br />-   <xref:System.Xml.ConformanceLevel.Fragment>. Conforms to the rules for a well-formed document fragment that can be consumed as an [external parsed entity](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).<br />-   <xref:System.Xml.ConformanceLevel.Auto>. Conforms to the level decided by the reader.<br /><br /> If the data isn't in conformance, an <xref:System.Xml.XmlException> exception is thrown.|<xref:System.Xml.ConformanceLevel.Document>|  
   
 <a name="xmlreader_nodes"></a>   
 ## Navigating through nodes  
- The current node is the XML node on which the XML reader is currently positioned. All <xref:System.Xml.XmlReader>methods perform operations in relation to this node, and all <xref:System.Xml.XmlReader>properties reflect the value of the current node.  
+ The current node is the XML node on which the XML reader is currently positioned. All <xref:System.Xml.XmlReader> methods perform operations in relation to this node, and all <xref:System.Xml.XmlReader> properties reflect the value of the current node.  
   
  The following methods make it easy to navigate through nodes and parse data.  
   
@@ -135,10 +131,10 @@
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|--------|  
 |<xref:System.Xml.XmlReader.Read%2A>|Read the first node, and advance through the stream one node at a time. Such calls are typically performed inside a `while` loop.<br /><br /> Use the <xref:System.Xml.XmlReader.NodeType%2A> property to get the type (for example, attribute, comment, element, and so on) of the current node.|  
 |<xref:System.Xml.XmlReader.Skip%2A>|Skip the children of the current node and move to the next node.|  
-|<xref:System.Xml.XmlReader.MoveToContent%2A> and <xref:System.Xml.XmlReader.MoveToContentAsync%2A>|Skip non-content nodes and move to the next content node or to the end of the file.<br /><br /> Non-content nodes include <xref:System.Xml.XmlNodeType.ProcessingInstruction>, <xref:System.Xml.XmlNodeType.DocumentType>, <xref:System.Xml.XmlNodeType.Comment>, <xref:System.Xml.XmlNodeType.Whitespace>, and <xref:System.Xml.XmlNodeType.SignificantWhitespace>.<br /><br /> Content nodes include non-white space text, <xref:System.Xml.XmlNodeType.CDATA>, <xref:System.Xml.XmlNodeType.EntityReference> , and<xref:System.Xml.XmlNodeType.EndEntity>.|  
-|<xref:System.Xml.XmlReader.ReadSubtree%2A>|Read an element and all its children, and return a new <xref:System.Xml.XmlReader> instance set to <xref:System.Xml.ReadState?displayProperty=fullName>.<br /><br /> This method is useful for creating boundaries around XML elements; for example, if you want to pass data to another component for processing and you want to limit how much of your data the component can access.|  
+|<xref:System.Xml.XmlReader.MoveToContent%2A> and <xref:System.Xml.XmlReader.MoveToContentAsync%2A>|Skip non-content nodes and move to the next content node or to the end of the file.<br /><br /> Non-content nodes include <xref:System.Xml.XmlNodeType.ProcessingInstruction>, <xref:System.Xml.XmlNodeType.DocumentType>, <xref:System.Xml.XmlNodeType.Comment>, <xref:System.Xml.XmlNodeType.Whitespace>, and <xref:System.Xml.XmlNodeType.SignificantWhitespace>.<br /><br /> Content nodes include non-white space text, <xref:System.Xml.XmlNodeType.CDATA>, <xref:System.Xml.XmlNodeType.EntityReference> , and <xref:System.Xml.XmlNodeType.EndEntity>.|  
+|<xref:System.Xml.XmlReader.ReadSubtree%2A>|Read an element and all its children, and return a new <xref:System.Xml.XmlReader> instance set to <xref:System.Xml.ReadState.Initial?displayProperty=nameWithType>.<br /><br /> This method is useful for creating boundaries around XML elements; for example, if you want to pass data to another component for processing and you want to limit how much of your data the component can access.|  
   
- See the <xref:System.Xml.XmlReader.Read%2A?displayProperty=fullName> reference page for an example of navigating through a text stream one node at a time and displaying the type of each node.  
+ See the <xref:System.Xml.XmlReader.Read%2A?displayProperty=nameWithType> reference page for an example of navigating through a text stream one node at a time and displaying the type of each node.  
   
  The following sections describe how you can read specific types of data, such as elements, attributes, and typed data.  
   
@@ -198,7 +194,7 @@
   
  **Reading attributes on XML declaration nodes**  
   
- When the XML reader is positioned on an XML declaration node, the <xref:System.Xml.XmlReader.Value%2A> property returns the version, standalone, and encoding information as a single string. <xref:System.Xml.XmlReader> objects created by the <xref:System.Xml.XmlReader.Create%2A> method, the <xref:System.Xml.XmlTextReader> class, and the <xref:System.Xml.XmlValidatingReader>class expose the version, standalone, and encoding items as attributes.  
+ When the XML reader is positioned on an XML declaration node, the <xref:System.Xml.XmlReader.Value%2A> property returns the version, standalone, and encoding information as a single string. <xref:System.Xml.XmlReader> objects created by the <xref:System.Xml.XmlReader.Create%2A> method, the <xref:System.Xml.XmlTextReader> class, and the <xref:System.Xml.XmlValidatingReader> class expose the version, standalone, and encoding items as attributes.  
   
  **Reading attributes on document type nodes**  
   
@@ -229,7 +225,7 @@
   
  The <xref:System.Xml.XmlReader> class uses the rules defined by the [W3C XML Schema Part 2: Datatypes](http://www.w3.org/TR/xmlschema-2/)recommendation.  
   
-|Use this <xref:System.Xml.XmlReader>method|To return this CLR type|  
+|Use this <xref:System.Xml.XmlReader> method|To return this CLR type|  
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|  
 |<xref:System.Xml.XmlReader.ReadContentAsBoolean%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsBoolean%2A>|<xref:System.Boolean>|  
 |<xref:System.Xml.XmlReader.ReadContentAsDateTime%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsDateTime%2A>|<xref:System.DateTime>|  
@@ -238,7 +234,7 @@
 |<xref:System.Xml.XmlReader.ReadContentAsInt%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsInt%2A>|<xref:System.Int32>|  
 |<xref:System.Xml.XmlReader.ReadContentAsString%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsString%2A>|<xref:System.String>|  
 |<xref:System.Xml.XmlReader.ReadContentAs%2A> and <xref:System.Xml.XmlReader.ReadElementContentAs%2A>|The type you specify with the `returnType` parameter|  
-|<xref:System.Xml.XmlReader.ReadContentAsObject%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsObject%2A>|The most appropriate type, as specified by the <xref:System.Xml.XmlReader.ValueType%2A?displayProperty=fullName> property. See [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) for mapping information.|  
+|<xref:System.Xml.XmlReader.ReadContentAsObject%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsObject%2A>|The most appropriate type, as specified by the <xref:System.Xml.XmlReader.ValueType%2A?displayProperty=nameWithType> property. See [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) for mapping information.|  
   
  If an element can't easily be converted to a CLR type because of its format, you can use a schema mapping to ensure a successful conversion. The following example uses an .xsd file to convert the `hire-date` element to the `xs:date` type, and then uses the <xref:System.Xml.XmlReader.ReadElementContentAsDateTime%2A> method to return the element as a <xref:System.DateTime> object.  
   
@@ -322,9 +318,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
   
 -   XML data can include references to external resources such as a schema file. By default, external resources are resolved by using an <xref:System.Xml.XmlUrlResolver> object with no user credentials. You can secure this further by doing one of the following:  
   
-    -   Restrict the resources that the <xref:System.Xml.XmlReader> can access by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to an <xref:System.Xml.XmlSecureResolver> object.  
+    -   Restrict the resources that the <xref:System.Xml.XmlReader> can access by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to an <xref:System.Xml.XmlSecureResolver> object.  
   
-    -   Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to `null`.  
+    -   Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to `null`.  
   
 -   The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.XmlReaderSettings> object aren't set by default. This helps to protect the <xref:System.Xml.XmlReader> against schema-based attacks when it is processing XML data from an untrusted source. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> property is set to `null`, schema locations aren't resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags are set.  
   
@@ -351,7 +347,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
    
   
 ## Examples  
- The following example code shows how to use the asynchronous APIto parse XML.  
+ The following example code shows how to use the asynchronous API to parse XML.  
   
  [!code-csharp[System.Xml.XmlReader.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.xml.xmlreader.class/cs/program.cs#6)]
  [!code-vb[System.Xml.XmlReader.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.xml.xmlreader.class/vb/module1.vb#6)]  
@@ -651,7 +647,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
   
 -   Specify which features you want supported on the <xref:System.Xml.XmlReader> object.  
   
--   Reuse the <xref:System.Xml.XmlReaderSettings> object to create multiple readers. You can use the same settings to create multiple readers with the same functionality. Or, you can modify the settings on an <xref:System.Xml.XmlReaderSettings>instance and create a new reader with a different set of features.  
+-   Reuse the <xref:System.Xml.XmlReaderSettings> object to create multiple readers. You can use the same settings to create multiple readers with the same functionality. Or, you can modify the settings on an <xref:System.Xml.XmlReaderSettings> instance and create a new reader with a different set of features.  
   
 -   Add features to an existing XML reader. The <xref:System.Xml.XmlReader.Create%2A> method can accept another <xref:System.Xml.XmlReader> object. The underlying <xref:System.Xml.XmlReader> object can be a user-defined reader, a <xref:System.Xml.XmlTextReader> object, or another <xref:System.Xml.XmlReader> instance that you want to add additional features to.  
   
@@ -666,7 +662,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
 |Setting|Default|  
 |-------------|-------------|  
 |<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A>|`true`|  
-|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel?displayProperty=fullName>|  
+|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel.Document?displayProperty=nameWithType>|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreComments%2A>|`false`|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreProcessingInstructions%2A>|`false`|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreWhitespace%2A>|`false`|  
@@ -779,9 +775,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  A default <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver> with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+ If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver> with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
  The created <xref:System.Xml.XmlReader> object expands entity references and performs XML normalization of new line characters.  
   
@@ -839,9 +835,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  A default <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver>with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+ If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver> with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
  The created <xref:System.Xml.XmlReader> object expands entity references and performs XML normalization of new line characters.  
   
@@ -898,9 +894,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  A default <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver> with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+ If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver> with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
  The created <xref:System.Xml.XmlReader> object expands entity references and performs XML normalization of new line characters.  
   
@@ -970,9 +966,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can use one of the following methods to control which resources the <xref:System.Xml.XmlReader> can access:  
@@ -1030,9 +1026,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can use one of the following methods to control which resources the <xref:System.Xml.XmlReader> can access:  
@@ -1090,9 +1086,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- This means that the <xref:System.Xml.XmlReader> can access any locations that does not require authentication. If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ This means that the <xref:System.Xml.XmlReader> can access any locations that does not require authentication. If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can restrict the resources that the <xref:System.Xml.XmlReader> can access by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> property to an <xref:System.Xml.XmlSecureResolver> object.  
@@ -1166,9 +1162,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  A default <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a schema.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver> with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+ If the external resource is located on a network resource that requires authentication, specify an <xref:System.Xml.XmlResolver> with the necessary credentials using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  You can use one of the following methods to control which resources the <xref:System.Xml.XmlReader> can access:  
@@ -1242,9 +1238,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can use one of the following methods to control which resources the <xref:System.Xml.XmlReader> can access:  
@@ -1308,9 +1304,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can use one of the following methods to control which resources the <xref:System.Xml.XmlReader> can access:  
@@ -1369,9 +1365,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can use one of the following methods to control which resources the <xref:System.Xml.XmlReader> can access:  
@@ -1433,9 +1429,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can use one of the following methods to control which resources the <xref:System.Xml.XmlReader> can access:  
@@ -1503,9 +1499,9 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
  By default an <xref:System.Xml.XmlUrlResolver> with no credentials is used to access any external resources such as a document type definition (DTD), entities, schemas, and so on.  
   
 > [!IMPORTANT]
->  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property.  
+>  Starting with the .NET Framework 4.5.2, no default <xref:System.Xml.XmlUrlResolver> is provided. If your solution targets the .NET Framework 4.5.2 or later versions, specify an <xref:System.Xml.XmlResolver> using the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property.  
   
- This means that the <xref:System.Xml.XmlReader> can access any locations that does not require authentication. If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+ This means that the <xref:System.Xml.XmlReader> can access any locations that does not require authentication. If the external resource is located on a network resource that requires authentication, use the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property to specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
 > [!IMPORTANT]
 >  You can restrict the resources that the <xref:System.Xml.XmlReader> can access by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> property to an <xref:System.Xml.XmlSecureResolver> object.  
@@ -2252,6 +2248,7 @@ public class Sample
         </remarks>
         <exception cref="T:System.Xml.XmlException">Incorrect XML is encountered in the input stream.</exception>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.MoveToContent" />
       </Docs>
     </Member>
     <Member MemberName="IsStartElement">
@@ -2304,6 +2301,7 @@ public class Sample
         </remarks>
         <exception cref="T:System.Xml.XmlException">Incorrect XML is encountered in the input stream.</exception>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.MoveToContent" />
       </Docs>
     </Member>
     <Member MemberName="IsStartElement">
@@ -2350,6 +2348,7 @@ public class Sample
         </remarks>
         <exception cref="T:System.Xml.XmlException">Incorrect XML is encountered in the input stream.</exception>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.MoveToContent" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2400,6 +2399,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.GetAttribute(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2452,6 +2452,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.GetAttribute(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2496,6 +2497,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.GetAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -2543,6 +2545,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="P:System.Xml.XmlReader.Name" />
       </Docs>
     </Member>
     <Member MemberName="LookupNamespace">
@@ -3058,6 +3061,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="P:System.Xml.XmlReader.LocalName" />
       </Docs>
     </Member>
     <Member MemberName="NamespaceURI">
@@ -3146,6 +3150,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -3463,7 +3468,7 @@ public class Sample
 ## Remarks  
  This method reads the text content at the current reader position and converts it to the requested return type. Text, white space, significant white space and CDATA sections are concatenated. Comments and processing instructions are skipped and entity references are automatically resolved.  
   
- This method is used to read, convert if necessary, and return atomic value items from the current node content. If the input type is a valid mappings for the type of the current node then an instance of the target type containing the value of the current node is returned. See the Remarks section in the<xref:System.Xml.XmlReader> referencepage for a list of the default mappings.  
+ This method is used to read, convert if necessary, and return atomic value items from the current node content. If the input type is a valid mappings for the type of the current node then an instance of the target type containing the value of the current node is returned. See the Remarks section in the <xref:System.Xml.XmlReader> referencepage for a list of the default mappings.  
   
  For example, if you had the following XML text:  
   
@@ -3632,6 +3637,8 @@ public class Sample
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBase64Async">
@@ -3740,6 +3747,8 @@ public class Sample
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBinHexAsync">
@@ -3834,7 +3843,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader>reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
    
   
@@ -3889,7 +3898,7 @@ public class Sample
  If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
 > [!NOTE]
->  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=fullName> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=fullName> value to 1904 in this case.  
+>  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value to 1904 in this case.  
   
  The following table describes how this method treats each node type.  
   
@@ -3901,7 +3910,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader>reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -3988,7 +3997,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader>reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4043,7 +4052,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader>reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4098,7 +4107,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader>reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4153,7 +4162,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader>reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4208,7 +4217,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader>reference page.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
  ]]></format>
         </remarks>
@@ -4670,6 +4679,7 @@ public class Sample
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBase64Async">
@@ -4785,6 +4795,7 @@ public class Sample
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBinHexAsync">
@@ -4971,7 +4982,7 @@ public class Sample
  If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
 > [!NOTE]
->  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=fullName> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=fullName> value to 1904 in this case.  
+>  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value to 1904 in this case.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -5037,7 +5048,7 @@ public class Sample
  If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
 > [!NOTE]
->  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=fullName> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=fullName> value to 1904 in this case.  
+>  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value to 1904 in this case.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -6134,6 +6145,7 @@ public class Sample
         </remarks>
         <exception cref="T:System.Xml.XmlException">The current node is not an end tag or if incorrect XML is encountered in the input stream.</exception>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadStartElement" />
       </Docs>
     </Member>
     <Member MemberName="ReadInnerXml">
@@ -6411,6 +6423,7 @@ public class Sample
         </remarks>
         <exception cref="T:System.Xml.XmlException">Incorrect XML was encountered in the input stream.</exception>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadEndElement" />
       </Docs>
     </Member>
     <Member MemberName="ReadStartElement">
@@ -6469,6 +6482,7 @@ public class Sample
   
  The <see cref="P:System.Xml.XmlReader.Name" /> of the element does not match the given <paramref name="name" />.</exception>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadEndElement" />
       </Docs>
     </Member>
     <Member MemberName="ReadStartElement">
@@ -6517,6 +6531,7 @@ public class Sample
   
  The <see cref="P:System.Xml.XmlReader.LocalName" /> and <see cref="P:System.Xml.XmlReader.NamespaceURI" /> properties of the element found do not match the given arguments.</exception>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="M:System.Xml.XmlReader.ReadEndElement" />
       </Docs>
     </Member>
     <Member MemberName="ReadState">
@@ -6550,15 +6565,15 @@ public class Sample
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XmlReader.ReadState%2A>property has one of the following values:  
+ The <xref:System.Xml.XmlReader.ReadState%2A> property has one of the following values:  
   
--   <xref:System.Xml.ReadState.Initial>, when the <xref:System.Xml.XmlReader.Read%2A?displayProperty=fullName>method is called.  
+-   <xref:System.Xml.ReadState.Initial>, when the <xref:System.Xml.XmlReader.Read%2A?displayProperty=nameWithType> method is called.  
   
--   <xref:System.Xml.ReadState.Interactive>, when the <xref:System.Xml.XmlReader.Read%2A?displayProperty=fullName> method has been called, and additional methods may be called on the reader.  
+-   <xref:System.Xml.ReadState.Interactive>, when the <xref:System.Xml.XmlReader.Read%2A?displayProperty=nameWithType> method has been called, and additional methods may be called on the reader.  
   
 -   <xref:System.Xml.ReadState.EndOfFile>, when the end of the XML document has been reached successfully.  
   
--   <xref:System.Xml.ReadState.Closed>, when the <xref:System.Xml.XmlReader.Close%2A?displayProperty=fullName> method is called.  
+-   <xref:System.Xml.ReadState.Closed>, when the <xref:System.Xml.XmlReader.Close%2A?displayProperty=nameWithType> method is called.  
   
 -   <xref:System.Xml.ReadState.Error>, when an error is preventing the read operation from continuing.  
   
@@ -7159,6 +7174,8 @@ reader.ReadToFollowing("item", "urn:1");
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="T:System.Xml.EntityHandling" />
+        <altmember cref="P:System.Xml.XmlReader.CanResolveEntity" />
       </Docs>
     </Member>
     <Member MemberName="SchemaInfo">
@@ -7529,11 +7546,12 @@ reader.ReadToFollowing("item", "urn:1");
    
   
 ## Examples  
- See <xref:System.Xml.XmlTextReader.XmlLang%2A?displayProperty=fullName> for an example of using this property.  
+ See <xref:System.Xml.XmlTextReader.XmlLang%2A?displayProperty=nameWithType> for an example of using this property.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="P:System.Xml.XmlReader.XmlSpace" />
       </Docs>
     </Member>
     <Member MemberName="XmlSpace">
@@ -7572,7 +7590,253 @@ reader.ReadToFollowing("item", "urn:1");
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <altmember cref="P:System.Xml.XmlReader.XmlLang" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadElementContentAsDouble">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element and returns the contents as a double-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadToNextSibling">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Advances the <see langword="XmlReader" /> to the next matching sibling element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, gets the value of an attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, moves to the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsInt">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element and returns the contents as a 32-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Releases the resources used by the <see cref="T:System.Xml.XmlReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadToFollowing">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads until the named element is found.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsLong">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element and returns the contents as a 64-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAs">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element and returns the contents as an object of the type specified.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element and returns the contents as an <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsFloat">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element value as a single-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsDecimal">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element value as a <see cref="T:System.Decimal" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element and returns the contents as a <see cref="T:System.String" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadStartElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Checks that the current node is an element and advances the reader to the next node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsBoolean">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element value as a <see cref="T:System.Boolean" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, gets the value of the attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadToDescendant">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Advances the <see cref="T:System.Xml.XmlReader" /> to the next matching descendant element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsStartElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Tests if the current content node is a start tag.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadElementContentAsDateTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Reads the current element and returns the contents as a <see cref="T:System.DateTime" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

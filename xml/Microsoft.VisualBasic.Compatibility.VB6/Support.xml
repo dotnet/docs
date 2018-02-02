@@ -432,6 +432,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Drawing.Font.GdiCharSet" />
       </Docs>
     </Member>
     <Member MemberName="FontChangeItalic">
@@ -2301,7 +2302,7 @@
       </Docs>
     </Member>
     <Member MemberName="TabLayout">
-      <MemberSignature Language="C#" Value="public static string TabLayout (object[] Args);" />
+      <MemberSignature Language="C#" Value="public static string TabLayout (params object[] Args);" />
       <MemberSignature Language="ILAsm" Value=".method public static string TabLayout(object[] Args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.TabLayout(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2829,5 +2830,59 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadResData">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads data of several possible types from a resource (.res) file and returns a <see cref="T:System.Byte" /> array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetResourceBaseName">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Assigns the name of a Visual Basic 6.0 resource file to the Visual Basic project namespace.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadResPicture">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a bitmap, icon, or cursor from a resource (.res) file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Eqv">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a logical equivalence on two expressions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Imp">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a logical implication on two expressions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadResString">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a string from a resource (.res) file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

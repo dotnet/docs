@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [WPF], customizing"
   - "VisualStateManager [WPF], managing the state of a control"
@@ -22,6 +25,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Creating a Control That Has a Customizable Appearance
 <a name="introduction"></a>
@@ -84,7 +89,7 @@ A custom NumericUpDown control
  A visual behavior of the `NumericUpDown` control is that the value is in a red font if it is negative.  If you change the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> in code when the `Value` is negative, the `NumericUpDown` will always show a red negative value. You specify the visual behavior of the control in the <xref:System.Windows.Controls.ControlTemplate> by adding <xref:System.Windows.VisualState> objects to the <xref:System.Windows.Controls.ControlTemplate>.  The following example shows the <xref:System.Windows.VisualState> objects for the `Positive` and `Negative` states.  `Positive` and `Negative` are mutually exclusive (the control is always in exactly one of the two), so the example puts the <xref:System.Windows.VisualState> objects into a single <xref:System.Windows.VisualStateGroup>.  When the control goes into the `Negative` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> turns red.  When the control is in the `Positive` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to it original value.  Defining <xref:System.Windows.VisualState> objects in a <xref:System.Windows.Controls.ControlTemplate> is further discussed in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
 > [!NOTE]
->  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=fullName> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
+>  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
   
  [!code-xaml[VSMCustomControl#ValueStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
   
@@ -122,7 +127,7 @@ A custom NumericUpDown control
  By following the practices that are shown in the previous examples, you ensure that your control will continue to run when the <xref:System.Windows.Controls.ControlTemplate> is missing a <xref:System.Windows.FrameworkElement>.  
   
 ### Use the VisualStateManager to Manage States  
- The<xref:System.Windows.VisualStateManager> keeps track of the states of a control and performs the logic necessary to transition between states. When you add <xref:System.Windows.VisualState> objects to the <xref:System.Windows.Controls.ControlTemplate>, you add them to a <xref:System.Windows.VisualStateGroup> and add the <xref:System.Windows.VisualStateGroup> to the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=fullName> attached property so that the <xref:System.Windows.VisualStateManager> has access to them.  
+ The <xref:System.Windows.VisualStateManager> keeps track of the states of a control and performs the logic necessary to transition between states. When you add <xref:System.Windows.VisualState> objects to the <xref:System.Windows.Controls.ControlTemplate>, you add them to a <xref:System.Windows.VisualStateGroup> and add the <xref:System.Windows.VisualStateGroup> to the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property so that the <xref:System.Windows.VisualStateManager> has access to them.  
   
  The following example repeats the previous example that shows the <xref:System.Windows.VisualState> objects that corresponds to the `Positive` and `Negative` states of the control. The <xref:System.Windows.Media.Animation.Storyboard> in the `Negative`<xref:System.Windows.VisualState> turns the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> red.   When the `NumericUpDown` control is in the `Negative` state, the storyboard in the `Negative` state begins.  Then the <xref:System.Windows.Media.Animation.Storyboard> in the `Negative` state stops when the control returns to the `Positive` state.  The `Positive`<xref:System.Windows.VisualState> does not need to contain a <xref:System.Windows.Media.Animation.Storyboard> because when the <xref:System.Windows.Media.Animation.Storyboard> for the `Negative` stops, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to its original color.  
   
@@ -241,5 +246,5 @@ A custom NumericUpDown control
  [!code-vb[VSMCustomControl#ControlLogic](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controllogic)]  
   
 ## See Also  
- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)   
+ [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)  
  [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)

@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data contracts [WCF], enumeration types"
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Enumeration Types in Data Contracts
 Enumerations can be expressed in the data contract model. This topic walks through several examples that explain the programming model.  
@@ -100,6 +105,6 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  [!code-vb[c_DataContractEnumerations#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractenumerations/vb/source.vb#5)]  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

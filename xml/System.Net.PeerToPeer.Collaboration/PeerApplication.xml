@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -106,6 +107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +147,9 @@
         <exception cref="T:System.ArgumentException">-   Length of the binary data object cannot be less than one or greater than 16k.  
   
 -   <paramref name="id" /> is set to <see langword="null" />.</exception>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.CommandLineArgs" />
+        <altmember cref="N:System.Runtime" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationChanged">
@@ -177,6 +183,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplication.OnApplicationChanged(System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CommandLineArgs">
@@ -197,6 +205,7 @@
           <see cref="T:System.String" /> that represents application-specific command-line parameters to use when initiating the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Path" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -224,6 +233,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The size of this binary data object is either less than 0 or greater than 4,096 bytes.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.Peer.Invite" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -251,6 +261,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.Peer.Invite" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -274,6 +285,8 @@
       <Docs>
         <summary>Releases resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -300,6 +313,8 @@
         <param name="disposing">Set to <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -330,6 +345,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplication.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -353,6 +371,9 @@
         <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> is equal to the specified object instance, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Object" /> has been disposed.</exception>
+        <altmember cref="T:System.Guid" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplication.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -377,6 +398,8 @@
         <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects are considered equal.</summary>
         <returns>Returns <see langword="true" /> if the specified objects have the same globally unique application <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" /> and <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Description" />, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -397,6 +420,9 @@
         <returns>A 32-bit signed integer hash code used to compare instances of this type.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerApplication.Equals" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerApplication)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -420,6 +446,8 @@
         <param name="context">The destination for this serialization.</param>
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -447,6 +475,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Description" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" />
       </Docs>
     </Member>
     <Member MemberName="OnApplicationChanged">
@@ -475,6 +505,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalApplicationChanged" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeAsync(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -502,6 +535,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.CommandLineArgs" />
       </Docs>
     </Member>
     <Member MemberName="PeerScope">
@@ -522,6 +556,8 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" /> object that specifies the scope in which the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> will collaborate.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpScope" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -561,6 +597,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
+        <altmember cref="N:System.Windows.Forms" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -589,6 +626,9 @@
         <param name="context">The destination for this serialization.</param>
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data required to serialize the target <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplication.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -618,5 +658,28 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object.</summary>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> to the specified object.</summary>
+        <altmember cref="T:System.Guid" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplication.ToString" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

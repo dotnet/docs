@@ -27,7 +27,7 @@
 > [!NOTE]
 >  The simplest way to use double buffering is to set the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> control style flag on a control using the <xref:System.Windows.Forms.Control.SetStyle%2A> method. Setting the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> flag for a control redirects all painting for the control through a default graphics buffer, without requiring any additional code. This flag is set to `true` by default.  
   
- The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property.  
+ The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Drawing.BufferedGraphics.Graphics%2A> property can be used for drawing to the graphics buffer. This property provides access to the <xref:System.Drawing.Graphics> object that draws to the graphics buffer allocated for this <xref:System.Drawing.BufferedGraphics> object.  
   
@@ -101,6 +101,7 @@
       <Docs>
         <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -126,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -188,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -226,7 +229,17 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.IntPtr" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Render">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the contents of the graphics buffer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

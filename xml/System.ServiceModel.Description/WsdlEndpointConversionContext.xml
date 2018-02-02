@@ -16,11 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext> class represents the context in which the custom WSDL for an endpoint is either exported using <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=fullName> or imported using <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName>. The following properties enable you to retrieve the WSDL document object model for the current WSDL:  
+ The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext> class represents the context in which the custom WSDL for an endpoint is either exported using <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> or imported using <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType>. The following properties enable you to retrieve the WSDL document object model for the current WSDL:  
   
--   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.ContractConversionContext%2A> property gets the <xref:System.ServiceModel.Description.WsdlContractConversionContext?displayProperty=fullName> for the endpoint contract.  
+-   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.ContractConversionContext%2A> property gets the <xref:System.ServiceModel.Description.WsdlContractConversionContext?displayProperty=nameWithType> for the endpoint contract.  
   
--   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.Endpoint%2A> property gets the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> for the current endpoint.  
+-   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.Endpoint%2A> property gets the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> for the current endpoint.  
   
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.WsdlBinding%2A> property gets the binding for the current endpoint.  
   

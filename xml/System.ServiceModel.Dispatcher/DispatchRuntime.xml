@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -312,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Add an <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> object to this property to control the manner in which input sessions are closed. When a call to the <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel?displayProperty=fullName> first returns `null`, (which indicates that the input session has been closed), the dispatcher invokes each <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> object, passing it an <xref:System.ServiceModel.Channels.IDuplexSessionChannel?displayProperty=fullName> object. Custom <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> objects can use this <xref:System.ServiceModel.Channels.IDuplexSessionChannel> object to perform clean-up for each channel state or to send a response message before closing the channel.  
+ Add an <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> object to this property to control the manner in which input sessions are closed. When a call to the <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=nameWithType> method on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel?displayProperty=nameWithType> first returns `null`, (which indicates that the input session has been closed), the dispatcher invokes each <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> object, passing it an <xref:System.ServiceModel.Channels.IDuplexSessionChannel?displayProperty=nameWithType> object. Custom <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> objects can use this <xref:System.ServiceModel.Channels.IDuplexSessionChannel> object to perform clean-up for each channel state or to send a response message before closing the channel.  
   
  ]]></format>
         </remarks>

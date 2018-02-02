@@ -284,7 +284,28 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a type with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the requested assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

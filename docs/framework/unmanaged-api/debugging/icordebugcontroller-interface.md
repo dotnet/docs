@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugController interface [.NET Framework debugging]"
 ms.assetid: dbb1c4dc-269a-459b-ab1d-6c70788782ce
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugController Interface1
 Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:System.AppDomain>, in which code execution context can be controlled.  

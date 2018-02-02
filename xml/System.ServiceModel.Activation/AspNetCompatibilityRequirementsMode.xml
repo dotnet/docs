@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode allows [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services to use ASP features such as identity impersonation. It is enabled at the application level through the Web.config file and cannot be overridden by Web.config files nested in the application. When the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> value is not specified for a service, it gets Allowed behavior by default. For more information, see [\&lt;serviceHostingEnvironment\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
+ [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode allows [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services to use ASP features such as identity impersonation. It is enabled at the application level through the Web.config file and cannot be overridden by Web.config files nested in the application. When the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> value is not specified for a service, it gets Allowed behavior by default. For more information, see [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
    
   

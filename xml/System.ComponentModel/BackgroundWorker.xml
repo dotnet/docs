@@ -44,7 +44,7 @@
 >   
 >  <xref:System.ComponentModel.BackgroundWorker> events are not marshaled across <xref:System.AppDomain> boundaries. Do not use a <xref:System.ComponentModel.BackgroundWorker> component to perform multithreaded operations in more than one <xref:System.AppDomain>.  
   
- If your background operation requires a parameter, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> with your parameter. Inside the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, you can extract the parameter from the <xref:System.ComponentModel.DoWorkEventArgs.Argument%2A?displayProperty=fullName> property.  
+ If your background operation requires a parameter, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> with your parameter. Inside the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, you can extract the parameter from the <xref:System.ComponentModel.DoWorkEventArgs.Argument%2A?displayProperty=nameWithType> property.  
   
  For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
   
@@ -140,7 +140,7 @@
  When you call <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A>, your worker method has an opportunity to stop its execution and exit. The worker code should periodically check the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property to see if it has been set to `true`.  
   
 > [!CAUTION]
->  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
   
    
   
@@ -278,18 +278,18 @@
 ## Remarks  
  This event is raised when you call the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method. This is where you start the operation that performs the potentially time-consuming work.  
   
- Your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler should periodically check the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property value and abort the operation if it is `true`. When this occurs, you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=fullName> to `true`, and the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will be set to `true`.  
+ Your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler should periodically check the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property value and abort the operation if it is `true`. When this occurs, you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=nameWithType> to `true`, and the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will be set to `true`.  
   
 > [!CAUTION]
->  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
   
- If your operation produces a result, you can assign the result to the <xref:System.ComponentModel.DoWorkEventArgs.Result%2A?displayProperty=fullName> property. This will be available to the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property.  
+ If your operation produces a result, you can assign the result to the <xref:System.ComponentModel.DoWorkEventArgs.Result%2A?displayProperty=nameWithType> property. This will be available to the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property.  
   
- If the operation raises an exception that your code does not handle, the <xref:System.ComponentModel.BackgroundWorker> catches the exception and passes it into the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler, where it is exposed as the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName>. If you are running under the Visual Studio debugger, the debugger will break at the point in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler where the unhandled exception was raised. If you have more than one <xref:System.ComponentModel.BackgroundWorker>, you should not reference any of them directly, as this would couple your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler to a specific instance of <xref:System.ComponentModel.BackgroundWorker>. Instead, you should access your <xref:System.ComponentModel.BackgroundWorker> by casting the `sender` parameter in your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler.  
+ If the operation raises an exception that your code does not handle, the <xref:System.ComponentModel.BackgroundWorker> catches the exception and passes it into the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler, where it is exposed as the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType>. If you are running under the Visual Studio debugger, the debugger will break at the point in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler where the unhandled exception was raised. If you have more than one <xref:System.ComponentModel.BackgroundWorker>, you should not reference any of them directly, as this would couple your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler to a specific instance of <xref:System.ComponentModel.BackgroundWorker>. Instead, you should access your <xref:System.ComponentModel.BackgroundWorker> by casting the `sender` parameter in your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler.  
   
  You must be careful not to manipulate any user-interface objects in your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler. Instead, communicate to the user interface through the <xref:System.ComponentModel.BackgroundWorker> events.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -351,6 +351,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="Overload:System.ComponentModel.BackgroundWorker.RunWorkerAsync" />
       </Docs>
     </Member>
     <Member MemberName="OnDoWork">
@@ -416,7 +419,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.ComponentModel.BackgroundWorker.OnProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -433,6 +436,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnRunWorkerCompleted">
@@ -467,7 +471,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -476,6 +480,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
       </Docs>
     </Member>
     <Member MemberName="ProgressChanged">
@@ -508,7 +513,7 @@
 ## Remarks  
  This event is raised when you call the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -671,6 +676,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.DoWork" />
       </Docs>
     </Member>
     <Member MemberName="RunWorkerAsync">
@@ -724,6 +730,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.DoWork" />
       </Docs>
     </Member>
     <Member MemberName="RunWorkerCompleted">
@@ -756,16 +763,16 @@
 ## Remarks  
  This event is raised when the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler returns.  
   
- If the operation completes successfully and its result is assigned in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, you can access the result through the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property.  
+ If the operation completes successfully and its result is assigned in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, you can access the result through the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property.  
   
- The <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> indicates that an exception was thrown by the operation.  
+ The <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> indicates that an exception was thrown by the operation.  
   
- The <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> indicates whether a cancellation request was processed by the background operation. If your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler detects a cancellation request by checking the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> flag and setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=fullName> to `true`, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> also will be set to `true`.  
+ The <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> indicates whether a cancellation request was processed by the background operation. If your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler detects a cancellation request by checking the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> flag and setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=nameWithType> to `true`, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> also will be set to `true`.  
   
 > [!CAUTION]
->  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
   
- Your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler should always check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=fullName> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A?displayProperty=fullName> properties before accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property. If an exception was raised or if the operation was canceled, accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property raises an exception.  
+ Your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler should always check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A?displayProperty=nameWithType> properties before accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property. If an exception was raised or if the operation was canceled, accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property raises an exception.  
   
    
   
@@ -819,6 +826,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WorkerSupportsCancellation">
@@ -860,7 +868,28 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BackgroundWorker.CancelAsync" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReportProgress">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RunWorkerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts execution of a background operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

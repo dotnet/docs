@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "globalization [.NET Framework], about globalization"
   - "global applications, globalization"
@@ -20,6 +23,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Globalization
 Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, you should determine which cultures your app will support. Although an app targets a single culture or region as its default, you can design and write it so that it can easily be extended to users in other cultures or regions.  
@@ -87,7 +93,7 @@ Globalization involves designing and developing a world-ready app that supports 
   
 -   You can include non-string resources, such as images or binary data, in the resource file instead of storing them in a separate standalone file, so they can be retrieved easily.  
   
- Using resource files has particular advantages if you are creating a localized app. When you deploy resources in satellite assemblies, the common language runtime automatically selects a culture-appropriate resource based on the user's current UI culture as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. As long as you provide an appropriate culture-specific resource and correctly instantiate a <xref:System.Resources.ResourceManager> object or use a strongly typed resource class, the runtime handles the details of retrieving the appropriate resources.  
+ Using resource files has particular advantages if you are creating a localized app. When you deploy resources in satellite assemblies, the common language runtime automatically selects a culture-appropriate resource based on the user's current UI culture as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property. As long as you provide an appropriate culture-specific resource and correctly instantiate a <xref:System.Resources.ResourceManager> object or use a strongly typed resource class, the runtime handles the details of retrieving the appropriate resources.  
   
  For more information about creating resource files, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md). For information about creating and deploying satellite assemblies, see [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md) and [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
@@ -98,22 +104,22 @@ Globalization involves designing and developing a world-ready app that supports 
 > [!TIP]
 >  You can use the <xref:System.Globalization.StringInfo> class to work with the text elements rather than the individual characters in a string.  
   
- In string searches and comparisons, a common mistake is to treat the string as a collection of characters, each of which is represented by a <xref:System.Char> object. In fact, a single character may be formed by one, two, or more <xref:System.Char> objects. Such characters are found most frequently in strings from cultures whose alphabets consist of characters outside the Unicode Basic Latin character range (U+0021 through U+007E). The following example tries to find the index of the LATIN CAPITAL LETTER A WITH GRAVE character (U+00C0) in a string. However, this character can be represented in two different ways: as a single code unit (U+00C0) or as a composite character (two code units: U+0021 and U+007E). In this case, the character is represented in the string instance by two <xref:System.Char> objects, U+0021 and U+007E. The example code calls the <xref:System.String.IndexOf%28System.Char%29?displayProperty=fullName> and <xref:System.String.IndexOf%28System.String%29?displayProperty=fullName> overloads to find the position of this character in the string instance, but these return different results. The first method call has a <xref:System.Char> argument; it performs an ordinal comparison and therefore cannot find a match. The second call has a <xref:System.String> argument; it performs a culture-sensitive comparison and therefore finds a match.  
+ In string searches and comparisons, a common mistake is to treat the string as a collection of characters, each of which is represented by a <xref:System.Char> object. In fact, a single character may be formed by one, two, or more <xref:System.Char> objects. Such characters are found most frequently in strings from cultures whose alphabets consist of characters outside the Unicode Basic Latin character range (U+0021 through U+007E). The following example tries to find the index of the LATIN CAPITAL LETTER A WITH GRAVE character (U+00C0) in a string. However, this character can be represented in two different ways: as a single code unit (U+00C0) or as a composite character (two code units: U+0021 and U+007E). In this case, the character is represented in the string instance by two <xref:System.Char> objects, U+0021 and U+007E. The example code calls the <xref:System.String.IndexOf%28System.Char%29?displayProperty=nameWithType> and <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> overloads to find the position of this character in the string instance, but these return different results. The first method call has a <xref:System.Char> argument; it performs an ordinal comparison and therefore cannot find a match. The second call has a <xref:System.String> argument; it performs a culture-sensitive comparison and therefore finds a match.  
   
  [!code-csharp[Conceptual.Globalization#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/search1.cs#18)]
  [!code-vb[Conceptual.Globalization#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/search1.vb#18)]  
   
- You can avoid some of the ambiguity of this example (calls to two similar overloads of a method returning different results) by calling an overload that includes a <xref:System.StringComparison> parameter, such as the <xref:System.String.IndexOf%28System.String%2CSystem.StringComparison%29?displayProperty=fullName> or <xref:System.String.LastIndexOf%28System.String%2CSystem.StringComparison%29?displayProperty=fullName> method.  
+ You can avoid some of the ambiguity of this example (calls to two similar overloads of a method returning different results) by calling an overload that includes a <xref:System.StringComparison> parameter, such as the <xref:System.String.IndexOf%28System.String%2CSystem.StringComparison%29?displayProperty=nameWithType> or <xref:System.String.LastIndexOf%28System.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method.  
   
  However, searches are not always culture-sensitive. If the purpose of the search is to make a security decision or to allow or disallow access to some resource, the comparison should be ordinal, as discussed in the next section.  
   
 <a name="Strings_Equality"></a>   
 ### Testing Strings for Equality  
- If you want to test two strings for equality rather than determining how they compare in the sort order, use the <xref:System.String.Equals%2A?displayProperty=fullName> method instead of a string comparison method such as <xref:System.String.Compare%2A?displayProperty=fullName> or <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName>.  
+ If you want to test two strings for equality rather than determining how they compare in the sort order, use the <xref:System.String.Equals%2A?displayProperty=nameWithType> method instead of a string comparison method such as <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType>.  
   
- Comparisons for equality are typically performed to access some resource conditionally. For example, you might perform a comparison for equality to verify a password or to confirm that a file exists. Such non-linguistic comparisons should always be ordinal rather than culture-sensitive. In general, you should call the instance <xref:System.String.Equals%28System.String%2CSystem.StringComparison%29?displayProperty=fullName> method or the static <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method with a value of <xref:System.StringComparison.Ordinal?displayProperty=fullName> for strings such as passwords, and a value of <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> for strings such as file names or URIs.  
+ Comparisons for equality are typically performed to access some resource conditionally. For example, you might perform a comparison for equality to verify a password or to confirm that a file exists. Such non-linguistic comparisons should always be ordinal rather than culture-sensitive. In general, you should call the instance <xref:System.String.Equals%28System.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method or the static <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method with a value of <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> for strings such as passwords, and a value of <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for strings such as file names or URIs.  
   
- Comparisons for equality sometimes involve searches or substring comparisons rather than calls to the <xref:System.String.Equals%2A?displayProperty=fullName> method. In some cases, you may use a substring search to determine whether that substring equals another string. If the purpose of this comparison is non-linguistic, the search should also be ordinal rather than culture-sensitive.  
+ Comparisons for equality sometimes involve searches or substring comparisons rather than calls to the <xref:System.String.Equals%2A?displayProperty=nameWithType> method. In some cases, you may use a substring search to determine whether that substring equals another string. If the purpose of this comparison is non-linguistic, the search should also be ordinal rather than culture-sensitive.  
   
  The following example illustrates the danger of a culture-sensitive search on non-linguistic data. The `AccessesFileSystem` method is designed to prohibit file system access for URIs that begin with the substring "FILE". To do this, it performs a culture-sensitive, case-insensitive comparison of the beginning of the URI with the string "FILE". Because a URI that accesses the file system can begin with either "FILE:" or "file:", the implicit assumption is that that "i" (U+0069) is always the lowercase equivalent of "I" (U+0049). However, in Turkish and Azerbaijani, the uppercase version of "i" is "İ" (U+0130). Because of this discrepancy, the culture-sensitive comparison allows file system access when it should be prohibited.  
   
@@ -127,12 +133,12 @@ Globalization involves designing and developing a world-ready app that supports 
   
 <a name="Strings_Ordering"></a>   
 ### Ordering and Sorting Strings  
- Typically, ordered strings that are to be displayed in the user interface should be sorted based on culture. For the most part, such string comparisons are handled implicitly by the .NET Framework when you call a method that sorts strings, such as <xref:System.Array.Sort%2A?displayProperty=fullName> or <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName>. By default, strings are sorted by using the sorting conventions of the current culture. The following example illustrates the difference when an array of strings is sorted by using the conventions of the English (United States) culture and the Swedish (Sweden) culture.  
+ Typically, ordered strings that are to be displayed in the user interface should be sorted based on culture. For the most part, such string comparisons are handled implicitly by the .NET Framework when you call a method that sorts strings, such as <xref:System.Array.Sort%2A?displayProperty=nameWithType> or <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType>. By default, strings are sorted by using the sorting conventions of the current culture. The following example illustrates the difference when an array of strings is sorted by using the conventions of the English (United States) culture and the Swedish (Sweden) culture.  
   
  [!code-csharp[Conceptual.Globalization#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/sort1.cs#14)]
  [!code-vb[Conceptual.Globalization#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/sort1.vb#14)]  
   
- Culture-sensitive string comparison is defined by the <xref:System.Globalization.CompareInfo> object, which is returned by each culture's <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=fullName> property. Culture-sensitive string comparisons that use the <xref:System.String.Compare%2A?displayProperty=fullName> method overloads also use the <xref:System.Globalization.CompareInfo> object.  
+ Culture-sensitive string comparison is defined by the <xref:System.Globalization.CompareInfo> object, which is returned by each culture's <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property. Culture-sensitive string comparisons that use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method overloads also use the <xref:System.Globalization.CompareInfo> object.  
   
  The .NET Framework uses tables to perform culture-sensitive sorts on string data. The content of these tables, which contain data on sort weights and string normalization, is determined by the version of the Unicode standard implemented by a particular version of the .NET Framework. The following table lists the versions of Unicode implemented by the specified versions of the .NET Framework. Note that this list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category. For more information, see the "Strings and The Unicode Standard" section in the <xref:System.String> article.  
   
@@ -147,9 +153,9 @@ Globalization involves designing and developing a world-ready app that supports 
   
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], string comparison and sorting depends on the operating system. The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] running on [!INCLUDE[win7](../../../includes/win7-md.md)] retrieves data from its own tables that implement Unicode 5.0. The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] running on [!INCLUDE[win8](../../../includes/win8-md.md)] retrieves data from operating system tables that implement Unicode 6.0. If you serialize culture-sensitive sorted data, you can use the <xref:System.Globalization.SortVersion> class to determine when your serialized data needs to be sorted so that it is consistent with the .NET Framework and the operating system's sort order. For an example, see the <xref:System.Globalization.SortVersion> class topic.  
   
- If your app performs extensive culture-specific sorts of string data, you can work with the <xref:System.Globalization.SortKey> class to compare strings. A sort key reflects the culture-specific sort weights, including the alphabetic, case, and diacritic weights of a particular string. Because comparisons using sort keys are binary, they are faster than comparisons that use a <xref:System.Globalization.CompareInfo> object either implicitly or explicitly. You create a culture-specific sort key for a particular string by passing the string to the <xref:System.Globalization.CompareInfo.GetSortKey%2A?displayProperty=fullName> method.  
+ If your app performs extensive culture-specific sorts of string data, you can work with the <xref:System.Globalization.SortKey> class to compare strings. A sort key reflects the culture-specific sort weights, including the alphabetic, case, and diacritic weights of a particular string. Because comparisons using sort keys are binary, they are faster than comparisons that use a <xref:System.Globalization.CompareInfo> object either implicitly or explicitly. You create a culture-specific sort key for a particular string by passing the string to the <xref:System.Globalization.CompareInfo.GetSortKey%2A?displayProperty=nameWithType> method.  
   
- The following example is similar to the previous example. However, instead of calling the <xref:System.Array.Sort%28System.Array%29?displayProperty=fullName> method, which implicitly calls the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> method, it defines an <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> implementation that compares sort keys, which it instantiates and passes to the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method.  
+ The following example is similar to the previous example. However, instead of calling the <xref:System.Array.Sort%28System.Array%29?displayProperty=nameWithType> method, which implicitly calls the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType> method, it defines an <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation that compares sort keys, which it instantiates and passes to the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=nameWithType> method.  
   
  [!code-csharp[Conceptual.Globalization#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/sortkey1.cs#15)]
  [!code-vb[Conceptual.Globalization#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/sortkey1.vb#15)]  
@@ -164,15 +170,15 @@ Globalization involves designing and developing a world-ready app that supports 
   
 <a name="DatesAndTimes_Display"></a>   
 ### Displaying Dates and Times  
- Typically, when dates and times are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property and by the <xref:System.Globalization.DateTimeFormatInfo> object returned by the `CultureInfo.CurrentCulture.DateTimeFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of these methods:  
+ Typically, when dates and times are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.DateTimeFormatInfo> object returned by the `CultureInfo.CurrentCulture.DateTimeFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of these methods:  
   
--   The parameterless <xref:System.DateTime.ToString?displayProperty=fullName> method  
+-   The parameterless <xref:System.DateTime.ToString?displayProperty=nameWithType> method  
   
--   The <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method, which includes a format string  
+-   The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method, which includes a format string  
   
--   The parameterless <xref:System.DateTimeOffset.ToString?displayProperty=fullName> method  
+-   The parameterless <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType> method  
   
--   The <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=fullName>, which includes a format string  
+-   The <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType>, which includes a format string  
   
 -   The [composite formatting](../../../docs/standard/base-types/composite-formatting.md) feature, when it is used with dates  
   
@@ -196,7 +202,7 @@ Globalization involves designing and developing a world-ready app that supports 
   
 -   Save the string by using the formatting conventions of the invariant culture.  
   
- The following example illustrates the last approach. It uses the formatting conventions of the invariant culture returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property.  
+ The following example illustrates the last approach. It uses the formatting conventions of the invariant culture returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.  
   
  [!code-csharp[Conceptual.Globalization#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/dates3.cs#4)]
  [!code-vb[Conceptual.Globalization#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates3.vb#4)]  
@@ -303,7 +309,7 @@ Globalization involves designing and developing a world-ready app that supports 
   
 <a name="Numbers_Display"></a>   
 ### Displaying Numeric Values  
- Typically, when numbers are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property and by the <xref:System.Globalization.NumberFormatInfo> object returned by the `CultureInfo.CurrentCulture.NumberFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of the following methods:  
+ Typically, when numbers are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.NumberFormatInfo> object returned by the `CultureInfo.CurrentCulture.NumberFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of the following methods:  
   
 -   The parameterless `ToString` method of any numeric type  
   
@@ -311,7 +317,7 @@ Globalization involves designing and developing a world-ready app that supports 
   
 -   The [composite formatting](../../../docs/standard/base-types/composite-formatting.md) feature, when it is used with numeric values  
   
- The following example displays the average temperature per month in Paris, France. It first sets the current culture to French (France) before displaying the data, and then sets it to English (United States). In each case, the month names and temperatures are displayed in the format that is appropriate for that culture. Note that the two cultures use different decimal separators in the temperature value. Also note that the example uses the "MMMM" custom date and time format string to display the full month name, and that it allocates the appropriate amount of space for the month name in the result string by determining the length of the longest month name in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=fullName> array.  
+ The following example displays the average temperature per month in Paris, France. It first sets the current culture to French (France) before displaying the data, and then sets it to English (United States). In each case, the month names and temperatures are displayed in the format that is appropriate for that culture. Note that the two cultures use different decimal separators in the temperature value. Also note that the example uses the "MMMM" custom date and time format string to display the full month name, and that it allocates the appropriate amount of space for the month name in the result string by determining the length of the longest month name in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> array.  
   
  [!code-csharp[Conceptual.Globalization#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/numbers1.cs#5)]
  [!code-vb[Conceptual.Globalization#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/numbers1.vb#5)]  
@@ -327,7 +333,7 @@ Globalization involves designing and developing a world-ready app that supports 
   
 -   Save and parse the string representation of the number by using a custom format string that is the same regardless of the user's culture.  
   
--   Save the number as a string by using the formatting conventions of the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property.  
+-   Save the number as a string by using the formatting conventions of the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.  
   
 -   Serialize the number in binary instead of string format.  
   
@@ -350,13 +356,13 @@ Globalization involves designing and developing a world-ready app that supports 
 ## Working with Culture-Specific Settings  
  In the .NET Framework, the <xref:System.Globalization.CultureInfo> class represents a particular culture or region. Some of its properties return objects that provide specific information about some aspect of a culture:  
   
--   The <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=fullName> property returns a <xref:System.Globalization.CompareInfo> object that contains information about how the culture compares and orders strings.  
+-   The <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.CompareInfo> object that contains information about how the culture compares and orders strings.  
   
--   The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property returns a <xref:System.Globalization.DateTimeFormatInfo> object that provides culture-specific information used in formatting date and time data.  
+-   The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.DateTimeFormatInfo> object that provides culture-specific information used in formatting date and time data.  
   
--   The <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information used in formatting numeric data.  
+-   The <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information used in formatting numeric data.  
   
--   The <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> property returns a <xref:System.Globalization.TextInfo> object that provides information about the culture's writing system.  
+-   The <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.TextInfo> object that provides information about the culture's writing system.  
   
  In general, do not make any assumptions about the values of specific <xref:System.Globalization.CultureInfo> properties and their related objects. Instead, you should view culture-specific data as subject to change, for these reasons:  
   
@@ -366,8 +372,8 @@ Globalization involves designing and developing a world-ready app that supports 
   
 -   The .NET Framework supports replacement cultures. This makes it possible to define a new custom culture that either supplements existing standard cultures or completely replaces an existing standard culture.  
   
--   The user can customize culture-specific settings by using the **Region and Language** app in Control Panel. When you instantiate a <xref:System.Globalization.CultureInfo> object, you can determine whether it reflects these user customizations by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=fullName> constructor. Typically, for end-user apps, you should respect user preferences so that the user is presented with data in a format that he or she expects.  
+-   The user can customize culture-specific settings by using the **Region and Language** app in Control Panel. When you instantiate a <xref:System.Globalization.CultureInfo> object, you can determine whether it reflects these user customizations by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor. Typically, for end-user apps, you should respect user preferences so that the user is presented with data in a format that he or she expects.  
   
 ## See Also  
- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)   
+ [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
  [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)

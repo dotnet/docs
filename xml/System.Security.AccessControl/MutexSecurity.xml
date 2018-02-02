@@ -49,12 +49,12 @@
   
 -   Adding or removing access control entries in ways that do not maintain the canonical ordering.  
   
- To modify Windows access control security for a named mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.MutexSecurity> object. Modify the security object by adding and removing rules, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to reattach it.  
+ To modify Windows access control security for a named mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> method to get the <xref:System.Security.AccessControl.MutexSecurity> object. Modify the security object by adding and removing rules, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType> method to reattach it.  
   
 > [!IMPORTANT]
->  Changes you make to a <xref:System.Security.AccessControl.MutexSecurity> object do not affect the access levels of the named mutex until you call the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named mutex.  
+>  Changes you make to a <xref:System.Security.AccessControl.MutexSecurity> object do not affect the access levels of the named mutex until you call the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType> method to assign the altered security object to the named mutex.  
   
- To copy access control security from one mutex to another, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.MutexSecurity> object representing the access and audit rules for the first mutex, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method, or a constructor that accepts a <xref:System.Security.AccessControl.MutexSecurity> object, to assign those rules to the second mutex.  
+ To copy access control security from one mutex to another, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> method to get a <xref:System.Security.AccessControl.MutexSecurity> object representing the access and audit rules for the first mutex, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType> method, or a constructor that accepts a <xref:System.Security.AccessControl.MutexSecurity> object, to assign those rules to the second mutex.  
   
  Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a named mutex, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.  
   
@@ -67,13 +67,18 @@
  The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType.Allow> rules and <xref:System.Security.AccessControl.AccessControlType.Deny> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.MutexAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.MutexAuditRule" />
+    <altmember cref="T:System.Security.AccessControl.MutexRights" />
+    <altmember cref="M:System.Threading.Mutex.GetAccessControl" />
+    <altmember cref="M:System.Threading.Mutex.SetAccessControl(System.Security.AccessControl.MutexSecurity)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -298,7 +303,7 @@
  The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType.Allow> rules and <xref:System.Security.AccessControl.AccessControlType.Deny> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName><xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType><xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
@@ -477,7 +482,7 @@
  The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The rights allowed include <xref:System.Security.AccessControl.MutexRights.Modify>, <xref:System.Security.AccessControl.MutexRights.ReadPermissions>, and <xref:System.Security.AccessControl.MutexRights.Synchronize>. The example then creates a new rule for the current user, including <xref:System.Security.AccessControl.MutexRights.ReadPermissions> and <xref:System.Security.AccessControl.MutexRights.TakeOwnership> rights, and uses that rule with the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRule%2A> method to remove <xref:System.Security.AccessControl.MutexRights.ReadPermissions> from the <xref:System.Security.AccessControl.AccessControlType.Allow> rule in the <xref:System.Security.AccessControl.MutexSecurity> object. The extraneous <xref:System.Security.AccessControl.MutexRights.TakeOwnership> right in `rule` is ignored.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/VB/source.vb#1)]  
@@ -526,7 +531,7 @@
  The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType.Allow> rule. The example then creates a new rule that allows the current user to take ownership, and uses that rule to remove the <xref:System.Security.AccessControl.AccessControlType.Allow> rule from the <xref:System.Security.AccessControl.MutexSecurity> object.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
@@ -578,7 +583,7 @@
  The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType.Allow> access rule. The example then passes the original <xref:System.Security.AccessControl.AccessControlType.Allow> rule to the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method, and displays the results, showing that nothing is deleted. The example then constructs a rule that matches the <xref:System.Security.AccessControl.AccessControlType.Allow> rule in the <xref:System.Security.AccessControl.MutexSecurity> object, and successfully uses the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method to remove the rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
@@ -743,7 +748,7 @@
  The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.ResetAccessRule%2A> method to replace both of the existing rules with the new rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/VB/source.vb#1)]  
@@ -794,7 +799,7 @@
  The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.SetAccessRule%2A> method to replace the existing Allow rule with the new rule. The rule that denies access is not affected.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/VB/source.vb#1)]  
@@ -841,5 +846,15 @@
           <paramref name="rule" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

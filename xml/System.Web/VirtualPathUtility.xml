@@ -32,11 +32,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.VirtualPathUtility> class and some of its methods. First, the <xref:System.Web.HttpRequest.FilePath%2A> property generates the virtual path to the Web page. The <xref:System.Web.VirtualPathUtility.GetFileName%2A>, <xref:System.Web.VirtualPathUtility.GetExtension%2A>, and <xref:System.Web.VirtualPathUtility.GetDirectory%2A> methods return information about the virtual path. Next, the <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> property generates a virtual path of the current request, which might be different from the <xref:System.Web.HttpRequest.FilePath%2A> property, if a <xref:System.Web.HttpResponse.Redirect%2A> method was called. The <xref:System.Web.VirtualPathUtility.IsAbsolute%2A>, <xref:System.Web.VirtualPathUtility.IsAppRelative%2A>, and <xref:System.Web.VirtualPathUtility.ToAppRelative%2A> methods return information about the virtual path.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.VirtualPathUtility#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.VirtualPathUtility/cs/virtualpathutilitycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.VirtualPathUtility#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.VirtualPathUtility/vb/virtualpathutilityvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.VirtualPathUtility#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.VirtualPathUtility/cs/virtualpathutilitycs.aspx#1)]
+ [!code-aspx-vb[System.Web.VirtualPathUtility#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.VirtualPathUtility/vb/virtualpathutilityvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpRequest" />
   </Docs>
   <Members>
     <Member MemberName="AppendTrailingSlash">
@@ -66,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.VirtualPathUtility.RemoveTrailingSlash(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Combine">
@@ -93,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Web.VirtualPathUtility.Combine%2A> method returns the value of the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> property if the relative path is exactly a tilde (~).  
+ The <xref:System.Web.VirtualPathUtility.Combine%2A> method returns the value of the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> property if the relative path is exactly a tilde (~).  
   
  The <xref:System.Web.VirtualPathUtility.Combine%2A> method uses the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> property value rather than the base path, if the relative path starts with a tilde and a slash mark (~/); otherwise, the <xref:System.Web.VirtualPathUtility.Combine%2A> method uses the base path.  
   
@@ -111,6 +113,8 @@
  -or-  
   
  <paramref name="basePath" /> is <see langword="null" /> or an empty string.</exception>
+        <altmember cref="P:System.Web.HttpRuntime.AppDomainAppVirtualPath" />
+        <altmember cref="M:System.Web.Hosting.VirtualPathProvider.CombineVirtualPaths(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectory">
@@ -156,6 +160,8 @@
  \- or -  
   
  <paramref name="virtualPath" /> is <see langword="null" /> or an empty string.</exception>
+        <altmember cref="M:System.Web.VirtualPathUtility.GetExtension(System.String)" />
+        <altmember cref="M:System.Web.VirtualPathUtility.GetFileName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetExtension">
@@ -195,6 +201,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="virtualPath" /> contains one or more characters that are not valid, as defined in <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
+        <altmember cref="M:System.Web.VirtualPathUtility.GetDirectory(System.String)" />
+        <altmember cref="M:System.Web.VirtualPathUtility.GetFileName(System.String)" />
+        <altmember cref="M:System.IO.Path.GetExtension(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetFileName">
@@ -234,6 +243,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="virtualPath" /> contains one or more characters that are not valid, as defined in <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
+        <altmember cref="M:System.Web.VirtualPathUtility.GetExtension(System.String)" />
+        <altmember cref="M:System.Web.VirtualPathUtility.GetDirectory(System.String)" />
+        <altmember cref="M:System.IO.Path.GetFileName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsAbsolute">
@@ -274,6 +286,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.HttpRequest.Path" />
+        <altmember cref="M:System.Web.VirtualPathUtility.IsAppRelative(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsAppRelative">
@@ -317,6 +331,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.VirtualPathUtility.IsAbsolute(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MakeRelative">
@@ -358,6 +373,7 @@
  \- or -  
   
  <paramref name="toPath" /> is not rooted.</exception>
+        <altmember cref="M:System.Uri.MakeRelative(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveTrailingSlash">
@@ -387,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.VirtualPathUtility.AppendTrailingSlash(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToAbsolute">
@@ -427,6 +444,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="virtualPath" /> is not rooted.</exception>
         <exception cref="T:System.Web.HttpException">A leading double period (..) is used to exit above the top directory.</exception>
+        <altmember cref="P:System.Web.HttpRuntime.AppDomainAppVirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="ToAbsolute">
@@ -469,6 +487,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="applicationPath" /> is not rooted.</exception>
         <exception cref="T:System.Web.HttpException">A leading double period (..) is used in the application path to exit above the top directory.</exception>
+        <altmember cref="P:System.Web.HttpRuntime.AppDomainAppVirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="ToAppRelative">
@@ -512,6 +531,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="virtualPath" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.VirtualPathUtility.ToAppRelative(System.String,System.String)" />
+        <altmember cref="P:System.Web.HttpRuntime.AppDomainAppVirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="ToAppRelative">
@@ -543,7 +564,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.VirtualPathUtility.ToAppRelative(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToAppRelative">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a virtual path into an application-relative path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToAbsolute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a virtual path to an application absolute path.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

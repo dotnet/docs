@@ -122,6 +122,7 @@
       <Docs>
         <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <Member MemberName="GetAllReplicationNeighbors">
@@ -143,6 +144,7 @@
         <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this object.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -164,6 +166,7 @@
         <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory server.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationConnectionFailures">
@@ -185,6 +188,7 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" /> object that contains the replication connection failures for this directory server.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationCursors">
@@ -209,6 +213,7 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" /> that contains the replication cursor information.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationMetadata">
@@ -233,6 +238,7 @@
         <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" /> object that contains the replication metadata for the specified object.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationNeighbors">
@@ -257,6 +263,7 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this object.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationOperationInformation">
@@ -278,6 +285,7 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" /> object that contains the current and pending replication operations.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
       </Docs>
     </Member>
     <Member MemberName="InboundConnections">
@@ -393,6 +401,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" /> object that contains the outbound replication connections for this directory server.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" />
       </Docs>
     </Member>
     <Member MemberName="Partitions">
@@ -413,6 +422,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection" /> object that contains the distinguished names of the partitions on this directory server.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection" />
       </Docs>
     </Member>
     <Member MemberName="SiteName">
@@ -478,6 +488,7 @@
         <summary>Causes this directory server to synchronize the specified partition with all other directory servers in the same site that hosts the partition.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromServer">
@@ -548,5 +559,15 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources that are used by the object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

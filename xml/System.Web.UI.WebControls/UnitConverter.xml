@@ -22,10 +22,13 @@
 >  This converter can convert only a string to <xref:System.Web.UI.WebControls.Unit> and a <xref:System.Web.UI.WebControls.Unit> to a string.  
   
 > [!CAUTION]
->  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=fullName> base class.  
+>  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=nameWithType>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=nameWithType> base class.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Unit" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

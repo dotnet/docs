@@ -263,7 +263,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
     </Member>
     <Member MemberName="TryConvert&lt;TResult&gt;">
       <MemberSignature Language="C#" Value="public static bool TryConvert&lt;TResult&gt; (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,TResult&gt;&gt; expression, out System.Activities.Activity&lt;TResult&gt; result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryConvert&lt;TResult&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !!TResult&gt;&gt; expression, class System.Activities.Activity`1&lt;!!TResult&gt; result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryConvert&lt;TResult&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !!TResult&gt;&gt; expression, [out] class System.Activities.Activity`1&lt;!!TResult&gt;&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ExpressionServices.TryConvert``1(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,``0}},System.Activities.Activity{``0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -299,7 +299,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
     </Member>
     <Member MemberName="TryConvertReference&lt;TResult&gt;">
       <MemberSignature Language="C#" Value="public static bool TryConvertReference&lt;TResult&gt; (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,TResult&gt;&gt; expression, out System.Activities.Activity&lt;System.Activities.Location&lt;TResult&gt;&gt; result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryConvertReference&lt;TResult&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !!TResult&gt;&gt; expression, class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!!TResult&gt;&gt; result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryConvertReference&lt;TResult&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !!TResult&gt;&gt; expression, [out] class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!!TResult&gt;&gt;&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ExpressionServices.TryConvertReference``1(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,``0}},System.Activities.Activity{System.Activities.Location{``0}}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

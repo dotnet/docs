@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetCORVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCORVersion function [.NET Framework hosting]"
 ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
@@ -29,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetCORVersion Function
 Returns the version number of the common language runtime (CLR) that is running in the current process.  

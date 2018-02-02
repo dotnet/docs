@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetReason"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetReason method [.NET Framework debugging]"
   - "ICorDebugChain::GetReason method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugChain::GetReason Method
 Gets the reason for the genesis of this calling chain.  

@@ -90,6 +90,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Navigation.PageFunction`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -520,6 +521,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" />
       </Docs>
     </Member>
     <Member MemberName="KeepAliveProperty">
@@ -657,10 +659,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Controls.Control.OnTemplateChanged%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Controls.Control.OnTemplateChanged%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Page.Template" />
       </Docs>
     </Member>
     <Member MemberName="OnVisualParentChanged">
@@ -1015,7 +1018,7 @@
   
 -   The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page.  
   
- If you have associated a <xref:System.Windows.Navigation.CustomContentState> object with a piece of content in navigation history, you can specify the name that appears in the navigation history entry by overriding <xref:System.Windows.Navigation.CustomContentState.JournalEntryName%2A?displayProperty=fullName>.  
+ If you have associated a <xref:System.Windows.Navigation.CustomContentState> object with a piece of content in navigation history, you can specify the name that appears in the navigation history entry by overriding <xref:System.Windows.Navigation.CustomContentState.JournalEntryName%2A?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_PageTitle"></a>   
 ## Dependency Property Information  
@@ -1145,7 +1148,7 @@
   
 -   The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page.  
   
- If you have associated a <xref:System.Windows.Navigation.CustomContentState> object with a piece of content in navigation history, you can specify the name value of a navigation history element by overriding <xref:System.Windows.Navigation.CustomContentState.JournalEntryName%2A?displayProperty=fullName>.  
+ If you have associated a <xref:System.Windows.Navigation.CustomContentState> object with a piece of content in navigation history, you can specify the name value of a navigation history element by overriding <xref:System.Windows.Navigation.CustomContentState.JournalEntryName%2A?displayProperty=nameWithType>.  
   
    
   

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::EnumerateArguments"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugILFrame::EnumerateArguments method [.NET Framework debugging]"
   - "EnumerateArguments method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame::EnumerateArguments Method
 Gets an enumerator for the arguments in this frame.  

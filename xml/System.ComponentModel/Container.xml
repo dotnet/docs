@@ -40,6 +40,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IContainer" />
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.Component" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +108,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="component" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.Container.Remove(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -154,6 +158,7 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not unique.</exception>
+        <altmember cref="M:System.ComponentModel.Container.Remove(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="Components">
@@ -313,7 +318,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -347,7 +352,7 @@
 ## Remarks  
  This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -385,10 +390,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of this method returns the current instance of the class if `service` is an <xref:System.ComponentModel.IContainer>; otherwise, it returns `null`. You can override this method to provide a custom implementation to return a service object. For more information, see the <xref:System.IServiceProvider.GetService%2A?displayProperty=fullName> method.  
+ The default implementation of this method returns the current instance of the class if `service` is an <xref:System.ComponentModel.IContainer>; otherwise, it returns `null`. You can override this method to provide a custom implementation to return a service object. For more information, see the <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -426,6 +432,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Container.Add(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveWithoutUnsiting">
@@ -463,6 +470,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Container.Add(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="ValidateName">
@@ -506,7 +514,28 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not unique.</exception>
+        <altmember cref="M:System.ComponentModel.Container.Add(System.ComponentModel.IComponent,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.ComponentModel.Component" /> to the <see cref="T:System.ComponentModel.Container" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Container" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

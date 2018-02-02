@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::CallFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval::CallFunction method [.NET Framework debugging]"
   - "CallFunction method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::CallFunction Method
 Sets up a call to the specified function.  

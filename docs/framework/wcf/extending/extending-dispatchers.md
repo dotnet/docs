@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "dispatcher extensions [WCF]"
 ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Dispatchers
 Dispatchers are responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Dispatcher extensions allow you to modify this processing.  You can implement message or parameter inspectors that inspect or modify the contents of messages or parameters.  You can change the way messages are routed to operations or provide some other functionality.  
@@ -52,7 +54,7 @@ Dispatchers are responsible for pulling incoming messages out of the underlying 
   
 -   Custom Message Transformations. Users can apply certain transformations to the message in the runtime (for example, for versioning). This can be accomplished, again, with the message interceptor interfaces.  
   
--   Custom Data Model. Users can have a data serialization model other than those supported by default in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>, and raw messages). This can be done by implement the message formatter interfaces. For an example, see [Operation Formatter and Operation Selector](../../../../docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
+-   Custom Data Model. Users can have a data serialization model other than those supported by default in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and raw messages). This can be done by implement the message formatter interfaces. For an example, see [Operation Formatter and Operation Selector](../../../../docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
   
 -   Custom Parameter Validation. Users can enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces.  
   
@@ -82,9 +84,9 @@ Dispatchers are responsible for pulling incoming messages out of the underlying 
   
  There are four main areas of dispatcher extensibility exposed by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class:  
   
-1.  Channel components use the properties of the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and those of the associated channel dispatcher returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ChannelDispatcher%2A> property to customize how the channel dispatcher accepts and closes channels. This category includes the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers%2A> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers%2A>properties.  
+1.  Channel components use the properties of the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and those of the associated channel dispatcher returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ChannelDispatcher%2A> property to customize how the channel dispatcher accepts and closes channels. This category includes the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers%2A> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers%2A> properties.  
   
-2.  Message components are customized for each message processed. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations%2A>, and the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A>properties.  
+2.  Message components are customized for each message processed. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations%2A>, and the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A> properties.  
   
 3.  Instance components customize the creation, lifetime, and disposal of instances of the service type. For more information about service object lifetimes, see the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextInitializers%2A> and the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> properties.  
   
@@ -134,8 +136,8 @@ Dispatchers are responsible for pulling incoming messages out of the underlying 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> property enables you to insert a custom parameter inspector that you can use to inspect or modify parameters and return values.  
   
 ## See Also  
- <xref:System.ServiceModel.Dispatcher.DispatchRuntime>   
- <xref:System.ServiceModel.Dispatcher.DispatchOperation>   
- [How to: Inspect and Modify Messages on the Service](../../../../docs/framework/wcf/extending/how-to-inspect-and-modify-messages-on-the-service.md)   
- [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)   
+ <xref:System.ServiceModel.Dispatcher.DispatchRuntime>  
+ <xref:System.ServiceModel.Dispatcher.DispatchOperation>  
+ [How to: Inspect and Modify Messages on the Service](../../../../docs/framework/wcf/extending/how-to-inspect-and-modify-messages-on-the-service.md)  
+ [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)  
  [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md)

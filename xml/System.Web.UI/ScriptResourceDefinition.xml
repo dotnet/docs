@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used in conjunction with the <xref:System.Web.UI.ScriptManager.EnableCdnFallback%2A?displayProperty=fullName> property to render inline script that will revert to loading the library from a local server location if the script fails to load from the CDN.  
+ This property is used in conjunction with the <xref:System.Web.UI.ScriptManager.EnableCdnFallback%2A?displayProperty=nameWithType> property to render inline script that will revert to loading the library from a local server location if the script fails to load from the CDN.  
   
  For script libraries from Microsoft, this value is already set. If you want to register a script yourself and get CDN fallback support, you would set this property to an expression. For example, to test whether a jQuery library has been loaded, you can use an expression like the following:  
   

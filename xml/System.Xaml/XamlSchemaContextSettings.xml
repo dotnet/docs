@@ -68,10 +68,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A> in the constructed schema context. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly part of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>.  
+ The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A> in the constructed schema context. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly part of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces" />
       </Docs>
     </Member>
     <Member MemberName="SupportMarkupExtensionsWithDuplicateArity">
@@ -100,5 +101,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContextSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

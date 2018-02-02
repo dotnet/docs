@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.TraceListenerCollection> list is used to specify the output listeners for the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> and the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName> collections. You cannot create an instance of this class.  
+ The <xref:System.Diagnostics.TraceListenerCollection> list is used to specify the output listeners for the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> and the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType> collections. You cannot create an instance of this class.  
   
  This list is thread-safe, however the methods used to access the list and the enumerator do not take synchronization locks. Instead, the collection is copied, the copy is modified, and a reference is set to the copy of the collection. Methods like <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> modify the elements in the collection.  
   
@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that writes to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+ The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that writes to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic Trace.Listeners Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Trace.Listeners Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CS/source.cs#1)]
@@ -49,6 +49,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.TraceListener" />
+    <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+    <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+    <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -84,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that outputs to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+ The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that outputs to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CS/source.cs#1)]
@@ -92,6 +98,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -125,6 +138,13 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -158,6 +178,13 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -186,6 +213,13 @@
       <Docs>
         <summary>Clears all the listeners from the list.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -226,6 +260,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -259,6 +300,13 @@
         <param name="index">The starting index number in the current list to copy from.</param>
         <summary>Copies a section of the current <see cref="T:System.Diagnostics.TraceListenerCollection" /> list to the specified array at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -287,6 +335,13 @@
         <summary>Gets the number of listeners in the list.</summary>
         <value>The number of listeners in the list.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -316,6 +371,13 @@
         <summary>Gets an enumerator for this list.</summary>
         <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -348,6 +410,13 @@
         <summary>Gets the index of the specified listener.</summary>
         <returns>The index of the listener, if it can be found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -393,6 +462,13 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not a valid index in the list.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="listener" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -433,6 +509,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -472,6 +555,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -503,6 +593,13 @@
         <param name="listener">A <see cref="T:System.Diagnostics.TraceListener" /> to remove from the list.</param>
         <summary>Removes from the collection the specified <see cref="T:System.Diagnostics.TraceListener" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -541,6 +638,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -580,6 +684,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not a valid index in the list.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -977,5 +1088,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds multiple <see cref="T:System.Diagnostics.TraceListener" /> objects to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the specified <see cref="T:System.Diagnostics.TraceListener" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a specific <see cref="T:System.Diagnostics.TraceListener" /> from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

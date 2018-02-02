@@ -1,6 +1,6 @@
 ---
 title: Get started with F# with command-line tools
-description: Learn how to use F# with the cross-platform .NET Core CLI.
+description: Learn how to use F# on any OS (Windows, MacOS, Linux) with the cross-platform .NET Core CLI.
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp
 ms.author: phcart
@@ -14,7 +14,7 @@ ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 
 # Get started with F# with the .NET Core CLI
 
-This article covers how you can get started with using F# on .NET Core. It will go through building a multi-project solution with a Class Library that is called by a Console Application.
+This article covers how you can get started on any OS (Windows, macOS, or Linux) by using F# with the .NET Core CLI. It will go through building a multi-project solution with a Class Library that is called by a Console Application.
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ Add the `Library` project to the `FSNetCore` solution using the `dotnet sln add`
 dotnet sln add src/Library/Library.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
+Restore the NuGet dependencies, `dotnet restore` ([see note](#dotnet-restore-note)) and run `dotnet build` to build the project.
 
 ### Writing a Console Application which Consumes the Class Library
 
@@ -134,7 +134,7 @@ Add the `App` project to the `FSNetCore` solution using the `dotnet sln add` com
 dotnet sln add src/App/App.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
+Restore the NuGet dependencies, `dotnet restore` ([see note](#dotnet-restore-note)) and run `dotnet build` to build the project.
 
 Change directory to the `src/App` console project and run the project passing `Hello World` as arguments.
 
@@ -151,3 +151,5 @@ Nice command-line arguments! Here's what JSON.NET has to say about them:
 I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
 I used to be World but now I'm ""World"" thanks to JSON.NET!
 ```
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

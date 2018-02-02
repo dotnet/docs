@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetName method, ISymUnmanagedVariable interface [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetName method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedVariable::GetName Method
 Gets the name of this variable.  

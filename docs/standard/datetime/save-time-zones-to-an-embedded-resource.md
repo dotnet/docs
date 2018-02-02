@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "time zones [.NET Framework], saving"
   - "time zone objects [.NET Framework], serializing"
@@ -17,6 +20,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Save time zones to an embedded resource
 
@@ -46,11 +52,11 @@ In addition to a resource file that is compiled with the application, several ot
 
 4. Instantiate a <xref:System.Resources.ResXResourceWriter> object by passing the <xref:System.IO.StreamWriter> object to the <xref:System.Resources.ResXResourceWriter> class constructor.
 
-5. Pass the time zone's serialized string to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=fullName> method.
+5. Pass the time zone's serialized string to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method.
 
-6. Call the <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=fullName> method.
+6. Call the <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType> method.
 
-7. Call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=fullName> method.
+7. Call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method.
 
 8. Close the <xref:System.IO.StreamWriter> object by calling its <xref:System.IO.StreamWriter.Close%2A> method.
 
@@ -67,7 +73,7 @@ The following example serializes a <xref:System.TimeZoneInfo> object that repres
 
 This example serializes <xref:System.TimeZoneInfo> objects so that they are available in a resource file at compile time.
 
-Because the <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=fullName> method adds complete header information to a .NET XML resource file, it cannot be used to add resources to an existing file. The example handles this by checking for the SerializedTimeZones.resx file and, if it exists, storing all of its resources other than the two serialized time zones to a generic <xref:System.Collections.Generic.Dictionary%602> object. The existing file is then deleted and the existing resources are added to a new SerializedTimeZones.resx file. The serialized time zone data is also added to this file.
+Because the <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType> method adds complete header information to a .NET XML resource file, it cannot be used to add resources to an existing file. The example handles this by checking for the SerializedTimeZones.resx file and, if it exists, storing all of its resources other than the two serialized time zones to a generic <xref:System.Collections.Generic.Dictionary%602> object. The existing file is then deleted and the existing resources are added to a new SerializedTimeZones.resx file. The serialized time zone data is also added to this file.
 
 The key (or **Name**) fields of resources should not contain embedded spaces. The <xref:System.String.Replace%28System.String%2CSystem.String%29> method is called to remove all embedded spaces in the time zone identifiers before they are assigned to the resource file.
 

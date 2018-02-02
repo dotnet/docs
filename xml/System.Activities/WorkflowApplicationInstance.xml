@@ -131,7 +131,7 @@
     </Member>
     <Member MemberName="CanApplyUpdate">
       <MemberSignature Language="C#" Value="public bool CanApplyUpdate (System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, out System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; activitiesBlockingUpdate);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanApplyUpdate(class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; activitiesBlockingUpdate) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanApplyUpdate(class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, [out] class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp; activitiesBlockingUpdate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationInstance.CanApplyUpdate(System.Activities.DynamicUpdate.DynamicUpdateMap,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -229,5 +229,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous abandon operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Abandon">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes the state machine to transition to the abandoned state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

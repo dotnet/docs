@@ -27,10 +27,9 @@
   
  The <xref:System.Windows.Markup.XmlnsDictionary> adds the concept of scope for a XAML namespace. A default <xref:System.Collections.IDictionary> might contain prefix keys and XML namespace URI values. The scope concept in <xref:System.Windows.Markup.XmlnsDictionary> parallels the XML concept that a prefix might be redefined. If so, the redefinition only applies at that level or below in a DOM view of the XML (the previous definition applies at higher level in the DOM). The scope concept is mostly abstracted away in the <xref:System.Windows.Markup.XmlnsDictionary> API, such that you can call APIs such as <xref:System.Windows.Markup.XmlnsDictionary.LookupNamespace%2A> without being concerned about scope. However, <xref:System.Windows.Markup.XmlnsDictionary> does expose <xref:System.Windows.Markup.XmlnsDictionary.PushScope%2A> and <xref:System.Windows.Markup.XmlnsDictionary.PopScope%2A> so that a custom <xref:System.Windows.Markup.ParserContext> implementation that changes scope can synchronize with the scope for the <xref:System.Windows.Markup.XmlnsDictionary>.  
   
-<a name="xamlTextUsage_XmlnsDictionary"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.ResourceDictionary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After initial type-checking, this implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Add%2A?displayProperty=fullName>.  
+ After initial type-checking, this implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Add%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -456,15 +455,7 @@
         <param name="prefix">The prefix from which to get or set the associated XML namespace URI.</param>
         <summary>Gets or sets the XAML namespace URI associated with the specified prefix.</summary>
         <value>The corresponding XAML namespace URI.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Object"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="prefix" /> is not a string  
   
@@ -522,15 +513,7 @@
       <Docs>
         <summary>Gets a collection of all the keys in the <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
         <value>The collection of all the keys in the dictionary.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Keys"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupNamespace">
@@ -662,7 +645,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Remove%28System.String%29?displayProperty=fullName>.  
+ This implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Remove%28System.String%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -777,6 +760,7 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.GetEnumerator" />.</summary>
         <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Markup.XmlnsDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -816,5 +800,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a prefix-URI pair to this <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the entries in the <see cref="T:System.Windows.Markup.XmlnsDictionary" /> to a specified array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the item with the specified prefix key from the <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the XML namespace URI associated with the specified prefix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XmlnsDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class derives from the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName> class. It describes the format of an invalid handle that uses a value of -1. Further derivations of this class (for example, file or registry handles) can specialize this further. See the <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> class for an example of a class that derives from <xref:Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid>.  
+ This class derives from the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class. It describes the format of an invalid handle that uses a value of -1. Further derivations of this class (for example, file or registry handles) can specialize this further. See the <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> class for an example of a class that derives from <xref:Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid>.  
   
 > [!WARNING]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`-`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -39,6 +39,10 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+    <altmember cref="T:Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
+    <altmember cref="T:Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid" />
+    <altmember cref="T:System.Runtime.InteropServices.CriticalHandle" />
+    <altmember cref="T:System.Runtime.InteropServices.SafeHandle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +78,7 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.SafeHandle" />
       </Docs>
     </Member>
     <Member MemberName="IsInvalid">
@@ -114,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />
+        <altmember cref="T:System.Runtime.InteropServices.SafeHandle" />
       </Docs>
     </Member>
   </Members>

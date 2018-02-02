@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 14235a65-b1c5-409d-b6cc-a979acd54bbd
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Renaming a WCF Service
 This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service.  

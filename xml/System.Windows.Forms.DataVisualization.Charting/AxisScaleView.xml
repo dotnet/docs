@@ -577,5 +577,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Zoom">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a new axis data view and/or position</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Scroll">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scrolls to a position along an axis using the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ZoomReset">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resets the zoom operations by restoring the axis data view.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

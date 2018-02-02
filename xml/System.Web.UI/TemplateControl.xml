@@ -33,7 +33,7 @@
   
 -   Use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method for data-binding against an expression containing an XPath select statement. The result is a node collection that implements the <xref:System.Collections.IEnumerable> interface.  
   
- For more information on data-binding expression, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca) and [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ For more information on data-binding expression, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca) and [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
    
   
@@ -45,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="T:System.Web.UI.UserControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +96,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.TemplateControl.CommitTransaction" />
+        <altmember cref="E:System.Web.UI.TemplateControl.Error" />
+        <altmember cref="M:System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AppRelativeVirtualPath">
@@ -131,6 +136,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The path that is set is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The path that is set is not rooted.</exception>
+        <altmember cref="M:System.Web.VirtualPathUtility.MakeRelative(System.String,System.String)" />
+        <altmember cref="P:System.Web.UI.Control.AppRelativeTemplateSourceDirectory" />
+        <altmember cref="M:System.Web.UI.Control.ResolveUrl(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AutoHandlers">
@@ -184,6 +192,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.TemplateControl.AbortTransaction" />
+        <altmember cref="E:System.Web.UI.TemplateControl.Error" />
+        <altmember cref="M:System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Construct">
@@ -219,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CreateResourceBasedLiteralControl">
@@ -252,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.LiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -283,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.PageTheme" />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -300,6 +314,8 @@
       <Docs>
         <summary>Occurs when an unhandled exception is thrown.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.TemplateControl.AbortTransaction" />
+        <altmember cref="E:System.Web.UI.TemplateControl.CommitTransaction" />
       </Docs>
     </Member>
     <Member MemberName="Eval">
@@ -327,7 +343,7 @@
 ## Remarks  
  The value of `expression` must evaluate to a public property.  
   
- The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
@@ -338,6 +354,7 @@
  \- or -  
   
  <paramref name="expression" /> is an empty string ("").</exception>
+        <altmember cref="T:System.Web.UI.DataBinder" />
       </Docs>
     </Member>
     <Member MemberName="Eval">
@@ -378,6 +395,7 @@
  \- or -  
   
  <paramref name="expression" /> is an empty string ("").</exception>
+        <altmember cref="T:System.Web.UI.DataBinder" />
       </Docs>
     </Member>
     <Member MemberName="FrameworkInitialize">
@@ -435,18 +453,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+ Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetGlobalResourceObject%2A> method to access a string named `GlobalResourceString1` from a global resource named `MyResource.resx` in the App_GlobalResources folder. The `className` parameter is `MyResource` without the .resx extension.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalResourceObject">
@@ -478,10 +497,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+ Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalResourceObject">
@@ -507,18 +527,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+ Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetLocalResourceObject%2A> method to access a string named `LocalResourceString1` from a local page resource that is located in the App_LocalResources folder.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalResourceObject">
@@ -548,10 +569,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+ Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/library/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <MemberGroup MemberName="LoadControl">
@@ -569,6 +591,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="LoadControl">
@@ -613,6 +637,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The virtual path is <see langword="null" /> or empty.</exception>
+        <altmember cref="T:System.Web.UI.UserControl" />
+        <altmember cref="M:System.Web.UI.TemplateControl.LoadControl(System.Type,System.Object[])" />
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LoadControl">
@@ -646,6 +674,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.UserControl" />
+        <altmember cref="M:System.Web.UI.TemplateControl.LoadControl(System.String)" />
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LoadTemplate">
@@ -678,6 +710,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="OnAbortTransaction">
@@ -873,11 +906,12 @@
 ## Examples  
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Button> Web server control using the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method, and then adds the result to the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `myPlaceholder`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/CS/templatecontrol_parsecontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/VB/templatecontrol_parsecontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/CS/templatecontrol_parsecontrolcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/VB/templatecontrol_parsecontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.TemplateControl.LoadControl" />
       </Docs>
     </Member>
     <Member MemberName="ParseControl">
@@ -1066,6 +1100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.TemplateControl.System#Web#UI#IFilterResolutionService#EvaluateFilter(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IFilterResolutionService.EvaluateFilter">
@@ -1096,6 +1131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.TemplateControl.System#Web#UI#IFilterResolutionService#CompareFilters(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TestDeviceFilter">
@@ -1126,6 +1162,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpContext" />
+        <altmember cref="T:System.Web.HttpRequest" />
+        <altmember cref="M:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteUTF8ResourceString">
@@ -1189,15 +1228,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPath%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  
   
  The following test XML data can be used in the preceding code example.  
   
@@ -1217,6 +1256,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -1244,11 +1284,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -1276,11 +1317,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -1310,11 +1352,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
     <Member MemberName="XPathSelect">
@@ -1340,15 +1383,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  
   
  The following test XML data can be used in the preceding code example.  
   
@@ -1367,6 +1410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
     <Member MemberName="XPathSelect">
@@ -1394,11 +1438,66 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="XPathSelect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides run-time data binding against XML-based data and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Eval">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides support for parsing and evaluating a data-binding expression against an object at run time.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="XPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides support for parsing and evaluating an XPath data-binding expression against an object at run time.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLocalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a page-level resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetGlobalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an application-level resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadStringResource">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a string resource.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

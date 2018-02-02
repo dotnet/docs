@@ -150,7 +150,7 @@
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -186,7 +186,7 @@
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>

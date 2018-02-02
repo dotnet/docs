@@ -27,11 +27,13 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewSelectEventArgs> object that is passed to the <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanging> event to cancel the select operation if the item that was selected is discontinued.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/CS/ListViewItemSelectedIndexChangingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/VB/ListViewItemSelectedIndexChangingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/CS/ListViewItemSelectedIndexChangingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/VB/ListViewItemSelectedIndexChangingVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +68,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewSelectEventArgs.NewSelectedIndex" />
       </Docs>
     </Member>
     <Member MemberName="NewSelectedIndex">
@@ -87,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanging?displayProperty=fullName> event occurs before the <xref:System.Web.UI.WebControls.ListView> control performs the select operation. Therefore, you cannot use the <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A?displayProperty=fullName> property of the control to determine the index of the new item selected by the user. The <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A?displayProperty=fullName> property contains the index of the previously selected item. To determine the index of the new item that is selected by the user, use the <xref:System.Web.UI.WebControls.ListViewSelectEventArgs.NewSelectedIndex%2A> property. You can also use this property to programmatically override the selected item index by setting it to another value.  
+ The <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanging?displayProperty=nameWithType> event occurs before the <xref:System.Web.UI.WebControls.ListView> control performs the select operation. Therefore, you cannot use the <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A?displayProperty=nameWithType> property of the control to determine the index of the new item selected by the user. The <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A?displayProperty=nameWithType> property contains the index of the previously selected item. To determine the index of the new item that is selected by the user, use the <xref:System.Web.UI.WebControls.ListViewSelectEventArgs.NewSelectedIndex%2A> property. You can also use this property to programmatically override the selected item index by setting it to another value.  
   
    
   
@@ -99,6 +102,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedIndex" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
       </Docs>
     </Member>
   </Members>

@@ -48,7 +48,7 @@
   
  In the more complex asynchronous model, your application does not block while waiting for requests and each request is processed in its own execution thread. Use the <xref:System.Net.HttpListener.BeginGetContext%2A> method to specify an application-defined method to be called for each incoming request. Within that method, call the <xref:System.Net.HttpListener.EndGetContext%2A> method to obtain the request, process it, and respond.  
   
- In either model, incoming requests are accessed using the <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=fullName> property and are represented by <xref:System.Net.HttpListenerRequest> objects. Similarly, responses are accessed using the <xref:System.Net.HttpListenerContext.Response%2A?displayProperty=fullName> property and are represented by <xref:System.Net.HttpListenerResponse> objects. These objects share some functionality with the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> objects, but the latter objects cannot be used in conjunction with <xref:System.Net.HttpListener> because they implement client, not server, behaviors.  
+ In either model, incoming requests are accessed using the <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerRequest> objects. Similarly, responses are accessed using the <xref:System.Net.HttpListenerContext.Response%2A?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerResponse> objects. These objects share some functionality with the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> objects, but the latter objects cannot be used in conjunction with <xref:System.Net.HttpListener> because they implement client, not server, behaviors.  
   
  An <xref:System.Net.HttpListener> can require client authentication. You can either specify a particular scheme to use for authentication, or you can specify a delegate that determines the scheme to use. You must require some form of authentication to obtain information about the client's identity. For additional information, see the <xref:System.Net.HttpListenerContext.User%2A>, <xref:System.Net.HttpListener.AuthenticationSchemes%2A>, and <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> properties.  
   
@@ -190,7 +190,7 @@
 ## Remarks  
  The <xref:System.Net.HttpListener> uses the specified scheme to authenticate all incoming requests. The <xref:System.Net.HttpListener.GetContext%2A> and <xref:System.Net.HttpListener.EndGetContext%2A> methods return an incoming client request only if the <xref:System.Net.HttpListener> successfully authenticates the request.  
   
- You can interrogate the identity of a successfully authenticated client by using the <xref:System.Net.HttpListenerContext.User%2A?displayProperty=fullName> property.  
+ You can interrogate the identity of a successfully authenticated client by using the <xref:System.Net.HttpListenerContext.User%2A?displayProperty=nameWithType> property.  
   
  If you want an <xref:System.Net.HttpListener> object to use different authentication mechanisms based on characteristics of the requests it receives (for example, the request's <xref:System.Net.HttpListenerRequest.Url%2A> or <xref:System.Net.HttpListenerRequest.UserHostName%2A> property), you must implement a method that chooses the authentication scheme. For instructions about how to do this, see the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property documentation.  
   
@@ -241,7 +241,7 @@
 > [!NOTE]
 >  If you want the same authentication protocol to be used for all requests handled by a particular instance of <xref:System.Net.HttpListener>, you do not need to set this property. To specify a protocol to be used for all client requests, use the <xref:System.Net.HttpListener.AuthenticationSchemes%2A> property.  
   
- If the client has not specified authentication information in its headers, the <xref:System.Net.HttpListener> calls the specified delegate for each unauthenticated incoming request to determine which, if any, protocol to use to authenticate the client. The <xref:System.Net.HttpListener.GetContext%2A> and <xref:System.Net.HttpListener.EndGetContext%2A> methods return an incoming request only if the <xref:System.Net.HttpListener> successfully authenticated the request. If a request cannot be authenticated, the <xref:System.Net.HttpListener> automatically sends back a 401 response. You can get the identity of a successfully authenticated client using the <xref:System.Web.HttpRequest.LogonUserIdentity%2A?displayProperty=fullName> property.  
+ If the client has not specified authentication information in its headers, the <xref:System.Net.HttpListener> calls the specified delegate for each unauthenticated incoming request to determine which, if any, protocol to use to authenticate the client. The <xref:System.Net.HttpListener.GetContext%2A> and <xref:System.Net.HttpListener.EndGetContext%2A> methods return an incoming request only if the <xref:System.Net.HttpListener> successfully authenticated the request. If a request cannot be authenticated, the <xref:System.Net.HttpListener> automatically sends back a 401 response. You can get the identity of a successfully authenticated client using the <xref:System.Web.HttpRequest.LogonUserIdentity%2A?displayProperty=nameWithType> property.  
   
  The ability to delegate the choice of authentication protocol to an application-specific method is useful if you want an instance of <xref:System.Net.HttpListener> to use different authentication protocols depending on the characteristics of the requests it receives (for example, the request's <xref:System.Net.HttpListenerRequest.Url%2A> or <xref:System.Net.HttpListenerRequest.UserHostAddress%2A> property).  
   
@@ -433,6 +433,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="EndGetContext">
@@ -537,6 +542,11 @@
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" /> property after the <see cref="M:System.Net.HttpListener.Start" /> method was already called.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement" /> property was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="P:System.Net.HttpListener.DefaultServiceNames" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="ExtendedProtectionSelectorDelegate">
@@ -582,6 +592,11 @@
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" /> property after the <see cref="M:System.Net.HttpListener.Start" /> method was already called.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">An attempt was made to set the <see cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" /> property on a platform that does not support extended protection.</exception>
+        <altmember cref="P:System.Net.HttpListener.DefaultServiceNames" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="GetContext">
@@ -675,6 +690,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListenerContext" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreWriteExceptions">

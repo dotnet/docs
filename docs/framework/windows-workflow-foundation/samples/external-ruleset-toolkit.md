@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a306d283-a031-475e-aa01-9ae86e7adcb0
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # External Ruleset Toolkit
 Normally when rules are used within a workflow application, the rules are part of the assembly. In some scenarios, you may want to maintain the RuleSets separately from the assembly so that they can be updated without rebuilding and deploying the workflow assembly. This sample allows you to manage and edit RuleSets in a database and access those RuleSets from a workflow at runtime. This enables running workflow instances to automatically incorporate RuleSet changes.  
@@ -138,6 +140,4 @@ Normally when rules are used within a workflow application, the rules are part o
 10. You can now run the `RuleSetToolkitUsageSample` project as you would any other workflow console application. Press F5 or Ctrl+F5 within [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] or run the RuleSetToolkitUsageSample.exe file directly.  
   
     > [!NOTE]
-    >  You must close the RuleSet tool to recompile the usage sample, because the tool loads the usage sample assembly.  
-  
-## See Also
+    >  You must close the RuleSet tool to recompile the usage sample, because the tool loads the usage sample assembly.

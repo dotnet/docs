@@ -29,7 +29,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SharingBoundaryAttribute (string[] sharingBoundaryNames);" />
+      <MemberSignature Language="C#" Value="public SharingBoundaryAttribute (params string[] sharingBoundaryNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] sharingBoundaryNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.SharingBoundaryAttribute.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>

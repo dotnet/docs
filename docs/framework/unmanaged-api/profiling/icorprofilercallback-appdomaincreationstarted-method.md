@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::AppDomainCreationStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AppDomainCreationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainCreationStarted method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::AppDomainCreationStarted Method
 Notifies the profiler that an application domain is being created.  

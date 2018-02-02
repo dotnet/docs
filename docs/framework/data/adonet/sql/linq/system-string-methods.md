@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ce307f14-87e6-4816-8694-8a4147f6b784
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # System.String Methods
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the following <xref:System.String> methods.  
@@ -29,27 +31,27 @@ manager: "jhubbard"
   
 |Unsupported System.String Static Methods|  
 |----------------------------------------------|  
-|<xref:System.String.Copy%28System.String%29?displayProperty=fullName>|  
-|<xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName>|  
-|<xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=fullName>|  
-|<xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName>|  
-|<xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29?displayProperty=fullName>|  
-|<xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=fullName>|  
-|<xref:System.String.CompareOrdinal%28System.String%2CSystem.String%29?displayProperty=fullName>|  
-|<xref:System.String.CompareOrdinal%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName>|  
-|<xref:System.String.Format%2A?displayProperty=fullName>|  
-|<xref:System.String.Join%2A?displayProperty=fullName>|  
+|<xref:System.String.Copy%28System.String%29?displayProperty=nameWithType>|  
+|<xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=nameWithType>|  
+|<xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType>|  
+|<xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType>|  
+|<xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29?displayProperty=nameWithType>|  
+|<xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType>|  
+|<xref:System.String.CompareOrdinal%28System.String%2CSystem.String%29?displayProperty=nameWithType>|  
+|<xref:System.String.CompareOrdinal%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType>|  
+|<xref:System.String.Format%2A?displayProperty=nameWithType>|  
+|<xref:System.String.Join%2A?displayProperty=nameWithType>|  
   
 ## Unsupported System.String Non-static Methods  
   
 |Unsupported System.String Non-static Methods|  
 |---------------------------------------------------|  
-|<xref:System.String.IndexOfAny%28System.Char%5B%5D%29?displayProperty=fullName>|  
-|<xref:System.String.Split%2A?displayProperty=fullName>|  
-|<xref:System.String.ToCharArray?displayProperty=fullName>|  
-|<xref:System.String.ToUpper%28System.Globalization.CultureInfo%29?displayProperty=fullName>|  
-|<xref:System.String.TrimEnd%28System.Char%5B%5D%29?displayProperty=fullName>|  
-|<xref:System.String.TrimStart%28System.Char%5B%5D%29?displayProperty=fullName>|  
+|<xref:System.String.IndexOfAny%28System.Char%5B%5D%29?displayProperty=nameWithType>|  
+|<xref:System.String.Split%2A?displayProperty=nameWithType>|  
+|<xref:System.String.ToCharArray?displayProperty=nameWithType>|  
+|<xref:System.String.ToUpper%28System.Globalization.CultureInfo%29?displayProperty=nameWithType>|  
+|<xref:System.String.TrimEnd%28System.Char%5B%5D%29?displayProperty=nameWithType>|  
+|<xref:System.String.TrimStart%28System.Char%5B%5D%29?displayProperty=nameWithType>|  
   
 ## Differences from .NET  
   

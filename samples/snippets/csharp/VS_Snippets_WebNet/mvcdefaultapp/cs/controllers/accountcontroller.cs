@@ -238,7 +238,7 @@ namespace MvcApplication1.Controllers
 
         private static string ErrorCodeToString(MembershipCreateStatus createStatus)
         {
-            // See http://msdn.microsoft.com/en-us/library/system.web.security.membershipcreatestatus.aspx for
+            // See http://msdn.microsoft.com/library/system.web.security.membershipcreatestatus.aspx for
             // a full list of status codes.
             switch (createStatus)
             {
@@ -246,13 +246,13 @@ namespace MvcApplication1.Controllers
                     return "Username already exists. Please enter a different user name.";
 
                 case MembershipCreateStatus.DuplicateEmail:
-                    return "A username for that e-mail address already exists. Please enter a different e-mail address.";
+                    return "A username for that email address already exists. Please enter a different email address.";
 
                 case MembershipCreateStatus.InvalidPassword:
                     return "The password provided is invalid. Please enter a valid password value.";
 
                 case MembershipCreateStatus.InvalidEmail:
-                    return "The e-mail address provided is invalid. Please check the value and try again.";
+                    return "The email address provided is invalid. Please check the value and try again.";
 
                 case MembershipCreateStatus.InvalidAnswer:
                     return "The password retrieval answer provided is invalid. Please check the value and try again.";

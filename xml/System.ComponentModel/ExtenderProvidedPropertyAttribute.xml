@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+    <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +65,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ExtenderProvidedPropertyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -96,6 +100,9 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
+        <altmember cref="M:System.Attribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ExtenderProperty">
@@ -124,6 +131,8 @@
         <summary>Gets the property that is being provided.</summary>
         <value>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> encapsulating the property that is being provided.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -153,6 +162,8 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -182,6 +193,8 @@
         <returns>
           <see langword="true" /> if this instance is the default attribute for the class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -210,6 +223,8 @@
         <summary>Gets the extender provider that is providing the property.</summary>
         <value>The <see cref="T:System.ComponentModel.IExtenderProvider" /> that is providing the property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ReceiverType">
@@ -238,6 +253,8 @@
         <summary>Gets the type of object that can receive the property.</summary>
         <value>A <see cref="T:System.Type" /> describing the type of object that can receive the property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.ProvidePropertyAttribute" />
       </Docs>
     </Member>
   </Members>

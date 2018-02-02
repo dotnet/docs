@@ -16,12 +16,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=fullName> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=fullName> events occur when the availability of the network changes.  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=nameWithType> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=nameWithType> events occur when the availability of the network changes.  
   
  <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs> contains the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +44,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=fullName> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=fullName> events occur when the availability of the network changes.  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=nameWithType> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=nameWithType> events occur when the availability of the network changes.  
   
  <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs> contains the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
       </Docs>
     </Member>
     <Member MemberName="IsNetworkAvailable">
@@ -70,12 +72,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=fullName> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=fullName> events occur when the availability of the network changes.  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=nameWithType> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=nameWithType> events occur when the availability of the network changes.  
   
  <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs> contains the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
       </Docs>
     </Member>
   </Members>

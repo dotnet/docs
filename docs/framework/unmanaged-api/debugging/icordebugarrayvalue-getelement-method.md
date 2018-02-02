@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetElement"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetElement method [.NET Framework debugging]"
   - "ICorDebugArrayValue::GetElement method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugArrayValue::GetElement Method
 Gets the value of the given array element.  

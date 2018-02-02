@@ -33,9 +33,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations of the <xref:System.Reflection.Binder> class are used by methods such as <xref:System.Type.InvokeMember%2A?displayProperty=fullName>, which selects from a set of possible members to execute, based on a set of parameter types and argument values; <xref:System.Type.GetMethod%2A?displayProperty=fullName>, which selects a method based on parameter types; and so on.  
+ Implementations of the <xref:System.Reflection.Binder> class are used by methods such as <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>, which selects from a set of possible members to execute, based on a set of parameter types and argument values; <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>, which selects a method based on parameter types; and so on.  
   
- A default implementation of the <xref:System.Reflection.Binder> class is provided by the <xref:System.Type.DefaultBinder%2A?displayProperty=fullName> property.  
+ A default implementation of the <xref:System.Reflection.Binder> class is provided by the <xref:System.Type.DefaultBinder%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -124,9 +124,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `bindingAttr` does not include <xref:System.Reflection.BindingFlags?displayProperty=fullName>, the default binder implementation provided by <xref:System.Type.DefaultBinder%2A?displayProperty=fullName> simply returns the first element of `match`. No selection is done.  
+ If `bindingAttr` does not include <xref:System.Reflection.BindingFlags.SetField?displayProperty=nameWithType>, the default binder implementation provided by <xref:System.Type.DefaultBinder%2A?displayProperty=nameWithType> simply returns the first element of `match`. No selection is done.  
   
- This method controls the binding provided by <xref:System.Type.InvokeMember%2A?displayProperty=fullName>.  
+ This method controls the binding provided by <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -137,11 +137,12 @@
  -or-  
   
  <paramref name="bindingAttr" /> includes <see cref="F:System.Reflection.BindingFlags.SetField" />, and <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="BindToMethod">
       <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodBase BindToMethod (System.Reflection.BindingFlags bindingAttr, System.Reflection.MethodBase[] match, ref object[] args, System.Reflection.ParameterModifier[] modifiers, System.Globalization.CultureInfo culture, string[] names, out object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodBase BindToMethod(valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.MethodBase[] match, object[] args, valuetype System.Reflection.ParameterModifier[] modifiers, class System.Globalization.CultureInfo culture, string[] names, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodBase BindToMethod(valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.MethodBase[] match, object[]&amp; args, valuetype System.Reflection.ParameterModifier[] modifiers, class System.Globalization.CultureInfo culture, string[] names, [out] object&amp; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.BindToMethod(System.Reflection.BindingFlags,System.Reflection.MethodBase[],System.Object[]@,System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[],System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -189,13 +190,14 @@
   
  The binder enables a client to map the array of arguments back to its original form if the argument array has been manipulated by <xref:System.Reflection.Binder.BindToMethod%2A>. Use this remap capability to get back by-reference arguments when such arguments are present. When you pass arguments by name, the binder reorders the argument array. The `state` parameter keeps track of argument reordering, thus enabling the binder's <xref:System.Reflection.Binder.ReorderArgumentArray%2A> method to reorder the argument array to its original form.  
   
- The <xref:System.Reflection.Binder.BindToMethod%2A> method is used by the <xref:System.Type.InvokeMember%2A?displayProperty=fullName> method.  
+ The <xref:System.Reflection.Binder.BindToMethod%2A> method is used by the <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">For the default binder, <paramref name="match" /> contains multiple methods that are equally good matches for <paramref name="args" />. For example, <paramref name="args" /> contains a <c>MyClass</c> object that implements the <c>IMyClass</c> interface, and <paramref name="match" /> contains a method that takes <c>MyClass</c> and a method that takes <c>IMyClass</c>.</exception>
         <exception cref="T:System.MissingMethodException">For the default binder, <paramref name="match" /> contains no methods that can accept the arguments supplied in <paramref name="args" />.</exception>
         <exception cref="T:System.ArgumentException">For the default binder, <paramref name="match" /> is <see langword="null" /> or an empty array.</exception>
+        <altmember cref="T:System.Reflection.MethodBase" />
       </Docs>
     </Member>
     <Member MemberName="CanChangeType">
@@ -290,7 +292,7 @@
     </Member>
     <Member MemberName="ReorderArgumentArray">
       <MemberSignature Language="C#" Value="public abstract void ReorderArgumentArray (ref object[] args, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReorderArgumentArray(object[] args, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReorderArgumentArray(object[]&amp; args, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.ReorderArgumentArray(System.Object[]@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -423,6 +425,7 @@
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">For the default binder, <paramref name="match" /> contains multiple properties that are equally good matches for <paramref name="returnType" /> and <paramref name="indexes" />.</exception>
         <exception cref="T:System.ArgumentException">For the default binder, <paramref name="match" /> is <see langword="null" /> or an empty array.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
       </Docs>
     </Member>
   </Members>

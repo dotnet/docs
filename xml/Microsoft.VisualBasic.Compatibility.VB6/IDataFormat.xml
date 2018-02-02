@@ -35,7 +35,7 @@
   <Members>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public void Clone (out Microsoft.VisualBasic.Compatibility.VB6.IDataFormat newObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clone(class Microsoft.VisualBasic.Compatibility.VB6.IDataFormat newObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clone([out] class Microsoft.VisualBasic.Compatibility.VB6.IDataFormat&amp; newObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Clone(Microsoft.VisualBasic.Compatibility.VB6.IDataFormat@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -66,7 +66,7 @@
     </Member>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public void Convert (int cookie, object from, out object varTo);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Convert(int32 cookie, object from, object varTo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Convert([in]int32 cookie, [in]object from, [out] object&amp; varTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Convert(System.Int32,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -101,7 +101,7 @@
     </Member>
     <Member MemberName="Default">
       <MemberSignature Language="C#" Value="public void Default (out bool fDefault);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Default(bool fDefault) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Default([out] bool&amp; fDefault) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Default(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -132,7 +132,7 @@
     </Member>
     <Member MemberName="GetBinding">
       <MemberSignature Language="C#" Value="public void GetBinding (System.Runtime.InteropServices.VarEnum vtPropHint, int rgfDataFormat, Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, ref Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO columnInfo, out Microsoft.VisualBasic.Compatibility.VB6.DBBINDING binding, out int size, out int cookie);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetBinding(valuetype System.Runtime.InteropServices.VarEnum vtPropHint, int32 rgfDataFormat, class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO columnInfo, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBBINDING binding, int32 size, int32 cookie) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetBinding([in]valuetype System.Runtime.InteropServices.VarEnum vtPropHint, [in]int32 rgfDataFormat, [in]class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, [in]valuetype Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO&amp; columnInfo, [out] valuetype Microsoft.VisualBasic.Compatibility.VB6.DBBINDING&amp; binding, [out] int32&amp; size, [out] int32&amp; cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetBinding(System.Runtime.InteropServices.VarEnum,System.Int32,Microsoft.VisualBasic.Compatibility.VB6.IRowset,Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO@,Microsoft.VisualBasic.Compatibility.VB6.DBBINDING@,System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -175,7 +175,7 @@
     </Member>
     <Member MemberName="GetData">
       <MemberSignature Language="C#" Value="public void GetData (int cookie, IntPtr from, out object varTo, out int dbStatus, object pObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetData(int32 cookie, native int from, object varTo, int32 dbStatus, object pObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetData([in]int32 cookie, [in]native int from, [out] object&amp; varTo, [out] int32&amp; dbStatus, [in]object pObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetData(System.Int32,System.IntPtr,System.Object@,System.Int32@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -214,7 +214,7 @@
     </Member>
     <Member MemberName="GetLcid">
       <MemberSignature Language="C#" Value="public void GetLcid (out int lcid);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetLcid(int32 lcid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetLcid([out] int32&amp; lcid) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetLcid(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -245,7 +245,7 @@
     </Member>
     <Member MemberName="GetRawData">
       <MemberSignature Language="C#" Value="public void GetRawData (int cookie, IntPtr from, out object varTo, out int dbStatus);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRawData(int32 cookie, native int from, object varTo, int32 dbStatus) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRawData([in]int32 cookie, [in]native int from, [out] object&amp; varTo, [out] int32&amp; dbStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetRawData(System.Int32,System.IntPtr,System.Object@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -282,7 +282,7 @@
     </Member>
     <Member MemberName="GetSubFormatType">
       <MemberSignature Language="C#" Value="public void GetSubFormatType (out int subFormatType);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetSubFormatType(int32 subFormatType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetSubFormatType([out] int32&amp; subFormatType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetSubFormatType(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -313,7 +313,7 @@
     </Member>
     <Member MemberName="ReleaseBinding">
       <MemberSignature Language="C#" Value="public void ReleaseBinding (int cookie);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseBinding(int32 cookie) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseBinding([in]int32 cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseBinding(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -344,7 +344,7 @@
     </Member>
     <Member MemberName="ReleaseData">
       <MemberSignature Language="C#" Value="public void ReleaseData (int cookie, IntPtr pv);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseData(int32 cookie, native int pv) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseData([in]int32 cookie, [in]native int pv) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseData(System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -377,7 +377,7 @@
     </Member>
     <Member MemberName="SetData">
       <MemberSignature Language="C#" Value="public void SetData (int cookie, out object from, IntPtr pVarTo, object pObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData(int32 cookie, object from, native int pVarTo, object pObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData([in]int32 cookie, [out] object&amp; from, [in]native int pVarTo, [in]object pObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetData(System.Int32,System.Object@,System.IntPtr,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -414,7 +414,7 @@
     </Member>
     <Member MemberName="SetLcid">
       <MemberSignature Language="C#" Value="public void SetLcid (int lcid);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetLcid(int32 lcid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetLcid([in]int32 lcid) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetLcid(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -445,7 +445,7 @@
     </Member>
     <Member MemberName="SetRawData">
       <MemberSignature Language="C#" Value="public void SetRawData (int cookie, object from, IntPtr pVarTo);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetRawData(int32 cookie, object from, native int pVarTo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetRawData([in]int32 cookie, [in]object from, [in]native int pVarTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetRawData(System.Int32,System.Object,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -480,7 +480,7 @@
     </Member>
     <Member MemberName="SetSubFormatType">
       <MemberSignature Language="C#" Value="public void SetSubFormatType (int subFormatType);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetSubFormatType(int32 subFormatType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetSubFormatType([in]int32 subFormatType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetSubFormatType(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

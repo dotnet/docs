@@ -37,7 +37,7 @@
   
  Instances of the <xref:System.Text.RegularExpressions.CaptureCollection> class are returned by the following properties:  
   
--   The <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property. Each member of the collection represents a substring captured by a capturing group. If a quantifier is not applied to a capturing group, the <xref:System.Text.RegularExpressions.CaptureCollection> includes a single <xref:System.Text.RegularExpressions.Capture> object that represents the same captured substring as the <xref:System.Text.RegularExpressions.Group> object. If a quantifier is applied to a capturing group, the <xref:System.Text.RegularExpressions.CaptureCollection> includes one <xref:System.Text.RegularExpressions.Capture> object for each captured substring, and the <xref:System.Text.RegularExpressions.Group> object provides information only about the last captured substring.  
+-   The <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property. Each member of the collection represents a substring captured by a capturing group. If a quantifier is not applied to a capturing group, the <xref:System.Text.RegularExpressions.CaptureCollection> includes a single <xref:System.Text.RegularExpressions.Capture> object that represents the same captured substring as the <xref:System.Text.RegularExpressions.Group> object. If a quantifier is applied to a capturing group, the <xref:System.Text.RegularExpressions.CaptureCollection> includes one <xref:System.Text.RegularExpressions.Capture> object for each captured substring, and the <xref:System.Text.RegularExpressions.Group> object provides information only about the last captured substring.  
   
 -   The `Match.Captures` property. In this case, the collection consists of a single <xref:System.Text.RegularExpressions.Capture> object that provides information about the match as a whole. That is, the <xref:System.Text.RegularExpressions.CaptureCollection> object provides the same information as the <xref:System.Text.RegularExpressions.Match> object.  
   
@@ -46,21 +46,23 @@
    
   
 ## Examples  
- The following example compares the <xref:System.Text.RegularExpressions.Capture> objects in the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> and `Match.Captures` properties. It also compares <xref:System.Text.RegularExpressions.Group> objects with the <xref:System.Text.RegularExpressions.Capture> objects in the <xref:System.Text.RegularExpressions.CaptureCollection> returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property. The example uses the following two regular expressions to find matches in a single input string:  
+ The following example compares the <xref:System.Text.RegularExpressions.Capture> objects in the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> and `Match.Captures` properties. It also compares <xref:System.Text.RegularExpressions.Group> objects with the <xref:System.Text.RegularExpressions.Capture> objects in the <xref:System.Text.RegularExpressions.CaptureCollection> returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property. The example uses the following two regular expressions to find matches in a single input string:  
   
 -   `\b\w+\W{1,2}`  
   
-     This regular expression pattern identifies a word that consists of one or more word characters, followed by either one or two non-word characters such as white space or punctuation. The regular expression does not include any capturing groups. The output from the example shows that both the <xref:System.Text.RegularExpressions.Match> object and the <xref:System.Text.RegularExpressions.CaptureCollection> objects returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> and `Match.Captures` properties contain information about the same match.  
+     This regular expression pattern identifies a word that consists of one or more word characters, followed by either one or two non-word characters such as white space or punctuation. The regular expression does not include any capturing groups. The output from the example shows that both the <xref:System.Text.RegularExpressions.Match> object and the <xref:System.Text.RegularExpressions.CaptureCollection> objects returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> and `Match.Captures` properties contain information about the same match.  
   
 -   `(\b\w+\W{1,2})+`  
   
-     This regular expression pattern identifies the words in a sentence. The pattern defines a single capturing group that consists of one or more word characters followed by one or two non-word characters. The regular expression pattern uses the `+` quantifier to match one or more occurrences of this group. The output from this example shows that the <xref:System.Text.RegularExpressions.Match> object and the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the `Match.Captures` property contain information about the same match. The second <xref:System.Text.RegularExpressions.Group> object, which corresponds to the only capturing group in the regular expression, identifies only the last captured string, whereas the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the first capturing group's <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property includes all captured substrings.  
+     This regular expression pattern identifies the words in a sentence. The pattern defines a single capturing group that consists of one or more word characters followed by one or two non-word characters. The regular expression pattern uses the `+` quantifier to match one or more occurrences of this group. The output from this example shows that the <xref:System.Text.RegularExpressions.Match> object and the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the `Match.Captures` property contain information about the same match. The second <xref:System.Text.RegularExpressions.Group> object, which corresponds to the only capturing group in the regular expression, identifies only the last captured string, whereas the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the first capturing group's <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property includes all captured substrings.  
   
  [!code-csharp[System.Text.RegularExpressions.CaptureCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.capturecollection/cs/capturecollectionex1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.CaptureCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.capturecollection/vb/capturecollectionex1.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.RegularExpressions.Capture" />
+    <altmember cref="T:System.Text.RegularExpressions.Group" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -99,7 +101,7 @@
  Because the entire collection is copied into the array starting at the given index, the destination array must be at least as large as the collection.  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=fullName> method instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=nameWithType> method instead.  
   
  ]]></format>
         </remarks>
@@ -265,10 +267,11 @@
 ## Remarks  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=fullName> property instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=nameWithType> property instead.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.CaptureCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -338,10 +341,11 @@
 ## Remarks  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=fullName> property instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=nameWithType> property instead.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.CaptureCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Add">

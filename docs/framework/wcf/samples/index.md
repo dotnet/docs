@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 89d4efce-7832-4dd5-82a8-0e574b3302f9
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation (WCF) Samples
 These samples provide instruction on various aspects of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

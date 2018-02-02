@@ -27,24 +27,6 @@ Class VbVbalrArrays
     End Sub
     '</Snippet1>
 
-    Sub Snippet2()
-        '<Snippet2>
-        Dim students(6) As Integer
-        '</Snippet2>
-
-        students(0) = 23
-        students(1) = 19
-        students(6) = 22
-
-        '<Snippet3>
-        Dim kindergarten As Integer = students(0)
-        Dim firstGrade As Integer = students(1)
-        Dim sixthGrade As Integer = students(6)
-        MsgBox("Students in kindergarten = " & CStr(kindergarten))
-        MsgBox("Students in first grade = " & CStr(firstGrade))
-        MsgBox("Students in sixth grade = " & CStr(sixthGrade))
-        '</Snippet3>
-    End Sub
 
     '<Snippet4>
     Public Sub FindAnimal()
@@ -58,34 +40,7 @@ Class VbVbalrArrays
     End Sub
     '</Snippet4>
 
-    Public Sub Snippet5()
-        '<Snippet5>
-        Dim i = 4
-        Dim j = 2
 
-        Dim numbers(10) As Integer
-        Dim matrix(5, 5) As Double
-
-        numbers(i + 1) = 0
-        matrix(3, j * 2) = j
-        '</Snippet5>
-    End Sub
-
-
-    Public Sub Snippet6()
-        '<Snippet6>
-        Dim v = 2
-        Dim i = 1
-        Dim j = 1
-        Dim k = 1
-        Dim wTotal As Double = 0.0
-        Dim sortedValues(5), rawValues(5), estimates(2, 2, 2) As Double
-        Dim lowestValue = sortedValues(0)
-        wTotal += (rawValues(v) ^ 2)
-        Dim firstGuess = estimates(i, j, k)
-        '</Snippet6>
-        MsgBox("wTotal = " & wTotal)
-    End Sub
 
     Public Sub Declarations()
         '<Snippet7>
@@ -110,33 +65,6 @@ Class VbVbalrArrays
         '<Snippet14>
         Dim twoDimensionalStrings(-1, 3) As String
         '</Snippet14>
-
-        '<Snippet10>
-        cargoWeights = New Double() {}
-        atmospherePressures = New Short(,,,) {}
-        inquiriesByYearMonthDay = New Byte()()() {}
-        '</Snippet10>
-    End Sub
-
-    Public Sub Declarations2()
-        '<Snippet12>
-        Dim cargoWeights(10) As Double
-        Dim atmospherePressures(2, 2, 4, 10) As Short
-        Dim inquiriesByYearMonthDay(20)()() As Byte
-        '</Snippet12>
-        '<Snippet11>
-        cargoWeights = New Double(10) {}
-        atmospherePressures = New Short(2, 2, 4, 10) {}
-        inquiriesByYearMonthDay = New Byte(20)()() {}
-        '</Snippet11>
-        '<Snippet13>
-        ' Assign a new array size and retain the current element values.
-        ReDim Preserve cargoWeights(20)
-        ' Assign a new array size and retain only the first five element values.
-        ReDim Preserve cargoWeights(4)
-        ' Assign a new array size and discard all current element values.
-        ReDim cargoWeights(15)
-        '</Snippet13>
     End Sub
 
     Sub Snippet15()

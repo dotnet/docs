@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::EnumerateAppDomains"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::EnumerateAppDomains method [.NET Framework debugging]"
   - "EnumerateAppDomains method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::EnumerateAppDomains Method
 Enumerates all the application domains in this process.  

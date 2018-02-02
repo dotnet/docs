@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+    <altmember cref="T:System.Collections.Specialized.NameObjectCollectionBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -279,5 +281,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> collection element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

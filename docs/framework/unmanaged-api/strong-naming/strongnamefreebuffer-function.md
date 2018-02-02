@@ -21,8 +21,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameFreeBuffer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameFreeBuffer function [.NET Framework strong naming]"
 ms.assetid: eda21ecf-4734-4f92-aaba-9f34884385db
@@ -32,6 +30,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameFreeBuffer Function
 Frees memory that was allocated with a previous call to a strong name function such as [StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md), [StrongNameTokenFromPublicKey](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfrompublickey-function.md), or [StrongNameSignatureGeneration](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md).  
@@ -60,5 +60,5 @@ VOID StrongNameFreeBuffer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [StrongNameFreeBuffer Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md)   
+ [StrongNameFreeBuffer Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md)  
  [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

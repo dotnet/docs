@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "lazy initialization in .NET, introduction"
 ms.assetid: 56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b
@@ -16,6 +19,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Lazy Initialization
 *Lazy initialization* of an object means that its creation is deferred until it is first used. (For this topic, the terms *lazy initialization* and *lazy instantiation* are synonymous.) Lazy initialization is primarily used to improve performance, avoid wasteful computation, and reduce program memory requirements. These are the most common scenarios:  
@@ -35,7 +40,7 @@ manager: "wpickett"
 |<xref:System.Threading.LazyInitializer>|Provides advanced `static` (`Shared` in Visual Basic) methods for lazy initialization of objects without the overhead of a class.|  
   
 ## Basic Lazy Initialization  
- To define a lazy-initialized type, for example, `MyType`, use `Lazy<MyType>` (`Lazy(Of MyType)` in Visual Basic), as shown in the following example. If no delegate is passed in the <xref:System.Lazy%601> constructor, the wrapped type is created by using <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> when the value property is first accessed. If the type does not have a default constructor, a run-time exception is thrown.  
+ To define a lazy-initialized type, for example, `MyType`, use `Lazy<MyType>` (`Lazy(Of MyType)` in Visual Basic), as shown in the following example. If no delegate is passed in the <xref:System.Lazy%601> constructor, the wrapped type is created by using <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> when the value property is first accessed. If the type does not have a default constructor, a run-time exception is thrown.  
   
  In the following example, assume that `Orders` is a class that contains an array of `Order` objects retrieved from a database. A `Customer` object contains an instance of `Orders`, but depending on user actions, the data from the `Orders` object might not be required.  
   
@@ -78,35 +83,35 @@ manager: "wpickett"
   
 |Thread safety of the object|`LazyThreadSafetyMode` `mode` parameter|Boolean `isThreadSafe` parameter|No thread safety parameters|  
 |---------------------------------|---------------------------------------------|--------------------------------------|---------------------------------|  
-|Fully thread-safe; only one thread at a time tries to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode>|`true`|Yes.|  
-|Not thread-safe.|<xref:System.Threading.LazyThreadSafetyMode>|`false`|Not applicable.|  
-|Fully thread-safe; threads race to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode>|Not applicable.|Not applicable.|  
+|Fully thread-safe; only one thread at a time tries to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication>|`true`|Yes.|  
+|Not thread-safe.|<xref:System.Threading.LazyThreadSafetyMode.None>|`false`|Not applicable.|  
+|Fully thread-safe; threads race to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>|Not applicable.|Not applicable.|  
   
- As the table shows, specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> for the `mode` parameter is the same as specifying `true` for the `isThreadSafe` parameter, and specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> is the same as specifying `false`.  
+ As the table shows, specifying <xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication?displayProperty=nameWithType> for the `mode` parameter is the same as specifying `true` for the `isThreadSafe` parameter, and specifying <xref:System.Threading.LazyThreadSafetyMode.None?displayProperty=nameWithType> is the same as specifying `false`.  
   
- Specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> allows multiple threads to attempt to initialize the <xref:System.Lazy%601> instance. Only one thread can win this race, and all the other threads receive the value that was initialized by the successful thread. If an exception is thrown on a thread during initialization, that thread does not receive the value set by the successful thread. Exceptions are not cached, so a subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property can result in successful initialization. This differs from the way exceptions are treated in other modes, which is described in the following section. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
+ Specifying <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType> allows multiple threads to attempt to initialize the <xref:System.Lazy%601> instance. Only one thread can win this race, and all the other threads receive the value that was initialized by the successful thread. If an exception is thrown on a thread during initialization, that thread does not receive the value set by the successful thread. Exceptions are not cached, so a subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property can result in successful initialization. This differs from the way exceptions are treated in other modes, which is described in the following section. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
   
 <a name="ExceptionsInLazyObjects"></a>   
 ## Exceptions in Lazy Objects  
- As stated earlier, a <xref:System.Lazy%601> object always returns the same object or value that it was initialized with, and therefore the <xref:System.Lazy%601.Value%2A> property is read-only. If you enable exception caching, this immutability also extends to exception behavior. If a lazy-initialized object has exception caching enabled and throws an exception from its initialization method when the <xref:System.Lazy%601.Value%2A> property is first accessed, that same exception is thrown on every subsequent attempt to access the <xref:System.Lazy%601.Value%2A>property. In other words, the constructor of the wrapped type is never re-invoked, even in multithreaded scenarios. Therefore, the <xref:System.Lazy%601> object cannot throw an exception on one access and return a value on a subsequent access.  
+ As stated earlier, a <xref:System.Lazy%601> object always returns the same object or value that it was initialized with, and therefore the <xref:System.Lazy%601.Value%2A> property is read-only. If you enable exception caching, this immutability also extends to exception behavior. If a lazy-initialized object has exception caching enabled and throws an exception from its initialization method when the <xref:System.Lazy%601.Value%2A> property is first accessed, that same exception is thrown on every subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property. In other words, the constructor of the wrapped type is never re-invoked, even in multithreaded scenarios. Therefore, the <xref:System.Lazy%601> object cannot throw an exception on one access and return a value on a subsequent access.  
   
- Exception caching is enabled when you use any <xref:System.Lazy%601?displayProperty=fullName> constructor that takes an initialization method (`valueFactory` parameter); for example, it is enabled when you use the `Lazy(T)(Func(T))`constructor. If the constructor also takes a <xref:System.Threading.LazyThreadSafetyMode> value (`mode` parameter), specify <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> or <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>. Specifying an initialization method enables exception caching for these two modes. The initialization method can be very simple. For example, it might call the default constructor for `T`: `new Lazy<Contents>(() => new Contents(), mode)` in C#, or `New Lazy(Of Contents)(Function() New Contents())` in Visual Basic. If you use a <xref:System.Lazy%601?displayProperty=fullName>constructor that does not specify an initialization method, exceptions that are thrown by the default constructor for `T` are not cached. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
+ Exception caching is enabled when you use any <xref:System.Lazy%601?displayProperty=nameWithType> constructor that takes an initialization method (`valueFactory` parameter); for example, it is enabled when you use the `Lazy(T)(Func(T))`constructor. If the constructor also takes a <xref:System.Threading.LazyThreadSafetyMode> value (`mode` parameter), specify <xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication?displayProperty=nameWithType> or <xref:System.Threading.LazyThreadSafetyMode.None?displayProperty=nameWithType>. Specifying an initialization method enables exception caching for these two modes. The initialization method can be very simple. For example, it might call the default constructor for `T`: `new Lazy<Contents>(() => new Contents(), mode)` in C#, or `New Lazy(Of Contents)(Function() New Contents())` in Visual Basic. If you use a <xref:System.Lazy%601?displayProperty=nameWithType> constructor that does not specify an initialization method, exceptions that are thrown by the default constructor for `T` are not cached. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
   
 > [!NOTE]
->  If you create a <xref:System.Lazy%601> object with the `isThreadSafe` constructor parameter set to `false` or the `mode` constructor parameter set to <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>, you must access the <xref:System.Lazy%601> object from a single thread or provide your own synchronization. This applies to all aspects of the object, including exception caching.  
+>  If you create a <xref:System.Lazy%601> object with the `isThreadSafe` constructor parameter set to `false` or the `mode` constructor parameter set to <xref:System.Threading.LazyThreadSafetyMode.None?displayProperty=nameWithType>, you must access the <xref:System.Lazy%601> object from a single thread or provide your own synchronization. This applies to all aspects of the object, including exception caching.  
   
- As noted in the previous section, <xref:System.Lazy%601> objects created by specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> treat exceptions differently. With <xref:System.Threading.LazyThreadSafetyMode>, multiple threads can compete to initialize the <xref:System.Lazy%601> instance. In this case, exceptions are not cached, and attempts to access the <xref:System.Lazy%601.Value%2A> property can continue until initialization is successful.  
+ As noted in the previous section, <xref:System.Lazy%601> objects created by specifying <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType> treat exceptions differently. With <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>, multiple threads can compete to initialize the <xref:System.Lazy%601> instance. In this case, exceptions are not cached, and attempts to access the <xref:System.Lazy%601.Value%2A> property can continue until initialization is successful.  
   
  The following table summarizes the way the <xref:System.Lazy%601> constructors control exception caching.  
   
 |Constructor|Thread safety mode|Uses initialization method|Exceptions are cached|  
 |-----------------|------------------------|--------------------------------|---------------------------|  
-|Lazy(T)()|(<xref:System.Threading.LazyThreadSafetyMode>)|No|No|  
-|Lazy(T)(Func(T))|(<xref:System.Threading.LazyThreadSafetyMode>)|Yes|Yes|  
-|Lazy(T)(Boolean)|`True` (<xref:System.Threading.LazyThreadSafetyMode>) or `false` (<xref:System.Threading.LazyThreadSafetyMode>)|No|No|  
-|Lazy(T)(Func(T), Boolean)|`True` (<xref:System.Threading.LazyThreadSafetyMode>) or `false` (<xref:System.Threading.LazyThreadSafetyMode>)|Yes|Yes|  
+|Lazy(T)()|(<xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication>)|No|No|  
+|Lazy(T)(Func(T))|(<xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication>)|Yes|Yes|  
+|Lazy(T)(Boolean)|`True` (<xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication>) or `false` (<xref:System.Threading.LazyThreadSafetyMode.None>)|No|No|  
+|Lazy(T)(Func(T), Boolean)|`True` (<xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication>) or `false` (<xref:System.Threading.LazyThreadSafetyMode.None>)|Yes|Yes|  
 |Lazy(T)(LazyThreadSafetyMode)|User-specified|No|No|  
-|Lazy(T)(Func(T), LazyThreadSafetyMode)|User-specified|Yes|No if user specifies <xref:System.Threading.LazyThreadSafetyMode>; otherwise, yes.|  
+|Lazy(T)(Func(T), LazyThreadSafetyMode)|User-specified|Yes|No if user specifies <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>; otherwise, yes.|  
   
 ## Implementing a Lazy-Initialized Property  
  To implement a public property by using lazy initialization, define the backing field of the property as a <xref:System.Lazy%601>, and return the <xref:System.Lazy%601.Value%2A> property from the `get` accessor of the property.  
@@ -122,7 +127,7 @@ manager: "wpickett"
  [!code-csharp[Lazy#6](../../../samples/snippets/csharp/VS_Snippets_Misc/lazy/cs/cs_lazycodefile.cs#6)]
  [!code-vb[Lazy#6](../../../samples/snippets/visualbasic/VS_Snippets_Misc/lazy/vb/lazy_vb.vb#6)]  
   
- On all other threads, the variable will be initialized by using its default value (zero). As an alternative in the .NET Framework version 4, you can use the <xref:System.Threading.ThreadLocal%601?displayProperty=fullName> type to create an instance-based, thread-local variable that is initialized on all threads by the <xref:System.Action%601> delegate that you provide. In the following example, all threads that access `counter` will see its starting value as 1.  
+ On all other threads, the variable will be initialized by using its default value (zero). As an alternative in the .NET Framework version 4, you can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> type to create an instance-based, thread-local variable that is initialized on all threads by the <xref:System.Action%601> delegate that you provide. In the following example, all threads that access `counter` will see its starting value as 1.  
   
  [!code-csharp[Lazy#7](../../../samples/snippets/csharp/VS_Snippets_Misc/lazy/cs/cs_lazycodefile.cs#7)]
  [!code-vb[Lazy#7](../../../samples/snippets/visualbasic/VS_Snippets_Misc/lazy/vb/lazy_vb.vb#7)]  
@@ -131,7 +136,7 @@ manager: "wpickett"
   
 -   Each thread initializes the thread-local variable by using its own private data that is not accessible from other threads.  
   
--   The <xref:System.Threading.ThreadLocal%601.Value%2A?displayProperty=fullName> property is read-write, and can be modified any number of times. This can affect exception propagation, for example, one `get` operation can raise an exception but the next one can successfully initialize the value.  
+-   The <xref:System.Threading.ThreadLocal%601.Value%2A?displayProperty=nameWithType> property is read-write, and can be modified any number of times. This can affect exception propagation, for example, one `get` operation can raise an exception but the next one can successfully initialize the value.  
   
 -   If no initialization delegate is provided, <xref:System.Threading.ThreadLocal%601> will initialize its wrapped type by using the default value of the type. In this regard, <xref:System.Threading.ThreadLocal%601> is consistent with the <xref:System.ThreadStaticAttribute> attribute.  
   
@@ -141,20 +146,20 @@ manager: "wpickett"
  [!code-vb[Lazy#9](../../../samples/snippets/visualbasic/VS_Snippets_Misc/lazy/vb/lazy_vb.vb#9)]  
   
 ## Thread-Local Variables in Parallel.For and ForEach  
- When you use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=fullName> method or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method to iterate over data sources in parallel, you can use the overloads that have built-in support for thread-local data. In these methods, the thread-locality is achieved by using local delegates to create, access, and clean up the data. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md).  
+ When you use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method to iterate over data sources in parallel, you can use the overloads that have built-in support for thread-local data. In these methods, the thread-locality is achieved by using local delegates to create, access, and clean up the data. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md).  
   
 ## Using Lazy Initialization for Low-Overhead Scenarios  
- In scenarios where you have to lazy-initialize a large number of objects, you might decide that wrapping each object in a <xref:System.Lazy%601> requires too much memory or too many computing resources. Or, you might have stringent requirements about how lazy initialization is exposed. In such cases, you can use the `static` (`Shared` in Visual Basic) methods of the <xref:System.Threading.LazyInitializer?displayProperty=fullName> class to lazy-initialize each object without wrapping it in an instance of <xref:System.Lazy%601>.  
+ In scenarios where you have to lazy-initialize a large number of objects, you might decide that wrapping each object in a <xref:System.Lazy%601> requires too much memory or too many computing resources. Or, you might have stringent requirements about how lazy initialization is exposed. In such cases, you can use the `static` (`Shared` in Visual Basic) methods of the <xref:System.Threading.LazyInitializer?displayProperty=nameWithType> class to lazy-initialize each object without wrapping it in an instance of <xref:System.Lazy%601>.  
   
  In the following example, assume that, instead of wrapping an entire `Orders` object in one <xref:System.Lazy%601> object, you have lazy-initialized individual `Order` objects only if they are required.  
   
  [!code-csharp[Lazy#10](../../../samples/snippets/csharp/VS_Snippets_Misc/lazy/cs/cs_lazycodefile.cs#10)]
  [!code-vb[Lazy#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/lazy/vb/lazy_vb.vb#10)]  
   
- In this example, notice that the initialization procedure is invoked on every iteration of the loop. In multi-threaded scenarios, the first thread to invoke the initialization procedure is the one whose value is seen by all threads. Later threads also invoke the initialization procedure, but their results are not used. If this kind of potential race condition is not acceptable, use the overload of <xref:System.Threading.LazyInitializer.EnsureInitialized%2A?displayProperty=fullName> that takes a Boolean argument and a synchronization object.  
+ In this example, notice that the initialization procedure is invoked on every iteration of the loop. In multi-threaded scenarios, the first thread to invoke the initialization procedure is the one whose value is seen by all threads. Later threads also invoke the initialization procedure, but their results are not used. If this kind of potential race condition is not acceptable, use the overload of <xref:System.Threading.LazyInitializer.EnsureInitialized%2A?displayProperty=nameWithType> that takes a Boolean argument and a synchronization object.  
   
 ## See Also  
- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)   
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)   
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)   
+ [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)  
+ [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
+ [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
  [How to: Perform Lazy Initialization of Objects](../../../docs/framework/performance/how-to-perform-lazy-initialization-of-objects.md)

@@ -9,16 +9,18 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e96331e-31b6-4272-bbbd-29ed1e110460
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transaction Management Escalation
 Windows hosts a set of services and modules that together constitute a transaction manager. Transaction management escalation describes the process of migrating a transaction from one of the transaction manager's components to another.  
   
  <xref:System.Transactions> includes a transaction manager component that coordinates a transaction involving at most, a single durable resource or multiple volatile resources. Because the transaction manager uses only intra-application domain calls, it yields the best performance. Developers need not interact with the transaction manager directly. Instead, a common infrastructure that defines interfaces, common behavior, and helper classes is provided by the <xref:System.Transactions> namespace.  
   
- When you want to provide the transaction to another object in another application domain (including across process and machine boundaries) on the same computer, the <xref:System.Transactions> infrastructure automatically escalates the transaction to be managed by the Microsoft Distributed Transaction Coordinator (MSDTC). The escalation also occurs if you enlist another durable resource manager. When escalated, the transaction remains managed in its elevated state until its completion.  
+ When you want to provide the transaction to an object in another application domain (including across process and machine boundaries) on the same computer, the <xref:System.Transactions> infrastructure automatically escalates the transaction to be managed by the Microsoft Distributed Transaction Coordinator (MSDTC). The escalation also occurs if you enlist another durable resource manager. When escalated, the transaction remains managed in its elevated state until its completion.  
   
  Between the <xref:System.Transactions> transaction and MSDTC transaction, there is an intermediary type of transaction that is made available through the Promotable Single Phase Enlistment (PSPE). PSPE is another important mechanism in <xref:System.Transactions> for performance optimization. It allows a remote durable resource, located in a different application domain, process or computer, to participate in a <xref:System.Transactions> transaction without causing it to be escalated to an MSDTC transaction. For more information about PSPE, see [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md).  
   

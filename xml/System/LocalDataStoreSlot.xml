@@ -44,10 +44,12 @@
   
  The data slots are unique per thread or context; their values are not shared between the thread or context objects. Data slots can be allocated by a name or by an index number.  
   
- For more information about storing local data, see <xref:System.Threading.Thread> or <xref:System.Runtime.Remoting.Contexts.Context>. The <xref:System.LocalDataStoreSlot> class is used with methods such as <xref:System.Threading.Thread.AllocateNamedDataSlot%2A?displayProperty=fullName>, <xref:System.Runtime.Remoting.Contexts.Context.AllocateNamedDataSlot%2A?displayProperty=fullName>, <xref:System.Threading.Thread.GetData%2A?displayProperty=fullName>, and <xref:System.Runtime.Remoting.Contexts.Context.GetData%2A?displayProperty=fullName>; it does not have any methods of its own that you need to use.  
+ For more information about storing local data, see <xref:System.Threading.Thread> or <xref:System.Runtime.Remoting.Contexts.Context>. The <xref:System.LocalDataStoreSlot> class is used with methods such as <xref:System.Threading.Thread.AllocateNamedDataSlot%2A?displayProperty=nameWithType>, <xref:System.Runtime.Remoting.Contexts.Context.AllocateNamedDataSlot%2A?displayProperty=nameWithType>, <xref:System.Threading.Thread.GetData%2A?displayProperty=nameWithType>, and <xref:System.Runtime.Remoting.Contexts.Context.GetData%2A?displayProperty=nameWithType>; it does not have any methods of its own that you need to use.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.Thread" />
+    <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
   </Docs>
   <Members>
     <Member MemberName="Finalize">
@@ -78,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
   </Members>

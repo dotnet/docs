@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the stream returned by the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A?displayProperty=fullName> called with the `msg` and `headers` parameters (<xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A> (`msg`, `headers`)) on the top sink in the current sink stack. The top sink in the sink stack remains unchanged.  
+ This method returns the stream returned by the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A?displayProperty=nameWithType> called with the `msg` and `headers` parameters (<xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A> (`msg`, `headers`)) on the top sink in the current sink stack. The top sink in the sink stack remains unchanged.  
   
  ]]></format>
         </remarks>

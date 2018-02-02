@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetFunctionFromIP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunctionFromIP method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetFunctionFromIP method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetFunctionFromIP Method
 Maps a managed code instruction pointer to a `FunctionID`.  

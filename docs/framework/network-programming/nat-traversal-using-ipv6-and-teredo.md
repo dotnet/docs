@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 568cd245-3300-49ef-a995-d81bf845d961
 caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # NAT Traversal using IPv6 and Teredo
 Enhancements were made that provide support for Network Address Translation (NAT) traversal. These changes are designed for use with IPv6 and Teredo, but they are also applicable to other IP tunneling technologies. These enhancements affect classes in the <xref:System.Net> and related namespaces.  
@@ -41,24 +38,24 @@ Enhancements were made that provide support for Network Address Translation (NAT
 ## Enhancements to Support NAT Traversal and Teredo  
  Enhancements are added to the <xref:System.Net>, <xref:System.Net.NetworkInformation>, and <xref:System.Net.Sockets> namespaces for supporting NAT traversal using IPv6 and Teredo.  
   
- Several methods are added to the <xref:System.Net.NetworkInformation.IPGlobalProperties?displayProperty=fullName> class to get the list of unicast IP addresses on the host. The <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A> method begins an asynchronous request to retrieve the stable unicast IP address table on the local computer. The <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A> method ends a pending asynchronous request to retrieve the stable unicast IP address table on the local computer. The <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A> method is a synchronous request to retrieve the stable unicast IP address table on the local computer, waiting until the address table stabilizes if necessary.  
+ Several methods are added to the <xref:System.Net.NetworkInformation.IPGlobalProperties?displayProperty=nameWithType> class to get the list of unicast IP addresses on the host. The <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A> method begins an asynchronous request to retrieve the stable unicast IP address table on the local computer. The <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A> method ends a pending asynchronous request to retrieve the stable unicast IP address table on the local computer. The <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A> method is a synchronous request to retrieve the stable unicast IP address table on the local computer, waiting until the address table stabilizes if necessary.  
   
- The <xref:System.Net.IPAddress.IsIPv6Teredo%2A?displayProperty=fullName> property can be used to determine if an <xref:System.Net.IPAddress> is an IPv6 Teredo address.  
+ The <xref:System.Net.IPAddress.IsIPv6Teredo%2A?displayProperty=nameWithType> property can be used to determine if an <xref:System.Net.IPAddress> is an IPv6 Teredo address.  
   
  Using these new <xref:System.Net.NetworkInformation.IPGlobalProperties> class methods in combination with the <xref:System.Net.IPAddress.IsIPv6Teredo%2A> property allows an application to easily find the Teredo address. An application normally only needs to know the local Teredo address if it is communicating this information to remote applications. For example, a peer-to-peer application might send all of its IPv6 addresses to a matchmaking server which can then forward them to others peers to enable direct communication.  
   
- An application should normally set its listening service to listen on <xref:System.Net.IPAddress.IPv6Any?displayProperty=fullName> rather than on the local Teredo address. So if a remote client or peer has a direct IPv6 route to the host of the listening service, the client or peer can connect directly using IPv6 and not have to use Teredo to tunnel packets.  
+ An application should normally set its listening service to listen on <xref:System.Net.IPAddress.IPv6Any?displayProperty=nameWithType> rather than on the local Teredo address. So if a remote client or peer has a direct IPv6 route to the host of the listening service, the client or peer can connect directly using IPv6 and not have to use Teredo to tunnel packets.  
   
- For TCP applications, the <xref:System.Net.Sockets.TcpListener?displayProperty=fullName> class has an <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A> method to enable NAT traversal. For UDP applications, the <xref:System.Net.Sockets.UdpClient?displayProperty=fullName> class has an <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A> method to enable NAT traversal.  
+ For TCP applications, the <xref:System.Net.Sockets.TcpListener?displayProperty=nameWithType> class has an <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A> method to enable NAT traversal. For UDP applications, the <xref:System.Net.Sockets.UdpClient?displayProperty=nameWithType> class has an <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A> method to enable NAT traversal.  
   
- For applications that use the <xref:System.Net.Sockets.Socket?displayProperty=fullName> and related classes, the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> and <xref:System.Net.Sockets.Socket.SetSocketOption%2A> methods can be used with the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=fullName> socket option to query, enable, or disable NAT traversal.  
+ For applications that use the <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> and related classes, the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> and <xref:System.Net.Sockets.Socket.SetSocketOption%2A> methods can be used with the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType> socket option to query, enable, or disable NAT traversal.  
   
 ## See Also  
- <xref:System.Net.IPAddress.IsIPv6Teredo%2A?displayProperty=fullName>   
- <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A?displayProperty=fullName>   
- <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A?displayProperty=fullName>   
- <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A?displayProperty=fullName>   
- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName>   
- <xref:System.Net.Sockets.Socket.SetIPProtectionLevel%2A?displayProperty=fullName>   
- <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A?displayProperty=fullName>   
- <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A?displayProperty=fullName>
+ <xref:System.Net.IPAddress.IsIPv6Teredo%2A?displayProperty=nameWithType>  
+ <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A?displayProperty=nameWithType>  
+ <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A?displayProperty=nameWithType>  
+ <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.Socket.SetIPProtectionLevel%2A?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A?displayProperty=nameWithType>

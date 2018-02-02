@@ -58,7 +58,7 @@
 > [!NOTE]
 >  When the internal lookup dictionary is used, it contains references to all the items in the collection if `TItem` is a reference type, or copies of all the items in the collection if `TItem` is a value type. Thus, using the lookup dictionary may not be appropriate if `TItem` is a value type.  
   
- You can access an item by its index or key by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A>property. You can add items without a key, but these items can subsequently be accessed only by index.  
+ You can access an item by its index or key by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A> property. You can add items without a key, but these items can subsequently be accessed only by index.  
   
    
   
@@ -91,6 +91,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Specialized.StringDictionary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,7 +121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Collections.ObjectModel.KeyedCollection%602> created with this constructor uses the default generic equality comparer for the type of the key, obtained from <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName>. To specify a different generic equality comparer, use the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%29> constructor or the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor.  
+ A <xref:System.Collections.ObjectModel.KeyedCollection%602> created with this constructor uses the default generic equality comparer for the type of the key, obtained from <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType>. To specify a different generic equality comparer, use the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%29> constructor or the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor.  
   
  By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that is created when the first item is added. When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This behavior can be overridden by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor and specifying a dictionary creation threshold.  
   
@@ -142,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -247,6 +250,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="dictionaryCreationThreshold" /> is less than –1.</exception>
+        <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
       </Docs>
     </Member>
     <Member MemberName="ChangeItemKey">
@@ -323,6 +327,8 @@
  -or-  
   
  <paramref name="key" /> already exists in the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)" />
+        <altmember cref="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -398,6 +404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Comparer">
@@ -490,6 +498,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)" />
       </Docs>
     </Member>
     <Member MemberName="Dictionary">
@@ -540,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IDictionary`2" />
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">
@@ -598,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.ChangeItemKey(`1,`0)" />
+        <altmember cref="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -684,6 +696,7 @@
  -or-  
   
  <paramref name="index" /> is greater than <see cref="P:System.Collections.ObjectModel.Collection`1.Count" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -723,7 +736,7 @@
  This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]` (`myCollection(key)` in Visual Basic).  
   
 > [!NOTE]
->  This property is distinct from the inherited <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=fullName> property, which gets and sets elements by numeric index. However, if `TKey` is of type <xref:System.Int32>, this property masks the inherited property. In that case, you can access the inherited property by casting the <xref:System.Collections.ObjectModel.KeyedCollection%602> to its base type. For example, `KeyedCollection<int, MyType>` (`KeyedCollection(Of Integer, MyType)` in Visual Basic, `KeyedCollection<int, MyType^>` in C++) can be cast to `Collection<MyType>` (`Collection(Of MyType)` in Visual Basic, `Collection<MyType^>` in C++).  
+>  This property is distinct from the inherited <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=nameWithType> property, which gets and sets elements by numeric index. However, if `TKey` is of type <xref:System.Int32>, this property masks the inherited property. In that case, you can access the inherited property by casting the <xref:System.Collections.ObjectModel.KeyedCollection%602> to its base type. For example, `KeyedCollection<int, MyType>` (`KeyedCollection(Of Integer, MyType)` in Visual Basic, `KeyedCollection<int, MyType^>` in C++) can be cast to `Collection<MyType>` (`Collection(Of MyType)` in Visual Basic, `Collection<MyType^>` in C++).  
   
  If the <xref:System.Collections.ObjectModel.KeyedCollection%602> has a lookup dictionary, `key` is used to retrieve the element from the dictionary.  If there is no lookup dictionary, the key of each element is extracted using the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and compared with the specified key.  
   
@@ -736,7 +749,7 @@
 ## Examples  
  This code example shows the minimum code necessary to derive a collection class from <xref:System.Collections.ObjectModel.KeyedCollection%602>: overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and providing a public constructor that delegates to a base class constructor. The code example also demonstrates many of the properties and methods inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602> and <xref:System.Collections.ObjectModel.Collection%601> classes.  
   
- The code example calls both the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A?displayProperty=fullName> property, which is read-only and retrieves by key, and the <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=fullName> property, which is settable and retrieves by index. It shows how to access the latter property when the objects in the derived collection have integer keys, indistinguishable from the integers used for indexed retrieval.  
+ The code example calls both the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A?displayProperty=nameWithType> property, which is read-only and retrieves by key, and the <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=nameWithType> property, which is settable and retrieves by index. It shows how to access the latter property when the objects in the derived collection have integer keys, indistinguishable from the integers used for indexed retrieval.  
   
  The `SimpleOrder` class is a very simple requisition list that contains `OrderItem` objects, each of which represents a line item in the order. The key of `OrderItem` is immutable, an important consideration for classes that derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
   
@@ -749,6 +762,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">An element with the specified key does not exist in the collection.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -812,6 +826,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.ClearItems" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -890,6 +906,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.ClearItems" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -935,14 +953,14 @@
  Override this method to provide customized behavior for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property inherited from the <xref:System.Collections.ObjectModel.Collection%601> generic class.  
   
 > [!NOTE]
->  This method does not affect the behavior of the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A?displayProperty=fullName> property, which is read-only.  
+>  This method does not affect the behavior of the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A?displayProperty=nameWithType> property, which is read-only.  
   
  Call the base class implementation of this method to set the item in the underlying collection and to update the lookup dictionary.  
   
    
   
 ## Examples  
- This section contains two code examples that demonstrate overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> method to provide custom behavior for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=fullName> property. The first example adds a custom notification event and the second provides support for a collection of objects with mutable keys.  
+ This section contains two code examples that demonstrate overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> method to provide custom behavior for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=nameWithType> property. The first example adds a custom notification event and the second provides support for a collection of objects with mutable keys.  
   
  Example 1  
   
@@ -971,11 +989,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.InsertItem(System.Int32,`1)" />
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TItem item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!TKey key, !TItem item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!TKey key, [out] !TItem&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -997,5 +1017,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

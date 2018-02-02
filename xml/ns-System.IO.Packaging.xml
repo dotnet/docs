@@ -11,19 +11,19 @@
   
  Like a file system, items contained in a <xref:System.IO.Packaging.Package> are referenced in a hierarchical organization of folders and files.  
   
- Although <xref:System.IO.Packaging.Package> is an abstract class, the <xref:System.IO.Packaging.ZipPackage> derived class is used as default by the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName> method.  
+ Although <xref:System.IO.Packaging.Package> is an abstract class, the <xref:System.IO.Packaging.ZipPackage> derived class is used as default by the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=nameWithType> method.  
   
  A <xref:System.IO.Packaging.PackagePart> ("part") is the abstract class that represents an object that is stored in a <xref:System.IO.Packaging.Package>.  
   
  A <xref:System.IO.Packaging.PackageRelationship> ("relationship") defines an association between a source <xref:System.IO.Packaging.Package> or <xref:System.IO.Packaging.PackagePart> and a target object.  A <xref:System.IO.Packaging.PackageRelationship> can be one of two types, each of which can be one of two forms:  
   
--   Package-level relationship (created by <xref:System.IO.Packaging.Package.CreateRelationship%2A?displayProperty=fullName>)  
+-   Package-level relationship (created by <xref:System.IO.Packaging.Package.CreateRelationship%2A?displayProperty=nameWithType>)  
   
     -   Between a <xref:System.IO.Packaging.Package> and a target part in the package.  
   
     -   Between a <xref:System.IO.Packaging.Package> and a target resource outside the package.  
   
--   Part-level relationship (created by <xref:System.IO.Packaging.PackagePart.CreateRelationship%2A?displayProperty=fullName>)  
+-   Part-level relationship (created by <xref:System.IO.Packaging.PackagePart.CreateRelationship%2A?displayProperty=nameWithType>)  
   
     -   Between a source <xref:System.IO.Packaging.PackagePart> and another target part in the package.  
   
@@ -43,5 +43,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Xps.Packaging.XpsDocument" />
+    <altmember cref="N:System.Windows.Xps.Packaging" />
   </Docs>
 </Namespace>

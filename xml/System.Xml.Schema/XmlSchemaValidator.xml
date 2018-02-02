@@ -56,6 +56,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,6 +113,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Schema.XmlSchemaException">An error occurred while compiling schemas in the <see cref="T:System.Xml.Schema.XmlSchemaSet" /> parameter.</exception>
+        <altmember cref="T:System.Xml.XmlNameTable" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaSet" />
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationFlags" />
       </Docs>
     </Member>
     <Member MemberName="AddSchema">
@@ -158,6 +163,9 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Xml.Schema.XmlSchema" /> parameter specified is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The target namespace of the <see cref="T:System.Xml.Schema.XmlSchema" /> parameter matches that of any element or attribute already encountered by the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object.</exception>
         <exception cref="T:System.Xml.Schema.XmlSchemaException">The <see cref="T:System.Xml.Schema.XmlSchema" /> parameter is invalid.</exception>
+        <altmember cref="M:System.Xml.Schema.XmlSchemaValidator.#ctor(System.Xml.XmlNameTable,System.Xml.Schema.XmlSchemaSet,System.Xml.IXmlNamespaceResolver,System.Xml.Schema.XmlSchemaValidationFlags)" />
+        <altmember cref="T:System.Xml.Schema.XmlSchema" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationFlags" />
       </Docs>
     </Member>
     <Member MemberName="EndValidation">
@@ -193,6 +201,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">An identity constraint error was found in the XML document.</exception>
+        <altmember cref="M:System.Xml.Schema.XmlSchemaValidator.#ctor(System.Xml.XmlNameTable,System.Xml.Schema.XmlSchemaSet,System.Xml.IXmlNamespaceResolver,System.Xml.Schema.XmlSchemaValidationFlags)" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetExpectedAttributes">
@@ -232,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetExpectedParticles">
@@ -404,6 +415,9 @@ validator.ValidateEndElement(null);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaParticle" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaElement" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaAny" />
       </Docs>
     </Member>
     <Member MemberName="GetUnspecifiedDefaultAttributes">
@@ -441,6 +455,8 @@ validator.ValidateEndElement(null);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -492,6 +508,7 @@ validator.ValidateEndElement(null);
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.Initialize" /> method is valid immediately after the construction of an <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object or after a call to <see cref="M:System.Xml.Schema.XmlSchemaValidator.EndValidation" /> only.</exception>
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -579,6 +596,10 @@ validator.ValidateEndElement(null);
         <exception cref="T:System.InvalidOperationException">Calling the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.Initialize" /> method is valid immediately after the construction of an <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object or after a call to <see cref="M:System.Xml.Schema.XmlSchemaValidator.EndValidation" /> only.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> parameter is not an <see cref="T:System.Xml.Schema.XmlSchemaElement" />, <see cref="T:System.Xml.Schema.XmlSchemaAttribute" />, or <see cref="T:System.Xml.Schema.XmlSchemaType" /> object.</exception>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> parameter cannot be <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaObject" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaElement" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaAttribute" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaType" />
       </Docs>
     </Member>
     <Member MemberName="LineInfoProvider">
@@ -616,6 +637,8 @@ validator.ValidateEndElement(null);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.IXmlLineInfo" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationException" />
       </Docs>
     </Member>
     <Member MemberName="SkipToEndElement">
@@ -661,6 +684,7 @@ validator.ValidateEndElement(null);
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" /> method was not called in the correct sequence. For example, calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
     <Member MemberName="SourceUri">
@@ -698,6 +722,7 @@ validator.ValidateEndElement(null);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationException" />
       </Docs>
     </Member>
     <Member MemberName="ValidateAttribute">
@@ -767,6 +792,7 @@ validator.ValidateEndElement(null);
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The attribute is not valid in the current element context.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> method was not called in the correct sequence. For example, calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
         <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
     <Member MemberName="ValidateAttribute">
@@ -836,6 +862,8 @@ validator.ValidateEndElement(null);
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The attribute is not valid in the current element context.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> method was not called in the correct sequence. For example, calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
         <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlValueGetter" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
     <Member MemberName="ValidateElement">
@@ -899,6 +927,8 @@ validator.ValidateEndElement(null);
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's name is not valid in the current context.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method was not called in the correct sequence. For example, the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationException" />
       </Docs>
     </Member>
     <Member MemberName="ValidateElement">
@@ -956,6 +986,9 @@ validator.ValidateEndElement(null);
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's name is not valid in the current context.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method was not called in the correct sequence. For example, the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationException" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationFlags" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEndElement">
@@ -1006,6 +1039,7 @@ validator.ValidateEndElement(null);
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's content is not valid.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method was not called in the correct sequence. For example, if the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method is called after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEndElement">
@@ -1048,7 +1082,7 @@ validator.ValidateEndElement(null);
   
  The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method.  
   
--   For elements with simple content, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A?displayProperty=fullName> method verifies that the text content of the element is valid according to its data type and returns the parsed typed value. The text content of the element is obtained from the typed content passed as a parameter.  
+-   For elements with simple content, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A?displayProperty=nameWithType> method verifies that the text content of the element is valid according to its data type and returns the parsed typed value. The text content of the element is obtained from the typed content passed as a parameter.  
   
 -   If calls to the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method have been previously made, an <xref:System.InvalidOperationException> is thrown.  
   
@@ -1079,6 +1113,7 @@ validator.ValidateEndElement(null);
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's text content is not valid.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method was not called in the correct sequence (for example, if the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method is called after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />), calls to the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method have been previously made, or the element has complex content.</exception>
         <exception cref="T:System.ArgumentNullException">The typed text content parameter cannot be <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEndOfAttributes">
@@ -1141,6 +1176,7 @@ validator.ValidateEndElement(null);
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">One or more of the required attributes in the current element context were not found.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" /> method was not called in the correct sequence. For example, calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
         <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
     <Member MemberName="ValidateText">
@@ -1229,6 +1265,7 @@ validator.ValidateEndElement(null);
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The text <see langword="string" /> specified is not allowed in the current element context.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method was not called in the correct sequence. For example, the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
         <exception cref="T:System.ArgumentNullException">The text <see langword="string" /> parameter cannot be <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlValueGetter" />
       </Docs>
     </Member>
     <Member MemberName="ValidateWhitespace">
@@ -1293,6 +1330,7 @@ validator.ValidateEndElement(null);
         <remarks>To be added.</remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">White space is not allowed in the current element context.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace" /> method was not called in the correct sequence. For example, if the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlValueGetter" />
       </Docs>
     </Member>
     <Member MemberName="ValidationEventHandler">
@@ -1342,6 +1380,8 @@ validator.ValidateEndElement(null);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationException" />
+        <altmember cref="T:System.Xml.Schema.XmlSeverityType" />
       </Docs>
     </Member>
     <Member MemberName="ValidationEventSender">
@@ -1376,6 +1416,7 @@ validator.ValidateEndElement(null);
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Xml.Schema.XmlSchemaValidator.ValidationEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="XmlResolver">
@@ -1412,7 +1453,68 @@ validator.ValidateEndElement(null);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlResolver" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates the element in the current context.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ValidateEndElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies if the text content of the element is valid according to its data type for elements with simple content, and verifies if the content of the current element is complete for elements with complex content.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ValidateWhitespace">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates whether white space is allowed in the current element context, and accumulates the white space for validation if the current element has simple content.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ValidateAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates the attribute in the current element context.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ValidateText">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates whether text is allowed in the current element context, and accumulates the text for validation if the current element has simple content.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the state of the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

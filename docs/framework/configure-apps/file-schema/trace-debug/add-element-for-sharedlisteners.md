@@ -11,11 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "initializeData attribute"
   - "<add> element for <sharedListeners>"
@@ -25,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;sharedListeners&gt;
 Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at run time.  
@@ -79,9 +76,9 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 |--------------------------|------------------------------------|  
 |<xref:System.Diagnostics.ConsoleTraceListener>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|  
 |<xref:System.Diagnostics.DelimitedListTraceListener>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
-|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>|The name of an existing event log source.|  
-|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
-|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|The name of an existing event log source.|  
+|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
+|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
 |<xref:System.Diagnostics.XmlWriterTraceListener>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
   
 ## Configuration File  
@@ -117,7 +114,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.TraceSource>   
- <xref:System.Diagnostics.TraceListener>   
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)   
+ <xref:System.Diagnostics.TraceSource>  
+ <xref:System.Diagnostics.TraceListener>  
+ [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
  [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

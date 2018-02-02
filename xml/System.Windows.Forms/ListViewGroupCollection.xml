@@ -25,27 +25,27 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> property to get the <xref:System.Windows.Forms.ListViewGroupCollection> associated with a <xref:System.Windows.Forms.ListView> control. This collection contains the <xref:System.Windows.Forms.ListViewGroup> objects that represent the groups shown in the control when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=fullName>. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups. If there are no groups in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection, the grouping feature is disabled.  
+ Use the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> property to get the <xref:System.Windows.Forms.ListViewGroupCollection> associated with a <xref:System.Windows.Forms.ListView> control. This collection contains the <xref:System.Windows.Forms.ListViewGroup> objects that represent the groups shown in the control when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View.List?displayProperty=nameWithType>. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups. If there are no groups in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, the grouping feature is disabled.  
   
  Use the <xref:System.Windows.Forms.ListViewGroupCollection.Add%2A> method to add a single group to the collection. Use the <xref:System.Windows.Forms.ListViewGroupCollection.Insert%2A> method to add a group at a particular index within the collection. To remove a group, use the <xref:System.Windows.Forms.ListViewGroupCollection.Remove%2A> method. Use the <xref:System.Windows.Forms.ListViewGroupCollection.RemoveAt%2A> method to remove the group at a particular index.  
   
  You cannot add a <xref:System.Windows.Forms.ListViewGroup> to the collection more than once. To reposition a group within the collection, it must first be removed from the collection, and then inserted at the desired location. Use the <xref:System.Windows.Forms.ListViewGroupCollection.Contains%2A> method to determine whether a particular group is already in the collection. To retrieve the index of a group within the collection, use the <xref:System.Windows.Forms.ListViewGroupCollection.IndexOf%2A> method. You can get or set the group at a particular index with the <xref:System.Windows.Forms.ListViewGroupCollection.Item%2A> indexer.  
   
- Use the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add multiple groups to the collection. You can add multiple groups either as an array of groups or as a <xref:System.Windows.Forms.ListViewGroupCollection> that you retrieve through the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> property of another <xref:System.Windows.Forms.ListView> control. Use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method to remove all the groups from the collection.  
+ Use the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add multiple groups to the collection. You can add multiple groups either as an array of groups or as a <xref:System.Windows.Forms.ListViewGroupCollection> that you retrieve through the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> property of another <xref:System.Windows.Forms.ListView> control. Use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method to remove all the groups from the collection.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.ListViewGroupCollection.Remove%2A>, <xref:System.Windows.Forms.ListViewGroupCollection.RemoveAt%2A>, and <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> methods remove groups from the collection, but do not remove any items from the <xref:System.Windows.Forms.ListView> control. If there are no groups in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection, the grouping feature is disabled and all items in the control are displayed normally.  
+>  The <xref:System.Windows.Forms.ListViewGroupCollection.Remove%2A>, <xref:System.Windows.Forms.ListViewGroupCollection.RemoveAt%2A>, and <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> methods remove groups from the collection, but do not remove any items from the <xref:System.Windows.Forms.ListView> control. If there are no groups in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, the grouping feature is disabled and all items in the control are displayed normally.  
   
  The <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> and <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> methods are useful when you want to provide multiple ways to group the items in a <xref:System.Windows.Forms.ListView> control. To do this, create multiple group arrays. To change the grouping, first use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method to remove all the groups from the collection, then use the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add the next array of groups to display.  
   
- Use the <xref:System.Windows.Forms.ListViewGroupCollection.CopyTo%2A> method to copy the groups in a collection to a compatible array starting at a specified index. This is useful, for example, when you want to sort the groups in the collection using the <xref:System.Array.Sort%2A?displayProperty=fullName> method. To do this, copy the groups into a compatible array, then sort the array. Next, use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method to remove all the groups from the collection, then use the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add the sorted array back to the collection.  
+ Use the <xref:System.Windows.Forms.ListViewGroupCollection.CopyTo%2A> method to copy the groups in a collection to a compatible array starting at a specified index. This is useful, for example, when you want to sort the groups in the collection using the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method. To do this, copy the groups into a compatible array, then sort the array. Next, use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method to remove all the groups from the collection, then use the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add the sorted array back to the collection.  
   
  Use the <xref:System.Windows.Forms.ListViewGroupCollection.Count%2A> property to determine how many groups are in the collection. To iterate through the collection, use the <xref:System.Collections.IEnumerator> returned from the <xref:System.Windows.Forms.ListViewGroupCollection.GetEnumerator%2A> method.  
   
 > [!NOTE]
->  The grouping feature is available only on Windows XP and the Windows Server 2003 family when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method. On earlier operating systems, any code relating to groups will be ignored and the groups will not appear. As a result, any code that depends on the grouping feature might not work correctly. You might want to include a test that determines whether the grouping feature is available, and provide alternate functionality when it is unavailable. For example, you might want to provide alternate sorting when running on operating systems that do not support sorting by group.  
+>  The grouping feature is available only on Windows XP and the Windows Server 2003 family when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to groups will be ignored and the groups will not appear. As a result, any code that depends on the grouping feature might not work correctly. You might want to include a test that determines whether the grouping feature is available, and provide alternate functionality when it is unavailable. For example, you might want to provide alternate sorting when running on operating systems that do not support sorting by group.  
 >   
->  The insertion mark feature is provided by the same library that provides the operating system themes feature. To check for the availability of this library, call the <xref:System.Windows.Forms.FeatureSupport.IsPresent%28System.Object%29?displayProperty=fullName> method overload and pass in the <xref:System.Windows.Forms.OSFeature.Themes?displayProperty=fullName> value.  
+>  The insertion mark feature is provided by the same library that provides the operating system themes feature. To check for the availability of this library, call the <xref:System.Windows.Forms.FeatureSupport.IsPresent%28System.Object%29?displayProperty=nameWithType> method overload and pass in the <xref:System.Windows.Forms.OSFeature.Themes?displayProperty=nameWithType> value.  
   
    
   
@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListViewGroup" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -91,6 +93,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="group" /> contains at least one <see cref="T:System.Windows.Forms.ListViewItem" /> that belongs to a <see cref="T:System.Windows.Forms.ListView" /> control other than the one that owns this <see cref="T:System.Windows.Forms.ListViewGroupCollection" />.</exception>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -160,6 +163,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="groups" /> contains at least one group with at least one <see cref="T:System.Windows.Forms.ListViewItem" /> that belongs to a <see cref="T:System.Windows.Forms.ListView" /> control other than the one that owns this <see cref="T:System.Windows.Forms.ListViewGroupCollection" />.</exception>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -184,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this version of the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add the elements of a <xref:System.Windows.Forms.ListViewGroupCollection> that you retrieve through the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> property of a different <xref:System.Windows.Forms.ListView> control.  
+ Use this version of the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add the elements of a <xref:System.Windows.Forms.ListViewGroupCollection> that you retrieve through the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> property of a different <xref:System.Windows.Forms.ListView> control.  
   
  Unlike the <xref:System.Windows.Forms.ListViewGroupCollection.Add%2A> method, the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method does not have a return value that can be used to determine whether a group being added is already in the collection. If you need this information, use the <xref:System.Windows.Forms.ListViewGroupCollection.Contains%2A> method before using the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method.  
   
@@ -213,7 +217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to remove all the groups from the collection. Note that removing groups from the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection does not remove items from the <xref:System.Windows.Forms.ListView> control.  
+ Use this method to remove all the groups from the collection. Note that removing groups from the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection does not remove items from the <xref:System.Windows.Forms.ListView> control.  
   
  This method is useful to disable the grouping feature. When there are no groups in a <xref:System.Windows.Forms.ListView> control, the items appear normally. To remove individual groups from the collection, use the <xref:System.Windows.Forms.ListViewGroupCollection.Remove%2A> or <xref:System.Windows.Forms.ListViewGroupCollection.RemoveAt%2A> method.  
   
@@ -262,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -288,7 +293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ListViewGroupCollection.CopyTo%2A> method to copy the groups in a collection (including the item references they contain) to a compatible array, starting at a specified index. This is useful, for example, when you want to sort the groups in the collection using the <xref:System.Array.Sort%2A?displayProperty=fullName> method. To do this, copy the groups into a compatible array, then sort the array. Next, use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method to remove all the groups from the collection, then use the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add the sorted array back to the collection.  
+ Use the <xref:System.Windows.Forms.ListViewGroupCollection.CopyTo%2A> method to copy the groups in a collection (including the item references they contain) to a compatible array, starting at a specified index. This is useful, for example, when you want to sort the groups in the collection using the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method. To do this, copy the groups into a compatible array, then sort the array. Next, use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method to remove all the groups from the collection, then use the <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> method to add the sorted array back to the collection.  
   
  ]]></format>
         </remarks>
@@ -372,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -404,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -481,12 +488,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to remove a group from the collection when you have a reference to the group. Note that removing a group from the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection does not remove items from the <xref:System.Windows.Forms.ListView> control.  
+ Use this method to remove a group from the collection when you have a reference to the group. Note that removing a group from the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection does not remove items from the <xref:System.Windows.Forms.ListView> control.  
   
  To remove a group at a particular index, use the <xref:System.Windows.Forms.ListViewGroupCollection.RemoveAt%2A> method instead. To remove all the groups from the collection, use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -511,7 +519,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to remove a group from the collection when you have the index of the group within the collection. Note that removing groups from the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection does not remove items from the <xref:System.Windows.Forms.ListView> control.  
+ Use this method to remove a group from the collection when you have the index of the group within the collection. Note that removing groups from the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection does not remove items from the <xref:System.Windows.Forms.ListView> control.  
   
  To remove a group using a reference to the object, use the <xref:System.Windows.Forms.ListViewGroupCollection.Remove%2A> method instead. To remove all the groups from the collection, use the <xref:System.Windows.Forms.ListViewGroupCollection.Clear%2A> method. When you remove an item from the collection, the indexes change for subsequent items in the collection. All information about the removed item is deleted.  
   
@@ -740,5 +748,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.ListViewGroup" /> in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds multiple groups to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.ListViewGroup" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

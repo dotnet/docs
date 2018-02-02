@@ -979,5 +979,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> class with the specified points and colors.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetSigmaBellShape">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a gradient falloff based on a bell-shaped curve.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetBlendTriangularShape">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a linear gradient with a center color and a linear falloff to a single color on both ends.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MultiplyTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the <see cref="T:System.Drawing.Drawing2D.Matrix" /> that represents the local geometric transform of this <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" /> by prepending the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScaleTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scales the local geometric transform by the specified amounts. This method prepends the scaling matrix to the transform.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TranslateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates the local geometric transform by the specified dimensions. This method prepends the translation to the transform.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RotateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rotates the local geometric transform by the specified amount. This method prepends the rotation to the transform.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

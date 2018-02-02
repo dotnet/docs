@@ -45,7 +45,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PropertyMetadata (Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public PropertyMetadata (params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Attribute[])" />
       <MemberType>Constructor</MemberType>
@@ -105,7 +105,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Attribute[])" />
       <MemberType>Constructor</MemberType>
@@ -151,7 +151,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PropertyMetadata (System.Workflow.ComponentModel.DependencyPropertyOptions options, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public PropertyMetadata (System.Workflow.ComponentModel.DependencyPropertyOptions options, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Workflow.ComponentModel.DependencyPropertyOptions,System.Attribute[])" />
       <MemberType>Constructor</MemberType>
@@ -177,7 +177,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Workflow.ComponentModel.DependencyPropertyOptions,System.Attribute[])" />
       <MemberType>Constructor</MemberType>
@@ -229,7 +229,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options, System.Workflow.ComponentModel.GetValueOverride getValueOverride, System.Workflow.ComponentModel.SetValueOverride setValueOverride, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options, System.Workflow.ComponentModel.GetValueOverride getValueOverride, System.Workflow.ComponentModel.SetValueOverride setValueOverride, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options, class System.Workflow.ComponentModel.GetValueOverride getValueOverride, class System.Workflow.ComponentModel.SetValueOverride setValueOverride, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Workflow.ComponentModel.DependencyPropertyOptions,System.Workflow.ComponentModel.GetValueOverride,System.Workflow.ComponentModel.SetValueOverride,System.Attribute[])" />
       <MemberType>Constructor</MemberType>
@@ -522,5 +522,23 @@
         <exception cref="T:System.InvalidOperationException">Trying to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an array that contains all attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

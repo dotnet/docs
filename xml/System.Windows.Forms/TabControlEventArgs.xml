@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected> event.  
   
@@ -34,6 +34,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TabControl" />
+    <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
+    <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+    <altmember cref="P:System.Windows.Forms.TabControlEventArgs.Action" />
+    <altmember cref="P:System.Windows.Forms.TabControlEventArgs.TabPage" />
+    <altmember cref="P:System.Windows.Forms.TabControlEventArgs.TabPageIndex" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +69,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControlEventArgs.TabPage" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControlEventArgs.TabPageIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
+        <altmember cref="T:System.Windows.Forms.TabControl.TabPageCollection" />
+        <altmember cref="P:System.Windows.Forms.TabControlEventArgs.Action" />
+        <altmember cref="T:System.Windows.Forms.TabControlAction" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -84,15 +97,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#558](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#558)]
  [!code-vb[System.Windows.Forms.EventExamples#558](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#558)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControlAction" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
       </Docs>
     </Member>
     <Member MemberName="TabPage">
@@ -114,15 +130,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#558](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#558)]
  [!code-vb[System.Windows.Forms.EventExamples#558](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#558)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
       </Docs>
     </Member>
     <Member MemberName="TabPageIndex">
@@ -144,15 +161,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#558](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#558)]
  [!code-vb[System.Windows.Forms.EventExamples#558](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#558)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControlEventArgs.TabPage" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
+        <altmember cref="T:System.Windows.Forms.TabControl.TabPageCollection" />
       </Docs>
     </Member>
   </Members>

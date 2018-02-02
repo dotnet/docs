@@ -525,7 +525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29>method.  
+ The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29> method.  
   
  ]]></format>
         </remarks>
@@ -553,5 +553,15 @@
         <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WebMessageEncodingBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

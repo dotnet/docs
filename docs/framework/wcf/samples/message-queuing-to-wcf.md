@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6d718eb0-9f61-4653-8a75-d2dac8fb3520
 caps.latest.revision: 34
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Queuing to Windows Communication Foundation
 This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
@@ -160,6 +162,6 @@ Console.ReadLine();
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`  
   
 ## See Also  
- [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)   
- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)   
+ [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
+ [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
  [Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94968)

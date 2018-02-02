@@ -10,6 +10,7 @@
 ### [Anonymous Methods](anonymous-methods.md)
 ## [Overloadable Operators](overloadable-operators.md)
 ## [Conversion Operators](conversion-operators.md)
+## [default value expressions](default-value-expressions.md)
 ### [Using Conversion Operators](using-conversion-operators.md)
 ### [How to: Implement User-Defined Conversions Between Structs](how-to-implement-user-defined-conversions-between-structs.md)
 ## [How to: Use Operator Overloading to Create a Complex Number Class](how-to-use-operator-overloading-to-create-a-complex-number-class.md)

@@ -48,7 +48,7 @@
 ## Examples  
  The following example shows how to determine whether a method is an iterator method. In the example, `IsIteratorMethod` performs the following steps:  
   
--   Obtains a <xref:System.Reflection.MethodInfo> object for the method name by using <xref:System.Type.GetMethod%2A?displayProperty=fullName>.  
+-   Obtains a <xref:System.Reflection.MethodInfo> object for the method name by using <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>.  
   
 -   Obtains a <xref:System.Type> object for the attribute by using [GetType Operator](~/docs/visual-basic/language-reference/operators/gettype-operator.md).  
   
@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
+    <altmember cref="P:System.Runtime.CompilerServices.StateMachineAttribute.StateMachineType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

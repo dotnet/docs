@@ -24,7 +24,7 @@
   
  For markup extensions specifically, a scenario where <xref:System.Windows.Markup.IProvideValueTarget> is useful is to determine the validity of your markup extension's situational usage. For example, your markup extension might implement a value deferral mechanism, but using that mechanism might only be appropriate if the target object is capable of using other components of your deferral mechanism at run time. You could check the type system characteristics of the object returned as <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> and make sure that object supports your deferral technique. If so, your markup extension returns a value, and if not, your markup extension throws an exception that will be picked up as an inner exception by a XAML object writer. A similar scenario is assuring that a particular property supports a capability, by checking type system characteristics of the <xref:System.Windows.Markup.IProvideValueTarget.TargetProperty%2A>.  
   
- Although the API name <xref:System.Windows.Markup.IProvideValueTarget> might imply an association with <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A?displayProperty=fullName>, the information reported by <xref:System.Windows.Markup.IProvideValueTarget> can also be useful to a <xref:System.ComponentModel.TypeConverter> or <xref:System.Windows.Markup.ValueSerializer>. A <xref:System.ComponentModel.TypeConverter> or <xref:System.Windows.Markup.ValueSerializer> typically have more context than a markup extension because they are dedicated to a particular target type or target property, and thus the situational validity is usually predictable in the type system. However, other scenarios exist. The following is a list of some scenarios that might be implemented by either a type converter or a markup extension:  
+ Although the API name <xref:System.Windows.Markup.IProvideValueTarget> might imply an association with <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A?displayProperty=nameWithType>, the information reported by <xref:System.Windows.Markup.IProvideValueTarget> can also be useful to a <xref:System.ComponentModel.TypeConverter> or <xref:System.Windows.Markup.ValueSerializer>. A <xref:System.ComponentModel.TypeConverter> or <xref:System.Windows.Markup.ValueSerializer> typically have more context than a markup extension because they are dedicated to a particular target type or target property, and thus the situational validity is usually predictable in the type system. However, other scenarios exist. The following is a list of some scenarios that might be implemented by either a type converter or a markup extension:  
   
 -   Get <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> to read instance values of other properties on that object. Note that your handling here might need to be robust for unset values, because the processing order of XAML members on the target object can be nondeterministic.  
   
@@ -57,6 +57,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" />
+    <altmember cref="T:System.Windows.Markup.MarkupExtension" />
+    <altmember cref="T:System.IServiceProvider" />
   </Docs>
   <Members>
     <Member MemberName="TargetObject">
@@ -85,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" />
       </Docs>
     </Member>
     <Member MemberName="TargetProperty">
@@ -113,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" />
       </Docs>
     </Member>
   </Members>

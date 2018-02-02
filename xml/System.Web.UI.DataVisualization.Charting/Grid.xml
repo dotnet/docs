@@ -135,7 +135,7 @@
   
  The same holds true for all applicable chart elements. In other words, if in the previous example strip lines were being used, with an <xref:System.Web.UI.DataVisualization.Charting.StripLine.IntervalOffset%2A> of 0.5, and their <xref:System.Web.UI.DataVisualization.Charting.StripLine.Interval%2A> property was 2, a strip line would be displayed at 0.5, 2.5, 4.5, and so on.  
   
- If you set a chart element `Interval` property to zero, an interval will be automatically determined by the <xref:System.Web.UI.DataVisualization.Charting.Chart>control.  
+ If you set a chart element `Interval` property to zero, an interval will be automatically determined by the <xref:System.Web.UI.DataVisualization.Charting.Chart> control.  
   
  ]]></format>
         </remarks>

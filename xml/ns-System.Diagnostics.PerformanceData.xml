@@ -1,6 +1,6 @@
 <Namespace Name="System.Diagnostics.PerformanceData">
   <Docs>
-    <summary>Use the classes in this namespace to provide counter data. The counters are used to expose performance metrics to consumers such as the Performance Monitor. The namespace does not contain classes for consuming the counter data. For a complete description of the performance counters architecture, see <see href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa373083\(v=vs.85\">Performance Counters</see>.aspx).</summary>
+    <summary>Use the classes in this namespace to provide counter data. The counters are used to expose performance metrics to consumers such as the Performance Monitor. The namespace does not contain classes for consuming the counter data. For a complete description of the performance counters architecture, see <see href="https://msdn.microsoft.com/library/windows/desktop/aa373083\(v=vs.85\">Performance Counters</see>.aspx).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -15,9 +15,9 @@
   
     -   The reference value for the name attribute of the counterAttribute element is ignored.  
   
-     For details on writing the manifest, see [Performance Counters Schema](https://msdn.microsoft.com/en-us/library/windows/desktop/aa373092\(v=vs.85\).aspx).  
+     For details on writing the manifest, see [Performance Counters Schema](https://msdn.microsoft.com/library/windows/desktop/aa373092\(v=vs.85\).aspx).  
   
-2.  After writing your manifest, use the [CTRPP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa372128\(v=vs.85\).aspx) tool to compile the manifest (ctrpp provider.man). The tool generates four files: .h, .c, .rc, and *_r.h. You can ignore the .h and .c files. The .rc file contains the localized strings defined in your manifest. You use the .rc and *_r.h files to create the compiled resource file (.res) that you include in your project. The following call shows how to compile the resource file:  
+2.  After writing your manifest, use the [CTRPP](https://msdn.microsoft.com/library/windows/desktop/aa372128\(v=vs.85\).aspx) tool to compile the manifest (ctrpp provider.man). The tool generates four files: .h, .c, .rc, and *_r.h. You can ignore the .h and .c files. The .rc file contains the localized strings defined in your manifest. You use the .rc and *_r.h files to create the compiled resource file (.res) that you include in your project. The following call shows how to compile the resource file:  
   
     ```  
     rc /r /i "c:\Program Files\Microsoft SDKs\Windows\v6.0\Include" provider.rc  
@@ -29,13 +29,13 @@
   
 3.  Write your provider. The following steps show the calls made by a provider:  
   
-    1.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.%23ctor%2A?displayProperty=fullName> constructor to define the counter set. Call this method for each counter set defined in the manifest.  
+    1.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.%23ctor%2A?displayProperty=nameWithType> constructor to define the counter set. Call this method for each counter set defined in the manifest.  
   
-    2.  For each counter set, call one of the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%2A?displayProperty=fullName> methods to add the counters to the set. Call this method for each counter defined in the counter set.  
+    2.  For each counter set, call one of the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%2A?displayProperty=nameWithType> methods to add the counters to the set. Call this method for each counter defined in the counter set.  
   
-    3.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=fullName> method to create an instance of the counter set (an instance contains the counter data). For single instance counter sets, call this method one time. For multiple instance counter sets, call this method for each instance for which you need to provide counter data (use a unique name for each instance).  
+    3.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=nameWithType> method to create an instance of the counter set (an instance contains the counter data). For single instance counter sets, call this method one time. For multiple instance counter sets, call this method for each instance for which you need to provide counter data (use a unique name for each instance).  
   
-    4.  Use the <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=fullName> property to access and set the counter data for the counter.  
+    4.  Use the <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=nameWithType> property to access and set the counter data for the counter.  
   
 4.  After you finish your provider, use the LodCtr tool to register the counters on the computer. For example,  
   

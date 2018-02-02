@@ -14,10 +14,12 @@
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.NumberObject" />
+    <altmember cref="T:Microsoft.JScript.NumberPrototype" />
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.NumberObject CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.NumberObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.NumberObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -48,6 +50,7 @@
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -72,6 +75,8 @@
           <paramref name="arg" /> expressed as a number, if that is possible.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
     <Member MemberName="MAX_VALUE">
@@ -91,6 +96,8 @@
         <summary>Represents the largest possible value of a <see cref="T:System.Double" />. This field is constant.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
     <Member MemberName="MIN_VALUE">
@@ -110,6 +117,8 @@
         <summary>Represents the smallest positive <see cref="T:System.Double" /> value that is greater than zero. This field is constant.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
     <Member MemberName="NaN">
@@ -129,6 +138,8 @@
         <summary>Represents a value that is not a number (NaN). This field is constant.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
     <Member MemberName="NEGATIVE_INFINITY">
@@ -148,6 +159,8 @@
         <summary>Represents negative infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
     <Member MemberName="POSITIVE_INFINITY">
@@ -167,6 +180,8 @@
         <summary>Represents positive infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
   </Members>

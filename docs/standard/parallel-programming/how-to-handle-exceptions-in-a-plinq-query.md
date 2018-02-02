@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "PLINQ queries, how to handle exceptions"
 ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5
@@ -15,9 +18,12 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Handle Exceptions in a PLINQ Query
-The first example in this topic shows how to handle the <xref:System.AggregateException?displayProperty=fullName> that can be thrown from a PLINQ query when it executes. The second example shows how to put try-catch blocks within delegates, as close as possible to where the exception will be thrown. In this way, you can catch them as soon as they occur and possibly continue query execution. When exceptions are allowed to bubble up back to the joining thread, then it is possible that a query may continue to process some items after the exception is raised.  
+The first example in this topic shows how to handle the <xref:System.AggregateException?displayProperty=nameWithType> that can be thrown from a PLINQ query when it executes. The second example shows how to put try-catch blocks within delegates, as close as possible to where the exception will be thrown. In this way, you can catch them as soon as they occur and possibly continue query execution. When exceptions are allowed to bubble up back to the joining thread, then it is possible that a query may continue to process some items after the exception is raised.  
   
  In some cases when PLINQ falls back to sequential execution, and an exception occurs, the exception may be propagated directly, and not wrapped in an <xref:System.AggregateException>. Also, <xref:System.Threading.ThreadAbortException>s are always propagated directly.  
   
@@ -27,7 +33,7 @@ The first example in this topic shows how to handle the <xref:System.AggregateEx
 >  This example is intended to demonstrate usage, and might not run faster than the equivalent sequential LINQ to Objects query. For more information about speedup, see [Understanding Speedup in PLINQ](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md).  
   
 ## Example  
- This example shows how to put the try-catch blocks around the code that executes the query to catch any <xref:System.AggregateException?displayProperty=fullName>s that are thrown.  
+ This example shows how to put the try-catch blocks around the code that executes the query to catch any <xref:System.AggregateException?displayProperty=nameWithType>s that are thrown.  
   
  [!code-csharp[PLINQ#41](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#41)]
  [!code-vb[PLINQ#41](../../../samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb/plinqsnippets1.vb#41)]  
@@ -48,5 +54,5 @@ The first example in this topic shows how to handle the <xref:System.AggregateEx
  Do not catch an exception unless you know how to handle it so that you do not corrupt the state of your program.  
   
 ## See Also  
- <xref:System.Linq.ParallelEnumerable>   
+ <xref:System.Linq.ParallelEnumerable>  
  [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

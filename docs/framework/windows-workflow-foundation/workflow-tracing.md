@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 18737989-0502-4367-b5f6-617ebfb77c96
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Tracing
 Workflow tracing offers a way to capture diagnostic information using .NET Framework trace listeners. Tracing can be enabled if a problem is detected with the application and then disabled again once the problem is resolved. There are two ways you could enable debug tracing for workflows. You can configure it using the Event Trace viewer or you can use <xref:System.Diagnostics> to send trace events to a file.  
@@ -74,5 +76,5 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 ```  
   
 ## See Also  
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)   
+ [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
  [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)

@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName="concat">
-      <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject concat (object thisob, Microsoft.JScript.Vsa.VsaEngine engine, object[] args);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject concat (object thisob, Microsoft.JScript.Vsa.VsaEngine engine, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject concat(object thisob, class Microsoft.JScript.Vsa.VsaEngine engine, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.concat(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -72,6 +72,7 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="join">
@@ -102,6 +103,7 @@
         <returns>A string that concatenates the elements of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="pop">
@@ -130,10 +132,11 @@
         <returns>The last element of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="push">
-      <MemberSignature Language="C#" Value="public static long push (object thisob, object[] args);" />
+      <MemberSignature Language="C#" Value="public static long push (object thisob, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 push(object thisob, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.push(System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -166,6 +169,7 @@
         <returns>The new length of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="reverse">
@@ -195,6 +199,7 @@
           <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="shift">
@@ -223,6 +228,7 @@
         <returns>The first element of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="slice">
@@ -288,10 +294,11 @@
           <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="splice">
-      <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject splice (object thisob, Microsoft.JScript.Vsa.VsaEngine engine, double start, double deleteCnt, object[] args);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject splice (object thisob, Microsoft.JScript.Vsa.VsaEngine engine, double start, double deleteCnt, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject splice(object thisob, class Microsoft.JScript.Vsa.VsaEngine engine, float64 start, float64 deleteCnt, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.splice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Double,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -358,6 +365,7 @@
         <returns>A string that concatenates the elements of <paramref name="thisob" /> and separates them with a <see cref="P:System.Globalization.TextInfo.ListSeparator" /> and a space.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -386,10 +394,11 @@
         <returns>A string that concatenates the elements of <paramref name="thisob" /> and separates them with a comma.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="unshift">
-      <MemberSignature Language="C#" Value="public static object unshift (object thisob, object[] args);" />
+      <MemberSignature Language="C#" Value="public static object unshift (object thisob, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object unshift(object thisob, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.unshift(System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -422,6 +431,7 @@
         <returns>The new length of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
   </Members>

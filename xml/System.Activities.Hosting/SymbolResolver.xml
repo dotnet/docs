@@ -428,7 +428,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.TryGetValue(System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -469,5 +469,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an object reference to the dictionary of symbols keyed by string name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified symbol from the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

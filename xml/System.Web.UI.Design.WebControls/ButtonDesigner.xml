@@ -30,7 +30,7 @@
   
  The following code example shows how to create a custom designer class that extends the <xref:System.Web.UI.Design.WebControls.ButtonDesigner> class and overrides the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has not been set previously (that is, it has the <xref:System.Web.UI.WebControls.BorderStyle.NotSet> field value), a call to the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method sets it to a blue-dashed border with a width of three pixels, and then displays that border on the design surface. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has been set, the existing border property values are displayed.  
   
- Typically, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=fullName> method of the associated control to generate the markup.  
+ Typically, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=nameWithType> method of the associated control to generate the markup.  
   
  [!code-vb[System.Web.UI.Design.WebControls_ButtonDesignerSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_ButtonDesignerSamples/VB/custombutton.vb#1)]  
   
@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Button" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +64,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -84,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method replaces the <xref:System.Web.UI.WebControls.Button.Text%2A> property with the <xref:System.Web.UI.Control.ID%2A> property of the <xref:System.Web.UI.WebControls.Button> control if the <xref:System.Web.UI.WebControls.Button.Text%2A> contains no displayable characters. Then, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=fullName> method to generate the markup.  
+ The <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method replaces the <xref:System.Web.UI.WebControls.Button.Text%2A> property with the <xref:System.Web.UI.Control.ID%2A> property of the <xref:System.Web.UI.WebControls.Button> control if the <xref:System.Web.UI.WebControls.Button.Text%2A> contains no displayable characters. Then, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=nameWithType> method to generate the markup.  
   
    
   
@@ -93,7 +97,7 @@
   
  If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has not been set previously (that is, it has the <xref:System.Web.UI.WebControls.BorderStyle.NotSet> field value), a call to the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> method sets it to a blue-dashed border with a width of three pixels, and then displays that border on the design surface. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property has been set, the existing border property values are displayed.  
   
- Typically, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=fullName> method of the associated control to generate the markup.  
+ Typically, the <xref:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml%2A> calls its base method, <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType>, which calls into the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=nameWithType> method of the associated control to generate the markup.  
   
  [!code-vb[System.Web.UI.Design.WebControls_ButtonDesignerSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_ButtonDesignerSamples/VB/custombutton.vb#1)]  
   
@@ -102,6 +106,9 @@
         <block subset="none" type="overrides">
           <para>If you are overriding the <see cref="M:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml" /> method, typically you will modify selected property values, then call the base method to generate the markup, and then restore the properties to their original values.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
   </Members>

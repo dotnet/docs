@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetNamespaces"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNamespaces method, ISymUnmanagedScope interface [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetNamespaces method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedScope::GetNamespaces Method
 Gets the namespaces that are being used within this scope.  

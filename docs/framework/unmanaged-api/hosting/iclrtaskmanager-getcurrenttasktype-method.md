@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTaskManager::GetCurrentTaskType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentTaskType method [.NET Framework hosting]"
   - "ICLRTaskManager::GetCurrentTaskType method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRTaskManager::GetCurrentTaskType Method
 Gets the type of the task that is currently executing.  

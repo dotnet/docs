@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModuleEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModuleEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugModuleEnum interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModuleEnum::Next Method
 Gets the number of "ICorDebugModule" instances specified by `celt` from the enumeration, starting at the current position.  

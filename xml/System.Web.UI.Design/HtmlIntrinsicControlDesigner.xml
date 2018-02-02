@@ -16,10 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Intrinsic HTML controls are defined within, or derived from classes defined within, the <xref:System.Web.UI.HtmlControls?displayProperty=fullName> namespace.  
+ Intrinsic HTML controls are defined within, or derived from classes defined within, the <xref:System.Web.UI.HtmlControls?displayProperty=nameWithType> namespace.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

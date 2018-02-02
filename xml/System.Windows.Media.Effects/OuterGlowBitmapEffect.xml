@@ -51,6 +51,10 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">for creating an instance of the <see cref="T:System.Windows.Media.Effects.OuterGlowBitmapEffect" /> class. Associated enumerations: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+    <altmember cref="T:System.Windows.Media.Effects.BlurBitmapEffect" />
+    <altmember cref="T:System.Windows.Media.Effects.DropShadowBitmapEffect" />
+    <altmember cref="T:System.Windows.Media.Effects.EmbossBitmapEffect" />
+    <altmember cref="T:System.Windows.Media.Effects.BevelBitmapEffect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,7 +94,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -118,7 +122,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

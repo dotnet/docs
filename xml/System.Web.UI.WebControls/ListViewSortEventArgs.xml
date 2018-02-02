@@ -27,11 +27,14 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> object to display the sort direction and the column that is being sorted.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.Sorted" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.Sorting" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +72,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="SortDirection">
@@ -102,6 +107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -138,11 +145,13 @@
   
  The following example shows how to set the <xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression%2A> property in order to sort multiple columns with different sort directions applied to each column.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression/CS/SortExpressionCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression/VB/SortExpressionVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression/CS/SortExpressionCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression/VB/SortExpressionVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SortExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection" />
       </Docs>
     </Member>
   </Members>

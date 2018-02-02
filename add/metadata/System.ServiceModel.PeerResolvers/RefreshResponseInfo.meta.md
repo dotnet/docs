@@ -3,7 +3,7 @@ uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo.#ctor(System.TimeSpan
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo.Result
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo.RegistrationLifetime
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,5 +43,5 @@ uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo.HasBody
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---

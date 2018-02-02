@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4064c89f-afa6-444a-aa7e-807ef072131c
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Information Disclosure
 Information disclosure enables an attacker to gain valuable information about a system. Therefore, always consider what information you are revealing and whether it can be used by a malicious user. The following lists possible information disclosure attacks and provides mitigations for each.  
@@ -25,7 +27,7 @@ Information disclosure enables an attacker to gain valuable information about a 
  Keeping policy secure is important, especially in federation scenarios where sensitive issued-token requirements or token-issuer information is exposed in policy. In these cases, the recommendation is to secure the federated service's policy endpoint to prevent attackers from obtaining information about the service, such as the type of claims to put in the issued token, or redirecting clients to malicious token issuers. For example, an attacker could discover user name/password pairs by reconfiguring the federated trust chain to terminate in an issuer that executed a man-in-the-middle attack. It is also recommended that federated clients who obtain their bindings through policy retrieval verify that they trust the issuers in the obtained federated trust chain. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] federation scenarios, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
   
 ## Memory Dumps Can Reveal Claim Information  
- When an application fails, log files, such as those produced by Dr. Watson, can contain the claim information. This information should not be exported to other entities, such as support teams; otherwise, the claim information that contains private data is also exported. You can mitigate this by not sending the log files to unknown entities. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=89160).  
+ When an application fails, log files, such as those produced by Dr. Watson, can contain the claim information. This information should not be exported to other entities, such as support teams; otherwise, the claim information that contains private data is also exported. You can mitigate this by not sending the log files to unknown entities. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=89160).  
   
 ## Endpoint Addresses  
  An endpoint address contains the information needed to communicate with an endpoint. SOAP security must include the address in full in the security negotiation messages that are exchanged in order to negotiate a symmetric key between a client and a server. Because security negotiation is a bootstrap process, the address headers cannot be encrypted during this process. Therefore, the address should not contain any confidential data; otherwise, it leads to information disclosure attacks.  
@@ -63,9 +65,9 @@ MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCr
  If the domain is specified, but an invalid service principal name is specified using the endpoint identity feature, then NTLM is used. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how endpoint identity is specified, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
 ## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)   
- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)   
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)   
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)   
- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)   
+ [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
+ [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
+ [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
+ [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
+ [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)  
  [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)

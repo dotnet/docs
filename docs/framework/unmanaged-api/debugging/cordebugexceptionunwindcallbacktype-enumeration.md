@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugExceptionUnwindCallbackType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugExceptionUnwindCallbackType enumeration [.NET Framework debugging]"
 ms.assetid: 783dce92-8a98-43db-8f78-888d943dd5b2
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugExceptionUnwindCallbackType Enumeration
 Indicates the event that is being signaled by the callback during the unwind phase.  

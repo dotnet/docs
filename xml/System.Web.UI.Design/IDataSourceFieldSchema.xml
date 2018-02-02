@@ -19,6 +19,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
   </Docs>
   <Members>
     <Member MemberName="DataType">
@@ -37,6 +39,7 @@
         <summary>Gets the type of data stored in the field.</summary>
         <value>A <see cref="T:System.Type" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -63,6 +66,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="P:System.Data.DataColumn.AutoIncrement" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -89,6 +95,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+        <altmember cref="P:System.Data.DataColumn.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="IsUnique">
@@ -115,6 +123,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+        <altmember cref="P:System.Data.DataColumn.Unique" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -140,6 +150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+        <altmember cref="P:System.Data.DataColumn.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -161,10 +173,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a <xref:System.Data.DataColumn>object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property.  
+ For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+        <altmember cref="P:System.Data.DataColumn.ColumnName" />
       </Docs>
     </Member>
     <Member MemberName="Nullable">
@@ -191,6 +205,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="P:System.Data.DataColumn.AllowDBNull" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -209,6 +227,7 @@
         <summary>Gets the maximum number of digits used to represent a numerical value in the field.</summary>
         <value>The maximum number of digits used to represent the values of the field if the <see cref="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" /> property of the field represents a numeric type. If this property is not implemented, it should return -1.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="PrimaryKey">
@@ -228,6 +247,9 @@
         <value>
           <see langword="true" /> if the field is in the primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -246,6 +268,8 @@
         <summary>Gets the number of decimal places to which numerical values in the field are resolved.</summary>
         <value>If the <see cref="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" /> property of the field represents a numeric type, returns the number of decimal places to which values are resolved, otherwise <see langword="-1" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+        <altmember cref="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" />
       </Docs>
     </Member>
   </Members>

@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "data requests, pluggable protocols"
   - "WebRequest class, pluggable protocols"
@@ -37,6 +32,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Introducing Pluggable Protocols
 The Microsoft .NET Framework provides a layered, extensible, and managed implementation of Internet services that can be integrated quickly and easily into your applications. The Internet access classes in the <xref:System.Net> and <xref:System.Net.Sockets> namespaces can be used to implement both Web-based and Internet-based applications.  
@@ -64,7 +61,7 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
   
  As an example, the <xref:System.Net.HttpWebRequest> class manages the details of connecting to an Internet resource using HTTP. By default, when the **WebRequest.Create** method encounters a URI that begins with "http:" or "https:" (the protocol identifiers for HTTP and secure HTTP), the **WebRequest** that is returned can be used as is, or it can be typecast to **HttpWebRequest** to access protocol-specific properties. In most cases, the **WebRequest** provides all the necessary information for making a request.  
   
- Any protocol that can be represented as a request/response transaction can be used in a **WebRequest**. You can derive protocol-specific classes from **WebRequest** and **WebResponse** and then register them for use by the application with the static <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=fullName> method.  
+ Any protocol that can be represented as a request/response transaction can be used in a **WebRequest**. You can derive protocol-specific classes from **WebRequest** and **WebResponse** and then register them for use by the application with the static <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=nameWithType> method.  
   
  When client authorization for Internet requests is required, the <xref:System.Net.WebRequest.Credentials%2A> property of the **WebRequest** supplies the necessary credentials. These credentials can be a simple name/password pair for basic HTTP or digest authentication, or a name/password/domain set for NTLM or Kerberos authentication. One set of credentials can be stored in a <xref:System.Net.NetworkCredential> instance, or multiple sets can be stored simultaneously in a <xref:System.Net.CredentialCache> instance. The **CredentialCache** uses the URI of the request and the authentication scheme that the server supports to determine which credentials to send to the server.  
   
@@ -76,7 +73,7 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
  Developers familiar with the Windows Sockets interface or those who need the control provided by programming at the socket level will find that the **System.Net.Sockets** classes meet their needs. The **System.Net.Sockets** classes are a transition point from managed to native code within the **System.Net** classes. In most cases, **System.Net.Sockets** classes marshal data into their Windows 32-bit counterparts, as well as handling any necessary security checks.  
   
 ## See Also  
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)   
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)   
+ [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
+ [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Networking Samples for .NET on MSDN Code Gallery](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

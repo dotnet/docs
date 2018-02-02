@@ -30,7 +30,7 @@
    
   
 ## Examples  
- The following code example shows how to catch an <xref:System.ComponentModel.InvalidEnumArgumentException> exception and interpret its content. The example attempts to pass an invalid enumeration value (`MessageBoxButtons`) through casting, as the <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> method's third argument. Upon catching the exception, the example fetches the respective error message, the invalid parameter, stack trace, and origin of the exception.  
+ The following code example shows how to catch an <xref:System.ComponentModel.InvalidEnumArgumentException> exception and interpret its content. The example attempts to pass an invalid enumeration value (`MessageBoxButtons`) through casting, as the <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> method's third argument. Upon catching the exception, the example fetches the respective error message, the invalid parameter, stack trace, and origin of the exception.  
   
  [!code-cpp[enumException#1](~/samples/snippets/cpp/VS_Snippets_Winforms/enumException/CPP/enumexception.cpp#1)]
  [!code-csharp[enumException#1](~/samples/snippets/csharp/VS_Snippets_Winforms/enumException/CS/enumexception.cs#1)]
@@ -187,5 +187,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InvalidEnumArgumentException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

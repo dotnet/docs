@@ -43,7 +43,7 @@
   
  While any class that implements the <xref:System.Web.UI.IDataSource> interface is a data source control, most ASP.NET data source controls extend the abstract <xref:System.Web.UI.DataSourceControl> class, which provides a base implementation of the <xref:System.Web.UI.IDataSource> interface. The <xref:System.Web.UI.DataSourceControl> class also provides an implementation of the <xref:System.ComponentModel.IListSource> interface, which enables you to programmatically assign the data source control to the `DataSource` property of a data-bound control and return data to the control as a basic list.  
   
- Any ASP.NET control that derives from the <xref:System.Web.UI.WebControls.DataBoundControl> class can bind to a data source control. When a <xref:System.Web.UI.WebControls.DataBoundControl> is bound to a data source control, data binding is performed automatically at run time. You can also use data source controls with ASP.NET controls that expose a `DataSource` or `DataSourceID` property and support basic data binding, but are not derived from <xref:System.Web.UI.WebControls.DataBoundControl>. When using these data-bound controls, you must explicitly call the `DataBind` method. For more information on data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ Any ASP.NET control that derives from the <xref:System.Web.UI.WebControls.DataBoundControl> class can bind to a data source control. When a <xref:System.Web.UI.WebControls.DataBoundControl> is bound to a data source control, data binding is performed automatically at run time. You can also use data source controls with ASP.NET controls that expose a `DataSource` or `DataSourceID` property and support basic data binding, but are not derived from <xref:System.Web.UI.WebControls.DataBoundControl>. When using these data-bound controls, you must explicitly call the `DataBind` method. For more information on data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  You can think of a data source control as the combination of the <xref:System.Web.UI.DataSourceControl> object and its associated lists of data, called data source views. Each list of data is represented by a <xref:System.Web.UI.DataSourceView> object. Because the underlying data storage contains one or more lists of data, a <xref:System.Web.UI.DataSourceControl> is always associated with one or more named <xref:System.Web.UI.DataSourceView> objects. The <xref:System.Web.UI.IDataSource> interface defines the methods that all data source controls use to interact with data source views: the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method is used to enumerate the data source views currently associated with the data source control, and the <xref:System.Web.UI.DataSourceControl.GetView%2A> method is used to retrieve a specific data source view instance by name.  
   
@@ -61,11 +61,15 @@
   
  The following code example demonstrates how to use the `CsvDataSource` control in a Web form.  
   
- <!-- TODO: review snippet reference [!code-csharp[Urtue.Samples.Alexkr.CsvDataSource_1_webform#50](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1_webform/CS/webform6cs.aspx#50)]  -->
- <!-- TODO: review snippet reference [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1_webform#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1_webform/VB/webform6vb.aspx#50)]  -->  
+ [!code-aspx-csharp[Urtue.Samples.Alexkr.CsvDataSource_1_webform#50](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1_webform/CS/webform6cs.aspx#50)]
+ [!code-aspx-vb[Urtue.Samples.Alexkr.CsvDataSource_1_webform#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1_webform/VB/webform6vb.aspx#50)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,6 +174,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -221,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.EmptyControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -259,6 +265,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the value of the <see cref="P:System.Web.UI.DataSourceControl.EnableTheming" /> property.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceControl.SkinID" />
+        <altmember cref="P:System.Web.UI.DataSourceControl.Visible" />
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -317,6 +325,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to call the <see cref="M:System.Web.UI.DataSourceControl.Focus" /> method.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceControl.Visible" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -359,6 +368,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -398,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HasControls">
@@ -449,7 +460,7 @@
 ## Remarks  
  The <xref:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent%2A> method notifies a data-bound control that the underlying data source or the data cached in memory has changed, and that the control should rebind and perform any necessary additional work. Typically, the <xref:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent%2A> method is called when a property of the data source control or a parameter value has changed.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -464,6 +475,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.IDataSource.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -552,10 +564,11 @@
 ## Remarks  
  This property is used to determine whether the current object can be used as a source of one or more lists of data. Data source controls encapsulate their lists of data as <xref:System.Web.UI.DataSourceView> objects; therefore, when associated with one or more <xref:System.Web.UI.DataSourceView> objects, a <xref:System.Web.UI.DataSourceControl> control represents a list source object and the property returns `true`.  
   
- This property calls the static <xref:System.Web.UI.ListSourceHelper.ContainsListCollection%2A?displayProperty=fullName> method to determine whether the current data source control can be used as a source of data. The <xref:System.Web.UI.ListSourceHelper> class determines whether the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method returns a valid collection of view names. If it does, this property returns `true`. If <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns `null`, which is the default implementation of the <xref:System.Web.UI.DataSourceControl> class, the method returns `false`.  
+ This property calls the static <xref:System.Web.UI.ListSourceHelper.ContainsListCollection%2A?displayProperty=nameWithType> method to determine whether the current data source control can be used as a source of data. The <xref:System.Web.UI.ListSourceHelper> class determines whether the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method returns a valid collection of view names. If it does, this property returns `true`. If <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns `null`, which is the default implementation of the <xref:System.Web.UI.DataSourceControl> class, the method returns `false`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.System#ComponentModel#IListSource#GetList" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -580,10 +593,11 @@
 ## Remarks  
  This method is used to retrieve a set of objects that can be used as sources of data. Data source controls encapsulate their lists of data as <xref:System.Web.UI.DataSourceView> objects; therefore, when associated with one or more <xref:System.Web.UI.DataSourceView> objects, a <xref:System.Web.UI.DataSourceControl> control represents a list source object and the method returns an <xref:System.Collections.IList> collection of one element, the <xref:System.Web.UI.DataSourceControl> itself.  
   
- This method calls the static <xref:System.Web.UI.ListSourceHelper.GetList%2A?displayProperty=fullName> method to retrieve an <xref:System.Collections.IList> collection of objects that can be used as sources of data. The <xref:System.Web.UI.ListSourceHelper> class determines whether <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns a valid collection of view names. If it does, the <xref:System.Web.UI.ListSourceHelper> class returns an <xref:System.Collections.IList> collection of one element, the <xref:System.Web.UI.DataSourceControl> control. If <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns `null`, which is the default implementation of the <xref:System.Web.UI.DataSourceControl> class, the <xref:System.Web.UI.ListSourceHelper> class also returns `null`.  
+ This method calls the static <xref:System.Web.UI.ListSourceHelper.GetList%2A?displayProperty=nameWithType> method to retrieve an <xref:System.Collections.IList> collection of objects that can be used as sources of data. The <xref:System.Web.UI.ListSourceHelper> class determines whether <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns a valid collection of view names. If it does, the <xref:System.Web.UI.ListSourceHelper> class returns an <xref:System.Collections.IList> collection of one element, the <xref:System.Web.UI.DataSourceControl> control. If <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns `null`, which is the default implementation of the <xref:System.Web.UI.DataSourceControl> class, the <xref:System.Web.UI.ListSourceHelper> class also returns `null`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceControl.System#ComponentModel#IListSource#ContainsListCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">
@@ -618,6 +632,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="viewName" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetViewNames">
@@ -646,6 +661,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Visible">

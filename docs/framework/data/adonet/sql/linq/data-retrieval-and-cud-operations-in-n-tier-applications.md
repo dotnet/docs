@@ -9,16 +9,21 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: c3133d53-83ed-4a4d-af8b-82edcf3831db
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)
-When you serialize entity objects such as Customers or Orders to a client over a network, those entities are detached from their data context. The data context no longer tracks their changes or their associations with other objects. This is not an issue as long as the clients are only reading the data. It is also relatively simple to enable clients to add new rows to a database. However, if your application requires that clients be able to update or delete data, then you must attach the entities to a new data context before you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A?displayProperty=fullName>. In addition, if you are using an optimistic concurrency check with original values, then you will also need a way to provide the database both the original entity and the entity as modified. The `Attach` methods are provided to enable you to put entities into a new data context after they have been detached.  
+When you serialize entity objects such as Customers or Orders to a client over a network, those entities are detached from their data context. The data context no longer tracks their changes or their associations with other objects. This is not an issue as long as the clients are only reading the data. It is also relatively simple to enable clients to add new rows to a database. However, if your application requires that clients be able to update or delete data, then you must attach the entities to a new data context before you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A?displayProperty=nameWithType>. In addition, if you are using an optimistic concurrency check with original values, then you will also need a way to provide the database both the original entity and the entity as modified. The `Attach` methods are provided to enable you to put entities into a new data context after they have been detached.  
   
- Even if you are serializing proxy objects in place of the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] entities, you still have to construct an entity on the data access layer (DAL), and attach it to a new <xref:System.Data.Linq.DataContext?displayProperty=fullName>, in order to submit the data to the database.  
+ Even if you are serializing proxy objects in place of the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] entities, you still have to construct an entity on the data access layer (DAL), and attach it to a new <xref:System.Data.Linq.DataContext?displayProperty=nameWithType>, in order to submit the data to the database.  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is completely indifferent about how entities are serialized. For more information about how to use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] and SQLMetal tools to generate classes that are serializable by using Windows Communication Foundation (WCF), see [How to: Make Entities Serializable](../../../../../../docs/framework/data/adonet/sql/linq/how-to-make-entities-serializable.md).  
   
@@ -410,5 +415,5 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
  When you attach with an `IEnumerable` set of objects, a <xref:System.Data.Linq.DuplicateKeyException> is thrown when an already existing key is present. Remaining objects are not attached.  
   
 ## See Also  
- [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)   
+ [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)  
  [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

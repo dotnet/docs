@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IWindowProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -138,7 +139,7 @@
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to close the <xref:System.Windows.Automation.AutomationElement>.  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to close the <xref:System.Windows.Automation.AutomationElement>.  
   
  [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
  [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
@@ -298,7 +299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
   
  [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
  [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
@@ -341,7 +342,7 @@
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and uses <xref:System.Windows.Automation.WindowPattern.WaitForInputIdle%2A> to confirm the element is ready for user interaction within a reasonable amount of time.  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and uses <xref:System.Windows.Automation.WindowPattern.WaitForInputIdle%2A> to confirm the element is ready for user interaction within a reasonable amount of time.  
   
  [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
  [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
@@ -383,6 +384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.WindowClosedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="WindowInteractionStateProperty">

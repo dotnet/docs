@@ -10,28 +10,26 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], custom drawing"
-  - "drawing, owner"
-  - "ToolStripRenderMode class"
-  - "RenderMode property"
-  - "ProfessionalColorTable class, overriding"
+  - "drawing [Windows Forms], owner"
+  - "ProfessionalColorTable class [Windows Forms], overriding"
   - "examples [Windows Forms], toolbars"
-  - "ToolStripRenderer class"
-  - "drawing, custom"
+  - "drawing [Windows Forms], custom"
   - "toolbars [Windows Forms], changing colors"
-  - "ToolStripProfessionalRenderer class"
   - "ToolStrip control [Windows Forms], drawing"
   - "ToolStrip control [Windows Forms], changing colors"
   - "custom drawing"
   - "owner drawing"
-  - "ToolStripSystemRenderer class"
 ms.assetid: 94e7d7bd-a752-441c-b5b3-7acf98881163
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Custom Draw a ToolStrip Control
 The <xref:System.Windows.Forms.ToolStrip> controls have the following associated rendering (painting) classes:  
@@ -54,7 +52,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 ### To change the Microsoft Office–style borders to straight  
   
--   Override <xref:System.Windows.Forms.ToolStripProfessionalRenderer.OnRenderToolStripBorder%2A?displayProperty=fullName>, but do not call the base class.  
+-   Override <xref:System.Windows.Forms.ToolStripProfessionalRenderer.OnRenderToolStripBorder%2A?displayProperty=nameWithType>, but do not call the base class.  
   
 > [!NOTE]
 >  There is a version of this method for <xref:System.Windows.Forms.ToolStripRenderer>, <xref:System.Windows.Forms.ToolStripSystemRenderer>, and <xref:System.Windows.Forms.ToolStripProfessionalRenderer>.  
@@ -117,15 +115,15 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 ### To change the rendering for all ToolStrip controls in your application  
   
-1.  Use the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=fullName> property to choose one of the provided renderers.  
+1.  Use the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=nameWithType> property to choose one of the provided renderers.  
   
-2.  Use <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> to assign a custom renderer.  
+2.  Use <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=nameWithType> to assign a custom renderer.  
   
-3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>.  
+3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=nameWithType> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>.  
   
 ### To turn off the Microsoft Office colors for the entire application  
   
--   Set <xref:System.Windows.Forms.ToolStripManager.VisualStylesEnabled%2A?displayProperty=fullName> to `false`.  
+-   Set <xref:System.Windows.Forms.ToolStripManager.VisualStylesEnabled%2A?displayProperty=nameWithType> to `false`.  
   
 ### To turn off the Microsoft Office colors for one ToolStrip control  
   
@@ -144,9 +142,9 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStripSystemRenderer>   
- <xref:System.Windows.Forms.ToolStripProfessionalRenderer>   
- <xref:System.Windows.Forms.ToolStripRenderer>   
- [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)   
- [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)   
+ <xref:System.Windows.Forms.ToolStripSystemRenderer>  
+ <xref:System.Windows.Forms.ToolStripProfessionalRenderer>  
+ <xref:System.Windows.Forms.ToolStripRenderer>  
+ [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)  
+ [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)  
  [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)

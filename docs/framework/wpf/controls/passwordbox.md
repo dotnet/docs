@@ -19,11 +19,13 @@ caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # PasswordBox
 The <xref:System.Windows.Controls.PasswordBox> control is used to input sensitive or private information.  
   
 ## See Also  
- <xref:System.Windows.Controls.TextBox>   
- <xref:System.Windows.Controls.RichTextBox>   
+ <xref:System.Windows.Controls.TextBox>  
+ <xref:System.Windows.Controls.RichTextBox>  
  [Control Library](../../../../docs/framework/wpf/controls/control-library.md)

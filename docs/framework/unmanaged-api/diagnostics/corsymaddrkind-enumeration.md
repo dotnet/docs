@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorSymAddrKind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorSymAddrKind enumeration [.NET Framework debugging]"
 ms.assetid: 3ef841c2-cade-42ee-ba34-2ef91d6d0879
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorSymAddrKind Enumeration
 Indicates the type of memory address.  

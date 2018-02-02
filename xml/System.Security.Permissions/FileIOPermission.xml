@@ -52,7 +52,7 @@
  Access to a folder implies access to all the files it contains, as well as access to all the files and folders in its subfolders. For example, `Read` access to C:\folder1\ implies `Read` access to C:\folder1\file1.txt, C:\folder1\folder2\\, C:\folder1\folder2\file2.txt, and so on.  
   
 > [!NOTE]
->  In versions of the .NET Framework before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you could use the <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> method to prevent inadvertent access to system resources by trusted code. <xref:System.Security.CodeAccessPermission.Deny%2A> is now obsolete, and access to resources is now determined solely by the granted permission set for an assembly. To limit access to files, you must run partially trusted code in a sandbox and assign it permissions only to resources that the code is allowed to access. For information about running an application in a sandbox, see [How to: Run Partially Trusted Code in a Sandbox](~/docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
+>  In versions of the .NET Framework before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you could use the <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=nameWithType> method to prevent inadvertent access to system resources by trusted code. <xref:System.Security.CodeAccessPermission.Deny%2A> is now obsolete, and access to resources is now determined solely by the granted permission set for an assembly. To limit access to files, you must run partially trusted code in a sandbox and assign it permissions only to resources that the code is allowed to access. For information about running an application in a sandbox, see [How to: Run Partially Trusted Code in a Sandbox](~/docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
   
    
   
@@ -71,6 +71,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.FileIOPermissionAccess" />
+    <altmember cref="T:System.Security.Permissions.FileIOPermissionAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,7 +146,7 @@
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.FileIOPermission.%23ctor%28System.Security.Permissions.FileIOPermissionAccess%2CSystem.String%29?displayProperty=fullName> constructor to create a new instance of the <xref:System.Security.Permissions.FileIOPermission> class, which provides complete access to the C:\test_r file.  
+ The following code example shows the use of the <xref:System.Security.Permissions.FileIOPermission.%23ctor%28System.Security.Permissions.FileIOPermissionAccess%2CSystem.String%29?displayProperty=nameWithType> constructor to create a new instance of the <xref:System.Security.Permissions.FileIOPermission> class, which provides complete access to the C:\test_r file.  
   
  [!code-cpp[Classic FileIOPermission Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileIOPermission Example/CPP/source.cpp#2)]
  [!code-csharp[Classic FileIOPermission Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileIOPermission Example/CS/source.cs#2)]
@@ -326,7 +328,7 @@
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.FileIOPermission.AddPathList%28System.Security.Permissions.FileIOPermissionAccess%2CSystem.String%29?displayProperty=fullName> method.  
+ The following code example shows the use of the <xref:System.Security.Permissions.FileIOPermission.AddPathList%28System.Security.Permissions.FileIOPermissionAccess%2CSystem.String%29?displayProperty=nameWithType> method.  
   
  [!code-cpp[Classic FileIOPermission Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileIOPermission Example/CPP/source.cpp#2)]
  [!code-csharp[Classic FileIOPermission Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileIOPermission Example/CS/source.cs#2)]
@@ -809,7 +811,7 @@
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.FileIOPermission.SetPathList%28System.Security.Permissions.FileIOPermissionAccess%2CSystem.String%29?displayProperty=fullName> method.  
+ The following code example shows the use of the <xref:System.Security.Permissions.FileIOPermission.SetPathList%28System.Security.Permissions.FileIOPermissionAccess%2CSystem.String%29?displayProperty=nameWithType> method.  
   
  [!code-cpp[System.Security.Permissions.FileIOPermission#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.FileIOPermission/CPP/fileiopermission.cpp#7)]
  [!code-csharp[System.Security.Permissions.FileIOPermission#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.FileIOPermission/CS/fileiopermission.cs#7)]
@@ -933,5 +935,35 @@
         <exception cref="T:System.ArgumentException">The <paramref name="other" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddPathList">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds access for the specified files and directories to the existing state of the permission.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.FileIOPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetPathList">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the specified access to the specified files and directories, replacing the existing state of the permission.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

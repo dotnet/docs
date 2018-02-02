@@ -33,7 +33,7 @@
   
  [!INCLUDE[crabout](~/includes/crabout-md.md)] the security issues related to managed exception information, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
- You can also set the values of this attribute by using the [\&lt;callbackDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element in a client application configuration file.  
+ You can also set the values of this attribute by using the [&lt;callbackDebug&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element in a client application configuration file.  
   
    
   
@@ -106,13 +106,13 @@
   
 ### To enable or disable a feature of CallbackDebugBehavior using a configuration file  
   
-1.  Add a `behaviorConfiguration` attribute to the client [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element for your [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client application. The <xref:System.ServiceModel.Description.CallbackDebugBehavior> behavior is an endpoint behavior. Endpoint behaviors are configured on `<endpoint>` elements; service behaviors are configured on [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) elements.  
+1.  Add a `behaviorConfiguration` attribute to the client [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element for your [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client application. The <xref:System.ServiceModel.Description.CallbackDebugBehavior> behavior is an endpoint behavior. Endpoint behaviors are configured on `<endpoint>` elements; service behaviors are configured on [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) elements.  
   
-2.  Add to or create an [\&lt;endpointBehaviors\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) section and add a [\&lt;behavior\&gt;](~/docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to that with the name that matches the `behaviorConfiguration` attribute value from step 1. Endpoint behaviors are added for use in a client [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element using an [\&lt;endpointBehaviors\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element.  
+2.  Add to or create an [&lt;endpointBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) section and add a [&lt;behavior&gt;](~/docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to that with the name that matches the `behaviorConfiguration` attribute value from step 1. Endpoint behaviors are added for use in a client [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element using an [&lt;endpointBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element.  
   
-3.  Add a [\&lt;callbackDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element to the [\&lt;behavior\&gt;](~/docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element from step 2 and enable or disable the various properties appropriate to your scenario.  
+3.  Add a [&lt;callbackDebug&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element to the [&lt;behavior&gt;](~/docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element from step 2 and enable or disable the various properties appropriate to your scenario.  
   
- For a specific example, see the Example section. You can also set the values of this attribute by using the [\&lt;callbackDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element in a client application configuration file.  
+ For a specific example, see the Example section. You can also set the values of this attribute by using the [&lt;callbackDebug&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element in a client application configuration file.  
   
    
   
@@ -172,7 +172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Assigns the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> property.  
+ Assigns the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -202,7 +202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Throws an <xref:System.InvalidOperationException?displayProperty=fullName>; this behavior can only be used in a client application.  
+ Throws an <xref:System.InvalidOperationException?displayProperty=nameWithType>; this behavior can only be used in a client application.  
   
  ]]></format>
         </remarks>

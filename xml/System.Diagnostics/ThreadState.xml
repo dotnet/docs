@@ -27,10 +27,12 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  There are two thread state enumerations, <xref:System.Diagnostics.ThreadState?displayProperty=fullName> and <xref:System.Threading.ThreadState?displayProperty=fullName>.  The thread state enumerations are only of interest in a few debugging scenarios. Your code should never use thread state to synchronize the activities of threads.  
+>  There are two thread state enumerations, <xref:System.Diagnostics.ThreadState?displayProperty=nameWithType> and <xref:System.Threading.ThreadState?displayProperty=nameWithType>.  The thread state enumerations are only of interest in a few debugging scenarios. Your code should never use thread state to synchronize the activities of threads.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.ProcessThread" />
+    <altmember cref="T:System.Diagnostics.Process" />
   </Docs>
   <Members>
     <Member MemberName="Initialized">

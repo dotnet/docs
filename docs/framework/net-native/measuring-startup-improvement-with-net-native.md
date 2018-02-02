@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Measuring Startup Improvement with .NET Native
 [!INCLUDE[net_native](../../../includes/net-native-md.md)] significantly improves the launch time of apps. This improvement is particularly noticeable on portable, low-powered devices and with complex apps. This topic helps you get started with the basic instrumentation needed to measure this startup improvement.  

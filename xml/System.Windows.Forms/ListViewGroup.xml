@@ -34,23 +34,23 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items. Each group consists of a text-based header followed by a horizontal line and the items assigned to that group. You can align the header text to the left, right, or center of the control. Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=fullName>.  
+ The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items. Each group consists of a text-based header followed by a horizontal line and the items assigned to that group. You can align the header text to the left, right, or center of the control. Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View.List?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Forms.ListView> groups help your users find the items they are looking for by separating the items into useful categories. You can create whatever categories you need. One typical way to group the items is by the way they are sorted. For example, you can group the items by the initial letter of the item name when they are sorted alphabetically, or by subitems such as type or date when the list is sorted by clicking a column header in the details view. Windows Explorer uses this type of grouping.  
   
- To use the grouping feature, add one or more <xref:System.Windows.Forms.ListViewGroup> objects to the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection of a <xref:System.Windows.Forms.ListView> control. Set the group header text and header alignment in the <xref:System.Windows.Forms.ListViewGroup.%23ctor%2A> constructor, or set them using the <xref:System.Windows.Forms.ListViewGroup.Header%2A> and <xref:System.Windows.Forms.ListViewGroup.HeaderAlignment%2A> properties.  
+ To use the grouping feature, add one or more <xref:System.Windows.Forms.ListViewGroup> objects to the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection of a <xref:System.Windows.Forms.ListView> control. Set the group header text and header alignment in the <xref:System.Windows.Forms.ListViewGroup.%23ctor%2A> constructor, or set them using the <xref:System.Windows.Forms.ListViewGroup.Header%2A> and <xref:System.Windows.Forms.ListViewGroup.HeaderAlignment%2A> properties.  
   
- You can assign an item to a group by specifying the group in the <xref:System.Windows.Forms.ListViewItem.%23ctor%2A> constructor, by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=fullName> property, or by directly adding the item to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of a group. All items should be assigned to groups before they are displayed. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups.  
+ You can assign an item to a group by specifying the group in the <xref:System.Windows.Forms.ListViewItem.%23ctor%2A> constructor, by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=nameWithType> property, or by directly adding the item to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of a group. All items should be assigned to groups before they are displayed. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups.  
   
- An item can only be in one group at a time. You can change the group to which an item belongs by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=fullName> property at run time or by adding it to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of another group, which automatically removes it from the previous group.  
+ An item can only be in one group at a time. You can change the group to which an item belongs by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=nameWithType> property at run time or by adding it to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of another group, which automatically removes it from the previous group.  
   
 > [!NOTE]
 >  The insertion mark feature is disabled when using groups. This is because the grouping feature orders items by group membership, while the insertion mark feature is used with drag-and-drop repositioning in a <xref:System.Windows.Forms.ListView> control that does not already order its items.  
   
 > [!NOTE]
->  <xref:System.Windows.Forms.ListView> groups are available only on Windows XP and the Windows Server 2003 family when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method. On earlier operating systems, any code relating to groups will be ignored and the groups will not appear. As a result, any code that depends on the grouping feature might not work correctly. You might want to include a test that determines whether the grouping feature is available, and provide alternate functionality when it is unavailable. For example, you might want to provide alternate sorting when running on operating systems that do not support sorting by group.  
+>  <xref:System.Windows.Forms.ListView> groups are available only on Windows XP and the Windows Server 2003 family when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to groups will be ignored and the groups will not appear. As a result, any code that depends on the grouping feature might not work correctly. You might want to include a test that determines whether the grouping feature is available, and provide alternate functionality when it is unavailable. For example, you might want to provide alternate sorting when running on operating systems that do not support sorting by group.  
 >   
->  The insertion mark feature is provided by the same library that provides the operating system themes feature. To check for the availability of this library, call the <xref:System.Windows.Forms.FeatureSupport.IsPresent%28System.Object%29?displayProperty=fullName> method overload and pass in the <xref:System.Windows.Forms.OSFeature.Themes?displayProperty=fullName> value.  
+>  The insertion mark feature is provided by the same library that provides the operating system themes feature. To check for the availability of this library, call the <xref:System.Windows.Forms.FeatureSupport.IsPresent%28System.Object%29?displayProperty=nameWithType> method overload and pass in the <xref:System.Windows.Forms.OSFeature.Themes?displayProperty=nameWithType> value.  
   
    
   
@@ -63,6 +63,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListViewGroupCollection" />
+    <altmember cref="P:System.Windows.Forms.ListViewItem.Group" />
+    <altmember cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -231,15 +235,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can assign an item to a group by specifying the group in the <xref:System.Windows.Forms.ListViewItem.%23ctor%2A> constructor, by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=fullName> property, or by directly adding the item to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of a group. All items should be assigned to groups before they are displayed. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups.  
+ You can assign an item to a group by specifying the group in the <xref:System.Windows.Forms.ListViewItem.%23ctor%2A> constructor, by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=nameWithType> property, or by directly adding the item to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of a group. All items should be assigned to groups before they are displayed. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups.  
   
- An item can only be in one group at a time. You can change the group to which an item belongs by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=fullName> property at run time or by adding it to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of another group, which automatically removes it from the previous group.  
+ An item can only be in one group at a time. You can change the group to which an item belongs by setting the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=nameWithType> property at run time or by adding it to the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of another group, which automatically removes it from the previous group.  
   
 > [!NOTE]
->  An item can be present within the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of a group, but if it is not also present within the <xref:System.Windows.Forms.ListView.Items%2A?displayProperty=fullName> collection of the <xref:System.Windows.Forms.ListView> control itself, it will not appear in the control.  
+>  An item can be present within the <xref:System.Windows.Forms.ListViewGroup.Items%2A> collection of a group, but if it is not also present within the <xref:System.Windows.Forms.ListView.Items%2A?displayProperty=nameWithType> collection of the <xref:System.Windows.Forms.ListView> control itself, it will not appear in the control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Group" />
+        <altmember cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="ListView">
@@ -373,7 +379,17 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewGroup" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

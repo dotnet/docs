@@ -45,16 +45,31 @@
 ## Examples  
  The following code example demonstrates how to populate the <xref:System.Web.UI.WebControls.Menu.Items%2A> and <xref:System.Web.UI.WebControls.MenuItem.ChildItems%2A> collections using declarative syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDeclarative/CS/menudeclarativecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDeclarative/VB/menudeclarativevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDeclarative/CS/menudeclarativecs.aspx#1)]
+ [!code-aspx-vb[MenuDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDeclarative/VB/menudeclarativevb.aspx#1)]  
   
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.MenuItem> object to the <xref:System.Web.UI.WebControls.MenuItem.ChildItems%2A> collection of a root menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Count" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Contains(System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Web.UI.WebControls.MenuItem[],System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.IndexOf(System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +97,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +131,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -148,13 +171,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Add%2A> method to programmatically add a <xref:System.Web.UI.WebControls.MenuItem> object to a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="child" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -193,11 +224,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.AddAt%2A> method to programmatically insert a <xref:System.Web.UI.WebControls.MenuItem> object in a <xref:System.Web.UI.WebControls.MenuItemCollection> object at a specified index location.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAddAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAddAt/CS/menuitemcollectionaddatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAddAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAddAt/VB/menuitemcollectionaddatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAddAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAddAt/CS/menuitemcollectionaddatcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAddAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAddAt/VB/menuitemcollectionaddatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -229,11 +268,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Clear%2A> method to remove all items from the <xref:System.Web.UI.WebControls.Menu.Items%2A> collection of a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionClear/CS/menuitemcollectionclearcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionClear/VB/menuitemcollectionclearvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionClear/CS/menuitemcollectionclearcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionClear/VB/menuitemcollectionclearvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -267,11 +314,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Contains%2A> method to determine whether a <xref:System.Web.UI.WebControls.MenuItem> object is contained within a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionContains#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionContains/CS/menuitemcollectioncontainscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionContains#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionContains/VB/menuitemcollectioncontainsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionContains#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionContains/CS/menuitemcollectioncontainscs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionContains#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionContains/VB/menuitemcollectioncontainsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Count" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.IndexOf(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -298,7 +351,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the contents of the current <xref:System.Web.UI.WebControls.MenuItemCollection> object into the specified zero-based <xref:System.Array?displayProperty=fullName>. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName>, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
+ Use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the contents of the current <xref:System.Web.UI.WebControls.MenuItemCollection> object into the specified zero-based <xref:System.Array?displayProperty=nameWithType>. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=nameWithType>, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
  As an alternative, you can also use the <xref:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   
@@ -306,6 +359,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is not an array of <see cref="T:System.Web.UI.WebControls.MenuItem" /> objects.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -341,11 +400,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the items in a <xref:System.Web.UI.WebControls.MenuItemCollection> object to an array of <xref:System.Web.UI.WebControls.MenuItem> objects.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCopyTo/CS/menuitemcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCopyTo/VB/menuitemcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCopyTo/CS/menuitemcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCopyTo/VB/menuitemcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -374,11 +439,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Count%2A> property to determine the number of menu items in a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCount/CS/menuitemcollectioncountcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCount/VB/menuitemcollectioncountvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCount/CS/menuitemcollectioncountcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCount/VB/menuitemcollectioncountvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Contains(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.IndexOf(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -413,11 +484,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator%2A> method to create an enumerator that contains the submenu items of the `Music` menu item in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/CS/menuitemcollectiongetenumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/VB/menuitemcollectiongetenumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/CS/menuitemcollectiongetenumeratorcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/VB/menuitemcollectiongetenumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -453,11 +530,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.IndexOf%2A> method to determine the index of a <xref:System.Web.UI.WebControls.MenuItem> object within a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionIndexOf/CS/menuitemcollectionindexofcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionIndexOf/VB/menuitemcollectionindexofvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionIndexOf/CS/menuitemcollectionindexofcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionIndexOf/VB/menuitemcollectionindexofvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Count" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Contains(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -479,12 +562,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MenuItemCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.MenuItemCollection> object is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false`.  
+ The <xref:System.Web.UI.WebControls.MenuItemCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.MenuItemCollection> object is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> class and is overridden to always return `false`.  
   
  For more information on the <xref:System.Web.UI.WebControls.MenuItemCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A> property of the <xref:System.Collections.ICollection> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -517,11 +604,17 @@
 ## Examples  
  The following code example demonstrates how to use the indexer to retrieve the root menu item from the <xref:System.Web.UI.WebControls.Menu.Items%2A> collection of a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -558,13 +651,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Remove%2A> method to programmatically remove a <xref:System.Web.UI.WebControls.MenuItem> object from a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemove/CS/menuitemcollectionremovecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemove/VB/menuitemcollectionremovevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemove/CS/menuitemcollectionremovecs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemove/VB/menuitemcollectionremovevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -601,11 +702,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.RemoveAt%2A> method to programmatically remove a <xref:System.Web.UI.WebControls.MenuItem> object from a <xref:System.Web.UI.WebControls.MenuItemCollection> object at a specified index location.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/CS/menuitemcollectionremoveatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/VB/menuitemcollectionremoveatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/CS/menuitemcollectionremoveatcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/VB/menuitemcollectionremoveatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -643,6 +752,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Collections.ArrayList.SyncRoot" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -662,6 +776,9 @@
         <value>
           <see langword="true" /> if the control is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -683,6 +800,8 @@
         <param name="state">An <see cref="T:System.Object" /> that contains the saved view state values.</param>
         <summary>Loads the <see cref="T:System.Web.UI.WebControls.MenuItemCollection" /> object's previously saved view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -702,6 +821,8 @@
         <summary>Saves the changes to view state to an <see cref="T:System.Object" />.</summary>
         <returns>The <see cref="T:System.Object" /> that contains the view state changes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -727,7 +848,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the contents of the current <see cref="T:System.Web.UI.WebControls.MenuItemCollection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItemCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

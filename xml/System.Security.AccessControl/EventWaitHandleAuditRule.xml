@@ -27,17 +27,17 @@
 > [!NOTE]
 >  Windows access control security is meaningful only for named system events. If an <xref:System.Threading.EventWaitHandle> object represents a local event, access control is irrelevant.  
   
- To get a list of the audit rules currently applied to a named event, use the <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> method to get an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, and then use its <xref:System.Security.AccessControl.CommonObjectSecurity.GetAuditRules%2A> method to obtain a collection of <xref:System.Security.AccessControl.EventWaitHandleAuditRule> objects.  
+ To get a list of the audit rules currently applied to a named event, use the <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=nameWithType> method to get an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, and then use its <xref:System.Security.AccessControl.CommonObjectSecurity.GetAuditRules%2A> method to obtain a collection of <xref:System.Security.AccessControl.EventWaitHandleAuditRule> objects.  
   
  <xref:System.Security.AccessControl.EventWaitHandleAuditRule> objects do not map one-to-one with access control entries in the underlying discretionary access control list (DACL). When you get the set of all audit rules for an event, the set contains the minimum number of rules currently required to express all the access control entries.  
   
 > [!NOTE]
 >  The underlying access control entries change as you apply and remove rules. The information in rules is merged if possible, to maintain the smallest number of access control entries. Thus, when you read the current list of rules, it might not look exactly like the list of all the rules you have added.  
   
- Use <xref:System.Security.AccessControl.EventWaitHandleAuditRule> objects to specify access rights to be audited for a user or group. To apply a rule to a named system event, use the <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.EventWaitHandleSecurity> object. Modify the <xref:System.Security.AccessControl.EventWaitHandleSecurity> object by using its methods to add the rule, and then use the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName> method to reattach the security object.  
+ Use <xref:System.Security.AccessControl.EventWaitHandleAuditRule> objects to specify access rights to be audited for a user or group. To apply a rule to a named system event, use the <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=nameWithType> method to get the <xref:System.Security.AccessControl.EventWaitHandleSecurity> object. Modify the <xref:System.Security.AccessControl.EventWaitHandleSecurity> object by using its methods to add the rule, and then use the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=nameWithType> method to reattach the security object.  
   
 > [!IMPORTANT]
->  Changes you make to an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object do not affect the access levels of the named event until you call the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named event.  
+>  Changes you make to an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object do not affect the access levels of the named event until you call the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=nameWithType> method to assign the altered security object to the named event.  
   
  <xref:System.Security.AccessControl.EventWaitHandleAuditRule> objects are immutable. Security for an event is modified using the methods of the <xref:System.Security.AccessControl.EventWaitHandleSecurity> class to add or remove rules; as you do this, the underlying access control entries are modified.  
   
@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create an <xref:System.Security.Principal.NTAccount> object from a string representing a user or group name, use the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=fullName> constructor.  
+ To create an <xref:System.Security.Principal.NTAccount> object from a string representing a user or group name, use the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=nameWithType> constructor.  
   
  ]]></format>
         </remarks>

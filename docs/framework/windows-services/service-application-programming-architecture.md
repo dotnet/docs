@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ServiceController components, programming architecture"
   - "ServiceBase class, service states"
@@ -23,15 +26,17 @@ caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"
 manager: "douge"
+ms.workload: 
+  - "dotnet"
 ---
 # Service Application Programming Architecture
-Windows Service applications are based on a class that inherits from the <xref:System.ServiceProcess.ServiceBase?displayProperty=fullName> class. You override methods from this class and define functionality for them to determine how your service behaves.  
+Windows Service applications are based on a class that inherits from the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> class. You override methods from this class and define functionality for them to determine how your service behaves.  
   
  The main classes involved in service creation are:  
   
--   <xref:System.ServiceProcess.ServiceBase?displayProperty=fullName> — You override methods from the <xref:System.ServiceProcess.ServiceBase> class when creating a service and define the code to determine how your service functions in this inherited class.  
+-   <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> — You override methods from the <xref:System.ServiceProcess.ServiceBase> class when creating a service and define the code to determine how your service functions in this inherited class.  
   
--   <xref:System.ServiceProcess.ServiceProcessInstaller?displayProperty=fullName> and <xref:System.ServiceProcess.ServiceInstaller?displayProperty=fullName> —You use these classes to install and uninstall your service.  
+-   <xref:System.ServiceProcess.ServiceProcessInstaller?displayProperty=nameWithType> and <xref:System.ServiceProcess.ServiceInstaller?displayProperty=nameWithType> —You use these classes to install and uninstall your service.  
   
  In addition, a class named <xref:System.ServiceProcess.ServiceController> can be used to manipulate the service itself. This class is not involved in the creation of a service, but can be used to start and stop the service, pass commands to it, and return a series of enumerations.  
   
@@ -69,5 +74,5 @@ Windows Service applications are based on a class that inherits from the <xref:S
  You can also use a component called the <xref:System.ServiceProcess.ServiceController> to communicate with and control the behavior of an existing service.  
   
 ## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)   
+ [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
  [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)

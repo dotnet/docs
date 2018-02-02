@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "NetFx45_CultureAwareComparerGetHashCode_LongStrings element"
   - "<NetFx45_CultureAwareComparerGetHashCode_LongStrings> element"
@@ -24,9 +19,11 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;NetFx45_CultureAwareComparerGetHashCode_LongStrings&gt; Element
-Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=fullName> method.  
+Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  \<configuration>  
 \<runtime>  
@@ -34,7 +31,7 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
   
 ## Syntax  
   
-```vb  
+```xml
 <NetFx45_CultureAwareComparerGetHashCode_LongStrings enabled="0|1">  
 ```  
   
@@ -51,8 +48,8 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
   
 |Value|Description|  
 |-----------|-----------------|  
-|0|The common language runtime allocates a variable amount of memory for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=fullName> method to calculate hash codes. This is the default.|  
-|1|The common language runtime allocates a fixed amount of memory for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=fullName> method to calculate hash codes.|  
+|0|The common language runtime allocates a variable amount of memory for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method to calculate hash codes. This is the default.|  
+|1|The common language runtime allocates a fixed amount of memory for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method to calculate hash codes.|  
   
 ### Child Elements  
  None.  
@@ -65,12 +62,12 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
- By default, the common language runtime allocates a variable amount of memory for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=fullName> method, and an <xref:System.ArgumentException> can be thrown when the method attempts to compute the hash code of very large strings (over several million characters long). By adding this element to an application configuration file and setting its `enabled` attribute to "1", you can specify that the <xref:System.StringComparer.GetHashCode%2A?displayProperty=fullName> method use an alternate algorithm that allocates a fixed amount of memory for the computation of hash codes.  
+ By default, the common language runtime allocates a variable amount of memory for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method, and an <xref:System.ArgumentException> can be thrown when the method attempts to compute the hash code of very large strings (over several million characters long). By adding this element to an application configuration file and setting its `enabled` attribute to "1", you can specify that the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method use an alternate algorithm that allocates a fixed amount of memory for the computation of hash codes.  
   
 > [!IMPORTANT]
 >  The `<NetFx45_CultureAwareComparerGetHashCode_LongStrings>` element is not used in [!INCLUDE[win8](../../../../../includes/win8-md.md)] and later versions.  
   
 ## See Also  
- <xref:System.StringComparer.GetHashCode%2A?displayProperty=fullName>   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

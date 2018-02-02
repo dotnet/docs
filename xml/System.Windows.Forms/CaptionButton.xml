@@ -15,14 +15,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=fullName>.  
+ This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=nameWithType>.  
   
  Caption buttons are the system buttons usually found on the rightmost side of a form's title bar.  
   
    
   
 ## Examples  
- The following code example demonstrates the use the <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=fullName> method and the <xref:System.Windows.Forms.CaptionButton> enumeration. To run this example paste the following code in a form containing a Button named Button1. The form should import the System.Windows.Forms and System.Drawing namespaces. Ensure the button's Paint event is associated with the event-handling method in this example.  
+ The following code example demonstrates the use the <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=nameWithType> method and the <xref:System.Windows.Forms.CaptionButton> enumeration. To run this example paste the following code in a form containing a Button named Button1. The form should import the System.Windows.Forms and System.Drawing namespaces. Ensure the button's Paint event is associated with the event-handling method in this example.  
   
  [!code-cpp[System.Windows.Forms.ControlPaintMembers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ControlPaintMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CS/form1.cs#1)]
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.ControlPaint.DrawCaptionButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CaptionButton,System.Windows.Forms.ButtonState)" />
   </Docs>
   <Members>
     <Member MemberName="Close">

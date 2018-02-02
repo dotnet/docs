@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::ThreadNameChanged"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ThreadNameChanged method [.NET Framework profiling]"
   - "ICorProfilerCallback2::ThreadNameChanged method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback2::ThreadNameChanged Method
 Notifies the code profiler that the name of a thread has changed.  
@@ -62,5 +62,5 @@ HRESULT ThreadNameChanged(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)   
+ [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
  [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

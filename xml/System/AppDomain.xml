@@ -62,7 +62,7 @@
  You should never create a remotable wrapper for an <xref:System.AppDomain> object. Doing so could publish a remote reference to that <xref:System.AppDomain>, exposing methods such as <xref:System.AppDomain.CreateInstance%2A> to remote access and effectively destroying code access security for that <xref:System.AppDomain>. Malicious clients connecting to the remoted <xref:System.AppDomain> could obtain access to any resource the <xref:System.AppDomain> itself has access to. Do not create remotable wrappers for any type that extends <xref:System.MarshalByRefObject> and that implements methods that could be used by malicious clients to bypass the security system.  
   
 > [!CAUTION]
->  The default value for the <xref:System.AppDomainSetup.DisallowCodeDownload%2A?displayProperty=fullName> property is `false`. This setting is unsafe for services. To prevent services from downloading partially trusted code, set this property to `true`.  
+>  The default value for the <xref:System.AppDomainSetup.DisallowCodeDownload%2A?displayProperty=nameWithType> property is `false`. This setting is unsafe for services. To prevent services from downloading partially trusted code, set this property to `true`.  
   
    
   
@@ -133,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The use of this property is not recommended, because it might change the probing path for assemblies after they have already been loaded. Use the <xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=fullName> property instead.  
+ The use of this property is not recommended, because it might change the probing path for assemblies after they have already been loaded. Use the <xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=nameWithType> property instead.  
   
  The private path, or relative search path, is the path relative to the base directory where the assembly resolver probes for private assemblies.  
   
@@ -301,16 +301,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is the responsibility of the <xref:System.ResolveEventHandler> for this event to return the assembly that is specified by the <xref:System.ResolveEventArgs.Name%2A?displayProperty=fullName> property, or to return null if the assembly is not recognized. The assembly must be loaded into an execution context; if it is loaded into the reflection-only context, the load that caused this event to be raised fails.  
+ It is the responsibility of the <xref:System.ResolveEventHandler> for this event to return the assembly that is specified by the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property, or to return null if the assembly is not recognized. The assembly must be loaded into an execution context; if it is loaded into the reflection-only context, the load that caused this event to be raised fails.  
   
  For guidance on the use of this event, see [Resolving Assembly Loads](~/docs/framework/app-domains/resolve-assembly-loads.md).  
   
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName> property returns the assembly that requested the assembly load that could not be resolved. For example, the loader might be unable to load a dependency of the requesting assembly because the requesting assembly and its dependency are not in the probing path. Knowing the identity of the requesting assembly might be useful in locating the dependency or in identifying the correct version, if more than one version of the dependency is available. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName>.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType> property returns the assembly that requested the assembly load that could not be resolved. For example, the loader might be unable to load a dependency of the requesting assembly because the requesting assembly and its dependency are not in the probing path. Knowing the identity of the requesting assembly might be useful in locating the dependency or in identifying the correct version, if more than one version of the dependency is available. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType>.  
   
 > [!IMPORTANT]
 >  Beginning with the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <xref:System.ResolveEventHandler> event is raised for all assemblies, including resource assemblies. In earlier versions, the event was not raised for resource assemblies. If the operating system is localized, the handler might be called multiple times: once for each culture in the fallback chain.  
   
- For this event, the <xref:System.ResolveEventArgs.Name%2A?displayProperty=fullName> property returns the assembly name before policy is applied.  
+ For this event, the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property returns the assembly name before policy is applied.  
   
 > [!IMPORTANT]
 >  If more than one event handler is registered for this event, the event handlersarecalled in order until an event handler returns a value that isn't `null`. Subsequent event handlers are ignored.  
@@ -331,6 +331,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="BaseDirectory">
@@ -361,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property corresponds to the <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=fullName> property. It can also be retrieved using the <xref:System.AppDomain.GetData%2A> method with the string "APPBASE".  
+ This property corresponds to the <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=nameWithType> property. It can also be retrieved using the <xref:System.AppDomain.GetData%2A> method with the string "APPBASE".  
   
    
   
@@ -376,6 +377,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the information in the path itself, including if the path is in the form "file://" or \\\UNC\dir or "c:\\". Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="P:System.AppDomainSetup.ApplicationBase" />
       </Docs>
     </Member>
     <Member MemberName="ClearPrivatePath">
@@ -413,7 +415,7 @@
 ## Remarks  
  The private path is a path relative to the base directory that the common language runtime searches to locate private assemblies.  
   
- For more information, see <xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=nameWithType>.  
   
    
   
@@ -430,6 +432,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ClearShadowCopyPath">
@@ -467,12 +470,13 @@
 ## Remarks  
  The shadow copy path is a list of directories where shadow copied assemblies are stored.  
   
- For more information, see <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=fullName>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
+ For more information, see <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=nameWithType> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="CreateComInstanceFrom">
@@ -504,7 +508,7 @@
   
  The return value must to be unwrapped to access the real object.  
   
- A<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type for this method to create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
+ A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=nameWithType> attribute with a value of `true` must be applied either explicitly or by default to the COM type for this method to create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
   
    
   
@@ -539,6 +543,7 @@
         <exception cref="T:System.NullReferenceException">The COM object that is being referred to is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateComInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateComInstanceFrom">
@@ -574,7 +579,7 @@
   
  The return value must to be unwrapped to access the real object.  
   
- A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type for this method to create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
+ A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=nameWithType> attribute with a value of `true` must be applied either explicitly or by default to the COM type for this method to create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
   
  ]]></format>
         </remarks>
@@ -600,6 +605,7 @@
         <exception cref="T:System.NullReferenceException">The COM object that is being referred to is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateComInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateDomain">
@@ -652,6 +658,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="friendlyName" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="P:System.AppDomain.FriendlyName" />
       </Docs>
     </Member>
     <Member MemberName="CreateDomain">
@@ -755,7 +762,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDomain">
-      <MemberSignature Language="C#" Value="public static AppDomain CreateDomain (string friendlyName, System.Security.Policy.Evidence securityInfo, AppDomainSetup info, System.Security.PermissionSet grantSet, System.Security.Policy.StrongName[] fullTrustAssemblies);" />
+      <MemberSignature Language="C#" Value="public static AppDomain CreateDomain (string friendlyName, System.Security.Policy.Evidence securityInfo, AppDomainSetup info, System.Security.PermissionSet grantSet, params System.Security.Policy.StrongName[] fullTrustAssemblies);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AppDomain CreateDomain(string friendlyName, class System.Security.Policy.Evidence securityInfo, class System.AppDomainSetup info, class System.Security.PermissionSet grantSet, class System.Security.Policy.StrongName[] fullTrustAssemblies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.CreateDomain(System.String,System.Security.Policy.Evidence,System.AppDomainSetup,System.Security.PermissionSet,System.Security.Policy.StrongName[])" />
       <MemberType>Method</MemberType>
@@ -843,7 +850,7 @@
 ## Remarks  
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
- For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
+ For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
 > [!IMPORTANT]
 >  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
@@ -905,7 +912,7 @@
   
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
- For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
+ For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
 > [!IMPORTANT]
 >  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
@@ -971,6 +978,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1033,6 +1041,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1103,6 +1112,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1184,6 +1194,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1212,9 +1223,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
   
- See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=fullName> property for the format of `typeName`.  
+ See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property for the format of `typeName`.  
   
 > [!NOTE]
 >  If you make an early-bound call to a method `M` of an object of type `T1` that was returned by <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>, and that method makes an early-bound call to a method of an object of type `T2` in an assembly `C` other than the current assembly or the assembly containing `T1`, assembly `C` is loaded into the current application domain. This loading occurs even if the early-bound call to `T1.M()` was made in the body of a <xref:System.Reflection.Emit.DynamicMethod>, or in other dynamically generated code. If the current domain is the default domain, assembly `C` cannot be unloaded until the process ends. If the current domain later attempts to load assembly `C`, the load might fail.  
@@ -1251,6 +1262,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest, or if you are creating a type from a module other than the manifest file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1283,9 +1295,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
   
- See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=fullName> property for the format of `typeName`.  
+ See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property for the format of `typeName`.  
   
 > [!NOTE]
 >  If you make an early-bound call to a method `M` of an object of type `T1` that was returned by <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>, and that method makes an early-bound call to a method of an object of type `T2` in an assembly `C` other than the current assembly or the assembly containing `T1`, assembly `C` is loaded into the current application domain. This loading occurs even if the early-bound call to `T1.M()` was made in the body of a <xref:System.Reflection.Emit.DynamicMethod>, or in other dynamically generated code. If the current domain is the default domain, assembly `C` cannot be unloaded until the process ends. If the current domain later attempts to load assembly `C`, the load might fail.  
@@ -1320,6 +1332,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1362,9 +1375,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>.  
   
- See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=fullName> property for the format of `typeName`.  
+ See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property for the format of `typeName`.  
   
 > [!NOTE]
 >  If you make an early-bound call to a method `M` of an object of type `T1` that was returned by <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>, and that method makes an early-bound call to a method of an object of type `T2` in an assembly `C` other than the current assembly or the assembly containing `T1`, assembly `C` is loaded into the current application domain. This loading occurs even if the early-bound call to `T1.M()` was made in the body of a <xref:System.Reflection.Emit.DynamicMethod>, or in other dynamically generated code. If the current domain is the default domain, assembly `C` cannot be unloaded until the process ends. If the current domain later attempts to load assembly `C`, the load might fail.  
@@ -1401,6 +1414,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1450,9 +1464,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>.  
   
- See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=fullName> property for the format of `typeName`.  
+ See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property for the format of `typeName`.  
   
 > [!NOTE]
 >  If you make an early-bound call to a method `M` of an object of type `T1` that was returned by <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>, and that method makes an early-bound call to a method of an object of type `T2` in an assembly `C` other than the current assembly or the assembly containing `T1`, assembly `C` is loaded into the current application domain. This loading occurs even if the early-bound call to `T1.M()` was made in the body of a <xref:System.Reflection.Emit.DynamicMethod>, or in other dynamically generated code. If the current domain is the default domain, assembly `C` cannot be unloaded until the process ends. If the current domain later attempts to load assembly `C`, the load might fail.  
@@ -1489,6 +1503,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1519,7 +1534,7 @@
 ## Remarks  
  The default constructor for `typeName` is invoked.  
   
- For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  When the <xref:System.AppDomain.CreateInstanceFrom%2A> method is used to create an instance in a target application domain, other than the application domain from which the call is made, the assembly is loaded in the target application domain. However, if the instance is unwrapped in the calling application domain, using the unwrapped instance in certain ways can cause the assembly to be loaded into the calling application domain. For example, after the instance is unwrapped, its type information might be requested, in order to call its methods late-bound. When the assembly is loaded into the calling application domain, exceptions can occur.  
   
@@ -1535,7 +1550,7 @@
  The example defines the `MarshallableExample` class, which can be marshaled across application domain boundaries. The example builds a path to the currently executing assembly, creates a target application domain, and uses the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29> method overload to load the example assembly into the target application domain and create an instance of `MarshallableExample`.  
   
 > [!NOTE]
->  The path is absolute in this example, but a relative path would also work because the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method is used to load the assembly.  
+>  The path is absolute in this example, but a relative path would also work because the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method is used to load the assembly.  
   
  After unwrapping the object handle, the example demonstrates three ways to use an object in a target application domain:  
   
@@ -1576,6 +1591,7 @@
         <exception cref="T:System.NullReferenceException">This instance is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1610,7 +1626,7 @@
 ## Remarks  
  The default constructor for `typeName` is invoked.  
   
- For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  When the <xref:System.AppDomain.CreateInstanceFrom%2A> method is used to create an instance in a target application domain, other than the application domain from which the call is made, the assembly is loaded in the target application domain. However, if the instance is unwrapped in the calling application domain, using the unwrapped instance in certain ways can cause the assembly to be loaded into the calling application domain. For example, after the instance is unwrapped, its type information might be requested, in order to call its methods late-bound. When the assembly is loaded into the calling application domain, exceptions can occur.  
   
@@ -1640,6 +1656,7 @@
         <exception cref="T:System.NullReferenceException">This instance is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1682,7 +1699,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  When the <xref:System.AppDomain.CreateInstanceFrom%2A> method is used to create an instance in a target application domain, other than the application domain from which the call is made, the assembly is loaded in the target application domain. However, if the instance is unwrapped in the calling application domain, using the unwrapped instance in certain ways can cause the assembly to be loaded into the calling application domain. For example, after the instance is unwrapped, its type information might be requested, in order to call its methods late-bound. When the assembly is loaded into the calling application domain, exceptions can occur.  
   
@@ -1716,6 +1733,7 @@
         <exception cref="T:System.NullReferenceException">This instance is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1765,7 +1783,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  When the <xref:System.AppDomain.CreateInstanceFrom%2A> method is used to create an instance in a target application domain, other than the application domain from which the call is made, the assembly is loaded in the target application domain. However, if the instance is unwrapped in the calling application domain, using the unwrapped instance in certain ways can cause the assembly to be loaded into the calling application domain. For example, after the instance is unwrapped, its type information might be requested, in order to call its methods late-bound. When the assembly is loaded into the calling application domain, exceptions can occur.  
   
@@ -1804,6 +1822,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -1832,9 +1851,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
   
- For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1860,6 +1879,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -1892,9 +1912,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
   
- For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1921,6 +1941,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -1963,9 +1984,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>.  
   
- For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1992,6 +2013,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -2041,9 +2063,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName>.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>.  
   
- For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName> method.  
+ For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2070,6 +2092,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CurrentDomain">
@@ -2139,7 +2162,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2223,6 +2246,7 @@
   
  The <see langword="Name" /> property of <paramref name="name" /> starts with white space, or contains a forward or backward slash.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -2258,14 +2282,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence>through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
+ Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
  If the dynamic <xref:System.Reflection.Assembly> is saved to disk, subsequent loads will get grants based on policies associated with the location where the <xref:System.Reflection.Assembly> was saved.  
   
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2324,7 +2348,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2438,7 +2462,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2504,7 +2528,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are not used unless the dynamic assembly has been saved and reloaded into memory. To specify permission requests for a transient assembly that is never saved to disk, use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence as well as requested permissions, and supply an <xref:System.Security.Policy.Evidence> object.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload .  
   
@@ -2578,6 +2602,7 @@
   
  The <see langword="Name" /> property of <paramref name="name" /> starts with white space, or contains a forward or backward slash.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -2622,7 +2647,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2696,7 +2721,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are not used unless the dynamic assembly has been saved and reloaded into memory. To specify permission requests for a transient assembly that is never saved to disk, use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence as well as requested permissions, and supply an <xref:System.Security.Policy.Evidence> object.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -2767,7 +2792,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2846,7 +2871,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their evidence when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply `null` for the `evidence` parameter. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2929,7 +2954,7 @@
  The permission requests specified for the `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` parameters are used only if the `evidence` parameter is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  When you develop code that emits dynamic assemblies, we recommend that you include the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag in the `refusedPermissions` parameter. The inclusion of this flag ensures that the Microsoft intermediate language (MSIL) will be verified. This technique will detect the unintentional generation of unverifiable code, which otherwise is very difficult to detect. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when it is used with code that demands full trust.  
+>  When you develop code that emits dynamic assemblies, we recommend that you include the <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> flag in the `refusedPermissions` parameter. The inclusion of this flag ensures that the Microsoft intermediate language (MSIL) will be verified. This technique will detect the unintentional generation of unverifiable code, which otherwise is very difficult to detect. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when it is used with code that demands full trust.  
   
  Only fully trusted callers can supply evidence when defining a dynamic <xref:System.Reflection.Assembly>. The runtime maps the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply `null` for the `evidence` parameter. If `evidence` is `null`, the runtime copies the permission sets (that is, the current grant and deny sets) from the caller's assembly to the dynamic assembly that is being defined, and marks the policy as resolved.  
   
@@ -2950,6 +2975,7 @@
  The <see langword="Name" /> property of <paramref name="name" /> starts with white space, or contains a forward or backward slash.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="DoCallBack">
@@ -3101,7 +3127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To set the dynamic directory, assign a base directory path to the <xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=fullName> property of the <xref:System.AppDomainSetup> object that will be used to create the new application domain. The base directory path you assign to the property is modified by the addition of a subdirectory whose simple name is the hash code of the string you assign to the <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=fullName> property, so the format of the base directory is *original path*\\*hash code*. The dynamic directory is a subdirectory of this base directory. Its simple name is the value of the <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=fullName> property, so its format is *original path*\\*hash code*\\*application name*.  
+ To set the dynamic directory, assign a base directory path to the <xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=nameWithType> property of the <xref:System.AppDomainSetup> object that will be used to create the new application domain. The base directory path you assign to the property is modified by the addition of a subdirectory whose simple name is the hash code of the string you assign to the <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=nameWithType> property, so the format of the base directory is *original path*\\*hash code*. The dynamic directory is a subdirectory of this base directory. Its simple name is the value of the <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=nameWithType> property, so its format is *original path*\\*hash code*\\*application name*.  
   
    
   
@@ -3632,10 +3658,12 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, for access to the information in the path itself, and for redirecting a display name to a path. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(class System.Reflection.AssemblyName assemblyName, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.Reflection.AssemblyName,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3753,10 +3781,11 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(string assemblyName, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3820,7 +3849,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, System.Security.Policy.Evidence assemblySecurity, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, System.Security.Policy.Evidence assemblySecurity, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(class System.Reflection.AssemblyName assemblyName, class System.Security.Policy.Evidence assemblySecurity, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.Reflection.AssemblyName,System.Security.Policy.Evidence,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3884,10 +3913,11 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, System.Security.Policy.Evidence assemblySecurity, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, System.Security.Policy.Evidence assemblySecurity, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(string assemblyName, class System.Security.Policy.Evidence assemblySecurity, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.String,System.Security.Policy.Evidence,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3953,6 +3983,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="FirstChanceException">
@@ -4015,6 +4046,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs" />
+        <altmember cref="E:System.AppDomain.UnhandledException" />
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -4137,11 +4170,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Threading.Thread.ManagedThreadId%2A?displayProperty=fullName> property, which is stable even when the .NET Framework is hosted by an environment that supports fibers (that is, lightweight threads).  
+ Use the <xref:System.Threading.Thread.ManagedThreadId%2A?displayProperty=nameWithType> property, which is stable even when the .NET Framework is hosted by an environment that supports fibers (that is, lightweight threads).  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="P:System.Threading.Thread.ManagedThreadId" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -4186,25 +4221,25 @@
   
 |Value of 'name'|Property|  
 |---------------------|--------------|  
-|"APPBASE"|<xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=fullName>|  
-|"APP_CONFIG_FILE"|<xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=fullName>|  
+|"APPBASE"|<xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=nameWithType>|  
+|"APP_CONFIG_FILE"|<xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType>|  
 |"APP_LAUNCH_URL"|(no property)<br /><br /> "APP_LAUNCH_URL" represents the URL originally requested by the user, before any redirection. It is available only when the application has been launched with a browser such as Internet Explorer. Not all browsers provide this value.|  
-|"APP_NAME"|<xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=fullName>|  
-|"BINPATH_PROBE_ONLY"|<xref:System.AppDomainSetup.PrivateBinPathProbe%2A?displayProperty=fullName>|  
-|"CACHE_BASE"|<xref:System.AppDomainSetup.CachePath%2A?displayProperty=fullName>|  
-|"CODE_DOWNLOAD_DISABLED"|<xref:System.AppDomainSetup.DisallowCodeDownload%2A?displayProperty=fullName>|  
+|"APP_NAME"|<xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=nameWithType>|  
+|"BINPATH_PROBE_ONLY"|<xref:System.AppDomainSetup.PrivateBinPathProbe%2A?displayProperty=nameWithType>|  
+|"CACHE_BASE"|<xref:System.AppDomainSetup.CachePath%2A?displayProperty=nameWithType>|  
+|"CODE_DOWNLOAD_DISABLED"|<xref:System.AppDomainSetup.DisallowCodeDownload%2A?displayProperty=nameWithType>|  
 |"DEV_PATH"|(no property)|  
-|"DISALLOW_APP"|<xref:System.AppDomainSetup.DisallowPublisherPolicy%2A?displayProperty=fullName>|  
-|"DISALLOW_APP_BASE_PROBING"|<xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A?displayProperty=fullName>|  
-|"DISALLOW_APP_REDIRECTS"|<xref:System.AppDomainSetup.DisallowBindingRedirects%2A?displayProperty=fullName>|  
-|"DYNAMIC_BASE"|<xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=fullName>|  
-|"FORCE_CACHE_INSTALL"|<xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=fullName>|  
-|"LICENSE_FILE", or an application-specific string|<xref:System.AppDomainSetup.LicenseFile%2A?displayProperty=fullName>|  
-|"LOADER_OPTIMIZATION"|<xref:System.AppDomainSetup.LoaderOptimization%2A?displayProperty=fullName>|  
+|"DISALLOW_APP"|<xref:System.AppDomainSetup.DisallowPublisherPolicy%2A?displayProperty=nameWithType>|  
+|"DISALLOW_APP_BASE_PROBING"|<xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A?displayProperty=nameWithType>|  
+|"DISALLOW_APP_REDIRECTS"|<xref:System.AppDomainSetup.DisallowBindingRedirects%2A?displayProperty=nameWithType>|  
+|"DYNAMIC_BASE"|<xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=nameWithType>|  
+|"FORCE_CACHE_INSTALL"|<xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=nameWithType>|  
+|"LICENSE_FILE", or an application-specific string|<xref:System.AppDomainSetup.LicenseFile%2A?displayProperty=nameWithType>|  
+|"LOADER_OPTIMIZATION"|<xref:System.AppDomainSetup.LoaderOptimization%2A?displayProperty=nameWithType>|  
 |"LOCATION_URI"|(no property)|  
-|"PRIVATE_BINPATH"|<xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=fullName>|  
-|"REGEX_DEFAULT_MATCH_TIMEOUT"|<xref:System.Text.RegularExpressions.Regex.MatchTimeout%2A?displayProperty=fullName><br /><br /> "REGEX_DEFAULT_MATCH_TIMEOUT" is not a system entry, and its value can be set by calling the <xref:System.AppDomain.SetData%2A> method.|  
-|"SHADOW_COPY_DIRS"|<xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=fullName>|  
+|"PRIVATE_BINPATH"|<xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=nameWithType>|  
+|"REGEX_DEFAULT_MATCH_TIMEOUT"|<xref:System.Text.RegularExpressions.Regex.MatchTimeout%2A?displayProperty=nameWithType><br /><br /> "REGEX_DEFAULT_MATCH_TIMEOUT" is not a system entry, and its value can be set by calling the <xref:System.AppDomain.SetData%2A> method.|  
+|"SHADOW_COPY_DIRS"|<xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=nameWithType>|  
   
    
   
@@ -4221,6 +4256,7 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the information in the path itself, if the property applies to a path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="M:System.AppDomain.SetData(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -4348,20 +4384,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method tests whether the specified compatibility switch has been set for the current application domain. Compatibility switches typically restore a behavior (such as the way strings are sorted) that was changed between versions of the .NET Framework.  They are set by calling the <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A?displayProperty=fullName> method before creating an application domain.  
+ This method tests whether the specified compatibility switch has been set for the current application domain. Compatibility switches typically restore a behavior (such as the way strings are sorted) that was changed between versions of the .NET Framework.  They are set by calling the <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A?displayProperty=nameWithType> method before creating an application domain.  
   
  The following table provides examples of compatibility switches that can be set to restore the behavior of earlier versions of the .NET Framework.  
   
 |Switch|Meaning|  
 |------------|-------------|  
-|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
-|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Its success requires sort00001000.dll to be installed. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
+|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [&lt;NetFx40_LegacySecurityPolicy&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
+|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Its success requires sort00001000.dll to be installed. See [&lt;CompatSortNLSVersion&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
 |"NetFx40_Legacy40SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)]and Unicode 5.0 are enabled in this application domain. Its success requires sort00060101.dll to be installed.|  
-|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain.  See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
-|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
+|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain.  See [&lt;TimeSpan_LegacyFormatMode&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
+|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [&lt;UseRandomizedStringHashAlgorithm&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{System.String})" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAppDomain">
@@ -4444,7 +4481,7 @@
  An object's finalization method is called in one of the following situations: during garbage collection, when the common language runtime is shutting down, or when the application domain that contains the object is unloaded. The <xref:System.AppDomain.IsFinalizingForUnload%2A> method returns `true` only in the last case; it does not return `true` if finalization results from routine garbage collection or from CLR shutdown.  
   
 > [!NOTE]
->  To determine whether finalization is due to CLR shutdown, use the <xref:System.Environment.HasShutdownStarted%2A?displayProperty=fullName> property. It returns `true` if finalization is due to an application domain being unloaded or to the CLR shutting down.  
+>  To determine whether finalization is due to CLR shutdown, use the <xref:System.Environment.HasShutdownStarted%2A?displayProperty=nameWithType> property. It returns `true` if finalization is due to an application domain being unloaded or to the CLR shutting down.  
   
  While executing in your finalization method during domain unloading, you might want to access another object that is referenced by a static field and has a finalization method. However, you cannot reliably do so because the accessed object might already have been finalized.  
   
@@ -4455,6 +4492,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Environment.HasShutdownStarted" />
       </Docs>
     </Member>
     <Member MemberName="IsFullyTrusted">
@@ -4486,12 +4524,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method always returns `true` for the default application domain of an application that runs on the desktop. It returns `false` for a sandboxed application domain that was created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload, unless the permissions that are granted to the application domain are equivalent to full trust.  
+ This method always returns `true` for the default application domain of an application that runs on the desktop. It returns `false` for a sandboxed application domain that was created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> method overload, unless the permissions that are granted to the application domain are equivalent to full trust.  
   
    
   
 ## Examples  
- The following example demonstrates the <xref:System.AppDomain.IsFullyTrusted%2A> property and the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> property with fully trusted and partially trusted application domains. The fully trusted application domain is the default application domain for the application. The partially trusted application domain is created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload.  
+ The following example demonstrates the <xref:System.AppDomain.IsFullyTrusted%2A> property and the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> property with fully trusted and partially trusted application domains. The fully trusted application domain is the default application domain for the application. The partially trusted application domain is created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> method overload.  
   
  The example uses a `Worker` class that derives from <xref:System.MarshalByRefObject>, so it can be marshaled across application domain boundaries. The example creates a `Worker` object in the default application domain. It then calls the `TestIsFullyTrusted` method to display the property value for the application domain and for two assemblies that are loaded into the application domain: mscorlib, which is part of the .NET Framework, and the example assembly. The application domain is fully trusted, so both assemblies are fully trusted.  
   
@@ -4533,7 +4571,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns `true` for sandboxed application domains that were created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload. Sandboxed application domains have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
+ This property returns `true` for sandboxed application domains that were created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> method overload. Sandboxed application domains have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
   
  Fully trusted code can use the <xref:System.AppDomain.PermissionSet%2A> property to determine the homogenous grant set of a sandboxed application domain.  
   
@@ -4541,6 +4579,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.AppDomain.PermissionSet" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -4577,7 +4616,7 @@
 ## Remarks  
  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the trust level of an assembly that is loaded by using this method is the same as the trust level of the application domain.  
   
- This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
+ This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
   
  For information that is common to all overloads of this method, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -4639,11 +4678,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
+ This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
   
  If a version of the requested assembly is already loaded, this method returns the loaded assembly, even if a different version is requested.  
   
- Supplying a partial assembly name for `assemblyRef` is not recommended. (A partial name omits one or more of culture, version, or public key token. For overloads that take a string instead of an <xref:System.Reflection.AssemblyName> object, "MyAssembly, Version=1.0.0.0" is an example of a partial name and "MyAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18ab3442da84b47" is an example of a full name.) Using partial names has a negative effect on performance. In addition, a partial assembly name can load an assembly from the global assembly cache only if there is an exact copy of the assembly in the application base directory (<xref:System.AppDomain.BaseDirectory%2A> or <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=fullName>).  
+ Supplying a partial assembly name for `assemblyRef` is not recommended. (A partial name omits one or more of culture, version, or public key token. For overloads that take a string instead of an <xref:System.Reflection.AssemblyName> object, "MyAssembly, Version=1.0.0.0" is an example of a partial name and "MyAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18ab3442da84b47" is an example of a full name.) Using partial names has a negative effect on performance. In addition, a partial assembly name can load an assembly from the global assembly cache only if there is an exact copy of the assembly in the application base directory (<xref:System.AppDomain.BaseDirectory%2A> or <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=nameWithType>).  
   
  If the current <xref:System.AppDomain> object represents application domain `A`, and the <xref:System.AppDomain.Load%2A> method is called from application domain `B`, the assembly is loaded into both application domains. For example, the following code loads `MyAssembly` into the new application domain `ChildDomain` and also into the application domain where the code executes:  
   
@@ -4654,7 +4693,7 @@
  The assembly is loaded into both domains because <xref:System.Reflection.Assembly> does not derive from <xref:System.MarshalByRefObject>, and therefore the return value of the <xref:System.AppDomain.Load%2A> method cannot be marshaled. Instead, the common language runtime tries to load the assembly into the calling application domain. The assemblies that are loaded into the two application domains might be different if the path settings for the two application domains are different.  
   
 > [!NOTE]
->  If both the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property and the <xref:System.Reflection.AssemblyName.CodeBase%2A?displayProperty=fullName> property are set, the first attempt to load the assembly uses the display name (including version, culture, and so on, as returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property). If the file is not found, the <xref:System.Reflection.AssemblyName.CodeBase%2A> property is used to search for the assembly. If the assembly is found using <xref:System.Reflection.AssemblyName.CodeBase%2A>, the display name is matched against the assembly. If the match fails, a <xref:System.IO.FileLoadException> is thrown.  
+>  If both the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property and the <xref:System.Reflection.AssemblyName.CodeBase%2A?displayProperty=nameWithType> property are set, the first attempt to load the assembly uses the display name (including version, culture, and so on, as returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property). If the file is not found, the <xref:System.Reflection.AssemblyName.CodeBase%2A> property is used to search for the assembly. If the assembly is found using <xref:System.Reflection.AssemblyName.CodeBase%2A>, the display name is matched against the assembly. If the match fails, a <xref:System.IO.FileLoadException> is thrown.  
   
  ]]></format>
         </remarks>
@@ -4705,7 +4744,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
+ This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
   
  For information that is common to all overloads of this method, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -4763,7 +4802,7 @@
 ## Remarks  
  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the trust level of an assembly that is loaded by using this method is the same as the trust level of the application domain.  
   
- This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
+ This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
   
  For information that is common to all overloads of this method, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -4825,7 +4864,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
+ This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
   
  For information that is common to all overloads of this method, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -4879,7 +4918,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
+ This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
   
  For information that is common to all overloads of this method, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -4937,7 +4976,7 @@
 ## Remarks  
  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the trust level of an assembly that is loaded by using this method is the same as the trust level of the application domain.  
   
- This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
+ This method should be used only to load an assembly into the current application domain. This method is provided as a convenience for interoperability callers who cannot call the static <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To load assemblies into other application domains, use a method such as <xref:System.AppDomain.CreateInstanceAndUnwrap%2A>.  
   
  For information that is common to all overloads of this method, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -5040,7 +5079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The statistics are updated with each garbage collection. However, they are guaranteed to be accurate only after a full, blocking collection; that is, a collection that includes all generations and that stops the application while collection occurs. For example, the <xref:System.GC.Collect?displayProperty=fullName> method overload performs a full, blocking collection. (Concurrent collection occurs in the background and does not block the application.)  
+ The statistics are updated with each garbage collection. However, they are guaranteed to be accurate only after a full, blocking collection; that is, a collection that includes all generations and that stops the application while collection occurs. For example, the <xref:System.GC.Collect?displayProperty=nameWithType> method overload performs a full, blocking collection. (Concurrent collection occurs in the background and does not block the application.)  
   
  ]]></format>
         </remarks>
@@ -5173,11 +5212,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Sandboxed application domains that were created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
+ Sandboxed application domains that were created by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> method overload have a homogenous set of permissions; that is, the same set of permissions is granted to all partially trusted assemblies that are loaded into the application domain. A sandboxed application domain optionally has a list of strong-named assemblies that are exempt from this permission set, and instead run with full trust.  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.AppDomain.IsHomogenous" />
       </Docs>
     </Member>
     <Member MemberName="ProcessExit">
@@ -5251,20 +5291,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the reflection-only context, dependencies are not resolved automatically. They must be preloaded or returned by the handler for this event. This event is raised when an assembly has a dependency that is not already loaded into the reflection-only context. The missing dependency is specified by the <xref:System.ResolveEventArgs.Name%2A?displayProperty=fullName> property. The <xref:System.ResolveEventHandler> for this event must return an assembly that satisfies the dependency. The assembly that is returned must be loaded into the reflection-only context.  
+ In the reflection-only context, dependencies are not resolved automatically. They must be preloaded or returned by the handler for this event. This event is raised when an assembly has a dependency that is not already loaded into the reflection-only context. The missing dependency is specified by the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property. The <xref:System.ResolveEventHandler> for this event must return an assembly that satisfies the dependency. The assembly that is returned must be loaded into the reflection-only context.  
   
 > [!IMPORTANT]
->  This event is raised only for missing dependencies of the assembly that you are loading into the reflection-only context (for example, by using the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=fullName> method). It is not raised if the assembly that you are loading cannot be found.  
+>  This event is raised only for missing dependencies of the assembly that you are loading into the reflection-only context (for example, by using the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> method). It is not raised if the assembly that you are loading cannot be found.  
   
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName> property returns the assembly that requested the assembly load that could not be resolved. Knowing the identity of the requesting assembly might be useful in identifying the correct version of the dependency, if more than one version is available. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName>.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType> property returns the assembly that requested the assembly load that could not be resolved. Knowing the identity of the requesting assembly might be useful in identifying the correct version of the dependency, if more than one version is available. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType>.  
   
- For this event, the <xref:System.ResolveEventArgs.Name%2A?displayProperty=fullName> property returns the assembly name before policy is applied.  
+ For this event, the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property returns the assembly name before policy is applied.  
   
  For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="ReflectionOnlyGetAssemblies">
@@ -5310,6 +5351,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">An operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="M:System.AppDomain.GetAssemblies" />
       </Docs>
     </Member>
     <Member MemberName="RelativeSearchPath">
@@ -5340,14 +5382,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Private assemblies are deployed in the same directory structure as the application. If the path specified by the <xref:System.AppDomain.RelativeSearchPath%2A> property is not under <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=fullName>, it is ignored.  
+ Private assemblies are deployed in the same directory structure as the application. If the path specified by the <xref:System.AppDomain.RelativeSearchPath%2A> property is not under <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=nameWithType>, it is ignored.  
   
- This property returns the value set using <xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=fullName>.  
+ This property returns the value set using <xref:System.AppDomainSetup.PrivateBinPath%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="P:System.AppDomainSetup.PrivateBinPath" />
       </Docs>
     </Member>
     <Member MemberName="ResourceResolve">
@@ -5382,7 +5425,7 @@
 > [!IMPORTANT]
 >  This event is not raised if resolution fails because no file can be found for a valid linked resource. It is raised if a manifest resource stream cannot be found, but it is not raised if an individual resource key cannot be found.  
   
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName> property contains the assembly that requested the resource. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName>.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType> property contains the assembly that requested the resource. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType>.  
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   
@@ -5391,6 +5434,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="SetAppDomainPolicy">
@@ -5426,7 +5470,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.AppDomain.SetAppDomainPolicy%2A>method to set the security policy level of an application domain.  
+ The following example demonstrates how to use the <xref:System.AppDomain.SetAppDomainPolicy%2A> method to set the security policy level of an application domain.  
   
  [!code-cpp[ADSetAppDomainPolicy#1](~/samples/snippets/cpp/VS_Snippets_CLR/ADSetAppDomainPolicy/CPP/adsetappdomainpolicy.cpp#1)]
  [!code-csharp[ADSetAppDomainPolicy#1](~/samples/snippets/csharp/VS_Snippets_CLR/ADSetAppDomainPolicy/CS/adsetappdomainpolicy.cs#1)]
@@ -5477,7 +5521,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The cache path is ignored if the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set. See the <xref:System.AppDomainSetup.CachePath%2A?displayProperty=fullName> property.  
+ The cache path is ignored if the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set. See the <xref:System.AppDomainSetup.CachePath%2A?displayProperty=nameWithType> property.  
   
  For more information on shadow copying see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
@@ -5485,6 +5529,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.AppDomainSetup.CachePath" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -5539,6 +5584,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.AppDomain.GetData(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -5624,7 +5670,7 @@
    
   
 ## Examples  
- This method is now obsolete, and should not be used for new development. The following example shows how to use the non-obsolete alternative, the <xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=fullName> property. For an explanation of this example, see the <xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=fullName> property or the <xref:System.AppDomain.DynamicDirectory%2A> property.  
+ This method is now obsolete, and should not be used for new development. The following example shows how to use the non-obsolete alternative, the <xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=nameWithType> property. For an explanation of this example, see the <xref:System.AppDomainSetup.DynamicBase%2A?displayProperty=nameWithType> property or the <xref:System.AppDomain.DynamicDirectory%2A> property.  
   
  [!code-cpp[ADDynamicBase#1](~/samples/snippets/cpp/VS_Snippets_CLR/ADDynamicBase/CPP/addynamicbase.cpp#1)]
  [!code-csharp[ADDynamicBase#1](~/samples/snippets/csharp/VS_Snippets_CLR/ADDynamicBase/CS/addynamicbase.cs#1)]
@@ -5634,6 +5680,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.AppDomainSetup.DynamicBase" />
       </Docs>
     </Member>
     <Member MemberName="SetPrincipalPolicy">
@@ -5667,7 +5714,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this value will only be effective if you set it before using the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For example, if you set <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> to a given principal (for example, a generic principal) and then use the <xref:System.AppDomain.SetPrincipalPolicy%2A> method to set the <xref:System.Security.Principal.PrincipalPolicy> to <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>, the current principal will remain the generic principal.  
+ Setting this value will only be effective if you set it before using the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. For example, if you set <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> to a given principal (for example, a generic principal) and then use the <xref:System.AppDomain.SetPrincipalPolicy%2A> method to set the <xref:System.Security.Principal.PrincipalPolicy> to <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>, the current principal will remain the generic principal.  
   
    
   
@@ -5888,16 +5935,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=fullName> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
+ For more information, see <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=nameWithType> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyFiles" />
       </Docs>
     </Member>
     <Member MemberName="System._AppDomain.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _AppDomain.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System._AppDomain.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System._AppDomain.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.System#_AppDomain#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5967,7 +6015,7 @@
     </Member>
     <Member MemberName="System._AppDomain.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _AppDomain.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System._AppDomain.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System._AppDomain.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.System#_AppDomain#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5996,7 +6044,7 @@
     </Member>
     <Member MemberName="System._AppDomain.Invoke">
       <MemberSignature Language="C#" Value="void _AppDomain.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System._AppDomain.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System._AppDomain.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.System#_AppDomain#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6104,13 +6152,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.AppDomain.TypeResolve> event occurs when the common language runtime is unable to determine the assembly that can create the requested type. This can occur if the type is defined in a dynamic assembly, or the type is not defined in a dynamic assembly but the runtime does not know which assembly the type is defined in. The latter situation can occur when <xref:System.Type.GetType%2A?displayProperty=fullName> is called with a type name that is not qualified with the assembly name.  
+ The <xref:System.AppDomain.TypeResolve> event occurs when the common language runtime is unable to determine the assembly that can create the requested type. This can occur if the type is defined in a dynamic assembly, or the type is not defined in a dynamic assembly but the runtime does not know which assembly the type is defined in. The latter situation can occur when <xref:System.Type.GetType%2A?displayProperty=nameWithType> is called with a type name that is not qualified with the assembly name.  
   
  The <xref:System.ResolveEventHandler> for this event can attempt to locate and create the type.  
   
  However, the <xref:System.AppDomain.TypeResolve> event does not occur if the runtime knows it is not possible to find a type in certain assemblies. For example, this event does not occur if the type is not found in a static assembly because the runtime knows types cannot be added dynamically to static assemblies.  
   
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName> property contains the assembly that requested the type. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName>.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType> property contains the assembly that requested the type. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=nameWithType>.  
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   
@@ -6130,6 +6178,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="UnhandledException">
@@ -6189,9 +6238,9 @@
 ## Other Events for Unhandled Exceptions  
  For certain application models, the <xref:System.AppDomain.UnhandledException> event can be preempted by other events if the unhandled exception occurs in the main application thread.  
   
- In applications that use Windows Forms, unhandled exceptions in the main application thread cause the <xref:System.Windows.Forms.Application.ThreadException?displayProperty=fullName> event to be raised. If this event is handled, the default behavior is that the unhandled exception does not terminate the application, although the application is left in an unknown state. In that case, the <xref:System.AppDomain.UnhandledException> event is not raised. This behavior can be changed by using the application configuration file, or by using the <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A?displayProperty=fullName> method to change the mode to <xref:System.Windows.Forms.UnhandledExceptionMode?displayProperty=fullName> before the <xref:System.Windows.Forms.Application.ThreadException> event handler is hooked up. This applies only to the main application thread. The <xref:System.AppDomain.UnhandledException> event is raised for unhandled exceptions thrown in other threads.  
+ In applications that use Windows Forms, unhandled exceptions in the main application thread cause the <xref:System.Windows.Forms.Application.ThreadException?displayProperty=nameWithType> event to be raised. If this event is handled, the default behavior is that the unhandled exception does not terminate the application, although the application is left in an unknown state. In that case, the <xref:System.AppDomain.UnhandledException> event is not raised. This behavior can be changed by using the application configuration file, or by using the <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A?displayProperty=nameWithType> method to change the mode to <xref:System.Windows.Forms.UnhandledExceptionMode.ThrowException?displayProperty=nameWithType> before the <xref:System.Windows.Forms.Application.ThreadException> event handler is hooked up. This applies only to the main application thread. The <xref:System.AppDomain.UnhandledException> event is raised for unhandled exceptions thrown in other threads.  
   
- Starting with Microsoft Visual Studio 2005, the Visual Basic application framework provides another event for unhandled exceptions in the main application thread. See the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException?displayProperty=fullName> event. This event has an event arguments object with the same name as the event arguments object used by <xref:System.AppDomain.UnhandledException?displayProperty=fullName>, but with different properties. In particular, this event arguments object has an <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> property that allows the application to continue running, ignoring the unhandled exception (and leaving the application in an unknown state). In that case, the <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event is not raised.  
+ Starting with Microsoft Visual Studio 2005, the Visual Basic application framework provides another event for unhandled exceptions in the main application thread. See the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException?displayProperty=nameWithType> event. This event has an event arguments object with the same name as the event arguments object used by <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>, but with different properties. In particular, this event arguments object has an <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> property that allows the application to continue running, ignoring the unhandled exception (and leaving the application in an unknown state). In that case, the <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> event is not raised.  
   
    
   
@@ -6272,5 +6321,114 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to add an event handler for this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateComInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified COM type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDomain">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new application domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExecuteAssemblyByName">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type defined in the specified assembly file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceAndUnwrap">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExecuteAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the assembly contained in the specified file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineDynamicAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a dynamic assembly in the current application domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetData">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Assigns a value to an application domain property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an <see cref="T:System.Reflection.Assembly" /> into this application domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceFromAndUnwrap">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type defined in the specified assembly file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type defined in a specified assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

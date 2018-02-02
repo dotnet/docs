@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Design.UITypeEditor" />
   </Docs>
   <Members>
     <Member MemberName="DropDown">
@@ -49,6 +50,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.UITypeEditor" />
       </Docs>
     </Member>
     <Member MemberName="Modal">
@@ -65,6 +67,7 @@
       </ReturnValue>
       <Docs>
         <summary>Displays an ellipsis (...) button to start a modal dialog box, which requires user input before continuing a program, or a modeless dialog box, which stays on the screen and is available for use at any time but permits other user activities.</summary>
+        <altmember cref="T:System.Drawing.Design.UITypeEditor" />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -81,6 +84,7 @@
       </ReturnValue>
       <Docs>
         <summary>Provides no interactive user interface (UI) component.</summary>
+        <altmember cref="T:System.Drawing.Design.UITypeEditor" />
       </Docs>
     </Member>
   </Members>

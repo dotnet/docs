@@ -40,7 +40,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to write a class that implements the abstract <xref:System.Web.SiteMapProvider> class. This example includes only a sample <xref:System.Web.SiteMapProvider> and a sample text file that works with it. To run the example you also need an entry in the Web.config file and an .aspx page. You can find these in the documentation for the <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A?displayProperty=fullName> property.  
+ The following code example demonstrates how to write a class that implements the abstract <xref:System.Web.SiteMapProvider> class. This example includes only a sample <xref:System.Web.SiteMapProvider> and a sample text file that works with it. To run the example you also need an entry in the Web.config file and an .aspx page. You can find these in the documentation for the <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A?displayProperty=nameWithType> property.  
   
  The example uses a comma-delimited file that follows an expected structure to load sitemap information. The first line of the file represents the root node of the sitemap, and subsequent lines are subnodes. Each subnode identifies its parent node by URL. An example of a file that meets these criteria is shown below.  
   
@@ -60,6 +60,8 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.SiteMapProvider" /> class, you must override the following members: <see cref="M:System.Web.SiteMapProvider.GetRootNodeCore" />, <see cref="M:System.Web.SiteMapProvider.FindSiteMapNode(System.String)" />, <see cref="M:System.Web.SiteMapProvider.GetChildNodes(System.Web.SiteMapNode)" />, and <see cref="M:System.Web.SiteMapProvider.GetParentNode(System.Web.SiteMapNode)" />.</para>
     </block>
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.XmlSiteMapProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,6 +114,9 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.AddNode(System.Web.SiteMapNode,System.Web.SiteMapNode)" />
+        <altmember cref="T:System.Web.SiteMapNodeCollection" />
+        <altmember cref="T:System.Web.XmlSiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="AddNode">
@@ -138,11 +143,14 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Classes deriving from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.AddNode%2A> method and provide logic for adding a <xref:System.Web.SiteMapNode> object with a specified parent to the node collection that is maintained by the site map provider. For example, the <xref:System.Web.XmlSiteMapProvider.AddNode%2A?displayProperty=fullName> method adds the <xref:System.Web.SiteMapNode> object that is specified by `node` to the <xref:System.Web.SiteMapNodeCollection> collection that is maintained by the <xref:System.Web.XmlSiteMapProvider> object and creates a parent/child relationship between the <xref:System.Web.SiteMapNode> object that is specified by `node` and `parentNode`. The default implementation of the <xref:System.Web.SiteMapProvider.AddNode%2A> method throws a <xref:System.NotImplementedException> exception.  
+ Classes deriving from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.AddNode%2A> method and provide logic for adding a <xref:System.Web.SiteMapNode> object with a specified parent to the node collection that is maintained by the site map provider. For example, the <xref:System.Web.XmlSiteMapProvider.AddNode%2A?displayProperty=nameWithType> method adds the <xref:System.Web.SiteMapNode> object that is specified by `node` to the <xref:System.Web.SiteMapNodeCollection> collection that is maintained by the <xref:System.Web.XmlSiteMapProvider> object and creates a parent/child relationship between the <xref:System.Web.SiteMapNode> object that is specified by `node` and `parentNode`. The default implementation of the <xref:System.Web.SiteMapProvider.AddNode%2A> method throws a <xref:System.NotImplementedException> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">In all cases.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.AddNode(System.Web.SiteMapNode)" />
+        <altmember cref="T:System.Web.SiteMapNodeCollection" />
+        <altmember cref="T:System.Web.XmlSiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="CurrentNode">
@@ -180,6 +188,8 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapProvider.RootNode" />
+        <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
       </Docs>
     </Member>
     <Member MemberName="EnableLocalization">
@@ -206,6 +216,9 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.Title" />
+        <altmember cref="P:System.Web.SiteMapNode.Description" />
+        <altmember cref="P:System.Web.SiteMapNode.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="FindSiteMapNode">
@@ -255,6 +268,8 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.SiteMapProvider.FindSiteMapNode(System.String)" /> method in a derived class, be sure to extend the search to any child providers, if a <see cref="T:System.Web.SiteMapNode" /> object that matches the URL is not found by the provider in the current site map and the provider supports child providers.</para>
         </block>
+        <altmember cref="P:System.Web.SiteMapProvider.CurrentNode" />
+        <altmember cref="M:System.Web.SiteMapProvider.FindSiteMapNode(System.Web.HttpContext)" />
       </Docs>
     </Member>
     <Member MemberName="FindSiteMapNode">
@@ -286,6 +301,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.FindSiteMapNode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="FindSiteMapNodeFromKey">
@@ -311,7 +327,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SiteMapProvider> implementation returns `null` in all cases. Classes that derive from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method to provide lookup functionality based on a unique key (instead of a URL, which is used by the <xref:System.Web.SiteMapProvider.FindSiteMapNode%2A> method). Implement the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method if your site map provider implementation uses the <xref:System.Web.SiteMapNode.Key%2A?displayProperty=fullName> property of a <xref:System.Web.SiteMapNode> object as a primary identifier in a site map structure.  
+ The <xref:System.Web.SiteMapProvider> implementation returns `null` in all cases. Classes that derive from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method to provide lookup functionality based on a unique key (instead of a URL, which is used by the <xref:System.Web.SiteMapProvider.FindSiteMapNode%2A> method). Implement the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method if your site map provider implementation uses the <xref:System.Web.SiteMapNode.Key%2A?displayProperty=nameWithType> property of a <xref:System.Web.SiteMapNode> object as a primary identifier in a site map structure.  
   
  The <xref:System.Web.StaticSiteMapProvider> class provides an implementation that handles searching for site map nodes that do not define a URL.  
   
@@ -319,6 +335,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.SiteMapProvider.FindSiteMapNode" />
       </Docs>
     </Member>
     <Member MemberName="GetChildNodes">
@@ -361,6 +378,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.SiteMapProvider.GetChildNodes(System.Web.SiteMapNode)" /> method in a derived class, be sure to perform security trimming on the child nodes and ensure that the returned collection is read-only. The collection contains only the immediate children of the specified <paramref name="node" />.</para>
         </block>
+        <altmember cref="M:System.Web.SiteMapProvider.GetParentNode(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentNodeAndHintAncestorNodes">
@@ -396,6 +414,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="upLevel" /> is less than -1.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.GetCurrentNodeAndHintNeighborhoodNodes(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentNodeAndHintNeighborhoodNodes">
@@ -435,6 +454,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="upLevel" /> or <paramref name="downLevel" /> is less than -1.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.GetCurrentNodeAndHintAncestorNodes(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetParentNode">
@@ -473,6 +493,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.GetChildNodes(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="GetParentNodeRelativeToCurrentNodeAndHintDownFromParent">
@@ -508,6 +529,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="walkupLevels" /> or <paramref name="relativeDepthFromWalkup" /> is less than 0.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.GetParentNodeRelativeToNodeAndHintDownFromParent(System.Web.SiteMapNode,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetParentNodeRelativeToNodeAndHintDownFromParent">
@@ -546,6 +568,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for <paramref name="walkupLevels" /> or <paramref name="relativeDepthFromWalkup" /> is less than 0.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.GetParentNodeRelativeToCurrentNodeAndHintDownFromParent(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetRootNodeCore">
@@ -578,6 +601,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.GetRootNodeCoreFromProvider(System.Web.SiteMapProvider)" />
       </Docs>
     </Member>
     <Member MemberName="GetRootNodeCoreFromProvider">
@@ -607,6 +631,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.GetRootNodeCore" />
       </Docs>
     </Member>
     <Member MemberName="HintAncestorNodes">
@@ -645,6 +670,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
           <paramref name="upLevel" /> is less than -1.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.HintNeighborhoodNodes(System.Web.SiteMapNode,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HintNeighborhoodNodes">
@@ -683,6 +709,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
           <paramref name="upLevel" /> or <paramref name="downLevel" /> is less than -1.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.HintAncestorNodes(System.Web.SiteMapNode,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -744,6 +771,9 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.SiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" /> method in a derived class, be sure to first call the <see cref="M:System.Web.SiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" /> method for the base class before performing your own initializations.</para>
         </block>
+        <altmember cref="T:System.Configuration.Provider.ProviderBase" />
+        <altmember cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" />
+        <altmember cref="M:System.Web.StaticSiteMapProvider.Clear" />
       </Docs>
     </Member>
     <Member MemberName="IsAccessibleToUser">
@@ -787,6 +817,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
  \- or -  
   
  <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
       </Docs>
     </Member>
     <Member MemberName="ParentProvider">
@@ -822,6 +853,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapProvider.RootProvider" />
       </Docs>
     </Member>
     <Member MemberName="RemoveNode">
@@ -851,6 +883,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">In all cases.</exception>
+        <altmember cref="Overload:System.Web.SiteMapProvider.AddNode" />
       </Docs>
     </Member>
     <Member MemberName="ResolveSiteMapNode">
@@ -880,6 +913,9 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.SiteMapProvider.SiteMapResolve" />
+        <altmember cref="T:System.Web.SiteMapResolveEventArgs" />
+        <altmember cref="T:System.Web.SiteMapResolveEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ResourceKey">
@@ -905,6 +941,11 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.Title" />
+        <altmember cref="P:System.Web.SiteMapNode.Description" />
+        <altmember cref="P:System.Web.SiteMapNode.Attributes" />
+        <altmember cref="M:System.Web.SiteMapNode.GetImplicitResourceString(System.String)" />
+        <altmember cref="M:System.Web.SiteMapNode.GetExplicitResourceString(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RootNode">
@@ -943,6 +984,8 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Web.SiteMapProvider.RootNode" /> property in a derived class, be sure that the implementation does not navigate the provider hierarchy, if one exists, to find the absolute root node of the site.</para>
         </block>
+        <altmember cref="M:System.Web.SiteMapProvider.GetRootNodeCore" />
+        <altmember cref="P:System.Web.SiteMapProvider.CurrentNode" />
       </Docs>
     </Member>
     <Member MemberName="RootProvider">
@@ -979,6 +1022,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">There is a circular reference to the current site map provider.</exception>
+        <altmember cref="P:System.Web.SiteMapProvider.ParentProvider" />
       </Docs>
     </Member>
     <Member MemberName="SecurityTrimmingEnabled">
@@ -1005,6 +1049,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.IsAccessibleToUser(System.Web.HttpContext,System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="SiteMapResolve">
@@ -1027,11 +1072,32 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
 ## Remarks  
  You can create a <xref:System.Web.SiteMapNode> representation of the currently requested page without implementing a custom site map provider by subscribing to the <xref:System.Web.SiteMapProvider.SiteMapResolve> event. Subscribers attach a <xref:System.Web.SiteMapResolveEventHandler> object to receive notification when the <xref:System.Web.SiteMapProvider.CurrentNode%2A> property is called and can return a custom <xref:System.Web.SiteMapNode> object instead of the default one that is returned by the <xref:System.Web.SiteMapProvider.CurrentNode%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.SiteMap.SiteMapResolve" />
+        <altmember cref="T:System.Web.SiteMapResolveEventHandler" />
+        <altmember cref="T:System.Web.SiteMapResolveEventArgs" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindSiteMapNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, retrieves a <see cref="T:System.Web.SiteMapNode" /> object that represents a page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.SiteMapNode" /> object to the node collection that is maintained by the site map provider.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

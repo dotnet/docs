@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To activate an add-in in an external process, pass an <xref:System.AddIn.Hosting.AddInProcess> object to the appropriate <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInProcess%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ To activate an add-in in an external process, pass an <xref:System.AddIn.Hosting.AddInProcess> object to the appropriate <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInProcess%2CSystem.Security.PermissionSet%29?displayProperty=nameWithType> method overload.  
   
  The executable that runs the add-in is obtained from one of two files installed with the .NET Framework under the Windows directory. By default, the executable that matches the bits-per-word of the host application is used. If the host is a 64-bit process, AddInProcess.exe is run; otherwise, AddInProcess32.exe is run. To specify the way the executable is selected, use the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor to create the <xref:System.AddIn.Hosting.AddInProcess> object.  
   
@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor has the same effect as using the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor with the <xref:System.AddIn.Hosting.Platform?displayProperty=fullName> flag, to specify that the process that runs the add-in will have the same bits-per-word as the host process.  
+ This constructor has the same effect as using the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor with the <xref:System.AddIn.Hosting.Platform.Host?displayProperty=nameWithType> flag, to specify that the process that runs the add-in will have the same bits-per-word as the host process.  
   
  ]]></format>
         </remarks>
@@ -126,7 +126,7 @@
  If the value of this property is `true`, the add-in is running in-process with the host application. In that case, using the <xref:System.AddIn.Hosting.AddInProcess.Start%2A> or <xref:System.AddIn.Hosting.AddInProcess.Shutdown%2A> method throws an <xref:System.InvalidOperationException>.  
   
 > [!NOTE]
->  The <xref:System.AddIn.Hosting.AddInEnvironment.Process%2A?displayProperty=fullName> property returns an <xref:System.AddIn.Hosting.AddInProcess> object that represents the host application process if the add-in is running in-process.  
+>  The <xref:System.AddIn.Hosting.AddInEnvironment.Process%2A?displayProperty=nameWithType> property returns an <xref:System.AddIn.Hosting.AddInProcess> object that represents the host application process if the add-in is running in-process.  
   
    
   
@@ -308,5 +308,14 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0 (zero).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.AddInProcess" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

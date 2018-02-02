@@ -19,7 +19,7 @@
   
  This is an optional service. If a host application does not care about the modal status,  you need not use the service.  
   
- In the current implementation, if a Windows Presentation Foundation (WPF) message box (which is a modal dialog) is invoked, the <xref:System.Activities.Presentation.IModalService.SetModalState%2A>is not called. If the host application requires this information, another workaround must be created.  
+ In the current implementation, if a Windows Presentation Foundation (WPF) message box (which is a modal dialog) is invoked, the <xref:System.Activities.Presentation.IModalService.SetModalState%2A> is not called. If the host application requires this information, another workaround must be created.  
   
  ]]></format>
     </remarks>

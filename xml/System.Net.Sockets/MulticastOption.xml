@@ -26,11 +26,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a <xref:System.Net.Sockets.MulticastOption> to store the <xref:System.Net.IPAddress> of a multicast group you want to join or drop. Use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method with the following parameters to join a multicast group.  
+ Use a <xref:System.Net.Sockets.MulticastOption> to store the <xref:System.Net.IPAddress> of a multicast group you want to join or drop. Use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType> method with the following parameters to join a multicast group.  
   
 |Parameter|Value|  
 |---------------|-----------|  
-|socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName>|  
+|socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel.Udp?displayProperty=nameWithType>|  
 |socketOptionName|<xref:System.Net.Sockets.SocketOptionName.AddMembership>|  
 |object|<xref:System.Net.Sockets.MulticastOption>|  
   
@@ -288,5 +288,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.MulticastOption" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

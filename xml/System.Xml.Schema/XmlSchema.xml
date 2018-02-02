@@ -263,7 +263,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -307,7 +307,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -354,7 +354,7 @@
  If the SOM references other namespaces through the `import` or `include` elements, the `XmlResolver` is used to resolve these references. If the resolver is set to `null`, this indicates that the user does not care about resolving `import` or `include` elements. In this case, the references are not resolved. The resolver is not cached after the `Compile` method completes.  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=nameWithType> method.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method uses the <xref:System.Xml.XmlUrlResolver> class to resolve external schemas referenced in include, import, or redefine elements by default. You can disable resolution of external schemas by passing null as the <xref:System.Xml.XmlResolver> parameter.  
@@ -1258,5 +1258,25 @@ schema.Includes.Add(include);
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes out an XML Schema.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an XML Schema.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

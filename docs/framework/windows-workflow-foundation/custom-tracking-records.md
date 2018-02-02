@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 24284565-c68b-40bf-b7f1-e148d151a6fc
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Tracking Records
 This topic demonstrates how to create custom tracking records and populate them with data to be emitted along with the records.  
@@ -32,5 +34,5 @@ protected override void Execute(CodeActivityContext context)
  A <xref:System.Activities.Tracking.CustomTrackingRecord> is emitted in a code activity by invoking the <xref:System.Activities.NativeActivityContext.Track%2A> method on the `ActvityContext`.  
   
 ## See Also  
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)   
+ [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
  [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)

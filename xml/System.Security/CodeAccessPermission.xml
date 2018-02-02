@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Code access permissions use a stack walk to ensure that all callers of the code have been granted a permission. If a permission object is `null`, it is handled the same as a permission object with the state <xref:System.Security.Permissions.PermissionState?displayProperty=fullName>.  
+ Code access permissions use a stack walk to ensure that all callers of the code have been granted a permission. If a permission object is `null`, it is handled the same as a permission object with the state <xref:System.Security.Permissions.PermissionState.None?displayProperty=nameWithType>.  
   
  The call stack is typically represented as growing down, so that methods higher in the call stack call methods lower in the call stack.  
   

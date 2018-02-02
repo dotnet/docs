@@ -32,7 +32,7 @@
   <Members>
     <Member MemberName="AccessibleObjectFromID">
       <MemberSignature Language="C#" Value="public void AccessibleObjectFromID (int hwnd, int lObjectID, out Accessibility.IAccessible pIAccessible);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AccessibleObjectFromID(int32 hwnd, int32 lObjectID, class Accessibility.IAccessible pIAccessible) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AccessibleObjectFromID([in]int32 hwnd, [in]int32 lObjectID, [out] class Accessibility.IAccessible&amp; pIAccessible) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessibleHandler.AccessibleObjectFromID(System.Int32,System.Int32,Accessibility.IAccessible@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

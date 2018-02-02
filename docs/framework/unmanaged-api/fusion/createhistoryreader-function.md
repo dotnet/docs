@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateHistoryReader"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateHistoryReader function [.NET Framework fusion]"
 ms.assetid: 66a89acf-8c32-44c0-8787-960c99c7b3ec
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CreateHistoryReader Function
 Creates a history reader for the specified file.  

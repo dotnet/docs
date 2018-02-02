@@ -28,6 +28,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DrawItemEventHandler" />
+    <altmember cref="T:System.Windows.Forms.ComboBox" />
+    <altmember cref="T:System.Windows.Forms.ListBox" />
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
+    <altmember cref="T:System.Windows.Forms.TabControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,20 +110,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=fullName>.  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState.Selected?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=nameWithType>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
  [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -147,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawItemEventArgs.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="DrawBackground">
@@ -183,6 +190,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawBackground" /> in a derived class, make sure to call the <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawBackground" /> method of the base class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DrawItemState" />
       </Docs>
     </Member>
     <Member MemberName="DrawFocusRectangle">
@@ -219,6 +227,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawFocusRectangle" /> in a derived class, make sure to call the <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawFocusRectangle" /> method of the base class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DrawItemState" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -252,6 +261,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -273,20 +284,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=fullName>.  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState.Selected?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=nameWithType>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
  [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -315,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawItemEventArgs.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -336,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the <xref:System.Windows.Forms.Control.ControlCollection.Item%2A> value of the item being drawn in the <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=fullName>. This property can return -1 if itemswere removed from the list.  
+ This property returns the <xref:System.Windows.Forms.Control.ControlCollection.Item%2A> value of the item being drawn in the <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=nameWithType>. This property can return -1 if itemswere removed from the list.  
   
    
   
@@ -348,6 +361,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ControlCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -374,16 +388,26 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
  [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DrawItemState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

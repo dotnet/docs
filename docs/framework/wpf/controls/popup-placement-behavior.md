@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "popups"
-  - "Popup control, placing"
-  - "placing popups"
-  - "positioning popups"
+  - "popups [WPF]"
+  - "Popup control [WPF], placing"
+  - "placing popups [WPF]"
+  - "positioning popups [WPF]"
 ms.assetid: fbf642e9-f670-4efd-a7af-a67468a1c8e1
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Popup Placement Behavior
 A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a separate window that floats over an application. You can specify the position of a <xref:System.Windows.Controls.Primitives.Popup> relative to a control, the mouse, or the screen by using the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties.  These properties work together to give you flexibility in specifying the position of the <xref:System.Windows.Controls.Primitives.Popup>.  
@@ -58,7 +60,7 @@ Image with four Popups
 ### Target Object  
  The *target object* is the element that the <xref:System.Windows.Controls.Primitives.Popup> is associated with. If the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> property is set, it specifies the target object.  If <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> is not set, and the <xref:System.Windows.Controls.Primitives.Popup> has a parent, the parent is the target object.  If there is no <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> value and no parent, there is no target object, and the <xref:System.Windows.Controls.Primitives.Popup> is positioned relative to the screen.  
   
- The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>.  The example does not set the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> property on the <xref:System.Windows.Controls.Primitives.Popup>. The default value for <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> is <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom?displayProperty=fullName>, so the <xref:System.Windows.Controls.Primitives.Popup> appears below the <xref:System.Windows.Controls.Canvas>.  
+ The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>.  The example does not set the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> property on the <xref:System.Windows.Controls.Primitives.Popup>. The default value for <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> is <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom?displayProperty=nameWithType>, so the <xref:System.Windows.Controls.Primitives.Popup> appears below the <xref:System.Windows.Controls.Canvas>.  
   
  [!code-xaml[PopupPositionSnippet#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#1)]  
   

@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.BackgroundWorker" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +65,7 @@
         <param name="userState">A unique user state.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ProgressChangedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="ProgressPercentage">
@@ -100,15 +102,16 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#517](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#517)]
  [!code-vb[System.Windows.Forms.EventExamples#517](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#517)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -140,15 +143,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PictureBox> named `PictureBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#517](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#517)]
  [!code-vb[System.Windows.Forms.EventExamples#517](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#517)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
   </Members>

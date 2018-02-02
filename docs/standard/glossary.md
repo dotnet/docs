@@ -9,6 +9,9 @@ ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # .NET Glossary
@@ -25,21 +28,21 @@ Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code.
 
 The original ASP.NET implementation that ships with the .NET Framework.
 
-Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. 
+Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations. 
 
-See [ASP.NET](/aspnet/#pivot=aspnet).
+See [ASP.NET documentation](/aspnet/#pivot=aspnet).
 
 ## ASP.NET Core
 
 A cross-platform, high-performance, open source implementation of ASP.NET built on .NET Core.
 
-See [ASP.NET Core](/aspnet/#pivot=core).
+See [ASP.NET Core documentation](/aspnet/#pivot=core).
 
 ## assembly
 
-A *.dll* file that contains a collection of APIs that can be called by apps or other assemblies.
+A *.dll*/*.exe* file that can contain a collection of APIs that can be called by apps or other assemblies.
 
-A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates.  Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
+An assembly may include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
 ## CLR
 
@@ -135,13 +138,15 @@ See [Packages, Metapackages and Frameworks](../core/packages.md)
 
 ## Mono
 
-An open source alternative to the .NET Framework.
+Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
 
-Mono started around the same time the .NET Framework was first released. Since the .NET Framework wasn't open source, Mono was forced to start from scratch and is thus a complete re-implementation of the .NET Framework with no shared code.
+It supports all of the currently published .NET Standard versions.
 
-When .NET Core was released under the MIT license, Microsoft also released [large chunks of the .NET Framework under the MIT license](https://github.com/microsoft/referencesource) as well. This enabled the Mono community to use the same code the .NET Framework uses in order to close gaps and avoid behavioral differences.
+Historically, Mono implemented the larger API of the .NET Framework and emulated some of the most popular capabilities on Unix. It is sometimes used to run .NET applications that rely on those capabilities on Unix.
 
-Mono is primarily used to run .NET applications on Linux and macOS. There are ports of Mono to other platforms; see [Mono's Supported Platforms](http://www.mono-project.com/docs/about-mono/supported-platforms/). Mono has implementations (though not necessarily complete) of WinForms, ASP.NET, and `System.Drawing`.
+Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
+
+To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
 
 ## .NET
 
@@ -201,7 +206,7 @@ You can think of this technology as a persistent JIT compiler. It usually compil
 
 A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more assemblies of the same name along with additional metadata such as the author name.
 
-The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple target frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 

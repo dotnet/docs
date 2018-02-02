@@ -616,6 +616,7 @@
         <summary>Returns the length of the vector.</summary>
         <returns>The vector's length.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Numerics.Vector2.LengthSquared" />
       </Docs>
     </Member>
     <Member MemberName="LengthSquared">
@@ -653,6 +654,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Vector2.Length" />
       </Docs>
     </Member>
     <Member MemberName="Lerp">
@@ -1509,7 +1511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>
@@ -1549,7 +1551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>
@@ -1591,7 +1593,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`. The "\<" and ">" characters are used to begin and end the string, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`. The "\<" and ">" characters are used to begin and end the string, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>
@@ -1915,5 +1917,115 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the vector to an array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TransformNormal">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a vector normal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the string representation of the current <see cref="T:System.Numerics.Vector2" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a vector.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Multiply">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a multiplication operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Multiply">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a multiplication operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether this instance and a specified <see cref="T:System.Numerics.Vector2" /> instance or a specified object are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Divide">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a division operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Division">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a division operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Numerics.Vector2" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

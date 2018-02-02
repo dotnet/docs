@@ -90,14 +90,17 @@
 > [!IMPORTANT]
 >  The examples have a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]
+ [!code-aspx-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HiddenFieldWebServerControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenFieldWebServerControl/CS/HiddenFieldWebServerControl.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenFieldWebServerControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenFieldWebServerControl/VB/HiddenFieldWebServerControl.aspx#1)]  -->  
+ [!code-aspx-csharp[HiddenFieldWebServerControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenFieldWebServerControl/CS/HiddenFieldWebServerControl.aspx#1)]
+ [!code-aspx-vb[HiddenFieldWebServerControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenFieldWebServerControl/VB/HiddenFieldWebServerControl.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
+    <altmember cref="P:System.Web.UI.WebControls.HiddenField.Value" />
+    <altmember cref="E:System.Web.UI.WebControls.HiddenField.ValueChanged" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,13 +145,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Control.CreateControlCollection%2A?displayProperty=fullName> method is normally used to create a <xref:System.Web.UI.ControlCollection?displayProperty=fullName> object for storing the child controls of a Web Server control. In this implementation of the method, an <xref:System.Web.UI.EmptyControlCollection?displayProperty=fullName> collection is always returned to indicate that child controls are not allowed.  
+ The <xref:System.Web.UI.Control.CreateControlCollection%2A?displayProperty=nameWithType> method is normally used to create a <xref:System.Web.UI.ControlCollection?displayProperty=nameWithType> object for storing the child controls of a Web Server control. In this implementation of the method, an <xref:System.Web.UI.EmptyControlCollection?displayProperty=nameWithType> collection is always returned to indicate that child controls are not allowed.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.HiddenField" /> control, you can override this method to support child controls.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.CreateControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -183,6 +187,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to set this property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.HiddenField.SkinID" />
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -214,6 +219,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to call this method.</exception>
+        <altmember cref="M:System.Web.UI.Control.Focus" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -246,6 +252,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.WebControls.HiddenField.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -267,6 +275,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -293,7 +302,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.HiddenField.OnValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -302,6 +311,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.HiddenField.OnValueChanged(System.EventArgs)" /> method in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.HiddenField.OnValueChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.HiddenField.ValueChanged" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -330,6 +340,7 @@
         <block subset="none" type="overrides">
           <para>This method can be overridden in a derived class to raise change events when it posts back to the server.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.HiddenField.ValueChanged" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -354,13 +365,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.HiddenField.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType> object.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.HiddenField" /> control, you can override this method to render custom content for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -395,6 +407,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to set this property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.HiddenField.EnableTheming" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -427,6 +440,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -452,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -491,11 +506,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]
+ [!code-aspx-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.HiddenField.ValueChanged" />
       </Docs>
     </Member>
     <Member MemberName="ValueChanged">
@@ -518,7 +534,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -528,11 +544,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]
+ [!code-aspx-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HiddenField.OnValueChanged(System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.HiddenField.Value" />
       </Docs>
     </Member>
   </Members>

@@ -147,7 +147,7 @@ End Class
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FilterUIHintAttribute (string filterUIHint, string presentationLayer, object[] controlParameters);" />
+      <MemberSignature Language="C#" Value="public FilterUIHintAttribute (string filterUIHint, string presentationLayer, params object[] controlParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filterUIHint, string presentationLayer, object[] controlParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.#ctor(System.String,System.String,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -325,5 +325,15 @@ End Class
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

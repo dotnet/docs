@@ -9,12 +9,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 24b68bd3-cef5-4413-ab82-2e2625f209aa
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Error Handling Activities in WF
-[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several system-provided activities for implementing error handling and recovery. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Exceptions](../../../docs/framework/windows-workflow-foundation/exceptions.md).  
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several system-provided activities for implementing error handling and recovery. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Exceptions](../../../docs/framework/windows-workflow-foundation/exceptions.md).  
   
 ## Error handling activities  
   

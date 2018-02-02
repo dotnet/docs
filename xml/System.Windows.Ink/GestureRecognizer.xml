@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The array returned by the <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method is sorted by the <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A?displayProperty=fullName> property. For example, <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> may return a <xref:System.Windows.Ink.GestureRecognitionResult> array with the following values:  
+ The array returned by the <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method is sorted by the <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A?displayProperty=nameWithType> property. For example, <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> may return a <xref:System.Windows.Ink.GestureRecognitionResult> array with the following values:  
   
 |Index|ApplicationGesture|RecognitionConfidence|  
 |-----------|------------------------|---------------------------|  
@@ -264,5 +264,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.GestureRecognizer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

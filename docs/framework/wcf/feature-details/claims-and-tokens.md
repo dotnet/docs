@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "claims [WCF], and tokens"
 ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Claims and Tokens
 This topic describes the various claim types that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] creates from the default tokens that it supports.  
@@ -59,10 +61,10 @@ This topic describes the various claim types that [!INCLUDE[indigo1](../../../..
     -   Additional PossessProperty claims of various types, including X500DistinguishedName, Dns, Name, Upn, and Rsa, represent various properties of the certificate. The resource for the Rsa claim is the public key associated with the certificate.**Note** Where the client credential type is a certificate that the service maps to a Windows account, two `ClaimSet` objects are generated. The first contains all the claims related to the Windows account and the second contains all the claims related to the certificate.  
   
 ## User Name/Password  
- Where the client credential is a user name/password (or equivalent) that does not map to a Windows account, the resulting `ClaimSet` is issued by the static <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property of the `ClaimSet` class. The `ClaimSet` contains an `Identity` claim of type<xref:System.IdentityModel.Claims.ClaimTypes.Name%2A> whose resource is the user name the client provides. A corresponding claim has a `Right` of `PossessProperty`.  
+ Where the client credential is a user name/password (or equivalent) that does not map to a Windows account, the resulting `ClaimSet` is issued by the static <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property of the `ClaimSet` class. The `ClaimSet` contains an `Identity` claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A> whose resource is the user name the client provides. A corresponding claim has a `Right` of `PossessProperty`.  
   
 ## RSA Keys  
- Where an RSA key not associated with a certificate is used, the resulting `ClaimSet` is self-issued and contains an `Identity` claim oftype<xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> whose resource is the RSA key. A corresponding claim has a `Right` of `PossessProperty`.  
+ Where an RSA key not associated with a certificate is used, the resulting `ClaimSet` is self-issued and contains an `Identity` claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> whose resource is the RSA key. A corresponding claim has a `Right` of `PossessProperty`.  
   
 ## SAML  
  Where the client authenticates with a Security Assertions Markup Language (SAML) token, the resulting `ClaimSet` is issued by the entity that signed the SAML token, often the certificate of the security token service (STS) that issued the SAML token. The `ClaimSet` contains various claims as found in the SAML token. If the SAML token contains a `SamlSubject` with a non-`null` name, then an `Identity` claim with a type of <xref:System.IdentityModel.Claims.ClaimTypes.NameIdentifier%2A> and a resource type of <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource> are created.  
@@ -71,8 +73,8 @@ This topic describes the various claim types that [!INCLUDE[indigo1](../../../..
  If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity,` then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.  
   
 ## See Also  
- <xref:System.IdentityModel.Claims.ClaimSet>   
- <xref:System.IdentityModel.Claims.Claim>   
- <xref:System.IdentityModel.Claims.Rights>   
- <xref:System.IdentityModel.Claims.ClaimTypes>   
+ <xref:System.IdentityModel.Claims.ClaimSet>  
+ <xref:System.IdentityModel.Claims.Claim>  
+ <xref:System.IdentityModel.Claims.Rights>  
+ <xref:System.IdentityModel.Claims.ClaimTypes>  
  [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)

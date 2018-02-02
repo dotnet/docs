@@ -16,10 +16,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Automation.Peers.DocumentAutomationPeer> represents documents and supports the <xref:System.Windows.Automation.TextPattern>.  Objects such as a <xref:System.Windows.Documents.FixedDocument> or <xref:System.Windows.Documents.FlowDocument> can contain embedded objects, such as images and hyperlinks.  Initially, when you try to get the child elements of the document, <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=fullName> does not return the embedded objects.  To get the embedded elements, obtain a <xref:System.Windows.Automation.Text.TextPatternRange> from the <xref:System.Windows.Automation.TextPattern> and call <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=fullName>.  After <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=fullName> is called, any elements in that <xref:System.Windows.Automation.Text.TextPatternRange> are returned by <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=fullName>.  
+ The <xref:System.Windows.Automation.Peers.DocumentAutomationPeer> represents documents and supports the <xref:System.Windows.Automation.TextPattern>.  Objects such as a <xref:System.Windows.Documents.FixedDocument> or <xref:System.Windows.Documents.FlowDocument> can contain embedded objects, such as images and hyperlinks.  Initially, when you try to get the child elements of the document, <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=nameWithType> does not return the embedded objects.  To get the embedded elements, obtain a <xref:System.Windows.Automation.Text.TextPatternRange> from the <xref:System.Windows.Automation.TextPattern> and call <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=nameWithType>.  After <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=nameWithType> is called, any elements in that <xref:System.Windows.Automation.Text.TextPatternRange> are returned by <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Unless you know the document is a <xref:System.Windows.Documents.FlowDocument>, you should not call <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> on the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A?displayProperty=fullName> property. If the document is loaded from a network location, calling <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> on the entire document is resource intensive.  Instead, you should use one of the methods on <xref:System.Windows.Automation.TextPattern> that returns a <xref:System.Windows.Automation.Text.TextPatternRange> that represents a portion of the document.  
+>  Unless you know the document is a <xref:System.Windows.Documents.FlowDocument>, you should not call <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> on the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A?displayProperty=nameWithType> property. If the document is loaded from a network location, calling <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> on the entire document is resource intensive.  Instead, you should use one of the methods on <xref:System.Windows.Automation.TextPattern> that returns a <xref:System.Windows.Automation.Text.TextPatternRange> that represents a portion of the document.  
   
  ]]></format>
     </remarks>
@@ -107,6 +107,7 @@
         <summary>Gets the collection of child elements for the <see cref="T:System.Windows.FrameworkContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.DocumentAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>Because <see cref="T:System.Windows.Automation.Peers.DocumentAutomationPeer" /> gives access to its content through <see cref="T:System.Windows.Automation.TextPattern" />, this method always returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildrenCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -222,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreenCore" />
       </Docs>
     </Member>
   </Members>

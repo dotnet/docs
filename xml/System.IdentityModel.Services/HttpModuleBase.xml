@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The base class from which HTTP modules that are configurable with the [\&lt;system.identityModel.services\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) element (<see cref="T:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection" />) derive.</summary>
+    <summary>The base class from which HTTP modules that are configurable with the [&lt;system.identityModel.services&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) element (<see cref="T:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection" />) derive.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.Web.IHttpModule.Init%2A?displayProperty=fullName> method by initializing the <xref:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration%2A> property to the value of the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property, invoking the <xref:System.IdentityModel.Services.HttpModuleBase.InitializeModule%2A> method, and then invoking the <xref:System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration%2A> method.  
+ This method implements the <xref:System.Web.IHttpModule.Init%2A?displayProperty=nameWithType> method by initializing the <xref:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration%2A> property to the value of the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> property, invoking the <xref:System.IdentityModel.Services.HttpModuleBase.InitializeModule%2A> method, and then invoking the <xref:System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration%2A> method.  
   
  Derived classes override the <xref:System.IdentityModel.Services.HttpModuleBase.InitializeModule%2A> and <xref:System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration%2A> methods.  
   

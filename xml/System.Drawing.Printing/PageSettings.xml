@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PageSettings> class is used to specify settings that modify the way a page will be printed. Typically, you set default settings for all pages to be printed through the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A?displayProperty=fullName> property. To specify settings on a page-by-page basis, handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> or <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings?displayProperty=fullName> event and modify the <xref:System.Drawing.Printing.PageSettings> argument included in the <xref:System.Drawing.Printing.PrintPageEventArgs> or <xref:System.Drawing.Printing.QueryPageSettingsEventArgs>, respectively.  
+ The <xref:System.Drawing.Printing.PageSettings> class is used to specify settings that modify the way a page will be printed. Typically, you set default settings for all pages to be printed through the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A?displayProperty=nameWithType> property. To specify settings on a page-by-page basis, handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> or <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings?displayProperty=nameWithType> event and modify the <xref:System.Drawing.Printing.PageSettings> argument included in the <xref:System.Drawing.Printing.PrintPageEventArgs> or <xref:System.Drawing.Printing.QueryPageSettingsEventArgs>, respectively.  
   
  For more information about handling <xref:System.Drawing.Printing.PrintDocument> events, see the <xref:System.Drawing.Printing.PrintDocument> class overview. For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
   
@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,7 +56,7 @@
 ## Remarks  
  The default constructor initializes all fields to their default values.  
   
- Typically, you do not create an instance of <xref:System.Drawing.Printing.PageSettings>, but instead use the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A?displayProperty=fullName> to set settings for all pages.  
+ Typically, you do not create an instance of <xref:System.Drawing.Printing.PageSettings>, but instead use the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A?displayProperty=nameWithType> to set settings for all pages.  
   
  ]]></format>
         </remarks>
@@ -109,6 +111,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="P:System.Drawing.Printing.PageSettings.Margins" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -150,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Drawing.Printing.PrinterSettings.SupportsColor%2A?displayProperty=fullName> property to determine if the printer supports color printing. If the printer supports color, but you do not want to print in color, set the <xref:System.Drawing.Printing.PageSettings.Color%2A> property to `false`. The default will be `true`.  
+ You can use the <xref:System.Drawing.Printing.PrinterSettings.SupportsColor%2A?displayProperty=nameWithType> property to determine if the printer supports color printing. If the printer supports color, but you do not want to print in color, set the <xref:System.Drawing.Printing.PageSettings.Color%2A> property to `false`. The default will be `true`.  
   
    
   
@@ -166,6 +170,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.SupportsColor" />
       </Docs>
     </Member>
     <Member MemberName="CopyToHdevmode">
@@ -198,6 +203,7 @@
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for printing and access to all printers on the network. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PageSettings.SetHdevmode(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="HardMarginX">
@@ -274,12 +280,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Drawing.Printing.PrinterSettings.LandscapeAngle%2A?displayProperty=fullName> property to determine the angle, in degrees, that the portrait orientation is rotated to produce the landscape orientation.  
+ You can use the <xref:System.Drawing.Printing.PrinterSettings.LandscapeAngle%2A?displayProperty=nameWithType> property to determine the angle, in degrees, that the portrait orientation is rotated to produce the landscape orientation.  
   
    
   
 ## Examples  
- The following code example sets a document's default page orientation to landscape through the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A?displayProperty=fullName> property, and prints the document. The example has three prerequisites:  
+ The following code example sets a document's default page orientation to landscape through the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A?displayProperty=nameWithType> property, and prints the document. The example has three prerequisites:  
   
 -   A variable named `filePath` has been set to the path of the file to print.  
   
@@ -296,6 +302,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.LandscapeAngle" />
       </Docs>
     </Member>
     <Member MemberName="Margins">
@@ -317,7 +326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> event, you can use this property along with the <xref:System.Drawing.Printing.PageSettings.Bounds%2A> property to calculate the printing area for the page.  
+ When handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> event, you can use this property along with the <xref:System.Drawing.Printing.PageSettings.Bounds%2A> property to calculate the printing area for the page.  
   
    
   
@@ -339,6 +348,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="T:System.Drawing.Printing.Margins" />
       </Docs>
     </Member>
     <Member MemberName="PaperSize">
@@ -360,9 +370,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Drawing.Printing.PaperSize> represents the size of the paper through the <xref:System.Drawing.Printing.PaperSize.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperKind> values.  
+ A <xref:System.Drawing.Printing.PaperSize> represents the size of the paper through the <xref:System.Drawing.Printing.PaperSize.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PaperKind> values.  
   
- Set the <xref:System.Drawing.Printing.PageSettings.PaperSize%2A> property for the page to a valid <xref:System.Drawing.Printing.PaperSize>, available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A?displayProperty=fullName> collection.  
+ Set the <xref:System.Drawing.Printing.PageSettings.PaperSize%2A> property for the page to a valid <xref:System.Drawing.Printing.PaperSize>, available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A?displayProperty=nameWithType> collection.  
   
  For information about how you can specify a custom paper size, see the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor.  
   
@@ -387,6 +397,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
+        <altmember cref="T:System.Drawing.Printing.PaperSize" />
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Height" />
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Kind" />
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Width" />
       </Docs>
     </Member>
     <Member MemberName="PaperSource">
@@ -408,9 +422,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Drawing.Printing.PaperSource> represents the source of the paper through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
+ A <xref:System.Drawing.Printing.PaperSource> represents the source of the paper through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
   
- Set the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A> property for the page to a valid <xref:System.Drawing.Printing.PaperSource>, available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A?displayProperty=fullName> collection.  
+ Set the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A> property for the page to a valid <xref:System.Drawing.Printing.PaperSource>, available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A?displayProperty=nameWithType> collection.  
   
    
   
@@ -433,6 +447,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
+        <altmember cref="T:System.Drawing.Printing.PaperSource" />
+        <altmember cref="P:System.Drawing.Printing.PaperSource.Kind" />
+        <altmember cref="T:System.Drawing.Printing.PaperSourceKind" />
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
       </Docs>
     </Member>
     <Member MemberName="PrintableArea">
@@ -481,9 +499,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Drawing.Printing.PrinterResolution> represents the printer resolution of through the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PrinterResolutionKind> values.  
+ A <xref:System.Drawing.Printing.PrinterResolution> represents the printer resolution of through the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PrinterResolutionKind> values.  
   
- Set the <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A> property for the page to a valid <xref:System.Drawing.Printing.PrinterResolution>, available through the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A?displayProperty=fullName> collection.  
+ Set the <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A> property for the page to a valid <xref:System.Drawing.Printing.PrinterResolution>, available through the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A?displayProperty=nameWithType> collection.  
   
    
   
@@ -497,6 +515,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
+        <altmember cref="P:System.Drawing.Printing.PrinterResolution.Kind" />
+        <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -522,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="SetHdevmode">
@@ -555,6 +578,7 @@
         <exception cref="T:System.ArgumentException">The printer handle is not valid.</exception>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for printing and access to all printers on the network. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PageSettings.CopyToHdevmode(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -576,5 +600,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PageSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

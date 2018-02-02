@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContactCompleted" /> event occurs.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
   </Docs>
   <Members>
     <Member MemberName="PeerContact">
@@ -31,6 +32,7 @@
         <summary>Gets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> for which the event was raised.</summary>
         <value>A <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object associated with the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
       </Docs>
     </Member>
   </Members>

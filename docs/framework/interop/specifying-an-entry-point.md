@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "EntryPoint field"
   - "platform invoke, attribute fields"
@@ -23,6 +18,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying an Entry Point
 An entry point identifies the location of a function in a DLL. Within a managed project, the original name or ordinal entry point of a target function identifies that function across the interoperation boundary. Further, you can map the entry point to a different name, effectively renaming the function.  
@@ -40,7 +37,7 @@ An entry point identifies the location of a function in a DLL. Within a managed 
  This topic demonstrates how to rename a DLL function in managed code.  
   
 ## Renaming a Function in Visual Basic  
- Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=fullName> field. The following example shows a basic declaration.  
+ Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
   
 ```vb  
 Imports System.Runtime.InteropServices  
@@ -65,7 +62,7 @@ End Class
 ```  
   
 ## Renaming a Function in C# and C++  
- You can use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=fullName> field to specify a DLL function by name or ordinal. If the name of the function in your method definition is the same as the entry point in the DLL, you do not have to explicitly identify the function with the **EntryPoint** field. Otherwise, use one of the following attribute forms to indicate a name or ordinal:  
+ You can use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field to specify a DLL function by name or ordinal. If the name of the function in your method definition is the same as the entry point in the DLL, you do not have to explicitly identify the function with the **EntryPoint** field. Otherwise, use one of the following attribute forms to indicate a name or ordinal:  
   
 ```  
 [DllImport("dllname", EntryPoint="Functionname")]  
@@ -98,7 +95,7 @@ extern "C" int MsgBox(HWND hWnd,
 ```  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)   
- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)   
+ <xref:System.Runtime.InteropServices.DllImportAttribute>  
+ [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
+ [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  
  [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)

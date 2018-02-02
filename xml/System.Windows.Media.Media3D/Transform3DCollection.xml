@@ -152,7 +152,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -201,7 +201,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -537,7 +537,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -839,7 +839,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -907,5 +907,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

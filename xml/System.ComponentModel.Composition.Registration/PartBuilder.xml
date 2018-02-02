@@ -532,5 +532,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds metadata to the matching types.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectConstructor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies the constructor that matching types should use as an importing constructor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ImportProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies a set of properties on the matching types that should be imported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExportInterfaces">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies a set of interfaces that should be exported on the matching types.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Export">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies that matching types should be exported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExportProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies a set of properties on the matching types that should be exported.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

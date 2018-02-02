@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::SetILInstrumentedCodeMap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::SetILInstrumentedCodeMap method [.NET Framework profiling]"
   - "SetILInstrumentedCodeMap method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::SetILInstrumentedCodeMap Method
 Sets a code map for the specified function using the specified Microsoft intermediate language (MSIL) map entries.  

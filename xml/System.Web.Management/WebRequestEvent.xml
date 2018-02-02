@@ -196,7 +196,17 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestInformation" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebRequestEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

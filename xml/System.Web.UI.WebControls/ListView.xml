@@ -119,20 +119,20 @@
   
  To display the value of a field in a template such as <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A>, you use a data-binding expression. For more information about data-binding expressions, see [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
- To bind input controls in the <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> and <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> templates to fields of a data source, you can use two-way binding expressions. This enables the <xref:System.Web.UI.WebControls.ListView> control to automatically extract the values of the input control for an update or insert operation. Two-way binding expressions also enable input controls in an <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> to automatically display the original field values. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ To bind input controls in the <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> and <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> templates to fields of a data source, you can use two-way binding expressions. This enables the <xref:System.Web.UI.WebControls.ListView> control to automatically extract the values of the input control for an update or insert operation. Two-way binding expressions also enable input controls in an <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> to automatically display the original field values. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="binding_to_a_data_source"></a>   
 ## Binding to a Data Source  
- You can bind the <xref:System.Web.UI.WebControls.ListView> control to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, <xref:System.Collections.Generic.List%601?displayProperty=fullName>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.ListView> control to the appropriate data source type:  
+ You can bind the <xref:System.Web.UI.WebControls.ListView> control to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.ListView> control to the appropriate data source type:  
   
 -   To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.ListView> control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The <xref:System.Web.UI.WebControls.ListView> control automatically binds to the specified data source control and can take advantage of the data source control's capabilities to perform sorting, inserting, updating, deleting, and paging functionality. This is the preferred method to bind to data.  
   
--   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.ListView> control to the data source, and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When you use this technique, the <xref:System.Web.UI.WebControls.ListView> control does not provide built-in sorting, updating, deleting, and paging functionality. You must provide this functionality by using the appropriate event.  
+-   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.ListView> control to the data source, and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When you use this technique, the <xref:System.Web.UI.WebControls.ListView> control does not provide built-in sorting, updating, deleting, and paging functionality. You must provide this functionality by using the appropriate event.  
   
- For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.ListView> control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before you display it in the application. We strongly recommend that values be HTML-encoded whenever possible before they are displayed in this control. ASP.NET provides an input request validation feature to help block script and HTML in user input. You can also use validation server controls to check user input. For more information, see [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+>  The <xref:System.Web.UI.WebControls.ListView> control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before you display it in the application. We strongly recommend that values be HTML-encoded whenever possible before they are displayed in this control. ASP.NET provides an input request validation feature to help block script and HTML in user input. You can also use validation server controls to check user input. For more information, see [Introduction to the Validation Controls](http://msdn.microsoft.com/library/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
   
 <a name="data_operations"></a>   
 ## Data Operations  
@@ -279,24 +279,25 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to display records from a database by using an HTML table. The values are retrieved by using a <xref:System.Web.UI.WebControls.LinqDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/CS/ListViewSimpleCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/VB/ListViewSimpleVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/CS/ListViewSimpleCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/VB/ListViewSimpleVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to display values in a flow layout by using the `div` element. The values are retrieved by using a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/CS/ListViewFlowLayoutCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/VB/ListViewFlowLayoutVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/CS/ListViewFlowLayoutCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/VB/ListViewFlowLayoutVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to insert, delete, and update records.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/CS/ListViewEditCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/VB/ListViewEditVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/CS/ListViewEditCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/VB/ListViewEditVB.aspx#1)]
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -315,10 +316,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListView> class. To dynamically add a <xref:System.Web.UI.WebControls.ListView> control to a page, create a new <xref:System.Web.UI.WebControls.ListView> object. Set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as a <xref:System.Web.UI.WebControls.PlaceHolder> control.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListView> class. To dynamically add a <xref:System.Web.UI.WebControls.ListView> control to a page, create a new <xref:System.Web.UI.WebControls.ListView> object. Set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as a <xref:System.Web.UI.WebControls.PlaceHolder> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AccessKey">
@@ -394,6 +397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemTemplate">
@@ -446,11 +450,14 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.AlternatingItemTemplate%2A> template to define the style for alternating data items in a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/CS/ListViewAlternatingItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/VB/ListViewAlternatingItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/CS/ListViewAlternatingItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/VB/ListViewAlternatingItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -647,6 +654,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="ClientIDRowSuffixDataKeys">
@@ -732,7 +740,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Parameter> object of the data source control that the <xref:System.Web.UI.WebControls.ListView> control is bound to also has a property named <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A?displayProperty=fullName>. This property performs the same function. Make sure that both properties are set appropriately.  
+ The <xref:System.Web.UI.WebControls.Parameter> object of the data source control that the <xref:System.Web.UI.WebControls.ListView> control is bound to also has a property named <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A?displayProperty=nameWithType>. This property performs the same function. Make sure that both properties are set appropriately.  
   
  ]]></format>
         </remarks>
@@ -814,6 +822,7 @@
  -or-  
   
  The <see cref="T:System.Web.UI.WebControls.ListView" /> control does not have an item placeholder specified.</exception>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -872,6 +881,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewDataItem" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceSelectArguments">
@@ -929,6 +939,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyDataTemplate" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.CreateItem(System.Web.UI.WebControls.ListViewItemType)" />
       </Docs>
     </Member>
     <Member MemberName="CreateEmptyItem">
@@ -958,6 +970,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyItemTemplate" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewItem.ItemType" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemType" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.CreateItem(System.Web.UI.WebControls.ListViewItemType)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInsertItem">
@@ -980,7 +997,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.CreateInsertItem%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to create an insert item. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.ListView.CreateInsertItem%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to create an insert item. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType.InsertItem?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  This method is primarily used by control developers to extend the <xref:System.Web.UI.WebControls.ListView> control.  
@@ -988,6 +1005,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.ListView" /> control does not have an <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template specified.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewItem.ItemType" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemType" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.CreateItem(System.Web.UI.WebControls.ListViewItemType)" />
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -1020,6 +1042,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemType" />
       </Docs>
     </Member>
     <Member MemberName="CreateItemsInGroups">
@@ -1060,6 +1084,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.ListView" /> control does not have an item placeholder specified.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.CreateItemsWithoutGroups(System.Web.UI.WebControls.ListViewPagedDataSource,System.Boolean,System.Web.UI.WebControls.InsertItemPosition,System.Collections.ArrayList)" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
       </Docs>
     </Member>
     <Member MemberName="CreateItemsWithoutGroups">
@@ -1099,6 +1126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.CreateItemsInGroups(System.Web.UI.WebControls.ListViewPagedDataSource,System.Boolean,System.Web.UI.WebControls.InsertItemPosition,System.Collections.ArrayList)" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
       </Docs>
     </Member>
     <Member MemberName="CreateLayoutTemplate">
@@ -1127,6 +1156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="CreateSuffixArrayList">
@@ -1244,11 +1274,14 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A> property to specify the key field of the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#3)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="T:System.Web.UI.WebControls.DataKeyArray" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeys" />
       </Docs>
     </Member>
     <Member MemberName="DataKeys">
@@ -1284,7 +1317,7 @@
   
  You can use the <xref:System.Web.UI.WebControls.ListView.SelectedDataKey%2A> property to retrieve the <xref:System.Web.UI.WebControls.DataKey> object for the currently selected item. You can also use the <xref:System.Web.UI.WebControls.ListView.SelectedValue%2A> property to retrieve the data-key value for the currently selected item directly.  
   
- You can use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A?displayProperty=fullName> property to retrieve the <xref:System.Web.UI.WebControls.DataKey> object for the item for which a command button was clicked.  
+ You can use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A?displayProperty=nameWithType> property to retrieve the <xref:System.Web.UI.WebControls.DataKey> object for the item for which a command button was clicked.  
   
    
   
@@ -1296,6 +1329,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="T:System.Web.UI.WebControls.DataKeyArray" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedDataKey" />
       </Docs>
     </Member>
     <Member MemberName="DeleteItem">
@@ -1327,8 +1364,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method to programmatically delete the selected item in a <xref:System.Web.UI.WebControls.ListView> control from the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1338,6 +1375,10 @@
  -or-  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> object that is associated with the <see cref="T:System.Web.UI.WebControls.ListView" /> control is <see langword="null" />.</exception>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.InsertNewItem(System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.UpdateItem(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -1423,6 +1464,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.ListView.EditIndex" /> property is set to a value less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemEditing" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="EditItem">
@@ -1462,11 +1512,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditIndex" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="EditItemTemplate">
@@ -1521,11 +1574,18 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItem" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemEditing" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataTemplate">
@@ -1561,7 +1621,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The empty template is displayed in a <xref:System.Web.UI.WebControls.ListView> control when the data source that is bound to the control does not contain any records and the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>. The template is rendered instead of the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template. If the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to a value other than <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> template is not rendered.  
+ The empty template is displayed in a <xref:System.Web.UI.WebControls.ListView> control when the data source that is bound to the control does not contain any records and the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to <xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>. The template is rendered instead of the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template. If the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to a value other than <xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> template is not rendered.  
   
  You can define a custom user interface (UI) for the empty template by using the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> property. To specify a custom template declaratively for the empty template, add and `EmptyDataTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. You can then add the contents of the template to the `EmptyDataTemplate` element.  
   
@@ -1570,11 +1630,14 @@
 ## Examples  
  The following example shows how to define a custom template for the empty template.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/CS/ListViewEmptyDataTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/VB/ListViewEmptyDataTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/CS/ListViewEmptyDataTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/VB/ListViewEmptyDataTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemPosition" />
       </Docs>
     </Member>
     <Member MemberName="EmptyItemTemplate">
@@ -1619,11 +1682,15 @@
 ## Examples  
  The following example shows how to define a custom template for the empty item.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/CS/ListViewEmptyItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/VB/ListViewEmptyItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/CS/ListViewEmptyItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/VB/ListViewEmptyItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="EnableModelValidation">
@@ -1713,6 +1780,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.CreateLayoutTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ExtractItemValues">
@@ -1750,6 +1819,9 @@
           <paramref name="itemValues" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="item" /> is not a <see cref="T:System.Web.UI.WebControls.ListViewDataItem" /> object.</exception>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewDataItem" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="FindPlaceholder">
@@ -1898,12 +1970,17 @@
 ## Examples  
  The following example shows how to create a tiled layout in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.GroupItemCount%2A> property. It also shows how to change this property programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/CS/ListViewGroupItemCountCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/VB/ListViewGroupItemCountVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/CS/ListViewGroupItemCountCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/VB/ListViewGroupItemCountVB.aspx#1)]
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.ListView.GroupItemCount" /> property is set to a value less than 1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GroupPlaceholderID">
@@ -1940,12 +2017,16 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.GroupPlaceholderID%2A> property to specify a different ID for the group placeholder of the <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified ID is <see langword="null" /> or an empty string.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemPlaceholderID" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GroupSeparatorTemplate">
@@ -1992,11 +2073,16 @@
 ## Examples  
  The following example shows how to create a group separator in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GroupTemplate">
@@ -2043,11 +2129,16 @@
 ## Examples  
  The following example shows how to create a tiled layout in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.GroupTemplate%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -2117,7 +2208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListView.InsertItem%2A> property to access the insert item of a <xref:System.Web.UI.WebControls.ListView> control. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=fullName>. The content of an insert item is defined by the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> property.  
+ Use the <xref:System.Web.UI.WebControls.ListView.InsertItem%2A> property to access the insert item of a <xref:System.Web.UI.WebControls.ListView> control. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType.InsertItem?displayProperty=nameWithType>. The content of an insert item is defined by the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> property.  
   
    
   
@@ -2127,11 +2218,16 @@
 > [!IMPORTANT]
 >  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/CS/ListViewInsertItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/VB/ListViewInsertItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/CS/ListViewInsertItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/VB/ListViewInsertItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemPosition" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewItem.ItemType" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemType" />
       </Docs>
     </Member>
     <Member MemberName="InsertItemPosition">
@@ -2165,9 +2261,9 @@
   
 |Row type|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the first item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>|Does not render the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition.FirstItem?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the first item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition.LastItem?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>|Does not render the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.|  
   
    
   
@@ -2177,11 +2273,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="InsertItemTemplate">
@@ -2240,11 +2338,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemPosition" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
       </Docs>
     </Member>
     <Member MemberName="InsertMethod">
@@ -2313,7 +2417,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method to programmatically insert an item in the data source. This method is typically used to insert an item from outside the <xref:System.Web.UI.WebControls.ListView> control, such as from a different control on the page.  
   
- To use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method, you must define an <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template in the <xref:System.Web.UI.WebControls.ListView> control. You must also set the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property to a value different from <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>. To specify whether page validation is performed before the insert operation, use the `causesValidation` parameter.  
+ To use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method, you must define an <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template in the <xref:System.Web.UI.WebControls.ListView> control. You must also set the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property to a value different from <xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>. To specify whether page validation is performed before the insert operation, use the `causesValidation` parameter.  
   
  This method raises the <xref:System.Web.UI.WebControls.ListView.ItemInserted> and <xref:System.Web.UI.WebControls.ListView.ItemInserting> events.  
   
@@ -2325,8 +2429,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/CS/ListViewInsertNewItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/VB/ListViewInsertNewItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/CS/ListViewInsertNewItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/VB/ListViewInsertNewItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2335,6 +2439,14 @@
  -or-  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> object associated with the <see cref="T:System.Web.UI.WebControls.ListView" /> control is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemPosition" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.DeleteItem(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.UpdateItem(System.Int32,System.Boolean)" />
+        <altmember cref="T:System.Web.UI.WebControls.InsertItemPosition" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateEmptyDataTemplate">
@@ -2366,6 +2478,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyDataTemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateEmptyItemTemplate">
@@ -2397,6 +2511,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyItemTemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateGroupSeparatorTemplate">
@@ -2425,6 +2541,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateGroupTemplate">
@@ -2453,6 +2571,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateInsertItemTemplate">
@@ -2481,6 +2601,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateItemSeparatorTemplate">
@@ -2509,6 +2631,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateItemTemplate">
@@ -2551,6 +2675,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.ListView" /> control does not have an <see cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" /> template specified.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="IsUsingModelBinders">
@@ -2599,7 +2728,7 @@
   
  A <xref:System.Web.UI.WebControls.ListViewCancelEventArgs> object is passed to the event handler, which enables you to determine the index of the item. It also lets you indicate that the cancel operation should be stopped. To stop the operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ListViewCancelEventArgs> object to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2609,11 +2738,13 @@
 > [!IMPORTANT]
 >  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewCancelEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemCanceling(System.Web.UI.WebControls.ListViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -2655,20 +2786,25 @@
   
  The <xref:System.Web.UI.WebControls.ListView.ItemCommand> event is also raised when a button that is listed in the previous table is clicked. However, it is recommended that you use the events listed in the table. The <xref:System.Web.UI.WebControls.ListView.ItemCommand> event is usually used to handle custom operations.  
   
- A <xref:System.Web.UI.WebControls.ListViewCommandEventArgs> object is passed to the event handler, which enables you to determine the command name and command argument of the button that was clicked. To determine the command name, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A?displayProperty=fullName> property. To determine the command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A?displayProperty=fullName> property. To access the control that raised the event, use the <xref:System.Web.UI.WebControls.ListViewCommandEventArgs.CommandSource%2A?displayProperty=fullName> property.  
+ A <xref:System.Web.UI.WebControls.ListViewCommandEventArgs> object is passed to the event handler, which enables you to determine the command name and command argument of the button that was clicked. To determine the command name, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A?displayProperty=nameWithType> property. To determine the command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A?displayProperty=nameWithType> property. To access the control that raised the event, use the <xref:System.Web.UI.WebControls.ListViewCommandEventArgs.CommandSource%2A?displayProperty=nameWithType> property.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how to create an <xref:System.Web.UI.WebControls.ListView.ItemCommand> event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewCommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewCommandEventArgs.CommandSource" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemCommand(System.Web.UI.WebControls.ListViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -2698,10 +2834,13 @@
   
  A <xref:System.Web.UI.WebControls.ListViewItemEventArgs> object is passed to the event handler, which enables you to access the properties of the item that is being created. To access a specific control in the item, use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.ListViewItem> object that is contained in the <xref:System.Web.UI.WebControls.ListViewItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.ListViewItemEventArgs> object. You can determine which item type (data item, insert item, empty item) is being created by using the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemCreated(System.Web.UI.WebControls.ListViewItemEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName="ItemDataBound">
@@ -2731,18 +2870,21 @@
   
  A <xref:System.Web.UI.WebControls.ListViewItemEventArgs> object is passed to the event handler, which enables you to access the properties of the item that is being bound. To access a specific control in the item, use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.ListViewItem> object that is contained in the <xref:System.Web.UI.WebControls.ListViewItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.ListViewItemEventArgs> object. You can determine which item type (data item, insert item, empty item) is being bound by using the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.ItemDataBound> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/CS/ListViewItemDataBoundCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/VB/ListViewItemDataBoundVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/CS/ListViewItemDataBoundCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/VB/ListViewItemDataBoundVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDataBound(System.Web.UI.WebControls.ListViewItemEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCreated" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleted">
@@ -2772,18 +2914,21 @@
   
  A <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> object is passed to the event handler, which enables you to determine the number of rows that were affected in the data source. It also lets you determine what exceptions might have occurred. You can indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled%2A> property of the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> object to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how to add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemDeleted> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewDeletedEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleting" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleting">
@@ -2813,18 +2958,21 @@
   
  A <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> object is passed to the event handler, which enables you to determine the index of the current item. It also lets you indicate that the delete operation should be canceled. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> object to `true`. You can also work with the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> collections before the values are passed to the data source.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how to declaratively add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemDeleting> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewDeleteEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleting(System.Web.UI.WebControls.ListViewDeleteEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
       </Docs>
     </Member>
     <Member MemberName="ItemEditing">
@@ -2854,7 +3002,7 @@
   
  A <xref:System.Web.UI.WebControls.ListViewEditEventArgs> object is passed to the event handler, which enables you to determine the index of the current item. It also lets you indicate that the edit operation should be canceled. To cancel the edit operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ListViewEditEventArgs> object to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2864,11 +3012,16 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewEditEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemEditing(System.Web.UI.WebControls.ListViewEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserted">
@@ -2900,7 +3053,7 @@
   
  If the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows%2A> property reports that no items were inserted, you can rebind the insert values to the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template by setting the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2910,11 +3063,19 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewInsertedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemInserted(System.Web.UI.WebControls.ListViewInsertedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserting">
@@ -2944,7 +3105,7 @@
   
  A <xref:System.Web.UI.WebControls.ListViewInsertEventArgs> object is passed to the event handler, which enables you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.ListView> control. It also lets you indicate that the insert operation should be canceled. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can read or modify the field values for the new record by using the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Values%2A> property.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2954,11 +3115,16 @@
 > [!IMPORTANT]
 >  This example contains controls that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/CS/ListViewItemInsertingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/VB/ListViewItemInsertingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/CS/ListViewItemInsertingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/VB/ListViewItemInsertingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewInsertEventArgs" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewInsertEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemInserting(System.Web.UI.WebControls.ListViewInsertEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
       </Docs>
     </Member>
     <Member MemberName="ItemPlaceholderID">
@@ -2995,12 +3161,15 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.ItemPlaceholderID%2A> property to specify an ID for the item placeholder of the <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified ID is <see langword="null" /> or an empty string.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupPlaceholderID" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -3042,6 +3211,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewDataItem" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="ItemSeparatorTemplate">
@@ -3086,11 +3258,16 @@
 ## Examples  
  The following example shows how to create an item separator in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -3146,11 +3323,19 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdated">
@@ -3180,7 +3365,7 @@
   
  A <xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs> object is passed to the event handler, which enables you to determine the number of rows affected. It also lets you determine what exceptions might have occurred. You can indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled%2A> property of the <xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs> object.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -3190,11 +3375,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewUpdatedEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdated(System.Web.UI.WebControls.ListViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemEditing" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdating(System.Web.UI.WebControls.ListViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdating">
@@ -3226,7 +3417,7 @@
   
  You can work with the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A>, <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.OldValues%2A>, and <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues%2A> collections before the values are passed to the data source. A typical way to use these collections is to HTML-encode the values supplied by the user before they are stored in the data source. This helps prevent script injection attacks.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -3236,11 +3427,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/CS/ListViewItemUpdatingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/VB/ListViewItemUpdatingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/CS/ListViewItemUpdatingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/VB/ListViewItemUpdatingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewUpdateEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdating(System.Web.UI.WebControls.ListViewUpdateEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemEditing" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdated(System.Web.UI.WebControls.ListViewUpdatedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LayoutCreated">
@@ -3268,10 +3465,11 @@
 ## Remarks  
  Before the <xref:System.Web.UI.WebControls.ListView> control can be rendered, the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template must be created to serve as the root container for the control. The <xref:System.Web.UI.WebControls.ListView.LayoutCreated> event is raised when the layout template in the <xref:System.Web.UI.WebControls.ListView> control is created. This enables you to perform a custom routine whenever this event occurs.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnLayoutCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -3323,8 +3521,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control without defining a <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template in the control. A server control with a known ID is also not specified.  
   
@@ -3338,6 +3536,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -3366,6 +3573,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -3394,6 +3602,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MaximumRows">
@@ -3461,10 +3670,11 @@
 |"Update"|Updates the current record in the data source with the bound values from the <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> template. Raises the <xref:System.Web.UI.WebControls.ListView.ItemUpdating> and <xref:System.Web.UI.WebControls.ListView.ItemUpdated> events.|  
 |"Sort"|Sorts the columns listed in the `CommandArgument` property of the button. Raises the <xref:System.Web.UI.WebControls.ListView.Sorting> and <xref:System.Web.UI.WebControls.ListView.Sorted> events.|  
   
- This version of the method returns `true` if one of these buttons raises an event that is handled by the control. For more information about event bubbling, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ This version of the method returns `true` if one of these buttons raises an event that is handled by the control. For more information about event bubbling, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -3491,7 +3701,7 @@
 ## Remarks  
  When notified by this method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has not yet been populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent of this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnInit%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3528,7 +3738,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCanceling%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemCanceling> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCanceling%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3538,6 +3748,8 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemCanceling(System.Web.UI.WebControls.ListViewCancelEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemCanceling(System.Web.UI.WebControls.ListViewCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewCancelEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -3566,7 +3778,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCommand%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemCommand> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCommand%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3575,6 +3787,8 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemCommand(System.Web.UI.WebControls.ListViewCommandEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemCommand(System.Web.UI.WebControls.ListViewCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -3603,7 +3817,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCreated%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemCreated> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCreated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3612,6 +3826,8 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemCreated(System.Web.UI.WebControls.ListViewItemEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemCreated(System.Web.UI.WebControls.ListViewItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
@@ -3638,7 +3854,7 @@
 ## Remarks  
  Before the <xref:System.Web.UI.WebControls.ListView> control can be rendered, each item in the control must be bound to a record in the data source. The <xref:System.Web.UI.WebControls.ListView.ItemDataBound> event is raised when a <xref:System.Web.UI.WebControls.ListViewItem> object is bound to a data item. This enables you to perform a custom routine whenever this event occurs, such as modifying the values of the data item during the binding process.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemDataBound%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3647,6 +3863,10 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemDataBound(System.Web.UI.WebControls.ListViewItemEventArgs)" /> in a derived class, you must to call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemDataBound(System.Web.UI.WebControls.ListViewItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItemEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDataBound" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCreated" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemCreated(System.Web.UI.WebControls.ListViewItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleted">
@@ -3673,7 +3893,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemDeleted> event is raised when an item's Delete button is clicked or the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method is called, after the <xref:System.Web.UI.WebControls.ListView> control deletes the item. (A Delete button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Delete".) This enables you to perform a custom routine whenever this event occurs, such as checking the results of the delete operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemDeleted%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3682,6 +3902,10 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewDeletedEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleting(System.Web.UI.WebControls.ListViewDeleteEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleting">
@@ -3708,7 +3932,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemDeleting> event is raised when an item's Delete button is clicked or the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method is called, but before the <xref:System.Web.UI.WebControls.ListView> control deletes the item. (A Delete button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Delete".) This enables you to perform a custom routine whenever this event occurs, such as canceling the delete operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemDeleting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3718,6 +3942,10 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemDeleting(System.Web.UI.WebControls.ListViewDeleteEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemDeleting(System.Web.UI.WebControls.ListViewDeleteEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewDeleteEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleting" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemEditing">
@@ -3744,7 +3972,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemEditing> event is raised when an item's Edit button is clicked, but before the <xref:System.Web.UI.WebControls.ListView> control enters edit mode. (An Edit button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Edit".) This enables you to perform a custom routine whenever this event occurs, such as canceling the edit operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemEditing%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3754,6 +3982,11 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemEditing(System.Web.UI.WebControls.ListViewEditEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemEditing(System.Web.UI.WebControls.ListViewEditEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewEditEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemEditing" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemCanceling(System.Web.UI.WebControls.ListViewCancelEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdated(System.Web.UI.WebControls.ListViewUpdatedEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdating(System.Web.UI.WebControls.ListViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserted">
@@ -3782,7 +4015,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserted%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserted%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3791,6 +4024,9 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemInserted(System.Web.UI.WebControls.ListViewInsertedEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemInserted(System.Web.UI.WebControls.ListViewInsertedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserted" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemInserting(System.Web.UI.WebControls.ListViewInsertEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewInsertedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserting">
@@ -3819,7 +4055,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserting%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemInserting> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3829,6 +4065,9 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemInserting(System.Web.UI.WebControls.ListViewInsertEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemInserting(System.Web.UI.WebControls.ListViewInsertEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemInserting" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemInserted(System.Web.UI.WebControls.ListViewInsertedEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewInsertEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdated">
@@ -3855,7 +4094,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemUpdated> event is raised when an item's Update button is clicked or the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A> method is called, after the <xref:System.Web.UI.WebControls.ListView> control updates the item. (An Update button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Update".) This enables you to perform a custom routine whenever this event occurs, such as checking the results of the update operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemUpdated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3864,6 +4103,11 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemUpdated(System.Web.UI.WebControls.ListViewUpdatedEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemUpdated(System.Web.UI.WebControls.ListViewUpdatedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewUpdatedEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemCanceling(System.Web.UI.WebControls.ListViewCancelEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemEditing(System.Web.UI.WebControls.ListViewEditEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdating(System.Web.UI.WebControls.ListViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdating">
@@ -3890,7 +4134,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemUpdating> event is raised when an item's Update button is clicked or the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A> method is called, but before the <xref:System.Web.UI.WebControls.ListView> control updates the item. (An Update button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Update".) This enables you to perform a custom routine whenever this event occurs, such as canceling the update operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemUpdating%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3900,6 +4144,11 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnItemUpdating(System.Web.UI.WebControls.ListViewUpdateEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnItemUpdating(System.Web.UI.WebControls.ListViewUpdateEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewUpdateEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemCanceling(System.Web.UI.WebControls.ListViewCancelEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemEditing(System.Web.UI.WebControls.ListViewEditEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemUpdated(System.Web.UI.WebControls.ListViewUpdatedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLayoutCreated">
@@ -3926,7 +4175,7 @@
 ## Remarks  
  Before the <xref:System.Web.UI.WebControls.ListView> control can be rendered, a <xref:System.Web.UI.WebControls.ListViewItem> object must be created to act as the container for the control. The <xref:System.Web.UI.WebControls.ListView.LayoutCreated> event is raised when the layout template is created in the <xref:System.Web.UI.WebControls.ListView> control. This enables you to perform a custom routine whenever this event occurs, such as changing the visibility of a control that is inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnLayoutCreated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3935,6 +4184,7 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnLayoutCreated(System.EventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnLayoutCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.LayoutCreated" />
       </Docs>
     </Member>
     <Member MemberName="OnPagePropertiesChanged">
@@ -3961,7 +4211,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanged> event is raised when the page properties change, after the <xref:System.Web.UI.WebControls.ListView> control sets the new values by using the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A> method. This enables you to perform a custom routine, such as a custom paging operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3970,6 +4220,9 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" /> in a derived class, call the base class’s <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPagePropertiesChanging">
@@ -3996,7 +4249,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanging> event is raised when the page properties change, but before the <xref:System.Web.UI.WebControls.ListView> control sets the new values by using the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A> method. This enables you to perform a custom routine whenever this event occurs, such as clearing the <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A> or <xref:System.Web.UI.WebControls.ListView.EditIndex%2A> properties.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4005,6 +4258,9 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" /> in a derived class, call the base class’s <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanged">
@@ -4031,7 +4287,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanged> event is raised when an item's Select button is clicked, after the <xref:System.Web.UI.WebControls.ListView> control handles the select operation. (A Select button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Select".) This enables you to perform a custom routine whenever this event occurs, such as updating a status label with the currently selected item.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4040,6 +4296,9 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging(System.Web.UI.WebControls.ListViewSelectEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanging">
@@ -4066,7 +4325,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanging> event is raised when an item's Select button is clicked, but before the <xref:System.Web.UI.WebControls.ListView> control handles the select operation. (A Select button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Select".) This enables you to perform a custom routine whenever this event occurs, such as canceling the selection operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4076,6 +4335,10 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging(System.Web.UI.WebControls.ListViewSelectEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging(System.Web.UI.WebControls.ListViewSelectEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewSelectEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSorted">
@@ -4102,7 +4365,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.Sorted> event is raised when a Sort button is clicked or the <xref:System.Web.UI.WebControls.ListView.Sort%2A> method is called, after the <xref:System.Web.UI.WebControls.ListView> control handles the sort operation. (A Sort button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Sort".) This enables you to perform a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSorted%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4111,6 +4374,9 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnSorted(System.EventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnSorted(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorted" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorting" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSorting(System.Web.UI.WebControls.ListViewSortEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSorting">
@@ -4137,7 +4403,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.Sorting> event is raised when a Sort button is clicked or the <xref:System.Web.UI.WebControls.ListView.Sort%2A> method is called, but before the <xref:System.Web.UI.WebControls.ListView> control handles the sort operation. (A Sort button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Sort".) This enables you to perform a custom routine whenever this event occurs, such as canceling the sorting operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSorting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4147,6 +4413,10 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnSorting(System.Web.UI.WebControls.ListViewSortEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnSorting(System.Web.UI.WebControls.ListViewSortEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewSortEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorting" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorted" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSorted(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnTotalRowCountAvailable">
@@ -4173,7 +4443,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.System%23Web%23UI%23WebControls%23IPageableItemContainer%23TotalRowCountAvailable> event is raised when data is available for the <xref:System.Web.UI.WebControls.DataPager> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnTotalRowCountAvailable%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4182,6 +4452,7 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnTotalRowCountAvailable(System.Web.UI.WebControls.PageEventArgs)" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.ListView.OnTotalRowCountAvailable(System.Web.UI.WebControls.PageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.PageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PagePropertiesChanged">
@@ -4209,10 +4480,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanged> event is raised when the page properties change, after the <xref:System.Web.UI.WebControls.ListView> control sets the new values by using the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A> method. This enables you to perform a custom routine whenever this event occurs, such as clearing the selected item or performing a custom paging operation.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PagePropertiesChanging">
@@ -4242,18 +4516,21 @@
   
  A <xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs> object is passed to the event handler, which enables you to determine the index of the first record displayed on the page. It also lets you determine the maximum number of items to display on a single page.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanging> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -4285,6 +4562,7 @@
         <block subset="none" type="overrides">
           <para>Because the <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method is sealed, you must override the <see cref="M:System.Web.UI.WebControls.ListView.PerformDataBinding(System.Collections.IEnumerable)" /> method if you want to perform any additional tasks when binding data.</para>
         </block>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -4306,10 +4584,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.PerformDataBinding%2A> method is called after data is retrieved in order to bind the data-bound control to data. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.ListView.PerformDataBinding%2A> method is called after data is retrieved in order to bind the data-bound control to data. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformSelect" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItems">
@@ -4338,6 +4617,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -4369,6 +4649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -4398,6 +4679,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -4420,10 +4702,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.SaveViewState%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to save the state of the control. For more information, see <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.ListView.SaveViewState%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to save the state of the control. For more information, see <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SelectedDataKey">
@@ -4464,12 +4747,16 @@
 ## Examples  
  The following example shows how to use the second key field as a parameter in a master/detail scenario. A <xref:System.Web.UI.WebControls.ListView> control is used to display records from the Product Inventory table of the AdventureWorks database. When an item is selected in the <xref:System.Web.UI.WebControls.ListView> control, the details of the product are displayed in another <xref:System.Web.UI.WebControls.ListView> control. ProductID is the second key name in the first <xref:System.Web.UI.WebControls.ListView> control. To access the second key, the code uses the value of `ProductInventoryListView.SelectedDataKey[1]` (`ProductInventoryListView.SelectedDataKey(1)` in Visual Basic) as the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> for the <xref:System.Web.UI.WebControls.ControlParameter> object. This parameter object is in turn used by the <xref:System.Web.UI.WebControls.SqlDataSource> control that the second <xref:System.Web.UI.WebControls.ListView> control is bound to.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/CS/ListViewSelectedDataKeyCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/VB/ListViewSelectedDataKeyVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/CS/ListViewSelectedDataKeyCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/VB/ListViewSelectedDataKeyVB.aspx#1)]
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No data keys are specified in the <see cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" /> property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -4512,6 +4799,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.ListView.SelectedIndex" /> property is set to a value less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedDataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -4539,18 +4829,21 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanged> event is raised when an item's Select button is clicked, after the <xref:System.Web.UI.WebControls.ListView> control handles the select operation. (A Select button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Select".) This enables you to perform a custom routine whenever this event occurs, such as updating a status label with information about the currently selected item.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanged> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/CS/ListViewItemSelectedIndexChanged2CS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/VB/ListViewItemSelectedIndexChanged2VB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/CS/ListViewItemSelectedIndexChanged2CS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/VB/ListViewItemSelectedIndexChanged2VB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging(System.Web.UI.WebControls.ListViewSelectEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanging">
@@ -4583,18 +4876,22 @@
   
  A <xref:System.Web.UI.WebControls.ListViewSelectEventArgs> object is passed to the event handler, which enables you to determine the index of the item that was selected by the user. It also lets you indicate that the selection operation should be canceled. To cancel the selection operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ListViewSelectEventArgs> object to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanging> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/CS/ListViewItemSelectedIndexChangingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/VB/ListViewItemSelectedIndexChangingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/CS/ListViewItemSelectedIndexChangingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/VB/ListViewItemSelectedIndexChangingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewSelectEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging(System.Web.UI.WebControls.ListViewSelectEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemTemplate">
@@ -4646,11 +4943,19 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SelectedItemTemplate%2A> property to define the contents of the selected item in the <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedIndex" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="SelectedPersistedDataKey">
@@ -4714,16 +5019,20 @@
 ## Examples  
  The following example shows how to use the first key field as a parameter in a master/detail scenario. When an item is selected in the <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.WebControls.ListView.SelectedValue%2A> property is used as the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> for the <xref:System.Web.UI.WebControls.ControlParameter> object. This parameter object is in turn used by the <xref:System.Web.UI.WebControls.SqlDataSource> control that the second <xref:System.Web.UI.WebControls.ListView> control is bound to.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SelectedValue%2A> property to determine the value of the key field.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/CS/ListViewSelectedValueCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/VB/ListViewSelectedValueVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/CS/ListViewSelectedValueCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/VB/ListViewSelectedValueVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedDataKey" />
       </Docs>
     </Member>
     <Member MemberName="SelectItem">
@@ -4852,12 +5161,17 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.Sort%2A> method to programmatically sort the <xref:System.Web.UI.WebControls.ListView> control by multiple data fields.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/CS/ListViewSortCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/VB/ListViewSortVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/CS/ListViewSortCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/VB/ListViewSortVB.aspx#1)]
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.ListView" /> control is bound to a data source control, but the <see cref="T:System.Web.UI.DataSourceView" /> object that is associated with the data source is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SortExpression" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorted" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="SortDirection">
@@ -4900,11 +5214,13 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SortDirection%2A> property to programmatically determine the sort direction of a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="Sorted">
@@ -4932,10 +5248,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.Sorted> event is raised when a Sort button is clicked or the <xref:System.Web.UI.WebControls.ListView.Sort%2A> method is called, after the <xref:System.Web.UI.WebControls.ListView> control handles the sort operation. (A Sort button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Sort".) This enables you to perform a custom routine whenever this event occurs.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSorted(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorting" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSorting(System.Web.UI.WebControls.ListViewSortEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -4972,11 +5291,12 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SortExpression%2A> property to programmatically determine the column that is being sorted in a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.SortDirection" />
       </Docs>
     </Member>
     <Member MemberName="Sorting">
@@ -5006,18 +5326,23 @@
   
  A <xref:System.Web.UI.WebControls.ListViewSortEventArgs> object is passed to the event handler, which enables you to determine the sort expression for the column. It also lets you indicate that the sort operation should be canceled. To cancel the sort operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> object to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.Sorting> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Web.UI.WebControls.ListViewSortEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSorting(System.Web.UI.WebControls.ListViewSortEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.Sorted" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnSorted(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -5337,6 +5662,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.MaximumRows" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties">
@@ -5370,6 +5696,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListView.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex">
@@ -5395,6 +5722,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.StartRowIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IPersistedSelector.DataKey">
@@ -5530,7 +5858,7 @@
  Use the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A> method to programmatically update the record at the specified index in the data source. You typically use this method when you want to update a record from outside the <xref:System.Web.UI.WebControls.ListView> control, such as from a different control on the page.  
   
 > [!NOTE]
->  This method can be called only for an item that contains a two-way data-bound input control. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+>  This method can be called only for an item that contains a two-way data-bound input control. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
  To specify whether page validation is performed before the update operation, use the `causesValidation` parameter.  
   
@@ -5541,8 +5869,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A> method to programmatically update a <xref:System.Web.UI.WebControls.ListView> item in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/CS/ListViewUpdateItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/VB/ListViewUpdateItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/CS/ListViewUpdateItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/VB/ListViewUpdateItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -5552,6 +5880,11 @@
  -or-  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> object that is associated with the <see cref="T:System.Web.UI.WebControls.ListView" /> control is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.DeleteItem(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.InsertNewItem(System.Boolean)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">
@@ -5635,5 +5968,14 @@
         <exception cref="T:System.NotSupportedException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.ListView.Width" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateChildControls">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the control hierarchy that is used to render the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

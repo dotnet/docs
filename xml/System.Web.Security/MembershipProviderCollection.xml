@@ -31,8 +31,8 @@
 ## Examples  
  The following code example lists the providers enabled for an application and their respective types.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/Providerscs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/Providersvb.aspx#7)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/Providerscs.aspx#7)]
+ [!code-aspx-vb[System.Web.Security.Membership#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/Providersvb.aspx#7)]  
   
  ]]></format>
     </remarks>
@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy role provider objects to the specified array.  
+ This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=nameWithType> to copy role provider objects to the specified array.  
   
    
   

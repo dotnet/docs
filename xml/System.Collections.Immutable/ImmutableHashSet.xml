@@ -15,7 +15,7 @@
   <Docs>
     <summary>Provides a set of initialization methods for instances of the <see cref="T:System.Collections.Immutable.ImmutableHashSet`1" /> class.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -102,7 +102,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (T[] items);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (params T[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;(!!T[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(``0[])" />
       <MemberType>Method</MemberType>
@@ -166,7 +166,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer, T[] items);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableHashSet&lt;T&gt; Create&lt;T&gt; (System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer, params T[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableHashSet`1&lt;!!T&gt; Create&lt;T&gt;(class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; equalityComparer, !!T[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(System.Collections.Generic.IEqualityComparer{``0},``0[])" />
       <MemberType>Method</MemberType>

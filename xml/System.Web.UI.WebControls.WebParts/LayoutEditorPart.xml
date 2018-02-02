@@ -62,18 +62,21 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/DisplayModeMenuCS.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/DisplayModeMenuVB.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/DisplayModeMenuCS.ascx#5)]
+ [!code-aspx-vb[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/DisplayModeMenuVB.ascx#5)]  
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains declarative references to a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control. Note that the page also contains a <xref:System.Web.UI.WebControls.BulletedList> control that is bound to the Pubs database; because this control resides in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone, it functions as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that can be edited by the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#1)]
+ [!code-aspx-vb[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#1)]  
   
  When you load the page in a browser, you can select **Edit Mode** in the **Display Mode** drop-down list control to switch to edit mode. You can click the verbs menu (the downward arrow) in the title bar of the **Author List WebPart** control, and click **Edit** to begin editing. When the editing UI is visible, you can see the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control, and a button and text box positioned above it. If you make some changes in the editing UI and click the **Apply** button, you can use the **Display Mode** drop-down list control to return the page to browse mode and see the full effect of the editing changes.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,7 +127,7 @@
  The <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges%2A> method is a critical method on a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control. The method's purpose is to save the values a user has set on a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control to the corresponding properties in the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The associated control is referenced in the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control's inherited <xref:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit%2A> property.  
   
 > [!IMPORTANT]
->  You cannot call the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges%2A> method from your own code. However, if you need more programmatic control over the process of editing various <xref:System.Web.UI.WebControls.WebParts.WebPart> control properties than the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control provides, you can create a custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> control and provide your own implementation of this method. For an example, see the <xref:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges%2A?displayProperty=fullName> method.  
+>  You cannot call the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges%2A> method from your own code. However, if you need more programmatic control over the process of editing various <xref:System.Web.UI.WebControls.WebParts.WebPart> control properties than the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control provides, you can create a custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> control and provide your own implementation of this method. For an example, see the <xref:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges%2A> method attempts to set the following properties on the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control:  
   
@@ -139,6 +142,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">An error occurred when setting the value of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.ChromeState" /> property on the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.SyncChanges" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -195,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.DefaultButton" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -220,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.Display" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -292,6 +299,8 @@
         <block subset="none" type="usage">
           <para>Although you can call the <see cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.SyncChanges" /> method from your code, it is not necessary to do so. The Web Parts control set calls this method and the <see cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges" /> method at the proper times in the editing process to keep editing controls synchronized with their associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -322,8 +331,8 @@
   
  The following code shows how to set the title on a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control declaratively in a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#2)]
+ [!code-aspx-vb[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#2)]  
   
  The next part of the code example shows how to set the value of the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart.Title%2A> property programmatically.  
   
@@ -334,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
   </Members>

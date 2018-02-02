@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
+ms.workload: 
+  - dotnetcore
 ---
 
 # .NET Core CLI Tools telemetry
@@ -33,6 +35,7 @@ Telemetry *is enabled* when using the [.NET Core CLI commands](index.md), such a
 - `dotnet pack`
 - `dotnet restore`
 - `dotnet run`
+
 
 ## Behavior
 

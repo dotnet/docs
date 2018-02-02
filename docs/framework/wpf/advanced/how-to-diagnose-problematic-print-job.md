@@ -9,15 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "troubleshooting print job problems"
-  - "print jobs, troubleshooting"
-  - "print jobs, diagnosing problems"
+  - "troubleshooting print job problems [WPF]"
+  - "print jobs [WPF], troubleshooting"
+  - "print jobs [WPF], diagnosing problems"
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Diagnose Problematic Print Job
 Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] provide a means for performing a rapid remote diagnosis of print jobs.  
@@ -39,7 +45,7 @@ Network administrators often field complaints from users about print jobs that d
   
  The code below is series of code examples. The first code example contains the loop through the print queues. (Step 1c above.) The variable `myPrintQueues` is the <xref:System.Printing.PrintQueueCollection> object for the current print server.  
   
- The code example begins by refreshing the current print queue object with <xref:System.Printing.PrintQueue.Refresh%2A?displayProperty=fullName>. This ensures that the object's properties accurately represent the state of the physical printer that it represents. Then the application gets the collection of print jobs currently in the print queue by using <xref:System.Printing.PrintQueue.GetPrintJobInfoCollection%2A>.  
+ The code example begins by refreshing the current print queue object with <xref:System.Printing.PrintQueue.Refresh%2A?displayProperty=nameWithType>. This ensures that the object's properties accurately represent the state of the physical printer that it represents. Then the application gets the collection of print jobs currently in the print queue by using <xref:System.Printing.PrintQueue.GetPrintJobInfoCollection%2A>.  
   
  Next the application loops through the <xref:System.Printing.PrintSystemJobInfo> collection and compares each <xref:System.Printing.PrintSystemJobInfo.Submitter%2A> property with the alias of the complaining user. If they match, the application adds identifying information about the job to the string that will be presented. (The `userName` and `jobList` variables are initialized earlier in the application.)  
   
@@ -75,19 +81,19 @@ Network administrators often field complaints from users about print jobs that d
  [!code-csharp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#spottroubleusingjobproperties)]
  [!code-vb[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#spottroubleusingjobproperties)]  
   
- The **HandlePausedJob** method enables the application's user to remotely resume paused jobs. Because there might be a good reason why the print queue was paused, the method begins by prompting for a user decision about whether to resume it. If the answer is "Y", then the <xref:System.Printing.PrintQueue.Resume%2A?displayProperty=fullName> method is called.  
+ The **HandlePausedJob** method enables the application's user to remotely resume paused jobs. Because there might be a good reason why the print queue was paused, the method begins by prompting for a user decision about whether to resume it. If the answer is "Y", then the <xref:System.Printing.PrintQueue.Resume%2A?displayProperty=nameWithType> method is called.  
   
- Next the user is prompted to decide if the job itself should be resumed, just in case it is paused independently of the print queue. (Compare <xref:System.Printing.PrintQueue.IsPaused%2A?displayProperty=fullName> and <xref:System.Printing.PrintSystemJobInfo.IsPaused%2A?displayProperty=fullName>.) If the answer is "Y", then <xref:System.Printing.PrintSystemJobInfo.Resume%2A?displayProperty=fullName> is called; otherwise <xref:System.Printing.PrintSystemJobInfo.Cancel%2A> is called.  
+ Next the user is prompted to decide if the job itself should be resumed, just in case it is paused independently of the print queue. (Compare <xref:System.Printing.PrintQueue.IsPaused%2A?displayProperty=nameWithType> and <xref:System.Printing.PrintSystemJobInfo.IsPaused%2A?displayProperty=nameWithType>.) If the answer is "Y", then <xref:System.Printing.PrintSystemJobInfo.Resume%2A?displayProperty=nameWithType> is called; otherwise <xref:System.Printing.PrintSystemJobInfo.Cancel%2A> is called.  
   
  [!code-cpp[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#handlepausedjob)]
  [!code-csharp[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#handlepausedjob)]
  [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
 ## See Also  
- <xref:System.Printing.PrintJobStatus>   
- <xref:System.Printing.PrintSystemJobInfo>   
- <xref:System.FlagsAttribute>   
- <xref:System.Printing.PrintQueue>   
- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Printing.PrintJobStatus>  
+ <xref:System.Printing.PrintSystemJobInfo>  
+ <xref:System.FlagsAttribute>  
+ <xref:System.Printing.PrintQueue>  
+ [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

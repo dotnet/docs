@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IDockProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -146,7 +147,7 @@
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.DockPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+ In the following example, a <xref:System.Windows.Automation.DockPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
   
  [!code-csharp[UIADockPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIADockPattern_snip/CSharp/UIADockPattern_snippets.cs#101)]
  [!code-vb[UIADockPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIADockPattern_snip/VisualBasic/UIADockPattern_snippets.vb#101)]  

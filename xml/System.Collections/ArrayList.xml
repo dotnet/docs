@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/arraylist.cs#3e3f6715773d6643). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Collections.ArrayList> class is designed to hold heterogeneous collections of objects. However, it does not always offer the best performance. Instead, we recommend the following:  
   
 -   For a heterogeneous collection of objects, use the `List<Object>` (in C#) or `List(Of Object)` (in Visual Basic) type.  
@@ -87,6 +83,8 @@
  An <see cref="T:System.Collections.ArrayList" /> can support multiple readers concurrently, as long as the collection is not modified. To guarantee the thread safety of the <see cref="T:System.Collections.ArrayList" />, all operations must be done through the wrapper returned by the <see cref="M:System.Collections.ArrayList.Synchronized(System.Collections.IList)" /> method.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.Generic.List`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ArrayList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,6 +171,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="c" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ArrayList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -216,6 +217,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="P:System.Collections.ArrayList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Adapter">
@@ -267,6 +269,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="list" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)" />
+        <altmember cref="M:System.Collections.ArrayList.Reverse" />
+        <altmember cref="M:System.Collections.ArrayList.Sort" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -327,6 +333,10 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Remove(System.Object)" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -390,6 +400,14 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ArrayList.Capacity" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
+        <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.GetRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -603,6 +621,8 @@
  -or-  
   
  <paramref name="count" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -650,6 +670,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Collections.ArrayList.Capacity" /> is set to a value that is less than <see cref="P:System.Collections.ArrayList.Count" />.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory available on the system.</exception>
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -706,6 +727,9 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.TrimToSize" />
+        <altmember cref="P:System.Collections.ArrayList.Capacity" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -790,12 +814,14 @@
 ## Remarks  
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -835,7 +861,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.ArrayList>.  
   
@@ -844,7 +870,7 @@
    
   
 ## Examples  
- The following code example shows how to copy an <xref:System.Collections.ArrayList> into a one-dimensional <xref:System.Array?displayProperty=fullName>.  
+ The following code example shows how to copy an <xref:System.Collections.ArrayList> into a one-dimensional <xref:System.Array?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic ArrayList.CopyTo Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ArrayList.CopyTo Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ArrayList.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ArrayList.CopyTo Example/CS/source.cs#1)]
@@ -902,7 +928,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.ArrayList>.  
   
@@ -911,7 +937,7 @@
    
   
 ## Examples  
- The following code example shows how to copy an <xref:System.Collections.ArrayList> into a one-dimensional <xref:System.Array?displayProperty=fullName>.  
+ The following code example shows how to copy an <xref:System.Collections.ArrayList> into a one-dimensional <xref:System.Array?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic ArrayList.CopyTo1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ArrayList.CopyTo1 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ArrayList.CopyTo1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ArrayList.CopyTo1 Example/CS/source.cs#1)]
@@ -975,7 +1001,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.ArrayList>.  
   
@@ -984,7 +1010,7 @@
    
   
 ## Examples  
- The following code example shows how to copy an <xref:System.Collections.ArrayList> into a one-dimensional <xref:System.Array?displayProperty=fullName>.  
+ The following code example shows how to copy an <xref:System.Collections.ArrayList> into a one-dimensional <xref:System.Array?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic ArrayList.CopyTo1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ArrayList.CopyTo1 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ArrayList.CopyTo1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ArrayList.CopyTo1 Example/CS/source.cs#1)]
@@ -1057,6 +1083,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ArrayList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="FixedSize">
@@ -1223,6 +1250,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1300,6 +1328,7 @@
  <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetRange">
@@ -1363,6 +1392,10 @@
  <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> and <paramref name="count" /> do not denote a valid range of elements in the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1405,7 +1438,7 @@
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
@@ -1420,6 +1453,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1464,7 +1499,7 @@
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is the number of elements from `startIndex` to the end of the <xref:System.Collections.ArrayList>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
@@ -1481,6 +1516,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1527,7 +1564,7 @@
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is `count`.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
@@ -1552,6 +1589,8 @@
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1623,6 +1662,9 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="InsertRange">
@@ -1698,6 +1740,11 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.GetRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -1802,6 +1849,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ArrayList.ReadOnly(System.Collections.IList)" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -1860,6 +1908,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ArrayList.SyncRoot" />
+        <altmember cref="M:System.Collections.ArrayList.Synchronized(System.Collections.IList)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1931,6 +1981,7 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.ArrayList.Count" />.</exception>
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -1986,6 +2037,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2030,7 +2083,7 @@
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is the number of elements from the beginning of the <xref:System.Collections.ArrayList> to `startIndex`.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
@@ -2047,6 +2100,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2093,7 +2148,7 @@
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is `count`.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
@@ -2118,6 +2173,8 @@
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2175,6 +2232,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="list" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.ArrayList.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2223,6 +2281,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="list" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.ArrayList.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2264,7 +2323,7 @@
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
   
@@ -2284,6 +2343,10 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -2349,6 +2412,10 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.Remove(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -2416,6 +2483,12 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.Remove(System.Object)" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.GetRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)" />
       </Docs>
     </Member>
     <Member MemberName="Repeat">
@@ -2507,7 +2580,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements, such that the element at <xref:System.Collections.ArrayList> [i], where i is any index within the range, moves to <xref:System.Collections.ArrayList> [j], where j equals `index` + `index` + `count` - i - 1.  
+ This method uses <xref:System.Array.Reverse%2A?displayProperty=nameWithType> to reverse the order of the elements, such that the element at <xref:System.Collections.ArrayList> [i], where i is any index within the range, moves to <xref:System.Collections.ArrayList> [j], where j equals `index` + `index` + `count` - i - 1.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
   
@@ -2562,7 +2635,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements, such that the element at <xref:System.Collections.ArrayList> [i], where i is any index within the range, moves to <xref:System.Collections.ArrayList> [j], where j equals `index` + `index` + `count` - i - 1.  
+ This method uses <xref:System.Array.Reverse%2A?displayProperty=nameWithType> to reverse the order of the elements, such that the element at <xref:System.Collections.ArrayList> [i], where i is any index within the range, moves to <xref:System.Collections.ArrayList> [j], where j equals `index` + `index` + `count` - i - 1.  
   
  This method is an O(`n`) operation, where `n` is `count`.  
   
@@ -2651,6 +2724,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="c" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.ArrayList" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)" />
+        <altmember cref="M:System.Collections.ArrayList.GetRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -2685,7 +2762,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Sort%2A?displayProperty=fullName>, which uses the QuickSort algorithm. The QuickSort algorithm is a comparison sort (also called an unstable sort), which means that a "less than or equal to" comparison operation determines which of two elements should occur first in the final sorted list. However, if two elements are equal, their original order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal. To perform a stable sort, you must implement a custom <xref:System.Collections.IComparer> interface to use with the other overloads of this method.  
+ This method uses <xref:System.Array.Sort%2A?displayProperty=nameWithType>, which uses the QuickSort algorithm. The QuickSort algorithm is a comparison sort (also called an unstable sort), which means that a "less than or equal to" comparison operation determines which of two elements should occur first in the final sorted list. However, if two elements are equal, their original order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal. To perform a stable sort, you must implement a custom <xref:System.Collections.IComparer> interface to use with the other overloads of this method.  
   
  On average, this method is an O(`n` log `n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>; in the worst case it is an O(`n`^2) operation.  
   
@@ -2896,6 +2973,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="list" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.ArrayList.SyncRoot" />
+        <altmember cref="P:System.Collections.ArrayList.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -2953,6 +3032,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="list" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.ArrayList.SyncRoot" />
+        <altmember cref="P:System.Collections.ArrayList.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -3004,6 +3085,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ArrayList.IsSynchronized" />
+        <altmember cref="M:System.Collections.ArrayList.Synchronized(System.Collections.IList)" />
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -3039,7 +3122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The elements are copied using <xref:System.Array.Copy%2A?displayProperty=fullName>, which is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
+ The elements are copied using <xref:System.Array.Copy%2A?displayProperty=nameWithType>, which is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -3088,7 +3171,7 @@
 ## Remarks  
  All of the objects in the <xref:System.Collections.ArrayList> object will be cast to the <xref:System.Type> specified in the `type` parameter.  
   
- The elements are copied using <xref:System.Array.Copy%2A?displayProperty=fullName>, which is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
+ The elements are copied using <xref:System.Array.Copy%2A?displayProperty=nameWithType>, which is an O(`n`) operation, where `n` is <xref:System.Collections.ArrayList.Count%2A>.  
   
    
   
@@ -3104,6 +3187,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.ArrayList" /> cannot be cast automatically to the specified type.</exception>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="TrimToSize">
@@ -3160,7 +3244,118 @@
  -or-  
   
  The <see cref="T:System.Collections.ArrayList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.ArrayList.Clear" />
+        <altmember cref="P:System.Collections.ArrayList.Capacity" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="LastIndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the last occurrence of a value in the <see cref="T:System.Collections.ArrayList" /> or in a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BinarySearch">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uses a binary search algorithm to locate a specific element in the sorted <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FixedSize">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list wrapper with a fixed size, where elements are allowed to be modified, but not added or removed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Reverse">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reverses the order of the elements in the <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ArrayList" /> to a new array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ArrayList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadOnly">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list wrapper that is read-only.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the <see cref="T:System.Collections.ArrayList" /> or a portion of it to a one-dimensional array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEnumerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.ArrayList" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the first occurrence of a value in the <see cref="T:System.Collections.ArrayList" /> or in a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Synchronized">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list wrapper that is synchronized (thread safe).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the elements in the <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -141,7 +141,7 @@
       </Docs>
     </Member>
     <Member MemberName="Merge">
-      <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap Merge (System.Activities.DynamicUpdate.DynamicUpdateMap[] maps);" />
+      <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap Merge (params System.Activities.DynamicUpdate.DynamicUpdateMap[] maps);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap Merge(class System.Activities.DynamicUpdate.DynamicUpdateMap[] maps) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.Merge(System.Activities.DynamicUpdate.DynamicUpdateMap[])" />
       <MemberType>Method</MemberType>
@@ -232,5 +232,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CalculateImplementationMapItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the map items used in the implementation of <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CalculateMapItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the map items.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Merge">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merges the dynamic update map.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

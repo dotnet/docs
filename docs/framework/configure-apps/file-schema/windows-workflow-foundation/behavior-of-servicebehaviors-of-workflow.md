@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6a4b718a-1b40-4957-935a-f6122819ab3c
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;behavior&gt; of &lt;serviceBehaviors&gt; of workflow
 The **behavior** element contains a collection of settings for the behavior of a service. Each behavior is indexed by its **name**. Services can link to each behavior through this name using the **behaviorConfiguration**attribute of the [\<endpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element. This allows endpoints to share common behavior configurations without redefining the settings.  

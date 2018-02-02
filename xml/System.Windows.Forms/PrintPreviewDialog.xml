@@ -46,7 +46,7 @@
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewDialog> setting the <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias%2A> properties. The example assumes the form contains a <xref:System.Windows.Forms.TreeView> named `TreeView1` that contains <xref:System.Windows.Forms.TreeNode> objects. The <xref:System.Windows.Forms.Control.Tag%2A> property of each <xref:System.Windows.Forms.TreeNode> object must be set to a fully qualified document name that can be accessed by the machine running the example. Set each <xref:System.Windows.Forms.TreeNode.Text%2A?displayProperty=fullName> property to a string that identifies the file specified by the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. For example, you could set `TreeNode1.Tag` to "c:\myDocuments\recipe.doc" and `TreeNode1.Text` to "recipe.doc". The example also assumes the form contains a <xref:System.Windows.Forms.PrintPreviewDialog> named `PrintPreviewDialog1` and a button named `Button1`. To run this example, call the `InitializePrintPreviewDialog` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewDialog> setting the <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias%2A> properties. The example assumes the form contains a <xref:System.Windows.Forms.TreeView> named `TreeView1` that contains <xref:System.Windows.Forms.TreeNode> objects. The <xref:System.Windows.Forms.Control.Tag%2A> property of each <xref:System.Windows.Forms.TreeNode> object must be set to a fully qualified document name that can be accessed by the machine running the example. Set each <xref:System.Windows.Forms.TreeNode.Text%2A?displayProperty=nameWithType> property to a string that identifies the file specified by the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=nameWithType> property. For example, you could set `TreeNode1.Tag` to "c:\myDocuments\recipe.doc" and `TreeNode1.Text` to "recipe.doc". The example also assumes the form contains a <xref:System.Windows.Forms.PrintPreviewDialog> named `PrintPreviewDialog1` and a button named `Button1`. To run this example, call the `InitializePrintPreviewDialog` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
   
  [!code-cpp[System.Windows.Forms.TreeViewAndPrintPreview#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CPP/form1.cpp#3)]
  [!code-csharp[System.Windows.Forms.TreeViewAndPrintPreview#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CS/form1.cs#3)]
@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PageSetupDialog" />
+    <altmember cref="T:System.Windows.Forms.PrintDialog" />
+    <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,7 +80,7 @@
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewDialog> setting the <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias%2A> properties. The example assumes the form contains a <xref:System.Windows.Forms.TreeView> named `TreeView1` that contains <xref:System.Windows.Forms.TreeNode> objects. The <xref:System.Windows.Forms.Control.Tag%2A> property of each <xref:System.Windows.Forms.TreeNode> object must be set to a fully qualified document name that can be accessed by the machine running the example. Set each <xref:System.Windows.Forms.TreeNode.Text%2A?displayProperty=fullName> property to a string that identifies the file specified by the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. For example, you could set `TreeNode1.Tag` to "c:\myDocuments\recipe.doc" and `TreeNode1.Text` to "recipe.doc". The example also assumes the form contains a <xref:System.Windows.Forms.PrintPreviewDialog> named `PrintPreviewDialog1` and a button named `Button1`. To run this example, call the `InitializePrintPreviewDialog` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewDialog> setting the <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias%2A> properties. The example assumes the form contains a <xref:System.Windows.Forms.TreeView> named `TreeView1` that contains <xref:System.Windows.Forms.TreeNode> objects. The <xref:System.Windows.Forms.Control.Tag%2A> property of each <xref:System.Windows.Forms.TreeNode> object must be set to a fully qualified document name that can be accessed by the machine running the example. Set each <xref:System.Windows.Forms.TreeNode.Text%2A?displayProperty=nameWithType> property to a string that identifies the file specified by the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=nameWithType> property. For example, you could set `TreeNode1.Tag` to "c:\myDocuments\recipe.doc" and `TreeNode1.Text` to "recipe.doc". The example also assumes the form contains a <xref:System.Windows.Forms.PrintPreviewDialog> named `PrintPreviewDialog1` and a button named `Button1`. To run this example, call the `InitializePrintPreviewDialog` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
   
  [!code-cpp[System.Windows.Forms.TreeViewAndPrintPreview#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CPP/form1.cpp#3)]
  [!code-csharp[System.Windows.Forms.TreeViewAndPrintPreview#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CS/form1.cs#3)]
@@ -85,6 +88,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
       </Docs>
     </Member>
     <Member MemberName="AcceptButton">
@@ -124,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AcceptButton" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDescription">
@@ -1074,11 +1080,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.PrintPreviewDialog.CreateHandle%2A> method, see the <xref:System.Windows.Forms.Control.CreateHandle%2A?displayProperty=fullName> method.  
+ For more information about the <xref:System.Windows.Forms.PrintPreviewDialog.CreateHandle%2A> method, see the <xref:System.Windows.Forms.Control.CreateHandle%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer settings in <see cref="P:System.Windows.Forms.PrintPreviewDialog.Document" /> are not valid.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -1328,10 +1335,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is equivalent to <xref:System.Windows.Forms.PrintPreviewControl.Document%2A?displayProperty=fullName>.  
+ This property is equivalent to <xref:System.Windows.Forms.PrintPreviewControl.Document%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -1563,7 +1571,7 @@
 ## Remarks  
  This property is not relevant for this class.  
   
- The border style of the form determines how the outer edge of the form appears. In addition to changing the border display for a form, certain border styles prevent the form from being sized. For example, the <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName> border style changes the border of the form to that of a dialog box and prevents the form from being resized. The border style can also affect the size or availability of the caption bar section of a form.  
+ The border style of the form determines how the outer edge of the form appears. In addition to changing the border display for a form, certain border styles prevent the form from being sized. For example, the <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType> border style changes the border of the form to that of a dialog box and prevents the form from being resized. The border style can also affect the size or availability of the caption bar section of a form.  
   
  ]]></format>
         </remarks>
@@ -1951,7 +1959,7 @@
 ## Remarks  
  This property is not relevant for this class.  
   
- A maximize button enables users to enlarge a window to full-screen size. To display a maximize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>, or <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>.  
+ A maximize button enables users to enlarge a window to full-screen size. To display a maximize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
   
  A maximize button automatically becomes a restore button when a window is maximized. Minimizing or restoring a window automatically changes the restore button back to a maximize button.  
   
@@ -2100,10 +2108,10 @@
 ## Remarks  
  This property is not relevant for this class.  
   
- A minimize button enables users to minimize a window to an icon. To display a minimize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>, or <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>.  
+ A minimize button enables users to minimize a window to an icon. To display a minimize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Minimizing a form at run time generates a <xref:System.Windows.Forms.Control.Resize> event. The <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property reflects the current state of the window. If you set the <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState?displayProperty=fullName>, the form is minimized independently of whatever settings are in effect for the <xref:System.Windows.Forms.PrintPreviewDialog.MinimizeBox%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> properties.  
+>  Minimizing a form at run time generates a <xref:System.Windows.Forms.Control.Resize> event. The <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property reflects the current state of the window. If you set the <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Minimized?displayProperty=nameWithType>, the form is minimized independently of whatever settings are in effect for the <xref:System.Windows.Forms.PrintPreviewDialog.MinimizeBox%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -2340,6 +2348,7 @@
         <summary>Gets a value indicating the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> contained in this form.</summary>
         <value>The <see cref="T:System.Windows.Forms.PrintPreviewControl" /> contained in this form.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -2366,7 +2375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Keys?displayProperty=fullName>, <xref:System.Windows.Forms.Keys?displayProperty=fullName>, <xref:System.Windows.Forms.Keys?displayProperty=fullName>, and <xref:System.Windows.Forms.Keys?displayProperty=fullName> key values will return `false`; otherwise, processing is passed to the base class's <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method.  
+ The <xref:System.Windows.Forms.Keys.Up?displayProperty=nameWithType>, <xref:System.Windows.Forms.Keys.Down?displayProperty=nameWithType>, <xref:System.Windows.Forms.Keys.Right?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Keys.Left?displayProperty=nameWithType> key values will return `false`; otherwise, processing is passed to the base class's <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method.  
   
  ]]></format>
         </remarks>
@@ -2988,7 +2997,7 @@
 ## Remarks  
  Anti-aliasing removes jagged lines when fonts are rendered.  
   
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewDialog> setting the <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias%2A> properties. The example assumes the form contains a <xref:System.Windows.Forms.TreeView> named `TreeView1` that contains <xref:System.Windows.Forms.TreeNode> objects. The <xref:System.Windows.Forms.Control.Tag%2A> property of each <xref:System.Windows.Forms.TreeNode> object must be set to a fully qualified document name that can be accessed by the machine running the example. Set each <xref:System.Windows.Forms.TreeNode.Text%2A?displayProperty=fullName> property to a string that identifies the file specified by the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. For example, you could set `TreeNode1.Tag` to "c:\myDocuments\recipe.doc" and `TreeNode1.Text` to "recipe.doc". The example also assumes the form contains a <xref:System.Windows.Forms.PrintPreviewDialog> named `PrintPreviewDialog1` and a button named `Button1`. To run this example, call the `InitializePrintPreviewDialog` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewDialog> setting the <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias%2A> properties. The example assumes the form contains a <xref:System.Windows.Forms.TreeView> named `TreeView1` that contains <xref:System.Windows.Forms.TreeNode> objects. The <xref:System.Windows.Forms.Control.Tag%2A> property of each <xref:System.Windows.Forms.TreeNode> object must be set to a fully qualified document name that can be accessed by the machine running the example. Set each <xref:System.Windows.Forms.TreeNode.Text%2A?displayProperty=nameWithType> property to a string that identifies the file specified by the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=nameWithType> property. For example, you could set `TreeNode1.Tag` to "c:\myDocuments\recipe.doc" and `TreeNode1.Text` to "recipe.doc". The example also assumes the form contains a <xref:System.Windows.Forms.PrintPreviewDialog> named `PrintPreviewDialog1` and a button named `Button1`. To run this example, call the `InitializePrintPreviewDialog` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
   
  [!code-cpp[System.Windows.Forms.TreeViewAndPrintPreview#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CPP/form1.cpp#3)]
  [!code-csharp[System.Windows.Forms.TreeViewAndPrintPreview#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewAndPrintPreview/CS/form1.cs#3)]
@@ -3121,7 +3130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Before a form is displayed, the <xref:System.Windows.Forms.Form.WindowState%2A> property is always set to <xref:System.Windows.Forms.FormWindowState?displayProperty=fullName>, regardless of its initial setting. This is reflected in the <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Top%2A>, and <xref:System.Windows.Forms.Control.Width%2A> property settings. If a form is hidden after it has been shown, these properties reflect the previous state until the form is shown again, regardless of any changes made to the <xref:System.Windows.Forms.Form.WindowState%2A> property.  
+ Before a form is displayed, the <xref:System.Windows.Forms.Form.WindowState%2A> property is always set to <xref:System.Windows.Forms.FormWindowState.Normal?displayProperty=nameWithType>, regardless of its initial setting. This is reflected in the <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Top%2A>, and <xref:System.Windows.Forms.Control.Width%2A> property settings. If a form is hidden after it has been shown, these properties reflect the previous state until the form is shown again, regardless of any changes made to the <xref:System.Windows.Forms.Form.WindowState%2A> property.  
   
  ]]></format>
         </remarks>

@@ -64,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentPageView.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -92,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentPageView.IsDisposed" />
       </Docs>
     </Member>
     <Member MemberName="DocumentPage">
@@ -110,6 +112,7 @@
         <summary>Gets the <see cref="T:System.Windows.Documents.DocumentPage" /> associated with this view.</summary>
         <value>The document page associated with this view.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentPageView.PageNumber" />
       </Docs>
     </Member>
     <Member MemberName="DocumentPaginator">
@@ -207,6 +210,7 @@
         <value>
           <see langword="true" /> if <see cref="M:System.Windows.Controls.Primitives.DocumentPageView.Dispose" /> has been called for this <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentPageView.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -236,6 +240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentPageView.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -295,6 +300,9 @@
       <Docs>
         <summary>Occurs when a <see cref="T:System.Windows.Media.Visual" /> element of the <see cref="P:System.Windows.Controls.Primitives.DocumentPageView.DocumentPage" /> is connected.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.Primitives.DocumentPageView.PageDisconnected" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentPageView.GetVisualChild(System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentPageView.VisualChildrenCount" />
       </Docs>
     </Member>
     <Member MemberName="PageDisconnected">
@@ -312,6 +320,9 @@
       <Docs>
         <summary>Occurs when a <see cref="T:System.Windows.Media.Visual" /> element of the <see cref="P:System.Windows.Controls.Primitives.DocumentPageView.DocumentPage" /> is disconnected.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.Primitives.DocumentPageView.PageConnected" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentPageView.GetVisualChild(System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentPageView.VisualChildrenCount" />
       </Docs>
     </Member>
     <Member MemberName="PageNumber">
@@ -347,6 +358,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentPageView.DocumentPage" />
       </Docs>
     </Member>
     <Member MemberName="PageNumberProperty">
@@ -396,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentPageView.StretchDirection" />
       </Docs>
     </Member>
     <Member MemberName="StretchDirection">
@@ -428,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentPageView.Stretch" />
       </Docs>
     </Member>
     <Member MemberName="StretchDirectionProperty">
@@ -445,6 +459,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DocumentPageView.StretchDirection" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.DocumentPageView.StretchProperty" />
       </Docs>
     </Member>
     <Member MemberName="StretchProperty">
@@ -462,6 +477,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DocumentPageView.Stretch" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.DocumentPageView.StretchDirectionProperty" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -520,6 +536,7 @@
         <summary>Gets the number of visual children contained in this view.</summary>
         <value>The number of visual children contained in this view.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentPageView.GetVisualChild(System.Int32)" />
       </Docs>
     </Member>
   </Members>

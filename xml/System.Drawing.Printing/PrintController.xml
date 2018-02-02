@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When implemented in a derived class, <xref:System.Drawing.Printing.PrintController> controls how a <xref:System.Drawing.Printing.PrintDocument> is printed. <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=fullName> invokes the print controller's <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A>, <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A>, <xref:System.Drawing.Printing.PrintController.OnStartPage%2A>, and <xref:System.Drawing.Printing.PrintController.OnEndPage%2A> methods, which in turn tell the printer how to print the document. Print preview uses a specialized <xref:System.Drawing.Printing.PrintController>. For an example of a print controller that is specialized for print preview, see the <xref:System.Drawing.Printing.PreviewPrintController>.  
+ When implemented in a derived class, <xref:System.Drawing.Printing.PrintController> controls how a <xref:System.Drawing.Printing.PrintDocument> is printed. <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> invokes the print controller's <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A>, <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A>, <xref:System.Drawing.Printing.PrintController.OnStartPage%2A>, and <xref:System.Drawing.Printing.PrintController.OnEndPage%2A> methods, which in turn tell the printer how to print the document. Print preview uses a specialized <xref:System.Drawing.Printing.PrintController>. For an example of a print controller that is specialized for print preview, see the <xref:System.Drawing.Printing.PreviewPrintController>.  
   
  <xref:System.Drawing.Printing.PrintController> is used by <xref:System.Drawing.Printing.PrintDocument>, and not typically used directly.  
   
@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+    <altmember cref="T:System.Drawing.Printing.StandardPrintController" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +95,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnEndPrint">
@@ -125,6 +133,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnStartPage">
@@ -160,6 +173,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnStartPrint">
@@ -194,6 +211,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
   </Members>

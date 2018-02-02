@@ -26,13 +26,13 @@
 ## Remarks  
  An <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> object can consist of phrases, entities such as <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects, logical combinations of phrases and <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects, and so on. You can use the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.Elements%2A> property on the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> class to gain access to the constituents of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> object.  
   
- The order in which <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects appear in a given <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object specifies the order in which a user must speak them. By default, the contents of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> must be spoken exactly once. To specify that the contents of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> must be spoken repeatedly, use the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.%23ctor%2A> constructor and set the `repeatCount` parameter. Similarly, to specify a range for the number of times that an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> can be spoken, create the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> with one of the constructors that set the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MaxRepeat%2A> property and the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MinRepeat%2A> property. If the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> already exists, you can use one of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A?displayProperty=fullName> or the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A> methods to specify repeats.  
+ The order in which <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects appear in a given <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object specifies the order in which a user must speak them. By default, the contents of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> must be spoken exactly once. To specify that the contents of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> must be spoken repeatedly, use the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.%23ctor%2A> constructor and set the `repeatCount` parameter. Similarly, to specify a range for the number of times that an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> can be spoken, create the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> with one of the constructors that set the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MaxRepeat%2A> property and the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MinRepeat%2A> property. If the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> already exists, you can use one of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A?displayProperty=nameWithType> or the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A> methods to specify repeats.  
   
  You can also specify the probability that an item will be repeatedly spoken by setting the value of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.RepeatProbability%2A> property.  
   
  <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects within an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object comprise a list of alternatives from which the user can speak one. You can use the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.Weight%2A> property to specify the likelihood that a given item in the list will be spoken.  
   
- The <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> class represents the `item` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `item` element and details about its support by System.Speech, see [item Element](http://msdn.microsoft.com/en-us/10cba7dd-994e-4aa7-907e-0669e5467d60).  
+ The <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> class represents the `item` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `item` element and details about its support by System.Speech, see [item Element](http://msdn.microsoft.com/library/10cba7dd-994e-4aa7-907e-0669e5467d60).  
   
  ]]></format>
     </remarks>
@@ -98,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SrgsItem (System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
+      <MemberSignature Language="C#" Value="public SrgsItem (params System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsElement[])" />
       <MemberType>Constructor</MemberType>
@@ -173,7 +173,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SrgsItem (int min, int max, System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
+      <MemberSignature Language="C#" Value="public SrgsItem (int min, int max, params System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 min, int32 max, class System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32,System.Int32,System.Speech.Recognition.SrgsGrammar.SrgsElement[])" />
       <MemberType>Constructor</MemberType>
@@ -352,7 +352,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The property applies only to items whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MinRepeat%2A> and <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MaxRepeat%2A> properties have been explicitly set to non-default values, either by a  constructor for <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>or by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A> method.  
+ The property applies only to items whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MinRepeat%2A> and <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MaxRepeat%2A> properties have been explicitly set to non-default values, either by a constructor for <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> or by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A> method.  
   
  ]]></format>
         </remarks>
@@ -446,5 +446,14 @@
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsItem.Weight" /> to a negative value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetRepeat">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the repetition count for an item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

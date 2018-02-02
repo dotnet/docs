@@ -20,11 +20,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.InstalledPrinters%2A?displayProperty=fullName> property, which indicates the names of printers installed on a computer, is a <xref:System.Drawing.Printing.PrinterSettings.StringCollection>.  
+ The <xref:System.Drawing.Printing.PrinterSettings.InstalledPrinters%2A?displayProperty=nameWithType> property, which indicates the names of printers installed on a computer, is a <xref:System.Drawing.Printing.PrinterSettings.StringCollection>.  
   
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +45,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterSettings.StringCollection" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -146,6 +148,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -169,6 +172,7 @@
         <value>The <see cref="T:System.String" /> at the specified index.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

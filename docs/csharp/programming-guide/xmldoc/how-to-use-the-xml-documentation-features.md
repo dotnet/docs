@@ -1,16 +1,10 @@
 ---
 title: "How to: Use the XML Documentation Features (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "XML documentation [C#]"
   - "C# language, XML documentation features"
@@ -18,27 +12,12 @@ ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Use the XML Documentation Features (C# Programming Guide)
 The following sample provides a basic overview of a type that has been documented.  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/how-to-use-the-xml-documentation-features_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/how-to-use-the-xml-documentation-features_1.cs)]  
   
  **// This .xml file was generated with the previous code sample.**  
 **\<?xml version="1.0"?>**  
@@ -51,7 +30,7 @@ The following sample provides a basic overview of a type that has been documente
  **\<summary>**  
  **Class level summary documentation goes here.\</summary>**  
  **\<remarks>**  
- **Longer comments can be associated with a type or member**   
+ **Longer comments can be associated with a type or member**  
  **through the remarks tag\</remarks>**  
  **\</member>**  
  **\<member name="F:SomeClass.m_Name">**  
@@ -59,14 +38,14 @@ The following sample provides a basic overview of a type that has been documente
  **Store for the name property\</summary>**  
  **\</member>**  
  **\<member name="M:SomeClass.#ctor">**  
- **\<summary>The class constructor.\</summary>**   
+ **\<summary>The class constructor.\</summary>**  
  **\</member>**  
  **\<member name="M:SomeClass.SomeMethod(System.String)">**  
  **\<summary>**  
  **Description for SomeMethod.\</summary>**  
  **\<param name="s"> Parameter description for s goes here\</param>**  
  **\<seealso cref="T:System.String">**  
- **You can use the cref attribute on any tag to reference a type or member**   
+ **You can use the cref attribute on any tag to reference a type or member**  
  **and the compiler will check that the reference exists. \</seealso>**  
  **\</member>**  
  **\<member name="M:SomeClass.SomeOtherMethod">**  
@@ -115,6 +94,6 @@ The following sample provides a basic overview of a type that has been documente
         >  The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, the documentation file must be used together with reflection on the actual type or member.  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
  [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

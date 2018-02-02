@@ -10,10 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "cpp"
 helpviewer_keywords: 
   - "platform invoke, marshaling data"
   - "data marshaling, platform invoke"
@@ -23,6 +20,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Marshaling Data with Platform Invoke
 To call functions exported from an unmanaged library, a .NET Framework application requires a function prototype in managed code that represents the unmanaged function. To create a prototype that enables platform invoke to marshal data correctly, you must do the following:  
@@ -40,24 +39,24 @@ To call functions exported from an unmanaged library, a .NET Framework applicati
   
 |Unmanaged type in Wtypes.h|Unmanaged C language type|Managed class name|Description|  
 |--------------------------------|-------------------------------|------------------------|-----------------|  
-|**HANDLE**|**void\***|<xref:System.IntPtr?displayProperty=fullName>|32 bits on 32-bit Windows operating systems, 64 bits on 64-bit Windows operating systems.|  
-|**BYTE**|**unsigned char**|<xref:System.Byte?displayProperty=fullName>|8 bits|  
-|**SHORT**|**short**|<xref:System.Int16?displayProperty=fullName>|16 bits|  
-|**WORD**|**unsigned short**|<xref:System.UInt16?displayProperty=fullName>|16 bits|  
-|**INT**|**int**|<xref:System.Int32?displayProperty=fullName>|32 bits|  
-|**UINT**|**unsigned int**|<xref:System.UInt32?displayProperty=fullName>|32 bits|  
-|**LONG**|**long**|<xref:System.Int32?displayProperty=fullName>|32 bits|  
+|**HANDLE**|**void\***|<xref:System.IntPtr?displayProperty=nameWithType>|32 bits on 32-bit Windows operating systems, 64 bits on 64-bit Windows operating systems.|  
+|**BYTE**|**unsigned char**|<xref:System.Byte?displayProperty=nameWithType>|8 bits|  
+|**SHORT**|**short**|<xref:System.Int16?displayProperty=nameWithType>|16 bits|  
+|**WORD**|**unsigned short**|<xref:System.UInt16?displayProperty=nameWithType>|16 bits|  
+|**INT**|**int**|<xref:System.Int32?displayProperty=nameWithType>|32 bits|  
+|**UINT**|**unsigned int**|<xref:System.UInt32?displayProperty=nameWithType>|32 bits|  
+|**LONG**|**long**|<xref:System.Int32?displayProperty=nameWithType>|32 bits|  
 |**BOOL**|**long**|<xref:System.Byte>|32 bits|  
-|**DWORD**|**unsigned long**|<xref:System.UInt32?displayProperty=fullName>|32 bits|  
-|**ULONG**|**unsigned long**|<xref:System.UInt32?displayProperty=fullName>|32 bits|  
-|**CHAR**|**char**|<xref:System.Char?displayProperty=fullName>|Decorate with ANSI.|  
-|**WCHAR**|**wchar_t**|<xref:System.Char?displayProperty=fullName>|Decorate with Unicode.|  
-|**LPSTR**|**char\***|<xref:System.String?displayProperty=fullName> or <xref:System.Text.StringBuilder?displayProperty=fullName>|Decorate with ANSI.|  
-|**LPCSTR**|**Const char\***|<xref:System.String?displayProperty=fullName> or <xref:System.Text.StringBuilder?displayProperty=fullName>|Decorate with ANSI.|  
-|**LPWSTR**|**wchar_t\***|<xref:System.String?displayProperty=fullName> or <xref:System.Text.StringBuilder?displayProperty=fullName>|Decorate with Unicode.|  
-|**LPCWSTR**|**Const wchar_t\***|<xref:System.String?displayProperty=fullName> or <xref:System.Text.StringBuilder?displayProperty=fullName>|Decorate with Unicode.|  
-|**FLOAT**|**Float**|<xref:System.Single?displayProperty=fullName>|32 bits|  
-|**DOUBLE**|**Double**|<xref:System.Double?displayProperty=fullName>|64 bits|  
+|**DWORD**|**unsigned long**|<xref:System.UInt32?displayProperty=nameWithType>|32 bits|  
+|**ULONG**|**unsigned long**|<xref:System.UInt32?displayProperty=nameWithType>|32 bits|  
+|**CHAR**|**char**|<xref:System.Char?displayProperty=nameWithType>|Decorate with ANSI.|  
+|**WCHAR**|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|Decorate with Unicode.|  
+|**LPSTR**|**char\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with ANSI.|  
+|**LPCSTR**|**Const char\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with ANSI.|  
+|**LPWSTR**|**wchar_t\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
+|**LPCWSTR**|**Const wchar_t\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
+|**FLOAT**|**Float**|<xref:System.Single?displayProperty=nameWithType>|32 bits|  
+|**DOUBLE**|**Double**|<xref:System.Double?displayProperty=nameWithType>|64 bits|  
   
  For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Introduction to the .NET Framework Class Library](../../../docs/standard/class-library-overview.md).  
   

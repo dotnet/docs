@@ -9,16 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 52961ffc-d1c7-4f83-832c-786444b951ba
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Migrate Managed-Code DCOM to WCF
 Windows Communication Foundation (WCF) is the recommended and secure choice over Distributed Component Object Model (DCOM) for managed code calls between servers and clients in a distributed environment. This article shows how you to migrate code from DCOM to WCF for the following scenarios.  
@@ -431,7 +428,7 @@ if (sessionBoundObject.GetCurrentValue() == "Hello")
 ```  
   
 ## See Also  
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)   
- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)   
- [Building Clients](../../../docs/framework/wcf/building-clients.md)   
+ [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
+ [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  
+ [Building Clients](../../../docs/framework/wcf/building-clients.md)  
  [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md)

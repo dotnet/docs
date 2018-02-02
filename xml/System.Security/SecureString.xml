@@ -51,7 +51,7 @@
   
 <a name="vsString"></a>   
 ## String versus SecureString  
- An instance of the <xref:System.String?displayProperty=fullName> class is both immutable and, when no longer needed, cannot be programmatically scheduled for garbage collection; that is, the instance is read-only after it is created, and it is not possible to predict when the instance will be deleted from computer memory. Because <xref:System.String?displayProperty=fullName> instances are immutable, operations that appear to modify an existing instance  actually create a copy of it to manipulate. Consequently, if a <xref:System.String> object contains sensitive information such as a password, credit card number, or personal data, there is a risk the information could be revealed after it is used because your application cannot delete the data from computer memory.  
+ An instance of the <xref:System.String?displayProperty=nameWithType> class is both immutable and, when no longer needed, cannot be programmatically scheduled for garbage collection; that is, the instance is read-only after it is created, and it is not possible to predict when the instance will be deleted from computer memory. Because <xref:System.String?displayProperty=nameWithType> instances are immutable, operations that appear to modify an existing instance  actually create a copy of it to manipulate. Consequently, if a <xref:System.String> object contains sensitive information such as a password, credit card number, or personal data, there is a risk the information could be revealed after it is used because your application cannot delete the data from computer memory.  
   
  A <xref:System.Security.SecureString> object is similar to a <xref:System.String> object in that it has a text value. However, the value of a <xref:System.Security.SecureString> object is pinned in memory, may use a protection mechanism, such as encryption, provided by the underlying operating system, can be modified until your application marks it as read-only, and can be deleted from computer memory either by your application calling the <xref:System.Security.SecureString.Dispose%2A> method  or by the .NET Framework garbage collector.  
   
@@ -70,7 +70,7 @@
  You can add a single character at a time to a <xref:System.Security.SecureString> object  by calling its <xref:System.Security.SecureString.AppendChar%2A> or <xref:System.Security.SecureString.InsertAt%2A> method.  
   
 > [!IMPORTANT]
->  A <xref:System.Security.SecureString> object should never be constructed from a <xref:System.String>, because the sensitive data is already subject to the memory persistence consequences of the immutable <xref:System.String> class. The best way to construct a <xref:System.Security.SecureString> object is from a character-at-a-time unmanaged source, such as the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
+>  A <xref:System.Security.SecureString> object should never be constructed from a <xref:System.String>, because the sensitive data is already subject to the memory persistence consequences of the immutable <xref:System.String> class. The best way to construct a <xref:System.Security.SecureString> object is from a character-at-a-time unmanaged source, such as the <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> method.  
   
  Remove characters from a <xref:System.Security.SecureString> object  
  You can replace an individual character by calling the <xref:System.Security.SecureString.SetAt%2A> method, remove an individual character by calling the <xref:System.Security.SecureString.RemoveAt%2A> method, or remove all characters from the <xref:System.Security.SecureString> instance by calling the  <xref:System.Security.SecureString.Clear%2A> method.  
@@ -84,15 +84,15 @@
  Release the memory allocated to the <xref:System.Security.SecureString> instance  
  Because <xref:System.Security.SecureString> implements the <xref:System.IDisposable> interface, you release its memory by calling the <xref:System.Security.SecureString.Dispose%2A> method.  
   
- The <xref:System.Security.SecureString> class has no members that inspect, compare, or convert the value of a <xref:System.Security.SecureString>. The absence of such members helps protect the value of the instance from accidental or malicious exposure. Use appropriate members of the <xref:System.Runtime.InteropServices.Marshal?displayProperty=fullName> class, such as the <xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A> method, to manipulate the value of a <xref:System.Security.SecureString> object.  
+ The <xref:System.Security.SecureString> class has no members that inspect, compare, or convert the value of a <xref:System.Security.SecureString>. The absence of such members helps protect the value of the instance from accidental or malicious exposure. Use appropriate members of the <xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType> class, such as the <xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A> method, to manipulate the value of a <xref:System.Security.SecureString> object.  
   
  The .NET Framework Class Library commonly uses <xref:System.Security.SecureString> instances in the following ways:  
   
--   To provide password information to a process by using the <xref:System.Diagnostics.ProcessStartInfo> structure or by calling an overload of the <xref:System.Diagnostics.Process.Start%2A?displayProperty=fullName> method that has a parameter of type <xref:System.Security.SecureString>.  
+-   To provide password information to a process by using the <xref:System.Diagnostics.ProcessStartInfo> structure or by calling an overload of the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method that has a parameter of type <xref:System.Security.SecureString>.  
   
--   To provide network password information by calling a <xref:System.Net.NetworkCredential> class constructor that has a parameter of type <xref:System.Security.SecureString> or by using the <xref:System.Net.NetworkCredential.SecurePassword%2A?displayProperty=fullName> property.  
+-   To provide network password information by calling a <xref:System.Net.NetworkCredential> class constructor that has a parameter of type <xref:System.Security.SecureString> or by using the <xref:System.Net.NetworkCredential.SecurePassword%2A?displayProperty=nameWithType> property.  
   
--   To provide password information for SQL Server Authentication by calling the <xref:System.Data.SqlClient.SqlCredential.%23ctor%2A?displayProperty=fullName> constructor or retrieving the value of the <xref:System.Data.SqlClient.SqlCredential.Password%2A?displayProperty=fullName> property.  
+-   To provide password information for SQL Server Authentication by calling the <xref:System.Data.SqlClient.SqlCredential.%23ctor%2A?displayProperty=nameWithType> constructor or retrieving the value of the <xref:System.Data.SqlClient.SqlCredential.Password%2A?displayProperty=nameWithType> property.  
   
 -   To pass a string to unmanaged code. For more information, see the [SecureString and interop](#interop) section.  
   
@@ -102,21 +102,21 @@
 ## SecureString and interop  
  Because the operating system does not  directly support <xref:System.Security.SecureString>, you must convert the value of the <xref:System.Security.SecureString> object to the required string type before passing the string to a native method.  The <xref:System.Runtime.InteropServices.Marshal> class has five methods that do this:  
   
--   <xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A?displayProperty=fullName>, which converts the <xref:System.Security.SecureString> string value to a binary string (BSTR) recognized by COM.  
+-   <xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A?displayProperty=nameWithType>, which converts the <xref:System.Security.SecureString> string value to a binary string (BSTR) recognized by COM.  
   
--   <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemAnsi%2A?displayProperty=fullName> and <xref:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocAnsi%2A?displayProperty=fullName>, which copy the <xref:System.Security.SecureString> string value to an ANSI string in unmanaged memory.  
+-   <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemAnsi%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocAnsi%2A?displayProperty=nameWithType>, which copy the <xref:System.Security.SecureString> string value to an ANSI string in unmanaged memory.  
   
--   <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName> and <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName>, which copy the <xref:System.Security.SecureString> string value to a Unicode string in unmanaged memory.  
+-   <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=nameWithType>, which copy the <xref:System.Security.SecureString> string value to a Unicode string in unmanaged memory.  
   
  Each of these methods creates a clear-text string in unmanaged memory. It is the responsibility of the developer to zero out and free that memory as soon as it is no longer needed. Each of the string conversion and memory allocation methods has a corresponding method to zero out and free the allocated memory:  
   
 |Allocation and conversion method|Zero and free method|  
 |--------------------------------------|--------------------------|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeBSTR%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemAnsi%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemAnsi%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemUnicode%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocAnsi%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocAnsi%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocUnicode%2A?displayProperty=fullName>|  
+|<xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A?displayProperty=nameWithType>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeBSTR%2A?displayProperty=nameWithType>|  
+|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemAnsi%2A?displayProperty=nameWithType>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemAnsi%2A?displayProperty=nameWithType>|  
+|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=nameWithType>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemUnicode%2A?displayProperty=nameWithType>|  
+|<xref:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocAnsi%2A?displayProperty=nameWithType>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocAnsi%2A?displayProperty=nameWithType>|  
+|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=nameWithType>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocUnicode%2A?displayProperty=nameWithType>|  
   
  [Back to top](#top)  
   
@@ -157,6 +157,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.ComVisibleAttribute" />
+    <altmember cref="T:System.Runtime.InteropServices.Marshal" />
+    <altmember cref="T:System.Runtime.ConstrainedExecution.CriticalFinalizerObject" />
+    <altmember cref="T:System.IDisposable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -382,6 +386,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">This secure string is read-only.</exception>
+        <altmember cref="P:System.Security.SecureString.Length" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -423,6 +428,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
+        <altmember cref="M:System.Security.SecureString.MakeReadOnly" />
+        <altmember cref="M:System.Security.SecureString.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -572,6 +579,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
+        <altmember cref="M:System.Security.SecureString.MakeReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -665,6 +673,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
+        <altmember cref="M:System.Security.SecureString.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -799,5 +808,14 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecureString" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

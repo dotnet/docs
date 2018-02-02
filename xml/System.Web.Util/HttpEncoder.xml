@@ -56,6 +56,10 @@
   
 -   When ASP.NET is sending HTTP headers to IIS, ASP.NET has no provision for unhandled exceptions. Therefore, the standard ASP.NET error page will be rendered (if configuration settings allows this page to be displayed).</para>
     </block>
+    <altmember cref="T:System.Web.HttpUtility" />
+    <altmember cref="T:System.Web.HttpServerUtility" />
+    <altmember cref="T:System.Web.Configuration.HttpRuntimeSection" />
+    <altmember cref="T:System.Web.Security.AntiXss.AntiXssEncoder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -143,7 +147,7 @@
     </Member>
     <Member MemberName="HeaderNameValueEncode">
       <MemberSignature Language="C#" Value="protected virtual void HeaderNameValueEncode (string headerName, string headerValue, out string encodedHeaderName, out string encodedHeaderValue);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HeaderNameValueEncode(string headerName, string headerValue, string encodedHeaderName, string encodedHeaderValue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HeaderNameValueEncode(string headerName, string headerValue, [out] string&amp; encodedHeaderName, [out] string&amp; encodedHeaderValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HeaderNameValueEncode(System.String,System.String,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

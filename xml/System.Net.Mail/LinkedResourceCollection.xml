@@ -27,12 +27,12 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Stores linked resources to be sent as part of an e-mail message.</summary>
+    <summary>Stores linked resources to be sent as part of an email message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of the <xref:System.Net.Mail.LinkedResourceCollection> class is returned by the <xref:System.Net.Mail.AlternateView.LinkedResources%2A?displayProperty=fullName> property.  
+ An instance of the <xref:System.Net.Mail.LinkedResourceCollection> class is returned by the <xref:System.Net.Mail.AlternateView.LinkedResources%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>

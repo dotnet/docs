@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "PLINQ queries, performance tuning"
 ms.assetid: 53706c7e-397d-467a-98cd-c0d1fd63ba5e
@@ -15,6 +18,9 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Understanding Speedup in PLINQ
 The primary purpose of PLINQ is to speed up the execution of LINQ to Objects queries by executing the query delegates in parallel on multi-core computers. PLINQ performs best when the processing of each element in a source collection is independent, with no shared state involved among the individual delegates. Such operations are common in LINQ to Objects and PLINQ, and are often called "*delightfully parallel*" because they lend themselves easily to scheduling on multiple threads. However, not all queries consist entirely of delightfully parallel operations; in most cases, a query involves some operators that either cannot be parallelized, or that slow down parallel execution. And even with queries that are entirely delightfully parallel, PLINQ must still partition the data source and schedule the work on the threads, and usually merge the results when the query completes. All these operations add to the computational cost of parallelization; these costs of adding parallelization are called *overhead*. To achieve optimum performance in a PLINQ query, the goal is to maximize the parts that are delightfully parallel and minimize the parts that require overhead. This article provides information that will help you write PLINQ queries that are as efficient as possible while still yielding correct results.  
@@ -69,7 +75,7 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
 ## When PLINQ Chooses Sequential Mode  
  PLINQ will always attempt to execute a query at least as fast as the query would run sequentially. Although PLINQ does not look at how computationally expensive the user delegates are, or how big the input source is, it does look for certain query "shapes." Specifically, it looks for query operators or combinations of operators that typically cause a query to execute more slowly in parallel mode. When it finds such shapes, PLINQ by default falls back to sequential mode.  
   
- However, after measuring a specific query's performance, you may determine that it actually runs faster in parallel mode. In such cases you can use the <xref:System.Linq.ParallelExecutionMode.ForceParallelism?displayProperty=fullName> flag via the <xref:System.Linq.ParallelEnumerable.WithExecutionMode%2A> method to instruct PLINQ to parallelize the query. For more information, see [How to: Specify the Execution Mode in PLINQ](../../../docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
+ However, after measuring a specific query's performance, you may determine that it actually runs faster in parallel mode. In such cases you can use the <xref:System.Linq.ParallelExecutionMode.ForceParallelism?displayProperty=nameWithType> flag via the <xref:System.Linq.ParallelEnumerable.WithExecutionMode%2A> method to instruct PLINQ to parallelize the query. For more information, see [How to: Specify the Execution Mode in PLINQ](../../../docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
   
  The following list describes the query shapes that PLINQ by default will execute in sequential mode:  
   

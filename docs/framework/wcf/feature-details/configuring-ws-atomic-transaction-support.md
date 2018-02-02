@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "WS-AT protocol [WCF], configuring WS-Atomic Transaction"
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
 caps.latest.revision: 31
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring WS-Atomic Transaction Support
 This topic describes how you can configure WS-AtomicTransaction (WS-AT) support by using the WS-AT Configuration Utility.  
@@ -125,5 +127,5 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
 -   31: verbose  
   
 ## See Also  
- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)   
+ [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)  
  [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md)

@@ -15,14 +15,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.GroupBox.FlatStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Label.FlatStyle%2A?displayProperty=fullName>.  
+ This enumeration is used by members such as <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.GroupBox.FlatStyle%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Label.FlatStyle%2A?displayProperty=nameWithType>.  
   
  In the case of the Popup style button, this enumeration controls some behavior as well as appearance. The Popup style control initially appears Flat until the mouse pointer moves over it. When the mouse pointer moves over the Popup control, it appears as a Standard style control until the mouse pointer is moved off of it again.  
   
- If the System style is used, the appearance of the control is determined by the user's operating system and the following property values will be ignored: <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=fullName>, `ImageAlign`, `Image`, `ImageIndex`, `ImageList`, and `TextAlign`. In addition, the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=fullName> property will be ignored for button controls. If supported, users can change the appearance of controls by adjusting the appearance settings of their operating system.  
+ If the System style is used, the appearance of the control is determined by the user's operating system and the following property values will be ignored: <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=nameWithType>, `ImageAlign`, `Image`, `ImageIndex`, `ImageList`, and `TextAlign`. In addition, the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=nameWithType> property will be ignored for button controls. If supported, users can change the appearance of controls by adjusting the appearance settings of their operating system.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property of the <xref:System.Windows.Forms.RadioButton> and <xref:System.Windows.Forms.CheckBox> classes is set to System, the control is drawn by the user's operating system and the check alignment is based upon the `CheckAlign` and <xref:System.Windows.Forms.ButtonBase.TextAlign%2A?displayProperty=fullName> property values. The `CheckAlign` property value is not changed, but the appearance of the control can be affected. The check box is horizontally aligned with either the left or right edge of the control (a left or center alignment appears left aligned, right remains unchanged), and vertically aligned the same as the descriptive text. For example, if you have a <xref:System.Windows.Forms.CheckBox> control with a `CheckAlign` property value of <xref:System.Drawing.ContentAlignment?displayProperty=fullName> and a <xref:System.Windows.Forms.ButtonBase.TextAlign%2A> property value of <xref:System.Drawing.ContentAlignment?displayProperty=fullName>, and the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property value is set to System, the check box alignment will appear to be <xref:System.Drawing.ContentAlignment?displayProperty=fullName> while the text alignment remains unchanged.  
+>  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property of the <xref:System.Windows.Forms.RadioButton> and <xref:System.Windows.Forms.CheckBox> classes is set to System, the control is drawn by the user's operating system and the check alignment is based upon the `CheckAlign` and <xref:System.Windows.Forms.ButtonBase.TextAlign%2A?displayProperty=nameWithType> property values. The `CheckAlign` property value is not changed, but the appearance of the control can be affected. The check box is horizontally aligned with either the left or right edge of the control (a left or center alignment appears left aligned, right remains unchanged), and vertically aligned the same as the descriptive text. For example, if you have a <xref:System.Windows.Forms.CheckBox> control with a `CheckAlign` property value of <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> and a <xref:System.Windows.Forms.ButtonBase.TextAlign%2A> property value of <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType>, and the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property value is set to System, the check box alignment will appear to be <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> while the text alignment remains unchanged.  
   
 > [!CAUTION]
 >  Setting the `FlatStyle` property to System is not advisable if you need to display an image on a control, display an image as a control's background, or perform precise text alignment.  
@@ -59,6 +59,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" />
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" />
   </Docs>
   <Members>
     <Member MemberName="Flat">

@@ -57,12 +57,12 @@ Public Class Form1
    Private Function ValidEmailAddress(ByVal emailAddress As String, ByRef errorMessage As String) As Boolean
       ' Confirm there is text in the control.
       If textBox1.Text.Length = 0 Then
-         errorMessage = "E-mail address is required."
+         errorMessage = "Email address is required."
          Return False
 
       End If
 
-      ' Confirm that there is an "@" and a "." in the e-mail address, and in the correct order.
+      ' Confirm that there is an "@" and a "." in the email address, and in the correct order.
       If emailAddress.IndexOf("@") > -1 Then
          If (emailAddress.IndexOf(".", emailAddress.IndexOf("@")) > emailAddress.IndexOf("@")) Then
             errorMessage = ""
@@ -70,7 +70,7 @@ Public Class Form1
          End If
       End If
 
-      errorMessage = "E-mail address must be valid e-mail address format." + ControlChars.Cr + _
+      errorMessage = "Email address must be valid email address format." + ControlChars.Cr + _
         "For example 'someone@example.com' "
       Return False
 End Function

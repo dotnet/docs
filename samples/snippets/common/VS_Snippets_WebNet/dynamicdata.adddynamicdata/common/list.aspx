@@ -57,7 +57,7 @@
 
             <hr /> 
 
-	    <%-- <Snippet1> --%> 
+	    <!-- <Snippet1> --> 
             <asp:GridView ID="GridView1" runat="server" DataSourceID="GridDataSource" 
                 EnablePersistedSelection="True" AutoGenerateColumns="False" GridLines="None" 
                 AllowPaging="True" AllowSorting="True" CssClass="DDGridView"
@@ -92,7 +92,7 @@
                 </EmptyDataTemplate>
                 <RowStyle CssClass="td" />
             </asp:GridView>
-	    <%-- </Snippet1> --%> 
+	    <!-- </Snippet1> --> 
 
             <asp:LinqDataSource ID="GridDataSource" runat="server" EnableDelete="true" />
             

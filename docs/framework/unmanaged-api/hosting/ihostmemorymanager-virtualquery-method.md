@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualQuery"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::VirtualQuery method [.NET Framework hosting]"
   - "VirtualQuery method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::VirtualQuery Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualQuery` retrieves information about a range of pages in the virtual address space of the calling process.  

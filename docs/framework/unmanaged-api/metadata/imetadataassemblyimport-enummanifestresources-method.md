@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::EnumManifestResources"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyImport::EnumManifestResources method [.NET Framework metadata]"
   - "EnumManifestResources method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::EnumManifestResources Method
 Gets a pointer to an enumerator for the resources referenced in the current assembly manifest.  

@@ -33,11 +33,15 @@
 ## Examples  
  The following code example demonstrates how to modify the properties of a <xref:System.Web.UI.WebControls.FontInfo> object programmatically to specify the font properties for a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
+    <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <altmember cref="P:System.Web.UI.WebControls.Style.Font" />
   </Docs>
   <Members>
     <Member MemberName="Bold">
@@ -77,11 +81,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Bold%2A> property to programmatically specify a bold font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="ClearDefaults">
@@ -123,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.CopyFrom(System.Web.UI.WebControls.FontInfo)" />
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.MergeWith(System.Web.UI.WebControls.FontInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -152,18 +165,20 @@
 > [!CAUTION]
 >  All properties in the current instance of the <xref:System.Web.UI.WebControls.FontInfo> class will be replaced by the associated property in the `f` parameter.  
   
- When a style is registered using <xref:System.Web.UI.IStyleSheet.RegisterStyle%2A>, and then copied using <xref:System.Web.UI.WebControls.Style.CopyFrom%28System.Web.UI.WebControls.Style%29?displayProperty=fullName>, only the <xref:System.Web.UI.WebControls.Style.CssClass%2A> property is copied to the destination, not all the individual properties. Therefore, if you are using <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%28System.Web.UI.WebControls.FontInfo%29?displayProperty=fullName> to copy font information from the <xref:System.Web.UI.WebControls.Style.Font%2A> property of a <xref:System.Web.UI.WebControls.Style> that is registered, you will not get the individual settings of the font from the style.  
+ When a style is registered using <xref:System.Web.UI.IStyleSheet.RegisterStyle%2A>, and then copied using <xref:System.Web.UI.WebControls.Style.CopyFrom%28System.Web.UI.WebControls.Style%29?displayProperty=nameWithType>, only the <xref:System.Web.UI.WebControls.Style.CssClass%2A> property is copied to the destination, not all the individual properties. Therefore, if you are using <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%28System.Web.UI.WebControls.FontInfo%29?displayProperty=nameWithType> to copy font information from the <xref:System.Web.UI.WebControls.Style.Font%2A> property of a <xref:System.Web.UI.WebControls.Style> that is registered, you will not get the individual settings of the font from the style.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%2A> method to duplicate the font properties of a <xref:System.Web.UI.WebControls.FontInfo> into the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]
+ [!code-aspx-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.MergeWith(System.Web.UI.WebControls.FontInfo)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -203,11 +218,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Italic%2A> property to programmatically specify an italic font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -242,11 +264,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.MergeWith%2A> method to combine the font properties of a <xref:System.Web.UI.WebControls.FontInfo> into the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]
+ [!code-aspx-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.CopyFrom(System.Web.UI.WebControls.FontInfo)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -298,12 +322,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property to programmatically specify the font name for a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified font name is null.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="Names">
@@ -350,6 +381,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="Overline">
@@ -392,11 +430,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> property to programmatically specify an overlined font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeNames">
@@ -427,6 +471,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -468,12 +513,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property to programmatically change the size of the font for a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified font size is negative.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="Strikeout">
@@ -516,11 +567,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> property to programmatically specify a strikethrough font for a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -551,11 +608,13 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -598,11 +657,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property to programmatically specify an underlined font for a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]
+ [!code-aspx-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
       </Docs>
     </Member>
   </Members>

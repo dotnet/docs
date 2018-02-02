@@ -53,6 +53,9 @@
     <block subset="none" type="overrides">
       <para>In addition to providing implementations for its <see langword="abstract" /> members (those marked <see langword="MustOverride" /> in Visual Basic), it is important that classes derived from <see cref="T:System.TimeZone" /> override the default behavior of the <see cref="M:System.TimeZone.ToLocalTime(System.DateTime)" /> method. This is because the default behavior of <see cref="M:System.TimeZone.ToLocalTime(System.DateTime)" /> in the .NET Framework version 2.0 does not depend on a call to <see cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />, as it did in the .NET Framework versions 1.0 and 1.1.  For details, see the <see cref="M:System.TimeZone.ToLocalTime(System.DateTime)" /> method.</para>
     </block>
+    <altmember cref="T:System.DateTime" />
+    <altmember cref="T:System.DateTimeOffset" />
+    <altmember cref="T:System.TimeZoneInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.TimeZone.CurrentTimeZone%2A> property corresponds to the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property. Whenever possible, use the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property.  
+ The <xref:System.TimeZone.CurrentTimeZone%2A> property corresponds to the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property. Whenever possible, use the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -123,6 +126,7 @@
         <block subset="none" type="usage">
           <para>Local time zone data is cached after <see cref="P:System.TimeZone.CurrentTimeZone" /> is first used to retrieve time zone information. If the system's local time zone subsequently changes, the <see cref="P:System.TimeZone.CurrentTimeZone" /> property does not reflect this change. If you need to handle time zone changes while your application is running, use the <see cref="T:System.TimeZoneInfo" /> class and call its <see cref="M:System.TimeZoneInfo.ClearCachedData" /> method.</para>
         </block>
+        <altmember cref="P:System.TimeZoneInfo.Local" />
       </Docs>
     </Member>
     <Member MemberName="DaylightName">
@@ -155,7 +159,7 @@
 ## Remarks  
  If daylight saving time is not used in the time zone, an empty string ("") is returned.  
   
- The <xref:System.TimeZone.DaylightName%2A> property corresponds to the <xref:System.TimeZoneInfo.DaylightName%2A?displayProperty=fullName> property. Whenever possible, use the <xref:System.TimeZoneInfo.DaylightName%2A?displayProperty=fullName> property.  
+ The <xref:System.TimeZone.DaylightName%2A> property corresponds to the <xref:System.TimeZoneInfo.DaylightName%2A?displayProperty=nameWithType> property. Whenever possible, use the <xref:System.TimeZoneInfo.DaylightName%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -168,6 +172,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeZoneInfo.DaylightName" />
       </Docs>
     </Member>
     <Member MemberName="GetDaylightChanges">
@@ -204,7 +209,7 @@
 ## Remarks  
  Only one daylight saving time period per year is supported.  
   
- If daylight saving time is not used in the current time zone, the return value is a <xref:System.Globalization.DaylightTime> object, where the value of <xref:System.Globalization.DaylightTime.Start%2A> and <xref:System.Globalization.DaylightTime.End%2A> is <xref:System.DateTime.MinValue?displayProperty=fullName>, and the value of <xref:System.Globalization.DaylightTime.Delta%2A?displayProperty=fullName> is a <xref:System.TimeSpan> initialized to 0 ticks.  
+ If daylight saving time is not used in the current time zone, the return value is a <xref:System.Globalization.DaylightTime> object, where the value of <xref:System.Globalization.DaylightTime.Start%2A> and <xref:System.Globalization.DaylightTime.End%2A> is <xref:System.DateTime.MinValue?displayProperty=nameWithType>, and the value of <xref:System.Globalization.DaylightTime.Delta%2A?displayProperty=nameWithType> is a <xref:System.TimeSpan> initialized to 0 ticks.  
   
  ]]></format>
         </remarks>
@@ -213,6 +218,7 @@
         <block subset="none" type="usage">
           <para>Because the <see cref="T:System.TimeZone" /> class supports only one daylight saving time adjustment rule, the <see cref="M:System.TimeZone.GetDaylightChanges(System.Int32)" /> method applies the current adjustment rule to any year, regardless of whether the adjustment rule actually applies to that year. Assuming that the operating system itself has accurate data for a particular year, a more accurate result is available by working with the array of <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> objects returned by the <see cref="M:System.TimeZoneInfo.GetAdjustmentRules" /> method. The <see cref="P:System.Globalization.DaylightTime.Start" />, <see cref="P:System.Globalization.DaylightTime.End" />, and <see cref="P:System.Globalization.DaylightTime.Delta" /> properties correspond to the <see cref="P:System.TimeZoneInfo.AdjustmentRule.DateStart" />, <see cref="P:System.TimeZoneInfo.AdjustmentRule.DateEnd" />, and <see cref="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" /> properties.</para>
         </block>
+        <altmember cref="M:System.TimeZoneInfo.GetAdjustmentRules" />
       </Docs>
     </Member>
     <Member MemberName="GetUtcOffset">
@@ -251,19 +257,20 @@
   
  `time` = UTC + offset  
   
- The method interprets the time zone of `time` based on its <xref:System.DateTime.Kind%2A> property. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>, the method returns the offset of the local time zone. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, the method returns an offset equal to <xref:System.TimeSpan.Zero?displayProperty=fullName>.  
+ The method interprets the time zone of `time` based on its <xref:System.DateTime.Kind%2A> property. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the method returns the offset of the local time zone. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the method returns an offset equal to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>.  
   
  If the local time zone observes daylight saving time, <xref:System.TimeZone.GetUtcOffset%2A> applies the current adjustment rule to `time` when determining the offset of the local time zone. That is, the offset returned by <xref:System.TimeZone.GetUtcOffset%2A> reflects whether `time` falls in the time zone's standard time or its daylight saving time.  
   
 > [!NOTE]
 >  The <xref:System.TimeZone.GetUtcOffset%2A> method recognizes only the current daylight saving time adjustment rule for the local time zone. As a result, it is guaranteed to accurately return the UTC offset of a local time only during the period in which the latest adjustment rule is in effect. It may return inaccurate results if `time` is a historic date and time value that was subject to a previous adjustment rule.  
   
- The <xref:System.TimeZone.GetUtcOffset%2A> method corresponds to the <xref:System.TimeZoneInfo.GetUtcOffset%2A?displayProperty=fullName> method. Whenever possible, use the <xref:System.TimeZoneInfo.GetUtcOffset%2A?displayProperty=fullName> method.  
+ The <xref:System.TimeZone.GetUtcOffset%2A> method corresponds to the <xref:System.TimeZoneInfo.GetUtcOffset%2A?displayProperty=nameWithType> method. Whenever possible, use the <xref:System.TimeZoneInfo.GetUtcOffset%2A?displayProperty=nameWithType> method.  
   
  Because the date and time value represented by `time` and this value's offset from UTC are not tightly coupled, a local or unspecified date and time value can return a different offset value when run on different computers or when run on the same computer under different time zones. If this behavior is undesirable, use a <xref:System.DateTimeOffset> value instead. The <xref:System.DateTimeOffset> data type tightly couples a date and time value with its offset from UTC.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeZoneInfo.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsDaylightSavingTime">
@@ -301,10 +308,11 @@
 ## Remarks  
  The year to which the daylight saving time period applies is derived from the `time` parameter.  
   
- Because the <xref:System.TimeZone> class supports a single daylight saving time adjustment rule, the <xref:System.TimeZone.IsDaylightSavingTime%28System.DateTime%29> method applies the current adjustment rule to any date, regardless of whether the adjustment rule was in effect on that date. Assuming that the operating system itself has accurate historic daylight saving time data, a more accurate result is available by using the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method. Whenever possible, use the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method.  
+ Because the <xref:System.TimeZone> class supports a single daylight saving time adjustment rule, the <xref:System.TimeZone.IsDaylightSavingTime%28System.DateTime%29> method applies the current adjustment rule to any date, regardless of whether the adjustment rule was in effect on that date. Assuming that the operating system itself has accurate historic daylight saving time data, a more accurate result is available by using the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> method. Whenever possible, use the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsDaylightSavingTime">
@@ -342,12 +350,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method provides the same functionality as this overload of the <xref:System.TimeZone.IsDaylightSavingTime%2A> method. Whenever possible, use the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method.  
+ The <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> method provides the same functionality as this overload of the <xref:System.TimeZone.IsDaylightSavingTime%2A> method. Whenever possible, use the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="daylightTimes" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="StandardName">
@@ -378,7 +387,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.TimeZone.StandardName%2A> property corresponds to the <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=fullName> property. Whenever possible, use the <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=fullName> property.  
+ The <xref:System.TimeZone.StandardName%2A> property corresponds to the <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=nameWithType> property. Whenever possible, use the <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -392,6 +401,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt was made to set this property to <see langword="null" />.</exception>
+        <altmember cref="P:System.TimeZoneInfo.StandardName" />
       </Docs>
     </Member>
     <Member MemberName="ToLocalTime">
@@ -430,16 +440,16 @@
   
 |`time` parameter|Behavior|Return value|  
 |----------------------|--------------|------------------|  
-|A Coordinated Universal Time (UTC) time (<xref:System.DateTimeKind?displayProperty=fullName>).|Converts the time from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
-|A local time (<xref:System.DateTimeKind?displayProperty=fullName>).|No conversion necessary.|The same <xref:System.DateTime> value represented by the `time` parameter.|  
-|An unspecified time (<xref:System.DateTimeKind?displayProperty=fullName>).|Assumes that the time is UTC and converts it from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
+|A Coordinated Universal Time (UTC) time (<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>).|Converts the time from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
+|A local time (<xref:System.DateTimeKind.Local?displayProperty=nameWithType>).|No conversion necessary.|The same <xref:System.DateTime> value represented by the `time` parameter.|  
+|An unspecified time (<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>).|Assumes that the time is UTC and converts it from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
   
  If the local time zone observes daylight saving time, <xref:System.TimeZone.ToLocalTime%2A> applies the current adjustment rule to `time` when performing the conversion.  
   
 > [!NOTE]
 >  The <xref:System.TimeZone.ToLocalTime%2A> method recognizes only the current daylight saving time adjustment rule for the local time zone. As a result, it is guaranteed to accurately return the local time corresponding to a particular UTC time only during the period in which the latest adjustment rule is in effect. It may return inaccurate results if `time` is a historic date and time value that was subject to a previous adjustment rule.  
   
- The <xref:System.TimeZone.ToLocalTime%2A> method corresponds to the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A?displayProperty=fullName> method with its `destinationTimeZone` parameter set to <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>. Whenever possible, use the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A?displayProperty=fullName> method.  
+ The <xref:System.TimeZone.ToLocalTime%2A> method corresponds to the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A?displayProperty=nameWithType> method with its `destinationTimeZone` parameter set to <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>. Whenever possible, use the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -451,6 +461,7 @@
  [!code-csharp[System.TimeZone.ToLocalTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone.ToLocalTime/CS/TimeZone_ToLocalTime.cs#1)]
  [!code-vb[System.TimeZone.ToLocalTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone.ToLocalTime/VB/TimeZone_ToLocalTime.vb#1)]</para>
         </block>
+        <altmember cref="M:System.TimeZoneInfo.ConvertTimeFromUtc(System.DateTime,System.TimeZoneInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToUniversalTime">
@@ -494,11 +505,22 @@
   
  Because `time` is interpreted in relation to the current time zone on the current system, the date and time returned by this method can differ if an application is run on different computers or on the same computer with different time zones. For cases in which a date and time value must represent a single, unambiguous point in time, use a <xref:System.DateTimeOffset> value to represent the local time.  
   
- The <xref:System.TimeZone.ToUniversalTime%2A> method corresponds to the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=fullName> method overload with a <xref:System.DateTime> parameter whose <xref:System.DateTime.Kind%2A> property does not equal <xref:System.DateTimeKind?displayProperty=fullName>. Whenever possible, use the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=fullName> method overload.  
+ The <xref:System.TimeZone.ToUniversalTime%2A> method corresponds to the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> method overload with a <xref:System.DateTime> parameter whose <xref:System.DateTime.Kind%2A> property does not equal <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. Whenever possible, use the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsDaylightSavingTime">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether a specified date and time is within a daylight saving time period.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -21,7 +21,7 @@
   
  Content-based automatic resizing prevents users from adjusting column widths with the mouse. User resizing is enabled in fill mode, however.  
   
- This enumeration is used by the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> and <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> properties of columns and the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A?displayProperty=fullName> method.  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> and <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> properties of columns and the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A?displayProperty=nameWithType> method.  
   
  For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md). For more information about column fill mode in particular, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
@@ -35,6 +35,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsMode" />
+    <altmember cref="Overload:System.Windows.Forms.DataGridView.AutoResizeColumn" />
+    <altmember cref="Overload:System.Windows.Forms.DataGridView.AutoResizeColumns" />
   </Docs>
   <Members>
     <Member MemberName="AllCells">

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRemoteTarget::CreateProcessEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateProcessEx method, ICorDebugRemote interface [.NET Framework debugging]"
   - "ICorDebugRemote::CreateProcessEx method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRemote::CreateProcessEx Method
 Launches a process on a remote machine under the debugger.  
@@ -113,7 +113,7 @@ HRESULT CreateProcessEx (
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
 ## See Also  
- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)   
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)   
+ [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)  
+ [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
     
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

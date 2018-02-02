@@ -62,6 +62,7 @@
     <block subset="none" type="overrides">
       <para>Implement this interface to allow an object to take part in its own serialization and deserialization.</para>
     </block>
+    <altmember cref="T:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector" />
   </Docs>
   <Members>
     <Member MemberName="GetObjectData">
@@ -109,7 +110,7 @@
 ## Remarks  
  Any objects that are included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
   
- Code that calls <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> requires the <xref:System.Security.Permissions.SecurityPermission> for providing serialization services. Associated enumeration: <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName>.  
+ Code that calls <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> requires the <xref:System.Security.Permissions.SecurityPermission> for providing serialization services. Associated enumeration: <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  It is not guaranteed that this method will be called only once per object instance during serialization. Therefore, the method should be implemented in such a way that its behavior will be the same regardless of the number of times it is called.  
@@ -125,6 +126,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
   </Members>

@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow control properties with corresponding design-time properties that the designer implements, to add properties to the properties grid, to remove properties from the properties grid, and to change attributes of properties in the properties grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow control properties with corresponding design-time properties that the designer implements, to add properties to the properties grid, to remove properties from the properties grid, and to change attributes of properties in the properties grid.  
   
  ]]></format>
         </remarks>

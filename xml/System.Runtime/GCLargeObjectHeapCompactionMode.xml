@@ -29,10 +29,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property is a member of the <xref:System.Runtime.GCLargeObjectHeapCompactionMode> enumeration that indicates whether the next full blocking garbage collection also compacts the large object heap (LOH). By default, the LOH is not compacted. A value of CompactOnce indicates that the blocking garbage collection will compact the LOH. After the garbage collection, the value of the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property reverts to Default.  
+ The value of the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property is a member of the <xref:System.Runtime.GCLargeObjectHeapCompactionMode> enumeration that indicates whether the next full blocking garbage collection also compacts the large object heap (LOH). By default, the LOH is not compacted. A value of CompactOnce indicates that the blocking garbage collection will compact the LOH. After the garbage collection, the value of the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property reverts to Default.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.GCSettings" />
+    <altmember cref="P:System.Runtime.GCSettings.LargeObjectHeapCompactionMode" />
+    <altmember cref="M:System.GC.Collect" />
   </Docs>
   <Members>
     <Member MemberName="CompactOnce">

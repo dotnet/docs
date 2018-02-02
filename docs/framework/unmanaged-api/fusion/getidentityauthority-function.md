@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetIdentityAuthority"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetIdentityAuthority function [.NET Framework fusion]"
 ms.assetid: 843cd5ab-d2b7-4ff6-86bd-e68c7a91c098
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetIdentityAuthority Function
 Gets a pointer to an [IIdentityAuthority](../../../../docs/framework/unmanaged-api/fusion/iidentityauthority-interface.md) instance that manages keys for code objects.  
@@ -53,5 +53,5 @@ HRESULT GetIdentityAuthority (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IIdentityAuthority Interface](../../../../docs/framework/unmanaged-api/fusion/iidentityauthority-interface.md)   
+ [IIdentityAuthority Interface](../../../../docs/framework/unmanaged-api/fusion/iidentityauthority-interface.md)  
  [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

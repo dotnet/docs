@@ -1,5 +1,5 @@
 ---
-title: Creates a REST client using .NET Core
+title: Create a REST client using .NET Core
 description: This tutorial teaches you a number of features in .NET Core and the C# language. 
 keywords: .NET, .NET Core
 author: BillWagner
@@ -49,12 +49,12 @@ creates the starter files for a basic "Hello World" application.
 
 Before you start making modifications, let’s go through the steps to run
 the simple Hello World application. After creating the application, type
-`dotnet restore` at the command prompt. This command runs the NuGet
+`dotnet restore` ([see note](#dotnet-restore-note)) at the command prompt. This command runs the NuGet
 package restore process. NuGet is a .NET package manager. This command
 downloads any of the missing dependencies for your project. As this is a
 new project, none of the dependencies are in place, so the first run will
 download the .NET Core framework. After this initial step, you will only
-need to run `dotnet restore` when you add new dependent packages, or update
+need to run `dotnet restore` ([see note](#dotnet-restore-note)) when you add new dependent packages, or update
 the versions of any of your dependencies.  
 
 After restoring packages, you run `dotnet build`. This executes the build
@@ -66,7 +66,7 @@ One of the key design goals for .NET Core is to minimize the size of
 the .NET framework installation. The .NET Core Application framework contains
 only the most common elements of the .NET full framework. If an application
 needs additional libraries for some of its features, you add those
-dependencies into your C# project (*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
+dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
 so your application can process JSON responses.
 
 Open your `csproj` project file. The first line of the file should appear as:
@@ -88,7 +88,7 @@ that you add. However, it is important to make sure that the versions
 of all packages match, and that they also match the version of the .NET
 Core Application framework.
 
-After you've made these changes, you should run `dotnet restore` again so
+After you've made these changes, you should run `dotnet restore` ([see note](#dotnet-restore-note)) again so
 that the package is installed on your system.
 
 ## Making Web Requests
@@ -103,8 +103,8 @@ information about these projects, so you'll use an HTTP GET request.
 Your browser also uses HTTP GET requests, so you can paste that URL into
 your browser to see what information you'll be receiving and processing.
 
-You use the @System.Net.Http.HttpClient class to make web requests. Like all modern .NET
-APIs, @System.Net.Http.HttpClient supports only async methods for its long-running APIs.
+You use the <xref:System.Net.Http.HttpClient> class to make web requests. Like all modern .NET
+APIs, <xref:System.Net.Http.HttpClient> supports only async methods for its long-running APIs.
 Start by making an async method. You'll fill in the implementation as you
 build the functionality of the application. Start by opening the `program.cs` file in your project directory and adding the following method to the `Program` class:
 
@@ -116,7 +116,7 @@ private static async Task ProcessRepositories()
 ```
 
 You'll need to add a `using` statement at the top of your `Main` method so
-that the C# compiler recognizes the @System.Threading.Tasks.Task type:
+that the C# compiler recognizes the <xref:System.Threading.Tasks.Task> type:
 
 ```csharp
 using System.Threading.Tasks;
@@ -141,13 +141,31 @@ public static void Main(string[] args)
 }
 ```
 
-Now, you have a program that does nothing, but does it asynchronously. Let's go back to the
-`ProcessRepositories` method and fill in a first version of it:
+Now, you have a program that does nothing, but does it asynchronously. Let's improve it.
+
+First you need an object that is capable to retrieve data from the web; you can use
+ a <xref:System.Net.Http.HttpClient> to do that. This object handles the request and the responses. Instantiate a single instance of that type in the `Program` class inside the Program.cs file.
+
+```csharp
+namespace WebAPIClient
+{
+    class Program
+    {
+        private static readonly HttpClient client = new HttpClient();
+
+        static void Main(string[] args)
+        {
+            //...
+        }
+    }
+}
+```
+
+ Let's go back to the `ProcessRepositories` method and fill in a first version of it:
 
 ```csharp
 private static async Task ProcessRepositories()
 {
-    var client = new HttpClient();
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(
         new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
@@ -168,18 +186,17 @@ using System.Net.Http.Headers;
 ```
 
 This first version makes a web request to read the list of all repositories under the dotnet
-foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). First, you create
-a new @System.Net.Http.HttpClient. This object handles the request and the responses. The next few lines set up
-the @System.Net.Http.HttpClient for this request. First, it is configured to accept the GitHub JSON responses.
+foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). The first few lines set up
+the <xref:System.Net.Http.HttpClient> for this request. First, it is configured to accept the GitHub JSON responses.
 This format is simply JSON. The next line adds a User Agent header to all requests from this
 object. These two headers are checked by the GitHub server code, and are necessary to retrieve
 information from GitHub.
 
-After you've configured the @System.Net.Http.HttpClient, you make a web request and retrieve the response. In
-this first version, you use the <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=fullname> convenience method. This convenience method
+After you've configured the <xref:System.Net.Http.HttpClient>, you make a web request and retrieve the response. In
+this first version, you use the <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> convenience method. This convenience method
 starts a task that makes the web request, and then when the request returns, it reads the
 response stream and extracts the content from the stream. The body of the response is returned
-as a @System.String. The string is available when the task completes. 
+as a <xref:System.String>. The string is available when the task completes. 
 
 The final two lines of this method await that task, and then print the response to the console.
 Build the app, and run it. The build warning is gone now, because the `ProcessRepositories` now
@@ -217,7 +234,7 @@ This feature makes it easier to create types that work with only a subset of the
 the JSON packet.
 
 Now that you've created the type, let's deserialize it. You'll need to create a
-@System.Runtime.Serialization.Json.DataContractJsonSerializer object. This object must know the CLR type expected for the
+<xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> object. This object must know the CLR type expected for the
 JSON packet it retrieves. The packet from GitHub contains a sequence of repositories, so a
 `List<repo>` is the correct type. Add the following line to your `ProcessRepositories` method:
 
@@ -233,21 +250,21 @@ using System.Runtime.Serialization.Json;
 ```
 
 Next, you'll use the serializer to convert JSON into C# objects. Replace the call to
-@System.Net.Http.HttpClient.GetStringAsync(System.String) in your `ProcessRepositories` method with the following two lines:
+<xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in your `ProcessRepositories` method with the following two lines:
 
 ```csharp
 var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
 var repositories = serializer.ReadObject(await streamTask) as List<repo>;
 ```
 
-Notice that you're now using @System.Net.Http.HttpClient.GetStreamAsync(System.String) instead of @System.Net.Http.HttpClient.GetStringAsync(System.String). The serializer
+Notice that you're now using <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)> instead of <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)>. The serializer
 uses a stream instead of a string as its source. Let's explain a couple features of the C#
-language that are being used in the second line above. The argument to @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) is an
+language that are being used in the second line above. The argument to <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream)> is an
 `await` expression. Await expressions can appear almost anywhere in your code, even though
 up to now, you've only seen them as part of an assignment statement.
 
 Secondly, the `as` operator converts from the compile time type of `object` to `List<repo>`. 
-The declaration of @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) declares that it returns an object of type <xref:System.Object?displayProperty=fullName>. @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) will return the type you specified when you constructed it (`List<repo>` in
+The declaration of <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream)> declares that it returns an object of type <xref:System.Object?displayProperty=nameWithType>. <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream)> will return the type you specified when you constructed it (`List<repo>` in
 this tutorial). If the conversion does not succeed, the `as` operator evaluates to `null`,
 instead of throwing an exception.
 
@@ -285,7 +302,7 @@ that library to your C# project file as a dependency. Add the following line to 
 <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
 ```
 
-After you save the file, run `dotnet restore` to retrieve this package.
+After you save the file, run `dotnet restore` ([see note](#dotnet-restore-note)) to retrieve this package.
 
 Next, open the `repo.cs` file. Let's change the name to use Pascal Case, and fully spell out the name
 `Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the 
@@ -297,7 +314,7 @@ to the name of the JSON nodes that map to this type:
 public class Repository
 ```
 
-The @System.Runtime.Serialization.DataContractAttribute is a member of the @System.Runtime.Serialization namespace, so you'll
+The <xref:System.Runtime.Serialization.DataContractAttribute> is a member of the <xref:System.Runtime.Serialization> namespace, so you'll
 need to add the appropriate `using` statement at the top of the file:
 
 ```csharp
@@ -315,7 +332,7 @@ var serializer = new DataContractJsonSerializer(typeof(List<Repository>));
 var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
 ```
 
-Next, let's make the same change with the `name` field by using the @System.Runtime.Serialization.DataMemberAttribute class. Make
+Next, let's make the same change with the `name` field by using the <xref:System.Runtime.Serialization.DataMemberAttribute> class. Make
 the following changes to the declaration of the `name` field in repo.cs:
 
 ```csharp
@@ -414,7 +431,7 @@ public int Watchers { get; set; }
 ```
 
 These properties have built-in conversions from the string type (which is what the JSON packets contain) to
-the target type. The @System.Uri type may be new to you. It represents a URI, or in this case, a URL. In the case
+the target type. The <xref:System.Uri> type may be new to you. It represents a URI, or in this case, a URL. In the case
 of the `Uri` and `int` types, if the JSON packet contains data that does not convert to the target type,
 the serialization action will throw an exception.
 
@@ -438,7 +455,7 @@ this fashion in the JSON response:
 2016-02-08T21:27:00Z
 ```
 
-That format does not follow any of the standard .NET @System.DateTime formats. Because of that, you'll need to write
+That format does not follow any of the standard .NET <xref:System.DateTime> formats. Because of that, you'll need to write
 a custom conversion method. You also probably don't want the raw string exposed to users of the `Repository`
 class. Attributes can help control that as well. First, define a `private` property that will hold the
 string representation of the date time in your `Repository` class:
@@ -450,7 +467,7 @@ private string JsonDate { get; set; }
 
 The `DataMember` attribute informs the serializer that this should be processed, even though it is not
 a public member. Next, you need to write a public read-only property that converts the string to a
-valid @System.DateTime object, and returns that @System.DateTime:
+valid <xref:System.DateTime> object, and returns that <xref:System.DateTime>:
 
 ```csharp
 [IgnoreDataMember]
@@ -466,12 +483,12 @@ public DateTime LastPush
 Let's go over the new constructs above. The `IgnoreDataMember` attribute instructs the serializer
 that this type should not be read to or written from any JSON object. This property contains only a
 `get` accessor. There is no `set` accessor. That's how you define a *read-only* property in C#. (Yes,
-you can create *write-only* properties in C#, but their value is limited.) The @System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)
-method parses a string and creates a @System.DateTime object using a provided date format, and adds additional 
+you can create *write-only* properties in C#, but their value is limited.) The <xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)>
+method parses a string and creates a <xref:System.DateTime> object using a provided date format, and adds additional 
 metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
 property accessor throws an exception.
 
-To use @System.Globalization.CultureInfo.InvariantCulture, you will need to add the @System.Globalization namespace to the `using` statements 
+To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` statements 
 in `repo.cs`:
 
 ```csharp
@@ -493,3 +510,5 @@ This tutorial showed you how to make web requests, parse the result, and display
 those results. You've also added new packages as dependencies in your project. You've seen some of
 the features of the C# language that support object-oriented techniques.
 
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

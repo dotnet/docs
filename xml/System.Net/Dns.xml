@@ -84,7 +84,7 @@
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
- When an empty string is passed as the host name, this method returns the IPv4 addresses of the local host for all operating systems except Windows Server 2003; for Windows Server 2003, both IPv4 and IPv6 addresses for the local host are returned.  
+ If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   
  The asynchronous <xref:System.Net.Dns.BeginGetHostAddresses%2A> operation must be completed by calling the <xref:System.Net.Dns.EndGetHostAddresses%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
   
@@ -393,7 +393,7 @@
 ## Remarks  
  The <xref:System.Net.Dns.BeginGetHostAddresses%2A> method queries a DNS server for the IP addresses associated with a host name. If `hostNameOrAddress` is an IP address, this address is returned without querying the DNS server.  
   
- When an empty string is passed as the host name, this method returns the IPv4 addresses of the local host for all operating systems except Windows Server 2003; for Windows Server 2003, both IPv4 and IPv6 addresses for the local host are returned.  
+ If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -443,7 +443,7 @@
   
  To perform this operation synchronously, use the <xref:System.Net.Dns.GetHostByName%2A> method.  
   
- If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=fullName> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
+ If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=nameWithType> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -540,7 +540,7 @@
 ## Remarks  
  This method blocks until the operation is complete.  
   
- If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=fullName> is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
+ If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=nameWithType> is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
  To perform this operation synchronously, use the <xref:System.Net.Dns.Resolve%2A> method.  
   
@@ -596,7 +596,7 @@
 ## Remarks  
  The <xref:System.Net.Dns.GetHostAddresses%2A> method queries a DNS server for the IP addresses associated with a host name. If `hostNameOrAddress` is an IP address, this address is returned without querying the DNS server.  
   
- When an empty string is passed as the host name, this method returns the IPv4 addresses of the local host for all operating systems except Windows Server 2003; for Windows Server 2003, both IPv4 and IPv6 addresses for the local host are returned.  
+ If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   
  IPv6 addresses are filtered from the results of the <xref:System.Net.Dns.GetHostAddresses%2A> method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPAddress> instance if only IPv6 results where available for the `hostNameOrAddress`.parameter.  
   
@@ -824,7 +824,7 @@
   
  For asynchronous access to DNS information, use the <xref:System.Net.Dns.BeginGetHostByName%2A> and <xref:System.Net.Dns.EndGetHostByName%2A> methods.  
   
- If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=fullName> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
+ If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=nameWithType> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -939,7 +939,7 @@
 ## Remarks  
  The <xref:System.Net.Dns.GetHostEntry%2A> method queries a DNS server for the IP address that is associated with a host name or IP address.  
   
- When an empty string is passed as the host name, this method returns the IPv4 addresses of the local host.  
+ If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   
  If the host name could not be found, the <xref:System.Net.Sockets.SocketException> exception is returned with a value of 11001 (Windows Sockets error WSAHOST_NOT_FOUND). This exception can be returned if the DNS server does not respond. This exception can also be returned if the name is not an official host name or alias, or it cannot be found in the database(s) being queried.  
   
@@ -1078,7 +1078,7 @@
   
  This method queries a DNS server for the IP address that is associated with a host name or IP address.  
   
- When an empty string is passed as the host name, this method returns the IPv4 addresses of the local host.  
+ If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   
  If the host name could not be found, the <xref:System.Net.Sockets.SocketException> exception is returned with a value of 11001 (Windows Sockets error WSAHOST_NOT_FOUND). This exception can be returned if the DNS server does not respond. This exception can also be returned if the name is not an official host name or alias, or it cannot be found in the database(s) being queried.  
   
@@ -1196,7 +1196,7 @@
   
  When `hostName` is a DNS-style host name associated with multiple IP addresses, only the first IP address that resolves to that host name is returned.  
   
- If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=fullName> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
+ If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=nameWithType> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1219,5 +1219,45 @@
         <permission cref="T:System.Net.DnsPermission">for accessing DNS information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHostEntry">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetHostByAddress">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets DNS host information for an IP address. These methods are now obsolete.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetHostEntryAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NameResolution</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginGetHostEntry">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -80,6 +80,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MenuStrip" />
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+    <altmember cref="T:System.Windows.Forms.StatusStrip" />
+    <altmember cref="T:System.Windows.Forms.ToolStripItem" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDown" />
+    <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,7 +104,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStrip (System.Windows.Forms.ToolStripItem[] items);" />
+      <MemberSignature Language="C#" Value="public ToolStrip (params System.Windows.Forms.ToolStripItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.#ctor(System.Windows.Forms.ToolStripItem[])" />
       <MemberType>Constructor</MemberType>
@@ -141,7 +147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> property to `true` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.Control.DragEnter?displayProperty=fullName>, <xref:System.Windows.Forms.Control.DragLeave?displayProperty=fullName>, and <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> events.  
+ Set the <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> property to `true` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.Control.DragEnter?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.DragLeave?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType> events.  
   
  Set <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> to `false` and set <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> to `true` to cause the <xref:System.Windows.Forms.ToolStrip> class to handle drag-and-drop and item reordering automatically. Set <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> to `true` for two <xref:System.Windows.Forms.ToolStrip> objects to allow dragging of items from one <xref:System.Windows.Forms.ToolStrip> to the other. To enable the default drag-and-drop, the ALT key must be pressed during the drag operation.  
   
@@ -159,6 +165,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Forms.ToolStrip.AllowDrop" /> and <see cref="P:System.Windows.Forms.ToolStrip.AllowItemReorder" /> are both set to <see langword="true" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.AllowItemReorder" />
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
       </Docs>
     </Member>
     <Member MemberName="AllowItemReorder">
@@ -186,7 +196,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> property to `true` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.Control.DragEnter?displayProperty=fullName>, <xref:System.Windows.Forms.Control.DragLeave?displayProperty=fullName>, and <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> events.  
+ Set the <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> property to `true` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.Control.DragEnter?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.DragLeave?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType> events.  
   
  Set <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> to `false` and set <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> to `true` to cause the <xref:System.Windows.Forms.ToolStrip> class to handle drag-and-drop and item reordering automatically. Set <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> to `true` for two <xref:System.Windows.Forms.ToolStrip> objects to allow dragging of items from one <xref:System.Windows.Forms.ToolStrip> to the other. To enable the default drag-and-drop, the ALT key must be pressed during the drag operation.  
   
@@ -204,6 +214,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Forms.ToolStrip.AllowDrop" /> and <see cref="P:System.Windows.Forms.ToolStrip.AllowItemReorder" /> are both set to <see langword="true" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.AllowDrop" />
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
       </Docs>
     </Member>
     <Member MemberName="AllowMerge">
@@ -516,7 +530,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.AutoSizeChanged> event.  
   
@@ -546,7 +560,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStrip.BackColor%2A> property does not support transparent colors unless the `SupportsTransparentBackColor` value of <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> is set to `true`.  
+ The <xref:System.Windows.Forms.ToolStrip.BackColor%2A> property does not support transparent colors unless the `SupportsTransparentBackColor` value of <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> is set to `true`.  
   
  The <xref:System.Windows.Forms.ToolStrip.BackColor%2A> property is an ambient property. An ambient property is a control property that, if not set, is retrieved from the parent control. For example, a <xref:System.Windows.Forms.Button> will have the same <xref:System.Windows.Forms.ToolStrip.BackColor%2A> as its parent <xref:System.Windows.Forms.Form> by default. For more information about ambient properties, see the <xref:System.Windows.Forms.AmbientProperties> class or the <xref:System.Windows.Forms.Control> class overview.  
   
@@ -716,7 +730,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.CausesValidationChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.CausesValidationChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.CausesValidationChanged> event.  
   
@@ -979,7 +993,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.CursorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.CursorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.CursorChanged> event.  
   
@@ -1184,6 +1198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.Items" />
       </Docs>
     </Member>
     <Member MemberName="DisplayRectangle">
@@ -1244,7 +1259,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1394,7 +1409,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ForeColorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ForeColorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.ForeColorChanged> event.  
   
@@ -1595,7 +1610,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStrip.GripMargin%2A> property to get or set the space around the <xref:System.Windows.Forms.ToolStrip> move handle. Because <xref:System.Windows.Forms.Padding?displayProperty=fullName> can take individual values for <xref:System.Windows.Forms.Padding.Top%2A>, <xref:System.Windows.Forms.Padding.Bottom%2A>, <xref:System.Windows.Forms.Padding.Left%2A>, and <xref:System.Windows.Forms.Padding.Right%2A>, you can adjust the space around the move handle as preferred. The margin can even be off the edge of the <xref:System.Windows.Forms.ToolStrip>.  
+ Use the <xref:System.Windows.Forms.ToolStrip.GripMargin%2A> property to get or set the space around the <xref:System.Windows.Forms.ToolStrip> move handle. Because <xref:System.Windows.Forms.Padding?displayProperty=nameWithType> can take individual values for <xref:System.Windows.Forms.Padding.Top%2A>, <xref:System.Windows.Forms.Padding.Bottom%2A>, <xref:System.Windows.Forms.Padding.Left%2A>, and <xref:System.Windows.Forms.Padding.Right%2A>, you can adjust the space around the move handle as preferred. The margin can even be off the edge of the <xref:System.Windows.Forms.ToolStrip>.  
   
    
   
@@ -1607,6 +1622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Padding" />
       </Docs>
     </Member>
     <Member MemberName="GripRectangle">
@@ -1956,7 +1972,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ItemAdded> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ItemAdded> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.ItemAdded> event.  
   
@@ -1990,7 +2006,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ItemClicked> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ItemClicked> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.ItemClicked> event.  
   
@@ -2024,7 +2040,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ItemRemoved> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.ItemRemoved> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.ItemRemoved> event.  
   
@@ -2076,6 +2092,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.DisplayedItems" />
       </Docs>
     </Member>
     <Member MemberName="LayoutCompleted">
@@ -2105,7 +2122,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event.  
   
@@ -2225,7 +2242,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.LayoutStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.LayoutStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.LayoutStyleChanged> event.  
   
@@ -3262,7 +3279,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3310,7 +3327,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStrip.ProcessDialogKey%2A> method is called during message preprocessing to handle dialog characters such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the <xref:System.Windows.Forms.ToolStrip.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.ToolStrip.ProcessDialogKey%2A> simply sends the character to the parent control's <xref:System.Windows.Forms.ToolStrip.ProcessDialogKey%2A> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form?displayProperty=fullName> class overrides this method to perform actual processing of dialog box keys. This method is only called when the control is hosted in a Windows Forms application or an ActiveX control.  
+ The <xref:System.Windows.Forms.ToolStrip.ProcessDialogKey%2A> method is called during message preprocessing to handle dialog characters such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the <xref:System.Windows.Forms.ToolStrip.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.ToolStrip.ProcessDialogKey%2A> simply sends the character to the parent control's <xref:System.Windows.Forms.ToolStrip.ProcessDialogKey%2A> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form?displayProperty=nameWithType> class overrides this method to perform actual processing of dialog box keys. This method is only called when the control is hosted in a Windows Forms application or an ActiveX control.  
   
  ]]></format>
         </remarks>
@@ -3345,7 +3362,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ToolStrip.ProcessMnemonic%2A> method is called to give a control the opportunity to process a mnemonic character. This method should determine whether the control is in a state to process mnemonics and whether the given character represents a mnemonic. If so, the method should perform the action associated with the mnemonic and return `true`. If not, the method should return `false`.  
   
- Implementations of this method often use the <xref:System.Windows.Forms.Control.IsMnemonic%2A?displayProperty=fullName> method to determine whether the given character matches a mnemonic in the control's text.  
+ Implementations of this method often use the <xref:System.Windows.Forms.Control.IsMnemonic%2A?displayProperty=nameWithType> method to determine whether the given character matches a mnemonic in the control's text.  
   
  This default implementation of the <xref:System.Windows.Forms.ToolStrip.ProcessMnemonic%2A> method simply returns `false`, to indicate that the control has no mnemonic.  
   
@@ -3411,7 +3428,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStrip.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStrip.RendererChanged> event.  
   
@@ -3456,6 +3473,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value being set is not one of the <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> values.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> is set to <see cref="F:System.Windows.Forms.ToolStripRenderMode.Custom" /> without the <see cref="P:System.Windows.Forms.ToolStrip.Renderer" /> property being assigned to a new instance of <see cref="T:System.Windows.Forms.ToolStripRenderer" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.Renderer" />
       </Docs>
     </Member>
     <Member MemberName="ResetMinimumSize">
@@ -3546,7 +3564,7 @@
 ## Remarks  
  The `directed` and `forward` parameters are used by container-style controls. When the `directed` parameter is set to `true`, the `forward` parameter is evaluated to determine which control to select. When `forward` is set to `true`, the next control in the tab order is selected; when `false`, the previous control in the tab order is selected.  
   
- The <xref:System.Windows.Forms.ToolStrip.Select%2A> method activates the control if the control's <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.  
+ The <xref:System.Windows.Forms.ToolStrip.Select%2A> method activates the control if the control's <xref:System.Windows.Forms.ControlStyles.Selectable?displayProperty=nameWithType> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.  
   
  ]]></format>
         </remarks>
@@ -3931,7 +3949,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3958,7 +3976,7 @@
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values, see the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library. Actual constant values can be found in the windows.h header file included in the Platform SDK (Core SDK section) download, which is also available on MSDN.  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library. Actual constant values can be found in the windows.h header file included in the Platform SDK (Core SDK section) download, which is also available on MSDN.  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
@@ -3971,5 +3989,32 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStrip" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItemAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the item located at the specified location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChildAtPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the child control at a specified location.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

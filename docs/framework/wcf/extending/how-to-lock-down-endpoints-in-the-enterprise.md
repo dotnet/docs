@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1b7eaab7-da60-4cf7-9d6a-ec02709cf75d
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Lock Down Endpoints in the Enterprise
 Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications installed on computers.  
@@ -47,7 +49,7 @@ Large enterprises often require that applications are developed in compliance wi
   
 2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](http://msdn.microsoft.com/library/ex0ss12c\(v=vs.110\).aspx).  
   
-3.  Use the <xref:System.Configuration?displayProperty=fullName> namespace types to:  
+3.  Use the <xref:System.Configuration?displayProperty=nameWithType> namespace types to:  
   
     1.  Add the extension to the [\<behaviorExtensions>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md) section using a fully-qualified type name and lock the element.  
   
@@ -70,5 +72,5 @@ Large enterprises often require that applications are developed in compliance wi
  You may also want to encrypt the configuration file elements. For more information, see the See Also section.  
   
 ## See Also  
- [Encrypting configuration file elements using DPAPI](http://go.microsoft.com/fwlink/?LinkId=94954)   
+ [Encrypting configuration file elements using DPAPI](http://go.microsoft.com/fwlink/?LinkId=94954)  
  [Encrypting configuration file elements using RSA](http://go.microsoft.com/fwlink/?LinkId=94955)

@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Handling DataAdapter Events
 The ADO.NET <xref:System.Data.Common.DataAdapter> exposes three events that you can use to respond to changes made to data at the data source. The following table shows the `DataAdapter` events.  
@@ -190,8 +195,8 @@ protected static void FillError(object sender, FillErrorEventArgs args)
 ```  
   
 ## See Also  
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)   
- [Handling DataSet Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)   
- [Handling DataTable Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)   
- [Events](../../../../docs/standard/events/index.md)   
+ [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
+ [Handling DataSet Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)  
+ [Handling DataTable Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)  
+ [Events](../../../../docs/standard/events/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

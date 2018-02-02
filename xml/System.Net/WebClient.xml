@@ -32,7 +32,7 @@
 ## Remarks  
  The <xref:System.Net.WebClient> class provides common methods for sending data to or receiving data from any local, intranet, or Internet resource identified by a URI.  
   
- The <xref:System.Net.WebClient> class uses the <xref:System.Net.WebRequest> class to provide access to resources. <xref:System.Net.WebClient> instances can access data with any <xref:System.Net.WebRequest> descendant registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.WebClient> class uses the <xref:System.Net.WebRequest> class to provide access to resources. <xref:System.Net.WebClient> instances can access data with any <xref:System.Net.WebRequest> descendant registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  By default, the .NET Framework supports URIs that begin with `http:`, `https:`, ftp:, and `file:` scheme identifiers.  
@@ -86,6 +86,10 @@
     <block subset="none" type="overrides">
       <para>Derived classes should call the base class implementation of <see cref="T:System.Net.WebClient" /> to ensure the derived class works as expected.</para>
     </block>
+    <altmember cref="T:System.Net.WebRequest" />
+    <altmember cref="T:System.Net.WebResponse" />
+    <altmember cref="T:System.Net.HttpWebRequest" />
+    <altmember cref="T:System.Net.HttpWebResponse" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -352,7 +356,7 @@
   
  If the <xref:System.Net.WebClient> class is being used in a middle tier application, such as an ASP.NET application, the <xref:System.Net.CredentialCache.DefaultCredentials%2A> belong to the account running the ASP page (the server-side credentials). Typically, you would set this property to the credentials of the client on whose behalf the request is made.  
   
-   
+ For security reasons, when automatically following redirects, store the credentials that you want to be included in the redirect in a <xref:System.Net.CredentialCache> and assign it to this property. This property will automatically be set to `null` upon redirection if it contains anything except a <xref:System.Net.CredentialCache>. Having this property value be automatically set to `null` under those conditions prevents credentials from being sent to any unintended destination.
   
 ## Examples  
  The following code example uses the user's system credentials to authenticate a request.  
@@ -363,6 +367,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="P:System.Net.WebRequest.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadData">
@@ -612,7 +619,7 @@
   
  The <xref:System.Net.DownloadDataCompletedEventHandler> is the delegate for this event. The <xref:System.Net.DownloadDataCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1046,7 +1053,7 @@
   
  The <xref:System.ComponentModel.AsyncCompletedEventHandler> is the delegate for this event. The <xref:System.ComponentModel.AsyncCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1240,7 +1247,7 @@
   
  The <xref:System.Net.DownloadProgressChangedEventHandler> is the delegate for this event. The <xref:System.Net.DownloadProgressChangedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
 > [!NOTE]
 >  A passive FTP file transfer will always show a progress percentage of zero, since the server did not send the file size. To show progress, you can change the FTP connection to active by overriding the <xref:System.Net.WebClient.GetWebRequest%2A> virtual method:  
@@ -1528,7 +1535,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.DownloadStringCompletedEventHandler> is the delegate for this event. The <xref:System.Net.DownloadStringCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1925,6 +1932,8 @@ internal class MyWebClient:WebClient{
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.WebRequest.Headers" />
+        <altmember cref="P:System.Net.HttpWebRequest.Headers" />
       </Docs>
     </Member>
     <Member MemberName="IsBusy">
@@ -1988,7 +1997,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadDataCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2)  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2)  
   
  The <xref:System.Net.WebClient.OnDownloadDataCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2040,7 +2049,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadFileCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnDownloadFileCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2092,7 +2101,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadProgressChanged> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnDownloadProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2144,7 +2153,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadStringCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnDownloadStringCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2196,7 +2205,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.OpenReadCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnOpenReadCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2248,7 +2257,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.OpenWriteCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnOpenWriteCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2300,7 +2309,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadDataCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnUploadDataCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2352,7 +2361,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadFileCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnUploadFileCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2404,7 +2413,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadProgressChanged> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnUploadProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2456,7 +2465,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadStringCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnUploadStringCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2508,7 +2517,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadValuesCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Net.WebClient.OnUploadValuesCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2600,7 +2609,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2663,7 +2672,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
@@ -2711,7 +2720,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool. To receive notification when the stream is available, add an event handler to the <xref:System.Net.WebClient.OpenReadCompleted> event.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  This method does not block the calling thread while the stream is opening. To block while waiting for the stream, use the <xref:System.Net.WebClient.OpenReadAsync%2A> method.  
   
@@ -2774,7 +2783,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool. To receive notification when the stream is available, add an event handler to the <xref:System.Net.WebClient.OpenReadCompleted> event.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  This method does not block the calling thread while the stream is opening. To block while waiting for the stream, use the <xref:System.Net.WebClient.OpenRead%2A> method.  
   
@@ -2832,7 +2841,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.OpenReadCompletedEventHandler> is the delegate for this event. The <xref:System.Net.OpenReadCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2891,7 +2900,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -2914,6 +2923,7 @@ internal class MyWebClient:WebClient{
  -or-  
   
  An error occurred while opening the stream.</exception>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="OpenReadTaskAsync">
@@ -2960,7 +2970,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -2983,6 +2993,7 @@ internal class MyWebClient:WebClient{
  -or-  
   
  An error occurred while opening the stream.</exception>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="OpenWrite">
@@ -3392,7 +3403,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.OpenWriteCompletedEventHandler> is the delegate for this event. The <xref:System.Net.OpenWriteCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -3451,7 +3462,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -3469,6 +3480,7 @@ internal class MyWebClient:WebClient{
  -or-  
   
  An error occurred while opening the stream.</exception>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="OpenWriteTaskAsync">
@@ -3515,7 +3527,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -3581,7 +3593,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  If the `method` parameter specifies a method that is not understood by the server, the underlying protocol classes determine what occurs. Typically, a <xref:System.Net.WebException> is thrown with the <xref:System.Net.WebException.Status%2A> property set to indicate the error.  
   
@@ -3601,6 +3613,7 @@ internal class MyWebClient:WebClient{
  -or-  
   
  An error occurred while opening the stream.</exception>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="OpenWriteTaskAsync">
@@ -3649,7 +3662,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  If the `method` parameter specifies a method that is not understood by the server, the underlying protocol classes determine what occurs. Typically, a <xref:System.Net.WebException> is thrown with the <xref:System.Net.WebException.Status%2A> property set to indicate the error.  
   
@@ -3669,6 +3682,7 @@ internal class MyWebClient:WebClient{
  -or-  
   
  An error occurred while opening the stream.</exception>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Proxy">
@@ -3708,6 +3722,14 @@ internal class MyWebClient:WebClient{
         <exception cref="T:System.ArgumentNullException">
           <see cref="P:System.Net.WebClient.Proxy" /> is set to <see langword="null" />.</exception>
         <permission cref="T:System.Net.WebPermission">that is unrestricted. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.HttpWebRequest" />
+        <altmember cref="T:System.Net.HttpWebResponse" />
+        <altmember cref="T:System.Net.FtpWebRequest" />
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.GlobalProxySelection" />
+        <altmember cref="T:System.Net.WebProxy" />
       </Docs>
     </Member>
     <Member MemberName="QueryString">
@@ -4283,7 +4305,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.UploadDataCompletedEventHandler> is the delegate for this event. The <xref:System.Net.UploadDataCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -4626,8 +4648,8 @@ internal class MyWebClient:WebClient{
   
  The following code example shows an ASP.NET page that can accept posted files and is suitable for use with the <xref:System.Net.WebClient.UploadFile%2A> method. The page must reside on a Web server. Its address provides the value for the `address` parameter of the <xref:System.Net.WebClient.UploadFile%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]
+ [!code-aspx-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4784,8 +4806,8 @@ internal class MyWebClient:WebClient{
   
  The following code example shows an ASP.NET page that can accept posted files and is suitable for use with the <xref:System.Net.WebClient.UploadFile%2A> method. The page must reside on a Web server. Its address provides the value for the `address` parameter of the <xref:System.Net.WebClient.UploadFile%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]
+ [!code-aspx-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -5142,7 +5164,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.UploadFileCompletedEventHandler> is the delegate for this event. The <xref:System.Net.UploadFileCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -5510,7 +5532,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.UploadProgressChangedEventHandler> is the delegate for this event. The <xref:System.Net.UploadProgressChangedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -6006,7 +6028,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.UploadStringCompletedEventHandler> is the delegate for this event. The <xref:System.Net.UploadStringCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -6836,7 +6858,7 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.UploadValuesCompletedEventHandler> is the delegate for this event. The <xref:System.Net.UploadValuesCompletedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -7245,11 +7267,291 @@ internal class MyWebClient:WebClient{
   
  The <xref:System.Net.WriteStreamClosedEventHandler> is the delegate for this event. The <xref:System.Net.WriteStreamClosedEventArgs> class provides the event handler with event data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UploadFileTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads the specified local file to a resource as an asynchronous operation using a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadValuesAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads the specified name/value collection to the resource identified by the specified URI. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetWebResponse">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the <see cref="T:System.Net.WebResponse" /> for the specified <see cref="T:System.Net.WebRequest" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadValuesTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads the specified name/value collection to the resource identified by the specified URI as an asynchronous operation using a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenWriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a stream for writing data to the specified resource. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadDataTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads a data buffer that contains a <see cref="T:System.Byte" /> array to the URI specified as an asynchronous operation using a task object.  These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadStringTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads the specified string to the specified resource as an asynchronous operation using a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadFileTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the specified resource to a local file as an asynchronous operation using a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the requested resource as a <see cref="T:System.String" />. The resource to download may be specified as either <see cref="T:System.String" /> containing the URI or a <see cref="T:System.Uri" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenReadTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a readable stream containing the specified resource as an asynchronous operation using a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadFileAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads the specified local file to the specified resource. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads the specified string to the specified resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadFileAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the specified resource to a local file as an asynchronous operation and returns a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadValues">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads a name/value collection to a resource with the specified URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadDataAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the resource as a <see cref="T:System.Byte" /> array from the URI specified as an asynchronous operation. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadStringAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads the specified string to the specified resource. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadData">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads a data buffer to a resource with the specified URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadDataAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads a data buffer to a resource identified by a URI. This method does not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenWriteTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a stream for writing data to the specified resource as an asynchronous operation using a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UploadFile">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uploads a local file to a resource with the specified URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenRead">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a readable stream for the data downloaded from a resource with the specified URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadStringAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the resource specified as a <see cref="T:System.String" /> or a <see cref="T:System.Uri" />. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadStringTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the resource as a <see cref="T:System.String" /> from the URI specified as an asynchronous operation using a task object.  These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadFile">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the resource with the specified URI to a local file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadDataTaskAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the resource as a <see cref="T:System.Byte" /> array from the URI specified as an asynchronous operation using a task object. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadData">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the resource as a <see cref="T:System.Byte" /> array from the URI specified.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenReadAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a readable stream containing the specified resource. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenWrite">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a stream for writing data to a resource with the specified URI.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

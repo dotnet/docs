@@ -32,9 +32,9 @@
  The <xref:System.Transactions> infrastructure provides both an explicit programming model based on the <xref:System.Transactions.Transaction> class, as well as an implicit programming model using the <xref:System.Transactions.TransactionScope> class, in which transactions are automatically managed by the infrastructure.  
   
 > [!IMPORTANT]
->  It is recommended that you create implicit transactions using the <xref:System.Transactions.TransactionScope> class, so that the ambient transaction context is automatically managed for you. You should also use the <xref:System.Transactions.TransactionScope> and <xref:System.Transactions.DependentTransaction> class for applications that require the use of the same transaction across multiple function calls or multiple thread calls. For more information on this model, see the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic. For more information on writing a transactional application, see [Writing A Transactional Application](http://msdn.microsoft.com/en-us/4a7cc4d1-0891-4605-941f-a933b9ce5bc8).  
+>  We recommend that you create implicit transactions using the <xref:System.Transactions.TransactionScope> class, so that the ambient transaction context is automatically managed for you. You should also use the <xref:System.Transactions.TransactionScope> and <xref:System.Transactions.DependentTransaction> class for applications that require the use of the same transaction across multiple function calls or multiple thread calls. For more information on this model, see the [Implementing An Implicit Transaction Using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) topic. For more information on writing a transactional application, see [Writing A Transactional Application](~/docs/framework/data/transactions/writing-a-transactional-application.md).  
   
- Upon instantiating a <xref:System.Transactions.TransactionScope> by the `new` statement, the transaction manager determines which transaction to participate in. Once determined, the scope always participates in that transaction. The decision is based on two factors: whether an ambient transaction is present and the value of the `TransactionScopeOption` parameter in the constructor.  The ambient transaction is the transaction your code executes in. You can obtain a reference to the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A> property of the <xref:System.Transactions.Transaction> class. For more information on how this parameter is used, please see the "Transaction Flow Management" section of the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic.  
+ Upon instantiating a <xref:System.Transactions.TransactionScope> by the `new` statement, the transaction manager determines which transaction to participate in. Once determined, the scope always participates in that transaction. The decision is based on two factors: whether an ambient transaction is present and the value of the `TransactionScopeOption` parameter in the constructor.  The ambient transaction is the transaction your code executes in. You can obtain a reference to the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType> property of the <xref:System.Transactions.Transaction> class. For more information on how this parameter is used, see the "Transaction Flow Management" section of the [Implementing An Implicit Transaction Using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) topic.  
   
  If no exception occurs within the transaction scope (that is, between the initialization of the <xref:System.Transactions.TransactionScope> object and the calling of its <xref:System.Transactions.TransactionScope.Dispose%2A> method), then the transaction in which the scope participates is allowed to proceed. If an exception does occur within the transaction scope, the transaction in which it participates will be rolled back.  
   
@@ -534,7 +534,7 @@
 ## Remarks  
  When you are satisfied that all operations within the scope are completed successfully, you should call this method only once to inform that transaction manager that the state across all resources is consistent, and the transaction can be committed. It is very good practice to put the call as the last statement in the `using` block.  
   
- For more information on how this method is used, see the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic.  
+ For more information on how this method is used, see the [Implementing An Implicit Transaction Using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) topic.  
   
  Failing to call this method aborts the transaction, because the transaction manager interprets this as a system failure, or exceptions thrown within the scope of transaction. However, you should also note that calling this method does not guarantee a commit of the transaction. It is merely a way of informing the transaction manager of your status. After calling this method, you can no longer access the ambient transaction via the <xref:System.Transactions.Transaction.Current%2A> property, and trying to do so results in an exception being thrown.  
   
@@ -587,7 +587,7 @@
   
  This method is synchronous and blocks until the transaction has been committed or aborted. Because of this, you should be extremely careful when using this method in a Windows Form (WinForm) application, or a deadlock can occur. If you call this method inside one WinForm Control event (for example, clicking a button), and use the synchronous <xref:System.Windows.Forms.Control.Invoke%2A> method to direct the control to perform some UI tasks (for example, changing colors) in the middle of processing the transaction, a deadlock will happen. This is because the <xref:System.Windows.Forms.Control.Invoke%2A> method is synchronous and blocks the worker thread until the UI thread finishes its job. However, in our scenario, the UI thread is also waiting for the worker thread to commit the transaction. The result is that none is able to proceed and the scope waits indefinitely for the Commit to finish. You should use <xref:System.Windows.Forms.Control.BeginInvoke%2A> rather than <xref:System.Windows.Forms.Control.Invoke%2A> wherever possible, because it is asynchronous and thus less prone to deadlock.  
   
- For more information on how this method is used, see the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic.  
+ For more information on how this method is used, see the [Implementing An Implicit Transaction Using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) topic.  
   
    
   
@@ -601,5 +601,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

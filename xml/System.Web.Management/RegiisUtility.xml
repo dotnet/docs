@@ -48,11 +48,12 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.Management.IRegiisUtility" />
       </Docs>
     </Member>
     <Member MemberName="ProtectedConfigAction">
       <MemberSignature Language="C#" Value="public void ProtectedConfigAction (long options, string firstArgument, string secondArgument, string providerName, string appPath, string site, string cspOrLocation, int keySize, out IntPtr exception);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProtectedConfigAction(int64 options, string firstArgument, string secondArgument, string providerName, string appPath, string site, string cspOrLocation, int32 keySize, native int exception) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProtectedConfigAction(int64 options, string firstArgument, string secondArgument, string providerName, string appPath, string site, string cspOrLocation, int32 keySize, [out] native int&amp; exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.ProtectedConfigAction(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -97,7 +98,7 @@
     </Member>
     <Member MemberName="RegisterAsnetMmcAssembly">
       <MemberSignature Language="C#" Value="public void RegisterAsnetMmcAssembly (int doReg, string typeName, string binaryDirectory, out IntPtr exception);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterAsnetMmcAssembly(int32 doReg, string typeName, string binaryDirectory, native int exception) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterAsnetMmcAssembly(int32 doReg, string typeName, string binaryDirectory, [out] native int&amp; exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -132,7 +133,7 @@
     </Member>
     <Member MemberName="RegisterSystemWebAssembly">
       <MemberSignature Language="C#" Value="public void RegisterSystemWebAssembly (int doReg, out IntPtr exception);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterSystemWebAssembly(int32 doReg, native int exception) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterSystemWebAssembly(int32 doReg, [out] native int&amp; exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.RegisterSystemWebAssembly(System.Int32,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -163,7 +164,7 @@
     </Member>
     <Member MemberName="RemoveBrowserCaps">
       <MemberSignature Language="C#" Value="public void RemoveBrowserCaps (out IntPtr exception);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveBrowserCaps(native int exception) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveBrowserCaps([out] native int&amp; exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.RemoveBrowserCaps(System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

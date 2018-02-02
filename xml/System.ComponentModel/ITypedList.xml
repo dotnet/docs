@@ -37,7 +37,7 @@
   
  In a designer, you can initialize binding to <xref:System.ComponentModel.Component> objects by following the same rules.  
   
- For more information on binding to a data source, see the <xref:System.Windows.Forms.Binding?displayProperty=fullName> class.  
+ For more information on binding to a data source, see the <xref:System.Windows.Forms.Binding?displayProperty=nameWithType> class.  
   
    
   
@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.BindingList`1" />
   </Docs>
   <Members>
     <Member MemberName="GetItemProperties">
@@ -96,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindingList`1" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -143,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindingList`1" />
       </Docs>
     </Member>
   </Members>

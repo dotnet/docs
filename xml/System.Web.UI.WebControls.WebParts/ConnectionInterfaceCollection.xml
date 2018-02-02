@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Communication between a provider and consumer requires a contract defined in an interface. This collection contains all the communication interfaces supported by the consumer. The <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint.GetSecondaryInterfaces%2A?displayProperty=fullName> method returns a <xref:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection> object.  
+ Communication between a provider and consumer requires a contract defined in an interface. This collection contains all the communication interfaces supported by the consumer. The <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint.GetSecondaryInterfaces%2A?displayProperty=nameWithType> method returns a <xref:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection> object.  
   
  ]]></format>
     </remarks>
@@ -184,5 +184,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

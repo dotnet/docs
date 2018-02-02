@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugReferenceValue::Dereference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugReferenceValue::Dereference method [.NET Framework debugging]"
   - "Dereference method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugReferenceValue::Dereference Method
 Gets the object that is referenced.  

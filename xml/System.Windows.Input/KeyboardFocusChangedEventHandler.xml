@@ -26,27 +26,27 @@
 ## Remarks  
  This delegate is used with the following attached events:  
   
--   <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=nameWithType>  
   
  This delegate is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
   
--   <xref:System.Windows.UIElement.GotKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.GotKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.LostKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.LostKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.PreviewGotKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewGotKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.GotKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.GotKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.LostKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.LostKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewGotKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewGotKeyboardFocus?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus?displayProperty=nameWithType>  
   
  The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -54,5 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyboardFocusChangedEventArgs" />
+    <altmember cref="M:System.Windows.UIElement.Focus" />
+    <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
   </Docs>
 </Type>

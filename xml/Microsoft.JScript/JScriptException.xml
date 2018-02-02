@@ -25,6 +25,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.ApplicationException" />
+    <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,6 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,6 +66,9 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified <see cref="T:Microsoft.JScript.JSError" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,6 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,6 +113,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified serialized data.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,6 +138,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -140,6 +161,10 @@
         <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -159,6 +184,10 @@
         <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="EndColumn">
@@ -178,6 +207,10 @@
         <value>The column in the code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="EndLine">
@@ -197,6 +230,10 @@
         <value>The line of code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="ErrorNumber">
@@ -216,6 +253,10 @@
         <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -245,6 +286,10 @@
         <summary>Stores information about the exception, including <c>IsError</c> and <c>Code</c> values, in the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -264,6 +309,10 @@
         <value>The line of code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="LineText">
@@ -283,6 +332,10 @@
         <value>The text of the code, or an empty string if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -302,6 +355,10 @@
         <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.JScript.Vsa.IJSVsaError.Description">
@@ -320,6 +377,10 @@
         <summary>Gets a message that describes the error.</summary>
         <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.JScript.Vsa.IJSVsaError.Number">
@@ -338,6 +399,10 @@
         <summary>Gets the <see cref="P:System.Exception.HResult" /> code of the error.</summary>
         <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -357,6 +422,10 @@
         <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="Severity">
@@ -376,6 +445,10 @@
         <value>A number between 0 and 4.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="SourceItem">
@@ -395,6 +468,10 @@
         <value>The source code item; or throws a <see cref="T:Microsoft.JScript.NoContextException" /> if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="SourceMoniker">
@@ -414,6 +491,10 @@
         <value>The name of the source code file, or the string literal "no source" if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -433,6 +514,11 @@
         <value>The stack trace information.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Context" />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="StartColumn">
@@ -452,7 +538,24 @@
         <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class.</summary>
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

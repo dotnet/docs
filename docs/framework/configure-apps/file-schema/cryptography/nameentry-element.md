@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#nameEntry"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/nameEntry"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<nameEntry> element"
   - "nameEntry element"
@@ -25,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;nameEntry&gt; Element
 Maps a class name to a friendly algorithm name, which allows one class to have many friendly names.  
@@ -65,7 +62,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
  The **name** attribute can be the name of one of the abstract classes found in the <xref:System.Security.Cryptography> namespace. When you call the **Create** method on an abstract cryptography class, the abstract class name is passed to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> method. **CreateFromName** returns an instance of the type indicated by the **class** attribute. If the **name** attribute is a short name, such as RSA, you can use that name when calling the **CreateFromName** method.  
   
 ## Example  
- The following example shows how to use the **\<nameEntry>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=fullName> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
+ The following example shows how to use the **\<nameEntry>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
 ```xml  
 <configuration>  
@@ -87,7 +84,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 ```  
   
 ## See Also  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)   
- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)   
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+ [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+ [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
  [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

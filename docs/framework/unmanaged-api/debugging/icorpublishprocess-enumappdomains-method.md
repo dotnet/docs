@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcess::EnumAppDomains"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumAppDomains method [.NET Framework debugging]"
   - "ICorPublishProcess::EnumAppDomains method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishProcess::EnumAppDomains Method
 Gets an enumerator for the application domains in the process that is referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  

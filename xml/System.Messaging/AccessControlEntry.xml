@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.AccessControlList" />
+    <altmember cref="T:System.Messaging.MessageQueueAccessControlEntry" />
+    <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +75,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="trustee" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Messaging.Trustee" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +127,8 @@
         <summary>Gets or sets custom access rights.</summary>
         <value>Application-specific access rights, usually defined as a bitflag.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Messaging.AccessControlEntry.GenericAccessRights" />
+        <altmember cref="P:System.Messaging.AccessControlEntry.StandardAccessRights" />
       </Docs>
     </Member>
     <Member MemberName="EntryType">
@@ -168,6 +174,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value you set is not a valid combination of <see cref="T:System.Messaging.GenericAccessRights" /> bitflag members.</exception>
+        <altmember cref="P:System.Messaging.AccessControlEntry.StandardAccessRights" />
+        <altmember cref="P:System.Messaging.AccessControlEntry.CustomAccessRights" />
       </Docs>
     </Member>
     <Member MemberName="StandardAccessRights">
@@ -194,6 +202,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value you set is not a valid combination of <see cref="T:System.Messaging.StandardAccessRights" /> bitflag members.</exception>
+        <altmember cref="P:System.Messaging.AccessControlEntry.GenericAccessRights" />
+        <altmember cref="P:System.Messaging.AccessControlEntry.CustomAccessRights" />
       </Docs>
     </Member>
     <Member MemberName="Trustee">
@@ -220,7 +230,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Messaging.AccessControlEntry.Trustee" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Messaging.Trustee" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.AccessControlEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

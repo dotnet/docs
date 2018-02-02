@@ -1,43 +1,24 @@
 ---
 title: "How to: Log Messages When the Application Starts or Shuts Down (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "event logs, shutdown"
   - "My.Application.Log object, logging"
-  - "Startup event"
+  - "Startup event [Visual Basic]"
   - "event logs, startup"
-  - "Shutdown event"
+  - "Shutdown event [Visual Basic]"
   - "My.Log object, logging"
 ms.assetid: 67624d05-cddf-48b7-8c36-5c99baa4c621
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Log Messages When the Application Starts or Shuts Down (Visual Basic)
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application. This example shows how to use the `My.Application.Log.WriteEntry` method with the `Startup` and `Shutdown` events to write tracing information.  
@@ -82,8 +63,8 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
  [!code-vb[VbVbalrMyApplicationLog#3](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/how-to-log-messages-when-the-application-starts-or-shuts-down_3.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
- <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>   
- <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>   
- [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
+ <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
+ <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>  
+ <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>  
+ [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)  
  [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)

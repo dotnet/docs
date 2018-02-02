@@ -297,6 +297,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="clause" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" />
+        <altmember cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" />
+        <altmember cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" />
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -352,5 +355,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

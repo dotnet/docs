@@ -1,4 +1,4 @@
-<%--<snippet1>--%>
+<!-- <Snippet1> -->
 <%@ Page Language="C#" %>
 <%@ import Namespace="System.Threading" %>
 <%@ import Namespace="System.IO" %>
@@ -139,4 +139,4 @@
     </form>
 </body>
 </html>
-<%--</snippet1>--%>
+<!-- </Snippet1> -->

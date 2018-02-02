@@ -416,7 +416,7 @@
     </Member>
     <Member MemberName="CreateDescription">
       <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Description.ServiceDescription CreateDescription (out System.Collections.Generic.IDictionary&lt;string,System.ServiceModel.Description.ContractDescription&gt; implementedContracts);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Description.ServiceDescription CreateDescription(class System.Collections.Generic.IDictionary`2&lt;string, class System.ServiceModel.Description.ContractDescription&gt; implementedContracts) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Description.ServiceDescription CreateDescription([out] class System.Collections.Generic.IDictionary`2&lt;string, class System.ServiceModel.Description.ContractDescription&gt;&amp; implementedContracts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1030,5 +1030,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddServiceEndpoint">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the service endpoints to the service hosted.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

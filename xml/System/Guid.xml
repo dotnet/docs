@@ -47,16 +47,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/guid.cs#b622ef5f6b76c10a). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A GUID is a 128-bit integer (16 bytes) that can be used across all computers and networks wherever a unique identifier is required. Such an identifier has a very low probability of being duplicated.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=fullName> class to assign a GUID to an interface and to a user-defined class. It retrieves the value of the GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A> method, and compares it with two other GUIDs to determine whether they are equal.  
+ The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=nameWithType> class to assign a GUID to an interface and to a user-defined class. It retrieves the value of the GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A> method, and compares it with two other GUIDs to determine whether they are equal.  
   
  [!code-cpp[Guid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Guid/CPP/Guids.cpp#1)]
  [!code-csharp[Guid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Guid/CS/Guids.cs#1)]
@@ -439,7 +435,7 @@
   
  If two GUIDs have equal values for a component, the method compares the next component. When it finds a component whose values are unequal, it returns the result.  
   
- This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.Guid.CompareTo%2A?displayProperty=fullName> method because it does not have to convert the `value` parameter to a <xref:System.Guid> value.  
+ This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface and performs slightly better than the <xref:System.Guid.CompareTo%2A?displayProperty=nameWithType> method because it does not have to convert the `value` parameter to a <xref:System.Guid> value.  
   
    
   
@@ -522,7 +518,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute> attribute to assign a GUID to a class. It retrieves the value of this GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> method and passing the <xref:System.Runtime.InteropServices.GuidAttribute.Value%2A> property of the returned <xref:System.Runtime.InteropServices.GuidAttribute> object to the <xref:System.Guid.Parse%2A> method. Then it compares that GUID with an array of values.  
+ The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute> attribute to assign a GUID to a class. It retrieves the value of this GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType> method and passing the <xref:System.Runtime.InteropServices.GuidAttribute.Value%2A> property of the returned <xref:System.Runtime.InteropServices.GuidAttribute> object to the <xref:System.Guid.Parse%2A> method. Then it compares that GUID with an array of values.  
   
  [!code-csharp[System.Guid.CompareTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.guid.compareto/cs/compareto1.cs#2)]
  [!code-vb[System.Guid.CompareTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.guid.compareto/vb/compareto1.vb#2)]  
@@ -564,7 +560,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can compare a GUID with the value of the <xref:System.Guid.Empty?displayProperty=fullName> field to determine whether a GUID is non-zero. The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=fullName> to determine whether they consist exclusively of zeros.  
+ You can compare a GUID with the value of the <xref:System.Guid.Empty?displayProperty=nameWithType> field to determine whether a GUID is non-zero. The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=nameWithType> to determine whether they consist exclusively of zeros.  
   
  [!code-csharp[System.Guid.Empty#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.guid.empty/cs/empty.cs#1)]
  [!code-vb[System.Guid.Empty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.guid.empty/vb/empty.vb#1)]  
@@ -616,6 +612,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Guid.Equals(System.Object)" />
+        <altmember cref="Overload:System.Guid.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -726,7 +724,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenient `static` method that you can call to get a new <xref:System.Guid>. The method wraps a call to the Windows [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568.aspx) function. The returned <xref:System.Guid> is guaranteed to not equal <xref:System.Guid?displayProperty=fullName>.  
+ This is a convenient `static` method that you can call to get a new <xref:System.Guid>. The method wraps a call to the Windows [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568.aspx) function. The returned <xref:System.Guid> is guaranteed to not equal <xref:System.Guid.Empty?displayProperty=nameWithType>.  
   
    
   
@@ -776,10 +774,10 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=fullName>  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=nameWithType>  
   
 ## Examples  
- The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=fullName> to determine whether they consist exclusively of zeros.  
+ The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=nameWithType> to determine whether they consist exclusively of zeros.  
   
  [!code-csharp[System.Guid.Empty#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.guid.empty/cs/empty.cs#1)]
  [!code-vb[System.Guid.Empty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.guid.empty/vb/empty.vb#1)]  
@@ -824,7 +822,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -900,6 +898,8 @@
           <paramref name="input" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="input" /> is not in a recognized format.</exception>
+        <altmember cref="M:System.Guid.TryParse(System.String,System.Guid@)" />
+        <altmember cref="M:System.Guid.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -964,6 +964,7 @@
           <paramref name="input" /> or <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="input" /> is not in the format specified by <paramref name="format" />.</exception>
+        <altmember cref="M:System.Guid.TryParseExact(System.String,System.String,System.Guid@)" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1156,7 +1157,7 @@
 |`P`|32 digits separated by hyphens, enclosed in parentheses:<br /><br /> (00000000-0000-0000-0000-000000000000)|  
 |`X`|Four hexadecimal values enclosed in braces, where the fourth value is a subset of eight hexadecimal values that is also enclosed in braces:<br /><br /> {0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}}|  
   
- The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=fullName> method on the returned string.  
+ The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method on the returned string.  
   
  ]]></format>
         </remarks>
@@ -1214,9 +1215,9 @@
 |`P`|32 digits separated by hyphens, enclosed in parentheses:<br /><br /> (00000000-0000-0000-0000-000000000000)|  
 |`X`|Four hexadecimal values enclosed in braces, where the fourth value is a subset of eight hexadecimal values that is also enclosed in braces:<br /><br /> {0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}}|  
   
- The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=fullName> method on the returned string.  
+ The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method on the returned string.  
   
- Because the `provider` parameter is ignored, you cannot use it to provide a custom formatting solution. To represent a <xref:System.Guid> value as a string in a format that isn't supported by the standard GUID format strings, call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method with a `provider` object that implements both the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces. For more information, see the "Custom Formatting with ICustomFormatter" section in the [Formatting Types](~/docs/standard/base-types/formatting-types.md) article.  
+ Because the `provider` parameter is ignored, you cannot use it to provide a custom formatting solution. To represent a <xref:System.Guid> value as a string in a format that isn't supported by the standard GUID format strings, call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method with a `provider` object that implements both the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces. For more information, see the "Custom Formatting with ICustomFormatter" section in the [Formatting Types](~/docs/standard/base-types/formatting-types.md) article.  
   
  ]]></format>
         </remarks>
@@ -1225,7 +1226,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out Guid result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, valuetype System.Guid result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] valuetype System.Guid&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParse(System.String,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1262,7 +1263,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is like the <xref:System.Guid.Parse%2A> method, except that instead of returning the parsed GUID, it returns `false` if `input` is `null` or not in a recognized format, and doesn't throw an exception. It trims any leading or trailing white space from `input` and converts strings in any of the five formats recognized by the <xref:System.Guid.ToString%28System.String%29> and <xref:System.Guid.ToString%28System.String%2CSystem.IFormatProvider%29>methods, as shown in the following table.  
+ This method is like the <xref:System.Guid.Parse%2A> method, except that instead of returning the parsed GUID, it returns `false` if `input` is `null` or not in a recognized format, and doesn't throw an exception. It trims any leading or trailing white space from `input` and converts strings in any of the five formats recognized by the <xref:System.Guid.ToString%28System.String%29> and <xref:System.Guid.ToString%28System.String%2CSystem.IFormatProvider%29> methods, as shown in the following table.  
   
 |Specifier|Description|Format|  
 |---------------|-----------------|------------|  
@@ -1282,11 +1283,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Guid.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string format, out Guid result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, valuetype System.Guid result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, [out] valuetype System.Guid&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParseExact(System.String,System.String,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1347,7 +1349,60 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Guid.ParseExact(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representation of the value of this instance of the <see cref="T:System.Guid" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Guid" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Guid" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two instances of <see cref="T:System.Guid" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

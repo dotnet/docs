@@ -1,7 +1,7 @@
 ---
 title: "How to: Retrieve Paragraphs from an Office Open XML Document (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
 caps.latest.revision: 3
 author: "BillWagner"
@@ -20,7 +18,7 @@ ms.author: "wiwagn"
 # How to: Retrieve Paragraphs from an Office Open XML Document (C#)
 This topic presents an example that opens an Office Open XML document, and retrieves a collection of all of the paragraphs in the document.  
   
- For more information on Office Open XML, see [www.openxmldeveloper.org](http://go.microsoft.com/fwlink/?LinkID=95573).  
+ For more information on Office Open XML, see [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) and [www.ericwhite.com](http://ericwhite.com/).  
   
 ## Example  
  This example opens an Office Open XML package, uses the relationships within the Open XML package to find the document and the style parts. It then queries the document, projecting a collection of an anonymous type that contains the paragraph <xref:System.Xml.Linq.XElement> node, the style name of each paragraph, and the text of each paragraph.  
@@ -29,7 +27,7 @@ This topic presents an example that opens an Office Open XML document, and retri
   
  For a detailed tutorial that explains how this example works, see [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md).  
   
- This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```csharp  
 public static class LocalExtensions  

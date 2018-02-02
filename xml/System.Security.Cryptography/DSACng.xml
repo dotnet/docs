@@ -97,7 +97,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.CngKey.AlgorithmGroup%2A?displayProperty=fullName> of `key` must be <xref:System.Security.Cryptography.CngAlgorithmGroup.Dsa%2A?displayProperty=fullName>.  
+ The <xref:System.Security.Cryptography.CngKey.AlgorithmGroup%2A?displayProperty=nameWithType> of `key` must be <xref:System.Security.Cryptography.CngAlgorithmGroup.Dsa%2A?displayProperty=nameWithType>.  
   
  This constructor creates a copy of the key. Even if `key` is disposed, the copy of this key object in DSA remains alive.  
   
@@ -303,7 +303,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The  <xref:System.Security.Cryptography.CngKey> object is disposed if the key is reset, for instance by changing the <xref:System.Security.Cryptography.CngKey.KeySize%2A?displayProperty=fullName> property, by using the <xref:System.Security.Cryptography.DSACng.ImportParameters%2A?displayProperty=fullName> method to create a new key, or by disposing the parent <xref:System.Security.Cryptography.DSACng> object. Therefore, you should ensure that the key object is no longer used in these cases.  
+ The  <xref:System.Security.Cryptography.CngKey> object is disposed if the key is reset, for instance by changing the <xref:System.Security.Cryptography.CngKey.KeySize%2A?displayProperty=nameWithType> property, by using the <xref:System.Security.Cryptography.DSACng.ImportParameters%2A?displayProperty=nameWithType> method to create a new key, or by disposing the parent <xref:System.Security.Cryptography.DSACng> object. Therefore, you should ensure that the key object is no longer used in these cases.  
   
  This <xref:System.Security.Cryptography.CngKey> object is not the same as the <xref:System.Security.Cryptography.CngKey> object passed to the <xref:System.Security.Cryptography.DSACng.%23ctor%2A> constructor, if that constructor was used. However, it will point to the same CNG key.  
   
@@ -418,5 +418,14 @@
           <paramref name="rgbHash" /> is shorter in length than the Q value of the DSA key .</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACng" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

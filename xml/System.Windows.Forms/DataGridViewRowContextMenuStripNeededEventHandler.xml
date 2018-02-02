@@ -28,15 +28,15 @@
   
  When you handle the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event, the shortcut menu that you specify in the handler is shown whenever the user right-clicks a row unless the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> overrides the shortcut menu for the specific cell that was clicked.  
   
- The <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=fullName> property is retrieved, either programmatically or when the user right-clicks a row.  
+ The <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=nameWithType> property is retrieved, either programmatically or when the user right-clicks a row.  
   
- You can use the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.RowIndex%2A?displayProperty=fullName> property to determine the state of a row or the values it contains, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=fullName> property. This property is initialized with the value of the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property, which the event value overrides.  
+ You can use the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.RowIndex%2A?displayProperty=nameWithType> property to determine the state of a row or the values it contains, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=nameWithType> property. This property is initialized with the value of the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property, which the event value overrides.  
   
  Handle the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
- When you create a <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -48,5 +48,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRow.ContextMenuStrip" />
   </Docs>
 </Type>

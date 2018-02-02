@@ -9,23 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Windows API, secure calls"
   - "Windows Forms, secure calls to Windows API"
-  - "Windows API, calling"
-  - "APIs, calling"
   - "security [Windows Forms]"
-  - "Windows API, Windows Forms security settings"
-  - "API calls, Windows Forms security settings"
   - "security [Windows Forms], calling APIs"
-  - "Clipboard, securing access"
+  - "Clipboard [Windows Forms], securing access"
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Additional Security Considerations in Windows Forms
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] security settings might cause your application to run differently in a partial trust environment than on your local computer. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] restricts access to such critical local resources as the file system, network, and unmanaged APIs, among other things. The security settings affect the ability to call the Microsoft Win32 API or other APIs that cannot be verified by the security system. Security also affects other aspects of your application, including file and data access, and printing. For more information about file and data access in a partial trust environment, see [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md). For more information about printing in a partial trust environment, see [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md).  
@@ -41,7 +36,7 @@ manager: "wpickett"
 |<xref:System.Security.Permissions.UIPermissionClipboard.OwnClipboard>|The Clipboard can be used with some restrictions. The ability to put data on the Clipboard (Copy or Cut command operations) is unrestricted. Intrinsic controls that accept paste, such as a text box, can accept Clipboard data, but user controls cannot programmatically read from the Clipboard.|  
 |<xref:System.Security.Permissions.UIPermissionClipboard.NoClipboard>|The Clipboard cannot be used.|  
   
- By default, the Local Intranet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.AllClipboard> access and the Internet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.OwnClipboard> access. This means that the application can copy data to the Clipboard, but the application cannot programmatically paste to or read from the Clipboard. These restrictions prevent programs without full trust from reading content copied to the Clipboard by another application. If your application requires full Clipboard access but you do not have the permissions, you will have to elevate the permissions for your application. For more information about elevating permissions, see [General Security Policy Administration](http://msdn.microsoft.com/en-us/5121fe35-f0e3-402c-94ab-4f35b0a87b4b).  
+ By default, the Local Intranet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.AllClipboard> access and the Internet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.OwnClipboard> access. This means that the application can copy data to the Clipboard, but the application cannot programmatically paste to or read from the Clipboard. These restrictions prevent programs without full trust from reading content copied to the Clipboard by another application. If your application requires full Clipboard access but you do not have the permissions, you will have to elevate the permissions for your application. For more information about elevating permissions, see [General Security Policy Administration](http://msdn.microsoft.com/library/5121fe35-f0e3-402c-94ab-4f35b0a87b4b).  
   
 ## Window Manipulation  
  The <xref:System.Security.Permissions.UIPermission> class also controls permission to perform window manipulation and other UI-related actions, and the associated <xref:System.Security.Permissions.UIPermissionWindow> enumeration value indicates the level of access. The following table shows the possible permission levels.  
@@ -65,7 +60,7 @@ manager: "wpickett"
 |<xref:System.Windows.Forms.Control>|-   Getting the <xref:System.Windows.Forms.Control.Parent%2A> property.<br />-   Setting the `Region` property.<br />-   Calling the <xref:System.Windows.Forms.Control.FindForm%2A> , <xref:System.Windows.Forms.Control.Focus%2A>, <xref:System.Windows.Forms.Control.FromChildHandle%2A> and <xref:System.Windows.Forms.Control.FromHandle%2A>, <xref:System.Windows.Forms.Control.PreProcessMessage%2A>, <xref:System.Windows.Forms.Control.ReflectMessage%2A>, or <xref:System.Windows.Forms.Control.SetTopLevel%2A> method.<br />-   Calling the <xref:System.Windows.Forms.Control.GetChildAtPoint%2A> method if the control returned is not a child of the calling control.<br />-   Modify control focus inside a container control.|  
 |<xref:System.Windows.Forms.Cursor>|-   Setting the <xref:System.Windows.Forms.Cursor.Clip%2A> property.<br />-   Calling the <xref:System.Windows.Forms.Control.Hide%2A> method.|  
 |<xref:System.Windows.Forms.DataGrid>|-   Calling the <xref:System.Windows.Forms.ContainerControl.ProcessTabKey%2A> method.|  
-|<xref:System.Windows.Forms.Form>|-   Getting the <xref:System.Windows.Forms.Form.ActiveForm%2A> or <xref:System.Windows.Forms.Form.MdiParent%2A> property.<br />-   Setting the <xref:System.Windows.Forms.Form.ControlBox%2A>, <xref:System.Windows.Forms.Form.ShowInTaskbar%2A>, or<xref:System.Windows.Forms.Form.TopMost%2A> property.<br />-   Setting the <xref:System.Windows.Forms.Form.Opacity%2A> property below 50%.<br />-   Setting the <xref:System.Windows.Forms.Form.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Minimized> programmatically.<br />-   Calling the <xref:System.Windows.Forms.Form.Activate%2A> method.<br />-   Using the <xref:System.Windows.Forms.FormBorderStyle.None>, <xref:System.Windows.Forms.FormBorderStyle.FixedToolWindow>, and <xref:System.Windows.Forms.FormBorderStyle.SizableToolWindow><xref:System.Windows.Forms.FormBorderStyle> enumeration values.|  
+|<xref:System.Windows.Forms.Form>|-   Getting the <xref:System.Windows.Forms.Form.ActiveForm%2A> or <xref:System.Windows.Forms.Form.MdiParent%2A> property.<br />-   Setting the <xref:System.Windows.Forms.Form.ControlBox%2A>, <xref:System.Windows.Forms.Form.ShowInTaskbar%2A>, or <xref:System.Windows.Forms.Form.TopMost%2A> property.<br />-   Setting the <xref:System.Windows.Forms.Form.Opacity%2A> property below 50%.<br />-   Setting the <xref:System.Windows.Forms.Form.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Minimized> programmatically.<br />-   Calling the <xref:System.Windows.Forms.Form.Activate%2A> method.<br />-   Using the <xref:System.Windows.Forms.FormBorderStyle.None>, <xref:System.Windows.Forms.FormBorderStyle.FixedToolWindow>, and <xref:System.Windows.Forms.FormBorderStyle.SizableToolWindow><xref:System.Windows.Forms.FormBorderStyle> enumeration values.|  
 |<xref:System.Windows.Forms.NotifyIcon>|-   Using the <xref:System.Windows.Forms.NotifyIcon> component is completely restricted.|  
   
  The <xref:System.Security.Permissions.UIPermissionWindow.SafeSubWindows> value restricts the actions listed in the following table, in addition to the restrictions placed by the <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows> value.  
@@ -99,11 +94,11 @@ manager: "wpickett"
   
  If your application does not have permission to call unmanaged code, your application must request <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission, or you must consider alternative ways of implementing features; in many cases, Windows Forms provides a managed alternative to Win32 API functions. If no alternative means exist and the application must access unmanaged code, you will have to elevate the permissions for the application.  
   
- Permission to call unmanaged code allows an application to perform most anything. Therefore, permission to call unmanaged code should only be granted for applications that come from a trusted source. Alternatively, depending on the application, the piece of application functionality that makes the call to unmanaged code could be optional, or enabled in the full trust environment only. For more information about dangerous permissions, see [Dangerous Permissions and Policy Administration](../../../docs/framework/misc/dangerous-permissions-and-policy-administration.md). For more information about elevating permissions, see [NIB: General Security Policy Administration](http://msdn.microsoft.com/en-us/5121fe35-f0e3-402c-94ab-4f35b0a87b4b).  
+ Permission to call unmanaged code allows an application to perform most anything. Therefore, permission to call unmanaged code should only be granted for applications that come from a trusted source. Alternatively, depending on the application, the piece of application functionality that makes the call to unmanaged code could be optional, or enabled in the full trust environment only. For more information about dangerous permissions, see [Dangerous Permissions and Policy Administration](../../../docs/framework/misc/dangerous-permissions-and-policy-administration.md). For more information about elevating permissions, see [NIB: General Security Policy Administration](http://msdn.microsoft.com/library/5121fe35-f0e3-402c-94ab-4f35b0a87b4b).  
   
 ## See Also  
- [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)   
- [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)   
- [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)   
- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)   
+ [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)  
+ [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)  
+ [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)  
+ [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)  
  [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications)

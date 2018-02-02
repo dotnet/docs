@@ -70,7 +70,7 @@
   
 <a name="Primitive"></a>   
 ## Primitive types and IConvertible  
- You directly or indirectly call a primitive type's <xref:System.IConvertible> implementation that does not support a particular conversion. For example, trying to convert a <xref:System.Boolean> value to a <xref:System.Char> or a <xref:System.DateTime> value to an <xref:System.Int32> throws an <xref:System.InvalidCastException> exception. The following example calls both the <xref:System.Boolean.System%23IConvertible%23ToChar%2A?displayProperty=fullName> and <xref:System.Convert.ToChar%28System.Boolean%29?displayProperty=fullName> methods to convert a <xref:System.Boolean> value to a <xref:System.Char>. In both cases, the method call throws an <xref:System.InvalidCastException> exception.  
+ You directly or indirectly call a primitive type's <xref:System.IConvertible> implementation that does not support a particular conversion. For example, trying to convert a <xref:System.Boolean> value to a <xref:System.Char> or a <xref:System.DateTime> value to an <xref:System.Int32> throws an <xref:System.InvalidCastException> exception. The following example calls both the <xref:System.Boolean.System%23IConvertible%23ToChar%2A?displayProperty=nameWithType> and <xref:System.Convert.ToChar%28System.Boolean%29?displayProperty=nameWithType> methods to convert a <xref:System.Boolean> value to a <xref:System.Char>. In both cases, the method call throws an <xref:System.InvalidCastException> exception.  
   
  [!code-csharp[System.InvalidCastException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidcastexception/cs/iconvertible1.cs#2)]
  [!code-vb[System.InvalidCastException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidcastexception/vb/iconvertible1.vb#2)]  
@@ -79,7 +79,7 @@
   
 <a name="ChangeType"></a>   
 ## The Convert.ChangeType method  
- You've called the <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method to convert an object from one type to another, but one or both types don't implement the <xref:System.IConvertible> interface.  
+ You've called the <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method to convert an object from one type to another, but one or both types don't implement the <xref:System.IConvertible> interface.  
   
  In most cases, because the conversion is not supported, there is no workaround. In some cases, a possible workaround is to manually assign property values from the source type to similar properties of a the target type.  
   
@@ -138,6 +138,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -214,7 +215,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
   
  The following table shows the initial property values for an instance of <xref:System.InvalidCastException>.  
   
@@ -308,6 +309,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -344,7 +346,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
   
  This constructor supplies an HRESULT value that is accessible to inheritors of the <xref:System.InvalidCastException> class, via the protected <xref:System.Exception.HResult%2A> property of the <xref:System.Exception> class.  
   
@@ -359,5 +361,18 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidCastException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

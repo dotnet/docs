@@ -103,7 +103,7 @@
     </Member>
     <Member MemberName="Parameters">
       <MemberSignature Language="C#" Value="public void Parameters (int parameterCount, out System.Reflection.Metadata.Ecma335.ReturnTypeEncoder returnType, out System.Reflection.Metadata.Ecma335.ParametersEncoder parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Parameters(int32 parameterCount, valuetype System.Reflection.Metadata.Ecma335.ReturnTypeEncoder returnType, valuetype System.Reflection.Metadata.Ecma335.ParametersEncoder parameters) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Parameters(int32 parameterCount, [out] valuetype System.Reflection.Metadata.Ecma335.ReturnTypeEncoder&amp; returnType, [out] valuetype System.Reflection.Metadata.Ecma335.ParametersEncoder&amp; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodSignatureEncoder.Parameters(System.Int32,System.Reflection.Metadata.Ecma335.ReturnTypeEncoder@,System.Reflection.Metadata.Ecma335.ParametersEncoder@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

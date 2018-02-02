@@ -20,7 +20,7 @@ public class Example
       }
    }
 }
-// The example displays the following output:
+// The example displays output like the following:
 //       Temperature Information:
 //       
 //       Temperature at  2:00 PM on  6/1/2010:  87.5°F

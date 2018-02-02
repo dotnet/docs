@@ -38,7 +38,7 @@
 ## Remarks  
  You can get attributes for files and directories by calling the <xref:System.IO.File.GetAttributes%2A> method, and you can set them by calling the <xref:System.IO.File.SetAttributes%2A> method.  
   
- It is not possible to change the compression status of a <xref:System.IO.File> object by using the <xref:System.IO.File.SetAttributes%2A> method. Instead, you must actually compress the file using either a compression tool or one of the classes in the <xref:System.IO.Compression?displayProperty=fullName> namespace.  
+ It is not possible to change the compression status of a <xref:System.IO.File> object by using the <xref:System.IO.File.SetAttributes%2A> method. Instead, you must actually compress the file using either a compression tool or one of the classes in the <xref:System.IO.Compression?displayProperty=nameWithType> namespace.  
   
    
   
@@ -50,6 +50,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.IO.File.GetAttributes(System.String)" />
+    <altmember cref="M:System.IO.File.SetAttributes(System.String,System.IO.FileAttributes)" />
   </Docs>
   <Members>
     <Member MemberName="Archive">

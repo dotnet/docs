@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
   </Docs>
   <Members>
     <Member MemberName="AddrOfPinnedObject">
@@ -93,6 +94,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The handle is any type other than <see cref="F:System.Runtime.InteropServices.GCHandleType.Pinned" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>
     </Member>
     <Member MemberName="Alloc">
@@ -146,6 +148,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">An instance with nonprimitive (non-blittable) members cannot be pinned.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>
     </Member>
     <Member MemberName="Alloc">
@@ -186,6 +189,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">An instance with nonprimitive (non-blittable) members cannot be pinned.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -407,6 +411,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -446,7 +451,7 @@
         <returns>
           <see langword="true" /> if the <paramref name="a" /> and <paramref name="b" /> parameters are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.GCHandle.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.GCHandle.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -480,10 +485,19 @@
         <Parameter Name="value" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">An <see cref="T:System.IntPtr" /> that indicates the handle for which the conversion is required.</param>
+        <summary>A <see cref="T:System.Runtime.InteropServices.GCHandle" /> is stored using an internal integer representation.</summary>
+        <returns>The stored <see cref="T:System.Runtime.InteropServices.GCHandle" /> object using an internal integer representation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method allows you to retrieve a <xref:System.Runtime.InteropServices.GCHandle> from an integer value.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -516,10 +530,19 @@
         <Parameter Name="value" Type="System.Runtime.InteropServices.GCHandle" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Runtime.InteropServices.GCHandle" /> for which the integer is required.</param>
+        <summary>A <see cref="T:System.Runtime.InteropServices.GCHandle" /> is stored using an internal integer representation.</summary>
+        <returns>The integer value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to retrieve the integer value from a <xref:System.Runtime.InteropServices.GCHandle>.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -559,7 +582,7 @@
         <returns>
           <see langword="true" /> if the <paramref name="a" /> and <paramref name="b" /> parameters are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.GCHandle.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.GCHandle.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -605,6 +628,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The handle was freed, or never initialized.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>
     </Member>
     <Member MemberName="ToIntPtr">
@@ -653,5 +677,33 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to another type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Alloc">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates a handle for the specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

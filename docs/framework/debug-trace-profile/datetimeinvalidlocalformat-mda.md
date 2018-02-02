@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "dates [.NET Framework], formatting"
   - "invalid date time local format"
@@ -29,6 +24,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # dateTimeInvalidLocalFormat MDA
 The `dateTimeInvalidLocalFormat` MDA is activated when a <xref:System.DateTime> instance that is stored as a Universal Coordinated Time (UTC) is formatted using a format that is intended to be used only for local <xref:System.DateTime> instances. This MDA is not activated for unspecified or default <xref:System.DateTime> instances.  
@@ -42,7 +39,7 @@ Serialize(myDateTime.ToString("yyyy-MM-dd'T'HH:mm:ss.fffffffzzz"));
 ```  
   
 ### Cause  
- The 'z' format for the <xref:System.DateTime.ToString%2A?displayProperty=fullName> method includes the local time zone offset, for example, "+10:00" for Sydney time. As such, it will only produce a meaningful result if the value of the <xref:System.DateTime> is local. If the value is UTC time, <xref:System.DateTime.ToString%2A?displayProperty=fullName> includes the local time zone offset, but it does not display or adjust the time zone specifier.  
+ The 'z' format for the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> method includes the local time zone offset, for example, "+10:00" for Sydney time. As such, it will only produce a meaningful result if the value of the <xref:System.DateTime> is local. If the value is UTC time, <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> includes the local time zone offset, but it does not display or adjust the time zone specifier.  
   
 ### Resolution  
  UTC <xref:System.DateTime> instances should be formatted in a way that indicates that they are UTC. The recommended format for UTC times to use a 'Z' to denote UTC time:  
@@ -96,5 +93,5 @@ String serialized = XmlConvert.ToString(myDateTime,
 ```  
   
 ## See Also  
- <xref:System.Globalization.DateTimeFormatInfo>   
+ <xref:System.Globalization.DateTimeFormatInfo>  
  [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

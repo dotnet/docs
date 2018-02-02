@@ -612,7 +612,7 @@
     </Member>
     <Member MemberName="TryCreateKeyIdentifierClauseFromTokenXml">
       <MemberSignature Language="C#" Value="public virtual bool TryCreateKeyIdentifierClauseFromTokenXml (System.Xml.XmlElement element, System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle tokenReferenceStyle, out System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryCreateKeyIdentifierClauseFromTokenXml(class System.Xml.XmlElement element, valuetype System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle tokenReferenceStyle, class System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryCreateKeyIdentifierClauseFromTokenXml(class System.Xml.XmlElement element, valuetype System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle tokenReferenceStyle, [out] class System.IdentityModel.Tokens.SecurityKeyIdentifierClause&amp; securityKeyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.TryCreateKeyIdentifierClauseFromTokenXml(System.Xml.XmlElement,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle,System.IdentityModel.Tokens.SecurityKeyIdentifierClause@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -712,5 +712,14 @@
         <exception cref="T:System.InvalidOperationException">The token was not successfully written.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

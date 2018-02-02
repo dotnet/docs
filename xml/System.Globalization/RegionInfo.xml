@@ -43,7 +43,7 @@
 ## Instantiating a RegionInfo Object  
  To instantiate a <xref:System.Globalization.RegionInfo> object, you pass the <xref:System.Globalization.RegionInfo.%23ctor%28System.String%29> constructor either a two-letter region name, such as "US" for the United States, or the name of a specific culture, such as "en-US" for English (United States). However, we recommend that you use a specific culture name instead of a two-letter region name, because a <xref:System.Globalization.RegionInfo> object is not completely language-independent. Several <xref:System.Globalization.RegionInfo> properties, including <xref:System.Globalization.RegionInfo.DisplayName%2A>, <xref:System.Globalization.RegionInfo.NativeName%2A>, and <xref:System.Globalization.RegionInfo.CurrencyNativeName%2A>, depend on culture names.  
   
- The following example illustrates the difference in <xref:System.Globalization.RegionInfo> property values for three objects that represent Belgium. The first is instantiated from a region name (BE) only, while the second and third are instantiated from culture names (fr-BE for French (Belgium) and and nl-BE for Dutch (Belgium), respectively). The example uses reflection to retrieve the property values of each <xref:System.Globalization.RegionInfo> object.  
+ The following example illustrates the difference in <xref:System.Globalization.RegionInfo> property values for three objects that represent Belgium. The first is instantiated from a region name (BE) only, while the second and third are instantiated from culture names (fr-BE for French (Belgium) and nl-BE for Dutch (Belgium), respectively). The example uses reflection to retrieve the property values of each <xref:System.Globalization.RegionInfo> object.  
   
  [!code-csharp[System.Globalization.RegionInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CS/propertyvalues1.cs#2)]
  [!code-vb[System.Globalization.RegionInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo/VB/propertyvalues1.vb#2)]  
@@ -74,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.CultureInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +124,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="culture" /> specifies either an invariant, custom, or neutral culture.</exception>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -335,6 +337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.ISOCurrencySymbol" />
       </Docs>
     </Member>
     <Member MemberName="CurrentRegion">
@@ -424,6 +427,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="EnglishName">
@@ -472,6 +480,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -512,7 +525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
    
   
@@ -525,6 +538,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GeoId">
@@ -611,12 +625,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
  This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.RegionInfo.Equals%2A> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Globalization.RegionInfo.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsMetric">
@@ -823,6 +840,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.CurrencySymbol" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -862,9 +880,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.Int32%29?displayProperty=fullName> constructor that takes a culture identifier parameter, the <xref:System.Globalization.RegionInfo.Name%2A> property value is one of the two-letter codes defined in ISO 3166 for the country/region and is formatted in uppercase. For example, the two-letter code for the United States is "US".  
+ If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor that takes a culture identifier parameter, the <xref:System.Globalization.RegionInfo.Name%2A> property value is one of the two-letter codes defined in ISO 3166 for the country/region and is formatted in uppercase. For example, the two-letter code for the United States is "US".  
   
- If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.String%29?displayProperty=fullName> constructor and is passed a full culture name such as "en-US", the <xref:System.Globalization.RegionInfo.Name%2A> property value is a full culture name and not just the region name.  
+ If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor and is passed a full culture name such as "en-US", the <xref:System.Globalization.RegionInfo.Name%2A> property value is a full culture name and not just the region name.  
   
    
   
@@ -877,6 +895,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="NativeName">
@@ -979,6 +1002,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="ThreeLetterWindowsRegionName">
@@ -1022,6 +1050,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1058,7 +1091,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
  This method returns the value of the <xref:System.Globalization.RegionInfo.Name%2A> property.  
   
@@ -1068,6 +1101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="TwoLetterISORegionName">
@@ -1126,7 +1161,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.RegionInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

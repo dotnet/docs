@@ -11,17 +11,17 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ContextMenu"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ContextMenu component [Windows Forms], about ContextMenu component"
-  - "context menus, ContextMenu component"
-  - "shortcut menus, ContextMenu component"
+  - "context menus [Windows Forms], ContextMenu component"
+  - "shortcut menus [Windows Forms], ContextMenu component"
 ms.assetid: 49d6398f-d3c4-4679-84fa-1de07b68b05e
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ContextMenu Component Overview (Windows Forms)
 > [!IMPORTANT]
@@ -35,6 +35,6 @@ manager: "wpickett"
  The key property of the <xref:System.Windows.Forms.ContextMenu> component is the <xref:System.Windows.Forms.Menu.MenuItems%2A> property. You can add menu items by programmatically creating <xref:System.Windows.Forms.MenuItem> objects and adding them to the <xref:System.Windows.Forms.Menu.MenuItemCollection> of the shortcut menu. Because the items in a shortcut menu are usually drawn from other menus, you will most frequently add items to a shortcut menu by copying them.  
   
 ## See Also  
- <xref:System.Windows.Forms.ContextMenu>   
- <xref:System.Windows.Forms.MenuStrip>   
+ <xref:System.Windows.Forms.ContextMenu>  
+ <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ContextMenuStrip>

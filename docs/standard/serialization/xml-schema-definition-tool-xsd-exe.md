@@ -9,9 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XML Schema Definition Tool (Xsd.exe)
 The XML Schema Definition (Xsd.exe) tool generates XML schema or common language runtime classes from XDR, XML, and XSD files, or from classes in a runtime assembly.  
@@ -59,7 +62,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
 |**/enableDataBinding**|Implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all generated types to enable data binding. The short form is `/edb`.|  
 |**/enableLinqDataSet**|(Short form: `/eld`.) Specifies that the generated DataSet can be queried against using LINQ to DataSet. This option is used when the /dataset option is also specified. For more information, see [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md) and [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md). For general information about using LINQ, see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).|  
 |**/f**[**ields**]|Generates fields instead of properties. By default, properties are generated.|  
-|**/l**[**anguage**]**:***language*|Specifies the programming language to use. Choose from `CS` (C#, which is the default), `VB` (Visual Basic), `JS` (JScript), or `VJS` (Visual J#). You can also specify a fully qualified name for a class implementing <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=fullName>|  
+|**/l**[**anguage**]**:***language*|Specifies the programming language to use. Choose from `CS` (C#, which is the default), `VB` (Visual Basic), `JS` (JScript), or `VJS` (Visual J#). You can also specify a fully qualified name for a class implementing <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|  
 |**/n**[**amespace**]**:***namespace*|Specifies the runtime namespace for the generated types. The default namespace is `Schemas`.|  
 |**/nologo**|Suppresses the banner.|  
 |**/order**|Generates explicit order identifiers on all particle members.|  
@@ -85,7 +88,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
  Generates common language runtime <xref:System.Data.DataSet> classes from an XSD schema file. The generated classes provide a rich object model for regular XML data.  
   
  XSD to Classes  
- Generates runtime classes from an XSD schema file. The generated classes can be used in conjunction with <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> to read and write XML code that follows the schema.  
+ Generates runtime classes from an XSD schema file. The generated classes can be used in conjunction with <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType> to read and write XML code that follows the schema.  
   
  Classes to XSD  
  Generates an XML schema from a type or types in a runtime assembly file. The generated schema defines the XML format used by `System.Xml.Serialization.XmlSerializer`.  
@@ -227,9 +230,9 @@ xsd myAssembly.dll
   
 ## See Also  
  <xref:System.Data.DataSet>  
- <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>   
+ <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>  
  [Tools](../../../docs/framework/tools/index.md)      
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)   
- [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)   
- [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)   
+ [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
+ [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)  
+ [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)  
  [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)

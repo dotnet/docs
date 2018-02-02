@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the [\&lt;add\&gt; Element for connectionManagement (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-connectionmanagement-network-settings.md) configuration element.  
+ This class corresponds to the [&lt;add&gt; Element for connectionManagement (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-connectionmanagement-network-settings.md) configuration element.  
   
  This class is used to specify the maximum number of simultaneous connections to a remote computer.  
   
@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.ServicePointManager" />
+    <altmember cref="T:System.Net.ServicePoint" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -126,7 +132,7 @@
 ## Remarks  
  This property specifies how many simultaneous connections are allowed between the local computer and the remote computer. The remote computer is specified using the <xref:System.Net.Configuration.ConnectionManagementElement.Address%2A> property.  
   
- The <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property is per <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName>. If an application is not changing <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName> from the default, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property applies to the entire application domain. If only a single application domain is running in your application, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property setting is application-wide.  
+ The <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property is per <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=nameWithType>. If an application is not changing <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=nameWithType> from the default, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property applies to the entire application domain. If only a single application domain is running in your application, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property setting is application-wide.  
   
  ]]></format>
         </remarks>
@@ -150,5 +156,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

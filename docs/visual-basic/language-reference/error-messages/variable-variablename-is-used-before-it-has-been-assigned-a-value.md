@@ -1,40 +1,21 @@
 ---
 title: "Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc42104"
   - "BC42104"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42104"
 ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value
 Variable '\<variablename>' is used before it has been assigned a value. A null reference exception could result at run time.  
@@ -54,6 +35,6 @@ Variable '\<variablename>' is used before it has been assigned a value. A null r
 -   One way to guarantee that the variable always has a valid value is to initialize it as part of its declaration. See "Initialization" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
   
 ## See Also  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
  [Troubleshooting Variables](../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)

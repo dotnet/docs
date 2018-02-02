@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::IsStronglyNamed"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsStronglyNamed method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::IsStronglyNamed method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager::IsStronglyNamed Method
 Gets a value that indicates whether the specified assembly is strongly named.  

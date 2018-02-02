@@ -282,6 +282,44 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetLiveSettingCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetLiveSettingCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalizedControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override string GetLocalizedControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetLocalizedControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetLocalizedControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNameCore">
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
@@ -345,17 +383,17 @@
 ## Remarks  
  If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> object:  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCell> object that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> is not read-only.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.Invoke?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridCell> object that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> is not read-only.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCell> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> is not part of the row that is a placeholder for a new item in a <xref:System.Windows.Controls.DataGrid> object.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.Value?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridCell> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> is not part of the row that is a placeholder for a new item in a <xref:System.Windows.Controls.DataGrid> object.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCell> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> can be selected.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.SelectionItem?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridCell> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> can be selected.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.ScrollItem?displayProperty=nameWithType>.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.GridItem?displayProperty=nameWithType>.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.TableItem?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

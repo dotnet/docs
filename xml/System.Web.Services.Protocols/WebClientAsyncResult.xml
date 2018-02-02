@@ -23,10 +23,11 @@
 ## Remarks  
  When you call the `BeginMyMethodName` method, where `MyMethodName` is the synchronous version of the method, on an XML Web service proxy class, an instance of the <xref:System.Web.Services.Protocols.WebClientAsyncResult> is returned. Following the standard asynchronous design pattern, that instance of <xref:System.Web.Services.Protocols.WebClientAsyncResult> must later be passed to `EndMyMethodName` to complete the asynchronous method call.  
   
- For details on calling XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/en-us/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For details on calling XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IAsyncResult" />
   </Docs>
   <Members>
     <Member MemberName="Abort">
@@ -49,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The XML Web service request is canceled if the underlying transport supports the <xref:System.Net.WebRequest.Abort%2A?displayProperty=fullName> method. If the corresponding `End` method is subsequently called after the <xref:System.Web.Services.Protocols.WebClientAsyncResult.Abort%2A> method, a <xref:System.Net.WebException> is thrown, setting the <xref:System.Net.WebException.Status%2A> property to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
+ The XML Web service request is canceled if the underlying transport supports the <xref:System.Net.WebRequest.Abort%2A?displayProperty=nameWithType> method. If the corresponding `End` method is subsequently called after the <xref:System.Web.Services.Protocols.WebClientAsyncResult.Abort%2A> method, a <xref:System.Net.WebException> is thrown, setting the <xref:System.Net.WebException.Status%2A> property to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
   
  ]]></format>
         </remarks>
@@ -72,6 +73,7 @@
         <summary>Gets the object provided in the last parameter to the <see langword="Begin" /> method asynchronous call.</summary>
         <value>The <see cref="T:System.Object" /> provided in the last parameter to the <see langword="Begin" /> method call.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IAsyncResult.AsyncState" />
       </Docs>
     </Member>
     <Member MemberName="AsyncWaitHandle">
@@ -100,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IAsyncResult.AsyncWaitHandle" />
       </Docs>
     </Member>
     <Member MemberName="CompletedSynchronously">

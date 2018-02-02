@@ -10,14 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "WPF class library"
-  - "class library"
-  - "Windows Presentation Foundation class library"
+  - "WPF class library [WPF]"
+  - "Windows Presentation Foundation class library [WPF]"
 ms.assetid: dcb35927-00ad-4141-a1ab-a7a524dd3f10
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Class Library (WPF)
 The following links refer to namespaces that contain [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] [!INCLUDE[TLA#tla_api#plural](../../../includes/tlasharptla-apisharpplural-md.md)].  

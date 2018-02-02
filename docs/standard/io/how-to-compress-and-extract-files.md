@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "I/O [.NET Framework], compression"
   - "compression"
@@ -17,6 +20,9 @@ caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Compress and Extract Files
 The <xref:System.IO.Compression> namespace contains the following types for compressing and decompressing files and streams. You can also use these types to read and modify the contents of a compressed file:  
@@ -40,7 +46,7 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
  [!code-vb[System.IO.Compression.ZipFile#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.zipfile/vb/program1.vb#1)]  
   
 ## Example  
- The next example shows how to iterate through the contents of an existing .zip file and extract files that have a .txt extension. It uses the <xref:System.IO.Compression.ZipArchive> class to access an existing .zip file, and the <xref:System.IO.Compression.ZipArchiveEntry> class to inspect the individual entries in the compressed file. It uses an extension method (<xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A>) for the <xref:System.IO.Compression.ZipArchiveEntry> object. The extension method is available in the <xref:System.IO.Compression.ZipFileExtensions?displayProperty=fullName> class. To use the <xref:System.IO.Compression.ZipFileExtensions> class, you must reference the `System.IO.Compression.FileSystem` assembly in your project.  
+ The next example shows how to iterate through the contents of an existing .zip file and extract files that have a .txt extension. It uses the <xref:System.IO.Compression.ZipArchive> class to access an existing .zip file, and the <xref:System.IO.Compression.ZipArchiveEntry> class to inspect the individual entries in the compressed file. It uses an extension method (<xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A>) for the <xref:System.IO.Compression.ZipArchiveEntry> object. The extension method is available in the <xref:System.IO.Compression.ZipFileExtensions?displayProperty=nameWithType> class. To use the <xref:System.IO.Compression.ZipFileExtensions> class, you must reference the `System.IO.Compression.FileSystem` assembly in your project.  
   
  [!code-csharp[System.IO.Compression.ZipArchive#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
  [!code-vb[System.IO.Compression.ZipArchive#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]  
@@ -58,9 +64,9 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
  [!code-vb[IO.Compression.GZip1#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.GZip1/VB/gziptest.vb#1)]  
   
 ## See Also  
- <xref:System.IO.Compression.ZipArchive>   
- <xref:System.IO.Compression.ZipFile>   
- <xref:System.IO.Compression.ZipArchiveEntry>   
- <xref:System.IO.Compression.DeflateStream>   
- <xref:System.IO.Compression.GZipStream>   
+ <xref:System.IO.Compression.ZipArchive>  
+ <xref:System.IO.Compression.ZipFile>  
+ <xref:System.IO.Compression.ZipArchiveEntry>  
+ <xref:System.IO.Compression.DeflateStream>  
+ <xref:System.IO.Compression.GZipStream>  
  [File and Stream I-O](../../../docs/standard/io/index.md)

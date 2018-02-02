@@ -55,7 +55,7 @@
     </Member>
     <Member MemberName="TryGetOptionValue">
       <MemberSignature Language="C#" Value="public static bool TryGetOptionValue (System.Collections.IEnumerable attributes, string optionName, out object optionValue);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetOptionValue(class System.Collections.IEnumerable attributes, string optionName, object optionValue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetOptionValue(class System.Collections.IEnumerable attributes, string optionName, [out] object&amp; optionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.TryGetOptionValue(System.Collections.IEnumerable,System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -35,6 +35,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.TextDecorations" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -127,7 +128,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
   
@@ -157,7 +158,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  Resource references, data bindings, and animations are not copied, but their current values are.  
   
@@ -291,6 +292,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.TextDecoration.PenThicknessUnit" />
       </Docs>
     </Member>
     <Member MemberName="PenOffset">
@@ -333,6 +335,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.TextDecoration.PenOffsetUnit" />
       </Docs>
     </Member>
     <Member MemberName="PenOffsetProperty">
@@ -485,5 +488,14 @@ Example of an underline styled with a linear gradient brush and dashed pen
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TextDecoration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

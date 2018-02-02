@@ -10,17 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "OpenFileDialog component, opening files"
-  - "OpenFile method"
-  - "OpenFile method, OpenFileDialog component"
-  - "files, opening with OpenFileDialog component"
+  - "OpenFileDialog component [Windows Forms], opening files"
+  - "OpenFile method [Windows Forms], OpenFileDialog component"
+  - "files [Windows Forms], opening with OpenFileDialog component"
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Open Files Using the OpenFileDialog Component
 The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse the folders of their computer or any computer on the network and select one or more files to open. The dialog box returns the path and name of the file the user selected in the dialog box.  
@@ -38,7 +41,7 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
      The example below uses the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open an instance of the <xref:System.Windows.Forms.OpenFileDialog> component. When a file is chosen and the user clicks **OK**, the file selected in the dialog box opens. In this case, the contents are displayed in a message box, just to show that the file stream has been read.  
   
     > [!IMPORTANT]
-    >  To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=fullName> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
   
      The example assumes your form has a <xref:System.Windows.Forms.Button> control and an <xref:System.Windows.Forms.OpenFileDialog> component.  
   
@@ -102,7 +105,7 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
      The <xref:System.Windows.Forms.OpenFileDialog> component's <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method returns the bytes that compose the file. These bytes give you a stream to read from. In the example below, an <xref:System.Windows.Forms.OpenFileDialog> component is instantiated with a "cursor" filter on it, allowing the user to choose only files with the file name extension`.cur`. If a`.cur` file is chosen, the form's cursor is set to the selected cursor.  
   
     > [!IMPORTANT]
-    >  To call the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=fullName> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  To call the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
   
      The example assumes your form has a <xref:System.Windows.Forms.Button> control.  
   
@@ -179,5 +182,5 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.OpenFileDialog>   
+ <xref:System.Windows.Forms.OpenFileDialog>  
  [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)

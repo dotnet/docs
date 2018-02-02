@@ -471,7 +471,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uninstalls a previously installed [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application that uses the `<customUX>` element in the [\&lt;entryPoint\&gt; Element](http://msdn.microsoft.com/library/10ad3083-10c1-4189-a870-9bba2eab244f).  
+ This method uninstalls a previously installed [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application that uses the `<customUX>` element in the [&lt;entryPoint&gt; Element](http://msdn.microsoft.com/library/10ad3083-10c1-4189-a870-9bba2eab244f).  
   
  Custom installers that do not create an Add or Remove Programs entry for the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application must store the subscription identifier found in the <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> property during installation.  
   
@@ -479,5 +479,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Deployment.Application.InPlaceHostingManager" /> to download and install the specified application.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AssertApplicationRequirements">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the ClickOnce application has the appropriate permissions and platform dependencies to run on the local computer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

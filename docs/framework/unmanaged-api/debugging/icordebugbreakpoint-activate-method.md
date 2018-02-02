@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugBreakpoint::Activate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugBreakpoint::Activate method [.NET Framework debugging]"
   - "Activate method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBreakpoint::Activate Method
 Sets the active state of this `ICorDebugBreakpoint`.  

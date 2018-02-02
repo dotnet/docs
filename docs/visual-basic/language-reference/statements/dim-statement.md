@@ -1,62 +1,43 @@
 ---
 title: "Dim Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Dim"
   - "Dim"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Public keyword, in Dim statement"
-  - "Dim statement"
-  - "fixed-length strings, declaring"
+  - "Public keyword [Visual Basic], in Dim statement"
+  - "Dim statement [Visual Basic]"
+  - "fixed-length strings [Visual Basic], declaring"
   - "variables [Visual Basic], declaring"
-  - "WithEvents keyword, Dim statement"
-  - "dynamic arrays, Dim statement"
+  - "WithEvents keyword [Visual Basic], Dim statement"
+  - "dynamic arrays [Visual Basic], Dim statement"
   - "variables [Visual Basic], initializing"
   - "{} braces"
-  - "fields, as member variables"
-  - "declarations, dynamic arrays"
-  - "member variables"
-  - "default values"
+  - "fields [Visual Basic], as member variables"
+  - "declarations [Visual Basic], dynamic arrays"
+  - "member variables [Visual Basic]"
+  - "default values [Visual Basic]"
   - "data types [Visual Basic], assigning"
   - "braces {}"
-  - "As keyword, in Dim statement"
+  - "As keyword [Visual Basic], in Dim statement"
   - "arrays [Visual Basic], declaring"
-  - "New keyword, Dim statement"
-  - "To keyword, in Dim statement"
-  - "storage, allocating"
-  - "local variables"
-  - "declaration statements"
-  - "Dim statement, syntax"
+  - "New keyword [Visual Basic], Dim statement"
+  - "To keyword [Visual Basic], in Dim statement"
+  - "storage [Visual Basic], allocating"
+  - "local variables [Visual Basic]"
+  - "declaration statements [Visual Basic]"
+  - "Dim statement [Visual Basic], syntax"
   - "variables [Visual Basic], member and local"
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
 caps.latest.revision: 72
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Dim Statement (Visual Basic)
 Declares and allocates storage space for one or more variables.  
@@ -334,16 +315,16 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
  [!code-vb[VbVbalrStatements#145](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_4.vb)]  
   
 ## See Also  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)   
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)   
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)   
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)   
- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
- [How to: Declare an Object by Using an Object Initializer](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)   
+ [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
+ [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
+ [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
+ [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
+ [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)  
+ [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
+ [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
+ [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
+ [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
+ [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
+ [How to: Declare an Object by Using an Object Initializer](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)  
  [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

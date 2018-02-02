@@ -25,12 +25,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.AxHost.State> can be retrieved using the <xref:System.Windows.Forms.AxHost.OcxState%2A?displayProperty=fullName> property, or by reading the control's state from a data stream.  
+ The <xref:System.Windows.Forms.AxHost.State> can be retrieved using the <xref:System.Windows.Forms.AxHost.OcxState%2A?displayProperty=nameWithType> property, or by reading the control's state from a data stream.  
   
  For more information, see the documentation for `IPersistStream` and `IPersistPropertyBag` in the MSDN library. `IPersistStream` can be found in the interface reference section of the COM SDK documentation, and `IPersistPropertyBag` can be found in the COM Fundamentals interface reference section of the COM SDK documentation.  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.AxHost.OcxState" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -128,5 +129,14 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for executing unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.State" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,7 +20,7 @@
   
  If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods of this class will draw the progress bar with the current visual style. Otherwise, the methods and properties of this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.ProgressBarRenderer.IsSupported%2A> property.  
   
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Bar?displayProperty=fullName>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.BarVertical?displayProperty=fullName>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Chunk?displayProperty=fullName>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.ChunkVertical?displayProperty=fullName> classes. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=nameWithType> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Bar?displayProperty=nameWithType>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.BarVertical?displayProperty=nameWithType>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Chunk?displayProperty=nameWithType>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.ChunkVertical?displayProperty=nameWithType> classes. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
   
    
   
@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
   </Docs>
   <Members>
     <Member MemberName="ChunkSpaceThickness">
@@ -284,7 +286,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ProgressBarRenderer.DrawVerticalChunks%2A> method in a <xref:System.Windows.Forms.Timer.Tick?displayProperty=fullName> event handler to draw each increment of a progress bar. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ProgressBarRenderer> class.  
+ The following code example uses the <xref:System.Windows.Forms.ProgressBarRenderer.DrawVerticalChunks%2A> method in a <xref:System.Windows.Forms.Timer.Tick?displayProperty=nameWithType> event handler to draw each increment of a progress bar. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ProgressBarRenderer> class.  
   
  [!code-cpp[System.Windows.Forms.ProgressBarRenderer#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ProgressBarRenderer/cpp/form1.cpp#6)]
  [!code-csharp[System.Windows.Forms.ProgressBarRenderer#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ProgressBarRenderer/CS/form1.cs#6)]
@@ -336,6 +338,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.VisualStyleState" />
       </Docs>
     </Member>
   </Members>

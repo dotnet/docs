@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "profiling [.NET Framework], using the unmanaged API"
   - "native API reference [.NET Framework], profiling"
@@ -20,6 +18,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling (Unmanaged API Reference)
 The profiling API enables a profiler to monitor a program's execution by the common language runtime (CLR).  

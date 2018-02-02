@@ -33,7 +33,7 @@
  To specify a custom command-line arguments string to use when invoking the compilation process, set the string in the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A> property. If a Win32 security token is required to invoke the compiler process, specify the token in the <xref:System.CodeDom.Compiler.CompilerParameters.UserToken%2A> property. To include .NET Framework resource files in the compiled assembly, add the names of the resource files to the <xref:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources%2A> property. To reference .NET Framework resources in another assembly, add the names of the resource files to the <xref:System.CodeDom.Compiler.CompilerParameters.LinkedResources%2A> property. To include a Win32 resource file in the compiled assembly, specify the name of the Win32 resource file in the <xref:System.CodeDom.Compiler.CompilerParameters.Win32Resource%2A> property.  
   
 > [!NOTE]
->  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -218,7 +218,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of this property is an empty string or `null`, the compiler uses the default core assembly. Depending on the compiler version, the default core assembly may be mscorlib.dll or System.Runtime.dll in a Framework directory or reference assembly directory. If the value of this property is not empty, the Code Document Object Model (CodeDOM) explicitly references the specified assembly and emits compiler options that cause the compiler to not reference any assemblies implicitly during compilation.. For compilers that reference the core or standard assembly only implicitly by default, this property can be used on its own. For compilers that implicitly reference assemblies in addition to the core or standard assembly, using this option may require specifying additional entries in the <xref:System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies%2A?displayProperty=fullName>property.  
+ If the value of this property is an empty string or `null`, the compiler uses the default core assembly. Depending on the compiler version, the default core assembly may be mscorlib.dll or System.Runtime.dll in a Framework directory or reference assembly directory. If the value of this property is not empty, the Code Document Object Model (CodeDOM) explicitly references the specified assembly and emits compiler options that cause the compiler to not reference any assemblies implicitly during compilation.. For compilers that reference the core or standard assembly only implicitly by default, this property can be used on its own. For compilers that implicitly reference assemblies in addition to the core or standard assembly, using this option may require specifying additional entries in the <xref:System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  An <xref:System.CodeDom.Compiler.ICodeCompiler> or <xref:System.CodeDom.Compiler.CodeDomProvider> implementation may choose to ignore this property.  
@@ -274,6 +274,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.LinkedResources" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.Win32Resource" />
       </Docs>
     </Member>
     <Member MemberName="Evidence">
@@ -298,6 +301,7 @@
         <value>An  object that represents the security policy permissions to grant the compiled assembly.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability control evidence. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="GenerateExecutable">
@@ -443,6 +447,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.Win32Resource" />
       </Docs>
     </Member>
     <Member MemberName="MainClass">
@@ -552,6 +559,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.StringCollection" />
       </Docs>
     </Member>
     <Member MemberName="TempFiles">
@@ -580,7 +588,7 @@
  The temporary files in the collection are retained or deleted upon the completion of compiler activity based on the value of the <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> property in the collection. The <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> property is set if the collection is created using the <xref:System.CodeDom.Compiler.TempFileCollection.%23ctor%28System.String%2CSystem.Boolean%29> constructor with the `keepFiles` parameter set to `true`.  
   
 > [!NOTE]
->  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -716,7 +724,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.LinkedResources" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

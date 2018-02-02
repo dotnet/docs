@@ -248,5 +248,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources that are used by an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> and, optionally, releases the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

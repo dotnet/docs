@@ -31,10 +31,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/directoryinfo.cs#30fa608717e5ce8e). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use the <xref:System.IO.DirectoryInfo> class for typical operations such as copying, moving, renaming, creating, and deleting directories.  
   
  If you are going to reuse an object several times, consider using the instance method of <xref:System.IO.DirectoryInfo> instead of the corresponding static methods of the <xref:System.IO.Directory> class, because a security check will not always be necessary.  
@@ -72,6 +68,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.File" />
+    <altmember cref="P:System.IO.FileSystemInfo.Attributes" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
+    <altmember cref="T:System.IO.Directory" />
+    <altmember cref="T:System.IO.Path" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -130,6 +131,7 @@
           <paramref name="path" /> contains invalid characters such as ", &lt;, &gt;, or |.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters. The specified path, file name, or both are too long.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files and directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.DriveInfo" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -573,7 +575,7 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of directory information that matches a specified search pattern.</summary>
         <returns>An enumerable collection of directories that matches <paramref name="searchPattern" />.</returns>
         <remarks>
@@ -650,7 +652,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of directory information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of directories that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -774,7 +776,7 @@
 ## Examples  
  The following example enumerates the files under a specified directory and uses a LINQ query to return the names of all files that were created before 2009 by checking the value of the <xref:System.IO.FileSystemInfo.CreationTimeUtc%2A> property.  
   
- If you only need the names of the files, use the static <xref:System.IO.Directory> class for better performance. For an example, see the <xref:System.IO.Directory.EnumerateFiles%28System.String%29?displayProperty=fullName> method.  
+ If you only need the names of the files, use the static <xref:System.IO.Directory> class for better performance. For an example, see the <xref:System.IO.Directory.EnumerateFiles%28System.String%29?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.IO.DirectoryInfo.EnumFiles#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumfiles/cs/program.cs#1)]
  [!code-vb[System.IO.DirectoryInfo.EnumFiles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumfiles/vb/module1.vb#1)]  
@@ -816,7 +818,7 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of file information that matches a search pattern.</summary>
         <returns>An enumerable collection of files that matches <paramref name="searchPattern" />.</returns>
         <remarks>
@@ -903,7 +905,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of file information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of files that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -1026,6 +1028,7 @@
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path encapsulated in the <see cref="T:System.IO.DirectoryInfo" /> object is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="EnumerateFileSystemInfos">
@@ -1054,7 +1057,7 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of file system information that matches a specified search pattern.</summary>
         <returns>An enumerable collection of file system information objects that matches <paramref name="searchPattern" />.</returns>
         <remarks>
@@ -1102,6 +1105,7 @@
           <paramref name="searchPattern" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path encapsulated in the <see cref="T:System.IO.DirectoryInfo" /> object is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="EnumerateFileSystemInfos">
@@ -1131,7 +1135,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of file system information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of file system information objects that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -1182,6 +1186,7 @@
           <paramref name="searchOption" /> is not a valid <see cref="T:System.IO.SearchOption" /> value.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path encapsulated in the <see cref="T:System.IO.DirectoryInfo" /> object is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -1293,7 +1298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method overload is equivalent to calling the <xref:System.IO.Directory.GetAccessControl%2A> method overload and specifying the access control sections <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> (<xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> in Visual Basic).  
+ Calling this method overload is equivalent to calling the <xref:System.IO.Directory.GetAccessControl%2A> method overload and specifying the access control sections <xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType> (<xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType> in Visual Basic).  
   
  Use the <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for the current file.  
   
@@ -1475,7 +1480,7 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an array of directories in the current <see cref="T:System.IO.DirectoryInfo" /> matching the given search criteria.</summary>
         <returns>An array of type <see langword="DirectoryInfo" /> matching <paramref name="searchPattern" />.</returns>
         <remarks>
@@ -1554,7 +1559,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</param>
         <summary>Returns an array of directories in the current <see cref="T:System.IO.DirectoryInfo" /> matching the given search criteria and using a value to determine whether to search subdirectories.</summary>
         <returns>An array of type <see langword="DirectoryInfo" /> matching <paramref name="searchPattern" />.</returns>
@@ -1711,7 +1716,7 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns a file list from the current directory matching the given search pattern.</summary>
         <returns>An array of type <see cref="T:System.IO.FileInfo" />.</returns>
         <remarks>
@@ -1818,7 +1823,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</param>
         <summary>Returns a file list from the current directory matching the given search pattern and using a value to determine whether to search subdirectories.</summary>
         <returns>An array of type <see cref="T:System.IO.FileInfo" />.</returns>
@@ -1934,7 +1939,7 @@
 ## Remarks  
  If there are no files or directories in the <xref:System.IO.DirectoryInfo>, this method returns an empty array. This method is not recursive.  
   
- For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=fullName> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
+ For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=nameWithType> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
   
  This method pre-populates the values of the following <xref:System.IO.FileSystemInfo> properties:  
   
@@ -1963,6 +1968,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is invalid (for example, it is on an unmapped drive).</exception>
+        <altmember cref="T:System.IO.FileSystemInfo" />
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetFileSystemInfos">
@@ -1991,7 +1998,7 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories and files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories and files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Retrieves an array of strongly typed <see cref="T:System.IO.FileSystemInfo" /> objects representing the files and subdirectories that match the specified search criteria.</summary>
         <returns>An array of strongly typed <see langword="FileSystemInfo" /> objects matching the search criteria.</returns>
         <remarks>
@@ -2009,7 +2016,7 @@
   
  This method is not recursive.  
   
- For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=fullName> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
+ For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=nameWithType> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
   
  Wild cards are permitted. For example, the `searchPattern` string "*t" searches for all directory names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all directory names in `path` beginning with the letter "s".  
   
@@ -2048,6 +2055,8 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files and directories and for access to the path. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="T:System.IO.FileSystemInfo" />
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetFileSystemInfos">
@@ -2077,7 +2086,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Retrieves an array of <see cref="T:System.IO.FileSystemInfo" /> objects that represent the files and subdirectories matching the specified search criteria.</summary>
         <returns>An array of file system entries that match the search criteria.</returns>
@@ -2094,7 +2103,7 @@
   
  Characters other than the wildcard are literal characters. For example, the  string "*t" searches for all names in  ending with the letter "t". ". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
- For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=fullName> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
+ For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=nameWithType> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
   
  This method pre-populates the values of the following <xref:System.IO.FileSystemInfo> properties:  
   
@@ -2122,6 +2131,7 @@
           <paramref name="searchOption" /> is not a valid <see cref="T:System.IO.SearchOption" /> value.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -2241,6 +2251,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.FileSystemInfo.FullName" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2420,5 +2431,95 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnumerateDirectories">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerable collection of directory information in the current directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnumerateFileSystemInfos">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerable collection of file system information in the current directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDirectories">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the subdirectories of the current directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSubdirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a subdirectory or subdirectories on the specified path. The specified path can be relative to this instance of the <see cref="T:System.IO.DirectoryInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnumerateFiles">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerable collection of file information in the current directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFiles">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a file list from the current directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Delete">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a <see cref="T:System.IO.DirectoryInfo" /> and its contents from a path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFileSystemInfos">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an array of strongly typed <see cref="T:System.IO.FileSystemInfo" /> objects representing files and subdirectories of the current directory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a directory.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

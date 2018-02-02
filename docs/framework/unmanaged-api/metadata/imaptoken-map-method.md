@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMapToken::Map"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMapToken::Map method [.NET Framework metadata]"
   - "Map method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMapToken::Map Method
 Maps a relationship between the assemblies using metadata signatures.  

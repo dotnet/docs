@@ -1,13 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute.AttributeInfo
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

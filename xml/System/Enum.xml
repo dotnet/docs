@@ -131,14 +131,14 @@
  [!code-csharp[System.Enum.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/classconversion1.cs#7)]
  [!code-vb[System.Enum.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/classconversion1.vb#7)]  
   
- Although the <xref:System.Enum> class provides explicit interface implementations of the <xref:System.IConvertible> interface for converting from an enumeration value to an integral type, you should use the methods of the <xref:System.Convert> class, such as <xref:System.Convert.ToInt32%2A>, to perform these conversions. The following example illustrates how you can use the <xref:System.Enum.GetUnderlyingType%2A> method along with the <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method to convert an enumeration value to its underlying type. Note that this example does not require the underlying type of the enumeration to be known at compile time.  
+ Although the <xref:System.Enum> class provides explicit interface implementations of the <xref:System.IConvertible> interface for converting from an enumeration value to an integral type, you should use the methods of the <xref:System.Convert> class, such as <xref:System.Convert.ToInt32%2A>, to perform these conversions. The following example illustrates how you can use the <xref:System.Enum.GetUnderlyingType%2A> method along with the <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method to convert an enumeration value to its underlying type. Note that this example does not require the underlying type of the enumeration to be known at compile time.  
   
  [!code-csharp[System.Enum.Class#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/classconversion2.cs#8)]
  [!code-vb[System.Enum.Class#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/classconversion2.vb#8)]  
   
 <a name="parsing"></a>   
 ### Parsing enumeration values  
- The <xref:System.Enum.Parse%2A> and <xref:System.Enum.TryParse%2A> methods allow you to convert the string representation of an enumeration value to that value. The string representation can be either the name or the underlying value of an enumeration constant. Note that the parsing methods will successfully convert string representations of numbers that are not members of a particular enumeration if the strings can be converted to a value of the enumeration's underlying type. To prevent this, the <xref:System.Enum.IsDefined%2A> method can be called to ensure that the result of the parsing method is a valid enumeration value. The example illustrates this approach and demonstrates calls to both the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> and <xref:System.Enum.TryParse%60%601%28System.String%2C%60%600%40%29?displayProperty=fullName> methods. Note that the non-generic parsing method returns an object that you may have to cast (in C#) or convert (in Visual Basic) to the appropriate enumeration type.  
+ The <xref:System.Enum.Parse%2A> and <xref:System.Enum.TryParse%2A> methods allow you to convert the string representation of an enumeration value to that value. The string representation can be either the name or the underlying value of an enumeration constant. Note that the parsing methods will successfully convert string representations of numbers that are not members of a particular enumeration if the strings can be converted to a value of the enumeration's underlying type. To prevent this, the <xref:System.Enum.IsDefined%2A> method can be called to ensure that the result of the parsing method is a valid enumeration value. The example illustrates this approach and demonstrates calls to both the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> and <xref:System.Enum.TryParse%60%601%28System.String%2C%60%600%40%29?displayProperty=nameWithType> methods. Note that the non-generic parsing method returns an object that you may have to cast (in C#) or convert (in Visual Basic) to the appropriate enumeration type.  
   
  [!code-csharp[System.Enum.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/classparse1.cs#9)]
  [!code-vb[System.Enum.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/classparse1.vb#9)]  
@@ -226,6 +226,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.ValueType" />
+    <altmember cref="T:System.FlagsAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -330,6 +332,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="target" /> and this instance are not the same type.</exception>
         <exception cref="T:System.InvalidOperationException">This instance is not type <see cref="T:System.SByte" />, <see cref="T:System.Int16" />, <see cref="T:System.Int32" />, <see cref="T:System.Int64" />, <see cref="T:System.Byte" />, <see cref="T:System.UInt16" />, <see cref="T:System.UInt32" />, or <see cref="T:System.UInt64" />.</exception>
+        <altmember cref="M:System.Enum.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -369,7 +372,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Enum.Equals%28System.Object%29?displayProperty=fullName> method overrides <xref:System.ValueType.Equals%28System.Object%29?displayProperty=fullName> to define how enumeration members are evaluated for equality.  
+ The <xref:System.Enum.Equals%28System.Object%29?displayProperty=nameWithType> method overrides <xref:System.ValueType.Equals%28System.Object%29?displayProperty=nameWithType> to define how enumeration members are evaluated for equality.  
   
    
   
@@ -387,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Enum.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -467,6 +471,7 @@
         <exception cref="T:System.FormatException">The <paramref name="format" /> parameter contains an invalid value.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="format" /> equals "X", but the enumeration type is unknown.</exception>
+        <altmember cref="M:System.Enum.ToString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -664,6 +669,7 @@
         <returns>The type code of the underlying type of this instance.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The enumeration type is unknown.</exception>
+        <altmember cref="M:System.Enum.GetUnderlyingType(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingType">
@@ -707,7 +713,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Enum> structure enables values to be represented as named constants. The data type of the enumeration's values is known as its underlying type. For example, the underlying type of the <xref:System.DayOfWeek> enumeration, which consists of constants that represent each day of the week (<xref:System.DayOfWeek?displayProperty=fullName>, <xref:System.DayOfWeek?displayProperty=fullName>, and so on), is <xref:System.Int32>.  
+ The <xref:System.Enum> structure enables values to be represented as named constants. The data type of the enumeration's values is known as its underlying type. For example, the underlying type of the <xref:System.DayOfWeek> enumeration, which consists of constants that represent each day of the week (<xref:System.DayOfWeek.Monday?displayProperty=nameWithType>, <xref:System.DayOfWeek.Tuesday?displayProperty=nameWithType>, and so on), is <xref:System.Int32>.  
   
    
   
@@ -723,6 +729,7 @@
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.GetTypeCode" />
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -773,7 +780,7 @@
   
  The <xref:System.Enum.GetValues%2A> method returns an array that contains a value for each member of the `enumType` enumeration. If multiple members have the same value, the returned array includes duplicate values. In this case, calling the <xref:System.Enum.GetName%2A> method with each value in the returned array does not restore the unique names assigned to members that have duplicate values. To retrieve all the names of enumeration members successfully, call the <xref:System.Enum.GetNames%2A> method.  
   
- The<xref:System.Enum.GetValues%2A> method cannot be invoked by using reflection in a reflection-only context. Instead, you can retrieve the value of all enumeration members by using the <xref:System.Type.GetFields%2A?displayProperty=fullName> method to get an array of <xref:System.Reflection.FieldInfo> objects that represent enumeration members and then call the <xref:System.Reflection.FieldInfo.GetRawConstantValue%2A?displayProperty=fullName> method on each element of the array. The following example illustrates this technique. It requires that you define the following enumeration in an assembly named Enumerations.dll:  
+ The <xref:System.Enum.GetValues%2A> method cannot be invoked by using reflection in a reflection-only context. Instead, you can retrieve the value of all enumeration members by using the <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method to get an array of <xref:System.Reflection.FieldInfo> objects that represent enumeration members and then call the <xref:System.Reflection.FieldInfo.GetRawConstantValue%2A?displayProperty=nameWithType> method on each element of the array. The following example illustrates this technique. It requires that you define the following enumeration in an assembly named Enumerations.dll:  
   
  [!code-csharp[System.Enum.GetValues#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.getvalues/cs/getvalues_reflectiononly.cs#2)]
  [!code-vb[System.Enum.GetValues#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.getvalues/vb/getvalues_reflectiononly.vb#2)]  
@@ -872,6 +879,8 @@ thisInstance And flag = flag
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="flag" /> is a different type than the current instance.</exception>
+        <altmember cref="T:System.FlagsAttribute" />
+        <altmember cref="M:System.Enum.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -962,6 +971,10 @@ thisInstance And flag = flag
   
  You can determine whether multiple bit fields are set by calling the <see cref="M:System.Enum.HasFlag(System.Enum)" /> method.</para>
         </block>
+        <altmember cref="M:System.Enum.GetName(System.Type,System.Object)" />
+        <altmember cref="M:System.Enum.GetNames(System.Type)" />
+        <altmember cref="M:System.Enum.GetValues(System.Type)" />
+        <altmember cref="M:System.Enum.HasFlag(System.Enum)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1041,6 +1054,7 @@ thisInstance And flag = flag
  <paramref name="value" /> is a name, but not one of the named constants defined for the enumeration.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is outside the range of the underlying type of <paramref name="enumType" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1122,6 +1136,7 @@ thisInstance And flag = flag
  <paramref name="value" /> is a name, but not one of the named constants defined for the enumeration.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is outside the range of the underlying type of <paramref name="enumType" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Parse&lt;TEnum&gt;">
@@ -1931,6 +1946,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -1985,6 +2001,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -2039,6 +2056,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -2093,6 +2111,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -2152,6 +2171,7 @@ thisInstance And flag = flag
  -or-  
   
  <paramref name="value" /> is not type <see cref="T:System.SByte" />, <see cref="T:System.Int16" />, <see cref="T:System.Int32" />, <see cref="T:System.Int64" />, <see cref="T:System.Byte" />, <see cref="T:System.UInt16" />, <see cref="T:System.UInt32" />, or <see cref="T:System.UInt64" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -2209,6 +2229,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -2266,6 +2287,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -2323,6 +2345,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -2380,6 +2403,7 @@ thisInstance And flag = flag
           <paramref name="enumType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.</exception>
+        <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2439,6 +2463,8 @@ thisInstance And flag = flag
  [!code-csharp[System.Enum.ToString#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.tostring/cs/tostringbyvalue1.cs#2)]
  [!code-vb[System.Enum.ToString#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.tostring/vb/tostringbyvalue1.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Enum.Format(System.Type,System.Object,System.String)" />
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2541,6 +2567,9 @@ thisInstance And flag = flag
  [!code-csharp[System.Enum.ToString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.tostring/cs/tostringbyvalue1.cs#3)]
  [!code-vb[System.Enum.ToString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.tostring/vb/tostringbyvalue1.vb#3)]</para>
         </block>
+        <altmember cref="M:System.Enum.Format(System.Type,System.Object,System.String)" />
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
+        <altmember cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2592,11 +2621,12 @@ thisInstance And flag = flag
           <paramref name="format" /> does not contain a valid format specification.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="format" /> equals "X", but the enumeration type is unknown.</exception>
+        <altmember cref="M:System.Enum.Format(System.Type,System.Object,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string value, out object result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, object result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2622,7 +2652,7 @@ thisInstance And flag = flag
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string value, bool ignoreCase, out object result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, bool ignoreCase, object result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, bool ignoreCase, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Boolean,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2650,7 +2680,7 @@ thisInstance And flag = flag
     </Member>
     <Member MemberName="TryParse&lt;TEnum&gt;">
       <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string value, out TEnum result) where TEnum : struct;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value, !!TEnum result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value, [out] !!TEnum&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse``1(System.String,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2715,11 +2745,12 @@ thisInstance And flag = flag
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="TEnum" /> is not an enumeration type.</exception>
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse&lt;TEnum&gt;">
       <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string value, bool ignoreCase, out TEnum result) where TEnum : struct;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value, bool ignoreCase, !!TEnum result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value, bool ignoreCase, [out] !!TEnum&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse``1(System.String,System.Boolean,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2787,7 +2818,55 @@ thisInstance And flag = flag
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="TEnum" /> is not an enumeration type.</exception>
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String,System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified integer value to an enumeration member.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object.</summary>
+        <altmember cref="M:System.Enum.TryParse``1(System.String,``0@)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object. The return value indicates whether the conversion succeeded.</summary>
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

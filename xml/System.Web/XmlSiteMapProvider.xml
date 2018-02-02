@@ -59,6 +59,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.StaticSiteMapProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,6 +118,7 @@
  \- or -  
   
  <paramref name="node" /> is the root node of the <see cref="T:System.Web.XmlSiteMapProvider" />.</exception>
+        <altmember cref="M:System.Web.XmlSiteMapProvider.RemoveNode(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="AddProvider">
@@ -160,6 +163,7 @@
  -or-  
   
  The root node returned by <paramref name="providerName" /> has a URL or key that is already registered with the parent <see cref="T:System.Web.XmlSiteMapProvider" />.</exception>
+        <altmember cref="M:System.Web.XmlSiteMapProvider.RemoveProvider(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="BuildSiteMap">
@@ -300,6 +304,8 @@
  \- or -  
   
  An error occurred while attempting to parse the virtual path to the file specified in the <see langword="siteMapFile" />.</exception>
+        <altmember cref="M:System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.XmlSiteMapProvider.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -321,10 +327,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class overrides the inherited <xref:System.Web.XmlSiteMapProvider.Clear%2A> method to provide additional state cleanup beyond the basic <xref:System.Web.StaticSiteMapProvider.Clear%2A?displayProperty=fullName> implementation, including clearing its child provider tracking and the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property tracking mechanisms.  
+ The <xref:System.Web.XmlSiteMapProvider> class overrides the inherited <xref:System.Web.XmlSiteMapProvider.Clear%2A> method to provide additional state cleanup beyond the basic <xref:System.Web.StaticSiteMapProvider.Clear%2A?displayProperty=nameWithType> implementation, including clearing its child provider tracking and the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property tracking mechanisms.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.XmlSiteMapProvider.BuildSiteMap" />
       </Docs>
     </Member>
     <Member MemberName="CurrentNode">
@@ -397,6 +405,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IDisposable" />
       </Docs>
     </Member>
     <Member MemberName="FindSiteMapNode">
@@ -433,6 +442,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">A child provider linked to the current site map provider returned a node that is not valid.</exception>
+        <altmember cref="M:System.Web.XmlSiteMapProvider.GetRootNodeCore" />
+        <altmember cref="M:System.Web.XmlSiteMapProvider.BuildSiteMap" />
       </Docs>
     </Member>
     <Member MemberName="FindSiteMapNodeFromKey">
@@ -467,6 +478,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">A child provider linked to the current site map provider returned a node that is not valid.</exception>
+        <altmember cref="Overload:System.Web.XmlSiteMapProvider.FindSiteMapNode" />
       </Docs>
     </Member>
     <Member MemberName="GetChildNodes">
@@ -537,6 +549,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.XmlSiteMapProvider.RootNode" />
+        <altmember cref="M:System.Web.XmlSiteMapProvider.BuildSiteMap" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -612,6 +626,8 @@
  \- or -  
   
  An error occurred while attempting to parse the virtual path supplied for the <see langword="siteMapFile" /> attribute.</exception>
+        <altmember cref="M:System.Web.XmlSiteMapProvider.BuildSiteMap" />
+        <altmember cref="M:System.Web.XmlSiteMapProvider.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveNode">
@@ -641,6 +657,7 @@
  <paramref name="node" /> is not managed by the provider or by a provider in the chain of parent providers for this provider.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Web.XmlSiteMapProvider.AddNode" />
       </Docs>
     </Member>
     <Member MemberName="RemoveProvider">
@@ -675,6 +692,7 @@
           <paramref name="providerName" /> is not a registered child provider of the current site map provider.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="providerName" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Web.XmlSiteMapProvider.AddNode" />
       </Docs>
     </Member>
     <Member MemberName="RootNode">
@@ -698,11 +716,23 @@
 ## Remarks  
  The <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property calls the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method to retrieve the top-level node in the site map. Therefore, any exceptions that occur for the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method can also occur when accessing the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property.  
   
- The <xref:System.Web.SiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes permit only one root <xref:System.Web.SiteMapNode> object in a site map. The <xref:System.Web.XmlSiteMapProvider> class overrides the abstract <xref:System.Web.SiteMapProvider.RootNode%2A?displayProperty=fullName> property and provides a simple implementation to track the root node.  
+ The <xref:System.Web.SiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes permit only one root <xref:System.Web.SiteMapNode> object in a site map. The <xref:System.Web.XmlSiteMapProvider> class overrides the abstract <xref:System.Web.SiteMapProvider.RootNode%2A?displayProperty=nameWithType> property and provides a simple implementation to track the root node.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.XmlSiteMapProvider.GetRootNodeCore" />
+        <altmember cref="M:System.Web.XmlSiteMapProvider.BuildSiteMap" />
+        <altmember cref="P:System.Web.SiteMapProvider.RootNode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Notifies the file monitor of the Web.sitemap file that the <see cref="T:System.Web.XmlSiteMapProvider" /> object no longer requires the file to be monitored.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

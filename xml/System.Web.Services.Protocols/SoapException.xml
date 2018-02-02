@@ -95,6 +95,8 @@
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that specifies the type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message and exception code.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Exception.Message" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,6 +120,9 @@
         <param name="innerException">An exception that is the root cause of the exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and reference to the root cause of the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -141,6 +146,9 @@
         <param name="actor">A URI that identifies the code that caused the exception. Typically, this is a URL to an XML Web service method. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Actor" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and URI that identifies the piece of code that caused the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Actor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +172,9 @@
         <param name="subcode">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and subcode.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,6 +200,10 @@
         <param name="innerException">An exception that is the root cause of the exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, URI that identifies the code that caused the exception, and reference to the root cause of the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Actor" />
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -338,8 +353,8 @@
 ## Examples  
  The following Web Form example calls the `Math` XML Web service method, which throws an exception if a division by zero occurs. When the exception is thrown, the Web Form catches the exception and outputs the exception details, including the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> and <xref:System.Web.Services.Protocols.SoapException.Code%2A> properties, into an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SoapException.Actor Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SoapException.Actor Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SoapException.Actor Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SoapException.Actor Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  
   
  In order for the preceding Web Form to use the following `Math` Web Service example, a namespace of `MyMath` was specified during the creation of the proxy class.  
   
@@ -347,6 +362,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
       </Docs>
     </Member>
     <Member MemberName="ClientFaultCode">
@@ -412,8 +429,8 @@
 ## Examples  
  The following Web Form example calls the `Math` Web Service method, which throws an exception if a division by zero occurs. Once the exception is thrown, the Web Form catches the exception and outputs the exception details, including the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> and <xref:System.Web.Services.Protocols.SoapException.Code%2A> properties into a <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[classic soapexception.actor example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[classic soapexception.actor example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[classic soapexception.actor example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[classic soapexception.actor example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  
   
  In order for the preceding Web Form to use the following `Math` XML Web service example, a namespace of `MyMath` was specified during the creation of the proxy class.  
   
@@ -421,6 +438,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlQualifiedName" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Subcode" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Actor" />
       </Docs>
     </Member>
     <Member MemberName="Detail">
@@ -460,6 +481,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNode" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeaderException" />
       </Docs>
     </Member>
     <Member MemberName="DetailElementName">
@@ -543,10 +566,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Client` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Client` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ClientFaultCode> field. SOAP 1.2 names the fault code `Sender`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Client` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Client` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ClientFaultCode> field. SOAP 1.2 names the fault code `Sender`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.ClientFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="IsMustUnderstandFaultCode">
@@ -574,10 +600,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `MustUnderstand` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `MustUnderstand` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.MustUnderstandFaultCode?displayProperty=fullName> field. SOAP 1.2 names the fault code the same; however it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.MustUnderstandFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `MustUnderstand` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `MustUnderstand` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.MustUnderstandFaultCode?displayProperty=nameWithType> field. SOAP 1.2 names the fault code the same; however it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.MustUnderstandFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.MustUnderstandFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.MustUnderstandFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="IsServerFaultCode">
@@ -605,10 +634,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Server` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Server` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ServerFaultCode> field. SOAP 1.2 names the fault code `Receiver`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Server` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Server` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ServerFaultCode> field. SOAP 1.2 names the fault code `Receiver`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.ServerFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="IsVersionMismatchFaultCode">
@@ -636,10 +668,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `VersionMismatch` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `VersionMismatch` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.VersionMismatchFaultCode?displayProperty=fullName> field. SOAP 1.2 names the fault code the same; however, it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.VersionMismatchFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `VersionMismatch` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `VersionMismatch` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.VersionMismatchFaultCode?displayProperty=nameWithType> field. SOAP 1.2 names the fault code the same; however, it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.VersionMismatchFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.VersionMismatchFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.VersionMismatchFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="Lang">
@@ -787,6 +822,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="SubCode">
@@ -845,5 +881,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

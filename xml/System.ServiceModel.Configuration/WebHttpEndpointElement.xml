@@ -529,5 +529,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified service or channel endpoint to a <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes and verifies the format of a specified service or channel endpoint element and configures it to include web HTTP content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

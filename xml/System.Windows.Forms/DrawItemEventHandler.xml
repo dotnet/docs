@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following code example demonstrates a menu with an owner-drawn menu item. This example uses the `AddHandler` statement and the `AddressOf` operator to designate a delegate to handle the <xref:System.Windows.Forms.MenuItem.DrawItem?displayProperty=fullName> event. To run the example place paste it in a form that imports the System, System.Windows.Forms, and System.Drawing namespaces. Ensure all events are associated with their event-handling methods.  
+ The following code example demonstrates a menu with an owner-drawn menu item. This example uses the `AddHandler` statement and the `AddressOf` operator to designate a delegate to handle the <xref:System.Windows.Forms.MenuItem.DrawItem?displayProperty=nameWithType> event. To run the example place paste it in a form that imports the System, System.Windows.Forms, and System.Drawing namespaces. Ensure all events are associated with their event-handling methods.  
   
  [!code-cpp[System.Windows.Forms.MenuItemOwnerDraw#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MenuItemOwnerDraw/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.MenuItemOwnerDraw#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MenuItemOwnerDraw/CS/form1.cs#1)]
@@ -37,5 +37,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DrawItemEventArgs" />
+    <altmember cref="T:System.Windows.Forms.ComboBox" />
+    <altmember cref="T:System.Windows.Forms.ListBox" />
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
+    <altmember cref="T:System.Windows.Forms.TabControl" />
   </Docs>
 </Type>

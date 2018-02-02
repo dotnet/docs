@@ -156,6 +156,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -193,7 +194,7 @@
 ## Remarks  
  The `context` parameter is reserved; it does not currently participate in this operation.  
   
- For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A?displayProperty=fullName> method.  
+ For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -239,7 +240,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -279,7 +280,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -311,5 +312,18 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether an object represents the same field as the current <see cref="T:System.RuntimeFieldHandle" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -15,12 +15,14 @@ helpviewer_keywords:
   - "Windows Communication Foundation, Web service protocols"
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
 caps.latest.revision: 39
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Web Services Protocols Supported by System-Provided Interoperability Bindings
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is built to interoperate with Web services that support a set of specifications known as Web services specifications. To simplify service configuration for interoperability best practices, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] introduces three interoperable system-provided bindings: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=fullName>, <xref:System.ServiceModel.WSHttpBinding?displayProperty=fullName>, and <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=fullName>. For interoperability with Organization for the Advancement of Structured Information Standards (OASIS) standards, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes one interoperable system-provided binding: <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=fullName>. For metadata publication, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes two interoperable system-provided bindings: [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) and [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md). This topic lists specifications that system-provided interoperable bindings support.  
+[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is built to interoperate with Web services that support a set of specifications known as Web services specifications. To simplify service configuration for interoperability best practices, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] introduces three interoperable system-provided bindings: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>, <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType>, and <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>. For interoperability with Organization for the Advancement of Structured Information Standards (OASIS) standards, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes one interoperable system-provided binding: <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType>. For metadata publication, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes two interoperable system-provided bindings: [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) and [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md). This topic lists specifications that system-provided interoperable bindings support.  
   
 ## Web Services Protocols Supported by basicHttpBinding, wsHttpBinding, ws2007HttpBinding, and wsDualHttpBinding Bindings  
   
@@ -92,7 +94,7 @@ manager: "erikre"
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation](../../../../docs/framework/wcf/feature-details/federation.md) .  
   
 ## System-Provided Metadata Bindings  
- The following tables describe the protocols supported by the system-provided interoperable metadata bindings exposed by the <xref:System.ServiceModel.Description.MetadataExchangeBindings?displayProperty=fullName> class.  
+ The following tables describe the protocols supported by the system-provided interoperable metadata bindings exposed by the <xref:System.ServiceModel.Description.MetadataExchangeBindings?displayProperty=nameWithType> class.  
   
 ### mexHttpBinding  
  The [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) binding supports the following protocols. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using this binding, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
@@ -115,9 +117,9 @@ manager: "erikre"
 |Metadata|WS-MetadataExchange|[WS-MetadataExchange](http://go.microsoft.com/fwlink/?LinkId=94868)<br /><br /> [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements WS-MetadataExchange to retrieve XML Schema, WSDL, and WS-Policy.|  
   
 ## See Also  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)   
- [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)   
- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)   
- [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)   
- [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md)   
+ [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
+ [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)  
+ [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)  
+ [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)  
+ [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md)  
  [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md)

@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can obtain identifying information for an initialized recognition engine using <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerInfo%2A?displayProperty=fullName> for a <xref:System.Speech.Recognition.SpeechRecognizer> object or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A?displayProperty=fullName> for a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object.  
+ You can obtain identifying information for an initialized recognition engine using <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerInfo%2A?displayProperty=nameWithType> for a <xref:System.Speech.Recognition.SpeechRecognizer> object or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A?displayProperty=nameWithType> for a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object.  
   
  The information returned in instances of <xref:System.Speech.Recognition.RecognizerInfo> obtained from a <xref:System.Speech.Recognition.SpeechRecognizer> is determined by the settings in the **Speech Properties** member of the **Control Panel**.  
   
@@ -55,6 +55,8 @@ private SpeechRecognitionEngine SelectRecognizer(CultureInfo requiredCulture, st
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
   </Docs>
   <Members>
     <Member MemberName="AdditionalInfo">
@@ -112,6 +114,10 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="T:System.Collections.Generic.IDictionary`2" />
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -172,6 +178,10 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -227,6 +237,9 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -305,6 +318,9 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -360,6 +376,9 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
       </Docs>
     </Member>
     <Member MemberName="SupportedAudioFormats">
@@ -415,6 +434,11 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" />
       </Docs>
     </Member>
   </Members>

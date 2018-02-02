@@ -92,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.SqlClient.SqlConnection" />
+        <altmember cref="T:System.Data.SqlClient.SqlDataAdapter" />
       </Docs>
     </Member>
     <Member MemberName="CloneNode">
@@ -247,10 +249,11 @@ class MyXmlDataDocument : XmlDataDocument {
    
   
 ## Examples  
- To see an XSLT transformation using `XmlDataDocument` and an `XPathNavigator`, see the <xref:System.Xml.Xsl.XslTransform.Transform%2A?displayProperty=fullName> method.  
+ To see an XSLT transformation using `XmlDataDocument` and an `XPathNavigator`, see the <xref:System.Xml.Xsl.XslTransform.Transform%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XslTransform" />
       </Docs>
     </Member>
     <Member MemberName="DataSet">
@@ -296,6 +299,8 @@ class MyXmlDataDocument : XmlDataDocument {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <Member MemberName="GetElementById">
@@ -363,6 +368,8 @@ class MyXmlDataDocument : XmlDataDocument {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <Member MemberName="GetElementsByTagName">
@@ -391,7 +398,7 @@ class MyXmlDataDocument : XmlDataDocument {
 ## Remarks  
   
 > [!NOTE]
->  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDataDocument.GetElementsByTagName%2A> method.  
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=nameWithType> method instead of the <xref:System.Xml.XmlDataDocument.GetElementsByTagName%2A> method.  
   
  ]]></format>
         </remarks>
@@ -631,5 +638,15 @@ class MyXmlDataDocument : XmlDataDocument {
         <exception cref="T:System.NotSupportedException">The XML being loaded contains entity references, and the reader cannot resolve entities.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDataDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

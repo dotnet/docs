@@ -110,11 +110,18 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Table" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.Wrap" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.HtmlTextWriterTag.Td" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -178,8 +186,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.AddAttributesToRender%2A> method in a custom server control so that a custom title attribute is rendered for each cell.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTableCellAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTableCellAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTableCellAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomTableCellAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorendervb.aspx#1)]  
   
  [!code-csharp[CustomTableCellAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorender.cs#2)]
  [!code-vb[CustomTableCellAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorender.vb#2)]  
@@ -190,6 +198,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TableCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TableCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method of the base class so that the <see cref="T:System.Web.UI.WebControls.TableCell" /> control attributes are properly rendered.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID" />
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -223,6 +234,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TableCell.AddParsedSubObject(System.Object)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.TableCell.AddParsedSubObject(System.Object)" /> method so that objects are properly added to the <see cref="T:System.Web.UI.WebControls.TableCell" /> control <see cref="T:System.Web.UI.ControlCollection" />.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
+        <altmember cref="T:System.Web.UI.LiteralControl" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedHeaderCellID">
@@ -277,6 +291,9 @@ HorizontalAlign="Left">(2,0)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
+        <altmember cref="M:System.Web.UI.WebControls.TableCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.WebControls.StringArrayConverter" />
       </Docs>
     </Member>
     <Member MemberName="ColumnSpan">
@@ -327,6 +344,9 @@ HorizontalAlign="Left">(2,0)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="0" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -358,14 +378,19 @@ HorizontalAlign="Left">(2,0)
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.CreateControlStyle%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class for the <xref:System.Web.UI.WebControls.TableCell>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTableCellCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTableCellCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTableCellCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstylecs.aspx#1)]
+ [!code-aspx-vb[CustomTableCellCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstylevb.aspx#1)]  
   
  [!code-csharp[CustomTableCellCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstyle.cs#2)]
  [!code-vb[CustomTableCellCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstyle.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.Wrap" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -415,6 +440,9 @@ HorizontalAlign="Left">(2,0)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
+        <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -448,8 +476,8 @@ HorizontalAlign="Left">(2,0)
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.RenderContents%2A> method in a custom <xref:System.Web.UI.WebControls.TableCell> control so that it custom text is inserted in the cell's contents.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTableCellRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontentscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTableCellRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontentsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTableCellRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontentscs.aspx#1)]
+ [!code-aspx-vb[CustomTableCellRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontentsvb.aspx#1)]  
   
  [!code-csharp[CustomTableCellRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontents.cs#2)]
  [!code-vb[CustomTableCellRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontents.vb#2)]  
@@ -487,6 +515,8 @@ HorizontalAlign="Left">(2,0)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="0" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -509,10 +539,13 @@ HorizontalAlign="Left">(2,0)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -567,6 +600,8 @@ HorizontalAlign="Left">(2,0)
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -597,6 +632,8 @@ HorizontalAlign="Left">(2,0)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.VerticalAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -628,6 +665,7 @@ HorizontalAlign="Left">(2,0)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TableItemStyle.Wrap" />
       </Docs>
     </Member>
   </Members>

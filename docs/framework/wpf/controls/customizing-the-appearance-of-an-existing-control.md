@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "control contract [WPF]"
   - "controls [WPF], visual structure changes"
@@ -21,6 +24,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Customizing the Appearance of an Existing Control by Creating a ControlTemplate
 <a name="introduction"></a> A <xref:System.Windows.Controls.ControlTemplate> specifies the visual structure and visual behavior of a control. You can customize the appearance of a control by giving it a new <xref:System.Windows.Controls.ControlTemplate>. When you create a <xref:System.Windows.Controls.ControlTemplate>, you replace the appearance of an existing control without changing its functionality. For example, you can make the buttons in your application round instead of the default square shape, but the button will still raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
@@ -58,7 +63,7 @@ A CheckBox that uses the default control template
  ![A checkbox with a custom control template.](../../../../docs/framework/wpf/controls/media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
 A CheckBox that uses a custom control template  
   
- The<xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.CheckBox> in this sample is relatively complex, so this topic uses a simpler example of creating a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  
+ The <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.CheckBox> in this sample is relatively complex, so this topic uses a simpler example of creating a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  
   
 <a name="changing_the_visual_structure_of_a_control"></a>   
 ## Changing the Visual Structure of a Control  
@@ -83,9 +88,9 @@ A CheckBox that uses a custom control template
   
  [!code-xaml[VSMButtonTemplate#TemplateBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#templatebinding)]  
   
- In this example, the <xref:System.Windows.Controls.Grid> has its <xref:System.Windows.Controls.Panel.Background%2A?displayProperty=fullName> property template bound to <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName>. Because <xref:System.Windows.Controls.Panel.Background%2A?displayProperty=fullName> is template bound, you can create multiple buttons that use the same <xref:System.Windows.Controls.ControlTemplate> and set the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName> to different values on each button. If <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName> was not template bound to a property of an element in the <xref:System.Windows.Controls.ControlTemplate>, setting the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName> of a button would have no impact on the button's appearance.  
+ In this example, the <xref:System.Windows.Controls.Grid> has its <xref:System.Windows.Controls.Panel.Background%2A?displayProperty=nameWithType> property template bound to <xref:System.Windows.Controls.Control.Background%2A?displayProperty=nameWithType>. Because <xref:System.Windows.Controls.Panel.Background%2A?displayProperty=nameWithType> is template bound, you can create multiple buttons that use the same <xref:System.Windows.Controls.ControlTemplate> and set the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=nameWithType> to different values on each button. If <xref:System.Windows.Controls.Control.Background%2A?displayProperty=nameWithType> was not template bound to a property of an element in the <xref:System.Windows.Controls.ControlTemplate>, setting the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=nameWithType> of a button would have no impact on the button's appearance.  
   
- Note that the names of the two properties do not need to be identical. In the preceding example, the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A?displayProperty=fullName> property of the <xref:System.Windows.Controls.Button> is template bound to the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A?displayProperty=fullName> property of the <xref:System.Windows.Controls.ContentPresenter>. This enables the content of the button to be positioned horizontally. <xref:System.Windows.Controls.ContentPresenter> does not have a property named `HorizontalContentAlignment`, but <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A?displayProperty=fullName> can be bound to <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A?displayProperty=fullName>. When you template bind a property, be sure that the target and source properties are the same type.  
+ Note that the names of the two properties do not need to be identical. In the preceding example, the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Controls.Button> is template bound to the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Controls.ContentPresenter>. This enables the content of the button to be positioned horizontally. <xref:System.Windows.Controls.ContentPresenter> does not have a property named `HorizontalContentAlignment`, but <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A?displayProperty=nameWithType> can be bound to <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A?displayProperty=nameWithType>. When you template bind a property, be sure that the target and source properties are the same type.  
   
  The <xref:System.Windows.Controls.Control> class defines several properties that must be used by the control template to have an effect on the control when they are set. How the <xref:System.Windows.Controls.ControlTemplate> uses the property depends on the property. The <xref:System.Windows.Controls.ControlTemplate> must use the property in one of the following ways:  
   
@@ -126,7 +131,7 @@ Two buttons with different background colors
 ## Changing the Appearance of a Control Depending on Its State  
  The difference between a button with its default appearance and the button in the preceding example is that the default button subtly changes when it is in different states. For example, the default button's appearance changes when the button is pressed, or when the mouse pointer is over the button. Although the <xref:System.Windows.Controls.ControlTemplate> does not change the functionality of a control, it does change the control's visual behavior. A visual behavior describes the control appearance when it is in a certain state. To understand the difference between the functionality and visual behavior of a control, consider the button example. The button's functionality is to raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event when it is clicked, but the button's visual behavior is to change its appearance when it is pointed to or pressed.  
   
- You use <xref:System.Windows.VisualState> objects to specify the appearance of a control when it is in a certain state. A <xref:System.Windows.VisualState> contains a <xref:System.Windows.Media.Animation.Storyboard> that changes the appearance of the elements that are in the <xref:System.Windows.Controls.ControlTemplate>. You do not have to write any code to make this occur because the control's logic changes state by using the <xref:System.Windows.VisualStateManager>. When the control enters the state that is specified by the <xref:System.Windows.VisualState.Name%2A?displayProperty=fullName> property, the <xref:System.Windows.Media.Animation.Storyboard> begins. When the control exits the state, the <xref:System.Windows.Media.Animation.Storyboard> stops.  
+ You use <xref:System.Windows.VisualState> objects to specify the appearance of a control when it is in a certain state. A <xref:System.Windows.VisualState> contains a <xref:System.Windows.Media.Animation.Storyboard> that changes the appearance of the elements that are in the <xref:System.Windows.Controls.ControlTemplate>. You do not have to write any code to make this occur because the control's logic changes state by using the <xref:System.Windows.VisualStateManager>. When the control enters the state that is specified by the <xref:System.Windows.VisualState.Name%2A?displayProperty=nameWithType> property, the <xref:System.Windows.Media.Animation.Storyboard> begins. When the control exits the state, the <xref:System.Windows.Media.Animation.Storyboard> stops.  
   
  The following example shows the <xref:System.Windows.VisualState> that changes the appearance of a <xref:System.Windows.Controls.Button> when the mouse pointer is over it. The <xref:System.Windows.Media.Animation.Storyboard> changes the button's border color by changing the color of the `BorderBrush`. If you refer to the <xref:System.Windows.Controls.ControlTemplate> example at the beginning of this topic, you will recall that `BorderBrush` is the name of the <xref:System.Windows.Media.SolidColorBrush> that is assigned to the <xref:System.Windows.Controls.Border.Background%2A> of the <xref:System.Windows.Controls.Border>.  
   
@@ -145,10 +150,10 @@ Two buttons with different background colors
   
  The <xref:System.Windows.Controls.Button> defines two state groups: the `CommonStates` group contains the `Normal`, `MouseOver`, `Pressed`, and `Disabled` states. The `FocusStates` group contains the `Focused` and `Unfocused` states. States in the same state group are mutually exclusive. The control is always in exactly one state per group. For example, a <xref:System.Windows.Controls.Button> can have focus even when the mouse pointer is not over it, so a <xref:System.Windows.Controls.Button> in the `Focused` state can be in the `MouseOver`, `Pressed`, or `Normal` state.  
   
- You add <xref:System.Windows.VisualState> objects to <xref:System.Windows.VisualStateGroup> objects. You add <xref:System.Windows.VisualStateGroup> objects to the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=fullName> attached property. The following example defines the <xref:System.Windows.VisualState> objects for the `Normal`, `MouseOver`, and `Pressed` states, which are all in the `CommonStates` group. The <xref:System.Windows.VisualState.Name%2A> of each <xref:System.Windows.VisualState> matches the name in the preceding table. The `Disabled` state and the states in the `FocusStates` group are omitted to keep the example short, but they are included in the entire example at the end of this topic.  
+ You add <xref:System.Windows.VisualState> objects to <xref:System.Windows.VisualStateGroup> objects. You add <xref:System.Windows.VisualStateGroup> objects to the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property. The following example defines the <xref:System.Windows.VisualState> objects for the `Normal`, `MouseOver`, and `Pressed` states, which are all in the `CommonStates` group. The <xref:System.Windows.VisualState.Name%2A> of each <xref:System.Windows.VisualState> matches the name in the preceding table. The `Disabled` state and the states in the `FocusStates` group are omitted to keep the example short, but they are included in the entire example at the end of this topic.  
   
 > [!NOTE]
->  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=fullName> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
+>  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
   
  [!code-xaml[VSMButtonTemplate#VisualStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#visualstates)]  
   

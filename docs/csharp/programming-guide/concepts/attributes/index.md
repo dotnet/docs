@@ -1,26 +1,17 @@
 ---
 title: "Attributes (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: f148f13f-a0d5-4f22-9c87-4b73d5dde270
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Attributes (C#)
 Attributes provide a powerful method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using a technique called *reflection*. For more information, see [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md).  
@@ -185,6 +176,6 @@ int Method3() { return 0; }
 -   [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md)  
   
 ## See Also  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+ [Attributes](../../../../../docs/standard/attributes/index.md)

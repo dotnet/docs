@@ -74,6 +74,9 @@
  The <see cref="Overload:System.Xml.Xsl.XslCompiledTransform.Load" /> method is not thread safe when called simultaneously from multiple threads.  
   
 </para></block></threadsafe>
+    <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
+    <altmember cref="T:System.Xml.Xsl.XsltMessageEncounteredEventArgs" />
+    <altmember cref="N:System.Xml" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -723,7 +726,7 @@ xslt.Load(typeof(bookOrders));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is populated after a successful call to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. It contains information derived from the `xsl:output` element of a compiled style sheet. This <xref:System.Xml.XmlWriterSettings> object can be passed to the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method to create the <xref:System.Xml.XmlWriter> object to which you want to output.  
+ This property is populated after a successful call to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. It contains information derived from the `xsl:output` element of a compiled style sheet. This <xref:System.Xml.XmlWriterSettings> object can be passed to the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType> method to create the <xref:System.Xml.XmlWriter> object to which you want to output.  
   
    
   
@@ -1628,5 +1631,15 @@ xslt.Load(typeof(bookOrders));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XslCompiledTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

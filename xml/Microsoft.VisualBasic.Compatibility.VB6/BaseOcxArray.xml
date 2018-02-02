@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `BaseOCXArray` class provides an equivalent for the run-time functionality of a Visual Basic 6.0 ActiveX control array. It does not provide the design-time features of a Visual Basic 6.0 control array.  
+ The `BaseOcxArray` class provides an equivalent for the run-time functionality of a Visual Basic 6.0 ActiveX control array. It does not provide the design-time features of a Visual Basic 6.0 control array.  
   
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
@@ -41,12 +41,12 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see langword="BaseOCXArray" /> class.</summary>
+        <summary>Initializes a new instance of the <see langword="BaseOcxArray" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you instantiate a `BaseOCXArray`, you must also call the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseSetIndex%2A> method to create the initial element in the array.  
+ When you instantiate a `BaseOcxArray`, you must also call the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseSetIndex%2A> method to create the initial element in the array.  
   
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
@@ -69,12 +69,12 @@
       </Parameters>
       <Docs>
         <param name="Container">The <see cref="T:System.ComponentModel.IContainer" /> where the control array will be hosted.</param>
-        <summary>Initializes a new instance of the <see langword="BaseOCXArray" /> class, specifying its container.</summary>
+        <summary>Initializes a new instance of the <see langword="BaseOcxArray" /> class, specifying its container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you instantiate a `BaseOCXArray`, you must also call the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseSetIndex%2A> method to create the initial element in the array.  
+ When you instantiate a `BaseOcxArray`, you must also call the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseSetIndex%2A> method to create the initial element in the array.  
   
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
@@ -390,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="LocationChanged">
@@ -517,6 +518,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Move" />
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -635,6 +637,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
       </Docs>
     </Member>
     <Member MemberName="SizeChanged">
@@ -693,6 +696,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.SystemColorsChanged" />
       </Docs>
     </Member>
     <Member MemberName="Validated">
@@ -743,7 +747,7 @@
   
  If the <xref:System.Windows.Forms.Control.CausesValidation%2A> property is set to `false`, the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> and `Validated` events are suppressed.  
   
- If the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> is set to `true` in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> event delegate, all events that would usually occur after the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOCXArray.Validating> event are suppressed.  
+ If the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> is set to `true` in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> event delegate, all events that would usually occur after the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> event are suppressed.  
   
  For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -752,6 +756,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="Validating">
@@ -811,6 +816,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
     <Member MemberName="VisibleChanged">
@@ -842,5 +848,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="BaseOcxArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

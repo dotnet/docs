@@ -36,19 +36,19 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Code that is being examined in the reflection-only context cannot be executed, so it is not always possible to examine custom attributes by creating instances of them and then examining their properties, using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName>, <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName>, and so on. If the code for the attribute type itself is loaded into the reflection-only context, it cannot be executed.  
+ Code that is being examined in the reflection-only context cannot be executed, so it is not always possible to examine custom attributes by creating instances of them and then examining their properties, using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>, <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType>, and so on. If the code for the attribute type itself is loaded into the reflection-only context, it cannot be executed.  
   
  The <xref:System.Reflection.CustomAttributeData> class allows examination of custom attributes in the reflection-only context by providing an abstraction for attributes. The members of this class can be used to obtain the positional arguments and named arguments of the attribute. Use the <xref:System.Reflection.CustomAttributeData.ConstructorArguments%2A> property to get a list of <xref:System.Reflection.CustomAttributeTypedArgument> structures that represent the positional arguments, and use the <xref:System.Reflection.CustomAttributeData.NamedArguments%2A> property to get a list of <xref:System.Reflection.CustomAttributeNamedArgument> structures that represent the named arguments.  
   
 > [!NOTE]
->  The <xref:System.Reflection.CustomAttributeNamedArgument> structure only provides information about the attribute property used to get and set the argument value. To obtain the type and value of the argument, use the <xref:System.Reflection.CustomAttributeNamedArgument.TypedValue%2A?displayProperty=fullName> property to obtain a <xref:System.Reflection.CustomAttributeTypedArgument> structure.  
+>  The <xref:System.Reflection.CustomAttributeNamedArgument> structure only provides information about the attribute property used to get and set the argument value. To obtain the type and value of the argument, use the <xref:System.Reflection.CustomAttributeNamedArgument.TypedValue%2A?displayProperty=nameWithType> property to obtain a <xref:System.Reflection.CustomAttributeTypedArgument> structure.  
   
- When you have a <xref:System.Reflection.CustomAttributeTypedArgument> structure for an argument, whether named or positional, use the <xref:System.Reflection.CustomAttributeTypedArgument.ArgumentType%2A?displayProperty=fullName> property to get the type and the <xref:System.Reflection.CustomAttributeTypedArgument.Value%2A?displayProperty=fullName> property to get the value.  
+ When you have a <xref:System.Reflection.CustomAttributeTypedArgument> structure for an argument, whether named or positional, use the <xref:System.Reflection.CustomAttributeTypedArgument.ArgumentType%2A?displayProperty=nameWithType> property to get the type and the <xref:System.Reflection.CustomAttributeTypedArgument.Value%2A?displayProperty=nameWithType> property to get the value.  
   
 > [!NOTE]
->  For an array argument, the <xref:System.Reflection.CustomAttributeTypedArgument.Value%2A?displayProperty=fullName> property returns a generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Reflection.CustomAttributeTypedArgument> objects. Each <xref:System.Reflection.CustomAttributeTypedArgument> object in the collection represents the corresponding element of the array.  
+>  For an array argument, the <xref:System.Reflection.CustomAttributeTypedArgument.Value%2A?displayProperty=nameWithType> property returns a generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Reflection.CustomAttributeTypedArgument> objects. Each <xref:System.Reflection.CustomAttributeTypedArgument> object in the collection represents the corresponding element of the array.  
   
- <xref:System.Reflection.CustomAttributeData> can be used in the execution context as well as in the reflection-only context. For example, you might want to avoid loading the assembly that contains the code for a custom attribute. Using the <xref:System.Reflection.CustomAttributeData> class is different from using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName>:  
+ <xref:System.Reflection.CustomAttributeData> can be used in the execution context as well as in the reflection-only context. For example, you might want to avoid loading the assembly that contains the code for a custom attribute. Using the <xref:System.Reflection.CustomAttributeData> class is different from using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>:  
   
 -   The properties and methods of <xref:System.Reflection.CustomAttributeData> only provide you with the values that were specified for the attribute instance, not the semantics of the constructor. For example, a string argument of an attribute might be converted internally to some other representation, and returned in a canonical form; or a property might have side effects when the actual attribute code is executed.  
   
@@ -71,6 +71,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
+    <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -194,6 +196,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="ConstructorArguments">
@@ -256,6 +260,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.CustomAttributeData.NamedArguments" />
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -347,6 +354,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -407,6 +416,8 @@
         <altCompliant cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" />
         <exception cref="T:System.ArgumentNullException">
           <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -503,6 +514,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -531,6 +544,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="NamedArguments">
@@ -590,6 +604,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.CustomAttributeData.ConstructorArguments" />
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -642,5 +659,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the target.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

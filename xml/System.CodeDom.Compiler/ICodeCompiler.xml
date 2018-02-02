@@ -31,6 +31,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This interface cannot be used by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. Classes that implement this interface cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+    <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
   </Docs>
   <Members>
     <Member MemberName="CompileAssemblyFromDom">
@@ -61,6 +63,10 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromDomBatch">
@@ -91,6 +97,9 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromFile">
@@ -121,6 +130,8 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromFileBatch">
@@ -151,6 +162,8 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromSource">
@@ -181,6 +194,8 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromSourceBatch">
@@ -211,6 +226,8 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
   </Members>

@@ -133,6 +133,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" /> property is set to a value less than 0.</exception>
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySizeProperty" />
       </Docs>
     </Member>
     <Member MemberName="KeySizeProperty">
@@ -158,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" />
       </Docs>
     </Member>
     <Member MemberName="KeyType">
@@ -183,6 +185,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityKeyType" />
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyTypeProperty" />
       </Docs>
     </Member>
     <Member MemberName="KeyTypeProperty">
@@ -208,6 +212,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityKeyType" />
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType" />
       </Docs>
     </Member>
     <Member MemberName="KeyUsage">
@@ -233,6 +239,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityKeyUsage" />
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsageProperty" />
       </Docs>
     </Member>
     <Member MemberName="KeyUsageProperty">
@@ -258,6 +266,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityKeyUsage" />
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsageProperty" />
       </Docs>
     </Member>
     <Member MemberName="PeerAuthenticationMode">
@@ -381,6 +391,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenTypes" />
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenTypeProperty" />
       </Docs>
     </Member>
     <Member MemberName="TokenTypeProperty">
@@ -406,11 +418,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType" />
       </Docs>
     </Member>
     <Member MemberName="TryGetProperty&lt;TValue&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetProperty&lt;TValue&gt; (string property, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty&lt;TValue&gt;(string property, !!TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty&lt;TValue&gt;(string property, [out] !!TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.TryGetProperty``1(System.String,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

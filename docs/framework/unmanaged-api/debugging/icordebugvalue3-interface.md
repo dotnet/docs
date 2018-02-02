@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValue3 interface [.NET Framework debugging]"
 ms.assetid: 7d5385d3-f4a5-47c4-8478-a3513b5e9406
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue3 Interface
 Extends the "ICorDebugValue" and "ICorDebugValue2" interfaces to provide support for arrays that are larger than 2 GB.  
@@ -53,5 +53,5 @@ Extends the "ICorDebugValue" and "ICorDebugValue2" interfaces to provide support
 ## See Also  
     
     
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

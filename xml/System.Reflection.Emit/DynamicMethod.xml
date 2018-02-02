@@ -31,9 +31,9 @@
   
  A dynamic method can be anonymously hosted, or it can belogically associated with a module or with a type.  
   
--   If the dynamic method is anonymously hosted, it is located in a system-provided assembly, and therefore is isolated from other code. By default, it does not have access to any non-public data. An anonymously hosted dynamic method can have restricted ability to skip the JIT compiler's visibility checks, if it has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. The trust level of the assembly whose non-public members are accessed by the dynamic method must be equal to, or a subset of, the trust level of the call stack that emitted the dynamic method. For more information about anonymously hosted dynamic methods, see [Walkthrough: Emitting Code in Partial Trust Scenarios](~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md).  
+-   If the dynamic method is anonymously hosted, it is located in a system-provided assembly, and therefore is isolated from other code. By default, it does not have access to any non-public data. An anonymously hosted dynamic method can have restricted ability to skip the JIT compiler's visibility checks, if it has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag. The trust level of the assembly whose non-public members are accessed by the dynamic method must be equal to, or a subset of, the trust level of the call stack that emitted the dynamic method. For more information about anonymously hosted dynamic methods, see [Walkthrough: Emitting Code in Partial Trust Scenarios](~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md).  
   
--   If the dynamic method is associated with a module that you specify, the dynamic method is effectively global to that module. It can access all types in the module and all `internal` (`Friend` in Visual Basic) members of the types. You can associate a dynamic method with any module, regardless of whether you created the module, provided that a demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> flag can be satisfied by the call stack that includes your code. If the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag is included in the grant, the dynamic method can skip the JIT compiler's visibility checks and access the private data of all types declared in the module or in any other module in any assembly.  
+-   If the dynamic method is associated with a module that you specify, the dynamic method is effectively global to that module. It can access all types in the module and all `internal` (`Friend` in Visual Basic) members of the types. You can associate a dynamic method with any module, regardless of whether you created the module, provided that a demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> flag can be satisfied by the call stack that includes your code. If the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag is included in the grant, the dynamic method can skip the JIT compiler's visibility checks and access the private data of all types declared in the module or in any other module in any assembly.  
   
     > [!NOTE]
     >  When you specify the module with which a dynamic method is associated, that module must not be in the system-provided assembly that is used for anonymous hosting.  
@@ -48,7 +48,7 @@
 |Skipping JIT visibility checks, with restrictions|Public members of public types in any assembly.|All members of all types, only in assemblies whose trust levels are equal to or less than the trust level of the assembly that emitted the dynamic method.|  
   
 > [!NOTE]
->  Prior to the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. This permission is included by default in the FullTrust and LocalIntranet named permission sets, but not in the Internet permission set. Therefore, in earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] a library can be used with Internet permissions only if it has the <xref:System.Security.SecurityCriticalAttribute> attribute and also executes an <xref:System.Security.PermissionSet.Assert%2A> for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)] allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This allows libraries that emit code to be security transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, which simplifies the task of writing a secure library. To use this feature, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Prior to the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. This permission is included by default in the FullTrust and LocalIntranet named permission sets, but not in the Internet permission set. Therefore, in earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] a library can be used with Internet permissions only if it has the <xref:System.Security.SecurityCriticalAttribute> attribute and also executes an <xref:System.Security.PermissionSet.Assert%2A> for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)] allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This allows libraries that emit code to be security transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, which simplifies the task of writing a secure library. To use this feature, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  The following table shows which types and members are accessible to a dynamic method that is associated with a module or with a type in a module.  
   
@@ -127,7 +127,7 @@
   
  When an anonymously hosted dynamic method is constructed, the call stack of the emitting assembly is included. When the method is invoked, the permissions of the emitting assembly are used instead of the permissions of the actual caller. Thus, the dynamic method cannot execute at a higher level of privilege than that of the assembly that emitted it, even if it is passed to and executed by an assembly that has a higher trust level.  
   
- This constructor specifies the method attributes <xref:System.Reflection.MethodAttributes?displayProperty=fullName> and <xref:System.Reflection.MethodAttributes?displayProperty=fullName>, and the calling convention <xref:System.Reflection.CallingConventions?displayProperty=fullName>.  
+ This constructor specifies the method attributes <xref:System.Reflection.MethodAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType>, and the calling convention <xref:System.Reflection.CallingConventions.Standard?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  This constructor was introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
@@ -181,7 +181,7 @@
   
 -   The target members belong to an assembly that has a level of trust equal to or lower than the call stack that emits the dynamic method.  
   
--   The call stack that emits the dynamic method is granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. This is always true when the code is executed with full trust. For partially trusted code, it is true only if the host explicitly grants the permission.  
+-   The call stack that emits the dynamic method is granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag. This is always true when the code is executed with full trust. For partially trusted code, it is true only if the host explicitly grants the permission.  
   
     > [!IMPORTANT]
     >  If the permission has not been granted, a security exception is thrown when <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> is called or when the dynamic method is invoked, not when this constructor is called. No special permissions are required to emit the dynamic method.  
@@ -192,7 +192,7 @@
   
  When an anonymously hosted dynamic method is constructed, the call stack of the emitting assembly is included. When the method is invoked, the permissions of the emitting call stack are used instead of the permissions of the actual caller. Thus, the dynamic method cannot execute at a higher level of privilege than that of the assembly that emitted it, even if it is passed to and executed by an assembly that has a higher trust level.  
   
- This constructor specifies the method attributes <xref:System.Reflection.MethodAttributes?displayProperty=fullName> and <xref:System.Reflection.MethodAttributes?displayProperty=fullName>, and the calling convention <xref:System.Reflection.CallingConventions?displayProperty=fullName>.  
+ This constructor specifies the method attributes <xref:System.Reflection.MethodAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType>, and the calling convention <xref:System.Reflection.CallingConventions.Standard?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  This constructor was introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
@@ -237,15 +237,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor specifies method attributes <xref:System.Reflection.MethodAttributes?displayProperty=fullName> and <xref:System.Reflection.MethodAttributes?displayProperty=fullName>, calling convention <xref:System.Reflection.CallingConventions?displayProperty=fullName>, and does not skip just-in-time (JIT) visibility checks.  
+ This constructor specifies method attributes <xref:System.Reflection.MethodAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType>, calling convention <xref:System.Reflection.CallingConventions.Standard?displayProperty=nameWithType>, and does not skip just-in-time (JIT) visibility checks.  
   
  The dynamic method created with this constructor has access to public and `internal` (`Friend` in Visual Basic) members of all the types contained in module `m`.  
   
 > [!NOTE]
->  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag if the following conditions are both true: `m` is a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
+>  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag if the following conditions are both true: `m` is a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -307,13 +307,13 @@
 ## Remarks  
  The dynamic method created with this constructor has access to all members of the type `owner`, and to public and `internal` (`Friend` in Visual Basic) members of all the other types in the module that contains `owner`.  
   
- This constructor specifies method attributes <xref:System.Reflection.MethodAttributes?displayProperty=fullName> and <xref:System.Reflection.MethodAttributes?displayProperty=fullName>, calling convention <xref:System.Reflection.CallingConventions?displayProperty=fullName>, and does not skip just-in-time (JIT) visibility checks.  
+ This constructor specifies method attributes <xref:System.Reflection.MethodAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType>, calling convention <xref:System.Reflection.CallingConventions.Standard?displayProperty=nameWithType>, and does not skip just-in-time (JIT) visibility checks.  
   
 > [!NOTE]
->  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag if the following conditions are both true: `owner` is in a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
+>  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag if the following conditions are both true: `owner` is in a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -330,7 +330,7 @@
  The example code creates an instance of `Example` and then creates two delegates. The first is of type `UseLikeStatic`, which has the same parameters as the dynamic method. The second is of type `UseLikeInstance`, which lacks the first parameter (of type `Example`). This delegate is created using the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%28System.Type%2CSystem.Object%29> method overload; the second parameter of that method overload is an instance of `Example`, in this case the instance just created, which is bound to the newly created delegate. Whenever that delegate is invoked, the dynamic method acts on the bound instance of `Example`.  
   
 > [!NOTE]
->  This is an example of the relaxed rules for delegate binding introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], along with new overloads of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method. For more information, see the <xref:System.Delegate> class.  
+>  This is an example of the relaxed rules for delegate binding introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], along with new overloads of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=nameWithType> method. For more information, see the <xref:System.Delegate> class.  
   
  The `UseLikeStatic` delegate is invoked, passing in the instance of `Example` that is bound to the `UseLikeInstance` delegate. Then the `UseLikeInstance` delegate is invoked, so that both delegates act on the same instance of `Example`. The changes in the values of the internal field are displayed after each call. Finally, a `UseLikeInstance` delegate is bound to an instance of `DerivedFromxample`, and the delegate calls are repeated.  
   
@@ -389,15 +389,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor specifies method attributes <xref:System.Reflection.MethodAttributes?displayProperty=fullName> and <xref:System.Reflection.MethodAttributes?displayProperty=fullName>, and calling convention <xref:System.Reflection.CallingConventions?displayProperty=fullName>.  
+ This constructor specifies method attributes <xref:System.Reflection.MethodAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType>, and calling convention <xref:System.Reflection.CallingConventions.Standard?displayProperty=nameWithType>.  
   
  The dynamic method created with this constructor has access to public and `internal` (`Friend` in Visual Basic) members of all the types in contained module `m`. Skipping the JIT compiler's visibility checks allows the dynamic method to access private and protected members of all other types as well. This is useful, for example, when writing code to serialize objects.  
   
 > [!NOTE]
->  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag if the following conditions are both true: `m` is a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
+>  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag if the following conditions are both true: `m` is a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -453,13 +453,13 @@
 ## Remarks  
  The dynamic method created with this constructor has access to all members of the type `owner`, and to public and `internal` (`Friend` in Visual Basic) members of all the other types in the module that contains `owner`. Skipping the JIT compiler's visibility checks allows the dynamic method to access private and protected members of all other types as well. This is useful, for example, when writing code to serialize objects.  
   
- This constructor specifies method attributes <xref:System.Reflection.MethodAttributes?displayProperty=fullName> and <xref:System.Reflection.MethodAttributes?displayProperty=fullName>, and calling convention <xref:System.Reflection.CallingConventions?displayProperty=fullName>.  
+ This constructor specifies method attributes <xref:System.Reflection.MethodAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType>, and calling convention <xref:System.Reflection.CallingConventions.Standard?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag if the following conditions are both true: `owner` is in a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
+>  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag if the following conditions are both true: `owner` is in a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -522,10 +522,10 @@
  Skipping the JIT compiler's visibility checks allows the dynamic method to access private and protected members of all other types in the module and in all other assemblies as well. This is useful, for example, when writing code to serialize objects.  
   
 > [!NOTE]
->  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag if the following conditions are both true: `m` is a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
+>  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag if the following conditions are both true: `m` is a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -596,10 +596,10 @@
  The dynamic method created with this constructor has access to all members of the type `owner`, and to public and `internal` (`Friend` in Visual Basic) members of all the types contained in the module that contains `owner`. Skipping the JIT compiler's visibility checks allows the dynamic method to access private and protected members of all other types as well. This is useful, for example, when writing code to serialize objects.  
   
 > [!NOTE]
->  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag if the following conditions are both true: `owner` is in a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
+>  For backward compatibility, this constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag if the following conditions are both true: `owner` is in a module other than the calling module, and the demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag has failed. If the demand for <xref:System.Security.Permissions.SecurityPermission> succeeds, the operation is allowed.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -820,7 +820,7 @@
  The example code creates an instance of `Example` and then creates two delegates. The first is of type `UseLikeStatic`, which has the same parameters as the dynamic method. The second is of type `UseLikeInstance`, which lacks the first parameter (of type `Example`). This delegate is created using the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%28System.Type%2CSystem.Object%29> method overload; the second parameter of that method overload is an instance of `Example`, in this case the instance just created, which is bound to the newly created delegate. Whenever that delegate is invoked, the dynamic method acts on the bound instance of `Example`.  
   
 > [!NOTE]
->  This is an example of the relaxed rules for delegate binding introduced in the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], along with new overloads of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method. For more information, see the <xref:System.Delegate> class.  
+>  This is an example of the relaxed rules for delegate binding introduced in the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], along with new overloads of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=nameWithType> method. For more information, see the <xref:System.Delegate> class.  
   
  The `UseLikeStatic` delegate is invoked, passing in the instance of `Example` that is bound to the `UseLikeInstance` delegate. Then the `UseLikeInstance` delegate is invoked, so that both delegates act on the same instance of `Example`. The changes in the values of the internal field are displayed after each call. Finally, a `UseLikeInstance` delegate is bound to an instance of `DerivedFromxample`, and the delegate calls are repeated.  
   
@@ -999,6 +999,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.DynamicMethod.IsDefined(System.Type,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -1041,6 +1042,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attributeType" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Reflection.Emit.DynamicMethod.IsDefined(System.Type,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetDynamicILInfo">
@@ -1069,6 +1071,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to execute unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Reflection.Emit.DynamicILInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetILGenerator">
@@ -1232,6 +1235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.DynamicMethod.DefineParameter(System.Int32,System.Reflection.ParameterAttributes,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="InitLocals">
@@ -1324,7 +1328,7 @@
 > [!NOTE]
 >  This method overload is called by the <xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Object%5B%5D%29> method overload inherited from the <xref:System.Reflection.MethodBase> class, so the preceding remarks apply to both overloads.  
   
- This method does not demand permissions directly, but invoking the dynamic method can result in security demands, depending on the method. For example, no demands are made for anonymously hosted dynamic methods that are created with the `restrictedSkipVisibility` parameter set to `false`. On the other hand, if you create a method with `restrictedSkipVisibility` set to `true` so it can access a hidden member of a target assembly, the method will cause a demand for the permissions of the target assembly plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag.  
+ This method does not demand permissions directly, but invoking the dynamic method can result in security demands, depending on the method. For example, no demands are made for anonymously hosted dynamic methods that are created with the `restrictedSkipVisibility` parameter set to `false`. On the other hand, if you create a method with `restrictedSkipVisibility` set to `true` so it can access a hidden member of a target assembly, the method will cause a demand for the permissions of the target assembly plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
 > [!NOTE]
 >  Prior to the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess> flag.  
@@ -1352,6 +1356,7 @@
  -or-  
   
  The dynamic method contains unverifiable code. See the "Verification" section in Remarks for <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
+        <altmember cref="M:System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -1393,6 +1398,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Type,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityCritical">
@@ -1455,6 +1461,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The dynamic method doesn't have a method body.</exception>
+        <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
+        <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1517,6 +1525,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The dynamic method doesn't have a method body.</exception>
+        <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1579,6 +1589,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The dynamic method doesn't have a method body.</exception>
+        <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -1795,7 +1807,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `null` was specified for the return type when the dynamic method was created, this property returns <xref:System.Void?displayProperty=fullName>.  
+ If `null` was specified for the return type when the dynamic method was created, this property returns <xref:System.Void?displayProperty=nameWithType>.  
   
    
   
@@ -1847,6 +1859,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Emit.DynamicMethod.ReturnType" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1890,5 +1903,45 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetILGenerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an MSIL generator that can be used to emit a body for the dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the custom attributes applied to the method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDelegate">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes the dynamic method and creates a delegate that can be used to execute it.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -203,7 +203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D> parameter contains a collection of parameter name and value pairs. The parameters are matched up against the variables within the template by a case-insensitive comparison.  
+ The [IDictionary\<string,string>](xref:System.Collections.Generic.IDictionary%602) parameter contains a collection of parameter name and value pairs. The parameters are matched up against the variables within the template by a case-insensitive comparison.  
   
 > [!NOTE]
 >  The name/value collection passed to this method must contain a key for every template variable. Extra name/value pairs that do not match template variables are appended to the query string of the final URI.  
@@ -330,7 +330,7 @@
       </Docs>
     </Member>
     <Member MemberName="BindByPosition">
-      <MemberSignature Language="C#" Value="public Uri BindByPosition (Uri baseAddress, string[] values);" />
+      <MemberSignature Language="C#" Value="public Uri BindByPosition (Uri baseAddress, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri BindByPosition(class System.Uri baseAddress, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByPosition(System.Uri,System.String[])" />
       <MemberType>Method</MemberType>
@@ -643,5 +643,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplate" /> class</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BindByName">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new URI from the template and the collection of parameters.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

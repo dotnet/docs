@@ -31,10 +31,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/fileinfo.cs#4ee673c1a4ecad41). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use the <xref:System.IO.FileInfo> class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to files.  
   
  If you are performing multiple operations on the same file, it can be more efficient to use <xref:System.IO.FileInfo> instance methods instead of the corresponding static methods of the <xref:System.IO.File> class, because a security check will not always be necessary.  
@@ -101,6 +97,8 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.FileSystemWatcher" />
+    <altmember cref="T:System.IO.DriveInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -212,6 +210,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and appending to files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /></permission>
+        <altmember cref="T:System.IO.StreamWriter" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -387,7 +386,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
 ## Remarks  
  By default, full read/write access to new files is granted to all users.  
   
- This method is a wrapper for the functionality provided by <xref:System.IO.File.Create%2A?displayProperty=fullName>.  
+ This method is a wrapper for the functionality provided by <xref:System.IO.File.Create%2A?displayProperty=nameWithType>.  
   
    
   
@@ -456,6 +455,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
         <exception cref="T:System.IO.IOException">The disk is read-only.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.StreamWriter" />
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -1028,7 +1028,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.IO.FileInfo.Length%2A> property is pre-cached if the current instance of the <xref:System.IO.FileInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo>methods:  
+ The value of the <xref:System.IO.FileInfo.Length%2A> property is pre-cached if the current instance of the <xref:System.IO.FileInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
   
@@ -1428,6 +1428,8 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <paramref name="path" /> is read-only or is a directory.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="P:System.Text.Encoding.UTF8" />
+        <altmember cref="T:System.IO.StreamReader" />
       </Docs>
     </Member>
     <Member MemberName="OpenWrite">
@@ -1755,5 +1757,25 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a file with various read/write and sharing privileges.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies an existing file to a new file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

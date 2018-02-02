@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.OutputCacheProfileCollection" />
+    <altmember cref="T:System.Web.Caching.CacheDependency" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -173,6 +176,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.OutputCacheLocation" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -244,9 +248,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The page that has the <xref:System.Web.Configuration.OutputCacheProfile.NoStore%2A?displayProperty=fullName> property set to `true` issues a response specifying in its header to prevent secondary storage of sensitive information.  
+ The page that has the <xref:System.Web.Configuration.OutputCacheProfile.NoStore%2A?displayProperty=nameWithType> property set to `true` issues a response specifying in its header to prevent secondary storage of sensitive information.  
   
- Setting this attribute to `true` is equivalent to invoking the <xref:System.Web.HttpCachePolicy.SetNoStore%2A?displayProperty=fullName> method during a Web request.  
+ Setting this attribute to `true` is equivalent to invoking the <xref:System.Web.HttpCachePolicy.SetNoStore%2A?displayProperty=nameWithType> method during a Web request.  
   
    
   
@@ -258,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -317,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="VaryByContentEncoding">
@@ -349,6 +355,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.OutputCacheParameters.VaryByContentEncoding" />
       </Docs>
     </Member>
     <Member MemberName="VaryByControl">
@@ -433,6 +440,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
@@ -505,7 +513,7 @@
  The <xref:System.Web.Configuration.OutputCacheProfile.VaryByParam%2A> setting must be defined in either the profile or the  directive of the page using the profile.  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.OutputCacheProfile.VaryByParam%2A?displayProperty=fullName> settings are the same ones used by the `VaryByParam` attribute of the . Varying by all parameters by setting the value of "*" is not recommended. It can result in cache overflow or a denial of service attack on the Web server.  
+>  The <xref:System.Web.Configuration.OutputCacheProfile.VaryByParam%2A?displayProperty=nameWithType> settings are the same ones used by the `VaryByParam` attribute of the . Varying by all parameters by setting the value of "*" is not recommended. It can result in cache overflow or a denial of service attack on the Web server.  
   
    
   
@@ -517,6 +525,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCacheVaryByParams" />
+        <altmember cref="P:System.Web.HttpCachePolicy.VaryByParams" />
       </Docs>
     </Member>
   </Members>

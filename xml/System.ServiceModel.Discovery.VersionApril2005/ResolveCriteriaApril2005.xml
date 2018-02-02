@@ -148,5 +148,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the XML schema for resolve criteria defined in the April 2005 version of the WS-Discovery protocol.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -69,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static System.Text.Encodings.Web.HtmlEncoder Create (System.Text.Unicode.UnicodeRange[] allowedRanges);" />
+      <MemberSignature Language="C#" Value="public static System.Text.Encodings.Web.HtmlEncoder Create (params System.Text.Unicode.UnicodeRange[] allowedRanges);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Encodings.Web.HtmlEncoder Create(class System.Text.Unicode.UnicodeRange[] allowedRanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.HtmlEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
       <MemberType>Method</MemberType>

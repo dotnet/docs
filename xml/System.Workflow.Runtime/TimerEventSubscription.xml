@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- <xref:System.Workflow.Runtime.TimerEventSubscription> objects are added to the timer queue associated with a workflow instance in order to send a message to a specific <xref:System.Workflow.Runtime.WorkflowQueue> at a specified time. When the time specified by <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A> is reached, the workflow runtime engine sends a message containing the <xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A> to the <xref:System.Workflow.Runtime.WorkflowQueue> specified by <xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A>. The timer queue associated with a workflow instance is contained in the <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty>. You can examine <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty> and the <xref:System.Workflow.Runtime.WorkflowQueueInfo> objects returned by <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A?displayProperty=fullName> to determine which activities are waiting on a specific <xref:System.Workflow.Runtime.TimerEventSubscription>. The <xref:System.Workflow.Activities.DelayActivity> and the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> both use timer event subscriptions to provide part of their functionality.  
+ <xref:System.Workflow.Runtime.TimerEventSubscription> objects are added to the timer queue associated with a workflow instance in order to send a message to a specific <xref:System.Workflow.Runtime.WorkflowQueue> at a specified time. When the time specified by <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A> is reached, the workflow runtime engine sends a message containing the <xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A> to the <xref:System.Workflow.Runtime.WorkflowQueue> specified by <xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A>. The timer queue associated with a workflow instance is contained in the <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty>. You can examine <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty> and the <xref:System.Workflow.Runtime.WorkflowQueueInfo> objects returned by <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A?displayProperty=nameWithType> to determine which activities are waiting on a specific <xref:System.Workflow.Runtime.TimerEventSubscription>. The <xref:System.Workflow.Activities.DelayActivity> and the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> both use timer event subscriptions to provide part of their functionality.  
   
  ]]></format>
     </remarks>
@@ -194,5 +194,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.TimerEventSubscription" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

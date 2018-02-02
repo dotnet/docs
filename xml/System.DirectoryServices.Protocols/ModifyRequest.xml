@@ -33,7 +33,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ModifyRequest (string distinguishedName, System.DirectoryServices.Protocols.DirectoryAttributeModification[] modifications);" />
+      <MemberSignature Language="C#" Value="public ModifyRequest (string distinguishedName, params System.DirectoryServices.Protocols.DirectoryAttributeModification[] modifications);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string distinguishedName, class System.DirectoryServices.Protocols.DirectoryAttributeModification[] modifications) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ModifyRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttributeModification[])" />
       <MemberType>Constructor</MemberType>
@@ -60,7 +60,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ModifyRequest (string distinguishedName, System.DirectoryServices.Protocols.DirectoryAttributeOperation operation, string attributeName, object[] values);" />
+      <MemberSignature Language="C#" Value="public ModifyRequest (string distinguishedName, System.DirectoryServices.Protocols.DirectoryAttributeOperation operation, string attributeName, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string distinguishedName, valuetype System.DirectoryServices.Protocols.DirectoryAttributeOperation operation, string attributeName, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ModifyRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttributeOperation,System.String,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -150,5 +150,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

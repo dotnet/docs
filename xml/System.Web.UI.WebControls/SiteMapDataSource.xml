@@ -69,7 +69,7 @@
   
 <a name="retrieving_site_map_data"></a>   
 ## Retrieving Site Map Data  
- Site map data is retrieved from an <xref:System.Web.SiteMapProvider> object, such as <xref:System.Web.XmlSiteMapProvider>, which is the default site map provider for ASP.NET. You can specify any provider that is configured for your site to provide the site map data to the <xref:System.Web.UI.WebControls.SiteMapDataSource> and can obtain the list of available providers by accessing the <xref:System.Web.SiteMap.Providers%2A?displayProperty=fullName> collection.  
+ Site map data is retrieved from an <xref:System.Web.SiteMapProvider> object, such as <xref:System.Web.XmlSiteMapProvider>, which is the default site map provider for ASP.NET. You can specify any provider that is configured for your site to provide the site map data to the <xref:System.Web.UI.WebControls.SiteMapDataSource> and can obtain the list of available providers by accessing the <xref:System.Web.SiteMap.Providers%2A?displayProperty=nameWithType> collection.  
   
  Like all data source controls, every instance of a <xref:System.Web.UI.WebControls.SiteMapDataSource> is associated with a single helper object, known as a data source view. The <xref:System.Web.UI.WebControls.SiteMapDataSourceView> is a view on the site map data, according to the properties of the data source, and is retrieved by calling the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView%2A> method. The <xref:System.Web.UI.WebControls.SiteMapDataSourceView> maintains the <xref:System.Web.SiteMapNodeCollection> object that the controls bind to.  
   
@@ -107,11 +107,15 @@
 ## Examples  
  The following code example demonstrates how to declaratively bind a <xref:System.Web.UI.WebControls.TreeView> control to a site map using a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. The site map data is retrieved beginning at the root node level.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/CS/webform1smdscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/VB/webform1smdsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/CS/webform1smdscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/VB/webform1smdsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMap" />
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -186,6 +190,7 @@
         <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.SiteMapProvider" /> is configured or available for the site.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" /> is <see langword="true" /> but the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set but the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> cannot resolve a node for the specified URL.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetList">
@@ -210,10 +215,11 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetList%2A> method to retrieve a set of objects that can be used as sources for the <xref:System.Web.UI.WebControls.SiteMapDataSource> control. Site map data source controls encapsulate their lists of data as <xref:System.Web.UI.WebControls.SiteMapDataSourceView> objects. Therefore, when associated with one or more <xref:System.Web.UI.WebControls.SiteMapDataSourceView> objects, a <xref:System.Web.UI.WebControls.SiteMapDataSource> control represents a list source object and the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetList%2A> method returns a list containing one element — the data source control itself.  
   
- The <xref:System.Web.UI.WebControls.SiteMapDataSource.GetList%2A> method calls the static <xref:System.Web.UI.ListSourceHelper.GetList%2A?displayProperty=fullName> method to retrieve a list of objects that can be used as sources of data. The <xref:System.Web.UI.ListSourceHelper> checks whether the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames%2A> method returns a valid collection of view names. If it does, the <xref:System.Web.UI.ListSourceHelper> returns a list containing one element — the <xref:System.Web.UI.WebControls.SiteMapDataSource>.  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource.GetList%2A> method calls the static <xref:System.Web.UI.ListSourceHelper.GetList%2A?displayProperty=nameWithType> method to retrieve a list of objects that can be used as sources of data. The <xref:System.Web.UI.ListSourceHelper> checks whether the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames%2A> method returns a valid collection of view names. If it does, the <xref:System.Web.UI.ListSourceHelper> returns a list containing one element — the <xref:System.Web.UI.WebControls.SiteMapDataSource>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -246,6 +252,7 @@
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.Provider" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" /> is <see langword="true" /> but the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set but the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> cannot resolve a node for the specified URL.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -272,6 +279,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -310,6 +318,7 @@
  \- or -  
   
  No default provider is configured for the site.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="ShowStartingNode">
@@ -343,6 +352,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset" />
       </Docs>
     </Member>
     <Member MemberName="SiteMapProvider">
@@ -394,11 +406,13 @@
 > [!NOTE]
 >  The `AsciiTextProvider` is not the default provider for the site, which (in this case) remains the <xref:System.Web.XmlSiteMapProvider> object. The <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A> property of the <xref:System.Web.UI.WebControls.SiteMapDataSource> control is set to the name of a custom site map provider, and the <xref:System.Web.UI.WebControls.TreeView> binds to the corresponding site map data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/CS/webform3smdscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/VB/webform3smdsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/CS/webform3smdscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/VB/webform3smdsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SiteMap" />
+        <altmember cref="T:System.Web.SiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="StartFromCurrentNode">
@@ -432,6 +446,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
       </Docs>
     </Member>
     <Member MemberName="StartingNodeOffset">
@@ -497,6 +512,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" />
       </Docs>
     </Member>
     <Member MemberName="StartingNodeUrl">
@@ -538,11 +555,12 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property and bind a <xref:System.Web.UI.WebControls.TreeView> control to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/CS/webform2smdsnocustomcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/VB/webform2smdsnocustomvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/CS/webform2smdsnocustomcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/VB/webform2smdsnocustomvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
@@ -569,6 +587,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.IListSource.GetList" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -595,6 +614,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.System#ComponentModel#IListSource#ContainsListCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">
@@ -625,6 +645,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.SiteMapProvider" /> is configured or available for the site.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetViewNames">
@@ -651,6 +673,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
       </Docs>
     </Member>
   </Members>

@@ -29,7 +29,7 @@
   
 <a name="introduction"></a>   
 ## Introduction  
- Use the <xref:System.Web.UI.WebControls.PlaceHolder> control as a container to store server controls that are dynamically added to the Web page. The <xref:System.Web.UI.WebControls.PlaceHolder> control does not produce any visible output and is used only as a container for other controls on the Web page. You can use the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection to add, insert, or remove a control in the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
+ Use the <xref:System.Web.UI.WebControls.PlaceHolder> control as a container to store server controls that are dynamically added to the Web page. The <xref:System.Web.UI.WebControls.PlaceHolder> control does not produce any visible output and is used only as a container for other controls on the Web page. You can use the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection to add, insert, or remove a control in the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -56,11 +56,13 @@
 ## Examples  
  The following code example demonstrates how to dynamically add controls to the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PlaceHolder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PlaceHolder/CS/placeholdercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PlaceHolder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PlaceHolder/VB/placeholdervb.aspx#1)]  -->  
+ [!code-aspx-csharp[PlaceHolder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PlaceHolder/CS/placeholdercs.aspx#1)]
+ [!code-aspx-vb[PlaceHolder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PlaceHolder/VB/placeholdervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.PlaceHolder.EnableTheming%2A> property indicates whether themes are enabled for the <xref:System.Web.UI.WebControls.PlaceHolder> control. The <xref:System.Web.UI.WebControls.PlaceHolder.EnableTheming%2A> property also affects whether themes are enabled for the controls contained in its <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection. When the <xref:System.Web.UI.WebControls.PlaceHolder.EnableTheming%2A> property is `true`, the application's theme directory is searched for control skins to apply. If no skin for the particular control exists in the theme directory, a skin is not applied.  
+ The <xref:System.Web.UI.WebControls.PlaceHolder.EnableTheming%2A> property indicates whether themes are enabled for the <xref:System.Web.UI.WebControls.PlaceHolder> control. The <xref:System.Web.UI.WebControls.PlaceHolder.EnableTheming%2A> property also affects whether themes are enabled for the controls contained in its <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection. When the <xref:System.Web.UI.WebControls.PlaceHolder.EnableTheming%2A> property is `true`, the application's theme directory is searched for control skins to apply. If no skin for the particular control exists in the theme directory, a skin is not applied.  
   
  When the <xref:System.Web.UI.WebControls.PlaceHolder.EnableTheming%2A> property is `false`, the theme directory is not searched and the contents of the <xref:System.Web.UI.Control.SkinID%2A> property are not used.  
   
@@ -113,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.SkinID" />
       </Docs>
     </Member>
   </Members>

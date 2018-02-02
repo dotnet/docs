@@ -547,7 +547,7 @@
 ## Remarks  
  Two <xref:System.TimeZoneInfo.TransitionTime> objects are equal if they have identical values for each of their six properties. Otherwise, they are unequal.  
   
- The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -588,7 +588,7 @@
 ## Remarks  
  Two <xref:System.TimeZoneInfo.TransitionTime> objects are unequal if they have different values for any of their six properties. Otherwise, they are equal.  
   
- The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -736,7 +736,7 @@
 ## Remarks  
  The value of the <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property is used only for time changes with floating-date rules. Valid values can range from 1 to 5.  
   
- The<xref:System.TimeZoneInfo.TransitionTime.Month%2A> property defines the month in which the time change occurs. The <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property determines the week on which the transition occurs. The <xref:System.TimeZoneInfo.TransitionTime.DayOfWeek%2A> property defines the day of the week on which the transition occurs. The value of the <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property is determined as shown in the following table.  
+ The <xref:System.TimeZoneInfo.TransitionTime.Month%2A> property defines the month in which the time change occurs. The <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property determines the week on which the transition occurs. The <xref:System.TimeZoneInfo.TransitionTime.DayOfWeek%2A> property defines the day of the week on which the transition occurs. The value of the <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property is determined as shown in the following table.  
   
 |If the Week property value is|The transition occurs on|  
 |-----------------------------------|------------------------------|  
@@ -758,7 +758,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeZoneInfo.TransitionTime.Day" />
+        <altmember cref="P:System.TimeZoneInfo.TransitionTime.Month" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.TimeZoneInfo.TransitionTime" /> objects have identical values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

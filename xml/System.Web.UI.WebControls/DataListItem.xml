@@ -39,11 +39,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="T:System.Web.UI.WebControls.DataListItemCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.DataList.Items" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -139,11 +144,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -178,11 +185,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see[ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataListItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataListItem.ItemIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataListItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataListItem.ItemIndex Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataListItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataListItem.ItemIndex Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataListItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataListItem.ItemIndex Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -225,11 +235,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
+        <altmember cref="M:System.Web.UI.WebControls.DataListItem.SetItemType(System.Web.UI.WebControls.ListItemType)" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -262,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RenderItem">
@@ -296,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SetItemType">
@@ -324,6 +339,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -346,10 +362,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItem">
@@ -371,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.DataListItem.DataItem%2A?displayProperty=fullName> property to retrieve the data object for a <xref:System.Web.UI.WebControls.DataListItem> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.DataListItem.DataItem%2A?displayProperty=nameWithType> property to retrieve the data object for a <xref:System.Web.UI.WebControls.DataListItem> object.  
   
  The <xref:System.Web.UI.WebControls.DataListItem.System%23Web%23UI%23IDataItemContainer%23DataItem%2A> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.DataListItem> instance is cast to an <xref:System.Web.UI.IDataItemContainer> interface.  
   
@@ -380,6 +399,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for retrieving the data object for a <see cref="T:System.Web.UI.WebControls.DataListItem" />, override the <see cref="P:System.Web.UI.WebControls.DataListItem.DataItem" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.DataListItem.DataItem" /> property to retrieve the associated data object.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.DataItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -401,7 +421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.DataListItem.ItemIndex%2A?displayProperty=fullName> property to retrieve the data-item index for a <xref:System.Web.UI.WebControls.DataListItem> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.DataListItem.ItemIndex%2A?displayProperty=nameWithType> property to retrieve the data-item index for a <xref:System.Web.UI.WebControls.DataListItem> object.  
   
  The <xref:System.Web.UI.WebControls.DataListItem.System%23Web%23UI%23IDataItemContainer%23DataItemIndex%2A> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.DataListItem> instance is cast to an <xref:System.Web.UI.IDataItemContainer> interface.  
   
@@ -410,6 +430,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for retrieving the data-item index for a <see cref="T:System.Web.UI.WebControls.DataListItem" />, override the <see cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" /> property to retrieve the data-item index.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -431,12 +452,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.DataListItem.ItemIndex%2A?displayProperty=fullName> property to retrieve the data-item index for a <xref:System.Web.UI.WebControls.DataListItem> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.DataListItem.ItemIndex%2A?displayProperty=nameWithType> property to retrieve the data-item index for a <xref:System.Web.UI.WebControls.DataListItem> object.  
   
  The <xref:System.Web.UI.WebControls.DataListItem.System%23Web%23UI%23IDataItemContainer%23DisplayIndex%2A> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.DataListItem> instance is cast to an <xref:System.Web.UI.IDataItemContainer> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" />
       </Docs>
     </Member>
   </Members>

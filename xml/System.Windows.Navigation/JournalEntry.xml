@@ -24,15 +24,15 @@
   
  An entry for the current item is added to back navigation history when a forward navigation occurs. This occurs in the following situations:  
   
--   The `Navigate` method is called (<xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.Navigate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.Navigate%2A?displayProperty=fullName>).  
+-   The `Navigate` method is called (<xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.Navigate%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.Navigate%2A?displayProperty=nameWithType>).  
   
--   The `GoForward` method is called (<xref:System.Windows.Navigation.NavigationService.GoForward%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.GoForward%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.GoForward%2A?displayProperty=fullName>).  
+-   The `GoForward` method is called (<xref:System.Windows.Navigation.NavigationService.GoForward%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.GoForward%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.GoForward%2A?displayProperty=nameWithType>).  
   
 -   The forward button on the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
   
  Likewise, an entry for the current item is added to forward navigation history before a back navigation occurs, which happens when:  
   
--   The `GoBack` method is called (<xref:System.Windows.Navigation.NavigationService.GoBack%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.GoBack%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.GoBack%2A?displayProperty=fullName>).  
+-   The `GoBack` method is called (<xref:System.Windows.Navigation.NavigationService.GoBack%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.GoBack%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.GoBack%2A?displayProperty=nameWithType>).  
   
 -   The back button on the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
   
@@ -40,9 +40,9 @@
   
  Each <xref:System.Windows.Navigation.JournalEntry> object encapsulates information about a particular navigation, including a name for the entry (<xref:System.Windows.Navigation.JournalEntry.Name%2A>), whether the entry is kept alive (<xref:System.Windows.Navigation.JournalEntry.KeepAlive%2A>) and the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the content that is navigated to (<xref:System.Windows.Navigation.JournalEntry.Source%2A>).  
   
- You can retrieve all the <xref:System.Windows.Navigation.JournalEntry> objects in back navigation history by enumerating the <xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=fullName> properties. For forward navigation history, you can retrieve all the <xref:System.Windows.Navigation.JournalEntry> objects by enumerating the <xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=fullName> properties.  
+ You can retrieve all the <xref:System.Windows.Navigation.JournalEntry> objects in back navigation history by enumerating the <xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=nameWithType> properties. For forward navigation history, you can retrieve all the <xref:System.Windows.Navigation.JournalEntry> objects by enumerating the <xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=nameWithType> properties.  
   
- If you need to remove the most recent <xref:System.Windows.Navigation.JournalEntry> object from back navigation history, to prevent navigation to it, for example, you can call the `RemoveBackEntry` method (<xref:System.Windows.Navigation.NavigationService.RemoveBackEntry%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.RemoveBackEntry%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.RemoveBackEntry%2A?displayProperty=fullName>), which removes the <xref:System.Windows.Navigation.JournalEntry> object and returns a reference to it.  
+ If you need to remove the most recent <xref:System.Windows.Navigation.JournalEntry> object from back navigation history, to prevent navigation to it, for example, you can call the `RemoveBackEntry` method (<xref:System.Windows.Navigation.NavigationService.RemoveBackEntry%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.RemoveBackEntry%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.RemoveBackEntry%2A?displayProperty=nameWithType>), which removes the <xref:System.Windows.Navigation.JournalEntry> object and returns a reference to it.  
   
  You cannot add <xref:System.Windows.Navigation.JournalEntry> objects to navigation history, however, because you can neither instantiate nor derive from <xref:System.Windows.Navigation.JournalEntry>, and because no type implements a member to do so. However, you can add custom <xref:System.Windows.Navigation.CustomContentState> objects to back navigation history by calling the `AddBackEntry` method (<xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A>, <xref:System.Windows.Navigation.NavigationWindow.AddBackEntry%2A>, <xref:System.Windows.Controls.Frame.AddBackEntry%2A>); <xref:System.Windows.Navigation.NavigationService> adds the <xref:System.Windows.Navigation.CustomContentState> object to an internally-created <xref:System.Windows.Navigation.JournalEntry> object, which is then added to the back navigation history.  
   
@@ -116,6 +116,7 @@
         <summary>Returns the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the journal entry for the specified element.</summary>
         <returns>The value of the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the journal entry for the specified element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Navigation.JournalEntry.KeepAliveProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -138,6 +139,7 @@
         <summary>Gets the <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the journal entry for the specified element.</summary>
         <returns>The <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the journal entry for the specified element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Navigation.JournalEntry.NameProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -166,6 +168,7 @@
         <param name="context">The streaming context.</param>
         <summary>Called when this object is serialized.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
       </Docs>
     </Member>
     <Member MemberName="KeepAliveProperty">
@@ -276,6 +279,7 @@
           <see langword="true" /> to keep the journal entry in memory; otherwise, <see langword="false" />.</param>
         <summary>Sets the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the specified element.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" />
       </Docs>
     </Member>
     <Member MemberName="SetName">
@@ -299,6 +303,7 @@
         <param name="name">The name to be assigned to the attached property.</param>
         <summary>Sets the <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the specified element.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Navigation.JournalEntry.NameProperty" />
       </Docs>
     </Member>
     <Member MemberName="Source">

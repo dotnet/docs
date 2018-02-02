@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.ProfilePropertySettings> class provides a way to programmatically create, access, and modify the definition of an individual property added to the `properties` subsection of the `profile` section of a configuration file.  
   
- The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=fullName> property. For more information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d). For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property. For more information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d). For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
    
   
@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ProfileSection" />
+    <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+    <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +66,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,6 +113,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+        <altmember cref="T:System.Web.Configuration.SerializationMode" />
       </Docs>
     </Member>
     <Member MemberName="AllowAnonymous">
@@ -151,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="CustomProviderData">
@@ -216,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -256,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -302,7 +313,7 @@
 ## Remarks  
  Profile providers are data sources in which user-profile values are stored. You can specify profile providers in the `providers` subsection of the `profile` section of a configuration file.  
   
- If the value of this property is an empty string, the default provider specified in the <xref:System.Web.Configuration.ProfileSection.DefaultProvider%2A?displayProperty=fullName> property is used.  
+ If the value of this property is an empty string, the default provider specified in the <xref:System.Web.Configuration.ProfileSection.DefaultProvider%2A?displayProperty=nameWithType> property is used.  
   
    
   
@@ -314,6 +325,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -355,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="SerializeAs">
@@ -393,6 +406,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="T:System.Web.Configuration.SerializationMode" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -437,7 +452,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> class.</summary>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

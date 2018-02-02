@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetRequestedRuntimeVersionForCLSID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRequestedRuntimeVersionForCLSID function [.NET Framework hosting]"
 ms.assetid: 5bb12f9a-0612-434b-b4ed-2db636a20bec
@@ -28,6 +26,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetRequestedRuntimeVersionForCLSID Function
 Gets the appropriate common language runtime (CLR) version information for the class with the specified `CLSID`.  

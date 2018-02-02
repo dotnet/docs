@@ -456,11 +456,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.HashAlgorithmName.ToString%2A> method returns the <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property, if it has been assigned. Otherwise, it returns <xref:System.String.Empty?displayProperty=fullName>.  
+ The <xref:System.Security.Cryptography.HashAlgorithmName.ToString%2A> method returns the <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property, if it has been assigned. Otherwise, it returns <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> values are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

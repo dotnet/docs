@@ -46,6 +46,9 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewCell" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewCell.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewCell.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.ICloneable" />
+    <altmember cref="T:System.IDisposable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +64,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="AccessibilityObject">
@@ -98,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="AdjustCellBorderStyle">
@@ -144,7 +149,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control internally calls the <xref:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle%2A> method to determine the appearance of the cell borders. The <xref:System.Windows.Forms.DataGridView> control typically uses the value of the <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A> property for the `dataGridViewAdvancedBorderStyleInput` parameter.  
   
- The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle?displayProperty=fullName> value is not supported as an input style for cells.  
+ The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetPartial?displayProperty=nameWithType> value is not supported as an input style for cells.  
   
    
   
@@ -159,6 +164,11 @@
         <block subset="none" type="overrides">
           <para>Override this method if you want to customize the appearance of the cell borders.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetInheritedStyle(System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.HasStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidths">
@@ -202,6 +212,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellBorderStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="ClickUnsharesRow">
@@ -234,6 +247,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -263,6 +278,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Windows.Forms.DataGridViewCell.Clone" /> method in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewCell.Clone" /> method so that the properties of the base class are copied to the new cell, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -289,13 +305,15 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.ColumnIndex%2A> property to determine which columns to check for integer values. In this example, the cells in the `Description` column are ignored when the contents of the selected cells are summed. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.ColumnIndex%2A> property to determine which columns to check for integer values. In this example, the cells in the `Description` column are ignored when the contents of the selected cells are summed. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="ContentBounds">
@@ -326,7 +344,7 @@
   
  This property calls the <xref:System.Windows.Forms.DataGridViewCell.GetContentBounds%2A> method to get its value. For the base <xref:System.Windows.Forms.DataGridViewCell> type, this value is <xref:System.Drawing.Rectangle.Empty>.  
   
- To get the bounding rectangle of the cell rather than the cell contents, use the <xref:System.Windows.Forms.DataGridView.GetCellDisplayRectangle%2A?displayProperty=fullName> method.  
+ To get the bounding rectangle of the cell rather than the cell contents, use the <xref:System.Windows.Forms.DataGridView.GetCellDisplayRectangle%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -336,6 +354,12 @@
   
  The cell is a column header cell.</exception>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> property is less than 0, indicating that the cell is a row header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.GetCellDisplayRectangle(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Size" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.PreferredSize" />
+        <altmember cref="F:System.Drawing.Rectangle.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ContentClickUnsharesRow">
@@ -368,6 +392,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContentDoubleClickUnsharesRow">
@@ -400,6 +426,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuStrip">
@@ -428,7 +456,7 @@
 ## Remarks  
  This property indicates the shortcut menu that is typically displayed when the user right-clicks the cell.  
   
- When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property returns the previously specified value or its default value of `null`.  
+ When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=nameWithType> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property returns the previously specified value or its default value of `null`.  
   
  Handling the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
@@ -438,6 +466,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContextMenuStripChanged" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.ContextMenuStrip" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetInheritedContextMenuStrip(System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -467,6 +504,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.AccessibilityObject" />
+        <altmember cref="N:Accessibility" />
       </Docs>
     </Member>
     <Member MemberName="DefaultNewRowValue">
@@ -495,7 +536,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.DefaultNewRowValue%2A> property in the base class <xref:System.Windows.Forms.DataGridViewCell> always returns `null`. However, this property can be overridden in derived cell classes to return other default values.  
   
- The value returned by this property is displayed if the cell is in the row for new records. This value can be overridden by a handler for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=fullName> event when focus enters the row for new records.  
+ The value returned by this property is displayed if the cell is in the row for new records. This value can be overridden by a handler for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType> event when focus enters the row for new records.  
   
    
   
@@ -507,6 +548,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
       </Docs>
     </Member>
     <Member MemberName="DetachEditingControl">
@@ -542,6 +586,13 @@
  -or-  
   
  The <see cref="P:System.Windows.Forms.DataGridView.EditingControl" /> property of the associated <see cref="T:System.Windows.Forms.DataGridView" /> has a value of <see langword="null" />. This is the case, for example, when the control is not in edit mode.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EditingControl" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EditingPanel" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.InitializeEditingControl(System.Int32,System.Object,System.Windows.Forms.DataGridViewCellStyle)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.PositionEditingControl(System.Boolean,System.Boolean,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Windows.Forms.DataGridViewCellStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.EditType" />
       </Docs>
     </Member>
     <Member MemberName="Displayed">
@@ -575,6 +626,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -603,6 +656,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -638,8 +692,9 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClickUnsharesRow">
@@ -672,6 +727,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="EditedFormattedValue">
@@ -701,14 +758,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the current value of the cell or editing control if the cell is in edit mode. Otherwise, getting the value of this property converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event, which you can handle to customize the value conversion.  
+ This property returns the current value of the cell or editing control if the cell is in edit mode. Otherwise, getting the value of this property converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event, which you can handle to customize the value conversion.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.EditedFormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the edited value is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.EditedFormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the edited value is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -723,6 +780,7 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> is less than 0, indicating that the cell is a row header cell.</exception>
         <exception cref="T:System.Exception">Formatting failed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event of the <see cref="T:System.Windows.Forms.DataGridView" /> control or the handler set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="EditType">
@@ -764,6 +822,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewButtonCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.EditType" />
       </Docs>
     </Member>
     <Member MemberName="EnterUnsharesRow">
@@ -799,6 +862,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnEnter(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnLeave(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ErrorIconBounds">
@@ -830,7 +897,7 @@
 ## Remarks  
  The returned rectangle reports client coordinates, in pixels.  
   
- When the <xref:System.Windows.Forms.DataGridView.ShowCellErrors%2A?displayProperty=fullName> property is `false`, the value of this property is <xref:System.Drawing.Rectangle.Empty>.  
+ When the <xref:System.Windows.Forms.DataGridView.ShowCellErrors%2A?displayProperty=nameWithType> property is `false`, the value of this property is <xref:System.Drawing.Rectangle.Empty>.  
   
  This property calls the <xref:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds%2A> method to get its value. For the base <xref:System.Windows.Forms.DataGridViewCell> type, this value is always <xref:System.Drawing.Rectangle.Empty>.  
   
@@ -846,6 +913,9 @@
  -or-  
   
  The cell is a column header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="ErrorText">
@@ -897,6 +967,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellValidatingEventArgs" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValidating" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextNeeded" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellErrorTextNeeded" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellErrorTextChanged" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -922,10 +1000,11 @@
   
  This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValue">
@@ -954,14 +1033,14 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property is the actual data object contained by the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is the formatted representation of this object. The <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
   
- Getting the value of this property calls the <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A> method to convert the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event, which you can handle to customize the value conversion.  
+ Getting the value of this property calls the <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A> method to convert the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event, which you can handle to customize the value conversion.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -976,6 +1055,11 @@
   
  The cell is a column header cell.</exception>
         <exception cref="T:System.Exception">Formatting failed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event of the <see cref="T:System.Windows.Forms.DataGridView" /> control or the handler set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValueType">
@@ -1007,13 +1091,17 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
       </Docs>
     </Member>
     <Member MemberName="Frozen">
@@ -1045,6 +1133,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Frozen" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" />
       </Docs>
     </Member>
     <Member MemberName="GetClipboardContent">
@@ -1084,13 +1176,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A?displayProperty=fullName> method to retrieve a Clipboard-formatted value that represents the cell value.  
+ This method is called by the <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A?displayProperty=nameWithType> method to retrieve a Clipboard-formatted value that represents the cell value.  
   
- The cell value is first retrieved in its display format from the <xref:System.Windows.Forms.DataGridViewCell.GetEditedFormattedValue%2A> method. This may raise the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event to format the value and the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event if formatting is unsuccessful.  
+ The cell value is first retrieved in its display format from the <xref:System.Windows.Forms.DataGridViewCell.GetEditedFormattedValue%2A> method. This may raise the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event to format the value and the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event if formatting is unsuccessful.  
   
  The position-related parameters of this method indicate where this cell is located in the table of data representing the region defined by the selected cells in the <xref:System.Windows.Forms.DataGridView> control. Depending on the cell's position, additional formatting information may be returned by this method along with the display-formatted cell value. For example, the HTML format for a cell in the first column of a row will include the tag that indicates the beginning of a row.  
   
- The supported Clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=fullName>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=fullName>.  
+ The supported Clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=nameWithType>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=nameWithType>.  
   
  For more information, see the <xref:System.Windows.Forms.Clipboard> class.  
   
@@ -1107,6 +1199,10 @@
         <block subset="none" type="overrides">
           <para>Override this method to provide customized Clipboard values. For example, you could override this method to support copying values from custom cell types.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ClipboardCopyMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewClipboardCopyMode" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -1132,13 +1228,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=fullName>.  
+ The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="rowIndex" /> is less than 0 or greater than the number of rows in the control minus 1.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> is less than 0, indicating that the cell is a row header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -1168,12 +1265,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=fullName>.  
+ The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle.Empty?displayProperty=nameWithType>.  
   
  This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ContentBounds%2A> property is read.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContentBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetEditedFormattedValue">
@@ -1201,9 +1300,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the current value of the editing cell or editing control if the cell is in edit mode. Otherwise, this method converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event, which you can handle to customize the value conversion.  
+ This method returns the current value of the editing cell or editing control if the cell is in edit mode. Otherwise, this method converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event, which you can handle to customize the value conversion.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
  Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value.  
   
@@ -1213,6 +1312,8 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> is less than 0, indicating that the cell is a row header cell.</exception>
         <exception cref="T:System.Exception">Formatting failed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event of the <see cref="T:System.Windows.Forms.DataGridView" /> control or the handler set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorIconBounds">
@@ -1242,12 +1343,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's error icon area is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=fullName>.  
+ The size of the cell's error icon area is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle.Empty?displayProperty=nameWithType>.  
   
  This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ErrorIconBounds%2A> property is read.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ErrorIconBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorText">
@@ -1270,11 +1373,12 @@
         <summary>Returns a string that represents the error for the cell.</summary>
         <returns>A string that describes the error for the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetFormattedValue">
       <MemberSignature Language="C#" Value="protected virtual object GetFormattedValue (object value, int rowIndex, ref System.Windows.Forms.DataGridViewCellStyle cellStyle, System.ComponentModel.TypeConverter valueTypeConverter, System.ComponentModel.TypeConverter formattedValueTypeConverter, System.Windows.Forms.DataGridViewDataErrorContexts context);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle&amp; cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1307,18 +1411,28 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control calls this method to convert a cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. The control passes the cell value to this method in the `value` parameter.  
   
- This method raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event. A handler for this event can modify both the `value` and `cellStyle` parameters. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object.  
+ This method raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event. A handler for this event can modify both the `value` and `cellStyle` parameters. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object.  
   
 > [!NOTE]
->  This method does not convert `value` to the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=fullName> property value for values equal to the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=fullName> property value when <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is set to a value other than <xref:System.DBNull.Value?displayProperty=fullName> or `null`. In this case, you can handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event to display the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property value. For more information, see the code example in <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>.  
+>  This method does not convert `value` to the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=nameWithType> property value for values equal to the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=nameWithType> property value when <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is set to a value other than <xref:System.DBNull.Value?displayProperty=nameWithType> or `null`. In this case, you can handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event to display the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property value. For more information, see the code example in <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
  Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">Formatting failed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event of the <see cref="T:System.Windows.Forms.DataGridView" /> control or the handler set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.ParseFormattedValue(System.Object,System.Windows.Forms.DataGridViewCellStyle,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter)" />
       </Docs>
     </Member>
     <Member MemberName="GetInheritedContextMenuStrip">
@@ -1348,11 +1462,11 @@
   
 1.  This cell's <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A>  
   
-2.  The owning row's <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=fullName>  
+2.  The owning row's <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=nameWithType>  
   
-3.  The owning column's <xref:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip%2A?displayProperty=fullName>  
+3.  The owning column's <xref:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip%2A?displayProperty=nameWithType>  
   
-4.  The parent table's <xref:System.Windows.Forms.ContextMenuStrip?displayProperty=fullName>  
+4.  The parent table's <xref:System.Windows.Forms.ContextMenuStrip?displayProperty=nameWithType>  
   
  Shortcut menus are Microsoft Windows native resources whose lifetimes are typically directed by the <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A> method or the destructor.  
   
@@ -1363,6 +1477,12 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> property of the cell is not <see langword="null" /> and the specified <paramref name="rowIndex" /> is less than 0 or greater than the number of rows in the control minus 1.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> is less than 0, indicating that the cell is a row header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContextMenuStrip" />
+        <altmember cref="P:System.Windows.Forms.Control.ContextMenuStrip" />
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="GetInheritedState">
@@ -1398,6 +1518,7 @@
   
  <paramref name="rowIndex" /> is not the index of the row containing this cell.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The cell is contained within a <see cref="T:System.Windows.Forms.DataGridView" /> control and <paramref name="rowIndex" /> is outside the valid range of 0 to the number of rows in the control minus 1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetInheritedStyle">
@@ -1439,6 +1560,11 @@
  <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> is less than 0, indicating that the cell is a row header cell.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is less than 0, or greater than or equal to the number of rows in the parent <see cref="T:System.Windows.Forms.DataGridView" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle(System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.HasStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -1474,6 +1600,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetSize">
@@ -1505,6 +1632,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="rowIndex" /> is -1</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -1536,6 +1664,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> property of the cell is not <see langword="null" /> and <paramref name="rowIndex" /> is less than 0 or greater than or equal to the number of rows in the parent <see cref="T:System.Windows.Forms.DataGridView" />.</exception>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> property of the cell is not <see langword="null" /> and the value of the <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> property is less than 0, indicating that the cell is a row header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="HasStyle">
@@ -1569,6 +1698,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle(System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetInheritedStyle(System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
       </Docs>
     </Member>
     <Member MemberName="InheritedState">
@@ -1594,6 +1731,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The cell is not contained within a <see cref="T:System.Windows.Forms.DataGridView" /> control and the value of its <see cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" /> property is not -1.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The cell is contained within a <see cref="T:System.Windows.Forms.DataGridView" /> control and the value of its <see cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" /> property is -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="InheritedStyle">
@@ -1636,6 +1774,14 @@
  -or-  
   
  The cell is a column header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle(System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetInheritedStyle(System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.HasStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="InitializeEditingControl">
@@ -1684,6 +1830,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no associated <see cref="T:System.Windows.Forms.DataGridView" /> or if one is present, it does not have an associated editing control.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.DetachEditingControl" />
       </Docs>
     </Member>
     <Member MemberName="IsInEditMode">
@@ -1711,11 +1859,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is useful when you are working directly with cell instances. Alternatively, you can use the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=fullName> property. You can also handle the <xref:System.Windows.Forms.DataGridView.CellBeginEdit?displayProperty=fullName> event to determine when the user enters edit mode.  
+ This property is useful when you are working directly with cell instances. Alternatively, you can use the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=nameWithType> property. You can also handle the <xref:System.Windows.Forms.DataGridView.CellBeginEdit?displayProperty=nameWithType> event to determine when the user enters edit mode.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row containing the cell is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellBeginEdit" />
       </Docs>
     </Member>
     <Member MemberName="KeyDownUnsharesRow">
@@ -1750,6 +1901,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyPress(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.KeyPressUnsharesRow(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="KeyEntersEditMode">
@@ -1780,6 +1937,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="KeyPressUnsharesRow">
@@ -1814,6 +1972,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyPress(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.KeyPressEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="KeyUpUnsharesRow">
@@ -1848,6 +2011,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyPress(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.KeyPressUnsharesRow(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="LeaveUnsharesRow">
@@ -1883,6 +2052,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnLeave(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureTextHeight">
@@ -1935,11 +2107,12 @@
           <paramref name="maxWidth" /> is less than 1.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="flags" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MeasureTextHeight">
       <MemberSignature Language="C#" Value="public static int MeasureTextHeight (System.Drawing.Graphics graphics, string text, System.Drawing.Font font, int maxWidth, System.Windows.Forms.TextFormatFlags flags, out bool widthTruncated);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MeasureTextHeight(class System.Drawing.Graphics graphics, string text, class System.Drawing.Font font, int32 maxWidth, valuetype System.Windows.Forms.TextFormatFlags flags, bool widthTruncated) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MeasureTextHeight(class System.Drawing.Graphics graphics, string text, class System.Drawing.Font font, int32 maxWidth, valuetype System.Windows.Forms.TextFormatFlags flags, [out] bool&amp; widthTruncated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.MeasureTextHeight(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32,System.Windows.Forms.TextFormatFlags,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1989,6 +2162,7 @@
           <paramref name="maxWidth" /> is less than 1.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="flags" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MeasureTextPreferredSize">
@@ -2041,6 +2215,7 @@
           <paramref name="maxRatio" /> is less than or equal to 0.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="flags" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MeasureTextSize">
@@ -2089,6 +2264,7 @@
  <paramref name="font" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="flags" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MeasureTextWidth">
@@ -2134,6 +2310,7 @@
           <paramref name="maxHeight" /> is less than 1.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="flags" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MouseClickUnsharesRow">
@@ -2166,6 +2343,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseMoveUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClickUnsharesRow">
@@ -2198,6 +2384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MouseDownUnsharesRow">
@@ -2230,6 +2417,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseMoveUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnterUnsharesRow">
@@ -2262,6 +2459,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseMoveUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeaveUnsharesRow">
@@ -2294,6 +2499,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseMoveUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MouseMoveUnsharesRow">
@@ -2326,6 +2539,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseUpUnsharesRow">
@@ -2358,6 +2579,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseMoveUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -2382,10 +2611,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellClick" />
       </Docs>
     </Member>
     <Member MemberName="OnContentClick">
@@ -2410,10 +2642,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContentClick" />
       </Docs>
     </Member>
     <Member MemberName="OnContentDoubleClick">
@@ -2438,10 +2673,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentDoubleClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentDoubleClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentDoubleClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentDoubleClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContentDoubleClick" />
       </Docs>
     </Member>
     <Member MemberName="OnDataGridViewChanged">
@@ -2460,6 +2698,8 @@
       <Docs>
         <summary>Called when the <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> property of the cell changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="OnDoubleClick">
@@ -2484,10 +2724,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellDoubleClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellDoubleClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellDoubleClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellDoubleClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellDoubleClick" />
       </Docs>
     </Member>
     <Member MemberName="OnEnter">
@@ -2515,10 +2758,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.DataGridView.CellEnter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellEnter%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.DataGridView.CellEnter?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnLeave(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellEnter(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -2545,10 +2793,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyPress(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.KeyPressUnsharesRow(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyPress">
@@ -2575,10 +2827,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyPress%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyPress> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyPress%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyPress> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.KeyPressUnsharesRow(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.KeyPressEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -2605,10 +2862,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnKeyPress(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.KeyPressUnsharesRow(System.Windows.Forms.KeyPressEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -2636,10 +2898,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellLeave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellLeave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnEnter(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellLeave(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseClick">
@@ -2664,7 +2931,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
    
   
@@ -2676,6 +2943,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDoubleClick">
@@ -2700,10 +2975,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDoubleClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDoubleClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellMouseDoubleClick" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -2728,10 +3014,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellMouseDown" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -2756,7 +3053,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseEnter%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
    
   
@@ -2768,6 +3065,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellMouseEnter(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellMouseEnter" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -2792,7 +3099,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseLeave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseLeave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
    
   
@@ -2804,6 +3111,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellMouseLeave(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellMouseLeave" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -2828,10 +3145,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseMove%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseMove?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseMove%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseMove?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellMouseMove" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseMoveUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -2856,10 +3184,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellMouseUp" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OwningColumn">
@@ -2886,6 +3225,9 @@
         <summary>Gets the column that contains this cell.</summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> that contains the cell, or <see langword="null" /> if the cell is not in a column.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.OwningRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" />
       </Docs>
     </Member>
     <Member MemberName="OwningRow">
@@ -2912,6 +3254,9 @@
         <summary>Gets the row that contains this cell.</summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridViewRow" /> that contains the cell, or <see langword="null" /> if the cell is not in a row.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.OwningColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -2963,6 +3308,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.Control.Paint" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.PaintBorder(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle)" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="PaintBorder">
@@ -3002,6 +3355,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="PaintErrorIcon">
@@ -3032,10 +3391,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `errorText` parameter signals the existence of an error. If `errorText` is `null` or <xref:System.String?displayProperty=fullName>, the <xref:System.Windows.Forms.DataGridViewCell.PaintErrorIcon%2A> method does nothing.  
+ The `errorText` parameter signals the existence of an error. If `errorText` is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DataGridViewCell.PaintErrorIcon%2A> method does nothing.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.PaintBorder(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle)" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="ParseFormattedValue">
@@ -3071,7 +3435,7 @@
   
  The default implementation of this method parses the `formattedValue` parameter using the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style indicated by the `cellStyle` parameter.  
   
- If `formattedValue` is equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, this method returns the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property or `null` if <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is <xref:System.DBNull.Value?displayProperty=fullName> and the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> is a reference type.  
+ If `formattedValue` is equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, this method returns the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property or `null` if <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is <xref:System.DBNull.Value?displayProperty=nameWithType> and the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> is a reference type.  
   
  If `formattedValue` is not equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, this method parses `formattedValue` using the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property and the specified or default converters.  
   
@@ -3096,6 +3460,14 @@
  -or-  
   
  The type of <paramref name="formattedValue" /> does not match the type indicated by the <see cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" /> property.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
+        <altmember cref="T:System.Nullable`1" />
       </Docs>
     </Member>
     <Member MemberName="PositionEditingControl">
@@ -3152,6 +3524,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The cell is not contained within a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle(System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PositionEditingPanel">
@@ -3196,6 +3571,7 @@
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the normal bounds of the editing control within the editing panel.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The cell has not been added to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PreferredSize">
@@ -3237,6 +3613,12 @@
  -or-  
   
  The cell is a column header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Size" />
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -3267,7 +3649,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> property indicates whether the data displayed by the cell can be edited. You can set <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells, or you can make an entire row or column of cells read-only by setting the <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=fullName> properties. By default, if a cell's parent row or column is set to read-only, the child cells will adopt the same value. You can override this default behavior by setting <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells.  
+ The <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> property indicates whether the data displayed by the cell can be edited. You can set <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells, or you can make an entire row or column of cells read-only by setting the <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=nameWithType> properties. By default, if a cell's parent row or column is set to read-only, the child cells will adopt the same value. You can override this default behavior by setting <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells.  
   
  You can navigate to a read-only cell, and you can set a read-only cell to be the current cell.  
   
@@ -3280,6 +3662,10 @@
  -or-  
   
  The owning row is shared when setting this property.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.ReadOnly" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Resizable">
@@ -3311,6 +3697,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -3351,6 +3739,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -3383,6 +3773,8 @@
  -or-  
   
  The owning row is shared when setting this property.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -3412,6 +3804,10 @@
           <paramref name="rowIndex" /> is less than 0 or greater than or equal to the number of rows in the parent <see cref="T:System.Windows.Forms.DataGridView" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> is less than 0.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetValue(System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -3447,6 +3843,8 @@
  -or-  
   
  The cell is a column header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.PreferredSize" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -3488,6 +3886,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellStyleChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -3527,6 +3931,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Windows.Forms.Control.Tag" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -3556,9 +3964,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property is displayed as the cell ToolTip when the mouse pointer is over the cell and the property value is not <xref:System.String.Empty>. If the value of this property is <xref:System.String.Empty>, the cell will display a ToolTip containing the value of the cell if the value is truncated in the cell display; otherwise, the cell will not display a ToolTip. You can also prevent the display of a ToolTip by setting the <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A?displayProperty=fullName> property to `false`.  
+ The value of this property is displayed as the cell ToolTip when the mouse pointer is over the cell and the property value is not <xref:System.String.Empty>. If the value of this property is <xref:System.String.Empty>, the cell will display a ToolTip containing the value of the cell if the value is truncated in the cell display; otherwise, the cell will not display a ToolTip. You can also prevent the display of a ToolTip by setting the <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A?displayProperty=nameWithType> property to `false`.  
   
- When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property returns the previously specified value or its default value of <xref:System.String.Empty>.  
+ When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A?displayProperty=nameWithType> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property returns the previously specified value or its default value of <xref:System.String.Empty>.  
   
  Handling the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
@@ -3575,6 +3983,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ShowCellToolTips" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellToolTipTextChanged" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellToolTipTextNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3603,6 +4017,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3633,7 +4048,7 @@
   
  The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property is the actual data object contained by the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property is the formatted representation of the data. The <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
   
- When you set the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property, the specified value is not automatically converted from a formatted, display value to an underlying cell value. For example, the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the cell is ignored, so setting <xref:System.Windows.Forms.DataGridViewCell.Value%2A> to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=fullName> does not result in a property value of <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=fullName>.  
+ When you set the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property, the specified value is not automatically converted from a formatted, display value to an underlying cell value. For example, the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the cell is ignored, so setting <xref:System.Windows.Forms.DataGridViewCell.Value%2A> to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=nameWithType> does not result in a property value of <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=nameWithType>.  
   
    
   
@@ -3650,6 +4065,11 @@
           <see cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" /> is outside the valid range of 0 to the number of rows in the control minus 1.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" /> is less than 0, indicating that the cell is a row header cell.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Tag" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValueChanged" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -3676,7 +4096,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property for the cell has not been set, the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A?displayProperty=fullName> property for the owning column is used, if it exists.  
+ If the <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property for the cell has not been set, the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A?displayProperty=nameWithType> property for the owning column is used, if it exists.  
   
  The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property is the actual data object contained by the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property is the formatted representation of the data. The <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
   
@@ -3690,6 +4110,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.ValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -3721,7 +4145,38 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.Visible" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Visible" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Displayed" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetContentBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the bounding rectangle that encloses the cell's content area.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MeasureTextHeight">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the height, in pixels, of the specified text.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

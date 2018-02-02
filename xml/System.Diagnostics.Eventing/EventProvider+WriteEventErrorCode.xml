@@ -15,12 +15,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get an instance of this enumeration, call the <xref:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError%2A?displayProperty=fullName> method.  
+ To get an instance of this enumeration, call the <xref:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError%2A?displayProperty=nameWithType> method.  
   
- The <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName>, <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A?displayProperty=fullName>, and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A?displayProperty=fullName> methods set this value if they fail to write the event.  
+ The <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=nameWithType>, <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A?displayProperty=nameWithType>, and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A?displayProperty=nameWithType> methods set this value if they fail to write the event.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" />
   </Docs>
   <Members>
     <Member MemberName="EventTooBig">

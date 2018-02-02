@@ -850,7 +850,7 @@
     </Member>
     <Member MemberName="TryReadCompressedInteger">
       <MemberSignature Language="C#" Value="public bool TryReadCompressedInteger (out int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadCompressedInteger(int32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadCompressedInteger([out] int32&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.TryReadCompressedInteger(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -874,7 +874,7 @@
     </Member>
     <Member MemberName="TryReadCompressedSignedInteger">
       <MemberSignature Language="C#" Value="public bool TryReadCompressedSignedInteger (out int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadCompressedSignedInteger(int32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadCompressedSignedInteger([out] int32&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.TryReadCompressedSignedInteger(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

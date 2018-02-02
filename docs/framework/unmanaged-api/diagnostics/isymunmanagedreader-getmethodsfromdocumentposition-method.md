@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethodsFromDocumentPosition"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethodsFromDocumentPosition method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethodsFromDocumentPosition method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::GetMethodsFromDocumentPosition Method
 Returns an array of methods, each of which contains the breakpoint at the given position in a document.  

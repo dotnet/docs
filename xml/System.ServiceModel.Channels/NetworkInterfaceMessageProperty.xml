@@ -113,7 +113,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.NetworkInterfaceMessageProperty property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.NetworkInterfaceMessageProperty property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.NetworkInterfaceMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.NetworkInterfaceMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -138,7 +138,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.NetworkInterfaceMessageProperty property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.NetworkInterfaceMessageProperty property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.NetworkInterfaceMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.NetworkInterfaceMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -161,5 +161,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the NetworkInterfaceMessageProperty from a specified message or collection of message properties.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddTo">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies a message and properties to add into the message property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

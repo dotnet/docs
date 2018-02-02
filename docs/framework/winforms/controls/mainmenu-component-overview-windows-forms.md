@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "MenuItem"
   - "MainMenu"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MainMenu control [Windows Forms], about MainMenu control"
   - "menus"
@@ -22,6 +20,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MainMenu Component Overview (Windows Forms)
 > [!IMPORTANT]
@@ -33,9 +33,9 @@ manager: "wpickett"
  A menu item can be designated as the default item by setting the <xref:System.Windows.Forms.MenuItem.DefaultItem%2A> property to `true`. The default item appears in bold text when the menu is clicked. The menu item's <xref:System.Windows.Forms.MenuItem.Checked%2A> property is either `true` or `false`, and indicates whether the menu item is selected. The menu item's <xref:System.Windows.Forms.MenuItem.RadioCheck%2A> property customizes the appearance of the selected item: if <xref:System.Windows.Forms.MenuItem.RadioCheck%2A> is set to `true`, a radio button appears next to the item; if <xref:System.Windows.Forms.MenuItem.RadioCheck%2A> is set to `false`, a check mark appears next to the item.  
   
 ## See Also  
- <xref:System.Windows.Forms.MainMenu>   
- <xref:System.Windows.Forms.Menu>   
- <xref:System.Windows.Forms.MenuItem>   
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ContextMenuStrip>   
+ <xref:System.Windows.Forms.MainMenu>  
+ <xref:System.Windows.Forms.Menu>  
+ <xref:System.Windows.Forms.MenuItem>  
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ContextMenuStrip>  
  [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)

@@ -34,7 +34,7 @@
   
  One specific constructor, <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29>, does not require a <xref:System.Xaml.XamlSchemaContext>. However, a <xref:System.Xaml.XamlMember> that is constructed with the <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29> signature returns `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
   
- For a load path that involves <xref:System.Xaml.XamlObjectWriter>, such a member cannot be written into an object graph. Using the .NET Framework XAML services implementation, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, such a member cannot be written into an object graph. Using the .NET Framework XAML services implementation, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=nameWithType> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
   
  You should not construct a <xref:System.Xaml.XamlMember> that has a value of `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A> unless your implementation can handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior. For example, one or more of the  following might be true of your implementation:  
   
@@ -42,10 +42,13 @@
   
 -   You use a member invoker pattern.  
   
--   You deliberately override <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> in a custom XAML writer.  
+-   You deliberately override <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=nameWithType> in a custom XAML writer.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlType" />
+    <altmember cref="T:System.Xaml.XamlDirective" />
+    <altmember cref="T:System.Xaml.XamlObjectWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -215,7 +218,7 @@
 ## Remarks  
  A <xref:System.Xaml.XamlMember> that is constructed with the <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29> signature returns `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
   
- For a load path that involves <xref:System.Xaml.XamlObjectWriter>, such a member cannot be written into an object graph. Using the .NET Framework XAML Services implementation, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, such a member cannot be written into an object graph. Using the .NET Framework XAML Services implementation, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=nameWithType> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
   
  You should not construct a <xref:System.Xaml.XamlMember> with <xref:System.Xaml.XamlMember.IsUnknown%2A>`true` unless your implementation can handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior. For example, one or more of the following might be true of your implementation:  
   
@@ -223,7 +226,7 @@
   
 -   You use a member invoker pattern.  
   
--   You deliberately override <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> in a custom XAML writer.  
+-   You deliberately override <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=nameWithType> in a custom XAML writer.  
   
  ]]></format>
         </remarks>
@@ -408,6 +411,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.DependsOnAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -495,7 +499,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation returns the <xref:System.Xaml.XamlType.GetXamlNamespaces%2A?displayProperty=fullName> call result from the <xref:System.Xaml.XamlMember.DeclaringType%2A> that is associated with this <xref:System.Xaml.XamlMember>.  
+ The default implementation returns the <xref:System.Xaml.XamlType.GetXamlNamespaces%2A?displayProperty=nameWithType> call result from the <xref:System.Xaml.XamlMember.DeclaringType%2A> that is associated with this <xref:System.Xaml.XamlMember>.  
   
  ]]></format>
         </remarks>
@@ -522,9 +526,9 @@
 ## Remarks  
  The `Invoker` pattern is an advanced XAML type system extension technique. The `Invoker` pattern provides a way to inject different schema type mapping behavior, while still using XAML type system definitions from .NET Framework XAML Services.  
   
- If a <xref:System.Xaml.XamlMember.LookupInvoker%2A> override returns `null`, or if the default implementation returns `null` because it lacks the <xref:System.Xaml.XamlMember.UnderlyingMember%2A> for this <xref:System.Xaml.XamlMember>, the <xref:System.Xaml.XamlMember.Invoker%2A> property returns <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=fullName>.  
+ If a <xref:System.Xaml.XamlMember.LookupInvoker%2A> override returns `null`, or if the default implementation returns `null` because it lacks the <xref:System.Xaml.XamlMember.UnderlyingMember%2A> for this <xref:System.Xaml.XamlMember>, the <xref:System.Xaml.XamlMember.Invoker%2A> property returns <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=nameWithType>.  
   
- <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=fullName> is the default. This is true for most operations that use .NET Framework XAML Services and the default XAML schema context, and where no specific override `Invoker` patterns are passed for construction of XAML type system entities.  
+ <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=nameWithType> is the default. This is true for most operations that use .NET Framework XAML Services and the default XAML schema context, and where no specific override `Invoker` patterns are passed for construction of XAML type system entities.  
   
  Calling <xref:System.Xaml.XamlMember.Invoker%2A> invokes <xref:System.Xaml.XamlMember.LookupInvoker%2A> or a specific override of that method.  
   
@@ -560,6 +564,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.AmbientAttribute" />
       </Docs>
     </Member>
     <Member MemberName="IsAttachable">
@@ -740,7 +745,7 @@
 ## Remarks  
  A <xref:System.Xaml.XamlMember> that is constructed with the <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29> signature returns `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
   
- For a load path that involves <xref:System.Xaml.XamlObjectWriter>, a <xref:System.Xaml.XamlMember> with `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A> cannot be written into an object graph. Under the default implementations in .NET Framework XAML Services APIs, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, a <xref:System.Xaml.XamlMember> with `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A> cannot be written into an object graph. Under the default implementations in .NET Framework XAML Services APIs, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=nameWithType> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
   
  You should not construct a <xref:System.Xaml.XamlMember> that has a value of `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A> unless your implementation can handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior.  
   
@@ -861,6 +866,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.DeferringLoader" />
       </Docs>
     </Member>
     <Member MemberName="LookupDependsOn">
@@ -893,6 +899,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.DependsOn" />
       </Docs>
     </Member>
     <Member MemberName="LookupInvoker">
@@ -919,10 +926,12 @@
   
  The default implementation does not require that a <xref:System.Xaml.XamlMember> be constructed by using one of the constructors that pass an initial <xref:System.Xaml.Schema.XamlMemberInvoker>. However, an <xref:System.Xaml.XamlMember.UnderlyingMember%2A> value must exist for the <xref:System.Xaml.XamlMember>; otherwise, the default implementation returns `null`.  
   
- Override this method if you also derive from <xref:System.Xaml.Schema.XamlMemberInvoker> and intend to return the derived class. If you return `null`, <xref:System.Xaml.XamlMember.Invoker%2A> returns <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=fullName> to callers.  
+ Override this method if you also derive from <xref:System.Xaml.Schema.XamlMemberInvoker> and intend to return the derived class. If you return `null`, <xref:System.Xaml.XamlMember.Invoker%2A> returns <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=nameWithType> to callers.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.Invoker" />
+        <altmember cref="T:System.Xaml.Schema.XamlMemberInvoker" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsAmbient">
@@ -950,10 +959,11 @@
   
  Override this method if you are not using <xref:System.Windows.Markup.AmbientAttribute> for this purpose and intend to replace that technique for indicating ambient XAML properties with your own technique.  
   
- Example APIs from WPF that attribute with <xref:System.Windows.Markup.AmbientAttribute> are <xref:System.Windows.Trigger.Property%2A?displayProperty=fullName> and <xref:System.Windows.Style.BasedOn%2A?displayProperty=fullName>.  
+ Example APIs from WPF that attribute with <xref:System.Windows.Markup.AmbientAttribute> are <xref:System.Windows.Trigger.Property%2A?displayProperty=nameWithType> and <xref:System.Windows.Style.BasedOn%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.AmbientAttribute" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsEvent">
@@ -983,6 +993,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsEvent" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadOnly">
@@ -1012,6 +1023,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadPublic">
@@ -1046,6 +1058,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsReadPublic" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsUnknown">
@@ -1075,6 +1088,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsUnknown" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsWriteOnly">
@@ -1104,6 +1118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsWriteOnly" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsWritePublic">
@@ -1136,6 +1151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsWritePublic" />
       </Docs>
     </Member>
     <Member MemberName="LookupMarkupExtensionBracketCharacters">
@@ -1183,6 +1199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.TargetType" />
       </Docs>
     </Member>
     <Member MemberName="LookupType">
@@ -1221,6 +1238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.Type" />
       </Docs>
     </Member>
     <Member MemberName="LookupTypeConverter">
@@ -1255,6 +1273,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingGetter">
@@ -1277,7 +1296,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation interprets the <xref:System.Xaml.XamlMember.UnderlyingMember%2A> property as <xref:System.Reflection.PropertyInfo> and returns the value of <xref:System.Reflection.PropertyInfo.GetGetMethod%2A?displayProperty=fullName> (with the parameter set to `true`), which means that the returned method can be nonpublic. This behavior can result in `null` for certain cases. including cases where no associated accessor exists or the member is not a property.  
+ The default implementation interprets the <xref:System.Xaml.XamlMember.UnderlyingMember%2A> property as <xref:System.Reflection.PropertyInfo> and returns the value of <xref:System.Reflection.PropertyInfo.GetGetMethod%2A?displayProperty=nameWithType> (with the parameter set to `true`), which means that the returned method can be nonpublic. This behavior can result in `null` for certain cases. including cases where no associated accessor exists or the member is not a property.  
   
  This method is invoked when a caller gets a value from the <xref:System.Xaml.Schema.XamlMemberInvoker.UnderlyingGetter%2A> property on an associated <xref:System.Xaml.Schema.XamlMemberInvoker>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis. Make sure to implement <xref:System.Xaml.XamlMember.LookupUnderlyingGetter%2A>, <xref:System.Xaml.XamlMember.LookupUnderlyingSetter%2A>, and <xref:System.Xaml.XamlMember.LookupUnderlyingMember%2A> so that they all return correlated results.  
   
@@ -1313,6 +1332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.UnderlyingMember" />
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingSetter">
@@ -1335,7 +1355,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation interprets <xref:System.Xaml.XamlMember.UnderlyingMember%2A> as <xref:System.Reflection.PropertyInfo> and returns the value of <xref:System.Reflection.PropertyInfo.GetSetMethod%2A?displayProperty=fullName> (with the parameter set to `true`), which means that the returned method can be nonpublic. This can result in `null` for certain cases, including cases where there is no such accessor, or the member is not a property.  
+ The default implementation interprets <xref:System.Xaml.XamlMember.UnderlyingMember%2A> as <xref:System.Reflection.PropertyInfo> and returns the value of <xref:System.Reflection.PropertyInfo.GetSetMethod%2A?displayProperty=nameWithType> (with the parameter set to `true`), which means that the returned method can be nonpublic. This can result in `null` for certain cases, including cases where there is no such accessor, or the member is not a property.  
   
  This method is invoked when a caller gets a value from <xref:System.Xaml.Schema.XamlMemberInvoker.UnderlyingSetter%2A> on an associated <xref:System.Xaml.Schema.XamlMemberInvoker>.Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis. Make sure to implement <xref:System.Xaml.XamlMember.LookupUnderlyingGetter%2A>, <xref:System.Xaml.XamlMember.LookupUnderlyingSetter%2A>, and <xref:System.Xaml.XamlMember.LookupUnderlyingMember%2A> so that they all return correlated results.  
   
@@ -1375,6 +1395,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.ValueSerializer" />
       </Docs>
     </Member>
     <Member MemberName="MarkupExtensionBracketCharacters">
@@ -1632,7 +1653,7 @@
   
 -   The return value reports a built-in value converter. These converters exist for certain internal operations that are performed by a XAML writer. In particular, these built-in value converters convert the raw attribute string values to the XAML language-level primitives. For the .NET Framework XAML Services implementation, these built-in type conversions often forward to a type converter that is defined in the System assembly. For example, a conversion for an <xref:System.Int32> value has built-in forwarded conversion, and therefore, the <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterType%2A> value references <xref:System.ComponentModel.Int32Converter>.  
   
--   The return value reports the special case of an unconstrained object model; that is, the <xref:System.Xaml.XamlMember> has a <xref:System.Xaml.XamlMember.Type%2A> value of <xref:System.Object>. In this case, the <xref:System.Xaml.Schema.XamlValueConverter%601> reports that the <xref:System.Xaml.Schema.XamlValueConverter%601.Name%2A?displayProperty=fullName> is {`Object}`. However, <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A> is `null` because no actual type or instance is available to perform this conversion. Instead, the object model behavior cannot be determined until run time, when the runtime of the specific technology determines the handling of its object graph.  
+-   The return value reports the special case of an unconstrained object model; that is, the <xref:System.Xaml.XamlMember> has a <xref:System.Xaml.XamlMember.Type%2A> value of <xref:System.Object>. In this case, the <xref:System.Xaml.Schema.XamlValueConverter%601> reports that the <xref:System.Xaml.Schema.XamlValueConverter%601.Name%2A?displayProperty=nameWithType> is {`Object}`. However, <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A> is `null` because no actual type or instance is available to perform this conversion. Instead, the object model behavior cannot be determined until run time, when the runtime of the specific technology determines the handling of its object graph.  
   
  If you can access a working <xref:System.ComponentModel.TypeConverter> from <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>, you can invoke its conversion methods. However, many conversion methods rely on service context. If you do not have the same service context available that the type converter expects for its typical role of writing objects for object graphs, the converter methods can throw exceptions.  
   
@@ -1697,5 +1718,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the current object is equal to another object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

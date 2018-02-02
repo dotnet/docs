@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a6a752a5-d2a9-4335-a382-b58690ccb79f
 caps.latest.revision: 9
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Tracing in ADO.NET
 ADO.NET features built-in data tracing functionality that is supported by the .NET data providers for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)], Oracle, OLE DB and ODBC, as well as the ADO.NET <xref:System.Data.DataSet>, and the [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] network protocols.  
@@ -58,6 +60,6 @@ add target ring_buffer with (track_causality=on)
 ```  
   
 ## See Also  
- [Network Tracing in the .NET Framework](../../../../docs/framework/network-programming/network-tracing.md)   
- [Tracing and Instrumenting Applications](../../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)   
+ [Network Tracing in the .NET Framework](../../../../docs/framework/network-programming/network-tracing.md)  
+ [Tracing and Instrumenting Applications](../../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

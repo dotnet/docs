@@ -207,7 +207,7 @@
     </Member>
     <Member MemberName="GetXmlQualifiedName">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlQualifiedName GetXmlQualifiedName (Type type, out string prefix);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlQualifiedName GetXmlQualifiedName(class System.Type type, string prefix) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlQualifiedName GetXmlQualifiedName(class System.Type type, [out] string&amp; prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.GetXmlQualifiedName(System.Type,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -375,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `name` must be set through a prior call to <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)?displayProperty=fullName>.  
+ `name` must be set through a prior call to <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -452,11 +452,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23SetName(System.Object,System.String)> is useful when you need to create and then name an instance of an object without using <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)?displayProperty=fullName>.  
+ <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23SetName(System.Object,System.String)> is useful when you need to create and then name an instance of an object without using <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the <see cref="T:System.Type" /> associated with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

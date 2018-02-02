@@ -41,22 +41,22 @@
 <a name="xamlValues_MinWidth"></a>   
 ## XAML Values  
  *X*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  The x-coordinate of the top-left corner of the rectangle.  
   
  *Y*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  The y-coordinate of the top-left corner of the rectangle.  
   
  *Width*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  The width of the rectangle.  
   
  *Height*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  The height of the rectangle.  
   
@@ -313,7 +313,7 @@
         <summary>Compares two rectangles for exact equality.</summary>
         <returns>**true** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, **false**.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Int32Rect.Equals%28System.Windows.Int32Rect%2CSystem.Windows.Int32Rect%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Int32Rect.Equals%28System.Windows.Int32Rect%2CSystem.Windows.Int32Rect%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -491,5 +491,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified rectangles are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this <see cref="T:System.Windows.Int32Rect" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,14 +1,12 @@
 ---
 title: "-platform (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/platform"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "platform compiler option [C#]"
   - "-platform compiler option [C#]"
@@ -17,28 +15,14 @@ ms.assetid: c290ff5e-47f4-4a85-9bb3-9c2525b0be04
 caps.latest.revision: 46
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /platform (C# Compiler Options)
-Specifies which version of the common language runtime (CLR) can run the assembly.  
+# -platform (C# Compiler Options)
+Specifies which version of the Common Language Runtime (CLR) can run the assembly.  
   
 ## Syntax  
   
 ```console  
-/platform:string  
+-platform:string  
 ```  
   
 #### Parameters  
@@ -53,25 +37,25 @@ Specifies which version of the common language runtime (CLR) can run the assembl
   
 -   **ARM** compiles your assembly to run on a computer that has an Advanced RISC Machine (ARM) processor.  
   
--   **x64** compiles your assembly to be run by the 64-bit common language runtime on a computer that supports the AMD64 or EM64T instruction set.  
+-   **x64** compiles your assembly to be run by the 64-bit CLR on a computer that supports the AMD64 or EM64T instruction set.  
   
--   **x86** compiles your assembly to be run by the 32-bit, x86-compatible common language runtime.  
+-   **x86** compiles your assembly to be run by the 32-bit, x86-compatible CLR.  
   
--   **Itanium** compiles your assembly to be run by the 64-bit common language runtime on a computer with an Itanium processor.  
+-   **Itanium** compiles your assembly to be run by the 64-bit CLR on a computer with an Itanium processor.  
   
  On a 64-bit Windows operating system:  
   
--   Assemblies compiled with **/platform:x86** execute on the 32-bit CLR running under WOW64.  
+-   Assemblies compiled with **-platform:x86** execute on the 32-bit CLR running under WOW64.  
   
--   A DLL compiled with the **/platform:anycpu** executes on the same CLR as the process into which it is loaded.  
+-   A DLL compiled with the **-platform:anycpu** executes on the same CLR as the process into which it is loaded.  
   
--   Executables that are compiled with the **/platform:anycpu** execute on the 64-bit CLR.  
+-   Executables that are compiled with the **-platform:anycpu** execute on the 64-bit CLR.  
   
--   Executables compiled with **/platform:anycpu32bitpreferred** execute on the 32-bit CLR.  
+-   Executables compiled with **-platform:anycpu32bitpreferred** execute on the 32-bit CLR.  
   
  The **anycpu32bitpreferred** setting is valid only for executable (.EXE) files, and it requires the .NET Framework 4.5.  
   
- For more information about developing an application to run on a Windows 64-bit operating system, see [64-bit Applications](https://msdn.microsoft.com/library/ms241064).  
+ For more information about developing an application to run on a Windows 64-bit operating system, see [64-bit Applications](../../../framework/64-bit-apps.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -81,17 +65,17 @@ Specifies which version of the common language runtime (CLR) can run the assembl
   
 3.  Modify the **Platform target** property and, for projects that target the .NET Framework 4.5, select or clear the **Prefer 32-bit** check box.  
   
- **Note /platform** is not available in the development environment in Visual C# Express.  
+ **Note -platform** is not available in the development environment in Visual C# Express.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.PlatformTarget%2A>.  
   
 ## Example  
- The following example shows how to use the **/platform** option to specify that the application should be run by the 64-bit CLR on a 64-bit Windows operating system.  
+ The following example shows how to use the **-platform** option to specify that the application should be run by the 64-bit CLR on a 64-bit Windows operating system.  
   
 ```console  
-csc /platform:anycpu filename.cs  
+csc -platform:anycpu filename.cs  
 ```  
   
 ## See Also  
- [C# Compiler Options](index.md)   
+ [C# Compiler Options](index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

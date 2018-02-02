@@ -163,7 +163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Columns that are not in the data context typically come from a view or calculated property. The value of the <xref:System.Web.DynamicData.ModelProviders.ColumnProvider.IsCustomProperty%2A> property can be used to determine whether column operations such as sorting are supported. For example, the implementation of the <xref:System.Linq.IQueryable?displayProperty=fullName> interface of the data model will not support sorting on properties that return `true` for the <xref:System.Web.DynamicData.ModelProviders.ColumnProvider.IsCustomProperty%2A> property, because the column does not exist in the database.  
+ Columns that are not in the data context typically come from a view or calculated property. The value of the <xref:System.Web.DynamicData.ModelProviders.ColumnProvider.IsCustomProperty%2A> property can be used to determine whether column operations such as sorting are supported. For example, the implementation of the <xref:System.Linq.IQueryable?displayProperty=nameWithType> interface of the data model will not support sorting on properties that return `true` for the <xref:System.Web.DynamicData.ModelProviders.ColumnProvider.IsCustomProperty%2A> property, because the column does not exist in the database.  
   
  ]]></format>
         </remarks>

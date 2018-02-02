@@ -49,7 +49,7 @@
   
  This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
   
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly?displayProperty=nameWithType> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
   
  [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
  [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
@@ -579,7 +579,7 @@
   
  This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
   
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly?displayProperty=nameWithType> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
   
  [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
  [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
@@ -739,7 +739,7 @@
   
  This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
   
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly?displayProperty=nameWithType> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
   
  [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
  [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
@@ -799,7 +799,7 @@
   
  This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
   
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly?displayProperty=nameWithType> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
   
  [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
  [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
@@ -1022,5 +1022,16 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

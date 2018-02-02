@@ -89,6 +89,7 @@
         <param name="routeHandler">The object that processes requests for the route.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.Route" /> class, by using the specified URL pattern, default parameter values, and handler class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.Routing.Route.Defaults" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,6 +114,8 @@
         <param name="routeHandler">The object that processes requests for the route.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.Route" /> class, by using the specified URL pattern, default parameter values, constraints, and handler class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.Routing.Route.Constraints" />
+        <altmember cref="P:System.Web.Routing.Route.Defaults" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -139,6 +142,9 @@
         <param name="routeHandler">The object that processes requests for the route.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.Route" /> class, by using the specified URL pattern, default parameter values, constraints, custom values, and handler class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.Routing.Route.Constraints" />
+        <altmember cref="P:System.Web.Routing.Route.DataTokens" />
+        <altmember cref="P:System.Web.Routing.Route.Defaults" />
       </Docs>
     </Member>
     <Member MemberName="Constraints">
@@ -398,5 +404,14 @@
         <exception cref="T:System.Exception">URL segments are not separated by a delimiter or a literal constant.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.Route" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

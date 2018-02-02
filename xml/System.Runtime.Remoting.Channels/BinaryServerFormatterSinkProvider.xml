@@ -24,7 +24,7 @@
   
  Channel sink providers are stored in a chain, and the user is responsible for chaining all channel sink providers together before passing the outer one to the channel constructor. <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> provides a property called <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.Next%2A> for this purpose.  
   
- When multiple channel sink providers are provided in a configuration file, the remoting infrastructure will chain them together in the order they are found in the configuration file. The channel sink providers will be created when the channel is created during the <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> call.  
+ When multiple channel sink providers are provided in a configuration file, the remoting infrastructure will chain them together in the order they are found in the configuration file. The channel sink providers will be created when the channel is created during the <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> call.  
   
  Formatter sinks use sink configuration properties to configure the channel at run time. Sink properties can be specified in a configuration file, or programmatically, inside of a <xref:System.Collections.IDictionary>. In a configuration file all values are represented by strings, but when building a property <xref:System.Collections.IDictionary> programmatically, value types can be specified with their native values or with strings.  
   
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -161,11 +162,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

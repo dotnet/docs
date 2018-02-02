@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, authoring overview"
-  - "authoring overview for controls"
+  - "controls [WPF], authoring overview"
+  - "authoring overview for controls [WPF]"
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Control Authoring Overview
 The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] control model greatly reduces the need to create a new control. However, in certain cases you may still need to create a custom control. This topic discusses the features that minimize your need to create a custom control and the different control authoring models in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. This topic also demonstrates how to create a new control.  
@@ -105,7 +110,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 -   Define a <xref:System.Windows.DependencyProperty> identifier named `ValueProperty` as a `public` `static` `readonly` field.  
   
--   Register the property name with the property system, by calling <xref:System.Windows.DependencyProperty.Register%2A?displayProperty=fullName>, to specify the following:  
+-   Register the property name with the property system, by calling <xref:System.Windows.DependencyProperty.Register%2A?displayProperty=nameWithType>, to specify the following:  
   
     -   The name of the property.  
   
@@ -139,7 +144,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 -   Define a <xref:System.Windows.RoutedEvent> identifier named `ValueChangedEvent` as a `public` `static` `readonly` field.  
   
--   Register the routed event by calling the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A?displayProperty=fullName> method. The example specifies the following information when it calls <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>:  
+-   Register the routed event by calling the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A?displayProperty=nameWithType> method. The example specifies the following information when it calls <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>:  
   
     -   The name of the event is `ValueChanged`.  
   
@@ -175,7 +180,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  For more information about data binding, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   
 ### Design for Designers  
- To receive support for custom WPF controls in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)], see [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26).  
+ To receive support for custom WPF controls in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)], see [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26).  
   
 #### Dependency Properties  
  Be sure to implement [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] `get` and `set` accessors as described earlier, in "Use Dependency Properties." Designers may use the wrapper to detect the presence of a dependency property, but they, like [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and clients of the control, are not required to call the accessors when getting or setting the property.  
@@ -227,7 +232,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  [!code-csharp[SharedResources#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/SharedDictionaryManager.cs#3)]  
   
- The following example merges the shared resource with the resources of a custom control in the control's constructor before it calls `InitilizeComponent`.  Because the `SharedDictionaryManager.SharedDictionary` is a static property, the <xref:System.Windows.ResourceDictionary> is created only once. Because the resource dictionary was merged before `InitializeComponent` was called, the resources are available to the control in its [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file.  
+ The following example merges the shared resource with the resources of a custom control in the control's constructor before it calls `InitializeComponent`.  Because the `SharedDictionaryManager.SharedDictionary` is a static property, the <xref:System.Windows.ResourceDictionary> is created only once. Because the resource dictionary was merged before `InitializeComponent` was called, the resources are available to the control in its [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file.  
   
  [!code-csharp[SharedResources#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/ShapeResizer.xaml.cs#4)]  
   
@@ -272,6 +277,6 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  [!code-vb[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/my project/assemblyinfo.vb#themessection)]  
   
 ## See Also  
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)   
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
+ [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
+ [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
  [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)

@@ -472,7 +472,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DataTableMapping> instance is cast to an <xref:System.Data.ITableMapping> interface.  
   
- For more information, see <xref:System.Data.ITableMapping.ColumnMappings%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Data.ITableMapping.ColumnMappings%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -553,5 +553,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DataTableMapping" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

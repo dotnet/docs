@@ -18,7 +18,7 @@
  The <xref:System.Drawing.Printing.PrintAction> is used by the <xref:System.Drawing.Printing.PrintEventArgs> type to indicate what type of <xref:System.Drawing.Printing.PrintDocument.Print%2A> event is occurring.  
   
 > [!NOTE]
->  The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A?displayProperty=fullName> does not reliably indicate the type of print operation occurring, and returns PrintToFile in all cases.  
+>  The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A?displayProperty=nameWithType> does not reliably indicate the type of print operation occurring, and returns PrintToFile in all cases.  
   
  ]]></format>
     </remarks>

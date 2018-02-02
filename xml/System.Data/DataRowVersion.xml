@@ -51,6 +51,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Data.DataRow.AcceptChanges" />
+    <altmember cref="M:System.Data.DataRow.BeginEdit" />
+    <altmember cref="M:System.Data.DataRow.EndEdit" />
+    <altmember cref="P:System.Data.DataRow.Item(System.Int32)" />
+    <altmember cref="M:System.Data.DataRow.RejectChanges" />
   </Docs>
   <Members>
     <Member MemberName="Current">

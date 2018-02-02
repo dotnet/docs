@@ -26,6 +26,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionAccess" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionAttribute" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionEntry" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Permissions.PermissionState" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -341,5 +347,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

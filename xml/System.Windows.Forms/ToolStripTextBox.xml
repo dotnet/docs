@@ -175,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.AcceptsReturn" />
       </Docs>
     </Member>
     <Member MemberName="AcceptsTabChanged">
@@ -200,7 +201,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged> event.  
   
@@ -230,6 +231,8 @@
         <param name="text">The text to append to the current contents of the <see cref="T:System.Windows.Forms.ToolStripTextBox" />.</param>
         <summary>Appends text to the current text of the <see cref="T:System.Windows.Forms.ToolStripTextBox" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Paste" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteCustomSource">
@@ -284,6 +287,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteMode">
@@ -332,6 +337,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteSource">
@@ -380,6 +387,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -518,7 +527,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged> event.  
   
@@ -561,6 +570,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Cut" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Paste" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Undo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Clear" />
       </Docs>
     </Member>
     <Member MemberName="CharacterCasing">
@@ -617,6 +631,11 @@
       <Docs>
         <summary>Clears all text from the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Cut" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Paste" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.ClearUndo" />
       </Docs>
     </Member>
     <Member MemberName="ClearUndo">
@@ -642,6 +661,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Cut" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Paste" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -667,6 +691,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Cut" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Undo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Paste" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -692,6 +721,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Undo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Paste" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Clear" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
@@ -790,6 +824,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharIndexFromPosition">
@@ -819,6 +857,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexFromLine">
@@ -850,6 +892,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharFromPosition(System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexOfCurrentLine">
@@ -901,6 +947,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromCharIndex">
@@ -930,6 +980,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -952,6 +1006,7 @@
         <summary>Retrieves the size of a rectangular area into which a control can be fitted.</summary>
         <returns>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripControlHost.GetPreferredSize(System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -1016,7 +1071,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged> event.  
   
@@ -1161,7 +1216,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.ModifiedChanged> event.  
   
@@ -1464,6 +1519,7 @@
         <param name="control">The control from which to subscribe events.</param>
         <summary>Subscribes events from the hosted control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripControlHost.OnSubscribeControlEvents(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="OnUnsubscribeControlEvents">
@@ -1485,6 +1541,7 @@
         <param name="control">The control from which to unsubscribe events.</param>
         <summary>Unsubscribes events from the hosted control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripControlHost.OnUnsubscribeControlEvents(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -1510,6 +1567,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Cut" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Undo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Clear" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -1566,7 +1628,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged> event.  
   
@@ -1690,10 +1752,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can assign text to this property to change the text currently selected in the<xref:System.Windows.Forms.ToolStripTextBox>. If no text is currently selected in the<xref:System.Windows.Forms.ToolStripTextBox>, this property returns a zero-length string.  
+ You can assign text to this property to change the text currently selected in the <xref:System.Windows.Forms.ToolStripTextBox>. If no text is currently selected in the <xref:System.Windows.Forms.ToolStripTextBox>, this property returns a zero-length string.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.SelectionLength" />
       </Docs>
     </Member>
     <Member MemberName="SelectionLength">
@@ -1730,6 +1794,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.SelectedText" />
       </Docs>
     </Member>
     <Member MemberName="SelectionStart">
@@ -1909,7 +1975,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged> event.  
   
@@ -1973,6 +2039,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Cut" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Paste" />
+        <altmember cref="P:System.Windows.Forms.ToolStripTextBox.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.ToolStripTextBox.Clear" />
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -2015,5 +2086,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

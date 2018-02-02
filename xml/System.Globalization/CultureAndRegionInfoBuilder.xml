@@ -30,15 +30,15 @@
   
  A custom culture can be registered on a computer only by a user who has administrative rights on that computer. Consequently, apps typically do not create and install custom cultures. Instead, you can use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to create a special-purpose tool that an administrator can use to create, install, and register a custom culture. After the custom culture is registered on a computer, you can use the <xref:System.Globalization.CultureInfo> class in your app to create instances of the custom culture just as you would for a predefined culture.  
   
- If you parse date and time strings generated for a custom culture, you should use the <xref:System.DateTime.ParseExact%2A?displayProperty=fullName> or <xref:System.DateTime.TryParseExact%2A?displayProperty=fullName> method instead of the <xref:System.DateTime.Parse%2A?displayProperty=fullName> or <xref:System.DateTime.TryParse%2A?displayProperty=fullName> method to improve the probability that the parse operation will succeed. A date and time string for a custom culture can be complicated and therefore difficult to parse. The <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.TryParse%2A> methods try to parse a string with several implicit parse patterns, all of which might fail. The <xref:System.DateTime.TryParseExact%2A> method, in contrast, requires the application to explicitly designate one or more exact parse patterns that are likely to succeed.  
+ If you parse date and time strings generated for a custom culture, you should use the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> or <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType> method instead of the <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTime.TryParse%2A?displayProperty=nameWithType> method to improve the probability that the parse operation will succeed. A date and time string for a custom culture can be complicated and therefore difficult to parse. The <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.TryParse%2A> methods try to parse a string with several implicit parse patterns, all of which might fail. The <xref:System.DateTime.TryParseExact%2A> method, in contrast, requires the application to explicitly designate one or more exact parse patterns that are likely to succeed.  
   
 ## Defining and Creating a Custom Culture  
  You use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to define and name a custom culture. The custom culture can be an entirely new culture, a new culture that is based on an existing culture (that is, a supplemental culture), or a culture that replaces an existing .NET Framework culture. In each case, the basic steps are the same:  
   
-1.  Instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object by calling its <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%28System.String%2CSystem.Globalization.CultureAndRegionModifiers%29> constructor. To replace an existing culture, pass that culture's name and the <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=fullName> enumeration value to the constructor. To create a new culture or a supplemental culture, pass a unique culture name and either the <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=fullName> or <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=fullName> enumeration value.  
+1.  Instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object by calling its <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%28System.String%2CSystem.Globalization.CultureAndRegionModifiers%29> constructor. To replace an existing culture, pass that culture's name and the <xref:System.Globalization.CultureAndRegionModifiers.Replacement?displayProperty=nameWithType> enumeration value to the constructor. To create a new culture or a supplemental culture, pass a unique culture name and either the <xref:System.Globalization.CultureAndRegionModifiers.Neutral?displayProperty=nameWithType> or <xref:System.Globalization.CultureAndRegionModifiers.None?displayProperty=nameWithType> enumeration value.  
   
     > [!NOTE]
-    >  If you use the <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=fullName> enumeration value to instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object, the <xref:System.Globalization.CultureAndRegionInfoBuilder> object's properties are automatically populated with values from the <xref:System.Globalization.CultureInfo> object to be replaced.  
+    >  If you use the <xref:System.Globalization.CultureAndRegionModifiers.Replacement?displayProperty=nameWithType> enumeration value to instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object, the <xref:System.Globalization.CultureAndRegionInfoBuilder> object's properties are automatically populated with values from the <xref:System.Globalization.CultureInfo> object to be replaced.  
   
 2.  If you are creating a new or supplemental culture:  
   
@@ -69,13 +69,13 @@
 ## Instantiating a Custom Culture  
  You can create an instance of the custom culture in one of the following ways:  
   
--   By invoking the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=fullName> constructor with the culture name.  
+-   By invoking the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=nameWithType> constructor with the culture name.  
   
--   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method with the culture name.  
+-   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method with the culture name.  
   
--   By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName> method with the culture name.  
+-   By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=nameWithType> method with the culture name.  
   
- In addition, the array of <xref:System.Globalization.CultureInfo> objects that is returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=fullName> method includes the custom culture.  
+ In addition, the array of <xref:System.Globalization.CultureInfo> objects that is returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method includes the custom culture.  
   
    
   
@@ -190,6 +190,8 @@
  -or-  
   
  <paramref name="flags" /> contains <see cref="F:System.Globalization.CultureAndRegionModifiers.Neutral" /> and <paramref name="cultureName" /> specifies a user-created custom culture that replaces a specific culture shipped with the .NET Framework.</exception>
+        <altmember cref="T:System.Globalization.CultureTypes" />
+        <altmember cref="T:System.Globalization.CultureAndRegionModifiers" />
       </Docs>
     </Member>
     <Member MemberName="AvailableCalendars">
@@ -225,6 +227,7 @@
  -or-  
   
  In a set operation, the assigned array contains a custom calendar.</exception>
+        <altmember cref="P:System.Globalization.CultureAndRegionInfoBuilder.GregorianDateTimeFormat" />
       </Docs>
     </Member>
     <Member MemberName="CompareInfo">
@@ -246,7 +249,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureAndRegionInfoBuilder.CompareInfo%2A?displayProperty=fullName> property corresponds to the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=fullName> property.  
+ The <xref:System.Globalization.CultureAndRegionInfoBuilder.CompareInfo%2A?displayProperty=nameWithType> property corresponds to the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Globalization.TextInfo> and <xref:System.Globalization.CompareInfo> objects that are assigned to the <xref:System.Globalization.CultureAndRegionInfoBuilder.TextInfo%2A> and <xref:System.Globalization.CultureAndRegionInfoBuilder.CompareInfo%2A> properties both support culture-sensitive and case-sensitive string comparison. The <xref:System.Globalization.CompareInfo> object also has methods that include a <xref:System.Globalization.CompareOptions> parameter that supports culture-sensitive, case-insensitive comparison. These two properties should be assigned <xref:System.Globalization.TextInfo> and <xref:System.Globalization.CompareInfo> objects that represent the same locale.  
   
@@ -254,6 +257,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">In a set operation the assigned value is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">This custom culture is an override of a built-in culture.</exception>
+        <altmember cref="P:System.Globalization.CultureAndRegionInfoBuilder.TextInfo" />
       </Docs>
     </Member>
     <Member MemberName="ConsoleFallbackUICulture">
@@ -349,6 +353,7 @@
   
  An I/O error occurred while accessing <paramref name="xmlFileName" />.</exception>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The data in <paramref name="xmlFileName" /> is not in valid LDML format.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.Save(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CultureEnglishName">
@@ -483,6 +488,9 @@
         <summary>Gets the <see cref="T:System.Globalization.CultureTypes" /> value that describes the culture represented by the current <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object.</summary>
         <value>One of the <see cref="T:System.Globalization.CultureTypes" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Globalization.CultureTypes" />
+        <altmember cref="P:System.Globalization.CultureInfo.CultureTypes" />
+        <altmember cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyEnglishName">
@@ -629,6 +637,7 @@
         <exception cref="T:System.ArgumentNullException">In a set operation, the value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">In a set operation, the length of the value is not from 1 through 84 characters.</exception>
         <exception cref="T:System.ArgumentException">In a set operation, a component of the name specified in the value is empty or longer than 8 characters, not an alphanumeric character or hyphen (-), or the name contains a leading or trailing hyphen.</exception>
+        <altmember cref="M:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsMetric">
@@ -756,7 +765,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureAndRegionInfoBuilder.LCID%2A?displayProperty=fullName> property corresponds to the <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> property.  
+ The <xref:System.Globalization.CultureAndRegionInfoBuilder.LCID%2A?displayProperty=nameWithType> property corresponds to the <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> property.  
   
  For replacement cultures the culture identifier is mapped to the corresponding National Language Support (NLS) locale identifier. For user-defined custom cultures, the value of this property is always hexadecimal 0x1000.  
   
@@ -986,7 +995,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Win32 [GetWindowsDirectory](http://go.microsoft.com/fwlink/?LinkId=191561) function. This process is called registering the custom culture. After the custom culture is registered, a new custom culture can be created by specifying the culture name in a <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor or when calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method.  
+ The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Win32 [GetWindowsDirectory](http://go.microsoft.com/fwlink/?LinkId=191561) function. This process is called registering the custom culture. After the custom culture is registered, a new custom culture can be created by specifying the culture name in a <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor or when calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method.  
   
  The custom culture can be removed by calling the <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method.  
   
@@ -1011,6 +1020,7 @@
  <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ISOCurrencySymbol" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.Parent" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISOLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISORegionName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsRegionName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISOLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISORegionName" /></exception>
         <exception cref="T:System.ArgumentOutOfRangeException">A <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object property value exceeds its maximum length or value.</exception>
         <exception cref="T:System.UnauthorizedAccessException">User does not have administrative privileges.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.Unregister(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1054,6 +1064,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="filename" /> is an empty string ("").</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of a property of a <see cref="T:System.Globalization.DateTimeFormatInfo" />, <see cref="T:System.Globalization.TextInfo" />, or <see cref="T:System.Globalization.NumberFormatInfo" /> object contained in the current <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object is invalid.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TextInfo">
@@ -1075,7 +1086,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureAndRegionInfoBuilder.TextInfo%2A?displayProperty=fullName> property provides culture-specific casing information for strings. It corresponds to the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> property.  
+ The <xref:System.Globalization.CultureAndRegionInfoBuilder.TextInfo%2A?displayProperty=nameWithType> property provides culture-specific casing information for strings. It corresponds to the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Globalization.TextInfo> and <xref:System.Globalization.CompareInfo> objects that are assigned to the <xref:System.Globalization.CultureAndRegionInfoBuilder.TextInfo%2A> and <xref:System.Globalization.CultureAndRegionInfoBuilder.CompareInfo%2A> properties both support culture-sensitive and case-sensitive string comparison. The <xref:System.Globalization.CompareInfo> object also has methods that include a <xref:System.Globalization.CompareOptions> parameter that supports culture-sensitive, case-insensitive comparison. These two properties should be assigned <xref:System.Globalization.TextInfo> and <xref:System.Globalization.CompareInfo> objects that represent the same locale.  
   
@@ -1084,6 +1095,7 @@
         <exception cref="T:System.NotSupportedException">This operation is not supported for replacement cultures.</exception>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in a list separator does not range from 0 to 3.</exception>
+        <altmember cref="P:System.Globalization.CultureAndRegionInfoBuilder.CompareInfo" />
       </Docs>
     </Member>
     <Member MemberName="ThreeLetterISOLanguageName">
@@ -1312,6 +1324,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have administrative privileges.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="cultureName" /> specifies a culture that is not found.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.Register" />
       </Docs>
     </Member>
   </Members>

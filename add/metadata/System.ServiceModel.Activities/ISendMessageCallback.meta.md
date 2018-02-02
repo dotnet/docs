@@ -2,16 +2,16 @@
 uid: System.ServiceModel.Activities.ISendMessageCallback
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activities.ISendMessageCallback.OnSendMessage(System.ServiceModel.OperationContext)
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

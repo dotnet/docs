@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- curve must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method.  
+ curve must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -94,6 +94,7 @@
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
           <paramref name="curve" /> does not validate.</exception>
+        <altmember cref="M:System.Security.Cryptography.ECDiffieHellman.GenerateKey(System.Security.Cryptography.ECCurve)" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -119,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
+ `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=nameWithType> method. Parameters over implicit curves are not supported.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -127,6 +128,7 @@
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
           <paramref name="parameters" /> does not validate.</exception>
+        <altmember cref="M:System.Security.Cryptography.ECDiffieHellman.ImportParameters(System.Security.Cryptography.ECParameters)" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -428,7 +430,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method) and must not be implicit.  
+ `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method) and must not be implicit.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -461,7 +463,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
+ `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=nameWithType> method. Parameters over implicit curves are not supported.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -544,5 +546,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeriveKeyFromHash">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a hash function .</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeriveKeyFromHmac">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of an implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

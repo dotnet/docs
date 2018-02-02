@@ -30,10 +30,11 @@
 ## Remarks  
  This interface is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- This interface preserves the vtable order of the <xref:System.Exception?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ This interface preserves the vtable order of the <xref:System.Exception?displayProperty=nameWithType> class members that can be accessed by unmanaged COM objects.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -63,10 +64,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Object.Equals%2A?displayProperty=fullName> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
+ The <xref:System.Object.Equals%2A?displayProperty=nameWithType> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetBaseException">
@@ -92,10 +94,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.GetBaseException%2A?displayProperty=fullName> method returns the <xref:System.Exception> that is the root cause of one or more subsequent exceptions.  
+ The <xref:System.Exception.GetBaseException%2A?displayProperty=nameWithType> method returns the <xref:System.Exception> that is the root cause of one or more subsequent exceptions.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Exception.GetBaseException" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -121,10 +124,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A?displayProperty=fullName> is suitable for use in hashing algorithms and data structures such as a hash table.  
+ The <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> is suitable for use in hashing algorithms and data structures such as a hash table.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -154,11 +158,12 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.GetObjectData%2A?displayProperty=fullName> method sets the <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  
+ The <xref:System.Exception.GetObjectData%2A?displayProperty=nameWithType> method sets the <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -184,10 +189,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.GetType%2A?displayProperty=fullName> method gets the runtime type of the current instance.  
+ The <xref:System.Exception.GetType%2A?displayProperty=nameWithType> method gets the runtime type of the current instance.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Exception.GetType" />
       </Docs>
     </Member>
     <Member MemberName="HelpLink">
@@ -212,10 +218,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.HelpLink%2A?displayProperty=fullName> property gets or sets a link to the help file associated with this exception.  
+ The <xref:System.Exception.HelpLink%2A?displayProperty=nameWithType> property gets or sets a link to the help file associated with this exception.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.HelpLink" />
       </Docs>
     </Member>
     <Member MemberName="InnerException">
@@ -240,10 +247,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property gets the <xref:System.Exception> instance that caused the current exception.  
+ The <xref:System.Exception.InnerException%2A?displayProperty=nameWithType> property gets the <xref:System.Exception> instance that caused the current exception.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -268,10 +276,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.Message%2A?displayProperty=fullName> property gets a message that describes the current exception.  
+ The <xref:System.Exception.Message%2A?displayProperty=nameWithType> property gets a message that describes the current exception.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.Message" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -296,10 +305,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.Source%2A?displayProperty=fullName> property gets or sets the name of the application or the object that causes the error.  
+ The <xref:System.Exception.Source%2A?displayProperty=nameWithType> property gets or sets the name of the application or the object that causes the error.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.Source" />
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -324,10 +334,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.StackTrace%2A?displayProperty=fullName> property gets a string representation of the frames on the call stack at the time the current exception was thrown.  
+ The <xref:System.Exception.StackTrace%2A?displayProperty=nameWithType> property gets a string representation of the frames on the call stack at the time the current exception was thrown.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.StackTrace" />
       </Docs>
     </Member>
     <Member MemberName="TargetSite">
@@ -352,10 +363,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.TargetSite%2A?displayProperty=fullName> property gets the method that throws the current exception.  
+ The <xref:System.Exception.TargetSite%2A?displayProperty=nameWithType> property gets the method that throws the current exception.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.TargetSite" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -381,10 +393,11 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- The <xref:System.Exception.ToString%2A?displayProperty=fullName> method creates and returns a string representation of the current exception.  
+ The <xref:System.Exception.ToString%2A?displayProperty=nameWithType> method creates and returns a string representation of the current exception.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Exception.ToString" />
       </Docs>
     </Member>
   </Members>

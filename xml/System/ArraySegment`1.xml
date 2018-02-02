@@ -67,7 +67,7 @@
   
  Note, however, that although the <xref:System.ArraySegment%601> structure can be used to divide an array into distinct segments, the segments are not completely independent of one another. The <xref:System.ArraySegment%601.Array%2A> property returns the entire original array, not a copy of the array; therefore, changes made to the array returned by the <xref:System.ArraySegment%601.Array%2A> property are made to the original array. If this is undesirable, you should perform operations on a copy of the array, rather than an <xref:System.ArraySegment%601> object that represents a portion of the array.  
   
- The<xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
+ The <xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
   
 -   Reference the same array.  
   
@@ -75,7 +75,7 @@
   
 -   Have the same number of elements.  
   
- If you want to retrieve an element by its index in the <xref:System.ArraySegment%601> object, you must cast it to an <xref:System.Collections.Generic.IList%601> object and retrieve it or modify it by using the <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName> property. The following example retrieves the element in an <xref:System.ArraySegment%601> object that delimits a section of a string array.  
+ If you want to retrieve an element by its index in the <xref:System.ArraySegment%601> object, you must cast it to an <xref:System.Collections.Generic.IList%601> object and retrieve it or modify it by using the <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType> property. The following example retrieves the element in an <xref:System.ArraySegment%601> object that delimits a section of a string array.  
   
  [!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
  [!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
@@ -91,6 +91,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Array" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +145,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -203,6 +205,7 @@
           <paramref name="offset" /> or <paramref name="count" /> is less than 0.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="offset" /> and <paramref name="count" /> do not specify a valid range in <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Array">
@@ -250,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -357,6 +361,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.ArraySegment`1.Offset" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -588,6 +594,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.ArraySegment`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -637,7 +645,7 @@
   
 -   They have the same number of elements.  
   
- The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -710,7 +718,7 @@
   
 -   They have a different number of elements.  
   
- The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1346,5 +1354,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ArraySegment`1" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c07435f3-5214-4791-8961-2c2b61306d71
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Message Formatters
 The content in a message is often in the form of XML, which is usually not a convenient format for an application. Applications manipulate objects, getting and setting their properties. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the *Data Contract* to convert a <xref:System.ServiceModel.Channels.Message> object into an object easily handled by an application. These processes are called serialization and deserialization. Note that these same terms are used to describe the serialization and deserialization done by the transport layer to and from the message wire format, which is an unrelated process.  
@@ -39,6 +41,6 @@ The content in a message is often in the form of XML, which is usually not a con
  To insert the custom formatter into the service application, assign the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> object to the <xref:System.ServiceModel.Dispatcher.DispatchOperation.Formatter%2A> property using an operation behavior. For information about behaviors, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
 ## See Also  
- <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter>   
- <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter>   
+ <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter>  
+ <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter>  
  [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

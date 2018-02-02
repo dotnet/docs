@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7bc5fff7-a2b2-4dbc-86cc-ecf73653dcdc
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Migrating WSE 3.0 Web Services to WCF
 The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] include improved performance and the support of additional transports, additional security scenarios, and WS-* specifications. A Web service that is migrated from WSE 3.0 to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can experience up to a 200% to 400% performance improvement. For more information about the transports supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md). For a list of the scenarios supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md). For a list of the specifications that are supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Web Services Protocols Interoperability Guide](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md).  
@@ -129,7 +131,7 @@ The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../..
  The equivalent of a WSE 3.0 custom transport in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is a channel extension. For details about creating a channel extension, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
   
 ## See Also  
- [Basic Programming Lifecycle](../../../../docs/framework/wcf/basic-programming-lifecycle.md)   
- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)   
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)   
+ [Basic Programming Lifecycle](../../../../docs/framework/wcf/basic-programming-lifecycle.md)  
+ [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)  
+ [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
  [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

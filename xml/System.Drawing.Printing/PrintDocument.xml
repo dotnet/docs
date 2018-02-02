@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you create an instance of the <xref:System.Drawing.Printing.PrintDocument> class, set properties such as the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A>and <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A>, and call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to start the printing process. Handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event where you specify the output to print, by using the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A><xref:System.Drawing.Graphics> property of the <xref:System.Drawing.Printing.PrintPageEventArgs>.  
+ Typically, you create an instance of the <xref:System.Drawing.Printing.PrintDocument> class, set properties such as the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> and <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A>, and call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to start the printing process. Handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event where you specify the output to print, by using the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A><xref:System.Drawing.Graphics> property of the <xref:System.Drawing.Printing.PrintPageEventArgs>.  
   
  For more information about printing from a Windows Form application, see the [Windows Forms Print Support](~/docs/framework/winforms/advanced/windows-forms-print-support.md). If you wish to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
   
@@ -47,6 +47,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Graphics" />
+    <altmember cref="T:System.Drawing.Printing.PageSettings" />
+    <altmember cref="T:System.Drawing.Printing.PrintController" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +110,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPageSettings">
@@ -135,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify several default page settings through the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A> property. For example, the <xref:System.Drawing.Printing.PageSettings.Color%2A?displayProperty=fullName> property specifies whether the page prints in color, the <xref:System.Drawing.Printing.PageSettings.Landscape%2A?displayProperty=fullName> property specifies landscape or portrait orientation, and the <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=fullName> property specifies the margins of the page.  
+ You can specify several default page settings through the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A> property. For example, the <xref:System.Drawing.Printing.PageSettings.Color%2A?displayProperty=nameWithType> property specifies whether the page prints in color, the <xref:System.Drawing.Printing.PageSettings.Landscape%2A?displayProperty=nameWithType> property specifies landscape or portrait orientation, and the <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=nameWithType> property specifies the margins of the page.  
   
  To specify settings on a page-by-page basis, handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> or <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event and modify the <xref:System.Drawing.Printing.PrintPageEventArgs.PageSettings%2A> argument included in the <xref:System.Drawing.Printing.PrintPageEventArgs> or <xref:System.Drawing.Printing.QueryPageSettingsEventArgs>, respectively.  
   
@@ -155,6 +164,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PageSettings" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrintController" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="DocumentName">
@@ -196,6 +208,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
       </Docs>
     </Member>
     <Member MemberName="EndPrint">
@@ -218,12 +232,17 @@
 ## Remarks  
  Typically, you handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event to release fonts, file streams, and other resources used during the printing process, like fonts.  
   
- You indicate that there are no more pages to print by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A?displayProperty=fullName> property to `false` in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The <xref:System.Drawing.Printing.PrintDocument.EndPrint> event also occurs if the printing process is canceled or an exception occurs during the printing process.  
+ You indicate that there are no more pages to print by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A?displayProperty=nameWithType> property to `false` in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The <xref:System.Drawing.Printing.PrintDocument.EndPrint> event also occurs if the printing process is canceled or an exception occurs during the printing process.  
   
  To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
       </Docs>
     </Member>
     <Member MemberName="OnBeginPrint">
@@ -257,6 +276,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)" /> method so that registered delegates receive the event. This method is a good place for initialization.</para>
         </block>
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnEndPrint">
@@ -290,6 +311,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnEndPrint(System.Drawing.Printing.PrintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnEndPrint(System.Drawing.Printing.PrintEventArgs)" /> method so that registered delegates receive the event. This method is a good place for uninitialization.</para>
         </block>
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPrintPage">
@@ -323,6 +346,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnQueryPageSettings">
@@ -356,6 +381,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnQueryPageSettings(System.Drawing.Printing.QueryPageSettingsEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnQueryPageSettings(System.Drawing.Printing.QueryPageSettingsEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Drawing.Printing.QueryPageSettingsEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
       </Docs>
     </Member>
     <Member MemberName="OriginAtMargins">
@@ -383,9 +410,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calculating the area available to print requires knowing the physical size of the paper, the margins for the page, and the location of the <xref:System.Drawing.Graphics> object origin. When <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `true`, the <xref:System.Drawing.Graphics> object location takes into account the <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=fullName> property value and the printable area of the page. When <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `false`, only the printable area of the page is used to determine the location of the <xref:System.Drawing.Graphics> object origin, the <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=fullName> value is ignored.  
+ Calculating the area available to print requires knowing the physical size of the paper, the margins for the page, and the location of the <xref:System.Drawing.Graphics> object origin. When <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `true`, the <xref:System.Drawing.Graphics> object location takes into account the <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=nameWithType> property value and the printable area of the page. When <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `false`, only the printable area of the page is used to determine the location of the <xref:System.Drawing.Graphics> object origin, the <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=nameWithType> value is ignored.  
   
- For example, if <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `true`, and <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=fullName> is set for 1 inch on each side, the <xref:System.Drawing.Graphics> object included in the <xref:System.Drawing.Printing.PrintPageEventArgs> is located 1 inch from the left and top of the page. If the printable area of the page is .25 of an inch on each side and <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `false`, the <xref:System.Drawing.Graphics> object is located .25 of an inch from the left and top of the page.  
+ For example, if <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `true`, and <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=nameWithType> is set for 1 inch on each side, the <xref:System.Drawing.Graphics> object included in the <xref:System.Drawing.Printing.PrintPageEventArgs> is located 1 inch from the left and top of the page. If the printable area of the page is .25 of an inch on each side and <xref:System.Drawing.Printing.PrintDocument.OriginAtMargins%2A> is `false`, the <xref:System.Drawing.Graphics> object is located .25 of an inch from the left and top of the page.  
   
 > [!NOTE]
 >  The printable area of a page varies from printer to printer and is not guaranteed to be symmetrical.  
@@ -415,7 +442,7 @@
 ## Remarks  
  Specify the output to print by handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event and by using the <xref:System.Drawing.Graphics> included in the <xref:System.Drawing.Printing.PrintPageEventArgs>.  
   
- Use the <xref:System.Drawing.Printing.PrinterSettings.PrinterName%2A?displayProperty=fullName> property to specify which printer should print the document.  
+ Use the <xref:System.Drawing.Printing.PrinterSettings.PrinterName%2A?displayProperty=nameWithType> property to specify which printer should print the document.  
   
  The <xref:System.Drawing.Printing.PrintDocument.Print%2A> method prints the document without using a print dialog. Use a <xref:System.Windows.Forms.PrintDialog> when you want to offer the user the ability to choose print settings.  
   
@@ -485,6 +512,13 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DefaultPageSettings" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DocumentName" />
+        <altmember cref="T:System.Drawing.Printing.PreviewPrintController" />
+        <altmember cref="T:System.Drawing.Printing.PrintController" />
+        <altmember cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrinterSettings" />
+        <altmember cref="T:System.Drawing.Printing.StandardPrintController" />
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -514,7 +548,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify several printer settings through the <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A> property. For example, use the <xref:System.Drawing.Printing.PrinterSettings.Copies%2A?displayProperty=fullName> property to specify the number of copies you want to print, the <xref:System.Drawing.Printing.PrinterSettings.PrinterName%2A?displayProperty=fullName> property to specify the printer to use, and the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A?displayProperty=fullName> property to specify the range of pages you want to print.  
+ You can specify several printer settings through the <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A> property. For example, use the <xref:System.Drawing.Printing.PrinterSettings.Copies%2A?displayProperty=nameWithType> property to specify the number of copies you want to print, the <xref:System.Drawing.Printing.PrinterSettings.PrinterName%2A?displayProperty=nameWithType> property to specify the printer to use, and the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A?displayProperty=nameWithType> property to specify the range of pages you want to print.  
   
    
   
@@ -529,6 +563,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DefaultPageSettings" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DocumentName" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrintController" />
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="PrintPage">
@@ -549,9 +587,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To specify the output to print, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs>. For example, to specify a line of text that should be printed, draw the text using the <xref:System.Drawing.Graphics.DrawString%2A?displayProperty=fullName> method.  
+ To specify the output to print, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs>. For example, to specify a line of text that should be printed, draw the text using the <xref:System.Drawing.Graphics.DrawString%2A?displayProperty=nameWithType> method.  
   
- In addition to specifying the output, you can indicate if there are additional pages to print by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A?displayProperty=fullName> property to `true`. The default is `false`, which indicates that there are no more pages to print. Individual page settings can also be modified through the <xref:System.Drawing.Printing.PageSettings> and the print job can be canceled by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.Cancel%2A?displayProperty=fullName> property to `true`. To print each page of a document using different page settings, handle the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event.  
+ In addition to specifying the output, you can indicate if there are additional pages to print by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A?displayProperty=nameWithType> property to `true`. The default is `false`, which indicates that there are no more pages to print. Individual page settings can also be modified through the <xref:System.Drawing.Printing.PageSettings> and the print job can be canceled by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.Cancel%2A?displayProperty=nameWithType> property to `true`. To print each page of a document using different page settings, handle the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event.  
   
  To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintPageEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -570,6 +608,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
+        <altmember cref="T:System.Drawing.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="QueryPageSettings">
@@ -590,11 +634,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A?displayProperty=fullName> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. Changes made to the <xref:System.Drawing.Printing.PageSettings> affect only the current page, not the document's default page settings. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` for the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs>.  
+ It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A?displayProperty=nameWithType> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. Changes made to the <xref:System.Drawing.Printing.PageSettings> affect only the current page, not the document's default page settings. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` for the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs>.  
   
  To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.QueryPageSettingsEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
-   
+If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify printer settings, the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> control will not improve even if an optimization configuration switch is set. For more information, see [PrintPreviewDialog control overview](~/docs/framework/winforms/controls/printpreviewdialog-control-overview-windows-forms.md).   
   
 ## Examples  
  The following code example prints a document with the first page in color, if the printer supports it. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled. The `currentPageNumber` variable is incremented after every page is printed in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, which is not shown.  
@@ -607,6 +651,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.QueryPageSettingsEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

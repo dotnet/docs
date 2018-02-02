@@ -43,6 +43,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeCatchClauseCollection" />
+    <altmember cref="T:System.CodeDom.CodeTryCatchFinallyStatement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +86,8 @@
         <param name="localName">The name of the local variable declared in the catch clause for the exception. This is optional.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCatchClause" /> class using the specified local variable name for the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpression" />
+        <altmember cref="T:System.CodeDom.CodeStatement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,7 +115,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeCatchClause (string localName, System.CodeDom.CodeTypeReference catchExceptionType, System.CodeDom.CodeStatement[] statements);" />
+      <MemberSignature Language="C#" Value="public CodeCatchClause (string localName, System.CodeDom.CodeTypeReference catchExceptionType, params System.CodeDom.CodeStatement[] statements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localName, class System.CodeDom.CodeTypeReference catchExceptionType, class System.CodeDom.CodeStatement[] statements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClause.#ctor(System.String,System.CodeDom.CodeTypeReference,System.CodeDom.CodeStatement[])" />
       <MemberType>Constructor</MemberType>
@@ -169,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpression" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -220,7 +225,18 @@
         <summary>Gets the statements within the catch block.</summary>
         <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> containing the statements within the catch block.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeStatementCollection" />
+        <altmember cref="T:System.CodeDom.CodeStatement" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCatchClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -38,6 +38,12 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +71,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -97,12 +107,12 @@
  The constructor for the <xref:System.Windows.Forms.DataGridViewTextBoxColumn> class initializes this property to a newly created <xref:System.Windows.Forms.DataGridViewTextBoxCell>.  
   
 > [!CAUTION]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
+>  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=nameWithType> method).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md).  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#120)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#120)]
@@ -111,6 +121,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The set type is not compatible with type <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewTextBoxColumn.#ctor" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MaxInputLength">
@@ -144,6 +159,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxCell.MaxInputLength" />
       </Docs>
     </Member>
     <Member MemberName="SortMode">
@@ -178,7 +197,7 @@
   
  The <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> value does not prevent you from sorting a column programmatically, although other restrictions may apply. For more information, see the <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
   
- A <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=fullName> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
+ A <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=nameWithType> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
   
    
   
@@ -190,6 +209,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnSortMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridView.Sort" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -209,6 +233,7 @@
         <summary>Gets a string that describes the column.</summary>
         <returns>A <see cref="T:System.String" /> that describes the column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumn.ToString" />
       </Docs>
     </Member>
   </Members>

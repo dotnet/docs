@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Collections.Specialized.BitVector32.CreateSection(System.Int16)" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -108,12 +109,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Two <xref:System.Collections.Specialized.BitVector32.Section> instances are considered equal if both sections are of the same length and are in the same location within a <xref:System.Collections.Specialized.BitVector32>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -146,12 +148,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
  This method generates the same hash code for two objects that are equal according to the <xref:System.Collections.Specialized.BitVector32.Section.Equals%2A> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Mask">
@@ -243,7 +248,7 @@
         <returns>
           <see langword="true" /> if the <paramref name="a" /> and <paramref name="b" /> parameters represent the same <see cref="T:System.Collections.Specialized.BitVector32.Section" /> object, otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Collections.Specialized.BitVector32.Section.Equals(System.Collections.Specialized.BitVector32.Section)?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Collections.Specialized.BitVector32.Section.Equals(System.Collections.Specialized.BitVector32.Section)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -314,7 +319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -344,9 +349,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents the current <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Object.ToString" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -379,7 +393,28 @@
         <summary>Returns a string that represents the specified <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</summary>
         <returns>A string that represents the specified <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Collections.Specialized.BitVector32.Section" /> objects are the same.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

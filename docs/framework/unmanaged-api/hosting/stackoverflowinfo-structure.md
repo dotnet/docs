@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "StackOverflowInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StackOverflowInfo structure [.NET Framework hosting]"
 ms.assetid: 519389f2-0217-436c-99d4-93a76ebce5b5
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StackOverflowInfo Structure
 Stores the type of overflow that occurred and information on the exception that was thrown due to the overflow.  

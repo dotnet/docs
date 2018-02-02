@@ -16,11 +16,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
+ The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
   
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.Serialization.SoapSchemaImporter" />
+    <altmember cref="T:System.Xml.Serialization.XmlCodeExporter" />
+    <altmember cref="T:System.Web.Services.Description.ServiceDescriptionImporter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -289,5 +292,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapCodeExporter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddMappingMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Add a <see cref="T:System.Xml.Serialization.SoapElementAttribute" /> declaration to a method parameter or return value that corresponds to a part element of a SOAP message definition in a WSDL document.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

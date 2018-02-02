@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security in WCF
 This section contains samples relating to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security.  

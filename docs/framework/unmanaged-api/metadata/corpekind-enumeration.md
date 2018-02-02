@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorPEKind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorPEKind enumeration [.NET Framework metadata]"
 ms.assetid: 22dc6dea-b1b9-4982-a730-a022d586b117
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorPEKind Enumeration
 Contains values that describe a portable executable (PE) file, as returned from a call to [IMetaDataImport2::GetPEKind](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-getpekind-method.md).  

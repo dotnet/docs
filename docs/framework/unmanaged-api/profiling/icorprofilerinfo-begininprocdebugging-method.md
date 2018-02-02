@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::BeginInprocDebugging"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "BeginInprocDebugging method [.NET Framework profiling]"
   - "ICorProfilerInfo::BeginInprocDebugging method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::BeginInprocDebugging Method
 Initializes in-process debugging support. This method is obsolete in the .NET Framework version 2.0.  

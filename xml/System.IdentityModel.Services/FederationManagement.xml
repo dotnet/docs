@@ -126,7 +126,7 @@
     </Member>
     <Member MemberName="UpdateIdentityProviderTrustInfo">
       <MemberSignature Language="C#" Value="public static void UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, out System.Xml.XmlNodeReader newIssuerNameRegistry, out System.Xml.XmlNodeReader claimTypesOffered);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, class System.Xml.XmlNodeReader newIssuerNameRegistry, class System.Xml.XmlNodeReader claimTypesOffered) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, [out] class System.Xml.XmlNodeReader&amp; newIssuerNameRegistry, [out] class System.Xml.XmlNodeReader&amp; claimTypesOffered) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Xml.XmlNodeReader@,System.Xml.XmlNodeReader@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -159,7 +159,7 @@
     </Member>
     <Member MemberName="UpdateIdentityProviderTrustInfo">
       <MemberSignature Language="C#" Value="public static void UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, out System.Xml.XmlNodeReader newIssuerNameRegistry, out System.Xml.XmlNodeReader claimTypesOffered, System.IdentityModel.Metadata.MetadataSerializer metadataSerializer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, class System.Xml.XmlNodeReader newIssuerNameRegistry, class System.Xml.XmlNodeReader claimTypesOffered, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, [out] class System.Xml.XmlNodeReader&amp; newIssuerNameRegistry, [out] class System.Xml.XmlNodeReader&amp; claimTypesOffered, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Xml.XmlNodeReader@,System.Xml.XmlNodeReader@,System.IdentityModel.Metadata.MetadataSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -196,5 +196,14 @@
  <paramref name="metadataSerializer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpdateIdentityProviderTrustInfo">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the specified application configuration, if needed, based on the specified Federation Metadata document.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

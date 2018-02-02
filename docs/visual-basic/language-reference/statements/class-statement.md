@@ -1,46 +1,27 @@
 ---
 title: "Class Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Class"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "class modules"
-  - "Class statement"
+  - "Class statement [Visual Basic]"
   - "classes [Visual Basic], fields"
-  - "fields, of classes"
-  - "class types, class statements"
+  - "fields [Visual Basic], of classes"
+  - "class types [Visual Basic], class statements"
   - "classes [Visual Basic], creating"
   - "classes [Visual Basic], data members"
-  - "data members, of classes"
+  - "data members [Visual Basic], of classes"
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Class Statement (Visual Basic)
 Declares the name of a class and introduces the definition of the variables, properties, events, and procedures that the class comprises.  
@@ -130,11 +111,11 @@ End Class
  [!code-vb[VbVbalrStatements#62](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/class-statement_1.vb)]  
   
 ## See Also  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)   
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
- [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
+ [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)

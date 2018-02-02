@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.BeginStoryboard" />
   </Docs>
   <Members>
     <Member MemberName="BeginStoryboardName">
@@ -45,6 +46,9 @@
         <summary>Gets or sets the <see cref="P:System.Windows.Media.Animation.BeginStoryboard.Name" /> of the <see cref="T:System.Windows.Media.Animation.BeginStoryboard" /> that began the <see cref="T:System.Windows.Media.Animation.Storyboard" /> you want to interactively control.</summary>
         <value>The <see cref="P:System.Windows.Media.Animation.BeginStoryboard.Name" /> of the <see cref="T:System.Windows.Media.Animation.BeginStoryboard" /> that began the <see cref="T:System.Windows.Media.Animation.Storyboard" /> you want to interactively control. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.BeginStoryboard" />
+        <altmember cref="P:System.Windows.Media.Animation.BeginStoryboard.Name" />
+        <altmember cref="T:System.Windows.Media.Animation.Storyboard" />
       </Docs>
     </Member>
   </Members>

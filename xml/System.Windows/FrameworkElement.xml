@@ -62,6 +62,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyObject" />
+    <altmember cref="T:System.Windows.FrameworkContentElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -241,6 +243,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.RemoveLogicalChild(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ApplyTemplate">
@@ -272,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ControlTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeCore">
@@ -300,6 +304,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.Arrange(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
@@ -327,6 +332,7 @@
   
  Many derived classes offer implementations of this method. Prominent ones include: <see cref="M:System.Windows.Window.ArrangeOverride(System.Windows.Size)" />, <see cref="M:System.Windows.Controls.Page.ArrangeOverride(System.Windows.Size)" /> and <see cref="M:System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)" />.</para>
         </block>
+        <altmember cref="M:System.Windows.UIElement.Arrange(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -359,6 +365,7 @@
   
  The base implementation will throw an exception if <see cref="M:System.Windows.FrameworkElement.BeginInit" /> is called more than one time on the same element prior to <see cref="M:System.Windows.FrameworkElement.EndInit" /> being called.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="BeginStoryboard">
@@ -615,6 +622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ScrollViewer" />
       </Docs>
     </Member>
     <Member MemberName="BringIntoView">
@@ -657,6 +665,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.FlowDocumentScrollViewer" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenu">
@@ -690,6 +699,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuClosing">
@@ -735,6 +745,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuClosingEvent">
@@ -789,7 +800,7 @@
   
  (This usage is required because the event implementation on <xref:System.Windows.FrameworkElement> that exposes the underlying service event does not map the <xref:System.Windows.FrameworkElement.ContextMenuOpening> identifier such that you can use it in triggers).  
   
- <xref:System.Windows.Controls.ContextMenu> itself is a <xref:System.Windows.FrameworkElement> derived class, but this event will not be raised from the context menu being opened as a source. The event is raised from the element that "owns" the context menu as a property and is only raised when a user attempts to open a context menu in the UI. It is possible for <xref:System.Windows.Controls.ContextMenu> itself to have a <xref:System.Windows.FrameworkElement.ContextMenu%2A> property, but you should avoid this scenario (for details, see <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName>).  
+ <xref:System.Windows.Controls.ContextMenu> itself is a <xref:System.Windows.FrameworkElement> derived class, but this event will not be raised from the context menu being opened as a source. The event is raised from the element that "owns" the context menu as a property and is only raised when a user attempts to open a context menu in the UI. It is possible for <xref:System.Windows.Controls.ContextMenu> itself to have a <xref:System.Windows.FrameworkElement.ContextMenu%2A> property, but you should avoid this scenario (for details, see <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>).  
   
  The <xref:System.Windows.Controls.ContextMenu> class itself also has a similar event (<xref:System.Windows.Controls.ContextMenu.Opened>) but <xref:System.Windows.Controls.ContextMenu.Opened> does not provide you the opportunity to cancel the user action.  
   
@@ -806,6 +817,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuOpeningEvent">
@@ -904,6 +916,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.QueryCursor" />
+        <altmember cref="P:System.Windows.FrameworkElement.ForceCursor" />
+        <altmember cref="P:System.Windows.Input.Mouse.OverrideCursor" />
       </Docs>
     </Member>
     <Member MemberName="CursorProperty">
@@ -1042,6 +1057,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.DataContext" />
       </Docs>
     </Member>
     <Member MemberName="DataContextProperty">
@@ -1106,6 +1122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.OverridesDefaultStyle" />
       </Docs>
     </Member>
     <Member MemberName="DefaultStyleKeyProperty">
@@ -1186,6 +1203,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.FindResource(System.Object)" />
+        <altmember cref="P:System.Windows.FrameworkElement.Name" />
       </Docs>
     </Member>
     <Member MemberName="FindResource">
@@ -1239,6 +1258,7 @@
  <paramref name="resourceKey" /> was not found and the <see cref="P:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Handled" /> property is <see langword="false" /> in the <see cref="E:System.Windows.Threading.Dispatcher.UnhandledException" /> event.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceKey" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.FrameworkElement.TryFindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -1366,6 +1386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="FocusVisualStyleProperty">
@@ -1424,6 +1445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="ForceCursorProperty">
@@ -1468,10 +1490,11 @@
 ## Remarks  
  Checking the return value for `null` is a technique you can use to determine whether a property has an active binding.  
   
- This method is really just a convenience wrapper around the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=fullName> method. <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> passes the current instance and the `dp` parameter to <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=fullName>.  
+ This method is really just a convenience wrapper around the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=nameWithType> method. <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> passes the current instance and the `dp` parameter to <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.BindingOperations" />
       </Docs>
     </Member>
     <Member MemberName="GetFlowDirection">
@@ -1501,6 +1524,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.FlowDirection" />
       </Docs>
     </Member>
     <Member MemberName="GetLayoutClip">
@@ -1528,13 +1552,15 @@
 ## Remarks  
  Margins will be subtracted from the `layoutSlotSize` as part of layout system behavior.  
   
- A returned null reference indicates that no clipping will occur. The default implementation always returns `null` when <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`. This method overrides <xref:System.Windows.UIElement.GetLayoutClip%2A?displayProperty=fullName>. The <xref:System.Windows.FrameworkElement> implementation uses <xref:System.Windows.FrameworkElement.MaxHeight%2A> and <xref:System.Windows.FrameworkElement.MaxWidth%2A> in its calculations. Several subclasses of <xref:System.Windows.FrameworkElement> override this method again. <xref:System.Windows.Documents.Adorner.GetLayoutClip%2A?displayProperty=fullName>, overrides to always return `null` because adorners are often deliberately outside the ordinary bounds. <xref:System.Windows.Controls.Canvas.GetLayoutClip%2A?displayProperty=fullName> and <xref:System.Windows.Controls.InkPresenter.GetLayoutClip%2A?displayProperty=fullName> return `null` if <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`.  
+ A returned null reference indicates that no clipping will occur. The default implementation always returns `null` when <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`. This method overrides <xref:System.Windows.UIElement.GetLayoutClip%2A?displayProperty=nameWithType>. The <xref:System.Windows.FrameworkElement> implementation uses <xref:System.Windows.FrameworkElement.MaxHeight%2A> and <xref:System.Windows.FrameworkElement.MaxWidth%2A> in its calculations. Several subclasses of <xref:System.Windows.FrameworkElement> override this method again. <xref:System.Windows.Documents.Adorner.GetLayoutClip%2A?displayProperty=nameWithType>, overrides to always return `null` because adorners are often deliberately outside the ordinary bounds. <xref:System.Windows.Controls.Canvas.GetLayoutClip%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.InkPresenter.GetLayoutClip%2A?displayProperty=nameWithType> return `null` if <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>The default implementation always returns <see langword="null" /> when <see cref="P:System.Windows.UIElement.ClipToBounds" /> is <see langword="false" />. Overrides are generally expected to preserve this behavior, although there are exceptions, depending on the relationship and purpose of the derived class and its layout logic as opposed to the base class.</para>
         </block>
+        <altmember cref="P:System.Windows.UIElement.Clip" />
+        <altmember cref="P:System.Windows.UIElement.ClipToBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetTemplateChild">
@@ -1560,12 +1586,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Templates in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] have a self-contained namescope. This is because templates are re-used, and any name defined in a template cannot remain unique when multiple instances of a control each instantiate its template. Call the <xref:System.Windows.FrameworkElement.GetTemplateChild%2A> method to return references to objects that come from the template after it is instantiated. You cannot use the <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> method to find items from templates because <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> acts in a more general scope, and there is no connection between the <xref:System.Windows.Controls.ControlTemplate> class itself and the instantiated template once it is applied.  
+ Templates in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] have a self-contained namescope. This is because templates are re-used, and any name defined in a template cannot remain unique when multiple instances of a control each instantiate its template. Call the <xref:System.Windows.FrameworkElement.GetTemplateChild%2A> method to return references to objects that come from the template after it is instantiated. You cannot use the <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=nameWithType> method to find items from templates because <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=nameWithType> acts in a more general scope, and there is no connection between the <xref:System.Windows.Controls.ControlTemplate> class itself and the instantiated template once it is applied.  
   
- <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=fullName> supplies the same function as this method. <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=fullName> is public instead of protected, and it uses correct name-scoping considerations that allow it to access the template within an element and find named items within it. Use <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=fullName> when you need to get an element outside of its parent control.  
+ <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=nameWithType> supplies the same function as this method. <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=nameWithType> is public instead of protected, and it uses correct name-scoping considerations that allow it to access the template within an element and find named items within it. Use <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=nameWithType> when you need to get an element outside of its parent control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkTemplate.FindName(System.String,System.Windows.FrameworkElement)" />
       </Docs>
     </Member>
     <Member MemberName="GetUIParentCore">
@@ -1588,10 +1615,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.UIElement.GetUIParentCore%2A?displayProperty=fullName>. The default <xref:System.Windows.FrameworkElement> implementation returns the expected single visual parent, which is the same result as getting the <xref:System.Windows.FrameworkElement.Parent%2A> value. Derived class implementations might return alternate parent relationships.  
+ This method overrides <xref:System.Windows.UIElement.GetUIParentCore%2A?displayProperty=nameWithType>. The default <xref:System.Windows.FrameworkElement> implementation returns the expected single visual parent, which is the same result as getting the <xref:System.Windows.FrameworkElement.Parent%2A> value. Derived class implementations might return alternate parent relationships.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Parent" />
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -1669,13 +1697,13 @@
   
  If this element is a child element within some other element, then setting this property to a value is really only a suggested value. The layout system as well as the particular layout logic of the parent element will use the value as a nonbinding input during the layout process. In practical terms, a <xref:System.Windows.FrameworkElement> is almost always the child element of something else; even when you set the <xref:System.Windows.FrameworkElement.Height%2A> on <xref:System.Windows.Window>. (For <xref:System.Windows.Window>, that value is used when the underlying application model establishes the basic rendering assumptions that create the Hwnd that hosts the application.)  
   
- In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=fullName>. This is how you specify auto sizing behavior in code. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the height available to it. Note however that specific controls frequently supply default values through their default theme styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
+ In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=nameWithType>. This is how you specify auto sizing behavior in code. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the height available to it. Note however that specific controls frequently supply default values through their default theme styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
   
  The return value of this property is always the same as any value that was set to it. In contrast, the value of the <xref:System.Windows.FrameworkElement.ActualHeight%2A> may vary. This can happen either statically because the layout rejected the suggested size for some reason, or momentarily. The layout system itself works asynchronously relative to the property system's set of <xref:System.Windows.FrameworkElement.Height%2A> and may not have processed that particular sizing property change yet.  
   
  The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set an invalid value, a run-time exception is thrown.  
   
- In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Height%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=fullName> but smaller than <xref:System.Double.MaxValue?displayProperty=fullName>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Height%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
+ In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Height%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=nameWithType> but smaller than <xref:System.Double.MaxValue?displayProperty=nameWithType>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Height%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
   
 <a name="xamlAttributeUsage_Height"></a>   
 ## XAML Attribute Usage  
@@ -1719,6 +1747,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.ActualHeight" />
       </Docs>
     </Member>
     <Member MemberName="HeightProperty">
@@ -1813,12 +1842,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode?displayProperty=fullName> value.  
+ Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor?displayProperty=nameWithType> value.  
   
  If you want your derived class to set this property, you should do so within the static constructor or in other initialization routines.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Frame" />
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -1852,6 +1882,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.OnInitialized(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InputScope">
@@ -1887,6 +1918,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.InputScope" />
+        <altmember cref="T:System.Windows.IInputElement" />
       </Docs>
     </Member>
     <Member MemberName="InputScopeProperty">
@@ -1972,6 +2005,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -2131,6 +2165,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.OnRender(System.Windows.Media.DrawingContext)" />
       </Docs>
     </Member>
     <Member MemberName="LoadedEvent">
@@ -2261,6 +2296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Thickness" />
       </Docs>
     </Member>
     <Member MemberName="MarginProperty">
@@ -2481,7 +2517,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=fullName> to connect the  WPF core-level and WPF framework-level layout measure implementations. The <xref:System.Windows.FrameworkElement> implementation seals the method. To adjust the measure pass layout behavior of any element that builds on the WPF framework-level, override <xref:System.Windows.FrameworkElement.MeasureOverride%2A> instead. To adjust the measure pass layout behavior of an element that deliberately does not build on the WPF framework-level or use <xref:System.Windows.FrameworkElement>, override <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=nameWithType> to connect the  WPF core-level and WPF framework-level layout measure implementations. The <xref:System.Windows.FrameworkElement> implementation seals the method. To adjust the measure pass layout behavior of any element that builds on the WPF framework-level, override <xref:System.Windows.FrameworkElement.MeasureOverride%2A> instead. To adjust the measure pass layout behavior of an element that deliberately does not build on the WPF framework-level or use <xref:System.Windows.FrameworkElement>, override <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2736,7 +2772,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation overrides <xref:System.Windows.UIElement.MoveFocus%2A?displayProperty=fullName> and seals the method.  
+ This implementation overrides <xref:System.Windows.UIElement.MoveFocus%2A?displayProperty=nameWithType> and seals the method.  
   
    
   
@@ -2748,6 +2784,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2970,6 +3008,7 @@
         <block subset="none" type="overrides">
           <para>If you intend to mark the event handled in the arguments, you should be aware of consequences on event handling in other parent elements in the element tree. Because this handler acts on an event with a bubbling routing, setting the focus to the current <paramref name="sender" /> per the event arguments may not be appropriate. Focus might need to go to either a composite child element or to a parent element, depending on the compositing of certain controls. Therefore marking a focus event as handled is only recommended if the entirety of the visual tree that the event is routing through is part of compositing of a control that you authored.</para>
         </block>
+        <altmember cref="P:System.Windows.UIElement.Focusable" />
       </Docs>
     </Member>
     <Member MemberName="OnInitialized">
@@ -3003,6 +3042,8 @@
         <block subset="none" type="overrides">
           <para>The default implementation of this virtual method raises the event as described above. Overrides should call the base implementation to preserve this behavior. If you fail to call the base implementation, not only will you not raise the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event as is generally expected of a <see cref="T:System.Windows.FrameworkElement" /> derived class, but you will also suppress two important style and theme style initialization operations that are implemented by this base implementation.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.OnApplyTemplate" />
+        <altmember cref="E:System.Windows.FrameworkElement.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -3038,6 +3079,8 @@
         <block subset="none" type="overrides">
           <para>Always call the base implementation, as the first operation in your implementation. Failure to do this will significantly disable the entire [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system, which causes incorrect values to be reported. The specific <see cref="T:System.Windows.FrameworkElement" /> implementation is also responsible for maintaining proper state for a variety of properties that affect the visible user interface. These include invalidating the visual tree based on changes to style at appropriate times.</para>
         </block>
+        <altmember cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+        <altmember cref="T:System.Windows.PropertyChangedCallback" />
       </Docs>
     </Member>
     <Member MemberName="OnRenderSizeChanged">
@@ -3071,6 +3114,9 @@
   
  You may still override this method in derived classes (it is protected but not sealed). Always call the base implementation to preserve the behavior mentioned above, unless you have very specific reasons for disabling default WPF framework-level rendering behavior. Failing to raise the <see cref="E:System.Windows.FrameworkElement.SizeChanged" /> event will cause non-standard layout behavior if using the standard WPF framework-level layout system implementation.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.UIElement.OnRender(System.Windows.Media.DrawingContext)" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleChanged">
@@ -3199,6 +3245,8 @@
   
  This method is also overridden in certain elements that are typically the root element, such as  <see cref="T:System.Windows.Window" />. Another case is elements that are the apparent root element in markup but which autogenerate a greater infrastructure in a compiled logical tree (such as <see cref="T:System.Windows.Controls.Page" />). The <see cref="T:System.Windows.Window" /> and <see cref="T:System.Windows.Controls.Page" /> implementations deliberately seal the method.</para>
         </block>
+        <altmember cref="M:System.Windows.Media.Visual.OnVisualParentChanged(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Window.OnVisualParentChanged(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="OverridesDefaultStyle">
@@ -3298,6 +3346,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.TemplatedParent" />
+        <altmember cref="T:System.Windows.LogicalTreeHelper" />
       </Docs>
     </Member>
     <Member MemberName="ParentLayoutInvalidated">
@@ -3368,6 +3418,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">Specified one of the following directions in the <see cref="T:System.Windows.Input.TraversalRequest" />: <see cref="F:System.Windows.Input.FocusNavigationDirection.Next" />, <see cref="F:System.Windows.Input.FocusNavigationDirection.Previous" />, <see cref="F:System.Windows.Input.FocusNavigationDirection.First" />, <see cref="F:System.Windows.Input.FocusNavigationDirection.Last" />. These directions are not legal for <see cref="M:System.Windows.FrameworkElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)" /> (but they are legal for <see cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />).</exception>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="M:System.Windows.UIElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterName">
@@ -3406,6 +3458,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.NameScope.RegisterName(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveLogicalChild">
@@ -3444,6 +3497,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.AddLogicalChild(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RequestBringIntoView">
@@ -3477,6 +3531,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.BringIntoView(System.Windows.Rect)" />
+        <altmember cref="T:System.Windows.Controls.ScrollViewer" />
       </Docs>
     </Member>
     <Member MemberName="RequestBringIntoViewEvent">
@@ -3548,6 +3604,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Application.Resources" />
       </Docs>
     </Member>
     <Member MemberName="SetBinding">
@@ -3575,7 +3632,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=fullName>, which passes the current instance as the <xref:System.Windows.DependencyObject>, and creates a new <xref:System.Windows.Data.Binding> based on the provided `path` parameter. This signature is more convenient if you are establishing a simple default binding. If you need to specify any binding properties to non-default conditions, or want to use a <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding>,you should use the <xref:System.Windows.FrameworkElement.SetBinding%28System.Windows.DependencyProperty%2CSystem.Windows.Data.BindingBase%29> signature.  
+ This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>, which passes the current instance as the <xref:System.Windows.DependencyObject>, and creates a new <xref:System.Windows.Data.Binding> based on the provided `path` parameter. This signature is more convenient if you are establishing a simple default binding. If you need to specify any binding properties to non-default conditions, or want to use a <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding>,you should use the <xref:System.Windows.FrameworkElement.SetBinding%28System.Windows.DependencyProperty%2CSystem.Windows.Data.BindingBase%29> signature.  
   
    
   
@@ -3614,7 +3671,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=fullName>, which passes the current instance as the <xref:System.Windows.DependencyObject>.  
+ This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>, which passes the current instance as the <xref:System.Windows.DependencyObject>.  
   
  ]]></format>
         </remarks>
@@ -3648,6 +3705,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.FlowDirection" />
       </Docs>
     </Member>
     <Member MemberName="SetResourceReference">
@@ -3678,6 +3736,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.FindResource(System.Object)" />
+        <altmember cref="P:System.Windows.Application.Resources" />
+        <altmember cref="P:System.Windows.FrameworkElement.Resources" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeResources">
@@ -3809,6 +3870,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Height" />
+        <altmember cref="P:System.Windows.FrameworkElement.Width" />
       </Docs>
     </Member>
     <Member MemberName="SizeChangedEvent">
@@ -3866,6 +3929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Data.Binding.SourceUpdated" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -4021,6 +4085,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Name" />
       </Docs>
     </Member>
     <Member MemberName="TagProperty">
@@ -4071,6 +4136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Data.Binding.TargetUpdated" />
       </Docs>
     </Member>
     <Member MemberName="TemplatedParent">
@@ -4164,7 +4230,7 @@
  A string that becomes the display text for the <xref:System.Windows.FrameworkElement.ToolTip%2A>.  
   
  *toolTipObjectContent*  
- Some object, provided in object element form, that should be used as the content for the <xref:System.Windows.FrameworkElement> . Typically this would be a <xref:System.Windows.FrameworkElement> or some other element that creates layout compositing for the <xref:System.Windows.FrameworkElement.ToolTip%2A>, eventually containing text content within the compositing. In this usage, the <xref:System.Windows.Controls.ToolTip> element is created implicitly from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the *toolTipObjectContent* content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName> property.  
+ Some object, provided in object element form, that should be used as the content for the <xref:System.Windows.FrameworkElement> . Typically this would be a <xref:System.Windows.FrameworkElement> or some other element that creates layout compositing for the <xref:System.Windows.FrameworkElement.ToolTip%2A>, eventually containing text content within the compositing. In this usage, the <xref:System.Windows.Controls.ToolTip> element is created implicitly from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the *toolTipObjectContent* content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=nameWithType> property.  
   
  <`ToolTip` .../>  
  See <xref:System.Windows.Controls.ToolTip>.  
@@ -4224,6 +4290,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipClosingEvent">
@@ -4289,6 +4356,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipOpeningEvent">
@@ -4386,6 +4454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.EventTrigger" />
       </Docs>
     </Member>
     <Member MemberName="TryFindResource">
@@ -4427,6 +4496,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.FindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Unloaded">
@@ -4464,6 +4534,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="UnloadedEvent">
@@ -4518,6 +4589,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.RegisterName(System.String,System.Object)" />
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDefaultStyle">
@@ -4761,9 +4834,9 @@
   
  The return value of this property is always the same as any value that was set to it. In contrast, the value of the <xref:System.Windows.FrameworkElement.ActualWidth%2A> may vary. The layout may have rejected the suggested size for some reason. Also, the layout system itself works asynchronously relative to the property system set of <xref:System.Windows.FrameworkElement.Width%2A> and may not have processed that particular sizing property change yet.  
   
- In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=fullName>. This is how you specify auto sizing behavior. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the width available to it. Note however that specific controls frequently supply default values in their default styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
+ In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=nameWithType>. This is how you specify auto sizing behavior. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the width available to it. Note however that specific controls frequently supply default values in their default styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
   
- In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Width%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=fullName> but smaller than <xref:System.Double.MaxValue?displayProperty=fullName>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Width%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
+ In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Width%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=nameWithType> but smaller than <xref:System.Double.MaxValue?displayProperty=nameWithType>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Width%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
   
 <a name="xamlAttributeUsage_Width"></a>   
 ## XAML Attribute Usage  
@@ -4826,5 +4899,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BringIntoView">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to bring this element into view, within any scrollable regions it is contained within.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginStoryboard">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins the sequence of actions contained in the provided storyboard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetBinding">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches a binding to this element for the specified dependency property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

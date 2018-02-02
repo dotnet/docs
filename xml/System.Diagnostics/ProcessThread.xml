@@ -56,6 +56,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.Process" />
+    <altmember cref="P:System.Diagnostics.Process.Threads" />
   </Docs>
   <Members>
     <Member MemberName="BasePriority">
@@ -97,12 +99,16 @@
 ## Remarks  
  The <xref:System.Diagnostics.ProcessThread.BasePriority%2A> is the starting priority for the process thread. You can view information about the base priority through the System Monitor's Priority Base counter.  
   
- The operating system computes a thread's base priority by combining the thread's priority level range with the process's priority class. You can set the process's <xref:System.Diagnostics.Process.PriorityClass%2A?displayProperty=fullName> property to one of the values in the <xref:System.Diagnostics.ProcessPriorityClass> enumeration, which are <xref:System.Diagnostics.ProcessPriorityClass.Idle>, <xref:System.Diagnostics.ProcessPriorityClass.Normal>, <xref:System.Diagnostics.ProcessPriorityClass.High>, <xref:System.Diagnostics.ProcessPriorityClass.AboveNormal>, <xref:System.Diagnostics.ProcessPriorityClass.BelowNormal>, or <xref:System.Diagnostics.ProcessPriorityClass.RealTime>. You can set the thread's <xref:System.Diagnostics.ProcessThread.PriorityLevel%2A> property to a range of values that bounds the thread's base priority. Win32 uses four priority classes with seven base priority levels per class.  
+ The operating system computes a thread's base priority by combining the thread's priority level range with the process's priority class. You can set the process's <xref:System.Diagnostics.Process.PriorityClass%2A?displayProperty=nameWithType> property to one of the values in the <xref:System.Diagnostics.ProcessPriorityClass> enumeration, which are <xref:System.Diagnostics.ProcessPriorityClass.Idle>, <xref:System.Diagnostics.ProcessPriorityClass.Normal>, <xref:System.Diagnostics.ProcessPriorityClass.High>, <xref:System.Diagnostics.ProcessPriorityClass.AboveNormal>, <xref:System.Diagnostics.ProcessPriorityClass.BelowNormal>, or <xref:System.Diagnostics.ProcessPriorityClass.RealTime>. You can set the thread's <xref:System.Diagnostics.ProcessThread.PriorityLevel%2A> property to a range of values that bounds the thread's base priority. Win32 uses four priority classes with seven base priority levels per class.  
   
  The thread's current priority might deviate from the base priority. For example, the operating system can change the <xref:System.Diagnostics.ProcessThread.CurrentPriority%2A> property based on the time elapsed or other boosts when a process must be put ahead of others for access to the processor. In addition, you can set the <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> property to cause the system to temporarily boost the priority of a thread whenever the process is taken out of the wait state. The priority is reset when the process returns to the wait state.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessThread.PriorityBoostEnabled" />
+        <altmember cref="T:System.Diagnostics.ProcessPriorityClass" />
+        <altmember cref="P:System.Diagnostics.Process.PriorityClass" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.CurrentPriority" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPriority">
@@ -146,6 +152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessThread.BasePriority" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.PriorityBoostEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -303,6 +311,7 @@
  The priority boost information could not be set.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="T:System.Diagnostics.ProcessPriorityClass" />
       </Docs>
     </Member>
     <Member MemberName="PriorityLevel">
@@ -353,6 +362,10 @@
  The thread priority level could not be set.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="T:System.Diagnostics.ThreadPriorityLevel" />
+        <altmember cref="P:System.Diagnostics.Process.PriorityClass" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.BasePriority" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.CurrentPriority" />
       </Docs>
     </Member>
     <Member MemberName="PrivilegedProcessorTime">
@@ -401,6 +414,8 @@
         <exception cref="T:System.ComponentModel.Win32Exception">The thread time could not be retrieved.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="P:System.Diagnostics.ProcessThread.UserProcessorTime" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.TotalProcessorTime" />
       </Docs>
     </Member>
     <Member MemberName="ProcessorAffinity">
@@ -469,6 +484,7 @@
         <exception cref="T:System.ComponentModel.Win32Exception">The processor affinity could not be set.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="P:System.Diagnostics.ProcessThread.IdealProcessor" />
       </Docs>
     </Member>
     <Member MemberName="ResetIdealProcessor">
@@ -505,6 +521,7 @@
         <exception cref="T:System.ComponentModel.Win32Exception">The ideal processor could not be reset.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="P:System.Diagnostics.ProcessThread.IdealProcessor" />
       </Docs>
     </Member>
     <Member MemberName="StartAddress">
@@ -686,6 +703,8 @@
         <exception cref="T:System.ComponentModel.Win32Exception">The thread time could not be retrieved.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="P:System.Diagnostics.ProcessThread.PrivilegedProcessorTime" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.UserProcessorTime" />
       </Docs>
     </Member>
     <Member MemberName="UserProcessorTime">
@@ -734,6 +753,8 @@
         <exception cref="T:System.ComponentModel.Win32Exception">The thread time could not be retrieved.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="P:System.Diagnostics.ProcessThread.PrivilegedProcessorTime" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.TotalProcessorTime" />
       </Docs>
     </Member>
     <Member MemberName="WaitReason">
@@ -780,6 +801,8 @@
         <exception cref="T:System.InvalidOperationException">The thread is not in the wait state.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.NotSupportedException">The process is on a remote computer.</exception>
+        <altmember cref="T:System.Diagnostics.ThreadWaitReason" />
+        <altmember cref="P:System.Diagnostics.ProcessThread.ThreadState" />
       </Docs>
     </Member>
   </Members>

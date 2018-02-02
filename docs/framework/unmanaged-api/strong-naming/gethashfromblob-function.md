@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetHashFromBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHashFromBlob function [.NET Framework strong naming]"
 ms.assetid: b712d862-f2d0-4b55-87d4-65bbeadef982
@@ -28,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetHashFromBlob Function
 Gets a hash of the assembly at the specified memory address, using the specified hash algorithm.  
@@ -76,5 +76,5 @@ HRESULT GetHashFromBlob (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [GetHashFromBlob Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromblob-method.md)   
+ [GetHashFromBlob Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromblob-method.md)  
  [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

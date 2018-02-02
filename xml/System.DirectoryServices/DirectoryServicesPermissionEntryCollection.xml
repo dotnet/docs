@@ -13,6 +13,11 @@
   <Docs>
     <summary>Contains a strongly-typed collection of <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermission" />
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionAccess" />
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionAttribute" />
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -35,6 +40,8 @@
         <summary>Appends the specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object to this collection.</summary>
         <returns>The zero-based index of the added <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object that is appended to this collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -57,6 +64,8 @@
           <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> array that contains the objects to append to this collection.</param>
         <summary>Appends the contents of the specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> array to this collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -78,6 +87,8 @@
         <param name="value">The <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" /> object that contains the objects to append to this collection.</param>
         <summary>Appends the contents of the specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" /> object to this collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -101,6 +112,8 @@
         <returns>
           <see langword="true" /> if the specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object is in this collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -124,6 +137,8 @@
         <param name="index">The zero-based index in the array where this method starts copying this collection.</param>
         <summary>Copies all <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> objects in this collection to the specified array, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -146,6 +161,8 @@
         <summary>Returns the index of the first occurrence of the specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object in this collection.</summary>
         <returns>The zero-based index of the first matching object.  Returns -1 if no member of this collection is identical to the <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -169,6 +186,8 @@
         <param name="value">The <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object to insert into this collection.</param>
         <summary>Inserts the specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> into this collection at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -200,6 +219,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -218,6 +239,8 @@
       <Docs>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnClear" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -241,6 +264,8 @@
         <param name="value">The new value of the element at <c>index</c>.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="OnRemove">
@@ -264,6 +289,8 @@
         <param name="value">The value of the element to remove from <c>index</c>.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="OnSet">
@@ -289,6 +316,8 @@
         <param name="newValue">The new value of the element at <c>index</c>.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -310,6 +339,8 @@
         <param name="value">The specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object to remove from this collection.</param>
         <summary>Removes the first occurrence of an object in this collection that is identical to the specified <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+        <altmember cref="N:System.DirectoryServices" />
       </Docs>
     </Member>
   </Members>

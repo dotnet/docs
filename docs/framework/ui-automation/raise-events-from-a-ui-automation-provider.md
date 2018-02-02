@@ -17,6 +17,8 @@ caps.latest.revision: 13
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Raise Events from a UI Automation Provider
 > [!NOTE]

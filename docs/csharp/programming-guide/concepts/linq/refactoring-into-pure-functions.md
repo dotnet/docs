@@ -1,23 +1,17 @@
 ---
 title: "Refactoring Into Pure Functions (C#)"
-ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
 ---
 # Refactoring Into Pure Functions (C#)
+
 An important aspect of pure functional transformations is learning how to refactor code using pure functions.  
   
 > [!NOTE]
@@ -37,21 +31,21 @@ An important aspect of pure functional transformations is learning how to refact
  The following examples contrast two non-pure functions and a pure function.  
   
 ### Non-Pure Function that Changes a Class Member  
- In the following code, the `HypenatedConcat` function is not a pure function, because it modifies the `aMember` data member in the class:  
+ In the following code, the `HyphenatedConcat` function is not a pure function, because it modifies the `aMember` data member in the class:  
   
 ```csharp  
 public class Program  
 {  
     private static string aMember = "StringOne";  
   
-    public static void HypenatedConcat(string appendStr)  
+    public static void HyphenatedConcat(string appendStr)  
     {  
         aMember += '-' + appendStr;  
     }  
   
     public static void Main()  
     {  
-        HypenatedConcat("StringTwo");  
+        HyphenatedConcat("StringTwo");  
         Console.WriteLine(aMember);  
     }  
 }  
@@ -71,7 +65,7 @@ StringOne-StringTwo
 ```csharp  
 public class Program  
 {  
-    public static void HypenatedConcat(StringBuilder sb, String appendStr)  
+    public static void HyphenatedConcat(StringBuilder sb, String appendStr)  
     {  
         sb.Append('-' + appendStr);  
     }  
@@ -79,19 +73,19 @@ public class Program
     public static void Main()  
     {  
         StringBuilder sb1 = new StringBuilder("StringOne");  
-        HypenatedConcat(sb1, "StringTwo");  
+        HyphenatedConcat(sb1, "StringTwo");  
         Console.WriteLine(sb1);  
     }  
 }  
 ```  
   
- This version of the program produces the same output as the first version, because the `HypenatedConcat` function has changed the value (state) of its first parameter by invoking the <xref:System.Text.StringBuilder.Append%2A> member function. Note that this alteration occurs despite that fact that `HypenatedConcat` uses call-by-value parameter passing.  
+ This version of the program produces the same output as the first version, because the `HyphenatedConcat` function has changed the value (state) of its first parameter by invoking the <xref:System.Text.StringBuilder.Append%2A> member function. Note that this alteration occurs despite that fact that `HyphenatedConcat` uses call-by-value parameter passing.  
   
 > [!IMPORTANT]
 >  For reference types, if you pass a parameter by value, it results in a copy of the reference to an object being passed. This copy is still associated with the same instance data as the original reference (until the reference variable is assigned to a new object). Call-by-reference is not necessarily required for a function to modify a parameter.  
   
 ### Pure Function  
- This next version of the program hows how to implement the `HypenatedConcat` function as a pure function.  
+This next version of the program shows how to implement the `HyphenatedConcat` function as a pure function.  
   
 ```csharp  
 class Program  
@@ -120,5 +114,5 @@ class Program
  For more information, see [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
 ## See Also  
- [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
+ [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
  [Functional Programming vs. Imperative Programming (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)

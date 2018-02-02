@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.IDictionaryEnumerator.Entry%2A?displayProperty=fullName> method returns an instance of this type.  
+ The <xref:System.Collections.IDictionaryEnumerator.Entry%2A?displayProperty=nameWithType> method returns an instance of this type.  
   
  The `foreach` statement of the C# language (`for each` in Visual C++, `For Each` in Visual Basic) requires the type of each element in the collection. Since each element of the <xref:System.Collections.IDictionary> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>. For example:  
   
@@ -55,6 +55,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+    <altmember cref="T:System.Collections.Generic.KeyValuePair`2" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,7 +104,7 @@
     </Member>
     <Member MemberName="Deconstruct">
       <MemberSignature Language="C#" Value="public void Deconstruct (out object key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct(object key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] object&amp; key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryEntry.Deconstruct(System.Object@,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

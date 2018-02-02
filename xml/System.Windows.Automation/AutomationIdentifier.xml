@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -115,6 +115,7 @@
         <summary>Gets the underlying numerical identifier.</summary>
         <value>The underlying identifier.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationEvent.LookupById(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ProgrammaticName">

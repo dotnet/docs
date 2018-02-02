@@ -148,7 +148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
+ The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateDecryptor%2A?displayProperty=nameWithType> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
   
  [!code-csharp[AesManaged#3](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#3)]
  [!code-vb[AesManaged#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#3)]  
@@ -544,5 +544,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateEncryptor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric encryptor object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDecryptor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric decryptor object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

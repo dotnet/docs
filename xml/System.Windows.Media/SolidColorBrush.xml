@@ -77,12 +77,12 @@
  The <xref:System.Windows.Media.Color.ScB%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
   
  *profileUri*  
- <xref:System.Uri?displayProperty=fullName>  
+ <xref:System.Uri?displayProperty=nameWithType>  
   
  The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.  
   
  *alphaValue*  
- <xref:System.Single?displayProperty=fullName>  
+ <xref:System.Single?displayProperty=nameWithType>  
   
  The alpha channel color value. The value range is from 0.0 through 1.0.  
   
@@ -91,6 +91,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Brush" />
+    <altmember cref="T:System.Windows.Media.Brushes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -148,7 +150,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -176,7 +178,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -213,6 +215,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Colors" />
+        <altmember cref="T:System.Windows.SystemColors" />
+        <altmember cref="T:System.Windows.Media.Brushes" />
+        <altmember cref="T:System.Windows.Media.Animation.ColorAnimation" />
+        <altmember cref="T:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames" />
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -273,5 +280,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.SolidColorBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

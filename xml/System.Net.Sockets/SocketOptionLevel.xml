@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SocketOptionLevel> enumeration defines the socket option levels that can be passed to the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> and <xref:System.Net.Sockets.Socket.GetSocketOption%2A?displayProperty=fullName> methods. <xref:System.Net.Sockets.SocketOptionName> enumerated values are grouped by <xref:System.Net.Sockets.SocketOptionLevel>.  
+ The <xref:System.Net.Sockets.SocketOptionLevel> enumeration defines the socket option levels that can be passed to the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType> and <xref:System.Net.Sockets.Socket.GetSocketOption%2A?displayProperty=nameWithType> methods. <xref:System.Net.Sockets.SocketOptionName> enumerated values are grouped by <xref:System.Net.Sockets.SocketOptionLevel>.  
   
  **Note** To use IPv6 on Windows XP, install Advance Networking Pack for Windows XP.  
   
@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Sockets.Socket" />
+    <altmember cref="T:System.Net.Sockets.SocketOptionName" />
   </Docs>
   <Members>
     <Member MemberName="IP">

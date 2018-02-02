@@ -50,6 +50,7 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.PublicKeyInfo.Algorithm" /> property retrieves the algorithm identifier associated with the public key.</summary>
         <value>An <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> object that represents the algorithm.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.PublicKeyInfo.KeyValue" />
       </Docs>
     </Member>
     <Member MemberName="KeyValue">
@@ -74,6 +75,7 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.PublicKeyInfo.KeyValue" /> property retrieves the value of the encoded public component of the public key pair.</summary>
         <value>An array of byte values  that represents the encoded public component of the public key pair.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.PublicKeyInfo.Algorithm" />
       </Docs>
     </Member>
   </Members>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetElementType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugArrayValue::GetElementType method [.NET Framework debugging]"
   - "GetElementType method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugArrayValue::GetElementType Method
 Gets a value that indicates the simple type of the elements in the array.  

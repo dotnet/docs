@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="EnumObjectParam">
       <MemberSignature Language="C#" Value="public void EnumObjectParam (out System.Runtime.InteropServices.UCOMIEnumString ppenum);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumObjectParam(class System.Runtime.InteropServices.UCOMIEnumString ppenum) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumObjectParam([out] class System.Runtime.InteropServices.UCOMIEnumString&amp; ppenum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.EnumObjectParam(System.Runtime.InteropServices.UCOMIEnumString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -62,7 +62,7 @@
     </Member>
     <Member MemberName="GetBindOptions">
       <MemberSignature Language="C#" Value="public void GetBindOptions (ref System.Runtime.InteropServices.BIND_OPTS pbindopts);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBindOptions(valuetype System.Runtime.InteropServices.BIND_OPTS pbindopts) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBindOptions(valuetype System.Runtime.InteropServices.BIND_OPTS&amp; pbindopts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.GetBindOptions(System.Runtime.InteropServices.BIND_OPTS@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -91,7 +91,7 @@
     </Member>
     <Member MemberName="GetObjectParam">
       <MemberSignature Language="C#" Value="public void GetObjectParam (string pszKey, out object ppunk);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectParam(string pszKey, object ppunk) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectParam(string pszKey, [out] object&amp; ppunk) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.GetObjectParam(System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -122,7 +122,7 @@
     </Member>
     <Member MemberName="GetRunningObjectTable">
       <MemberSignature Language="C#" Value="public void GetRunningObjectTable (out System.Runtime.InteropServices.UCOMIRunningObjectTable pprot);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRunningObjectTable(class System.Runtime.InteropServices.UCOMIRunningObjectTable pprot) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRunningObjectTable([out] class System.Runtime.InteropServices.UCOMIRunningObjectTable&amp; pprot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.GetRunningObjectTable(System.Runtime.InteropServices.UCOMIRunningObjectTable@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -295,7 +295,7 @@
     </Member>
     <Member MemberName="SetBindOptions">
       <MemberSignature Language="C#" Value="public void SetBindOptions (ref System.Runtime.InteropServices.BIND_OPTS pbindopts);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBindOptions(valuetype System.Runtime.InteropServices.BIND_OPTS pbindopts) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBindOptions([in]valuetype System.Runtime.InteropServices.BIND_OPTS&amp; pbindopts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.SetBindOptions(System.Runtime.InteropServices.BIND_OPTS@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -150,7 +150,7 @@
     </Member>
     <Member MemberName="GetPrimaryInteropAssembly">
       <MemberSignature Language="C#" Value="public bool GetPrimaryInteropAssembly (Guid g, int major, int minor, int lcid, out string asmName, out string asmCodeBase);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetPrimaryInteropAssembly(valuetype System.Guid g, int32 major, int32 minor, int32 lcid, string asmName, string asmCodeBase) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetPrimaryInteropAssembly(valuetype System.Guid g, int32 major, int32 minor, int32 lcid, [out] string&amp; asmName, [out] string&amp; asmCodeBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid,System.Int32,System.Int32,System.Int32,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -182,5 +182,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertTypeLibToAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a COM type library to an assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

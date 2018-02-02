@@ -65,6 +65,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Workflow.Activities.SendActivity" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -706,7 +707,7 @@
 ## Remarks  
  This is an optional event handler that is fired when the <xref:System.Workflow.Activities.ReceiveActivity> activity is about to receive a message. The associated handler can be used to perform ClaimSet-based security checks to authorize client invocation of the service operation implemented by the <xref:System.Workflow.Activities.ReceiveActivity> activity.  
   
- Setting <xref:System.Workflow.Activities.OperationValidationEventArgs.IsValid%2A?displayProperty=fullName> to `false` in the event handler rejects the service operation invocation and the client receives a <xref:System.ServiceModel.FaultException>. If <xref:System.Workflow.Activities.OperationValidationEventArgs.IsValid%2A?displayProperty=fullName> is set to `true`, then the service operation invocation succeeds and the <xref:System.Workflow.Activities.ReceiveActivity> activity receives and processes the message.  
+ Setting <xref:System.Workflow.Activities.OperationValidationEventArgs.IsValid%2A?displayProperty=nameWithType> to `false` in the event handler rejects the service operation invocation and the client receives a <xref:System.ServiceModel.FaultException>. If <xref:System.Workflow.Activities.OperationValidationEventArgs.IsValid%2A?displayProperty=nameWithType> is set to `true`, then the service operation invocation succeeds and the <xref:System.Workflow.Activities.ReceiveActivity> activity receives and processes the message.  
   
    
   

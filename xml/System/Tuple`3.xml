@@ -49,7 +49,7 @@
 ## Remarks  
  A tuple is a data structure that has a specific number and sequence of values. The <xref:System.Tuple%603> class represents a 3-tuple, or triple, which is a tuple that has three components.  
   
- You can instantiate a <xref:System.Tuple%603> object by calling either the <xref:System.Tuple%603.%23ctor%2A> constructor or the static <xref:System.Tuple.Create%60%603%28%60%600%2C%60%601%2C%60%602%29?displayProperty=fullName> method. You can retrieve the values of the tuple's components by using the read-only <xref:System.Tuple%603.Item1%2A>, <xref:System.Tuple%603.Item2%2A>, and <xref:System.Tuple%603.Item3%2A> instance properties.  
+ You can instantiate a <xref:System.Tuple%603> object by calling either the <xref:System.Tuple%603.%23ctor%2A> constructor or the static <xref:System.Tuple.Create%60%603%28%60%600%2C%60%601%2C%60%602%29?displayProperty=nameWithType> method. You can retrieve the values of the tuple's components by using the read-only <xref:System.Tuple%603.Item1%2A>, <xref:System.Tuple%603.Item2%2A>, and <xref:System.Tuple%603.Item3%2A> instance properties.  
   
  Tuples are commonly used in four different ways:  
   
@@ -62,10 +62,18 @@
   
 -   To return multiple values from a method without the use of `out` parameters (in C#) or `ByRef` parameters (in Visual Basic). For example, the previous example returns its summary test score statistics in a <xref:System.Tuple%603> object.  
   
--   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=fullName> method has a single parameter that lets you supply one value to the method that the thread executes at startup. If you supply a <xref:System.Tuple%603> object as the method argument, you can supply the thread’s startup routine with three items of data.  
+-   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup. If you supply a <xref:System.Tuple%603> object as the method argument, you can supply the thread’s startup routine with three items of data.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Tuple" />
+    <altmember cref="T:System.Tuple`1" />
+    <altmember cref="T:System.Tuple`2" />
+    <altmember cref="T:System.Tuple`4" />
+    <altmember cref="T:System.Tuple`5" />
+    <altmember cref="T:System.Tuple`6" />
+    <altmember cref="T:System.Tuple`7" />
+    <altmember cref="T:System.Tuple`8" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also use the static <xref:System.Tuple.Create%60%603%28%60%600%2C%60%601%2C%60%602%29?displayProperty=fullName> method to instantiate a 3-tuple object without having to explicitly specify the types of its components. The following example uses the <xref:System.Tuple.Create%60%603%28%60%600%2C%60%601%2C%60%602%29?displayProperty=fullName> method to instantiate a 3-tuple whose components are of type <xref:System.String>, <xref:System.Double>, and <xref:System.Double>.  
+ You can also use the static <xref:System.Tuple.Create%60%603%28%60%600%2C%60%601%2C%60%602%29?displayProperty=nameWithType> method to instantiate a 3-tuple object without having to explicitly specify the types of its components. The following example uses the <xref:System.Tuple.Create%60%603%28%60%600%2C%60%601%2C%60%602%29?displayProperty=nameWithType> method to instantiate a 3-tuple whose components are of type <xref:System.String>, <xref:System.Double>, and <xref:System.Double>.  
   
  [!code-csharp[System.Tuple.Create#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple.create/cs/create1.cs#5)]
  [!code-vb[System.Tuple.Create#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple.create/vb/create1.vb#5)]  
@@ -166,7 +174,7 @@
    
   
 ## Examples  
- The following example calls the <xref:System.Tuple%603.Equals%28System.Object%29?displayProperty=fullName> method to determine whether any of the objects in an array of <xref:System.Tuple%603> objects are equal to one another. The output reflects the fact that the <xref:System.Tuple%603.Equals%28System.Object%29> method returns `true` when comparing <xref:System.Tuple%603> objects whose components have equal values.  
+ The following example calls the <xref:System.Tuple%603.Equals%28System.Object%29?displayProperty=nameWithType> method to determine whether any of the objects in an array of <xref:System.Tuple%603> objects are equal to one another. The output reflects the fact that the <xref:System.Tuple%603.Equals%28System.Object%29> method returns `true` when comparing <xref:System.Tuple%603> objects whose components have equal values.  
   
  [!code-csharp[System.Tuple\`3.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple`3.equals/cs/equals1.cs#1)]
  [!code-vb[System.Tuple\`3.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple`3.equals/vb/equals1.vb#1)]  
@@ -243,7 +251,7 @@
   
 -   By calling the `GetType` method on the value that is returned by the <xref:System.Tuple%603.Item1%2A> property.  
   
--   By retrieving the <xref:System.Type> object that represents the <xref:System.Tuple%603> object, and retrieving the first element from the array that is returned by its <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method.  
+-   By retrieving the <xref:System.Type> object that represents the <xref:System.Tuple%603> object, and retrieving the first element from the array that is returned by its <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -293,7 +301,7 @@
   
 -   By calling the `GetType` method on the value that is returned by the <xref:System.Tuple%603.Item2%2A> property.  
   
--   By retrieving the <xref:System.Type> object that represents the <xref:System.Tuple%603> object, and retrieving the second element from the array that is returned by its <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method.  
+-   By retrieving the <xref:System.Type> object that represents the <xref:System.Tuple%603> object, and retrieving the second element from the array that is returned by its <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -343,7 +351,7 @@
   
 -   By calling the `GetType` method on the value returned by the <xref:System.Tuple%603.Item3%2A> property.  
   
--   By retrieving the <xref:System.Type> object that represents the <xref:System.Tuple%603> object, and retrieving the third element from the array that is returned by its <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method.  
+-   By retrieving the <xref:System.Type> object that represents the <xref:System.Tuple%603> object, and retrieving the third element from the array that is returned by its <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -415,15 +423,15 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Tuple%603> instance is cast to an <xref:System.Collections.IStructuralComparable> interface.  
   
- Although this method can be called directly, it is most commonly called by collection sorting methods that include <xref:System.Collections.IComparer> parameters to order the members of a collection. For example, it is called by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29?displayProperty=fullName> method and the <xref:System.Collections.SortedList.Add%2A> method of a <xref:System.Collections.SortedList> object that is instantiated by using the <xref:System.Collections.SortedList.%23ctor%28System.Collections.IComparer%29?displayProperty=fullName> constructor.  
+ Although this method can be called directly, it is most commonly called by collection sorting methods that include <xref:System.Collections.IComparer> parameters to order the members of a collection. For example, it is called by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29?displayProperty=nameWithType> method and the <xref:System.Collections.SortedList.Add%2A> method of a <xref:System.Collections.SortedList> object that is instantiated by using the <xref:System.Collections.SortedList.%23ctor%28System.Collections.IComparer%29?displayProperty=nameWithType> constructor.  
   
 > [!CAUTION]
->  The <xref:System.Tuple%603.System%23Collections%23IStructuralComparable%23CompareTo%2A?displayProperty=fullName> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%2A?displayProperty=fullName> method.  
+>  The <xref:System.Tuple%603.System%23Collections%23IStructuralComparable%23CompareTo%2A?displayProperty=nameWithType> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%2A?displayProperty=nameWithType> method.  
   
    
   
 ## Examples  
- The following example creates an array of <xref:System.Tuple%603> objects that consist of a student's name, mean test score, and number of tests. It displays the component of each tuple in the array in unsorted order, sorts the array, and then calls <xref:System.Tuple%603.ToString%2A> to display the value of each tuple in sorted order. To sort the array, the example defines a generic `ScoreComparer` class that implements the <xref:System.Collections.IComparer> interface and sorts the <xref:System.Tuple%603> objects in ascending order by the value of their second component rather than their first component. Note that the example does not directly call the <xref:System.Tuple%603.System%23Collections%23IStructuralComparable%23CompareTo%2A?displayProperty=fullName> method. This method is called implicitly by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29?displayProperty=fullName> method for each element in the array.  
+ The following example creates an array of <xref:System.Tuple%603> objects that consist of a student's name, mean test score, and number of tests. It displays the component of each tuple in the array in unsorted order, sorts the array, and then calls <xref:System.Tuple%603.ToString%2A> to display the value of each tuple in sorted order. To sort the array, the example defines a generic `ScoreComparer` class that implements the <xref:System.Collections.IComparer> interface and sorts the <xref:System.Tuple%603> objects in ascending order by the value of their second component rather than their first component. Note that the example does not directly call the <xref:System.Tuple%603.System%23Collections%23IStructuralComparable%23CompareTo%2A?displayProperty=nameWithType> method. This method is called implicitly by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29?displayProperty=nameWithType> method for each element in the array.  
   
  [!code-csharp[System.Tuple\`3.CompareTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple`3.compareto/cs/compareto2.cs#2)]
  [!code-vb[System.Tuple\`3.CompareTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple`3.compareto/vb/compareto2.vb#2)]  
@@ -432,6 +440,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="other" /> is not a <see cref="T:System.Tuple`3" /> object.</exception>
+        <altmember cref="M:System.Tuple`3.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IStructuralEquatable.Equals">
@@ -475,12 +484,12 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Tuple%603> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface.  
   
- The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast (in C#) or converted (in Visual Basic) to a <xref:System.Tuple%603> object whose components are of the same types as the current instance. The <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%2A?displayProperty=fullName> method first passes the <xref:System.Tuple%603.Item1%2A> values of the <xref:System.Tuple%603> objects to be compared to the <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation. If this method call returns `true`, the method is called again and passed the <xref:System.Tuple%603.Item2%2A> values of the two <xref:System.Tuple%603> objects. If this method call returns `true` again, the method is called a third time and passed the <xref:System.Tuple%603.Item3%2A> values of the two <xref:System.Tuple%603> objects.  
+ The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=nameWithType> implementation is called only if `other` is not `null`, and if it can be successfully cast (in C#) or converted (in Visual Basic) to a <xref:System.Tuple%603> object whose components are of the same types as the current instance. The <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%2A?displayProperty=nameWithType> method first passes the <xref:System.Tuple%603.Item1%2A> values of the <xref:System.Tuple%603> objects to be compared to the <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=nameWithType> implementation. If this method call returns `true`, the method is called again and passed the <xref:System.Tuple%603.Item2%2A> values of the two <xref:System.Tuple%603> objects. If this method call returns `true` again, the method is called a third time and passed the <xref:System.Tuple%603.Item3%2A> values of the two <xref:System.Tuple%603> objects.  
   
    
   
 ## Examples  
- The following example defines an `Item2Comparer` class that implements the <xref:System.Collections.IEqualityComparer> interface and changes the way in which <xref:System.Tuple%603> objects are evaluated for equality. The method always returns `true` when it is passed the <xref:System.Tuple%603.Item1%2A> property values of two <xref:System.Tuple%603> objects, and it calls the <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%2A?displayProperty=fullName> method to evaluate their <xref:System.Tuple%603.Item2%2A> property values. If this method call returns `true`, their <xref:System.Tuple%603.Item3%2A> property values are passed to the method, which always returns `true`. As a result, the method tests for equality based only on the value of the <xref:System.Tuple%603.Item2%2A> property. The output illustrates the result for a data set of <xref:System.Tuple%603> objects that record the names, mean test score, and number of tests of students in a class.  
+ The following example defines an `Item2Comparer` class that implements the <xref:System.Collections.IEqualityComparer> interface and changes the way in which <xref:System.Tuple%603> objects are evaluated for equality. The method always returns `true` when it is passed the <xref:System.Tuple%603.Item1%2A> property values of two <xref:System.Tuple%603> objects, and it calls the <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%2A?displayProperty=nameWithType> method to evaluate their <xref:System.Tuple%603.Item2%2A> property values. If this method call returns `true`, their <xref:System.Tuple%603.Item3%2A> property values are passed to the method, which always returns `true`. As a result, the method tests for equality based only on the value of the <xref:System.Tuple%603.Item2%2A> property. The output illustrates the result for a data set of <xref:System.Tuple%603> objects that record the names, mean test score, and number of tests of students in a class.  
   
  [!code-csharp[System.Tuple\`3.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple`3.equals/cs/equals2.cs#2)]
  [!code-vb[System.Tuple\`3.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple`3.equals/vb/equals2.vb#2)]  
@@ -527,7 +536,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Tuple%603> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface.  
   
- The method simply wraps a call to the `comparer` object's <xref:System.Collections.IEqualityComparer.GetHashCode%2A?displayProperty=fullName> implementation.  
+ The method simply wraps a call to the `comparer` object's <xref:System.Collections.IEqualityComparer.GetHashCode%2A?displayProperty=nameWithType> implementation.  
   
  The algorithm used to compute the hash code should return the same hash code for two <xref:System.Tuple%603> objects that are considered to be equal.  
   
@@ -591,17 +600,17 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Tuple%603> instance is cast to an <xref:System.IComparable> interface.  
   
- This method provides the <xref:System.IComparable.CompareTo%2A?displayProperty=fullName> implementation for the <xref:System.Tuple%603> class. Although the method can be called directly, it is most commonly called by the default overloads of collection sorting methods, such as <xref:System.Array.Sort%28System.Array%29?displayProperty=fullName> and <xref:System.Collections.SortedList.Add%2A?displayProperty=fullName>, to order the members of a collection.  
+ This method provides the <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> implementation for the <xref:System.Tuple%603> class. Although the method can be called directly, it is most commonly called by the default overloads of collection sorting methods, such as <xref:System.Array.Sort%28System.Array%29?displayProperty=nameWithType> and <xref:System.Collections.SortedList.Add%2A?displayProperty=nameWithType>, to order the members of a collection.  
   
 > [!CAUTION]
->  The <xref:System.Tuple%603.System%23IComparable%23CompareTo%2A?displayProperty=fullName> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.Tuple%603.Equals%2A> method.  
+>  The <xref:System.Tuple%603.System%23IComparable%23CompareTo%2A?displayProperty=nameWithType> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.Tuple%603.Equals%2A> method.  
   
- The <xref:System.Tuple%603.System%23IComparable%23CompareTo%2A?displayProperty=fullName> method uses the default object comparer to compare each component.  
+ The <xref:System.Tuple%603.System%23IComparable%23CompareTo%2A?displayProperty=nameWithType> method uses the default object comparer to compare each component.  
   
    
   
 ## Examples  
- The following example creates an array of <xref:System.Tuple%603> objects whose components consist of a student's name, mean test score, and number of tests. It displays the components of each tuple in the array in unsorted order, sorts the array, and then calls <xref:System.Tuple%603.ToString%2A> to display each tuple in sorted order. The output shows that the array has been sorted by its first component. Note that the example does not directly call the <xref:System.Tuple%603.System%23IComparable%23CompareTo%2A?displayProperty=fullName> method. This method is called implicitly by the <xref:System.Array.Sort%28System.Array%29> method for each element in the array.  
+ The following example creates an array of <xref:System.Tuple%603> objects whose components consist of a student's name, mean test score, and number of tests. It displays the components of each tuple in the array in unsorted order, sorts the array, and then calls <xref:System.Tuple%603.ToString%2A> to display each tuple in sorted order. The output shows that the array has been sorted by its first component. Note that the example does not directly call the <xref:System.Tuple%603.System%23IComparable%23CompareTo%2A?displayProperty=nameWithType> method. This method is called implicitly by the <xref:System.Array.Sort%28System.Array%29> method for each element in the array.  
   
  [!code-csharp[System.Tuple\`3.CompareTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple`3.compareto/cs/compareto1.cs#1)]
  [!code-vb[System.Tuple\`3.CompareTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple`3.compareto/vb/compareto1.vb#1)]  
@@ -610,6 +619,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="obj" /> is not a <see cref="T:System.Tuple`3" /> object.</exception>
+        <altmember cref="M:System.Tuple`3.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Item">
@@ -621,6 +631,10 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -628,10 +642,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the specified <see langword="Tuple" /> element. <c>index</c> can range from 0 to 2.</param>
+        <summary>Gets the value of the specified <see langword="Tuple" /> element.</summary>
+        <value>The value of the <see langword="Tuple" /> element at the specified position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Tuple%603.System%23Runtime%23CompilerServices%23ITuple%23Item%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.Tuple%603> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than 2.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Length">
@@ -643,13 +666,24 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements in the <see langword="Tuple" />.</summary>
+        <value>3, the number of elements in a <see cref="T:System.Tuple`3" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Tuple%603.System%23Runtime%23CompilerServices%23ITuple%23Length%2A> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.Tuple%603> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -685,7 +719,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this method takes the form (*Item1*, *Item2*, *Item3*), where *Item1*, *Item2*, and *Item3* represent the values of the <xref:System.Tuple%603.Item1%2A>, <xref:System.Tuple%603.Item2%2A>, and <xref:System.Tuple%603.Item3%2A> properties, respectively. If any of the property values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+ The string returned by this method takes the form (*Item1*, *Item2*, *Item3*), where *Item1*, *Item2*, and *Item3* represent the values of the <xref:System.Tuple%603.Item1%2A>, <xref:System.Tuple%603.Item2%2A>, and <xref:System.Tuple%603.Item3%2A> properties, respectively. If any of the property values is `null`, it is represented as <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you are using a class that implements the [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), the class will provide a *MethodName*`Completed` event. If you add an instance of the <xref:System.ComponentModel.AsyncCompletedEventHandler?displayProperty=fullName> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.AsyncCompletedEventArgs> parameter of the corresponding event-handler method.  
+ If you are using a class that implements the [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), the class will provide a *MethodName*`Completed` event. If you add an instance of the <xref:System.ComponentModel.AsyncCompletedEventHandler?displayProperty=nameWithType> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.AsyncCompletedEventArgs> parameter of the corresponding event-handler method.  
   
  The client application's event-handler delegate can check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property to determine if the asynchronous task was cancelled.  
   
@@ -37,7 +37,7 @@
    
   
 ## Examples  
- The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
  [!code-csharp[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#11)]
  [!code-vb[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#11)]  
@@ -51,6 +51,9 @@
   
  You may want to communicate to clients more information about the outcome of an asynchronous operation than an <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> accommodates. In this case, you can derive your own class from the <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> class and provide additional private instance variables and corresponding read-only public properties. Call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method before returning the property value, in case the operation was canceled or an error occurred.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+    <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+    <altmember cref="T:System.ComponentModel.AsyncOperation" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -146,7 +149,7 @@
    
   
 ## Examples  
- The following code example demonstrates the using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates the using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
  [!code-csharp[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#11)]
  [!code-vb[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#11)]  
@@ -158,6 +161,9 @@
         <block subset="none" type="overrides">
           <para>If you provide read-only properties in a derived class, be sure to call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method. This prevents clients from accessing properties that are potentially not valid due to a failure in the asynchronous operation.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -196,7 +202,7 @@
    
   
 ## Examples  
- The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
  [!code-csharp[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#11)]
  [!code-vb[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#11)]  
@@ -208,6 +214,9 @@
         <block subset="none" type="overrides">
           <para>If you provide read-only properties in a derived class, be sure to call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method in your property implementation. This prevents clients from accessing properties that are potentially not valid due to a failure in the asynchronous operation.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
     <Member MemberName="RaiseExceptionIfNecessary">
@@ -252,6 +261,8 @@
         <block subset="none" type="overrides">
           <para>If you have derived your own class from the <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> class, your read-only properties should call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method before returning the property value. If the component's asynchronous worker code assigns an exception to the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property or sets the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Cancelled" /> property to <see langword="true" />, the property will raise an exception if a client tries to read its value. This prevents clients from accessing properties that are potentially not valid due to a failure in the asynchronous operation.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -290,7 +301,7 @@
    
   
 ## Examples  
- The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
  [!code-csharp[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#11)]
  [!code-vb[System.ComponentModel.AsyncOperationManager#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#11)]  
@@ -299,7 +310,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -41,27 +41,27 @@
 <a name="xamlValues_MinWidth"></a>   
 ## XAML Values  
  *days*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value greater than or equal to 0 that describes the number of days spanned by this duration.  
   
  *hours*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 23 that represents the number of hours spanned by this duration.  
   
  *minutes*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 59 that represents the number of minutes spanned by this duration.  
   
  *seconds*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 59 that represents the number of seconds spanned by this duration  
   
  *fractionalSeconds*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value consisting of 1 to 7 digits that represents fractional seconds.  
   
@@ -351,7 +351,7 @@
   
  If either <paramref name="t1" /> or <paramref name="t2" /> has no value, this method returns <see langword="null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Add%28System.Windows.Duration%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Add%28System.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -378,7 +378,7 @@
         <returns>
           <see langword="true" /> if both instances of <see cref="T:System.Windows.Duration" /> have values and are equal, or if both instances of <see cref="T:System.Windows.Duration" /> are <see langword="null" />. Otherwise, this method returns <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Equals%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Equals%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -410,7 +410,7 @@
 ## Remarks  
  <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
   
- The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -442,7 +442,7 @@
 ## Remarks  
  <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
   
- The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -462,10 +462,14 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeSpan">
+          <see cref="T:System.TimeSpan" /> from which an instance of <see cref="T:System.Windows.Duration" /> is implicitly created.</param>
+        <summary>Implicitly creates a <see cref="T:System.Windows.Duration" /> from a given <see cref="T:System.TimeSpan" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Duration" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.%23ctor%28System.TimeSpan%29?displayProperty=nameWithType>]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Occurs when <see cref="T:System.TimeSpan" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -491,7 +495,7 @@
         <returns>
           <see langword="true" /> if exactly one of <paramref name="t1" /> or <paramref name="t2" /> represent a value, or if they both represent values that are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -523,7 +527,7 @@
 ## Remarks  
  <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
   
- The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -555,7 +559,7 @@
 ## Remarks  
  <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
   
- The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -600,7 +604,7 @@
   
 -   <xref:System.Windows.Duration.Automatic%2A> minus <xref:System.Windows.Duration.TimeSpan%2A>.  
   
- The equivalent method for this operator is <xref:System.Windows.Duration.Subtract%28System.Windows.Duration%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Duration.Subtract%28System.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -624,7 +628,7 @@
         <summary>Returns the specified instance of <see cref="T:System.Windows.Duration" />.</summary>
         <returns>An instance of <see cref="T:System.Windows.Duration" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Plus%28System.Windows.Duration%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Plus%28System.Windows.Duration%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -710,5 +714,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a specified object is equal to an instance of <see cref="T:System.Windows.Duration" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

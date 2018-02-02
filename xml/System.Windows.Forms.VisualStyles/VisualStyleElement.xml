@@ -24,7 +24,7 @@
   
 -   The *state* describes the current visual state of the element defined by the class and part. The state is specified by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.State%2A> property.  
   
- The <xref:System.Windows.Forms.VisualStyles?displayProperty=fullName> namespace exposes hundreds of <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects that represent the controls and user interface elements that can be defined by a visual style. These objects are exposed as `static` properties of nested classes of <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>. For each property, the qualified name of the owning class represents the class and the part of the drawn element, and the property name represents the state of the element. For example, the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.PushButton.Pressed%2A?displayProperty=fullName> property returns a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> that can be used to draw a button in the pressed state with visual styles. The `Pressed` property name corresponds to the state, `PushButton` corresponds to the part, and `Button` identifies the class of the visual style element.  
+ The <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace exposes hundreds of <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects that represent the controls and user interface elements that can be defined by a visual style. These objects are exposed as `static` properties of nested classes of <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>. For each property, the qualified name of the owning class represents the class and the part of the drawn element, and the property name represents the state of the element. For example, the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.PushButton.Pressed%2A?displayProperty=nameWithType> property returns a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> that can be used to draw a button in the pressed state with visual styles. The `Pressed` property name corresponds to the state, `PushButton` corresponds to the part, and `Button` identifies the class of the visual style element.  
   
  To draw a visual style element, create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>, set it to the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> you wish to draw, and then call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%2A> method. To determine whether the current visual style provides a definition for a particular element, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined%2A> method with the element as the argument.  
   
@@ -33,7 +33,7 @@
    
   
 ## Examples  
- The following code example is a complete application that provides a UI for browsing and drawing all of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles?displayProperty=fullName> namespace. To view an element, use the <xref:System.Windows.Forms.ListView> control on the left side of the window to navigate to the node that represents the state of the element you want to draw, and then click the node. This sample will draw the selected element only if the element is defined by the current visual style.  
+ The following code example is a complete application that provides a UI for browsing and drawing all of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace. To view an element, use the <xref:System.Windows.Forms.ListView> control on the left side of the window to navigate to the node that represents the state of the element you want to draw, and then click the node. This sample will draw the selected element only if the element is defined by the current visual style.  
   
  [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleElement#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleElement/cpp/form1.cpp#0)]
  [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleElement#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleElement/CS/form1.cs#0)]
@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleInformation" />
   </Docs>
   <Members>
     <Member MemberName="ClassName">
@@ -68,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Part" />
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.State" />
       </Docs>
     </Member>
     <Member MemberName="CreateElement">
@@ -121,6 +125,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ClassName" />
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.State" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -148,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ClassName" />
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Part" />
       </Docs>
     </Member>
   </Members>

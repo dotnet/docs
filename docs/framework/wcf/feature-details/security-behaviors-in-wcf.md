@@ -14,6 +14,8 @@ caps.latest.revision: 23
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Behaviors in WCF
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run-time behavior at the service level or at the endpoint level. ([!INCLUDE[crabout](../../../../includes/crabout-md.md)] behaviors in general, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:  
@@ -121,10 +123,10 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run
 ```  
   
 #### \<clientCertifictate> Element  
- Set the certificate used to authenticate the client with this element. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ Set the certificate used to authenticate the client with this element. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 #### \<httpDigest>  
- This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88443).  
+ This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88443).  
   
 #### \<issuedToken> Element  
  The [\<issuedToken>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
@@ -150,9 +152,9 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run
   
  Use the [\<scopedCertificates>](../../../../docs/framework/configure-apps/file-schema/wcf/scopedcertificates-element.md) and [\<add>](../../../../docs/framework/configure-apps/file-schema/wcf/add-of-scopedcertificates-element.md) to set service certificates that are associated with specific services. The `<add>` element includes a `targetUri` attribute that is used to associate the certificate with the service.  
   
- The [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element specifies the level of trust used to authenticate certificates. By default, the level is set to "ChainTrust," which specifies that each certificate must be found in a hierarchy of certificates ending in a trusted certification authority at the top of the chain. This is the most secure mode. You can also set the value to "PeerOrChainTrust", which specifies that self-issued certificates (peer trust) are accepted, as well as certificates that are in a trusted chain. This value is used when developing and debugging clients and services because self-issued certificates need not be purchased from a trusted authority. When deploying a client, use the "ChainTrust" value instead. You can also set the value to "Custom" or "None." To use the "Custom" value, you must also set the `CustomCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create your own custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Create a Service that Employs a Custom Certificate Validator](../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
+ The [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element specifies the level of trust used to authenticate certificates. By default, the level is set to "ChainTrust," which specifies that each certificate must be found in a hierarchy of certificates ending in a trusted certification authority at the top of the chain. This is the most secure mode. You can also set the value to "PeerOrChainTrust", which specifies that self-issued certificates (peer trust) are accepted, as well as certificates that are in a trusted chain. This value is used when developing and debugging clients and services because self-issued certificates need not be purchased from a trusted authority. When deploying a client, use the "ChainTrust" value instead. You can also set the value to "Custom" or "None." To use the "Custom" value, you must also set the `CustomCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create your own custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Create a Service that Employs a Custom Certificate Validator](../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
- The [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element includes a `RevocationMode` attribute that specifies how certificates are checked for revocation. The default is "online", which indicates that certificates are automatically checked for revocation. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ The [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element includes a `RevocationMode` attribute that specifies how certificates are checked for revocation. The default is "online", which indicates that certificates are automatically checked for revocation. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
 ## ServiceAuthorization  
  The [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) element contains elements that affect authorization, custom role providers, and impersonation.  
@@ -194,7 +196,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run
 ```  
   
 ## Configuring Security Audits  
- Use the [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) to specify the log written to, and what types of events to log. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+ Use the [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) to specify the log written to, and what types of events to log. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   
 ```xml  
 <system.serviceModel>  
@@ -210,7 +212,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run
 ```  
   
 ## Secure Metadata Exchange  
- Exporting metadata to clients is convenient for service and client developers, as it enables downloads of configuration and client code. To reduce the exposure of a service to malicious users, it is possible to secure the transfer using the SSL over HTTP (HTTPS) mechanism. To do so, you must first bind a suitable X.509 certificate to a specific port on the computer that is hosting the service. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).) Second, add a [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) to the service configuration and set the `HttpsGetEnabled` attribute to `true`. Finally, set the `HttpsGetUrl` attribute to the URL of the service metadata endpoint, as shown in the following example.  
+ Exporting metadata to clients is convenient for service and client developers, as it enables downloads of configuration and client code. To reduce the exposure of a service to malicious users, it is possible to secure the transfer using the SSL over HTTP (HTTPS) mechanism. To do so, you must first bind a suitable X.509 certificate to a specific port on the computer that is hosting the service. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).) Second, add a [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) to the service configuration and set the `HttpsGetEnabled` attribute to `true`. Finally, set the `HttpsGetUrl` attribute to the URL of the service metadata endpoint, as shown in the following example.  
   
 ```xml  
 <behaviors>  
@@ -224,5 +226,5 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run
 ```  
   
 ## See Also  
- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)   
+ [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

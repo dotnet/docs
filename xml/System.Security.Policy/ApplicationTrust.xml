@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `fullTrustAssemblies` identifies strong-named assemblies within the <xref:System.AppDomain> that are to be granted full trust. This constructor is called by the <xref:System.AppDomain.CreateDomain%2A?displayProperty=fullName> method to create an <xref:System.AppDomain> that will be used as a sandbox. For more information about running an application in a sandbox, see [How to: Run Partially Trusted Code in a Sandbox](~/docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
+ `fullTrustAssemblies` identifies strong-named assemblies within the <xref:System.AppDomain> that are to be granted full trust. This constructor is called by the <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> method to create an <xref:System.AppDomain> that will be used as a sandbox. For more information about running an application in a sandbox, see [How to: Run Partially Trusted Code in a Sandbox](~/docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
   
  ]]></format>
         </remarks>
@@ -399,5 +399,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationTrust" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.Configuration.PagesSection.PageParserFilterType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -200,7 +201,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Override the <xref:System.Web.UI.PageParserFilter.AllowServerSideInclude%2A> method to reject all or specific server-side includes. For more information about server-side include syntax, see [Server-Side Include Directive Syntax](http://msdn.microsoft.com/en-us/42a6925a-f68c-4690-a9c4-d710358886a9).  
+ Override the <xref:System.Web.UI.PageParserFilter.AllowServerSideInclude%2A> method to reject all or specific server-side includes. For more information about server-side include syntax, see [Server-Side Include Directive Syntax](http://msdn.microsoft.com/library/42a6925a-f68c-4690-a9c4-d710358886a9).  
   
  ]]></format>
         </remarks>
@@ -236,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.VirtualReferenceType" />
       </Docs>
     </Member>
     <Member MemberName="CalledFromParseControl">
@@ -291,6 +293,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
     <Member MemberName="GetNoCompileUserControlType">
@@ -319,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -421,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PageParserFilter.TotalNumberOfDependenciesAllowed" />
       </Docs>
     </Member>
     <Member MemberName="ParseComplete">
@@ -508,6 +513,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CodeConstructType" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDataBindingAttribute">
@@ -612,6 +618,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.PropertyEntry" />
       </Docs>
     </Member>
     <Member MemberName="TotalNumberOfDependenciesAllowed">
@@ -637,6 +644,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PageParserFilter.NumberOfDirectDependenciesAllowed" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">

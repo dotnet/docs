@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IAsyncResult> interface is implemented by classes containing methods that can operate asynchronously. It is the return type of methods that initiate an asynchronous operation, such as <xref:System.IO.FileStream.BeginRead%2A?displayProperty=fullName>, and it is passed to methods that conclude an asynchronous operation, such as <xref:System.IO.FileStream.EndRead%2A?displayProperty=fullName>. <xref:System.IAsyncResult> objects are also passed to methods invoked by <xref:System.AsyncCallback> delegates when an asynchronous operation completes.  
+ The <xref:System.IAsyncResult> interface is implemented by classes containing methods that can operate asynchronously. It is the return type of methods that initiate an asynchronous operation, such as <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType>, and it is passed to methods that conclude an asynchronous operation, such as <xref:System.IO.FileStream.EndRead%2A?displayProperty=nameWithType>. <xref:System.IAsyncResult> objects are also passed to methods invoked by <xref:System.AsyncCallback> delegates when an asynchronous operation completes.  
   
  An object that supports the <xref:System.IAsyncResult> interface stores state information for an asynchronous operation and provides a synchronization object to allow threads to be signaled when the operation completes.  
   
@@ -118,6 +118,7 @@
         <block subset="none" type="usage">
           <para>This object can be used to pass state information for the asynchronous operation to an <see cref="T:System.AsyncCallback" /> that you provide.</para>
         </block>
+        <altmember cref="T:System.AsyncCallback" />
       </Docs>
     </Member>
     <Member MemberName="AsyncWaitHandle">

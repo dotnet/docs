@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- A <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> specifies a property or a field to be extracted from the root activity of a workflow. You can add a <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> to either <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=fullName> or <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=fullName> to instruct the runtime tracking infrastructure to extract the member from the root activity of the workflow when the runtime tracking infrastructure matches an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> or a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>. The runtime tracking infrastructure puts the extracted data and any associated annotations in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> or the <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> that it returns to the tracking service.  
+ A <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> specifies a property or a field to be extracted from the root activity of a workflow. You can add a <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> to either <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=nameWithType> or <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=nameWithType> to instruct the runtime tracking infrastructure to extract the member from the root activity of the workflow when the runtime tracking infrastructure matches an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> or a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>. The runtime tracking infrastructure puts the extracted data and any associated annotations in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> or the <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> that it returns to the tracking service.  
   
  Set <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> to specify the field or property for the runtime tracking infrastructure to extract from the root activity. You can associate additional information with the extracted data by adding to <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Annotations%2A>.  
   
@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A?displayProperty=fullName> is initialized to the `string` specified by `member`.  
+ <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A?displayProperty=nameWithType> is initialized to the `string` specified by `member`.  
   
  ]]></format>
         </remarks>
@@ -135,5 +135,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

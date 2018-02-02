@@ -29,7 +29,7 @@
 ## WPF Usage Notes  
  Example scenarios for <xref:System.Windows.Markup.IUriContext> exist in WPF.  
   
- As an example of a value converter, the <xref:System.Windows.Media.FontFamilyConverter> class can use a relative URI that is provided for properties such as <xref:System.Windows.Controls.Page.FontFamily%2A?displayProperty=fullName>, if <xref:System.Windows.Markup.IUriContext> is available as a service on the <xref:System.ComponentModel.ITypeDescriptorContext> input.  
+ As an example of a value converter, the <xref:System.Windows.Media.FontFamilyConverter> class can use a relative URI that is provided for properties such as <xref:System.Windows.Controls.Page.FontFamily%2A?displayProperty=nameWithType>, if <xref:System.Windows.Markup.IUriContext> is available as a service on the <xref:System.ComponentModel.ITypeDescriptorContext> input.  
   
  As an example of the element case, <xref:System.Windows.Documents.Hyperlink> implements <xref:System.Windows.Markup.IUriContext> so that it can pass through base URI values when parsed, which then modifies <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A>.  
   

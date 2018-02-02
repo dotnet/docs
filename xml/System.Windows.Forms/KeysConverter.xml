@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Keys" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Keys" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -93,6 +95,8 @@
   
  The context can be used to extract additional information about the environment this converter is being invoked from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</para>
         </block>
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.ConvertFrom" />
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.CanConvertTo" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -130,6 +134,8 @@
   
  The context can be used to extract additional information about the environment this converter is being invoked from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</para>
         </block>
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.ConvertTo" />
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.CanConvertFrom" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -175,10 +181,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.String.Compare%2A?displayProperty=fullName> to compare the two objects.  
+ This method uses <xref:System.String.Compare%2A?displayProperty=nameWithType> to compare the two objects.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.String.Compare(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -220,6 +227,8 @@
         <block subset="none" type="overrides">
           <para>The <paramref name="context" /> parameter can be used to extract additional information about the environment this converter is being invoked from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</para>
         </block>
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.CanConvertFrom" />
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.ConvertTo" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -262,6 +271,8 @@
   
  The context parameter can be used to extract additional information about the environment this converter is being invoked from. This may be <see langword="null" />, so you should always check for this return value. Also, properties on the context object may also return <see langword="null" />.</para>
         </block>
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.CanConvertTo" />
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.ConvertFrom" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -291,6 +302,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValuesSupported" />
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValuesExclusive" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -323,6 +336,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValues" />
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValuesSupported" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -352,6 +367,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValues" />
+        <altmember cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValuesExclusive" />
       </Docs>
     </Member>
   </Members>

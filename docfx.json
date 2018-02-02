@@ -16,12 +16,12 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "src": "docs",
         "dest": ".",
         "exclude": [
-          "toc.md",
           "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
@@ -54,15 +54,18 @@
       },
       {
         "files": [
-          "core/**/*.md"
+          "core/**/*.md",
+          "core/**/*.yml"
         ]
       },
       {
         "files": [
-          "docs/toc.md",
-          "toc.yml",
           "index.md"
         ]
+      },
+      {
+        "files": "toc.yml",
+        "dest": "breadcrumb"
       }
     ],
     "resource": [
@@ -106,7 +109,7 @@
       },
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/dotnet/toc.json",
+      "breadcrumb_path": "/dotnet/breadcrumb/toc.json",
       "_displayLangs": [
         "csharp"
       ],
@@ -129,7 +132,16 @@
         "_vblang/spec/*.md": "language-reference"
      },
       "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"]
+        "api/**.yml": ["csharp", "vb", "cpp", "fsharp"],
+        "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
+      },
+      "dev_langs": {
+        "docs/core/**/**.md": ["csharp"],
+        "docs/csharp/**/**.md": ["csharp"],
+        "docs/framework/**/**.md": ["csharp"],
+        "docs/fsharp/**/**.md": ["fsharp"],
+        "docs/standard/**/**.md": ["csharp"],
+        "docs/visual-basic/**/**.md": ["vb"]
       },
       "ROBOTS": {
         "api/**.yml": "NOINDEX, NOFOLLOW"
@@ -140,15 +152,12 @@
       },
       "ms.technology": {
         "_csharplang/spec/*.md": "devlang-csharp",
+        "csharp/quick-starts/**": "csharp-interactive",
         "_vblang/spec/*.md": "devlang-visual-basic"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
         "_vblang/spec/*.md": "07/21/2017"
-      },
-      "open_to_public_contributors": {
-        "_csharplang/spec/*.md": false,
-        "_vblang/spec/*.md": false
       }
     },
     "dest": "_site",
@@ -160,7 +169,8 @@
       "_zip/vs.140.zip",
       "_zip/office15.zip",
       "_zip/missingapi.yml",
-      "_zip/msdnsmallset.yml"
+      "_zip/msdnsmallset.yml",
+      "_zip/roslyn.yml"
     ],
     "lruSize": 0
   }

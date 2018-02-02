@@ -53,6 +53,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeView" />
+    <altmember cref="T:System.Windows.Forms.ListView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -318,6 +320,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value of the property is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -344,6 +347,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCursor">
@@ -380,6 +384,7 @@
         <summary>Gets the default Input Method Editor (IME) mode supported by this control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -398,6 +403,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the default size of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -833,6 +839,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Splitter.MinSize" />
       </Docs>
     </Member>
     <Member MemberName="MinSize">
@@ -878,6 +885,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Splitter.MinExtra" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -1023,6 +1031,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Splitter.OnSplitterMoved(System.Windows.Forms.SplitterEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Splitter.OnSplitterMoved(System.Windows.Forms.SplitterEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.Splitter.SplitterMoved" />
       </Docs>
     </Member>
     <Member MemberName="OnSplitterMoving">
@@ -1056,6 +1067,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Splitter.OnSplitterMoving(System.Windows.Forms.SplitterEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Splitter.OnSplitterMoving(System.Windows.Forms.SplitterEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.Splitter.SplitterMoving" />
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -1085,6 +1099,7 @@
         <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
         <summary>Performs the work of setting the specified bounds of this control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="SplitPosition">
@@ -1118,6 +1133,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Splitter.SplitterMoved" />
+        <altmember cref="E:System.Windows.Forms.Splitter.SplitterMoving" />
       </Docs>
     </Member>
     <Member MemberName="SplitterMoved">
@@ -1145,7 +1162,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Splitter.SplitterMoved> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Splitter.SplitterMoved> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Splitter> named `Splitter1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Splitter.SplitterMoved> event.  
   
@@ -1154,6 +1171,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Splitter.OnSplitterMoved(System.Windows.Forms.SplitterEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.Splitter.SplitterMoving" />
       </Docs>
     </Member>
     <Member MemberName="SplitterMoving">
@@ -1181,7 +1202,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Splitter.SplitterMoving> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Splitter.SplitterMoving> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Splitter> named `Splitter1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Splitter.SplitterMoving> event.  
   
@@ -1190,6 +1211,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Splitter.OnSplitterMoving(System.Windows.Forms.SplitterEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.Splitter.SplitterMoved" />
       </Docs>
     </Member>
     <Member MemberName="TabStop">

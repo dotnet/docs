@@ -20,20 +20,23 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this class to programmatically manage a collection of <xref:System.DateTime?displayProperty=fullName> objects that represent the selected dates in a <xref:System.Web.UI.WebControls.Calendar> control. This class is commonly used to add or remove dates from the collection.  
+ Use this class to programmatically manage a collection of <xref:System.DateTime?displayProperty=nameWithType> objects that represent the selected dates in a <xref:System.Web.UI.WebControls.Calendar> control. This class is commonly used to add or remove dates from the collection.  
   
- This collection stores only whole dates. The time portion of each <xref:System.DateTime?displayProperty=fullName> is removed. The dates are stored in ascending order. If there are duplicate dates, only one date is stored in the collection.  
+ This collection stores only whole dates. The time portion of each <xref:System.DateTime?displayProperty=nameWithType> is removed. The dates are stored in ascending order. If there are duplicate dates, only one date is stored in the collection.  
   
    
   
 ## Examples  
  The following code example demonstrates how to programmatically use the <xref:System.Web.UI.WebControls.SelectedDatesCollection> class to select dates in the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SelectedDatesCollection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SelectedDatesCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SelectedDatesCollection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SelectedDatesCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+    <altmember cref="T:System.DateTime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +65,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -86,18 +91,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to add the specified <xref:System.DateTime?displayProperty=fullName> object to the end of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection.  
+ Use this method to add the specified <xref:System.DateTime?displayProperty=nameWithType> object to the end of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Add%2A> method to add a <xref:System.DateTime?displayProperty=fullName> object to a <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection. Note that the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> property of the <xref:System.Web.UI.WebControls.Calendar> is an instance of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> class.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Add%2A> method to add a <xref:System.DateTime?displayProperty=nameWithType> object to a <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection. Note that the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> property of the <xref:System.Web.UI.WebControls.Calendar> is an instance of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[SelectedDatesCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SelectedDatesCollectionAdd/CS/selecteddatescollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SelectedDatesCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SelectedDatesCollectionAdd/VB/selecteddatescollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[SelectedDatesCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SelectedDatesCollectionAdd/CS/selecteddatescollectionaddcs.aspx#1)]
+ [!code-aspx-vb[SelectedDatesCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SelectedDatesCollectionAdd/VB/selecteddatescollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -119,18 +127,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to remove all <xref:System.DateTime?displayProperty=fullName> objects from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection and set the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Count%2A> property to 0.  
+ Use this method to remove all <xref:System.DateTime?displayProperty=nameWithType> objects from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection and set the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Count%2A> property to 0.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Clear%2A> method to remove all <xref:System.DateTime?displayProperty=fullName> objects from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection and replace them with new <xref:System.DateTime?displayProperty=fullName> objects.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Clear%2A> method to remove all <xref:System.DateTime?displayProperty=nameWithType> objects from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection and replace them with new <xref:System.DateTime?displayProperty=nameWithType> objects.  
   
- <!-- TODO: review snippet reference [!code-csharp[SelectedDatesCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SelectedDatesCollectionAdd/CS/selecteddatescollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SelectedDatesCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SelectedDatesCollectionAdd/VB/selecteddatescollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[SelectedDatesCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SelectedDatesCollectionAdd/CS/selecteddatescollectionaddcs.aspx#1)]
+ [!code-aspx-vb[SelectedDatesCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SelectedDatesCollectionAdd/VB/selecteddatescollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.SelectedDatesCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -157,18 +167,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to determine whether the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection contains the specified <xref:System.DateTime?displayProperty=fullName> object.  
+ Use this method to determine whether the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection contains the specified <xref:System.DateTime?displayProperty=nameWithType> object.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Contains%2A> method to determine whether the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection contains the specified <xref:System.DateTime?displayProperty=fullName> object.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Contains%2A> method to determine whether the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection contains the specified <xref:System.DateTime?displayProperty=nameWithType> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SelectedDatesCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.Contains Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SelectedDatesCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.Contains Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SelectedDatesCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.Contains Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SelectedDatesCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.Contains Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -195,21 +208,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index.  
+ Use this method to copy the contents of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection into the specified <xref:System.Array?displayProperty=nameWithType>, starting at the specified index.  
   
 > [!NOTE]
->  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName>.  
+>  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.CopyTo%2A> method to copy items from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> into the specified array.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SelectedDatesCollection.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.CopyTo Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SelectedDatesCollection.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.CopyTo Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SelectedDatesCollection.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.CopyTo Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SelectedDatesCollection.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.CopyTo Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -238,11 +252,14 @@
 ## Examples  
  The following code example demonstrates how to use to the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Count%2A> property to determine the number of dates in the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection. Note that the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> property of the <xref:System.Web.UI.WebControls.Calendar> control is an instance of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SelectedDatesCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.Count Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SelectedDatesCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.Count Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SelectedDatesCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.Count Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SelectedDatesCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.Count Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -265,27 +282,33 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to create an <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object that can be easily iterated through to get each item in the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection.  
+ Use this method to create an <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object that can be easily iterated through to get each item in the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection.  
   
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property to get the item currently pointed to in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator back to the initial position.  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator back to the initial position.  
   
 > [!NOTE]
->  The <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method needs to be called after creating an <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object or using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  The <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method needs to be called after creating an <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object or using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.GetEnumerator%2A> method to create an <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object that is iterated through to display the selected dates from the <xref:System.Web.UI.WebControls.Calendar> control.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.GetEnumerator%2A> method to create an <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object that is iterated through to display the selected dates from the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SelectedDatesCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.GetEnumerator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SelectedDatesCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.GetEnumerator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SelectedDatesCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.GetEnumerator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SelectedDatesCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.GetEnumerator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -334,12 +357,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from <xref:System.Collections.ICollection?displayProperty=fullName> and is overridden to always return `false`.  
+ This property is derived from <xref:System.Collections.ICollection?displayProperty=nameWithType> and is overridden to always return `false`.  
   
- For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -365,18 +390,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this indexer to get an individual <xref:System.DateTime?displayProperty=fullName> object in the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection at the specified index using simple array notation.  
+ Use this indexer to get an individual <xref:System.DateTime?displayProperty=nameWithType> object in the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection at the specified index using simple array notation.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the indexer to get a <xref:System.DateTime?displayProperty=fullName> object from a <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection. Note that the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> property of the <xref:System.Web.UI.WebControls.Calendar> control is an instance of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> class.  
+ The following code example demonstrates how to use the indexer to get a <xref:System.DateTime?displayProperty=nameWithType> object from a <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection. Note that the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> property of the <xref:System.Web.UI.WebControls.Calendar> control is an instance of the <xref:System.Web.UI.WebControls.SelectedDatesCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SelectedDatesCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.this Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SelectedDatesCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.this Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SelectedDatesCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.this Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SelectedDatesCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.this Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -401,18 +429,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to remove the specified <xref:System.DateTime?displayProperty=fullName> object from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection.  
+ Use this method to remove the specified <xref:System.DateTime?displayProperty=nameWithType> object from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.Remove%2A> method to remove an item from the <xref:System.Web.UI.WebControls.SelectedDatesCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SelectedDatesCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.Remove Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SelectedDatesCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.Remove Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SelectedDatesCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SelectedDatesCollection.Remove Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SelectedDatesCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SelectedDatesCollection.Remove Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="SelectRange">
@@ -446,11 +475,13 @@
 ## Examples  
  The following code example demonstrates how to programmatically use the <xref:System.Web.UI.WebControls.SelectedDatesCollection.SelectRange%2A> method to select a range of continuous dates on the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[SelectedDatesCollectionSelectRange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SelectedDatesCollectionSelectRange/CS/selecteddatescollectionselectrangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SelectedDatesCollectionSelectRange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SelectedDatesCollectionSelectRange/VB/selecteddatescollectionselectrangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[SelectedDatesCollectionSelectRange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SelectedDatesCollectionSelectRange/CS/selecteddatescollectionselectrangecs.aspx#1)]
+ [!code-aspx-vb[SelectedDatesCollectionSelectRange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SelectedDatesCollectionSelectRange/VB/selecteddatescollectionselectrangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -474,10 +505,12 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Web.UI.WebControls.SelectedDatesCollection> object itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
   </Members>

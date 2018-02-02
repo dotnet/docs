@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorNotificationForTokenMovement"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorNotificationForTokenMovement enumeration [.NET Framework metadata]"
 ms.assetid: 1edd1670-976a-4fc8-bef7-7c41e60ad989
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorNotificationForTokenMovement Enumeration
 Specifies the notifications that will be sent to the metadata API client when a token remap occurs.  

@@ -84,6 +84,10 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.RecognizedPhrase" />
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+    <altmember cref="T:System.Speech.Recognition.RecognizedWordUnit" />
+    <altmember cref="T:System.Speech.Recognition.ReplacementText" />
   </Docs>
   <Members>
     <Member MemberName="ConsumeLeadingSpaces">

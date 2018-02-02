@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::SwitchInLogicalThreadState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::SwitchInLogicalThreadState method [.NET Framework hosting]"
   - "SwitchInLogicalThreadState method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::SwitchInLogicalThreadState Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

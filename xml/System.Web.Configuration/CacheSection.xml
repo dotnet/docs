@@ -30,14 +30,19 @@
 ## Examples  
  The following code example shows a page and the related code file used to  access the  <xref:System.Web.Configuration.CacheSection> section attributes.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Configuration.CacheSection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/CS/readwritecache.aspx#11)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Configuration.CacheSection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/VB/readwritecache.aspx#11)]  -->  
+ [!code-aspx-csharp[System.Web.Configuration.CacheSection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/CS/readwritecache.aspx#11)]
+ [!code-aspx-vb[System.Web.Configuration.CacheSection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/VB/readwritecache.aspx#11)]
   
  [!code-csharp[System.Web.Configuration.CacheSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/CS/readwritecache.aspx.cs#1)]
  [!code-vb[System.Web.Configuration.CacheSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/VB/readwritecache.aspx.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.OutputCacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
+    <altmember cref="T:System.Web.Caching.Cache" />
+    <altmember cref="P:System.Web.HttpContext.Cache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,7 +127,7 @@
  If the <xref:System.Web.Configuration.CacheSection.DisableExpiration%2A> property is set to `true`, the cached items never expire. This setting is intended to help debug cache behavior in application code. Use caution when disabling cache expiration, as this might result in items being cached longer than they are valid.  
   
 > [!NOTE]
->  To add a page to the output cache, you must establish an expiration policy for that page. You can do this declaratively with the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or programmatically using the <xref:System.Web.HttpCachePolicy.SetExpires%2A> method. For more information, see [How to: Set Expiration Values for ASP.NET Page Caching](http://msdn.microsoft.com/library/c8931600-b167-477d-bd5a-0186ac908646).  
+>  To add a page to the output cache, you must establish an expiration policy for that page. You can do this declaratively with the [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or programmatically using the <xref:System.Web.HttpCachePolicy.SetExpires%2A> method. For more information, see [How to: Set Expiration Values for ASP.NET Page Caching](http://msdn.microsoft.com/library/c8931600-b167-477d-bd5a-0186ac908646).  
   
    
   

@@ -202,6 +202,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlConvert.EncodeName(System.String)" />
+        <altmember cref="M:System.Xml.XmlConvert.DecodeName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="EncodeName">
@@ -258,6 +260,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlConvert.EncodeLocalName(System.String)" />
+        <altmember cref="M:System.Xml.XmlConvert.DecodeName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="EncodeNmToken">
@@ -677,7 +681,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlConvert.ToDateTime%28System.String%29?displayProperty=fullName> method is obsolete in the 2.0 version of the .NET Framework and has been replaced by the <xref:System.Xml.XmlConvert.ToDateTime%28System.String%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=fullName> method.  
+>  The <xref:System.Xml.XmlConvert.ToDateTime%28System.String%29?displayProperty=nameWithType> method is obsolete in the 2.0 version of the .NET Framework and has been replaced by the <xref:System.Xml.XmlConvert.ToDateTime%28System.String%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=nameWithType> method.  
   
    
   
@@ -1134,6 +1138,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Double.MinValue" /> or greater than <see cref="F:System.Double.MaxValue" />.</exception>
+        <altmember cref="F:System.Double.PositiveInfinity" />
+        <altmember cref="F:System.Double.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="ToGuid">
@@ -1380,6 +1386,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />.</exception>
+        <altmember cref="F:System.Single.PositiveInfinity" />
+        <altmember cref="F:System.Single.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1522,7 +1530,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlConvert.ToString%28System.DateTime%29?displayProperty=fullName> method is obsolete in the 2.0 version of the .NET Framework and has been replaced with the <xref:System.Xml.XmlConvert.ToString%28System.DateTime%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=fullName> method.  
+>  The <xref:System.Xml.XmlConvert.ToString%28System.DateTime%29?displayProperty=nameWithType> method is obsolete in the 2.0 version of the .NET Framework and has been replaced with the <xref:System.Xml.XmlConvert.ToString%28System.DateTime%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1654,6 +1662,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Double.PositiveInfinity" />
+        <altmember cref="F:System.Double.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1881,6 +1891,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Single.PositiveInfinity" />
+        <altmember cref="F:System.Single.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2393,6 +2405,7 @@ catch(Exception e)
           <paramref name="name" /> is not a valid XML name.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" /> or String.Empty.</exception>
+        <altmember cref="M:System.Xml.XmlConvert.VerifyNCName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="VerifyNCName">
@@ -2692,5 +2705,39 @@ catch(Exception e) {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts strongly typed data to an equivalent <see cref="T:System.String" /> representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDateTimeOffset">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDateTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the <see cref="T:System.String" /> to a <see cref="T:System.DateTime" /> equivalent.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

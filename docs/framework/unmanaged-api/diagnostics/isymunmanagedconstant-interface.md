@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedConstant"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedConstant interface [.NET Framework debugging]"
 ms.assetid: e11c9baa-4cf1-4bb4-a95f-b1908893b46c
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedConstant Interface
 Provides access to unmanaged constants.  

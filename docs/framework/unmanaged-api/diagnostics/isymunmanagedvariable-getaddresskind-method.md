@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAddressKind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAddressKind method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAddressKind method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedVariable::GetAddressKind Method
 Gets the kind of address of this variable.  

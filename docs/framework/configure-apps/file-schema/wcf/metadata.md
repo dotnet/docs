@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d09653eb-e355-4c73-b87b-28f93d56480d
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;metadata&gt;
 Specifies how service metadata can be processed.  
@@ -58,10 +60,10 @@ Specifies how service metadata can be processed.
 |[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|The client section defines a list of endpoints that a client can connect to.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.MetadataElement>   
- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>   
- <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>   
- <xref:System.ServiceModel.Description.MetadataImporter>   
- <xref:System.ServiceModel.Description.WsdlImporter>   
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)   
+ <xref:System.ServiceModel.Configuration.MetadataElement>  
+ <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>  
+ <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>  
+ <xref:System.ServiceModel.Description.MetadataImporter>  
+ <xref:System.ServiceModel.Description.WsdlImporter>  
+ [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
  [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

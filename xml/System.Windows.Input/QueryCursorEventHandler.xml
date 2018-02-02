@@ -26,17 +26,20 @@
 ## Remarks  
  This delegate is used with the following attached events.  
   
--   <xref:System.Windows.Input.Mouse.QueryCursor?displayProperty=fullName>  
+-   <xref:System.Windows.Input.Mouse.QueryCursor?displayProperty=nameWithType>  
   
  This delegate is used with the following routed events. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
   
--   <xref:System.Windows.UIElement.QueryCursor?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.QueryCursor?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.QueryCursor?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.QueryCursor?displayProperty=nameWithType>  
   
  The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.QueryCursorEventArgs" />
+    <altmember cref="E:System.Windows.UIElement.QueryCursor" />
+    <altmember cref="E:System.Windows.ContentElement.QueryCursor" />
   </Docs>
 </Type>

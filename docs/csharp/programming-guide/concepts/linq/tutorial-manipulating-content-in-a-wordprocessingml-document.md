@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 # Tutorial: Manipulating Content in a WordprocessingML Document (C#)
 This tutorial shows how to apply the functional transformational approach and LINQ to XML to manipulate XML documents. The C# examples query and manipulate information in Office Open XML WordprocessingML documents that are saved by Microsoft Word.  
   
- For more information, see the [OpenXML Developer](http://go.microsoft.com/fwlink/?LinkID=95573) Web site.  
+ For more information, see [Introduction to WordprocessingML](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/).  
   
 ## In This Section  
   

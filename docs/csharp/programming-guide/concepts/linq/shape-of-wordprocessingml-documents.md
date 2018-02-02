@@ -94,11 +94,11 @@ using (Package wdPackage = Package.Open("SampleDoc.docx", FileMode.Open, FileAcc
 ```  
   
 ## External Resources  
- [Introducing the Office (2007) Open XML File Formats](http://go.microsoft.com/fwlink/?LinkId=98093)  
-  
- [Overview of WordprocessingML](http://go.microsoft.com/fwlink/?LinkId=98094)  
-  
- [Office 2003: XML Reference Schemas Download page](http://go.microsoft.com/fwlink/?LinkId=98095)  
+ [Introducing the Office (2007) Open XML File Formats](https://msdn.microsoft.com/library/ms406049.aspx)  
+ [Overview of WordprocessingML](https://msdn.microsoft.com/library/aa212812(office.11).aspx)  
+ [Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)  
+ [Introduction to WordprocessingML](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
+ [Office 2003: XML Reference Schemas Download page](https://www.microsoft.com/en-us/download/details.aspx?id=101)  
   
 ## See Also  
  [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

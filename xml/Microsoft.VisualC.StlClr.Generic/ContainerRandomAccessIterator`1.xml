@@ -374,7 +374,7 @@
         <summary>Increments the iterator by the given number of elements. The integer parameter is specified on the left side of the addition operator.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Add%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Add%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -472,7 +472,7 @@
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Equals%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Equals%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -532,7 +532,7 @@
         <returns>
           <see langword="true" /> if the left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -567,7 +567,7 @@
         <returns>
           <see langword="true" /> if the given left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -592,7 +592,7 @@
         <returns>
           <see langword="true" /> if the left-side iterator is greater than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -707,7 +707,7 @@
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -762,7 +762,7 @@
         <returns>
           <see langword="true" /> if the left-side iterator is less than the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -817,7 +817,7 @@
         <returns>
           <see langword="true" /> if the left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -849,7 +849,7 @@
         <returns>
           <see langword="true" /> if the given left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

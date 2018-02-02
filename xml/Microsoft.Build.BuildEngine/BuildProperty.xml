@@ -185,7 +185,7 @@
         <summary>Converts a <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to a <see langword="String" />.</summary>
         <returns>A <see langword="String" />, whose contents are the same as the <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Value" /> property of the <paramref name="propertyToCast" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.Build.BuildEngine.BuildProperty.ToString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.Build.BuildEngine.BuildProperty.ToString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

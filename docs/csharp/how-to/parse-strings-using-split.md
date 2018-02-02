@@ -38,7 +38,7 @@ which uses space as a separator:
 This behavior makes it easier for formats like comma separated values (CSV)
 files representing tabular data. Consecutive commas represent a blank column.
 
-You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=fullName> parameter to
+You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to
 exclude any empty strings in the returned array. For more complicated processing of the returned
 collection, you can use [LINQ](../programming-guide/concepts/linq/index.md) to manipulate
 the result sequence.    

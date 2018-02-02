@@ -37,5 +37,5 @@ You can then pass any object to the method to determine whether it can be serial
 # See also
 
 [Binary serialization](binary-serialization.md)   
-<xref:System.SerializableAttribute?displayProperty=fullName>    
+<xref:System.SerializableAttribute?displayProperty=nameWithType>    
 <xref:System.Type.IsSerializable?displayProperty=nameWithType>   
